@@ -1,0 +1,1 @@
+estamos trabajando en un tp de gestion de datos, modelando el modelo de negocio de Duolingo. analiza el ddl realizado. hace otro archivo sql con inserts para cada tabla del modelo, hace al menos 10 filas por tabla.
