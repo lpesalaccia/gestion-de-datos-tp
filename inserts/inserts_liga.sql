@@ -1,0 +1,13 @@
+-- LIGA (10 ligas)
+INSERT INTO liga (id_liga, nombre, fecha_alta, fecha_baja) VALUES
+(1, 'Bronze', CAST('2026-01-01' AS DATETIME), NULL),
+(2, 'Silver', CAST('2026-01-01' AS DATETIME), NULL),
+(3, 'Gold', CAST('2026-01-01' AS DATETIME), NULL),
+(4, 'Sapphire', CAST('2026-01-15' AS DATETIME), NULL),
+(5, 'Ruby', CAST('2026-01-15' AS DATETIME), NULL),
+(6, 'Emerald', CAST('2026-01-10' AS DATETIME), CAST('2026-01-17' AS DATETIME)),
+(7, 'Amethyst', CAST('2026-01-17' AS DATETIME), CAST('2026-01-24' AS DATETIME)),
+(8, 'Pearl', CAST('2026-02-01' AS DATETIME), NULL),
+(9, 'Obsidian', CAST('2026-02-01' AS DATETIME), NULL),
+(10, 'Diamond', CAST('2026-02-05' AS DATETIME), NULL);
+GO

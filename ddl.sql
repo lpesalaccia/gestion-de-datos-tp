@@ -1,4 +1,6 @@
-
+-------------------------------------------------------------------------------------------------------------
+-- Script de creación de tablas para la base de datos de la plataforma
+------------------------------------------------------------------------------------------------------------------
 CREATE  TABLE liga ( 
 	id_liga              int      NOT NULL,
 	nombre               varchar(50)      NOT NULL,
@@ -61,7 +63,7 @@ CREATE  TABLE usuario (
 	fecha_nacimiento     date      NOT NULL,
 	record_racha         int      NOT NULL DEFAULT 0,
 	fecha_baja           datetime      NULL,
-	corazones_disponibles int NOT NULL DEFAULT 5
+	--corazones_disponibles int NOT NULL DEFAULT 5
 	CONSTRAINT pk_Usuario PRIMARY KEY  ( id_usuario ) 
  );
 GO
@@ -213,6 +215,11 @@ CREATE  TABLE factura_detalle (
 	CONSTRAINT pk_factura_detalle PRIMARY KEY  ( id_factura_detalle ) 
  );
 GO
+
+
+--------------------------------------------------------------------------------------------------------------
+-- Agregar claves foráneas
+--------------------------------------------------------------------------------------------------------------	
 
 ALTER TABLE curso ADD CONSTRAINT fk_curso_materia FOREIGN KEY ( id_materia ) REFERENCES materia( id_materia );
 GO

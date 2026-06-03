@@ -1,32 +1,3 @@
--- ===================================
--- INSERCIÓN DE DATOS - DUOLINGO
--- Base de datos: Gestion de Datos
--- Fecha: 2026-04-15
--- ===================================
-
--- ===================================
--- TABLAS MAESTRAS (30+ registros)
--- ===================================
-
--- PAIS (150 países)
-
--- MATERIA (49 idiomas/materias)
-
-
--- PLAN (30 planes de suscripción)
-
--- TIPO_PRODUCTO (8 tipos - Merchandising y productos de la plataforma)
-
--- USUARIO (30 usuarios)
-
--- LIGA (30 ligas)
-
--- CURSO (245 cursos - 5 niveles por cada uno de los 49 idiomas)
-
--- NIVEL (1775 niveles - 5 niveles por curso)
-INSERT INTO nivel (id_nivel, id_curso, nombre, descripcion, fecha_alta, fecha_baja) VALUES
-
-
 -- EJERCICIO (8,875 ejercicios - 5 tipos por cada uno de los 1775 niveles)
 INSERT INTO ejercicio (id_ejercicio, id_nivel, tipo, pregunta, xp_otorgado, dificultad, fecha_alta, fecha_baja) VALUES
 (1, 1, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
@@ -7778,1360 +7749,12460 @@ INSERT INTO ejercicio (id_ejercicio, id_nivel, tipo, pregunta, xp_otorgado, difi
 (7747, 1550, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
 (7748, 1550, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
 (7749, 1550, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7750, 1550, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7751, 1551, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7752, 1551, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(7753, 1551, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7754, 1551, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7755, 1551, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7756, 1552, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7757, 1552, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(7758, 1552, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7759, 1552, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7760, 1552, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7761, 1553, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7762, 1553, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(7763, 1553, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7764, 1553, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7765, 1553, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7766, 1554, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7767, 1554, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(7768, 1554, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7769, 1554, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7770, 1554, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7771, 1555, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7772, 1555, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(7773, 1555, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7774, 1555, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7775, 1555, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7776, 1556, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7777, 1556, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(7778, 1556, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7779, 1556, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7780, 1556, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7781, 1557, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7782, 1557, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(7783, 1557, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7784, 1557, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7785, 1557, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7786, 1558, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7787, 1558, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(7788, 1558, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7789, 1558, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7790, 1558, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7791, 1559, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7792, 1559, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(7793, 1559, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7794, 1559, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7795, 1559, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7796, 1560, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7797, 1560, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(7798, 1560, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7799, 1560, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7800, 1560, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7801, 1561, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7802, 1561, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(7803, 1561, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7804, 1561, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7805, 1561, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7806, 1562, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7807, 1562, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(7808, 1562, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7809, 1562, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7810, 1562, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7811, 1563, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7812, 1563, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(7813, 1563, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7814, 1563, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7815, 1563, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7816, 1564, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7817, 1564, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(7818, 1564, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7819, 1564, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7820, 1564, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7821, 1565, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7822, 1565, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(7823, 1565, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7824, 1565, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7825, 1565, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7826, 1566, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7827, 1566, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(7828, 1566, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7829, 1566, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7830, 1566, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7831, 1567, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7832, 1567, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(7833, 1567, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7834, 1567, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7835, 1567, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7836, 1568, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7837, 1568, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(7838, 1568, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7839, 1568, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7840, 1568, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7841, 1569, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7842, 1569, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(7843, 1569, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7844, 1569, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7845, 1569, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7846, 1570, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7847, 1570, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(7848, 1570, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7849, 1570, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7850, 1570, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7851, 1571, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7852, 1571, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(7853, 1571, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7854, 1571, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7855, 1571, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7856, 1572, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7857, 1572, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(7858, 1572, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7859, 1572, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7860, 1572, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7861, 1573, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7862, 1573, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(7863, 1573, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7864, 1573, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7865, 1573, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7866, 1574, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7867, 1574, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(7868, 1574, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7869, 1574, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7870, 1574, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7871, 1575, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7872, 1575, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(7873, 1575, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7874, 1575, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7875, 1575, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7876, 1576, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7877, 1576, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(7878, 1576, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7879, 1576, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7880, 1576, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7881, 1577, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7882, 1577, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(7883, 1577, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7884, 1577, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7885, 1577, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7886, 1578, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7887, 1578, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(7888, 1578, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7889, 1578, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7890, 1578, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7891, 1579, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7892, 1579, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(7893, 1579, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7894, 1579, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7895, 1579, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7896, 1580, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7897, 1580, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(7898, 1580, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7899, 1580, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7900, 1580, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7901, 1581, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7902, 1581, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(7903, 1581, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7904, 1581, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7905, 1581, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7906, 1582, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7907, 1582, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(7908, 1582, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7909, 1582, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7910, 1582, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7911, 1583, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7912, 1583, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(7913, 1583, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7914, 1583, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7915, 1583, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7916, 1584, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7917, 1584, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(7918, 1584, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7919, 1584, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7920, 1584, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7921, 1585, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7922, 1585, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(7923, 1585, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7924, 1585, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7925, 1585, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7926, 1586, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7927, 1586, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(7928, 1586, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7929, 1586, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7930, 1586, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7931, 1587, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7932, 1587, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(7933, 1587, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7934, 1587, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7935, 1587, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7936, 1588, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7937, 1588, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(7938, 1588, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7939, 1588, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7940, 1588, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7941, 1589, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7942, 1589, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(7943, 1589, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7944, 1589, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7945, 1589, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7946, 1590, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7947, 1590, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(7948, 1590, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7949, 1590, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7950, 1590, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7951, 1591, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7952, 1591, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(7953, 1591, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7954, 1591, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7955, 1591, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7956, 1592, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7957, 1592, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(7958, 1592, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7959, 1592, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7960, 1592, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7961, 1593, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7962, 1593, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(7963, 1593, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7964, 1593, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7965, 1593, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7966, 1594, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7967, 1594, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(7968, 1594, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7969, 1594, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7970, 1594, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7971, 1595, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7972, 1595, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(7973, 1595, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7974, 1595, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7975, 1595, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7976, 1596, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7977, 1596, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(7978, 1596, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7979, 1596, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7980, 1596, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7981, 1597, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7982, 1597, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(7983, 1597, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7984, 1597, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7985, 1597, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7986, 1598, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7987, 1598, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(7988, 1598, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7989, 1598, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7990, 1598, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7991, 1599, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7992, 1599, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(7993, 1599, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7994, 1599, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7995, 1599, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7996, 1600, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(7997, 1600, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(7998, 1600, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(7999, 1600, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8000, 1600, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8001, 1601, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8002, 1601, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8003, 1601, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8004, 1601, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8005, 1601, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8006, 1602, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8007, 1602, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8008, 1602, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8009, 1602, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8010, 1602, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8011, 1603, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8012, 1603, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8013, 1603, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8014, 1603, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8015, 1603, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8016, 1604, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8017, 1604, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8018, 1604, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8019, 1604, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8020, 1604, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8021, 1605, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8022, 1605, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8023, 1605, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8024, 1605, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8025, 1605, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8026, 1606, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8027, 1606, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8028, 1606, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8029, 1606, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8030, 1606, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8031, 1607, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8032, 1607, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8033, 1607, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8034, 1607, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8035, 1607, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8036, 1608, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8037, 1608, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8038, 1608, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8039, 1608, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8040, 1608, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8041, 1609, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8042, 1609, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8043, 1609, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8044, 1609, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8045, 1609, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8046, 1610, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8047, 1610, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8048, 1610, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8049, 1610, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8050, 1610, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8051, 1611, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8052, 1611, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8053, 1611, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8054, 1611, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8055, 1611, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8056, 1612, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8057, 1612, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8058, 1612, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8059, 1612, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8060, 1612, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8061, 1613, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8062, 1613, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8063, 1613, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8064, 1613, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8065, 1613, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8066, 1614, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8067, 1614, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8068, 1614, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8069, 1614, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8070, 1614, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8071, 1615, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8072, 1615, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8073, 1615, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8074, 1615, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8075, 1615, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8076, 1616, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8077, 1616, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8078, 1616, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8079, 1616, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8080, 1616, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8081, 1617, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8082, 1617, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8083, 1617, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8084, 1617, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8085, 1617, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8086, 1618, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8087, 1618, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8088, 1618, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8089, 1618, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8090, 1618, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8091, 1619, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8092, 1619, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8093, 1619, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8094, 1619, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8095, 1619, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8096, 1620, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8097, 1620, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8098, 1620, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8099, 1620, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8100, 1620, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8101, 1621, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8102, 1621, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8103, 1621, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8104, 1621, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8105, 1621, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8106, 1622, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8107, 1622, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8108, 1622, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8109, 1622, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8110, 1622, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8111, 1623, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8112, 1623, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8113, 1623, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8114, 1623, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8115, 1623, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8116, 1624, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8117, 1624, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8118, 1624, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8119, 1624, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8120, 1624, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8121, 1625, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8122, 1625, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8123, 1625, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8124, 1625, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8125, 1625, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8126, 1626, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8127, 1626, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8128, 1626, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8129, 1626, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8130, 1626, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8131, 1627, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8132, 1627, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8133, 1627, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8134, 1627, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8135, 1627, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8136, 1628, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8137, 1628, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8138, 1628, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8139, 1628, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8140, 1628, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8141, 1629, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8142, 1629, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8143, 1629, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8144, 1629, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8145, 1629, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8146, 1630, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8147, 1630, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8148, 1630, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8149, 1630, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8150, 1630, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8151, 1631, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8152, 1631, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8153, 1631, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8154, 1631, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8155, 1631, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8156, 1632, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8157, 1632, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8158, 1632, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8159, 1632, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8160, 1632, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8161, 1633, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8162, 1633, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8163, 1633, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8164, 1633, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8165, 1633, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8166, 1634, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8167, 1634, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8168, 1634, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8169, 1634, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8170, 1634, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8171, 1635, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8172, 1635, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8173, 1635, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8174, 1635, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8175, 1635, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8176, 1636, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8177, 1636, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8178, 1636, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8179, 1636, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8180, 1636, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8181, 1637, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8182, 1637, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8183, 1637, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8184, 1637, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8185, 1637, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8186, 1638, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8187, 1638, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8188, 1638, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8189, 1638, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8190, 1638, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8191, 1639, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8192, 1639, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8193, 1639, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8194, 1639, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8195, 1639, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8196, 1640, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8197, 1640, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8198, 1640, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8199, 1640, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8200, 1640, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8201, 1641, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8202, 1641, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8203, 1641, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8204, 1641, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8205, 1641, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8206, 1642, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8207, 1642, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8208, 1642, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8209, 1642, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8210, 1642, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8211, 1643, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8212, 1643, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8213, 1643, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8214, 1643, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8215, 1643, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8216, 1644, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8217, 1644, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8218, 1644, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8219, 1644, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8220, 1644, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8221, 1645, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8222, 1645, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8223, 1645, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8224, 1645, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8225, 1645, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8226, 1646, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8227, 1646, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8228, 1646, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8229, 1646, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8230, 1646, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8231, 1647, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8232, 1647, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8233, 1647, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8234, 1647, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8235, 1647, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8236, 1648, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8237, 1648, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8238, 1648, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8239, 1648, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8240, 1648, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8241, 1649, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8242, 1649, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8243, 1649, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8244, 1649, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8245, 1649, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8246, 1650, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8247, 1650, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8248, 1650, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8249, 1650, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8250, 1650, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8251, 1651, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8252, 1651, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8253, 1651, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8254, 1651, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8255, 1651, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8256, 1652, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8257, 1652, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8258, 1652, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8259, 1652, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8260, 1652, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8261, 1653, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8262, 1653, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8263, 1653, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8264, 1653, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8265, 1653, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8266, 1654, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8267, 1654, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8268, 1654, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8269, 1654, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8270, 1654, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8271, 1655, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8272, 1655, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8273, 1655, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8274, 1655, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8275, 1655, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8276, 1656, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8277, 1656, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8278, 1656, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8279, 1656, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8280, 1656, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8281, 1657, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8282, 1657, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8283, 1657, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8284, 1657, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8285, 1657, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8286, 1658, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8287, 1658, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8288, 1658, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8289, 1658, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8290, 1658, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8291, 1659, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8292, 1659, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8293, 1659, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8294, 1659, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8295, 1659, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8296, 1660, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8297, 1660, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8298, 1660, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8299, 1660, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8300, 1660, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8301, 1661, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8302, 1661, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8303, 1661, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8304, 1661, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8305, 1661, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8306, 1662, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8307, 1662, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8308, 1662, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8309, 1662, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8310, 1662, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8311, 1663, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8312, 1663, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8313, 1663, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8314, 1663, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8315, 1663, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8316, 1664, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8317, 1664, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8318, 1664, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8319, 1664, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8320, 1664, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8321, 1665, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8322, 1665, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8323, 1665, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8324, 1665, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8325, 1665, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8326, 1666, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8327, 1666, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8328, 1666, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8329, 1666, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8330, 1666, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8331, 1667, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8332, 1667, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8333, 1667, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8334, 1667, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8335, 1667, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8336, 1668, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8337, 1668, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8338, 1668, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8339, 1668, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8340, 1668, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8341, 1669, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8342, 1669, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8343, 1669, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8344, 1669, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8345, 1669, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8346, 1670, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8347, 1670, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8348, 1670, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8349, 1670, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8350, 1670, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8351, 1671, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8352, 1671, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8353, 1671, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8354, 1671, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8355, 1671, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8356, 1672, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8357, 1672, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8358, 1672, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8359, 1672, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8360, 1672, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8361, 1673, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8362, 1673, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8363, 1673, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8364, 1673, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8365, 1673, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8366, 1674, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8367, 1674, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8368, 1674, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8369, 1674, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8370, 1674, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8371, 1675, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8372, 1675, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8373, 1675, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8374, 1675, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8375, 1675, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8376, 1676, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8377, 1676, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8378, 1676, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8379, 1676, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8380, 1676, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8381, 1677, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8382, 1677, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8383, 1677, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8384, 1677, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8385, 1677, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8386, 1678, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8387, 1678, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8388, 1678, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8389, 1678, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8390, 1678, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8391, 1679, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8392, 1679, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8393, 1679, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8394, 1679, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8395, 1679, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8396, 1680, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8397, 1680, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8398, 1680, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8399, 1680, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8400, 1680, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8401, 1681, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8402, 1681, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8403, 1681, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8404, 1681, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8405, 1681, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8406, 1682, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8407, 1682, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8408, 1682, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8409, 1682, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8410, 1682, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8411, 1683, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8412, 1683, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8413, 1683, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8414, 1683, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8415, 1683, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8416, 1684, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8417, 1684, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8418, 1684, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8419, 1684, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8420, 1684, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8421, 1685, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8422, 1685, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8423, 1685, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8424, 1685, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8425, 1685, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8426, 1686, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8427, 1686, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8428, 1686, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8429, 1686, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8430, 1686, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8431, 1687, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8432, 1687, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8433, 1687, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8434, 1687, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8435, 1687, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8436, 1688, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8437, 1688, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8438, 1688, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8439, 1688, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8440, 1688, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8441, 1689, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8442, 1689, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8443, 1689, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8444, 1689, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8445, 1689, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8446, 1690, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8447, 1690, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8448, 1690, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8449, 1690, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8450, 1690, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8451, 1691, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8452, 1691, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8453, 1691, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8454, 1691, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8455, 1691, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8456, 1692, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8457, 1692, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8458, 1692, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8459, 1692, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8460, 1692, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8461, 1693, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8462, 1693, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8463, 1693, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8464, 1693, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8465, 1693, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8466, 1694, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8467, 1694, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8468, 1694, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8469, 1694, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8470, 1694, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8471, 1695, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8472, 1695, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8473, 1695, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8474, 1695, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8475, 1695, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8476, 1696, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8477, 1696, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8478, 1696, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8479, 1696, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8480, 1696, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8481, 1697, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8482, 1697, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8483, 1697, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8484, 1697, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8485, 1697, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8486, 1698, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8487, 1698, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8488, 1698, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8489, 1698, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8490, 1698, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8491, 1699, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8492, 1699, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8493, 1699, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8494, 1699, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8495, 1699, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8496, 1700, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8497, 1700, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8498, 1700, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8499, 1700, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8500, 1700, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8501, 1701, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8502, 1701, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8503, 1701, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8504, 1701, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8505, 1701, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8506, 1702, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8507, 1702, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8508, 1702, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8509, 1702, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8510, 1702, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8511, 1703, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8512, 1703, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8513, 1703, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8514, 1703, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8515, 1703, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8516, 1704, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8517, 1704, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8518, 1704, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8519, 1704, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8520, 1704, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8521, 1705, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8522, 1705, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8523, 1705, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8524, 1705, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8525, 1705, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8526, 1706, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8527, 1706, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8528, 1706, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8529, 1706, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8530, 1706, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8531, 1707, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8532, 1707, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8533, 1707, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8534, 1707, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8535, 1707, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8536, 1708, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8537, 1708, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8538, 1708, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8539, 1708, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8540, 1708, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8541, 1709, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8542, 1709, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8543, 1709, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8544, 1709, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8545, 1709, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8546, 1710, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8547, 1710, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8548, 1710, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8549, 1710, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8550, 1710, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8551, 1711, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8552, 1711, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8553, 1711, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8554, 1711, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8555, 1711, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8556, 1712, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8557, 1712, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8558, 1712, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8559, 1712, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8560, 1712, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8561, 1713, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8562, 1713, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8563, 1713, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8564, 1713, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8565, 1713, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8566, 1714, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8567, 1714, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8568, 1714, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8569, 1714, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8570, 1714, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8571, 1715, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8572, 1715, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8573, 1715, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8574, 1715, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8575, 1715, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8576, 1716, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8577, 1716, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8578, 1716, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8579, 1716, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8580, 1716, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8581, 1717, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8582, 1717, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8583, 1717, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8584, 1717, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8585, 1717, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8586, 1718, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8587, 1718, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8588, 1718, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8589, 1718, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8590, 1718, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8591, 1719, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8592, 1719, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8593, 1719, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8594, 1719, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8595, 1719, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8596, 1720, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8597, 1720, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8598, 1720, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8599, 1720, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8600, 1720, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8601, 1721, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8602, 1721, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8603, 1721, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8604, 1721, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8605, 1721, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8606, 1722, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8607, 1722, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8608, 1722, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8609, 1722, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8610, 1722, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8611, 1723, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8612, 1723, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8613, 1723, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8614, 1723, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8615, 1723, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8616, 1724, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8617, 1724, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8618, 1724, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8619, 1724, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8620, 1724, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8621, 1725, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8622, 1725, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8623, 1725, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8624, 1725, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8625, 1725, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8626, 1726, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8627, 1726, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8628, 1726, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8629, 1726, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8630, 1726, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8631, 1727, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8632, 1727, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8633, 1727, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8634, 1727, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8635, 1727, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8636, 1728, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8637, 1728, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8638, 1728, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8639, 1728, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8640, 1728, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8641, 1729, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8642, 1729, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8643, 1729, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8644, 1729, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8645, 1729, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8646, 1730, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8647, 1730, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8648, 1730, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8649, 1730, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8650, 1730, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8651, 1731, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8652, 1731, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8653, 1731, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8654, 1731, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8655, 1731, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8656, 1732, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8657, 1732, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8658, 1732, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8659, 1732, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8660, 1732, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8661, 1733, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8662, 1733, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8663, 1733, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8664, 1733, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8665, 1733, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8666, 1734, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8667, 1734, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8668, 1734, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8669, 1734, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8670, 1734, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8671, 1735, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8672, 1735, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8673, 1735, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8674, 1735, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8675, 1735, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8676, 1736, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8677, 1736, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8678, 1736, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8679, 1736, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8680, 1736, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8681, 1737, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8682, 1737, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8683, 1737, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8684, 1737, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8685, 1737, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8686, 1738, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8687, 1738, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8688, 1738, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8689, 1738, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8690, 1738, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8691, 1739, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8692, 1739, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8693, 1739, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8694, 1739, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8695, 1739, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8696, 1740, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8697, 1740, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8698, 1740, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8699, 1740, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8700, 1740, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8701, 1741, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8702, 1741, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8703, 1741, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8704, 1741, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8705, 1741, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8706, 1742, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8707, 1742, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8708, 1742, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8709, 1742, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8710, 1742, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8711, 1743, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8712, 1743, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8713, 1743, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8714, 1743, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8715, 1743, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8716, 1744, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8717, 1744, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8718, 1744, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8719, 1744, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8720, 1744, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8721, 1745, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8722, 1745, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8723, 1745, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8724, 1745, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8725, 1745, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8726, 1746, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8727, 1746, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8728, 1746, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8729, 1746, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8730, 1746, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8731, 1747, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8732, 1747, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8733, 1747, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8734, 1747, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8735, 1747, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8736, 1748, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8737, 1748, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8738, 1748, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8739, 1748, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8740, 1748, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8741, 1749, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8742, 1749, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8743, 1749, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8744, 1749, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8745, 1749, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8746, 1750, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8747, 1750, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8748, 1750, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8749, 1750, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8750, 1750, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8751, 1751, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8752, 1751, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8753, 1751, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8754, 1751, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8755, 1751, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8756, 1752, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8757, 1752, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8758, 1752, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8759, 1752, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8760, 1752, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8761, 1753, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8762, 1753, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8763, 1753, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8764, 1753, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8765, 1753, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8766, 1754, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8767, 1754, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8768, 1754, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8769, 1754, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8770, 1754, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8771, 1755, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8772, 1755, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8773, 1755, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8774, 1755, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8775, 1755, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8776, 1756, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8777, 1756, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8778, 1756, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8779, 1756, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8780, 1756, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8781, 1757, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8782, 1757, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8783, 1757, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8784, 1757, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8785, 1757, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8786, 1758, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8787, 1758, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8788, 1758, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8789, 1758, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8790, 1758, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8791, 1759, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8792, 1759, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8793, 1759, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8794, 1759, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8795, 1759, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8796, 1760, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8797, 1760, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8798, 1760, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8799, 1760, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8800, 1760, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8801, 1761, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8802, 1761, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8803, 1761, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8804, 1761, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8805, 1761, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8806, 1762, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8807, 1762, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8808, 1762, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8809, 1762, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8810, 1762, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8811, 1763, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8812, 1763, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8813, 1763, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8814, 1763, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8815, 1763, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8816, 1764, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8817, 1764, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8818, 1764, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8819, 1764, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8820, 1764, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8821, 1765, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8822, 1765, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8823, 1765, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8824, 1765, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8825, 1765, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8826, 1766, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8827, 1766, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8828, 1766, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8829, 1766, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8830, 1766, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8831, 1767, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8832, 1767, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8833, 1767, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8834, 1767, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8835, 1767, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8836, 1768, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8837, 1768, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8838, 1768, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8839, 1768, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8840, 1768, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8841, 1769, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8842, 1769, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8843, 1769, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8844, 1769, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8845, 1769, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8846, 1770, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8847, 1770, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8848, 1770, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8849, 1770, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8850, 1770, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8851, 1771, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8852, 1771, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8853, 1771, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8854, 1771, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8855, 1771, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8856, 1772, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8857, 1772, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8858, 1772, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8859, 1772, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8860, 1772, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8861, 1773, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8862, 1773, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8863, 1773, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8864, 1773, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8865, 1773, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8866, 1774, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8867, 1774, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8868, 1774, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8869, 1774, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8870, 1774, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8871, 1775, 'Selección múltiple', '¿Cuál es la traducción correcta?', 10, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL),
-(8872, 1775, 'Ordenar palabras', 'Arma la frase correctamente', 15, 'Normal', CAST('2026-01-01' AS DATETIME), NULL),
-(8873, 1775, 'Escucha', 'Escucha y completa', 20, 'Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8874, 1775, 'Pronunciación', 'Practica la pronunciación', 25, 'Muy Difícil', CAST('2026-01-01' AS DATETIME), NULL),
-(8875, 1775, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL);
-GO
+(7750, 1550, 'Emparejar', 'Empareja las palabras con sus significados', 30, 'Fácil', CAST('2026-01-01' AS DATETIME), NULL);
 
 
--- PRODUCTO (30 productos)
 
--- GRUPO_COMPETENCIA (30 grupos competitivos)
+-- se cambio descripcion de ejericico y error en nombre de dificultad en ejericios de 30 puntos
 
--- VARIACION_PRECIO_PLAN (30 variaciones)
+UPDATE ejercicio
+SET dificultad = 'Extremo'
+WHERE dificultad = 'Fácil' AND xp_otorgado = 30;
 
+----cambios a ejercicio
 
--- VARIACION_PRECIO_PRODUCTO (30 variaciones de precio)
-INSERT INTO variacion_precio_producto (id_variacion_precio_producto, id_producto, precio, fecha_inicio, fecha_fin) VALUES
-(1, 1, 0.99, CAST('2026-01-01' AS DATETIME), NULL),
-(2, 2, 4.99, CAST('2026-01-01' AS DATETIME), NULL),
-(3, 3, 2.99, CAST('2026-01-01' AS DATETIME), NULL),
-(4, 4, 4.99, CAST('2026-01-01' AS DATETIME), NULL),
-(5, 5, 1.99, CAST('2026-01-01' AS DATETIME), NULL),
-(6, 6, 7.99, CAST('2026-01-01' AS DATETIME), NULL),
-(7, 7, 1.99, CAST('2026-01-01' AS DATETIME), NULL),
-(8, 8, 4.99, CAST('2026-01-01' AS DATETIME), NULL),
-(9, 9, 0.99, CAST('2026-01-01' AS DATETIME), NULL),
-(10, 10, 3.99, CAST('2026-01-01' AS DATETIME), NULL),
-(11, 11, 12.99, CAST('2026-01-01' AS DATETIME), NULL),
-(12, 12, 2.99, CAST('2026-01-05' AS DATETIME), NULL),
-(13, 13, 1.99, CAST('2026-01-05' AS DATETIME), NULL),
-(14, 14, 1.99, CAST('2026-01-05' AS DATETIME), NULL),
-(15, 15, 1.99, CAST('2026-01-10' AS DATETIME), NULL),
-(16, 16, 1.99, CAST('2026-01-10' AS DATETIME), NULL),
-(17, 17, 2.99, CAST('2026-01-10' AS DATETIME), NULL),
-(18, 18, 3.99, CAST('2026-01-10' AS DATETIME), NULL),
-(19, 19, 0.99, CAST('2026-01-15' AS DATETIME), NULL),
-(20, 20, 4.99, CAST('2026-01-15' AS DATETIME), NULL),
-(21, 21, 9.99, CAST('2026-02-01' AS DATETIME), NULL),
-(22, 22, 14.99, CAST('2026-02-01' AS DATETIME), NULL),
-(23, 23, 3.99, CAST('2026-02-05' AS DATETIME), NULL),
-(24, 24, 2.99, CAST('2026-02-05' AS DATETIME), NULL),
-(25, 25, 1.99, CAST('2026-02-10' AS DATETIME), NULL),
-(26, 26, 19.99, CAST('2026-02-10' AS DATETIME), NULL),
-(27, 27, 4.99, CAST('2026-02-15' AS DATETIME), NULL),
-(28, 28, 5.99, CAST('2026-02-20' AS DATETIME), NULL),
-(29, 29, 3.99, CAST('2026-03-01' AS DATETIME), NULL),
-(30, 30, 2.99, CAST('2026-03-05' AS DATETIME), NULL);
-GO
-
--- ===================================
--- TABLAS TRANSACCIONALES (1000+ registros)
--- ===================================
-
--- SUSCRIPCION (1000+ suscripciones)
--- Insertaremos 1050 registros de suscripciones
-DECLARE @i INT = 1
-DECLARE @user_id INT
-DECLARE @plan_id INT
-DECLARE @fecha_inicio DATETIME
-DECLARE @fecha_fin DATETIME
-DECLARE @precio DECIMAL(10,2)
-
-WHILE @i <= 1050
-BEGIN
-  SET @user_id = ((@i - 1) % 30) + 1
-  SET @plan_id = ((@i - 1) % 29) + 1
-  SET @fecha_inicio = DATEADD(DAY, -(@i % 90), CAST('2026-04-15' AS DATETIME))
-  SET @fecha_fin = DATEADD(DAY, CASE WHEN @plan_id IN (1) THEN 0 ELSE IIF(@plan_id > 16 AND @plan_id < 22, 7, IIF(@plan_id > 21, 2, 30)) END, @fecha_inicio)
-  SET @precio = CASE 
-    WHEN @plan_id = 1 THEN 0.00
-    WHEN @plan_id = 2 THEN 9.99
-    WHEN @plan_id = 3 THEN 24.99
-    WHEN @plan_id IN (4,5,6,7) THEN 9.99 + (@plan_id * 5)
-    ELSE 19.99
-  END
-  
-  INSERT INTO suscripcion (id_suscripcion, id_usuario, id_plan, fecha_inicio, fecha_fin, precio)
-  VALUES (@i, @user_id, @plan_id, @fecha_inicio, @fecha_fin, @precio)
-  
-  SET @i = @i + 1
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1 THEN '¿Cómo se dice hola en inglés? a) Hello b) Bye c) Car d) Sun'
+    WHEN 2 THEN 'Ordena: is name my John'
+    WHEN 3 THEN 'Escucha el audio y selecciona el saludo correcto'
+    WHEN 4 THEN 'Pronuncia la palabra Hello'
+    WHEN 5 THEN 'Relaciona los saludos con su significado en español'
+    WHEN 6 THEN '¿Cuál es el verbo ser o estar? a) to be b) to play c) to run d) to eat'
+    WHEN 7 THEN 'Ordena: playing am I now'
+    WHEN 8 THEN 'Escucha y escribe el color mencionado en inglés'
+    WHEN 9 THEN 'Pronuncia la frase I am happy'
+    WHEN 10 THEN 'Empareja los animales con su nombre en inglés'
 END
-GO
+WHERE id_ejercicio BETWEEN 1 AND 10;
 
--- FACTURA (1050 facturas)
-DECLARE @i INT = 1
-WHILE @i <= 1050
-BEGIN
-  INSERT INTO factura (id_factura, id_usuario, fecha_emision, fecha_vencimiento, total)
-  VALUES (
-    @i,
-    ((@i - 1) % 30) + 1,
-    DATEADD(DAY, -(@i % 100), CAST('2026-04-15' AS DATETIME)),
-    DATEADD(DAY, 30, DATEADD(DAY, -(@i % 100), CAST('2026-04-15' AS DATETIME))),
-    ROUND(RAND() * 200 + 5, 2)
-  )
-  SET @i = @i + 1
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 11 THEN 'Pasado de go: a) went b) goed c) gone d) going'
+    WHEN 12 THEN 'Ordena: yesterday to school went she'
+    WHEN 13 THEN 'Escucha la conversación y responde adónde fueron'
+    WHEN 14 THEN 'Lee en voz alta: She bought a new house'
+    WHEN 15 THEN 'Relaciona los verbos irregulares con su forma en pasado'
+    WHEN 16 THEN 'If it rains, I ___ at home. a) will stay b) would stay c) stayed d) stay'
+    WHEN 17 THEN 'Ordena: have waiting been they hours two for'
+    WHEN 18 THEN 'Escucha el noticiero e identifica el problema principal'
+    WHEN 19 THEN 'Pronuncia el párrafo sobre el cambio climático'
+    WHEN 20 THEN 'Empareja los phrasal verbs con su definición'
 END
-GO
+WHERE id_ejercicio BETWEEN 11 AND 20;
 
--- FACTURA_DETALLE (1050+ detalles)
-DECLARE @i INT = 1
-DECLARE @factura_id INT
-WHILE @i <= 1050
-BEGIN
-  SET @factura_id = (((@i - 1) % 3) + 1) + ((@i - 1) / 3) * 3
-  
-  INSERT INTO factura_detalle (id_factura_detalle, id_factura, id_suscripcion, id_producto, cantidad, precio_unitario)
-  VALUES (
-    @i,
-    CASE WHEN @i <= 500 THEN (@i - 1) / 2 + 1 ELSE @i - 500 END,
-    CASE WHEN @i % 2 = 1 THEN ((@i - 1) / 2) % 1050 + 1 ELSE NULL END,
-    CASE WHEN @i % 2 = 0 THEN ((@i - 1) / 2) % 30 + 1 ELSE NULL END,
-    IIF(@i % 2 = 0, FLOOR(RAND() * 5) + 1, 1),
-    ROUND(RAND() * 20 + 0.99, 2)
-  )
-  SET @i = @i + 1
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 21 THEN 'It is raining cats and ___. a) dogs b) birds c) mice d) frogs'
+    WHEN 22 THEN 'Ordena: nevertheless she persisted despite the hard challenges'
+    WHEN 23 THEN 'Escucha el debate y resume el argumento del experto'
+    WHEN 24 THEN 'Graba un discurso de un minuto sobre economía global'
+    WHEN 25 THEN 'Relaciona los modismos avanzados con su uso contextual'
+    WHEN 26 THEN '¿Cómo se dice sí en francés? a) Oui b) Non c) Merci d) Bonjour'
+    WHEN 27 THEN 'Ordena: m appelle je Pierre'
+    WHEN 28 THEN 'Escucha y escribe el número dictado'
+    WHEN 29 THEN 'Pronuncia correctamente Bonjour'
+    WHEN 30 THEN 'Relaciona los números del 1 al 5 en francés'
 END
-GO
+WHERE id_ejercicio BETWEEN 21 AND 30;
 
--- CURSO_POR_USUARIO (1050 progresiones)
-DECLARE @i INT = 1
-WHILE @i <= 1050
-BEGIN
-  INSERT INTO curso_por_usuario (id_curso_por_usuario, id_curso, id_usuario, progreso_porcentaje, xp_total, fecha_inicio, fecha_ultimo_progreso, fecha_fin)
-  VALUES (
-    @i,
-    ((@i - 1) % 30) + 1,
-    ((@i - 1) % 30) + 1,
-    ROUND(RAND() * 100, 2),
-    FLOOR(RAND() * 5000) + 100,
-    DATEADD(DAY, -(FLOOR(RAND() * 100)), CAST('2026-04-15' AS DATETIME)),
-    DATEADD(DAY, -(FLOOR(RAND() * 10)), CAST('2026-04-15' AS DATETIME)),
-    CASE WHEN RAND() > 0.7 THEN DATEADD(DAY, FLOOR(RAND() * 50), CAST('2026-04-15' AS DATETIME)) ELSE NULL END
-  )
-  SET @i = @i + 1
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 31 THEN 'Artículo femenino singular: a) La b) Le c) Les d) Un'
+    WHEN 32 THEN 'Ordena: une mange pomme elle'
+    WHEN 33 THEN 'Escucha el audio y selecciona el animal'
+    WHEN 34 THEN 'Pronuncia la frase Je suis etudiant'
+    WHEN 35 THEN 'Empareja los miembros de la familia'
+    WHEN 36 THEN 'Passe compose de manger: a) a mange b) mangeait c) mangera d) suis mange'
+    WHEN 37 THEN 'Ordena: cinema nous hier sommes alles au'
+    WHEN 38 THEN 'Escucha el diálogo y anota qué comieron'
+    WHEN 39 THEN 'Pronuncia: Nous avons visite Paris'
+    WHEN 40 THEN 'Relaciona los verbos con su participio pasado'
 END
-GO
+WHERE id_ejercicio BETWEEN 31 AND 40;
 
--- EJERCICIO_REALIZADO (1050+ ejercicios completados)
-DECLARE @i INT = 1
-WHILE @i <= 1050
-BEGIN
-  INSERT INTO ejercicio_realizado (id_ejercicio_realizado, id_curso_por_usuario, id_ejercicio, fecha, correcto, xp_ganado)
-  VALUES (
-    @i,
-    ((@i - 1) % 1050) + 1,
-    ((@i - 1) % 30) + 1,
-    DATEADD(MINUTE, -(FLOOR(RAND() * 10000)), CAST('2026-04-15' AS DATETIME)),
-    CASE WHEN RAND() > 0.2 THEN 1 ELSE 0 END,
-    FLOOR(RAND() * 50) + 10
-  )
-  SET @i = @i + 1
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 41 THEN 'Si j avais su, je ___: a) serais venu b) suis venu c) viendrais d) venais'
+    WHEN 42 THEN 'Ordena: depuis travaillent ils matins les tous ici'
+    WHEN 43 THEN 'Escucha la entrevista e identifica la profesión'
+    WHEN 44 THEN 'Pronuncia el texto sobre la cultura francesa'
+    WHEN 45 THEN 'Empareja los conectores lógicos con su función'
+    WHEN 46 THEN 'Sinónimo de ephemere: a) passager b) durable c) constant d) eternel'
+    WHEN 47 THEN 'Ordena: nonobstant difficultes les projet le abouti a'
+    WHEN 48 THEN 'Escucha el discurso político y anota la postura'
+    WHEN 49 THEN 'Da un análisis oral sobre la Revolución Francesa'
+    WHEN 50 THEN 'Relaciona expresiones coloquiales francesas'
 END
-GO
+WHERE id_ejercicio BETWEEN 41 AND 50;
 
--- GRUPO_COMPETENCIA_POR_USUARIO (1050+ participaciones)
-DECLARE @i INT = 1
-DECLARE @grupo_idx INT
-DECLARE @user_idx INT
-WHILE @i <= 1050
-BEGIN
-  SET @grupo_idx = ((@i - 1) % 30) + 1
-  SET @user_idx = ((@i - 1) % 30) + 1
-  
-  INSERT INTO grupo_competencia_por_usuario (id_grupo_competencia_por_usuario, id_usuario, id_grupo_competencia, xp_acumulado_grupo, puesto, fecha_alta, fecha_baja)
-  VALUES (
-    @i,
-    @user_idx,
-    @grupo_idx,
-    FLOOR(RAND() * 10000) + 1000,
-    FLOOR(RAND() * 50) + 1,
-    DATEADD(DAY, -(FLOOR(RAND() * 30)), CAST('2026-04-15' AS DATETIME)),
-    NULL
-  )
-  SET @i = @i + 1
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 51 THEN '¿Cómo se dice hola en italiano? a) Ciao b) Grazie c) Prego d) Si'
+    WHEN 52 THEN 'Ordena: chiamo mi Marco io'
+    WHEN 53 THEN 'Escucha el saludo y selecciona la opción correcta'
+    WHEN 54 THEN 'Pronuncia la palabra Ciao'
+    WHEN 55 THEN 'Relaciona los días de la semana en italiano'
+    WHEN 56 THEN 'Elige el artículo: ___ ragazzo. a) il b) lo c) la d) i'
+    WHEN 57 THEN 'Ordena: mangia pizza lui una'
+    WHEN 58 THEN 'Escucha y escribe el número de teléfono'
+    WHEN 59 THEN 'Pronuncia la frase Io sono di Roma'
+    WHEN 60 THEN 'Empareja los alimentos con su nombre en italiano'
 END
-GO
+WHERE id_ejercicio BETWEEN 51 AND 60;
 
--- Checks
--- Precio > 0
-ALTER TABLE suscripcion
-ADD CONSTRAINT chk_suscripcion_precio
-CHECK (precio > 0);
-GO
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 61 THEN 'Pasado de fare: a) fatto b) facevo c) fara d) feci'
+    WHEN 62 THEN 'Ordena: ieri andato sono al cinema io'
+    WHEN 63 THEN 'Escucha el diálogo y marca adónde fueron'
+    WHEN 64 THEN 'Lee en voz alta: Ho comprato un libro nuovo'
+    WHEN 65 THEN 'Relaciona los verbos irregulares en participio'
+    WHEN 66 THEN 'Se io potessi, ___: a) andrei b) vado c) andavo d) andro'
+    WHEN 67 THEN 'Ordena: lavorando stanno da ore tre loro'
+    WHEN 68 THEN 'Escucha el reporte meteorológico e identifica el clima'
+    WHEN 69 THEN 'Pronuncia el texto sobre la historia de Venecia'
+    WHEN 70 THEN 'Empareja las preposiciones articuladas'
+END
+WHERE id_ejercicio BETWEEN 61 AND 70;
 
-ALTER TABLE variacion_precio_plan
-ADD CONSTRAINT chk_variacion_precio_plan_precio
-CHECK (precio > 0);
-GO
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 71 THEN 'Sinónimo de veloce: a) rapido b) lento c) fermo d) piano'
+    WHEN 72 THEN 'Ordena: sebbene piovesse siamo usciti noi lo stesso'
+    WHEN 73 THEN 'Escucha la entrevista y resume la idea principal'
+    WHEN 74 THEN 'Graba un discurso sobre el Renacimiento italiano'
+    WHEN 75 THEN 'Relaciona los modismos italianos con su significado'
+    WHEN 76 THEN '¿Cómo se dice gracias en portugués? a) Obrigado b) Ciao c) Ola d) Bom'
+    WHEN 77 THEN 'Ordena: chamo me eu Joao'
+    WHEN 78 THEN 'Escucha el audio y selecciona el saludo correcto'
+    WHEN 79 THEN 'Pronuncia correctamente Bom dia'
+    WHEN 80 THEN 'Relaciona los números básicos en portugués'
+END
+WHERE id_ejercicio BETWEEN 71 AND 80;
 
-ALTER TABLE variacion_precio_producto
-ADD CONSTRAINT chk_variacion_precio_producto_precio
-CHECK (precio > 0);
-GO
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 81 THEN 'Artículo definido masculino: a) O b) A c) Os d) As'
+    WHEN 82 THEN 'Ordena: ela come uma maca verde'
+    WHEN 83 THEN 'Escucha y anota la hora mencionada'
+    WHEN 84 THEN 'Pronuncia: Eu moro no Brasil'
+    WHEN 85 THEN 'Empareja los miembros de la familia en portugués'
+    WHEN 86 THEN 'Pasado de falar: a) falei b) falo c) falava d) falarei'
+    WHEN 87 THEN 'Ordena: ontem fomos nos a praia'
+    WHEN 88 THEN 'Escucha la conversación y responde qué compraron'
+    WHEN 89 THEN 'Lee en voz alta: Eu viajei para Lisboa'
+    WHEN 90 THEN 'Relaciona los verbos en preterito perfeito'
+END
+WHERE id_ejercicio BETWEEN 81 AND 90;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 91 THEN 'Se eu tivesse dinheiro, ___: a) compraria b) compro c) comprarei d) comprava'
+    WHEN 92 THEN 'Ordena: trabalhando estao eles desde cedo'
+    WHEN 93 THEN 'Escucha el reportaje y marca la ciudad mencionada'
+    WHEN 94 THEN 'Pronuncia el párrafo sobre el Amazonas'
+    WHEN 95 THEN 'Empareja las conjunciones portuguesas'
+    WHEN 96 THEN 'Sinónimo de garoto: a) menino b) homem c) idoso d) mulher'
+    WHEN 97 THEN 'Ordena: embora chovesse fomos ao jogo nos'
+    WHEN 98 THEN 'Escucha el debate y anota la conclusión'
+    WHEN 99 THEN 'Da un discurso sobre la economía de Brasil'
+    WHEN 100 THEN 'Relaciona expresiones brasileñas coloquiales'
+END
+WHERE id_ejercicio BETWEEN 91 AND 100;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 101 THEN '¿Cuántas casillas tiene el tablero? a) 64 b) 32 c) 100 d) 50'
+    WHEN 102 THEN 'Ordena: peones ocho bando cada tiene'
+    WHEN 103 THEN 'Escucha y nombra la pieza mencionada'
+    WHEN 104 THEN 'Di en voz alta: Jaque al rey'
+    WHEN 105 THEN 'Relaciona la pieza con su valor en puntos'
+    WHEN 106 THEN '¿Cómo mueve el caballo? a) En L b) Diagonal c) Recto d) Un paso'
+    WHEN 107 THEN 'Ordena: alfil el casillas controla diagonales'
+    WHEN 108 THEN 'Escucha la jugada y mueve la pieza en el tablero virtual'
+    WHEN 109 THEN 'Dicta la jugada: Caballo f3'
+    WHEN 110 THEN 'Empareja el concepto básico con su descripción'
+END
+WHERE id_ejercicio BETWEEN 101 AND 110;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 111 THEN '¿Qué es una clavada? a) Pieza inmovilizada b) Jaque c) Cambio d) Mate'
+    WHEN 112 THEN 'Ordena: torre la sacrifica para abrir columna la'
+    WHEN 113 THEN 'Escucha el análisis e identifica la amenaza táctica'
+    WHEN 114 THEN 'Narra en voz alta la variante principal'
+    WHEN 115 THEN 'Relaciona los temas tácticos con su ejemplo'
+    WHEN 116 THEN 'En un final de rey y peón, ¿qué es la oposición? a) Enfrentar reyes b) Coronar c) Jaque d) Enrocar'
+    WHEN 117 THEN 'Ordena: debilidad peon de aislado final un en'
+    WHEN 118 THEN 'Escucha la lección magistral y anota la jugada clave'
+    WHEN 119 THEN 'Explica el concepto de profilaxis en voz alta'
+    WHEN 120 THEN 'Empareja las aperturas con su código ECO'
+END
+WHERE id_ejercicio BETWEEN 111 AND 120;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 121 THEN '¿Qué caracteriza a la Defensa Siciliana? a) c5 b) e5 c) d5 d) f5'
+    WHEN 122 THEN 'Ordena: compensacion dinamica material sacrificio de a cambio'
+    WHEN 123 THEN 'Sigue el comentario a ciegas y halla el mate en tres'
+    WHEN 124 THEN 'Analiza oralmente la partida Kasparov vs Topalov'
+    WHEN 125 THEN 'Relaciona estructuras de peones típicas con sus planes'
+    WHEN 126 THEN '¿Cómo se dice gracias en alemán? a) Danke b) Bitte c) Hallo d) Ja'
+    WHEN 127 THEN 'Ordena: heisse ich Anna'
+    WHEN 128 THEN 'Escucha el audio y selecciona la palabra correcta'
+    WHEN 129 THEN 'Pronuncia correctamente Hallo'
+    WHEN 130 THEN 'Relaciona los números del 1 al 10 en alemán'
+END
+WHERE id_ejercicio BETWEEN 121 AND 130;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 131 THEN 'Artículo para mujer: a) die b) der c) das d) den'
+    WHEN 132 THEN 'Ordena: isst er einen Apfel'
+    WHEN 133 THEN 'Escucha y escribe el color mencionado en alemán'
+    WHEN 134 THEN 'Pronuncia la frase Ich komme aus Berlin'
+    WHEN 135 THEN 'Empareja los días de la semana en alemán'
+    WHEN 136 THEN 'Participio de machen: a) gemacht b) mache c) machte d) machst'
+    WHEN 137 THEN 'Ordena: bin ich gestern ins Kino gegangen'
+    WHEN 138 THEN 'Escucha el diálogo y marca el destino del viaje'
+    WHEN 139 THEN 'Lee en voz alta: Ich habe ein Auto gekauft'
+    WHEN 140 THEN 'Relaciona los verbos con su participio perfecto'
+END
+WHERE id_ejercicio BETWEEN 131 AND 140;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 141 THEN 'Wenn ich Zeit hatte, ___ ich: a) kame b) komme c) kam d) kommen'
+    WHEN 142 THEN 'Ordena: arbeiten sie schon seit drei Stunden'
+    WHEN 143 THEN 'Escucha la noticia y selecciona el tema principal'
+    WHEN 144 THEN 'Pronuncia el texto sobre la Selva Negra'
+    WHEN 145 THEN 'Empareja las preposiciones con acusativo'
+    WHEN 146 THEN 'Sinónimo de schnell: a) rasch b) langsam c) teuer d) billig'
+    WHEN 147 THEN 'Ordena: obwohl es regnete sind wir spazieren gegangen'
+    WHEN 148 THEN 'Escucha el debate económico y anota la conclusión'
+    WHEN 149 THEN 'Da un breve discurso en alemán sobre la Unión Europea'
+    WHEN 150 THEN 'Relaciona los modismos alemanes con su significado'
+END
+WHERE id_ejercicio BETWEEN 141 AND 150;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 151 THEN '¿Cuánto es 5 + 3? a) 8 b) 7 c) 9 d) 6'
+    WHEN 152 THEN 'Ordena: suma la partes dos tiene'
+    WHEN 153 THEN 'Escucha el número y escríbelo en cifras'
+    WHEN 154 THEN 'Lee la operación en voz alta: 10 menos 4'
+    WHEN 155 THEN 'Relaciona los símbolos matemáticos con su nombre'
+    WHEN 156 THEN '¿Cuánto es 8 x 7? a) 56 b) 54 c) 64 d) 49'
+    WHEN 157 THEN 'Ordena: factores el orden altera los producto no el de'
+    WHEN 158 THEN 'Escucha la fracción y represéntala gráficamente'
+    WHEN 159 THEN 'Lee en voz alta la expresión: tres cuartos'
+    WHEN 160 THEN 'Empareja las figuras geométricas con sus lados'
+END
+WHERE id_ejercicio BETWEEN 151 AND 160;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 161 THEN 'Resuelve: 2x = 10. a) x=5 b) x=2 c) x=10 d) x=8'
+    WHEN 162 THEN 'Ordena: variable despejar la para ecuacion resolver la'
+    WHEN 163 THEN 'Escucha el problema de álgebra y escribe la ecuación'
+    WHEN 164 THEN 'Lee en voz alta: x al cuadrado mas y al cuadrado'
+    WHEN 165 THEN 'Relaciona las fórmulas de área con sus figuras'
+    WHEN 166 THEN 'Derivada de x al cuadrado: a) 2x b) x c) 2 d) 3x'
+    WHEN 167 THEN 'Ordena: recta la de pendiente funcion a corresponde la'
+    WHEN 168 THEN 'Escucha el límite e identifica hacia dónde tiende'
+    WHEN 169 THEN 'Explica el teorema de Pitágoras en voz alta'
+    WHEN 170 THEN 'Empareja las funciones trigonométricas con sus inversas'
+END
+WHERE id_ejercicio BETWEEN 161 AND 170;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 171 THEN 'Integral de e^x: a) e^x + C b) x c) ln(x) d) 1/x'
+    WHEN 172 THEN 'Ordena: partes por integracion metodo un avanzado es'
+    WHEN 173 THEN 'Escucha el análisis de la función y marca los extremos'
+    WHEN 174 THEN 'Demuestra oralmente el límite fundamental algebraico'
+    WHEN 175 THEN 'Relaciona las ecuaciones diferenciales con su tipo'
+    WHEN 176 THEN '¿Cuántas líneas tiene un pentagrama? a) 5 b) 4 c) 6 d) 7'
+    WHEN 177 THEN 'Ordena: notas siete musicales las son'
+    WHEN 178 THEN 'Escucha el sonido y determina si es grave o agudo'
+    WHEN 179 THEN 'Canta la nota Do central'
+    WHEN 180 THEN 'Relaciona las figuras musicales con su duración'
+END
+WHERE id_ejercicio BETWEEN 171 AND 180;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 181 THEN 'Clave para notas agudas: a) Sol b) Fa c) Do d) Re'
+    WHEN 182 THEN 'Ordena: sostenido el semitono sube un nota la'
+    WHEN 183 THEN 'Escucha la melodía y completa la nota faltante'
+    WHEN 184 THEN 'Solfea la escala de Do mayor ascendente'
+    WHEN 185 THEN 'Empareja las alteraciones con su efecto en el tono'
+    WHEN 186 THEN 'Intervalo entre Do y Mi: a) Tercera b) Quinta c) Segunda d) Cuarta'
+    WHEN 187 THEN 'Ordena: mayor acorde un fundamental tercera quinta tiene'
+    WHEN 188 THEN 'Escucha el acorde e identifica si es mayor o menor'
+    WHEN 189 THEN 'Canta el arpegio de Sol mayor'
+    WHEN 190 THEN 'Relaciona los grados de la escala con su nombre técnico'
+END
+WHERE id_ejercicio BETWEEN 181 AND 190;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 191 THEN 'Relativa menor de Do Mayor: a) La menor b) Mi menor c) Re menor d) Fa'
+    WHEN 192 THEN 'Ordena: modulacion la tono de cambio el es'
+    WHEN 193 THEN 'Escucha la progresión armónica y anota los grados'
+    WHEN 194 THEN 'Interpreta rítmicamente el compás de amalgama'
+    WHEN 195 THEN 'Empareja los modos griegos con su estructura'
+    WHEN 196 THEN '¿Qué caracteriza al contrapunto? a) Voces independientes b) Ritmo c) Acordes d) Silencios'
+    WHEN 197 THEN 'Ordena: fuga la polifonica composicion compleja mas la es'
+    WHEN 198 THEN 'Escucha la obra sinfónica e identifica la forma musical'
+    WHEN 199 THEN 'Explica la serie dodecafónica en voz alta'
+    WHEN 200 THEN 'Relaciona los períodos musicales con sus compositores'
+END
+WHERE id_ejercicio BETWEEN 191 AND 200;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 201 THEN '¿Cómo se dice hola en ruso? a) Privet b) Da c) Net d) Spasibo'
+    WHEN 202 THEN 'Ordena: menya zovut Ivan'
+    WHEN 203 THEN 'Escucha el audio y selecciona la palabra rusa correcta'
+    WHEN 204 THEN 'Pronuncia correctamente Privet'
+    WHEN 205 THEN 'Relaciona las letras del alfabeto cirílico con su sonido'
+    WHEN 206 THEN '¿Qué significa Da? a) Sí b) No c) Gracias d) Por favor'
+    WHEN 207 THEN 'Ordena: ya chitayu knigu'
+    WHEN 208 THEN 'Escucha y escribe el color mencionado en ruso'
+    WHEN 209 THEN 'Pronuncia la frase Ya lyublyu tebya'
+    WHEN 210 THEN 'Empareja los sustantivos básicos en ruso'
+END
+WHERE id_ejercicio BETWEEN 201 AND 210;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 211 THEN 'Pasado masculino de hacer: a) delal b) delala c) delali d) delayu'
+    WHEN 212 THEN 'Ordena: vchera mi xodili v kino'
+    WHEN 213 THEN 'Escucha el diálogo y marca adónde fueron'
+    WHEN 214 THEN 'Lee en voz alta: Ya kupil novuyu mashinu'
+    WHEN 215 THEN 'Relaciona los casos gramaticales con su función'
+    WHEN 216 THEN 'Forma del verbo perfectivo: a) sdelat b) delat c) delayu d) delal'
+    WHEN 217 THEN 'Ordena: oni rabotayut zdes uzhe tri chasa'
+    WHEN 218 THEN 'Escucha la noticia e identifica el lugar mencionado'
+    WHEN 219 THEN 'Pronuncia el texto sobre la Plaza Roja'
+    WHEN 220 THEN 'Empareja los verbos de movimiento en ruso'
+END
+WHERE id_ejercicio BETWEEN 211 AND 220;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 221 THEN 'Sinónimo de bystro: a) skoro b) medlenno c) tiho d) gromko'
+    WHEN 222 THEN 'Ordena: nesmotrya na dozhd mi poshli gulyat'
+    WHEN 223 THEN 'Escucha la entrevista y resume el punto principal'
+    WHEN 224 THEN 'Da un breve discurso sobre la literatura rusa'
+    WHEN 225 THEN 'Relaciona los modismos rusos con su significado'
+    WHEN 226 THEN '¿Cómo se dice hola en sueco? a) Hej b) Ja c) Nej d) Tack'
+    WHEN 227 THEN 'Ordena: jag heter Erik'
+    WHEN 228 THEN 'Escucha el audio y selecciona el saludo en sueco'
+    WHEN 229 THEN 'Pronuncia correctamente Hej'
+    WHEN 230 THEN 'Relaciona los números del 1 al 5 en sueco'
+END
+WHERE id_ejercicio BETWEEN 221 AND 230;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 231 THEN 'Artículo común (en-ord): a) en b) ett c) den d) det'
+    WHEN 232 THEN 'Ordena: hon ater ett apple'
+    WHEN 233 THEN 'Escucha y escribe la bebida mencionada'
+    WHEN 234 THEN 'Pronuncia la frase Jag kommer fran Sverige'
+    WHEN 235 THEN 'Empareja los días de la semana en sueco'
+    WHEN 236 THEN 'Pasado de arbeta: a) arbetade b) arbetar c) arbetat d) arbeta'
+    WHEN 237 THEN 'Ordena: igar gick vi pa bio'
+    WHEN 238 THEN 'Escucha la conversación y responde adónde viajaron'
+    WHEN 239 THEN 'Lee en voz alta: Jag kopte en ny bil'
+    WHEN 240 THEN 'Relaciona los verbos con su forma en pretérito'
+END
+WHERE id_ejercicio BETWEEN 231 AND 240;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 241 THEN 'Om jag hade tid, ___ jag: a) skulle komma b) kommer c) kom d) kommit'
+    WHEN 242 THEN 'Ordena: de har arbetat har i tre timmar'
+    WHEN 243 THEN 'Escucha la noticia y selecciona el tema del día'
+    WHEN 244 THEN 'Pronuncia el texto sobre la naturaleza sueca'
+    WHEN 245 THEN 'Empareja las conjunciones suecas'
+    WHEN 246 THEN 'Sinónimo de snabb: a) fort b) langsamt c) dyr d) billig'
+    WHEN 247 THEN 'Ordena: trots att det regnade gick vi ut'
+    WHEN 248 THEN 'Escucha el debate político y anota la conclusión'
+    WHEN 249 THEN 'Da un discurso sobre el estado de bienestar sueco'
+    WHEN 250 THEN 'Relaciona los modismos suecos con su significado'
+END
+WHERE id_ejercicio BETWEEN 241 AND 250;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 251 THEN '¿Cómo se dice hola en japonés? a) Konnichiwa b) Sayonara c) Hai d) Iie'
+    WHEN 252 THEN 'Ordena: desu watashi wa Maria'
+    WHEN 253 THEN 'Escucha el audio y selecciona el saludo en japonés'
+    WHEN 254 THEN 'Pronuncia correctamente Arigato'
+    WHEN 255 THEN 'Relaciona los números del 1 al 5 en japonés'
+    WHEN 256 THEN '¿Cuál es la partícula de tema? a) wa b) ga c) wo d) ni'
+    WHEN 257 THEN 'Ordena: o mizu kudasai nomimasu'
+    WHEN 258 THEN 'Escucha y escribe la palabra en hiragana'
+    WHEN 259 THEN 'Pronuncia la frase Watashi wa gakusei desu'
+    WHEN 260 THEN 'Empareja los colores con su nombre en japonés'
+END
+WHERE id_ejercicio BETWEEN 251 AND 260;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 261 THEN 'Pasado de taberu: a) tabeta b) taberu c) tabemasu d) tabete'
+    WHEN 262 THEN 'Ordena: e ikimashita gakkou watashi wa'
+    WHEN 263 THEN 'Escucha el diálogo y anota el destino'
+    WHEN 264 THEN 'Lee en voz alta la oración en katakana'
+    WHEN 265 THEN 'Relaciona los verbos con su forma te'
+    WHEN 266 THEN 'Si llueve, no iré: a) ame nara b) ame demo c) ame kara d) ame node'
+    WHEN 267 THEN 'Ordena: ni issho kyoto ikimasen ka e'
+    WHEN 268 THEN 'Escucha la noticia y selecciona el tema principal'
+    WHEN 269 THEN 'Pronuncia el texto sobre la cultura japonesa'
+    WHEN 270 THEN 'Empareja los kanjis con su lectura onyomi'
+END
+WHERE id_ejercicio BETWEEN 261 AND 270;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 271 THEN 'Sinónimo de isogashii: a) hima b) sewashii c) tanoshii d) kanashii'
+    WHEN 272 THEN 'Ordena: koto ga dekimasu nihongo hanasu wo'
+    WHEN 273 THEN 'Escucha el debate y anota la postura del orador'
+    WHEN 274 THEN 'Da un breve discurso sobre tu anime favorito'
+    WHEN 275 THEN 'Relaciona los modismos japoneses con su significado'
+    WHEN 276 THEN '¿Cómo se dice hola en coreano? a) Annyeonghaseyo b) Kamsahamnida c) Ne d) Aniyo'
+    WHEN 277 THEN 'Ordena: imnida saram hanguk naneun'
+    WHEN 278 THEN 'Escucha el audio y selecciona la vocal en hangul'
+    WHEN 279 THEN 'Pronuncia correctamente Annyeonghaseyo'
+    WHEN 280 THEN 'Relaciona los saludos básicos en coreano'
+END
+WHERE id_ejercicio BETWEEN 271 AND 280;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 281 THEN '¿Cuál es el marcador de sujeto? a) i/ga b) eun/neun c) eul/reul d) e'
+    WHEN 282 THEN 'Ordena: meogeoyo bap eul jeoneun'
+    WHEN 283 THEN 'Escucha y escribe el número sino-coreano'
+    WHEN 284 THEN 'Pronuncia la frase Hangugoeol baewoyo'
+    WHEN 285 THEN 'Empareja los miembros de la familia en coreano'
+    WHEN 286 THEN 'Pasado de hada: a) haesseoyo b) haeyo c) halkkeyo d) haseyo'
+    WHEN 287 THEN 'Ordena: gasseoyo e eojeyo hakgyo'
+    WHEN 288 THEN 'Escucha la conversación y responde qué compraron'
+    WHEN 289 THEN 'Lee en voz alta el texto en hangul'
+    WHEN 290 THEN 'Relaciona los verbos con su raíz'
+END
+WHERE id_ejercicio BETWEEN 281 AND 290;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 291 THEN 'Si tengo tiempo, iré: a) sigan isseumyeon b) sigan isseodo c) sigan eopseoyo d) sigan isseoseo'
+    WHEN 292 THEN 'Ordena: deutgo eumag eul isseoyo jigeum'
+    WHEN 293 THEN 'Escucha el reportaje e identifica la ciudad'
+    WHEN 294 THEN 'Pronuncia el párrafo sobre Seúl'
+    WHEN 295 THEN 'Empareja los conectores lógicos en coreano'
+    WHEN 296 THEN 'Sinónimo de ppareuda: a) neulida b) bappeuda c) ssinseokhada d) gakkapda'
+    WHEN 297 THEN 'Ordena: biga wado e gohyang gamnida'
+    WHEN 298 THEN 'Escucha el drama y anota el sentimiento del actor'
+    WHEN 299 THEN 'Da un discurso sobre la comida coreana'
+    WHEN 300 THEN 'Relaciona los refranes coreanos con su significado'
+END
+WHERE id_ejercicio BETWEEN 291 AND 300;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 301 THEN '¿Cómo se dice hola en chino? a) Ni hao b) Zaijian c) Xiexie d) Bu'
+    WHEN 302 THEN 'Ordena: shi ren wo yingguo'
+    WHEN 303 THEN 'Escucha el audio e identifica el tono de la sílaba'
+    WHEN 304 THEN 'Pronuncia correctamente Xiexie con su tono'
+    WHEN 305 THEN 'Relaciona los números del 1 al 5 en chino'
+    WHEN 306 THEN 'Clasificador para cosas planas: a) zhang b) ge c) ben d) zhi'
+    WHEN 307 THEN 'Ordena: cha he xihuan wo'
+    WHEN 308 THEN 'Escucha y escribe el color mencionado'
+    WHEN 309 THEN 'Pronuncia la frase Wo ai ni'
+    WHEN 310 THEN 'Empareja los animales con su carácter'
+END
+WHERE id_ejercicio BETWEEN 301 AND 310;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 311 THEN 'Pasado con le: a) chi le b) chi c) zai chi d) chi guo'
+    WHEN 312 THEN 'Ordena: qu le wo beijing zuotian'
+    WHEN 313 THEN 'Escucha el diálogo y anota qué comieron'
+    WHEN 314 THEN 'Lee en voz alta la oración en pinyin'
+    WHEN 315 THEN 'Relaciona los verbos con su partícula aspectual'
+    WHEN 316 THEN 'Si llueve, no voy: a) ruguo xiayu b) suiran xiayu c) yinwei xiayu d) dan shi'
+    WHEN 317 THEN 'Ordena: zhongwen zhengzai xuexi wo'
+    WHEN 318 THEN 'Escucha la noticia y selecciona el tema'
+    WHEN 319 THEN 'Pronuncia el texto sobre la Gran Muralla'
+    WHEN 320 THEN 'Empareja los caracteres con su radical'
+END
+WHERE id_ejercicio BETWEEN 311 AND 320;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 321 THEN 'Sinónimo de gaoxing: a) kuaile b) nan guo c) shengqi d) lei'
+    WHEN 322 THEN 'Ordena: jinguo nuli chengong le ta zhongyu'
+    WHEN 323 THEN 'Escucha el debate e identifica la conclusión'
+    WHEN 324 THEN 'Da un discurso sobre la economía china'
+    WHEN 325 THEN 'Relaciona los chengyu con su significado'
+    WHEN 326 THEN 'How do you say hello in Spanish? a) Hola b) Adios c) Casa d) Sol'
+    WHEN 327 THEN 'Order the words: llamo me Juan'
+    WHEN 328 THEN 'Listen to the audio and select the correct greeting'
+    WHEN 329 THEN 'Pronounce the word Hola correctly'
+    WHEN 330 THEN 'Match the basic Spanish greetings with their English meaning'
+END
+WHERE id_ejercicio BETWEEN 321 AND 330;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 331 THEN 'Which verb means to be? a) Ser b) Jugar c) Correr d) Comer'
+    WHEN 332 THEN 'Order the words: comiendo manzana estoy una'
+    WHEN 333 THEN 'Listen and type the color mentioned in Spanish'
+    WHEN 334 THEN 'Pronounce the phrase Yo soy feliz'
+    WHEN 335 THEN 'Match the animals with their Spanish names'
+    WHEN 336 THEN 'Past tense of ir: a) fui b) iba c) ire d) yendo'
+    WHEN 337 THEN 'Order the words: ayer al cine fuimos nosotros'
+    WHEN 338 THEN 'Listen to the conversation and answer where they went'
+    WHEN 339 THEN 'Read aloud: Ella compro una casa nueva'
+    WHEN 340 THEN 'Match the irregular verbs with their past tense form'
+END
+WHERE id_ejercicio BETWEEN 331 AND 340;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 341 THEN 'If it rains, I ___ at home. a) me quedare b) me quedo c) quede d) quedaba'
+    WHEN 342 THEN 'Order the words: esperando horas dos llevado hemos'
+    WHEN 343 THEN 'Listen to the news and identify the main issue'
+    WHEN 344 THEN 'Pronounce the paragraph about climate change'
+    WHEN 345 THEN 'Match the Spanish connector words with their usage'
+    WHEN 346 THEN 'Synonym of rapido: a) veloz b) lento c) fuerte d) debil'
+    WHEN 347 THEN 'Order the words: embargo sin no rindio se ella'
+    WHEN 348 THEN 'Listen to the debate and summarize the expert argument'
+    WHEN 349 THEN 'Record a one minute speech about global economy'
+    WHEN 350 THEN 'Match advanced Spanish idioms with their meaning'
+END
+WHERE id_ejercicio BETWEEN 341 AND 350;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 351 THEN 'How do you say yes in French? a) Oui b) Non c) Merci d) Bonjour'
+    WHEN 352 THEN 'Order the words: m appelle je Pierre'
+    WHEN 353 THEN 'Listen and write the dictated number'
+    WHEN 354 THEN 'Pronounce correctly the word Bonjour'
+    WHEN 355 THEN 'Match the numbers 1 to 5 in French'
+    WHEN 356 THEN 'Feminine singular article: a) La b) Le c) Les d) Un'
+    WHEN 357 THEN 'Order the words: une mange pomme elle'
+    WHEN 358 THEN 'Listen to the audio and select the animal'
+    WHEN 359 THEN 'Pronounce the phrase Je suis etudiant'
+    WHEN 360 THEN 'Match the family members in French'
+END
+WHERE id_ejercicio BETWEEN 351 AND 360;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 361 THEN 'Passe compose of manger: a) a mange b) mangeait c) mangera d) suis mange'
+    WHEN 362 THEN 'Order the words: cinema nous hier sommes alles au'
+    WHEN 363 THEN 'Listen to the dialogue and note what they ate'
+    WHEN 364 THEN 'Pronounce: Nous avons visite Paris'
+    WHEN 365 THEN 'Match the verbs with their past participle'
+    WHEN 366 THEN 'Si j avais su, je ___: a) serais venu b) suis venu c) viendrais d) venais'
+    WHEN 367 THEN 'Order the words: depuis travaillent ils matins les tous ici'
+    WHEN 368 THEN 'Listen to the interview and identify the profession'
+    WHEN 369 THEN 'Pronounce the text about French culture'
+    WHEN 370 THEN 'Match the logical connectors with their function'
+END
+WHERE id_ejercicio BETWEEN 361 AND 370;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 371 THEN 'Synonym of ephemere: a) passager b) durable c) constant d) eternel'
+    WHEN 372 THEN 'Order the words: nonobstant difficultes les projet le abouti a'
+    WHEN 373 THEN 'Listen to the political speech and note the stance'
+    WHEN 374 THEN 'Give an oral analysis about the French Revolution'
+    WHEN 375 THEN 'Match French colloquial expressions with their meaning'
+    WHEN 376 THEN 'How do you say thanks in German? a) Danke b) Bitte c) Hallo d) Ja'
+    WHEN 377 THEN 'Order the words: heisse ich Anna'
+    WHEN 378 THEN 'Listen to the audio and select the correct word'
+    WHEN 379 THEN 'Pronounce correctly the word Hallo'
+    WHEN 380 THEN 'Match the numbers 1 to 10 in German'
+END
+WHERE id_ejercicio BETWEEN 371 AND 380;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 381 THEN 'Article for woman: a) die b) der c) das d) den'
+    WHEN 382 THEN 'Order the words: isst er einen Apfel'
+    WHEN 383 THEN 'Listen and type the color mentioned in German'
+    WHEN 384 THEN 'Pronounce the phrase Ich komme aus Berlin'
+    WHEN 385 THEN 'Match the days of the week in German'
+    WHEN 386 THEN 'Participle of machen: a) gemacht b) mache c) machte d) machst'
+    WHEN 387 THEN 'Order the words: bin ich gestern ins Kino gegangen'
+    WHEN 388 THEN 'Listen to the dialogue and select the destination'
+    WHEN 389 THEN 'Read aloud: Ich habe ein Auto gekauft'
+    WHEN 390 THEN 'Match the verbs with their perfect participle'
+END
+WHERE id_ejercicio BETWEEN 381 AND 390;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 391 THEN 'Wenn ich Zeit hatte, ___ ich: a) kame b) komme c) kam d) kommen'
+    WHEN 392 THEN 'Order the words: arbeiten sie schon seit drei Stunden'
+    WHEN 393 THEN 'Listen to the news and select the main topic'
+    WHEN 394 THEN 'Pronounce the text about the Black Forest'
+    WHEN 395 THEN 'Match the prepositions with the accusative case'
+    WHEN 396 THEN 'Synonym of schnell: a) rasch b) langsam c) teuer d) billig'
+    WHEN 397 THEN 'Order the words: obwohl es regnete sind wir spazieren gegangen'
+    WHEN 398 THEN 'Listen to the economic debate and note the conclusion'
+    WHEN 399 THEN 'Give a short speech in German about the European Union'
+    WHEN 400 THEN 'Match German idioms with their meaning'
+END
+WHERE id_ejercicio BETWEEN 391 AND 400;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 401 THEN 'How do you say hello in Italian? a) Ciao b) Grazie c) Prego d) Si'
+    WHEN 402 THEN 'Order the words: chiamo mi Marco io'
+    WHEN 403 THEN 'Listen to the greeting and select the correct option'
+    WHEN 404 THEN 'Pronounce the word Ciao'
+    WHEN 405 THEN 'Match the days of the week in Italian'
+    WHEN 406 THEN 'Choose the article: ___ ragazzo. a) il b) lo c) la d) i'
+    WHEN 407 THEN 'Order the words: mangia pizza lui una'
+    WHEN 408 THEN 'Listen and type the phone number'
+    WHEN 409 THEN 'Pronounce the phrase Io sono di Roma'
+    WHEN 410 THEN 'Match the food items with their Italian name'
+END
+WHERE id_ejercicio BETWEEN 401 AND 410;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 411 THEN 'Past tense of fare: a) fatto b) facevo c) fara d) feci'
+    WHEN 412 THEN 'Order the words: ieri andato sono al cinema io'
+    WHEN 413 THEN 'Listen to the dialogue and mark where they went'
+    WHEN 414 THEN 'Read aloud: Ho comprato un libro nuovo'
+    WHEN 415 THEN 'Match the irregular verbs with their participle'
+    WHEN 416 THEN 'Se io potessi, ___: a) andrei b) vado c) andavo d) andro'
+    WHEN 417 THEN 'Order the words: lavorando stanno da ore tre loro'
+    WHEN 418 THEN 'Listen to the weather report and identify the climate'
+    WHEN 419 THEN 'Pronounce the text about the history of Venice'
+    WHEN 420 THEN 'Match the articulated prepositions'
+END
+WHERE id_ejercicio BETWEEN 411 AND 420;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 421 THEN 'Synonym of veloce: a) rapido b) lento c) fermo d) piano'
+    WHEN 422 THEN 'Order the words: sebbene piovesse siamo usciti noi lo stesso'
+    WHEN 423 THEN 'Listen to the interview and summarize the main idea'
+    WHEN 424 THEN 'Record a speech about the Italian Renaissance'
+    WHEN 425 THEN 'Match Italian idioms with their meaning'
+    WHEN 426 THEN 'How many squares does the board have? a) 64 b) 32 c) 100 d) 50'
+    WHEN 427 THEN 'Order the words: pawns eight side each has'
+    WHEN 428 THEN 'Listen and name the mentioned chess piece'
+    WHEN 429 THEN 'Say aloud: Check to the king'
+    WHEN 430 THEN 'Match the piece with its point value'
+END
+WHERE id_ejercicio BETWEEN 421 AND 430;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 431 THEN 'How does the knight move? a) In L shape b) Diagonal c) Straight d) One step'
+    WHEN 432 THEN 'Order the words: bishop the squares diagonal controls'
+    WHEN 433 THEN 'Listen to the move and play it on the virtual board'
+    WHEN 434 THEN 'Dictate the move: Knight to f3'
+    WHEN 435 THEN 'Match the basic concept with its description'
+    WHEN 436 THEN 'What is a pin? a) Immobilized piece b) Check c) Exchange d) Mate'
+    WHEN 437 THEN 'Order the words: rook the sacrifice to file open the'
+    WHEN 438 THEN 'Listen to the analysis and identify the tactical threat'
+    WHEN 439 THEN 'Narrate the main variation out loud'
+    WHEN 440 THEN 'Match the tactical themes with their example'
+END
+WHERE id_ejercicio BETWEEN 431 AND 440;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 441 THEN 'In a king and pawn endgame, what is opposition? a) Facing kings b) Promote c) Check d) Castle'
+    WHEN 442 THEN 'Order the words: weakness pawn isolated an endgame in'
+    WHEN 443 THEN 'Listen to the masterclass and note the key move'
+    WHEN 444 THEN 'Explain the concept of prophylaxis out loud'
+    WHEN 445 THEN 'Match the openings with their ECO code'
+    WHEN 446 THEN 'What characterizes the Sicilian Defense? a) c5 b) e5 c) d5 d) f5'
+    WHEN 447 THEN 'Order the words: compensation dynamic material sacrifice for exchange in'
+    WHEN 448 THEN 'Follow the blindfold commentary and find the mate in three'
+    WHEN 449 THEN 'Orally analyze the Kasparov vs Topalov game'
+    WHEN 450 THEN 'Match typical pawn structures with their plans'
+END
+WHERE id_ejercicio BETWEEN 441 AND 450;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 451 THEN 'What is the past participle of eat? a) Eaten b) Ate c) Eating d) Eat'
+    WHEN 452 THEN 'Order the words: have finished I already my homework'
+    WHEN 453 THEN 'Listen to the audio and identify the phrasal verb used'
+    WHEN 454 THEN 'Pronounce this sentence emphasizing the stress: I would have gone'
+    WHEN 455 THEN 'Match the collocations with their correct verb'
+    WHEN 456 THEN 'Choose the right preposition: I am good ___ math. a) at b) in c) on d) with'
+    WHEN 457 THEN 'Order the words: used to live she in London'
+    WHEN 458 THEN 'Listen to the podcast and write down the idiom'
+    WHEN 459 THEN 'Read aloud: Despite the rain, we went for a walk'
+    WHEN 460 THEN 'Match the extreme adjectives with their base adjectives'
+END
+WHERE id_ejercicio BETWEEN 451 AND 460;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 461 THEN 'Third conditional: If I had known, I ___ helped. a) would have b) will c) would d) had'
+    WHEN 462 THEN 'Order the words: looking forward to seeing I am you'
+    WHEN 463 THEN 'Listen to the speaker and identify their tone'
+    WHEN 464 THEN 'Pronounce the minimal pairs correctly: ship and sheep'
+    WHEN 465 THEN 'Match the transition words with their purpose'
+    WHEN 466 THEN 'Which sentence uses passive voice correctly? a) The car was fixed b) He fixed car c) Car is fixing'
+    WHEN 467 THEN 'Order the words: scarcely had we arrived when it rained'
+    WHEN 468 THEN 'Listen to the debate and summarize the main argument'
+    WHEN 469 THEN 'Give a spontaneous speech about technology'
+    WHEN 470 THEN 'Match the idioms with their literal meaning'
+END
+WHERE id_ejercicio BETWEEN 461 AND 470;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 471 THEN 'What is a mixed conditional? a) Past and present b) Future only c) Present only d) Past only'
+    WHEN 472 THEN 'Order the words: had I known I would have called'
+    WHEN 473 THEN 'Listen to the lecture and take notes on key points'
+    WHEN 474 THEN 'Deliver a detailed presentation on global warming'
+    WHEN 475 THEN 'Match the advanced vocabulary with their definitions'
+    WHEN 476 THEN 'How do you say hello in Japanese? a) Konnichiwa b) Sayonara c) Hai d) Iie'
+    WHEN 477 THEN 'Order the words: desu watashi wa Maria'
+    WHEN 478 THEN 'Listen to the audio and select the Japanese greeting'
+    WHEN 479 THEN 'Pronounce correctly Arigato'
+    WHEN 480 THEN 'Match the numbers 1 to 5 in Japanese'
+END
+WHERE id_ejercicio BETWEEN 471 AND 480;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 481 THEN 'What is the topic particle? a) wa b) ga c) wo d) ni'
+    WHEN 482 THEN 'Order the words: o mizu kudasai nomimasu'
+    WHEN 483 THEN 'Listen and write the word in hiragana'
+    WHEN 484 THEN 'Pronounce the phrase Watashi wa gakusei desu'
+    WHEN 485 THEN 'Match the colors with their Japanese name'
+    WHEN 486 THEN 'Past tense of taberu: a) tabeta b) taberu c) tabemasu d) tabete'
+    WHEN 487 THEN 'Order the words: e ikimashita gakkou watashi wa'
+    WHEN 488 THEN 'Listen to the dialogue and note the destination'
+    WHEN 489 THEN 'Read aloud the sentence in katakana'
+    WHEN 490 THEN 'Match the verbs with their te-form'
+END
+WHERE id_ejercicio BETWEEN 481 AND 490;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 491 THEN 'If it rains, I will not go: a) ame nara b) ame demo c) ame kara d) ame node'
+    WHEN 492 THEN 'Order the words: ni issho kyoto ikimasen ka e'
+    WHEN 493 THEN 'Listen to the news and select the main topic'
+    WHEN 494 THEN 'Pronounce the text about Japanese culture'
+    WHEN 495 THEN 'Match the kanjis with their onyomi reading'
+    WHEN 496 THEN 'Synonym of isogashii: a) hima b) sewashii c) tanoshii d) kanashii'
+    WHEN 497 THEN 'Order the words: koto ga dekimasu nihongo hanasu wo'
+    WHEN 498 THEN 'Listen to the debate and note the speakers stance'
+    WHEN 499 THEN 'Give a short speech about your favorite anime'
+    WHEN 500 THEN 'Match Japanese idioms with their meaning'
+END
+WHERE id_ejercicio BETWEEN 491 AND 500;
+
+FALTAN HACER EN SQL: (hacer un update a la vez)
 
 
--- Cantidad > 0 en factura_detalle
-ALTER TABLE factura_detalle
-ADD CONSTRAINT chk_factura_detalle_cantidad
-CHECK (cantidad > 0);
-GO
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 501 THEN 'What is 5 + 3? a) 8 b) 7 c) 9 d) 6'
+    WHEN 502 THEN 'Order the words: parts two has addition'
+    WHEN 503 THEN 'Listen and write the number in digits'
+    WHEN 504 THEN 'Read the operation out loud: 10 minus 4'
+    WHEN 505 THEN 'Match the mathematical symbols with their names'
+    WHEN 506 THEN 'What is 8 x 7? a) 56 b) 54 c) 64 d) 49'
+    WHEN 507 THEN 'Order the words: alter not does order the product'
+    WHEN 508 THEN 'Listen to the fraction and write it down'
+    WHEN 509 THEN 'Read aloud the expression: three quarters'
+    WHEN 510 THEN 'Match the geometric shapes with their number of sides'
+END
+WHERE id_ejercicio BETWEEN 501 AND 510;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 511 THEN 'Solve: 2x = 10. a) x=5 b) x=2 c) x=10 d) x=8'
+    WHEN 512 THEN 'Order the words: equation solve to variable the clear'
+    WHEN 513 THEN 'Listen to the algebra problem and write the equation'
+    WHEN 514 THEN 'Read aloud: x squared plus y squared'
+    WHEN 515 THEN 'Match the area formulas with their shapes'
+    WHEN 516 THEN 'Derivative of x squared: a) 2x b) x c) 2 d) 3x'
+    WHEN 517 THEN 'Order the words: slope the to corresponds derivative the'
+    WHEN 518 THEN 'Listen to the limit and identify its tendency'
+    WHEN 519 THEN 'Explain the Pythagorean theorem out loud'
+    WHEN 520 THEN 'Match the trigonometric functions with their inverses'
+END
+WHERE id_ejercicio BETWEEN 511 AND 520;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 521 THEN 'Integral of e^x: a) e^x + C b) x c) ln(x) d) 1/x'
+    WHEN 522 THEN 'Order the words: parts by integration method advanced an is'
+    WHEN 523 THEN 'Listen to the function analysis and mark the extrema'
+    WHEN 524 THEN 'Prove the fundamental algebraic limit out loud'
+    WHEN 525 THEN 'Match the differential equations with their type'
+    WHEN 526 THEN 'How many lines are in a staff? a) 5 b) 4 c) 6 d) 7'
+    WHEN 527 THEN 'Order the words: notes seven musical are there'
+    WHEN 528 THEN 'Listen to the sound and determine if it is high or low'
+    WHEN 529 THEN 'Sing the middle C note'
+    WHEN 530 THEN 'Match the musical figures with their duration'
+END
+WHERE id_ejercicio BETWEEN 521 AND 530;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 531 THEN 'Which clef is used for high notes? a) Treble b) Bass c) Alto d) Tenor'
+    WHEN 532 THEN 'Order the words: semitone one note the raises sharp a'
+    WHEN 533 THEN 'Listen to the melody and fill in the missing note'
+    WHEN 534 THEN 'Solfege the C major scale ascending'
+    WHEN 535 THEN 'Match the accidentals with their effect on pitch'
+    WHEN 536 THEN 'Interval between C and E: a) Major third b) Fifth c) Second d) Fourth'
+    WHEN 537 THEN 'Order the words: fifth third root has chord a'
+    WHEN 538 THEN 'Listen to the chord and identify if it is major or minor'
+    WHEN 539 THEN 'Sing the G major arpeggio'
+    WHEN 540 THEN 'Match the scale degrees with their technical name'
+END
+WHERE id_ejercicio BETWEEN 531 AND 540;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 541 THEN 'Relative minor of C Major: a) A minor b) E minor c) D minor d) F minor'
+    WHEN 542 THEN 'Order the words: key of change a is modulation'
+    WHEN 543 THEN 'Listen to the harmonic progression and write the numerals'
+    WHEN 544 THEN 'Clap the odd meter rhythm correctly'
+    WHEN 545 THEN 'Match the Greek modes with their structure'
+    WHEN 546 THEN 'What characterizes counterpoint? a) Independent voices b) Rhythm c) Chords'
+    WHEN 547 THEN 'Order the words: form polyphonic complex most the is fugue'
+    WHEN 548 THEN 'Listen to the symphonic work and identify the musical form'
+    WHEN 549 THEN 'Explain the twelve tone technique out loud'
+    WHEN 550 THEN 'Match the musical periods with their composers'
+END
+WHERE id_ejercicio BETWEEN 541 AND 550;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 551 THEN 'How do you say hello in Chinese? a) Ni hao b) Zaijian c) Xiexie d) Bu'
+    WHEN 552 THEN 'Order the words: shi ren wo yingguo'
+    WHEN 553 THEN 'Listen to the audio and identify the syllable tone'
+    WHEN 554 THEN 'Pronounce correctly Xiexie with its tone'
+    WHEN 555 THEN 'Match the numbers 1 to 5 in Chinese'
+    WHEN 556 THEN 'Measure word for flat objects: a) zhang b) ge c) ben d) zhi'
+    WHEN 557 THEN 'Order the words: cha he xihuan wo'
+    WHEN 558 THEN 'Listen and write the mentioned color'
+    WHEN 559 THEN 'Pronounce the phrase Wo ai ni'
+    WHEN 560 THEN 'Match the animals with their Chinese character'
+END
+WHERE id_ejercicio BETWEEN 551 AND 560;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 561 THEN 'Past particle: a) le b) zhi c) zai d) guo'
+    WHEN 562 THEN 'Order the words: qu le wo beijing zuotian'
+    WHEN 563 THEN 'Listen to the dialogue and note what they ate'
+    WHEN 564 THEN 'Read aloud the sentence in pinyin'
+    WHEN 565 THEN 'Match the verbs with their aspectual particle'
+    WHEN 566 THEN 'If it rains, I will not go: a) ruguo xiayu b) suiran xiayu c) yinwei d) dan shi'
+    WHEN 567 THEN 'Order the words: zhongwen zhengzai xuexi wo'
+    WHEN 568 THEN 'Listen to the news and select the main topic'
+    WHEN 569 THEN 'Pronounce the text about the Great Wall'
+    WHEN 570 THEN 'Match the Chinese characters with their radical'
+END
+WHERE id_ejercicio BETWEEN 561 AND 570;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 571 THEN 'Synonym of gaoxing: a) kuaile b) nan guo c) shengqi d) lei'
+    WHEN 572 THEN 'Order the words: jinguo nuli chengong le ta zhongyu'
+    WHEN 573 THEN 'Listen to the debate and identify the conclusion'
+    WHEN 574 THEN 'Give a speech about the Chinese economy'
+    WHEN 575 THEN 'Match the chengyu with their meaning'
+    WHEN 576 THEN 'How do you say hello in Russian? a) Privet b) Da c) Net d) Spasibo'
+    WHEN 577 THEN 'Order the words: menya zovut Ivan'
+    WHEN 578 THEN 'Listen to the audio and select the correct Russian word'
+    WHEN 579 THEN 'Pronounce correctly Privet'
+    WHEN 580 THEN 'Match the Cyrillic letters with their sound'
+END
+WHERE id_ejercicio BETWEEN 571 AND 580;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 581 THEN 'What does Da mean? a) Yes b) No c) Thanks d) Please'
+    WHEN 582 THEN 'Order the words: ya chitayu knigu'
+    WHEN 583 THEN 'Listen and write the mentioned color in Russian'
+    WHEN 584 THEN 'Pronounce the phrase Ya lyublyu tebya'
+    WHEN 585 THEN 'Match the basic nouns in Russian'
+    WHEN 586 THEN 'Past masculine of to do: a) delal b) delala c) delali d) delayu'
+    WHEN 587 THEN 'Order the words: vchera mi xodili v kino'
+    WHEN 588 THEN 'Listen to the dialogue and mark where they went'
+    WHEN 589 THEN 'Read aloud: Ya kupil novuyu mashinu'
+    WHEN 590 THEN 'Match the grammatical cases with their function'
+END
+WHERE id_ejercicio BETWEEN 581 AND 590;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 591 THEN 'Perfective verb form: a) sdelat b) delat c) delayu d) delal'
+    WHEN 592 THEN 'Order the words: oni rabotayut zdes uzhe tri chasa'
+    WHEN 593 THEN 'Listen to the news and identify the mentioned place'
+    WHEN 594 THEN 'Pronounce the text about Red Square'
+    WHEN 595 THEN 'Match the Russian verbs of motion'
+    WHEN 596 THEN 'Synonym of bystro: a) skoro b) medlenno c) tiho d) gromko'
+    WHEN 597 THEN 'Order the words: nesmotrya na dozhd mi poshli gulyat'
+    WHEN 598 THEN 'Listen to the interview and summarize the main point'
+    WHEN 599 THEN 'Give a short speech about Russian literature'
+    WHEN 600 THEN 'Match the Russian idioms with their meaning'
+END
+WHERE id_ejercicio BETWEEN 591 AND 600;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 601 THEN 'How do you say hello in Korean? a) Annyeonghaseyo b) Ne c) Aniyo d) Gamsa'
+    WHEN 602 THEN 'Order the words: imnida saram miguk naneun'
+    WHEN 603 THEN 'Listen to the audio and select the hangul vowel'
+    WHEN 604 THEN 'Pronounce correctly Annyeonghaseyo'
+    WHEN 605 THEN 'Match the basic greetings in Korean'
+    WHEN 606 THEN 'What is the subject marker? a) i/ga b) eun/neun c) eul/reul d) e'
+    WHEN 607 THEN 'Order the words: meogeoyo bap eul jeoneun'
+    WHEN 608 THEN 'Listen and write the Sino Korean number'
+    WHEN 609 THEN 'Pronounce the phrase Hangugoeol baewoyo'
+    WHEN 610 THEN 'Match the family members in Korean'
+END
+WHERE id_ejercicio BETWEEN 601 AND 610;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 611 THEN 'Past tense of hada: a) haesseoyo b) haeyo c) halkkeyo d) haseyo'
+    WHEN 612 THEN 'Order the words: gasseoyo e eojeyo hakgyo'
+    WHEN 613 THEN 'Listen to the conversation and answer what they bought'
+    WHEN 614 THEN 'Read aloud the text in hangul'
+    WHEN 615 THEN 'Match the verbs with their dictionary form'
+    WHEN 616 THEN 'If I have time: a) sigan isseumyeon b) sigan isseodo c) sigan eopseoyo'
+    WHEN 617 THEN 'Order the words: deutgo eumag eul isseoyo jigeum'
+    WHEN 618 THEN 'Listen to the report and identify the city'
+    WHEN 619 THEN 'Pronounce the paragraph about Seoul'
+    WHEN 620 THEN 'Match the logical connectors in Korean'
+END
+WHERE id_ejercicio BETWEEN 611 AND 620;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 621 THEN 'Synonym of ppareuda: a) neulida b) bappeuda c) ssinseokhada d) gakkapda'
+    WHEN 622 THEN 'Order the words: biga wado e gohyang gamnida'
+    WHEN 623 THEN 'Listen to the drama and note the actors feeling'
+    WHEN 624 THEN 'Give a speech about Korean food'
+    WHEN 625 THEN 'Match the Korean proverbs with their meaning'
+    WHEN 626 THEN 'How do you say thank you in Portuguese? a) Obrigado b) Ciao c) Ola d) Bom'
+    WHEN 627 THEN 'Order the words: chamo me eu Joao'
+    WHEN 628 THEN 'Listen to the audio and select the correct greeting'
+    WHEN 629 THEN 'Pronounce correctly Bom dia'
+    WHEN 630 THEN 'Match the basic numbers in Portuguese'
+END
+WHERE id_ejercicio BETWEEN 621 AND 630;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 631 THEN 'Definite masculine article: a) O b) A c) Os d) As'
+    WHEN 632 THEN 'Order the words: ela come uma maca verde'
+    WHEN 633 THEN 'Listen and write down the mentioned time'
+    WHEN 634 THEN 'Pronounce: Eu moro no Brasil'
+    WHEN 635 THEN 'Match the family members in Portuguese'
+    WHEN 636 THEN 'Past tense of falar: a) falei b) falo c) falava d) falarei'
+    WHEN 637 THEN 'Order the words: ontem fomos nos a praia'
+    WHEN 638 THEN 'Listen to the conversation and answer what they bought'
+    WHEN 639 THEN 'Read aloud: Eu viajei para Lisboa'
+    WHEN 640 THEN 'Match the verbs in preterito perfeito'
+END
+WHERE id_ejercicio BETWEEN 631 AND 640;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 641 THEN 'If I had money, ___: a) compraria b) compro c) comprarei d) comprava'
+    WHEN 642 THEN 'Order the words: trabalhando estao eles desde cedo'
+    WHEN 643 THEN 'Listen to the report and mark the mentioned city'
+    WHEN 644 THEN 'Pronounce the paragraph about the Amazon'
+    WHEN 645 THEN 'Match the Portuguese conjunctions'
+    WHEN 646 THEN 'Synonym of garoto: a) menino b) homem c) idoso d) mulher'
+    WHEN 647 THEN 'Order the words: embora chovesse fomos ao jogo nos'
+    WHEN 648 THEN 'Listen to the debate and note the conclusion'
+    WHEN 649 THEN 'Give a speech about the economy of Brazil'
+    WHEN 650 THEN 'Match Brazilian colloquial expressions'
+END
+WHERE id_ejercicio BETWEEN 641 AND 650;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 651 THEN 'How do you say hello in Arabic? a) Marhaba b) Shukran c) Naam d) La'
+    WHEN 652 THEN 'Order the words: ismi huwa Ahmed'
+    WHEN 653 THEN 'Listen to the greeting and select the correct option'
+    WHEN 654 THEN 'Pronounce the word Shukran'
+    WHEN 655 THEN 'Match the numbers 1 to 5 in Arabic'
+    WHEN 656 THEN 'What is the word for book? a) Kitab b) Qalam c) Bab d) Sayara'
+    WHEN 657 THEN 'Order the words: jadid kitab qarahtu'
+    WHEN 658 THEN 'Listen and write the color mentioned in Arabic'
+    WHEN 659 THEN 'Pronounce the phrase Ana min Masr'
+    WHEN 660 THEN 'Match the days of the week in Arabic'
+END
+WHERE id_ejercicio BETWEEN 651 AND 660;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 661 THEN 'Past tense of to go (dhahaba): a) dhahabtu b) adhhabu c) saadhhabu'
+    WHEN 662 THEN 'Order the words: madrasa ila dhahaba huw'
+    WHEN 663 THEN 'Listen to the dialogue and mark where they went'
+    WHEN 664 THEN 'Read aloud the sentence in Arabic script'
+    WHEN 665 THEN 'Match the verb roots with their meaning'
+    WHEN 666 THEN 'Future tense prefix: a) sa b) ma c) la d) bi'
+    WHEN 667 THEN 'Order the words: sa aamal huna ghadan'
+    WHEN 668 THEN 'Listen to the news and identify the country mentioned'
+    WHEN 669 THEN 'Pronounce the text about Cairo'
+    WHEN 670 THEN 'Match the Arabic prepositions'
+END
+WHERE id_ejercicio BETWEEN 661 AND 670;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 671 THEN 'Synonym of jamil: a) hasan b) qabih c) saghir d) kabir'
+    WHEN 672 THEN 'Order the words: jiddan saeed ana lianni'
+    WHEN 673 THEN 'Listen to the interview and summarize the main idea'
+    WHEN 674 THEN 'Record a speech about Arab culture'
+    WHEN 675 THEN 'Match Arabic idioms with their literal meaning'
+    WHEN 676 THEN 'How do you say hello in Dutch? a) Hallo b) Doei c) Dank d) Ja'
+    WHEN 677 THEN 'Order the words: heet ik Jan'
+    WHEN 678 THEN 'Listen to the audio and select the greeting'
+    WHEN 679 THEN 'Pronounce correctly Dank je'
+    WHEN 680 THEN 'Match the numbers 1 to 5 in Dutch'
+END
+WHERE id_ejercicio BETWEEN 671 AND 680;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 681 THEN 'Article for neuter nouns: a) het b) de c) een d) den'
+    WHEN 682 THEN 'Order the words: appel een eet hij'
+    WHEN 683 THEN 'Listen and type the color mentioned in Dutch'
+    WHEN 684 THEN 'Pronounce the phrase Ik kom uit Nederland'
+    WHEN 685 THEN 'Match the family members in Dutch'
+    WHEN 686 THEN 'Past participle of maken: a) gemaakt b) maakte c) maak d) makend'
+    WHEN 687 THEN 'Order the words: gisteren naar ben bioscoop de ik gegaan'
+    WHEN 688 THEN 'Listen to the dialogue and mark the destination'
+    WHEN 689 THEN 'Read aloud: Ik heb een auto gekocht'
+    WHEN 690 THEN 'Match the verbs with their perfect participle'
+END
+WHERE id_ejercicio BETWEEN 681 AND 690;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 691 THEN 'If I had time, ___: a) zou ik komen b) kom ik c) kwam ik'
+    WHEN 692 THEN 'Order the words: werken al drie zij uur'
+    WHEN 693 THEN 'Listen to the news and select the main topic'
+    WHEN 694 THEN 'Pronounce the text about Amsterdam'
+    WHEN 695 THEN 'Match the Dutch conjunctions'
+    WHEN 696 THEN 'Synonym of snel: a) vlug b) langzaam c) duur d) goedkoop'
+    WHEN 697 THEN 'Order the words: we gingen wandelen het hoewel regende'
+    WHEN 698 THEN 'Listen to the debate and note the conclusion'
+    WHEN 699 THEN 'Give a speech about Dutch water management'
+    WHEN 700 THEN 'Match Dutch idioms with their meaning'
+END
+WHERE id_ejercicio BETWEEN 691 AND 700;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 701 THEN 'How do you say hello in Swedish? a) Hej b) Ja c) Nej d) Tack'
+    WHEN 702 THEN 'Order the words: heter jag Erik'
+    WHEN 703 THEN 'Listen to the audio and select the Swedish greeting'
+    WHEN 704 THEN 'Pronounce correctly Hej'
+    WHEN 705 THEN 'Match the numbers 1 to 5 in Swedish'
+    WHEN 706 THEN 'Common gender article (en-ord): a) en b) ett c) den d) det'
+    WHEN 707 THEN 'Order the words: apple ett ater hon'
+    WHEN 708 THEN 'Listen and write the beverage mentioned'
+    WHEN 709 THEN 'Pronounce the phrase Jag kommer fran Sverige'
+    WHEN 710 THEN 'Match the days of the week in Swedish'
+END
+WHERE id_ejercicio BETWEEN 701 AND 710;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 711 THEN 'Past tense of arbeta: a) arbetade b) arbetar c) arbetat d) arbeta'
+    WHEN 712 THEN 'Order the words: pa bio vi gick igar'
+    WHEN 713 THEN 'Listen to the conversation and answer where they traveled'
+    WHEN 714 THEN 'Read aloud: Jag kopte en ny bil'
+    WHEN 715 THEN 'Match the verbs with their preterite form'
+    WHEN 716 THEN 'Om jag hade tid, ___ jag: a) skulle komma b) kommer c) kom d) kommit'
+    WHEN 717 THEN 'Order the words: har tre timmar i arbetat har de'
+    WHEN 718 THEN 'Listen to the news and select the topic of the day'
+    WHEN 719 THEN 'Pronounce the text about Swedish nature'
+    WHEN 720 THEN 'Match the Swedish conjunctions'
+END
+WHERE id_ejercicio BETWEEN 711 AND 720;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 721 THEN 'Synonym of snabb: a) fort b) langsamt c) dyr d) billig'
+    WHEN 722 THEN 'Order the words: vi gick ut regnade det att trots'
+    WHEN 723 THEN 'Listen to the political debate and note the conclusion'
+    WHEN 724 THEN 'Give a speech about the Swedish welfare state'
+    WHEN 725 THEN 'Match the Swedish idioms with their meaning'
+    WHEN 726 THEN 'How do you say hello in Norwegian? a) Hei b) Ja c) Nei d) Takk'
+    WHEN 727 THEN 'Order the words: heter jeg Ola'
+    WHEN 728 THEN 'Listen to the audio and select the greeting'
+    WHEN 729 THEN 'Pronounce correctly Takk'
+    WHEN 730 THEN 'Match the numbers 1 to 5 in Norwegian'
+END
+WHERE id_ejercicio BETWEEN 721 AND 730;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 731 THEN 'Definite article for neuter nouns: a) et b) en c) ei d) den'
+    WHEN 732 THEN 'Order the words: eple et spiser hun'
+    WHEN 733 THEN 'Listen and type the color mentioned in Norwegian'
+    WHEN 734 THEN 'Pronounce the phrase Jeg kommer fra Norge'
+    WHEN 735 THEN 'Match the family members in Norwegian'
+    WHEN 736 THEN 'Past tense of skrive: a) skrev b) skriver c) skrevet d) skrive'
+    WHEN 737 THEN 'Order the words: kino pa vi gikk i gar'
+    WHEN 738 THEN 'Listen to the dialogue and mark the destination'
+    WHEN 739 THEN 'Read aloud: Jeg kjopte en ny bil'
+    WHEN 740 THEN 'Match the verbs with their past tense'
+END
+WHERE id_ejercicio BETWEEN 731 AND 740;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 741 THEN 'If I had time, ___: a) ville jeg komme b) kommer jeg c) kom jeg'
+    WHEN 742 THEN 'Order the words: timer tre i jobbet har de her'
+    WHEN 743 THEN 'Listen to the news and select the main topic'
+    WHEN 744 THEN 'Pronounce the text about Oslo'
+    WHEN 745 THEN 'Match the Norwegian conjunctions'
+    WHEN 746 THEN 'Synonym of rask: a) fort b) sakte c) dyr d) billig'
+    WHEN 747 THEN 'Order the words: vi gikk ut regnet det at til tross for'
+    WHEN 748 THEN 'Listen to the debate and note the conclusion'
+    WHEN 749 THEN 'Give a speech about Norwegian fjords'
+    WHEN 750 THEN 'Match Norwegian idioms with their meaning'
+END
+WHERE id_ejercicio BETWEEN 741 AND 750;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 751 THEN 'How do you say hello in Turkish? a) Merhaba b) Evet c) Hayir d) Tesekkurler'
+    WHEN 752 THEN 'Order the words: adim benim Ahmet'
+    WHEN 753 THEN 'Listen to the audio and select the Turkish greeting'
+    WHEN 754 THEN 'Pronounce correctly the word Merhaba'
+    WHEN 755 THEN 'Match the numbers 1 to 5 in Turkish'
+    WHEN 756 THEN 'What is the word for water? a) Su b) Ekmek c) Cay d) Kahve'
+    WHEN 757 THEN 'Order the words: bir elma ben yerim'
+    WHEN 758 THEN 'Listen and write the color mentioned in Turkish'
+    WHEN 759 THEN 'Pronounce the phrase Ben Turkiye den geliyorum'
+    WHEN 760 THEN 'Match the days of the week in Turkish'
+END
+WHERE id_ejercicio BETWEEN 751 AND 760;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 761 THEN 'Past tense of gitmek: a) gittim b) giderim c) gidecegim d) git'
+    WHEN 762 THEN 'Order the words: dun sinemaya biz gittik'
+    WHEN 763 THEN 'Listen to the dialogue and mark the destination'
+    WHEN 764 THEN 'Read aloud: Yeni bir araba aldim'
+    WHEN 765 THEN 'Match the verbs with their past tense form'
+    WHEN 766 THEN 'If I had time: a) zamanim olsaydi b) zamanim var c) zamanim olacak d) zaman'
+    WHEN 767 THEN 'Order the words: uc saattir burada onlar calisiyorlar'
+    WHEN 768 THEN 'Listen to the news and select the main topic'
+    WHEN 769 THEN 'Pronounce the text about Istanbul'
+    WHEN 770 THEN 'Match the Turkish postpositions with their meanings'
+END
+WHERE id_ejercicio BETWEEN 761 AND 770;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 771 THEN 'Synonym of hizli: a) cabuk b) yavas c) pahali d) ucuz'
+    WHEN 772 THEN 'Order the words: yagmur yagmasina biz ragmen disari ciktik'
+    WHEN 773 THEN 'Listen to the debate and note the conclusion'
+    WHEN 774 THEN 'Give a speech about the Turkish economy'
+    WHEN 775 THEN 'Match Turkish idioms with their meaning'
+    WHEN 776 THEN 'How do you say hello in Polish? a) Czesc b) Tak c) Nie d) Dziekuje'
+    WHEN 777 THEN 'Order the words: mam na imie Jan'
+    WHEN 778 THEN 'Listen to the audio and select the Polish greeting'
+    WHEN 779 THEN 'Pronounce correctly the word Czesc'
+    WHEN 780 THEN 'Match the numbers 1 to 5 in Polish'
+END
+WHERE id_ejercicio BETWEEN 771 AND 780;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 781 THEN 'What is the word for book? a) Ksiazka b) Dom c) Woda d) Pies'
+    WHEN 782 THEN 'Order the words: pije wode ja'
+    WHEN 783 THEN 'Listen and type the color mentioned in Polish'
+    WHEN 784 THEN 'Pronounce the phrase Jestem z Polski'
+    WHEN 785 THEN 'Match the family members in Polish'
+    WHEN 786 THEN 'Past tense of robic (masculine): a) robilem b) robie c) zrobie d) robic'
+    WHEN 787 THEN 'Order the words: wczoraj do kina poszlismy'
+    WHEN 788 THEN 'Listen to the conversation and answer where they went'
+    WHEN 789 THEN 'Read aloud: Kupilem nowy samochod'
+    WHEN 790 THEN 'Match the Polish grammatical cases'
+END
+WHERE id_ejercicio BETWEEN 781 AND 790;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 791 THEN 'If I had money, ___: a) kupilbym b) kupuje c) kupie d) kupowalem'
+    WHEN 792 THEN 'Order the words: pracuja tutaj oni od trzech godzin'
+    WHEN 793 THEN 'Listen to the news and identify the city'
+    WHEN 794 THEN 'Pronounce the text about Warsaw'
+    WHEN 795 THEN 'Match the Polish conjunctions'
+    WHEN 796 THEN 'Synonym of szybki: a) predki b) wolny c) drogi d) tani'
+    WHEN 797 THEN 'Order the words: mimo ze pada deszcz wyszlismy na spacer'
+    WHEN 798 THEN 'Listen to the interview and summarize the main idea'
+    WHEN 799 THEN 'Give a speech about Polish history'
+    WHEN 800 THEN 'Match Polish idioms with their meaning'
+END
+WHERE id_ejercicio BETWEEN 791 AND 800;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 801 THEN 'How do you say hello in Irish? a) Dia dhuit b) Slan c) Go raibh maith agat d) Ta'
+    WHEN 802 THEN 'Order the words: is Sean mise'
+    WHEN 803 THEN 'Listen to the greeting and select the correct option'
+    WHEN 804 THEN 'Pronounce the phrase Dia dhuit'
+    WHEN 805 THEN 'Match the basic numbers in Irish'
+    WHEN 806 THEN 'Which is the copula verb? a) Is b) Ta c) Bhi d) Beidh'
+    WHEN 807 THEN 'Order the words: ta ocras orm'
+    WHEN 808 THEN 'Listen and write the beverage mentioned'
+    WHEN 809 THEN 'Pronounce the phrase Ta me i mo chonai in Eirinn'
+    WHEN 810 THEN 'Match the days of the week in Irish'
+END
+WHERE id_ejercicio BETWEEN 801 AND 810;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 811 THEN 'Past tense of to go (dul): a) Chuaigh b) Teann c) Rachaidh d) D imigh'
+    WHEN 812 THEN 'Order the words: inniu chuaigh me go dti an siopa'
+    WHEN 813 THEN 'Listen to the dialogue and mark where they went'
+    WHEN 814 THEN 'Read aloud the sentence in Irish'
+    WHEN 815 THEN 'Match the verbs with their verbal nouns'
+    WHEN 816 THEN 'Conditional of be: a) Bheadh b) Bhi c) Ta d) Beidh'
+    WHEN 817 THEN 'Order the words: anseo ag obair ta siad le tri huaire'
+    WHEN 818 THEN 'Listen to the news and select the topic of the day'
+    WHEN 819 THEN 'Pronounce the text about Dublin'
+    WHEN 820 THEN 'Match the Irish prepositions with pronouns'
+END
+WHERE id_ejercicio BETWEEN 811 AND 820;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 821 THEN 'Synonym of go tapa: a) go mear b) go mall c) go holc d) go maith'
+    WHEN 822 THEN 'Order the words: in ainneoin na baisti chuamar amach'
+    WHEN 823 THEN 'Listen to the political debate and note the conclusion'
+    WHEN 824 THEN 'Give a speech about Irish culture'
+    WHEN 825 THEN 'Match the Irish idioms with their meaning'
+    WHEN 826 THEN 'How do you say hello in Greek? a) Yia sou b) Efcharisto c) Ne d) Ochi'
+    WHEN 827 THEN 'Order the words: lene me Maria'
+    WHEN 828 THEN 'Listen to the audio and select the Greek greeting'
+    WHEN 829 THEN 'Pronounce correctly Yia sou'
+    WHEN 830 THEN 'Match the Greek alphabet letters'
+END
+WHERE id_ejercicio BETWEEN 821 AND 830;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 831 THEN 'Definite article for masculine: a) o b) i c) to d) ta'
+    WHEN 832 THEN 'Order the words: ena milo troo ego'
+    WHEN 833 THEN 'Listen and type the color mentioned in Greek'
+    WHEN 834 THEN 'Pronounce the phrase Eimai apo tin Ellada'
+    WHEN 835 THEN 'Match the family members in Greek'
+    WHEN 836 THEN 'Past tense of to make (kano): a) ekana b) kano c) tha kano d) kana'
+    WHEN 837 THEN 'Order the words: piga sto sinema hthes ego'
+    WHEN 838 THEN 'Listen to the conversation and answer what they bought'
+    WHEN 839 THEN 'Read aloud: Agorasa ena neo autokinito'
+    WHEN 840 THEN 'Match the Greek verbs with their aorist stem'
+END
+WHERE id_ejercicio BETWEEN 831 AND 840;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 841 THEN 'If I had time, ___: a) tha irhomoun b) erhomai c) tha ertho d) irtha'
+    WHEN 842 THEN 'Order the words: doulevoun edo kai treis ores autoi'
+    WHEN 843 THEN 'Listen to the report and mark the mentioned city'
+    WHEN 844 THEN 'Pronounce the paragraph about Athens'
+    WHEN 845 THEN 'Match the Greek conjunctions'
+    WHEN 846 THEN 'Synonym of grigora: a) tahea b) siga c) akriva d) ftina'
+    WHEN 847 THEN 'Order the words: an kai evrehe vgikame exo emeis'
+    WHEN 848 THEN 'Listen to the debate and note the conclusion'
+    WHEN 849 THEN 'Give a speech about ancient Greece'
+    WHEN 850 THEN 'Match Greek idioms with their meaning'
+END
+WHERE id_ejercicio BETWEEN 841 AND 850;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 851 THEN 'How do you say hello in Hebrew? a) Shalom b) Toda c) Ken d) Lo'
+    WHEN 852 THEN 'Order the words: korim li David'
+    WHEN 853 THEN 'Listen to the greeting and select the correct option'
+    WHEN 854 THEN 'Pronounce the word Shalom'
+    WHEN 855 THEN 'Match the Hebrew letters with their sounds'
+    WHEN 856 THEN 'What is the word for house? a) Bayit b) Sefer c) Mayim d) Kelev'
+    WHEN 857 THEN 'Order the words: ani ochel tapuach'
+    WHEN 858 THEN 'Listen and write the number mentioned in Hebrew'
+    WHEN 859 THEN 'Pronounce the phrase Ani me Yisrael'
+    WHEN 860 THEN 'Match the days of the week in Hebrew'
+END
+WHERE id_ejercicio BETWEEN 851 AND 860;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 861 THEN 'Past tense of to write (katav): a) katavti b) kotev c) echtov d) kotevet'
+    WHEN 862 THEN 'Order the words: etmol halachti la kolnoa'
+    WHEN 863 THEN 'Listen to the dialogue and mark where they went'
+    WHEN 864 THEN 'Read aloud the sentence in Hebrew'
+    WHEN 865 THEN 'Match the verbs with their binyan'
+    WHEN 866 THEN 'Future tense prefix for I (ani): a) aleph b) yud c) tav d) nun'
+    WHEN 867 THEN 'Order the words: hem ovdim po kvar shalosh shaot'
+    WHEN 868 THEN 'Listen to the news and identify the country mentioned'
+    WHEN 869 THEN 'Pronounce the text about Jerusalem'
+    WHEN 870 THEN 'Match the Hebrew prepositions'
+END
+WHERE id_ejercicio BETWEEN 861 AND 870;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 871 THEN 'Synonym of maher: a) zariz b) leat c) yakar d) zol'
+    WHEN 872 THEN 'Order the words: lamrot ha geshem yatzanu ba chutz'
+    WHEN 873 THEN 'Listen to the interview and summarize the main idea'
+    WHEN 874 THEN 'Record a speech about Hebrew literature'
+    WHEN 875 THEN 'Match Hebrew idioms with their literal meaning'
+    WHEN 876 THEN 'How do you say hello in Danish? a) Hej b) Tak c) Ja d) Nej'
+    WHEN 877 THEN 'Order the words: jeg hedder Peter'
+    WHEN 878 THEN 'Listen to the audio and select the greeting'
+    WHEN 879 THEN 'Pronounce correctly Hej'
+    WHEN 880 THEN 'Match the numbers 1 to 5 in Danish'
+END
+WHERE id_ejercicio BETWEEN 871 AND 880;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 881 THEN 'Article for common gender: a) en b) et c) den d) det'
+    WHEN 882 THEN 'Order the words: spiser et aoeble hun'
+    WHEN 883 THEN 'Listen and type the color mentioned in Danish'
+    WHEN 884 THEN 'Pronounce the phrase Jeg kommer fra Danmark'
+    WHEN 885 THEN 'Match the family members in Danish'
+    WHEN 886 THEN 'Past tense of at skrive: a) skrev b) skriver c) skrevet d) skrive'
+    WHEN 887 THEN 'Order the words: i gar gik vi i biografen'
+    WHEN 888 THEN 'Listen to the dialogue and mark the destination'
+    WHEN 889 THEN 'Read aloud: Jeg kobte en ny bil'
+    WHEN 890 THEN 'Match the verbs with their past tense'
+END
+WHERE id_ejercicio BETWEEN 881 AND 890;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 891 THEN 'If I had time, ___: a) ville jeg komme b) kommer jeg c) kom jeg'
+    WHEN 892 THEN 'Order the words: har arbejdet her i tre timer de'
+    WHEN 893 THEN 'Listen to the news and select the main topic'
+    WHEN 894 THEN 'Pronounce the text about Copenhagen'
+    WHEN 895 THEN 'Match the Danish conjunctions'
+    WHEN 896 THEN 'Synonym of hurtig: a) rask b) langsom c) dyr d) billig'
+    WHEN 897 THEN 'Order the words: vi gik ud pa trods af regnen'
+    WHEN 898 THEN 'Listen to the debate and note the conclusion'
+    WHEN 899 THEN 'Give a speech about Danish hygge'
+    WHEN 900 THEN 'Match Danish idioms with their meaning'
+END
+WHERE id_ejercicio BETWEEN 891 AND 900;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 901 THEN 'How do you say hello in Hindi? a) Namaste b) Shukriya c) Haan d) Nahi'
+    WHEN 902 THEN 'Order the words: naam mera Raj hai'
+    WHEN 903 THEN 'Listen to the audio and select the Hindi greeting'
+    WHEN 904 THEN 'Pronounce correctly Namaste'
+    WHEN 905 THEN 'Match the numbers 1 to 5 in Hindi'
+    WHEN 906 THEN 'What is the word for water? a) Paani b) Khana c) Ghar d) Kitab'
+    WHEN 907 THEN 'Order the words: main khana khata hoon'
+    WHEN 908 THEN 'Listen and write the color mentioned'
+    WHEN 909 THEN 'Pronounce the phrase Main Bharat se hoon'
+    WHEN 910 THEN 'Match the animals with their Hindi names'
+END
+WHERE id_ejercicio BETWEEN 901 AND 910;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 911 THEN 'Past tense of to go (jana): a) gaya b) jata c) jaunga d) jao'
+    WHEN 912 THEN 'Order the words: kal main bazaar gaya tha'
+    WHEN 913 THEN 'Listen to the conversation and answer where they went'
+    WHEN 914 THEN 'Read aloud the sentence in Devanagari script'
+    WHEN 915 THEN 'Match the verbs with their past participle'
+    WHEN 916 THEN 'If it rains, I will not go: a) agar barish hui b) kyunki barish c) jab barish'
+    WHEN 917 THEN 'Order the words: ve yahan teen ghante se kaam kar rahe hain'
+    WHEN 918 THEN 'Listen to the news and select the main topic'
+    WHEN 919 THEN 'Pronounce the paragraph about Delhi'
+    WHEN 920 THEN 'Match the Hindi postpositions'
+END
+WHERE id_ejercicio BETWEEN 911 AND 920;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 921 THEN 'Synonym of jaldi: a) tez b) dheere c) mehenga d) sasta'
+    WHEN 922 THEN 'Order the words: barish ke bavajood hum bahar gaye'
+    WHEN 923 THEN 'Listen to the debate and note the speakers stance'
+    WHEN 924 THEN 'Give a speech about Indian cuisine'
+    WHEN 925 THEN 'Match Hindi proverbs with their meaning'
+    WHEN 926 THEN 'How do you say hello in Czech? a) Ahoj b) Dekuji c) Ano d) Ne'
+    WHEN 927 THEN 'Order the words: jmenuji se Pavel'
+    WHEN 928 THEN 'Listen to the audio and select the Czech greeting'
+    WHEN 929 THEN 'Pronounce correctly Ahoj'
+    WHEN 930 THEN 'Match the numbers 1 to 5 in Czech'
+END
+WHERE id_ejercicio BETWEEN 921 AND 930;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 931 THEN 'What is the word for beer? a) Pivo b) Voda c) Chleb d) Dum'
+    WHEN 932 THEN 'Order the words: ja jim jablko'
+    WHEN 933 THEN 'Listen and type the color mentioned in Czech'
+    WHEN 934 THEN 'Pronounce the phrase Jsem z Ceska'
+    WHEN 935 THEN 'Match the family members in Czech'
+    WHEN 936 THEN 'Past tense of delat: a) delal b) delam c) udelam d) delat'
+    WHEN 937 THEN 'Order the words: vcera jsme sli do kina'
+    WHEN 938 THEN 'Listen to the dialogue and mark where they went'
+    WHEN 939 THEN 'Read aloud: Koupil jsem nove auto'
+    WHEN 940 THEN 'Match the verbs with their perfective aspect'
+END
+WHERE id_ejercicio BETWEEN 931 AND 940;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 941 THEN 'If I had time, ___: a) prisel bych b) prijdu c) prisel jsem d) prijit'
+    WHEN 942 THEN 'Order the words: oni tady pracuji uz tri hodiny'
+    WHEN 943 THEN 'Listen to the report and identify the city'
+    WHEN 944 THEN 'Pronounce the text about Prague'
+    WHEN 945 THEN 'Match the Czech grammatical cases'
+    WHEN 946 THEN 'Synonym of rychly: a) hbite b) pomaly c) drahy d) levny'
+    WHEN 947 THEN 'Order the words: prestoze prselo sli jsme ven'
+    WHEN 948 THEN 'Listen to the interview and summarize the main idea'
+    WHEN 949 THEN 'Give a speech about Czech history'
+    WHEN 950 THEN 'Match Czech idioms with their meaning'
+END
+WHERE id_ejercicio BETWEEN 941 AND 950;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 951 THEN 'How do you say hello in Esperanto? a) Saluton b) Dankon c) Jes d) Ne'
+    WHEN 952 THEN 'Order the words: mi nomigxas Karlo'
+    WHEN 953 THEN 'Listen to the greeting and select the correct option'
+    WHEN 954 THEN 'Pronounce the word Saluton'
+    WHEN 955 THEN 'Match the numbers 1 to 5 in Esperanto'
+    WHEN 956 THEN 'What is the ending for accusative? a) -n b) -j c) -o d) -a'
+    WHEN 957 THEN 'Order the words: mi mangxas pomon'
+    WHEN 958 THEN 'Listen and write the number mentioned'
+    WHEN 959 THEN 'Pronounce the phrase Mi estas komencanto'
+    WHEN 960 THEN 'Match the days of the week in Esperanto'
+END
+WHERE id_ejercicio BETWEEN 951 AND 960;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 961 THEN 'Past tense ending: a) -is b) -as c) -os d) -us'
+    WHEN 962 THEN 'Order the words: hieraux ni iris al la kinejo'
+    WHEN 963 THEN 'Listen to the dialogue and mark where they went'
+    WHEN 964 THEN 'Read aloud: Mi acxetis novan auxton'
+    WHEN 965 THEN 'Match the correlatives with their meaning'
+    WHEN 966 THEN 'Conditional ending: a) -us b) -u c) -i d) -as'
+    WHEN 967 THEN 'Order the words: ili laboras cxi tie jam tri horojn'
+    WHEN 968 THEN 'Listen to the news and identify the topic'
+    WHEN 969 THEN 'Pronounce the text about L. L. Zamenhof'
+    WHEN 970 THEN 'Match the Esperanto affixes with their function'
+END
+WHERE id_ejercicio BETWEEN 961 AND 970;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 971 THEN 'Synonym of rapida: a) frua b) malrapida c) kara d) malmultekosta'
+    WHEN 972 THEN 'Order the words: kvankam pluvis ni eliris promeni'
+    WHEN 973 THEN 'Listen to the debate and summarize the main idea'
+    WHEN 974 THEN 'Record a speech about the Esperanto movement'
+    WHEN 975 THEN 'Match Esperanto proverbs with their meaning'
+    WHEN 976 THEN 'How do you say hello in Ukrainian? a) Pryvit b) Diakuiu c) Tak d) Ni'
+    WHEN 977 THEN 'Order the words: mene zvatty Ivan'
+    WHEN 978 THEN 'Listen to the audio and select the Ukrainian greeting'
+    WHEN 979 THEN 'Pronounce correctly Pryvit'
+    WHEN 980 THEN 'Match the numbers 1 to 5 in Ukrainian'
+END
+WHERE id_ejercicio BETWEEN 971 AND 980;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 981 THEN 'What is the word for bread? a) Khlib b) Voda c) Dim d) Kit'
+    WHEN 982 THEN 'Order the words: ya yim yabluko'
+    WHEN 983 THEN 'Listen and type the color mentioned in Ukrainian'
+    WHEN 984 THEN 'Pronounce the phrase Ya z Ukrainy'
+    WHEN 985 THEN 'Match the family members in Ukrainian'
+    WHEN 986 THEN 'Past tense of to do (robyty): a) robyv b) robliu c) zrobliu d) robyty'
+    WHEN 987 THEN 'Order the words: vchora my khodyly v kino'
+    WHEN 988 THEN 'Listen to the conversation and answer where they went'
+    WHEN 989 THEN 'Read aloud: Ya kupyv novu mashynu'
+    WHEN 990 THEN 'Match the verbs with their perfective form'
+END
+WHERE id_ejercicio BETWEEN 981 AND 990;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 991 THEN 'If I had money, ___: a) kupyv by b) kupliu c) kupuvav d) kupyv'
+    WHEN 992 THEN 'Order the words: vony pratsiuiut tut vzhe try hodyny'
+    WHEN 993 THEN 'Listen to the news and identify the city'
+    WHEN 994 THEN 'Pronounce the text about Kyiv'
+    WHEN 995 THEN 'Match the Ukrainian grammatical cases'
+    WHEN 996 THEN 'Synonym of shvydkyy: a) prudkyy b) povilnyy c) dorohyy d) deshevyy'
+    WHEN 997 THEN 'Order the words: nezvazhaiuchy na doshch my pishly huliaty'
+    WHEN 998 THEN 'Listen to the interview and summarize the main idea'
+    WHEN 999 THEN 'Give a speech about Ukrainian culture'
+    WHEN 1000 THEN 'Match Ukrainian idioms with their meaning'
+END
+WHERE id_ejercicio BETWEEN 991 AND 1000;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1001 THEN 'How do you say hello in Welsh? a) Shwmae b) Diolch c) Ie d) Na'
+    WHEN 1002 THEN 'Order the words: dw i yn dysgu Cymraeg'
+    WHEN 1003 THEN 'Listen to the audio and select the Welsh greeting'
+    WHEN 1004 THEN 'Pronounce correctly the word Shwmae'
+    WHEN 1005 THEN 'Match the numbers 1 to 5 in Welsh'
+    WHEN 1006 THEN 'What is the word for water? a) Dwr b) Bara c) Te d) Coffi'
+    WHEN 1007 THEN 'Order the words: mae hi yn bwrw glaw'
+    WHEN 1008 THEN 'Listen and write the color mentioned in Welsh'
+    WHEN 1009 THEN 'Pronounce the phrase Dw i n dod o Gymru'
+    WHEN 1010 THEN 'Match the days of the week in Welsh'
+END
+WHERE id_ejercicio BETWEEN 1001 AND 1010;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1011 THEN 'Past tense of to go (mynd): a) es i b) af i c) aeth d) mynd'
+    WHEN 1012 THEN 'Order the words: ddoe es i i r sinema'
+    WHEN 1013 THEN 'Listen to the dialogue and mark the destination'
+    WHEN 1014 THEN 'Read aloud: Prynais i gar newydd'
+    WHEN 1015 THEN 'Match the verbs with their past tense form'
+    WHEN 1016 THEN 'If I had time: a) taswn i n cael amser b) mae amser c) bydd amser'
+    WHEN 1017 THEN 'Order the words: maen nhw wedi bod yn gweithio yma am deirawr'
+    WHEN 1018 THEN 'Listen to the news and select the main topic'
+    WHEN 1019 THEN 'Pronounce the text about Cardiff'
+    WHEN 1020 THEN 'Match the Welsh mutations with their examples'
+END
+WHERE id_ejercicio BETWEEN 1011 AND 1020;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1021 THEN 'Synonym of cyflym: a) fuan b) araf c) drud d) rhad'
+    WHEN 1022 THEN 'Order the words: er gwaethaf y glaw aethon ni allan'
+    WHEN 1023 THEN 'Listen to the debate and note the conclusion'
+    WHEN 1024 THEN 'Give a speech about Welsh history'
+    WHEN 1025 THEN 'Match Welsh idioms with their meaning'
+    WHEN 1026 THEN 'How do you say hello in Vietnamese? a) Xin chao b) Cam on c) Da d) Khong'
+    WHEN 1027 THEN 'Order the words: toi ten la Nam'
+    WHEN 1028 THEN 'Listen to the audio and select the Vietnamese greeting'
+    WHEN 1029 THEN 'Pronounce correctly Xin chao with the correct tone'
+    WHEN 1030 THEN 'Match the numbers 1 to 5 in Vietnamese'
+END
+WHERE id_ejercicio BETWEEN 1021 AND 1030;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1031 THEN 'What is the word for water? a) Nuoc b) Com c) Pho d) Tra'
+    WHEN 1032 THEN 'Order the words: toi dang an tao'
+    WHEN 1033 THEN 'Listen and type the color mentioned in Vietnamese'
+    WHEN 1034 THEN 'Pronounce the phrase Toi den tu Viet Nam'
+    WHEN 1035 THEN 'Match the family pronouns in Vietnamese'
+    WHEN 1036 THEN 'Past tense marker: a) da b) se c) dang d) chua'
+    WHEN 1037 THEN 'Order the words: hom qua chung toi da di xem phim'
+    WHEN 1038 THEN 'Listen to the conversation and answer where they went'
+    WHEN 1039 THEN 'Read aloud: Toi da mua mot chiec xe moi'
+    WHEN 1040 THEN 'Match the verbs with their appropriate tense markers'
+END
+WHERE id_ejercicio BETWEEN 1031 AND 1040;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1041 THEN 'If I had money, ___: a) neu toi co tien b) toi co tien c) tien cua toi'
+    WHEN 1042 THEN 'Order the words: ho da lam viec o day duoc ba tieng dong ho'
+    WHEN 1043 THEN 'Listen to the news and identify the city'
+    WHEN 1044 THEN 'Pronounce the text about Hanoi'
+    WHEN 1045 THEN 'Match the Vietnamese classifiers'
+    WHEN 1046 THEN 'Synonym of nhanh: a) mau b) cham c) dat d) re'
+    WHEN 1047 THEN 'Order the words: mac du troi mua chung toi van di dao'
+    WHEN 1048 THEN 'Listen to the interview and summarize the main idea'
+    WHEN 1049 THEN 'Give a speech about Vietnamese cuisine'
+    WHEN 1050 THEN 'Match Vietnamese proverbs with their meaning'
+END
+WHERE id_ejercicio BETWEEN 1041 AND 1050;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1051 THEN 'How do you say hello in Hungarian? a) Szia b) Koszonom c) Igen d) Nem'
+    WHEN 1052 THEN 'Order the words: engem Gabor nak hivnak'
+    WHEN 1053 THEN 'Listen to the greeting and select the correct option'
+    WHEN 1054 THEN 'Pronounce the word Szia'
+    WHEN 1055 THEN 'Match the numbers 1 to 5 in Hungarian'
+    WHEN 1056 THEN 'Accusative ending: a) -t b) -nak c) -ban d) -hoz'
+    WHEN 1057 THEN 'Order the words: en eszem egy almat'
+    WHEN 1058 THEN 'Listen and write the number mentioned'
+    WHEN 1059 THEN 'Pronounce the phrase Magyarorszagrol jottem'
+    WHEN 1060 THEN 'Match the days of the week in Hungarian'
+END
+WHERE id_ejercicio BETWEEN 1051 AND 1060;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1061 THEN 'Past tense of csinani: a) csinaltam b) csinalom c) csinalni d) csinald'
+    WHEN 1062 THEN 'Order the words: tegnap elmentunk moziba'
+    WHEN 1063 THEN 'Listen to the dialogue and mark where they went'
+    WHEN 1064 THEN 'Read aloud: Vettem egy uj autot'
+    WHEN 1065 THEN 'Match the nouns with their plural forms'
+    WHEN 1066 THEN 'Conditional suffix: a) -na b) -t c) -val d) -ig'
+    WHEN 1067 THEN 'Order the words: mar harom oraja itt dolgoznak'
+    WHEN 1068 THEN 'Listen to the news and identify the topic'
+    WHEN 1069 THEN 'Pronounce the text about Budapest'
+    WHEN 1070 THEN 'Match the Hungarian vowel harmony rules'
+END
+WHERE id_ejercicio BETWEEN 1061 AND 1070;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1071 THEN 'Synonym of gyors: a) sebes b) lassu c) draga d) olcso'
+    WHEN 1072 THEN 'Order the words: bar esett az eso kimentunk setalni'
+    WHEN 1073 THEN 'Listen to the debate and summarize the main idea'
+    WHEN 1074 THEN 'Record a speech about Hungarian history'
+    WHEN 1075 THEN 'Match Hungarian idioms with their meaning'
+    WHEN 1076 THEN 'How do you say hello in Swahili? a) Jambo b) Asante c) Ndiyo d) Hapana'
+    WHEN 1077 THEN 'Order the words: jina langu ni Musa'
+    WHEN 1078 THEN 'Listen to the audio and select the Swahili greeting'
+    WHEN 1079 THEN 'Pronounce correctly Jambo'
+    WHEN 1080 THEN 'Match the numbers 1 to 5 in Swahili'
+END
+WHERE id_ejercicio BETWEEN 1071 AND 1080;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1081 THEN 'What is the word for water? a) Maji b) Chakula c) Nyumba d) Mtoto'
+    WHEN 1082 THEN 'Order the words: mimi ninakula tofaa'
+    WHEN 1083 THEN 'Listen and type the color mentioned in Swahili'
+    WHEN 1084 THEN 'Pronounce the phrase Mimi ninatoka Kenya'
+    WHEN 1085 THEN 'Match the family members in Swahili'
+    WHEN 1086 THEN 'Past tense prefix: a) li b) na c) ta d) me'
+    WHEN 1087 THEN 'Order the words: jana tulienda kwenye sinema'
+    WHEN 1088 THEN 'Listen to the conversation and answer where they went'
+    WHEN 1089 THEN 'Read aloud: Nimenunua gari jipya'
+    WHEN 1090 THEN 'Match the verbs with their tenses'
+END
+WHERE id_ejercicio BETWEEN 1081 AND 1090;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1091 THEN 'If I had money, ___: a) kama ningekuwa na pesa b) nina pesa'
+    WHEN 1092 THEN 'Order the words: wamefanya kazi hapa kwa saa tatu'
+    WHEN 1093 THEN 'Listen to the news and identify the city'
+    WHEN 1094 THEN 'Pronounce the text about Mount Kilimanjaro'
+    WHEN 1095 THEN 'Match the Swahili noun classes'
+    WHEN 1096 THEN 'Synonym of haraka: a) upesi b) polepole c) ghali d) rahisi'
+    WHEN 1097 THEN 'Order the words: ingawa ilinyesha tulitoka nje'
+    WHEN 1098 THEN 'Listen to the interview and summarize the main idea'
+    WHEN 1099 THEN 'Give a speech about East African culture'
+    WHEN 1100 THEN 'Match Swahili proverbs (Methali) with their meaning'
+END
+WHERE id_ejercicio BETWEEN 1091 AND 1100;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1101 THEN 'How do you say hello in Romanian? a) Salut b) Multumesc c) Da d) Nu'
+    WHEN 1102 THEN 'Order the words: ma numesc Andrei'
+    WHEN 1103 THEN 'Listen to the audio and select the Romanian greeting'
+    WHEN 1104 THEN 'Pronounce correctly Salut'
+    WHEN 1105 THEN 'Match the numbers 1 to 5 in Romanian'
+    WHEN 1106 THEN 'Definite article for boy: a) baiatul b) baiat c) baieti d) un baiat'
+    WHEN 1107 THEN 'Order the words: eu mananc un mar'
+    WHEN 1108 THEN 'Listen and write the beverage mentioned'
+    WHEN 1109 THEN 'Pronounce the phrase Eu sunt din Romania'
+    WHEN 1110 THEN 'Match the days of the week in Romanian'
+END
+WHERE id_ejercicio BETWEEN 1101 AND 1110;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1111 THEN 'Past tense of a merge: a) am mers b) merg c) voi merge d) mergeam'
+    WHEN 1112 THEN 'Order the words: ieri am fost la cinema'
+    WHEN 1113 THEN 'Listen to the dialogue and mark the destination'
+    WHEN 1114 THEN 'Read aloud: Am cumparat o masina noua'
+    WHEN 1115 THEN 'Match the verbs with their past participle'
+    WHEN 1116 THEN 'If I had time: a) daca as avea timp b) am timp c) voi avea timp'
+    WHEN 1117 THEN 'Order the words: ei lucreaza aici de trei ore'
+    WHEN 1118 THEN 'Listen to the news and select the topic of the day'
+    WHEN 1119 THEN 'Pronounce the text about Transylvania'
+    WHEN 1120 THEN 'Match the Romanian cases'
+END
+WHERE id_ejercicio BETWEEN 1111 AND 1120;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1121 THEN 'Synonym of rapid: a) iute b) incet c) scump d) ieftin'
+    WHEN 1122 THEN 'Order the words: desi ploua am iesit la plimbare'
+    WHEN 1123 THEN 'Listen to the political debate and note the conclusion'
+    WHEN 1124 THEN 'Give a speech about Romanian history'
+    WHEN 1125 THEN 'Match the Romanian idioms with their meaning'
+    WHEN 1126 THEN 'How do you say hello in Indonesian? a) Halo b) Terima kasih c) Ya d) Tidak'
+    WHEN 1127 THEN 'Order the words: nama saya Budi'
+    WHEN 1128 THEN 'Listen to the audio and select the greeting'
+    WHEN 1129 THEN 'Pronounce correctly Halo'
+    WHEN 1130 THEN 'Match the numbers 1 to 5 in Indonesian'
+END
+WHERE id_ejercicio BETWEEN 1121 AND 1130;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1131 THEN 'What is the word for water? a) Air b) Makan c) Rumah d) Buku'
+    WHEN 1132 THEN 'Order the words: saya sedang makan apel'
+    WHEN 1133 THEN 'Listen and type the color mentioned in Indonesian'
+    WHEN 1134 THEN 'Pronounce the phrase Saya berasal dari Indonesia'
+    WHEN 1135 THEN 'Match the family members in Indonesian'
+    WHEN 1136 THEN 'Past tense marker: a) sudah b) akan c) sedang d) belum'
+    WHEN 1137 THEN 'Order the words: kemarin kami pergi ke bioskop'
+    WHEN 1138 THEN 'Listen to the dialogue and mark the destination'
+    WHEN 1139 THEN 'Read aloud: Saya membeli mobil baru'
+    WHEN 1140 THEN 'Match the verbs with their affixes'
+END
+WHERE id_ejercicio BETWEEN 1131 AND 1140;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1141 THEN 'If I had money, ___: a) jika saya punya uang b) uang saya c) untuk uang'
+    WHEN 1142 THEN 'Order the words: mereka sudah bekerja di sini selama tiga jam'
+    WHEN 1143 THEN 'Listen to the news and select the main topic'
+    WHEN 1144 THEN 'Pronounce the text about Bali'
+    WHEN 1145 THEN 'Match the Indonesian prefixes (me-, ber-, di-)'
+    WHEN 1146 THEN 'Synonym of cepat: a) lekas b) lambat c) mahal d) murah'
+    WHEN 1147 THEN 'Order the words: meskipun hujan kami pergi keluar'
+    WHEN 1148 THEN 'Listen to the debate and note the conclusion'
+    WHEN 1149 THEN 'Give a speech about Indonesian archipelago'
+    WHEN 1150 THEN 'Match Indonesian proverbs with their meaning'
+END
+WHERE id_ejercicio BETWEEN 1141 AND 1150;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1151 THEN 'How do you say hello in Hawaiian? a) Aloha b) Mahalo c) Ae d) Aole'
+    WHEN 1152 THEN 'Order the words: o Keanu ko u inoa'
+    WHEN 1153 THEN 'Listen to the greeting and select the correct option'
+    WHEN 1154 THEN 'Pronounce the word Aloha'
+    WHEN 1155 THEN 'Match the Hawaiian numbers 1 to 5'
+    WHEN 1156 THEN 'What is the word for family? a) Ohana b) Keiki c) Wahine d) Kane'
+    WHEN 1157 THEN 'Order the words: e ai ana au i ka apala'
+    WHEN 1158 THEN 'Listen and write the word in Hawaiian'
+    WHEN 1159 THEN 'Pronounce the phrase No Hawaii au'
+    WHEN 1160 THEN 'Match the Hawaiian directions'
+END
+WHERE id_ejercicio BETWEEN 1151 AND 1160;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1161 THEN 'Past tense marker: a) Ua b) E ana c) Ke nei d) E'
+    WHEN 1162 THEN 'Order the words: i nehinei ua hele makou i ka hale kii'
+    WHEN 1163 THEN 'Listen to the dialogue and mark where they went'
+    WHEN 1164 THEN 'Read aloud: Ua kuai au i kaa hou'
+    WHEN 1165 THEN 'Match the verbs with their markers'
+    WHEN 1166 THEN 'If I had time: a) ina he manawa ko u b) manawa ko u c) he manawa'
+    WHEN 1167 THEN 'Order the words: ua hana lakou ma anei no ekolu hola'
+    WHEN 1168 THEN 'Listen to the news and identify the island mentioned'
+    WHEN 1169 THEN 'Pronounce the text about Hawaiian volcanoes'
+    WHEN 1170 THEN 'Match the Hawaiian particles'
+END
+WHERE id_ejercicio BETWEEN 1161 AND 1170;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1171 THEN 'Synonym of wikiwiki: a) awiwi b) lohi c) pipi i d) emi'
+    WHEN 1172 THEN 'Order the words: oiai ka ua ua hele makou iwaho'
+    WHEN 1173 THEN 'Listen to the interview and summarize the main idea'
+    WHEN 1174 THEN 'Record a speech about Hawaiian mythology'
+    WHEN 1175 THEN 'Match Hawaiian idioms with their literal meaning'
+    WHEN 1176 THEN 'How do you say hello in Navajo? a) Ya at eeh b) Ahehee c) Aoo d) Ndaga'
+    WHEN 1177 THEN 'Order the words: yinishye Hastiin dashijini'
+    WHEN 1178 THEN 'Listen to the audio and select the greeting'
+    WHEN 1179 THEN 'Pronounce correctly Ya at eeh'
+    WHEN 1180 THEN 'Match the numbers 1 to 5 in Navajo'
+END
+WHERE id_ejercicio BETWEEN 1171 AND 1180;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1181 THEN 'What is the word for water? a) To b) Chiyáán c) Hooghan d) Tsin'
+    WHEN 1182 THEN 'Order the words: bilasaana yish a'
+    WHEN 1183 THEN 'Listen and type the color mentioned in Navajo'
+    WHEN 1184 THEN 'Pronounce the phrase Dine bizaad yinishta'
+    WHEN 1185 THEN 'Match the animals with their Navajo name'
+    WHEN 1186 THEN 'Past tense of to go: a) niya b) deesháál c) yishaal d) nishááh'
+    WHEN 1187 THEN 'Order the words: adaadaa naalkaah bighandi niniikai'
+    WHEN 1188 THEN 'Listen to the dialogue and mark the destination'
+    WHEN 1189 THEN 'Read aloud: Chidi aniidii nahaalniih'
+    WHEN 1190 THEN 'Match the verbs with their aspect'
+END
+WHERE id_ejercicio BETWEEN 1181 AND 1190;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1191 THEN 'If I had time: a) biighah shoo b) ahoolzhiizh c) shoo'
+    WHEN 1192 THEN 'Order the words: kwii taa ahoolzhiizh naanish deiyilaa'
+    WHEN 1193 THEN 'Listen to the news and select the main topic'
+    WHEN 1194 THEN 'Pronounce the text about Monument Valley'
+    WHEN 1195 THEN 'Match the Navajo noun classifications'
+    WHEN 1196 THEN 'Synonym of tsxiilgo: a) hazaadzi b) nizaad c) tseebii'
+    WHEN 1197 THEN 'Order the words: nahałtin ndi ch indoorikaigo taa'
+    WHEN 1198 THEN 'Listen to the elder and note the moral of the story'
+    WHEN 1199 THEN 'Give a speech about Navajo code talkers'
+    WHEN 1200 THEN 'Match Navajo idioms with their meaning'
+END
+WHERE id_ejercicio BETWEEN 1191 AND 1200;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1201 THEN 'How do you say hello in Klingon? a) nuqneH b) qatlho c) HIja d) ghobe'
+    WHEN 1202 THEN 'Order the words: pongwIj jIH Worf'
+    WHEN 1203 THEN 'Listen to the audio and select the correct Klingon word'
+    WHEN 1204 THEN 'Pronounce correctly nuqneH'
+    WHEN 1205 THEN 'Match the numbers 1 to 5 in Klingon'
+    WHEN 1206 THEN 'What is the word for blood wine? a) Iw HIq b) targh c) betleH d) taj'
+    WHEN 1207 THEN 'Order the words: vISop naS naH'
+    WHEN 1208 THEN 'Listen and write the weapon mentioned'
+    WHEN 1209 THEN 'Pronounce the phrase tlhIngan maH'
+    WHEN 1210 THEN 'Match the Star Trek terms in Klingon'
+END
+WHERE id_ejercicio BETWEEN 1201 AND 1210;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1211 THEN 'Past tense suffix: a) -pu b) -taH c) -lI d) -be'
+    WHEN 1212 THEN 'Order the words: wa leS yaS vIlegh'
+    WHEN 1213 THEN 'Listen to the conversation and answer what they fought'
+    WHEN 1214 THEN 'Read aloud: Duj chu vIje pu'
+    WHEN 1215 THEN 'Match the verb prefixes with their subject/object'
+    WHEN 1216 THEN 'If it rains, we attack: a) peghchugh vaj maHIv b) maHIv c) pegh'
+    WHEN 1217 THEN 'Order the words: wej rep naDev vumtaH'
+    WHEN 1218 THEN 'Listen to the supreme commander and select the target'
+    WHEN 1219 THEN 'Pronounce the paragraph about Qo noS'
+    WHEN 1220 THEN 'Match the Klingon verb suffixes'
+END
+WHERE id_ejercicio BETWEEN 1211 AND 1220;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1221 THEN 'Synonym of nom (fast): a) Doj b) Qot c) nIv d) qan'
+    WHEN 1222 THEN 'Order the words: pegh pu ach maghoS'
+    WHEN 1223 THEN 'Listen to the debate and note the warriors stance'
+    WHEN 1224 THEN 'Give a speech about honor in Klingon culture'
+    WHEN 1225 THEN 'Match Klingon proverbs with their meaning'
+    WHEN 1226 THEN 'How do you say hello in High Valyrian? a) Rytsas b) Kirimvose c) Kessa d) Daor'
+    WHEN 1227 THEN 'Order the words: brōzi ñuha Daenerys issa'
+    WHEN 1228 THEN 'Listen to the audio and select the High Valyrian greeting'
+    WHEN 1229 THEN 'Pronounce correctly Rytsas'
+    WHEN 1230 THEN 'Match the numbers 1 to 5 in High Valyrian'
+END
+WHERE id_ejercicio BETWEEN 1221 AND 1230;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1231 THEN 'What is the word for dragon? a) Zaldrīzes b) Valonqar c) Ānogar d) Perzys'
+    WHEN 1232 THEN 'Order the words: anne ipradan nyke'
+    WHEN 1233 THEN 'Listen and type the element mentioned'
+    WHEN 1234 THEN 'Pronounce the phrase Valar Morghulis'
+    WHEN 1235 THEN 'Match the nouns to their gender classes'
+    WHEN 1236 THEN 'Past tense of to fly: a) sōvitas b) sōves c) sōvilza d) sōvīs'
+    WHEN 1237 THEN 'Order the words: arlī zaldrīzes urnen'
+    WHEN 1238 THEN 'Listen to the dialogue and mark the destination'
+    WHEN 1239 THEN 'Read aloud: Valar Dohaeris'
+    WHEN 1240 THEN 'Match the High Valyrian cases with their uses'
+END
+WHERE id_ejercicio BETWEEN 1231 AND 1240;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1241 THEN 'If I had time: a) lo jēda emilzīn b) jēda c) kessa jēda'
+    WHEN 1242 THEN 'Order the words: sen harēnkon rȳ kesīr gaomas'
+    WHEN 1243 THEN 'Listen to the report and identify the city of Essos'
+    WHEN 1244 THEN 'Pronounce the text about the Doom of Valyria'
+    WHEN 1245 THEN 'Match the verb conjugations'
+    WHEN 1246 THEN 'Synonym of rāpa (fast): a) naejot b) gēlenka c) dōna d) ñuqir'
+    WHEN 1247 THEN 'Order the words: jēlēbagon lo sōves rȳ zaldrīzes'
+    WHEN 1248 THEN 'Listen to the prophecy and summarize its meaning'
+    WHEN 1249 THEN 'Give a speech about Targaryen history'
+    WHEN 1250 THEN 'Match High Valyrian idioms with their meaning'
+END
+WHERE id_ejercicio BETWEEN 1241 AND 1250;
+
+-- CURSO 51: Latín desde Inglés (IDs 1251-1275)
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1251 THEN 'How do you say hello in Latin? a) Salve b) Gratias c) Ita d) Minime'
+    WHEN 1252 THEN 'Order the words: est nomen mihi Marcus'
+    WHEN 1253 THEN 'Translate to Latin: The girl is in the forest'
+    WHEN 1254 THEN 'Pronounce correctly the word Salve'
+    WHEN 1255 THEN 'Match the numbers 1 to 5 in Latin'
+    WHEN 1256 THEN 'Which is the accusative of "puella"? a) puellam b) puellae c) puellas'
+    WHEN 1257 THEN 'Order the words: canis panem edit'
+    WHEN 1258 THEN 'Listen and write the Latin word for "water"'
+    WHEN 1259 THEN 'Translate: Sum discipulus'
+    WHEN 1260 THEN 'Match the Roman gods with their Greek equivalents'
+    WHEN 1261 THEN 'Past tense of "esse": a) eram b) sum c) ero d) fui'
+    WHEN 1262 THEN 'Order the words: heri ad forum ivi'
+    WHEN 1263 THEN 'Listen to the short story and answer who the protagonist is'
+    WHEN 1264 THEN 'Read aloud: Veni, vidi, vici'
+    WHEN 1265 THEN 'Match the verbs with their conjugation group'
+    WHEN 1266 THEN 'Translate: Si vales, bene est'
+    WHEN 1267 THEN 'Order the words: tres horas hic laboraverunt'
+    WHEN 1268 THEN 'Listen and identify the case of the noun mentioned'
+    WHEN 1269 THEN 'Pronounce the text about the Roman Senate'
+    WHEN 1270 THEN 'Match the Latin prepositions'
+    WHEN 1271 THEN 'Synonym of "celer": a) velox b) tardus c) carus d) vilis'
+    WHEN 1272 THEN 'Order the words: quamquam pluit foras ivimus'
+    WHEN 1273 THEN 'Listen to the Cicero oration extract and identify the theme'
+    WHEN 1274 THEN 'Write a short paragraph about Pompeii in Latin'
+    WHEN 1275 THEN 'Match Latin phrases with their legal meaning'
+END
+WHERE id_ejercicio BETWEEN 1251 AND 1275;
+
+-- CURSO 52: Gaélico escocés desde Inglés (IDs 1276-1300)
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1276 THEN 'How do you say hello in Scottish Gaelic? a) Halò b) Tapadh leat c) Tha d) Chan eil'
+    WHEN 1277 THEN 'Order the words: is mise Seumas'
+    WHEN 1278 THEN 'Listen to the audio and select the Gaelic greeting'
+    WHEN 1279 THEN 'Pronounce correctly: Halò'
+    WHEN 1280 THEN 'Match the numbers 1 to 5 in Gaelic'
+    WHEN 1281 THEN 'What is the word for water? a) Uisge b) Aran c) Taigh d) Cù'
+    WHEN 1282 THEN 'Order the words: tha mi ag ithe ubhal'
+    WHEN 1283 THEN 'Listen and write the color mentioned in Gaelic'
+    WHEN 1284 THEN 'Pronounce the phrase: Tha mi à Alba'
+    WHEN 1285 THEN 'Match the family members in Gaelic'
+    WHEN 1286 THEN 'Past tense marker: a) Do b) Tha c) Bith d) Bha'
+    WHEN 1287 THEN 'Order the words: chaidh sinn don taigh-dhealbh an-dè'
+    WHEN 1288 THEN 'Listen to the dialogue and mark where they went'
+    WHEN 1289 THEN 'Read aloud: Cheannaich mi càr ùr'
+    WHEN 1290 THEN 'Match the verbs with their verbal noun'
+    WHEN 1291 THEN 'If I had time: a) Nam biodh tìde agam b) Tha tìde agam'
+    WHEN 1292 THEN 'Order the words: tha iad air a bhith ag obair an seo fad trì uairean'
+    WHEN 1293 THEN 'Listen to the news and identify the island mentioned'
+    WHEN 1294 THEN 'Pronounce the text about the Highlands'
+    WHEN 1295 THEN 'Match the Gaelic prepositions with pronouns'
+    WHEN 1296 THEN 'Synonym of "luath": a) sgiobalta b) mall c) daor d) saor'
+    WHEN 1297 THEN 'Order the words: a dh aindeoin na h-uisge chaidh sinn a-mach'
+    WHEN 1298 THEN 'Listen to the interview and summarize the main idea'
+    WHEN 1299 THEN 'Give a speech about Clan history'
+    WHEN 1300 THEN 'Match Gaelic proverbs with their meaning'
+END
+WHERE id_ejercicio BETWEEN 1276 AND 1300;
+
+-- CURSO 53: Finlandés desde Inglés (IDs 1301-1325)
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1301 THEN 'How do you say hello in Finnish? a) Hei b) Kiitos c) Kyllä d) Ei'
+    WHEN 1302 THEN 'Order the words: nimeni on Pekka'
+    WHEN 1303 THEN 'Listen to the audio and select the Finnish greeting'
+    WHEN 1304 THEN 'Pronounce correctly: Hei'
+    WHEN 1305 THEN 'Match the numbers 1 to 5 in Finnish'
+    WHEN 1306 THEN 'What is the word for water? a) Vesi b) Leipä c) Talo d) Koira'
+    WHEN 1307 THEN 'Order the words: minä syön omenaa'
+    WHEN 1308 THEN 'Listen and type the color mentioned in Finnish'
+    WHEN 1309 THEN 'Pronounce the phrase: Olen Suomesta'
+    WHEN 1310 THEN 'Match the days of the week in Finnish'
+    WHEN 1311 THEN 'Past tense of "mennä": a) menin b) menen c) menisin d) mennyt'
+    WHEN 1312 THEN 'Order the words: eilen menimme elokuviin'
+    WHEN 1313 THEN 'Listen to the dialogue and mark the destination'
+    WHEN 1314 THEN 'Read aloud: Ostin uuden auton'
+    WHEN 1315 THEN 'Match the nouns with their Partitive forms'
+    WHEN 1316 THEN 'If I had time: a) Jos minulla olisi aikaa b) Minulla on aikaa'
+    WHEN 1317 THEN 'Order the words: he ovat työskennelleet täällä kolme tuntia'
+    WHEN 1318 THEN 'Listen to the news and select the main topic'
+    WHEN 1319 THEN 'Pronounce the text about Helsinki'
+    WHEN 1320 THEN 'Match the Finnish locative cases'
+    WHEN 1321 THEN 'Synonym of "nopea": a) nopsa b) hidas c) kallis d) halpa'
+    WHEN 1322 THEN 'Order the words: sateesta huolimatta menimme ulos'
+    WHEN 1323 THEN 'Listen to the debate and note the conclusion'
+    WHEN 1324 THEN 'Give a speech about Finnish Sauna culture'
+    WHEN 1325 THEN 'Match Finnish idioms with their meaning'
+END
+WHERE id_ejercicio BETWEEN 1301 AND 1325;
+
+-- CURSO 54: Yidis desde Inglés (IDs 1326-1350)
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1326 THEN 'How do you say hello in Yiddish? a) Sholem-aleykhem b) A dank c) Yo d) Neyn'
+    WHEN 1327 THEN 'Order the words: ikh hays David'
+    WHEN 1328 THEN 'Listen to the audio and select the Yiddish greeting'
+    WHEN 1329 THEN 'Pronounce correctly: Sholem-aleykhem'
+    WHEN 1330 THEN 'Match the numbers 1 to 5 in Yiddish'
+    WHEN 1331 THEN 'What is the word for water? a) Vaser b) Broyt c) Hoyz d) Hunt'
+    WHEN 1332 THEN 'Order the words: ikh es an epl'
+    WHEN 1333 THEN 'Listen and write the color mentioned in Yiddish'
+    WHEN 1334 THEN 'Pronounce the phrase: Ikh bin fun di Fareynikte Shtatn'
+    WHEN 1335 THEN 'Match the family members in Yiddish'
+    WHEN 1336 THEN 'Past tense marker: a) hob b) bin c) vet d) volt'
+    WHEN 1337 THEN 'Order the words: nekhtn zaynen mir gegangen in kino'
+    WHEN 1338 THEN 'Listen to the dialogue and mark where they went'
+    WHEN 1339 THEN 'Read aloud: Ikh hob gekoyft a naye oyto'
+    WHEN 1340 THEN 'Match the verbs with their past participle'
+    WHEN 1341 THEN 'If I had time: a) Oyb ikh volt gehat tsayt b) Ikh hob tsayt'
+    WHEN 1342 THEN 'Order the words: zey arbetn do shoyn dray sho'
+    WHEN 1343 THEN 'Listen to the news and identify the city mentioned'
+    WHEN 1344 THEN 'Pronounce the text about Klezmer music'
+    WHEN 1345 THEN 'Match the Yiddish dialects'
+    WHEN 1346 THEN 'Synonym of "shnel": a) gikh b) pamelekh c) tayer d) bilik'
+    WHEN 1347 THEN 'Order the words: nisht gekukt afn regn zaynen mir aroysgegangen'
+    WHEN 1348 THEN 'Listen to the interview and summarize the main idea'
+    WHEN 1349 THEN 'Give a speech about Yiddish literature'
+    WHEN 1350 THEN 'Match Yiddish idioms with their meaning'
+END
+WHERE id_ejercicio BETWEEN 1326 AND 1350;
+
+-- CURSO 55: Criollo haitiano desde Inglés (IDs 1351-1375)
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1351 THEN 'How do you say hello in Haitian Creole? a) Bonjou b) Mèsi c) Wi d) Non'
+    WHEN 1352 THEN 'Order the words: non mwen se Jean'
+    WHEN 1353 THEN 'Listen to the greeting and select the correct option'
+    WHEN 1354 THEN 'Pronounce correctly: Bonjou'
+    WHEN 1355 THEN 'Match the numbers 1 to 5 in Creole'
+    WHEN 1356 THEN 'What is the word for water? a) Dlo b) Pen c) Kay d) Chyen'
+    WHEN 1357 THEN 'Order the words: m ap manje yon pòm'
+    WHEN 1358 THEN 'Listen and write the color mentioned'
+    WHEN 1359 THEN 'Pronounce the phrase: Mwen soti Ayiti'
+    WHEN 1360 THEN 'Match the days of the week in Creole'
+    WHEN 1361 THEN 'Past tense marker: a) te b) pral c) ap d) fèk'
+    WHEN 1362 THEN 'Order the words: yè nou te ale nan sinema'
+    WHEN 1363 THEN 'Listen to the conversation and answer where they went'
+    WHEN 1364 THEN 'Read aloud: Mwen te achte yon nouvo machin'
+    WHEN 1365 THEN 'Match the pronouns with their possessive forms'
+    WHEN 1366 THEN 'If I had money: a) Si m te gen kòb b) Mwen gen kòb'
+    WHEN 1367 THEN 'Order the words: y ap travay isit la depi twa èdtan'
+    WHEN 1368 THEN 'Listen to the news and identify the city'
+    WHEN 1369 THEN 'Pronounce the text about Port-au-Prince'
+    WHEN 1370 THEN 'Match the Creole contractions'
+    WHEN 1371 THEN 'Synonym of "vit": a) rapid b) dousman c) chè d) bon mache'
+    WHEN 1372 THEN 'Order the words: malgre lapli a nou te soti'
+    WHEN 1373 THEN 'Listen to the debate and summarize the main idea'
+    WHEN 1374 THEN 'Give a speech about Haitian Independence'
+    WHEN 1375 THEN 'Match Creole proverbs with their meaning'
+END
+WHERE id_ejercicio BETWEEN 1351 AND 1375;
+
+-- CURSO 56: Zulú desde Inglés (IDs 1376-1400)
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1376 THEN 'How do you say hello in Zulu? a) Sawubona b) Ngiyabonga c) Yebo d) Cha'
+    WHEN 1377 THEN 'Order the words: igama lami ngu Thabo'
+    WHEN 1378 THEN 'Listen to the audio and select the Zulu greeting'
+    WHEN 1379 THEN 'Pronounce correctly: Sawubona'
+    WHEN 1380 THEN 'Match the numbers 1 to 5 in Zulu'
+    WHEN 1381 THEN 'What is the word for water? a) Amanzi b) Isinkwa c) Indlu d) Inja'
+    WHEN 1382 THEN 'Order the words: ngidla i-apula'
+    WHEN 1383 THEN 'Listen and type the color mentioned'
+    WHEN 1384 THEN 'Pronounce the phrase: Ngivela eNingizimu Afrika'
+    WHEN 1385 THEN 'Match the family members in Zulu'
+    WHEN 1386 THEN 'Past tense marker: a) -ile b) -ya c) -zo d) -sa'
+    WHEN 1387 THEN 'Order the words: izolo siye ebhayisikobho'
+    WHEN 1388 THEN 'Listen to the dialogue and mark where they went'
+    WHEN 1389 THEN 'Read aloud: Ngithenge imoto entsha'
+    WHEN 1390 THEN 'Match the verbs with their noun classes'
+    WHEN 1391 THEN 'If I had time: a) Uma benginesikhathi b) Nginesikhathi'
+    WHEN 1392 THEN 'Order the words: sebeyenzile lapha amahora amathathu'
+    WHEN 1393 THEN 'Listen to the news and select the main topic'
+    WHEN 1394 THEN 'Pronounce the text about Shaka Zulu'
+    WHEN 1395 THEN 'Match the Zulu click sounds (c, q, x)'
+    WHEN 1396 THEN 'Synonym of "shesha": a) phuma b) kancane c) dula d) mbe'
+    WHEN 1397 THEN 'Order the words: naphezu kwemvula saphuma'
+    WHEN 1398 THEN 'Listen to the interview and summarize the main idea'
+    WHEN 1399 THEN 'Give a speech about Zulu traditions'
+    WHEN 1400 THEN 'Match Zulu proverbs with their meaning'
+END
+WHERE id_ejercicio BETWEEN 1376 AND 1400;
+
+-- CURSO 57: Inglés desde Alemán (IDs 1401-1425) - Idioma base Alemán
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1401 THEN 'Wie sagt man "Hello" auf Englisch? a) Hello b) Thank you c) Yes d) No'
+    WHEN 1402 THEN 'Bringe die Wörter in die richtige Reihenfolge: My name is Tom'
+    WHEN 1403 THEN 'Höre dir das Audio an und wähle die englische Begrüßung'
+    WHEN 1404 THEN 'Sprich das Wort "Hello" korrekt aus'
+    WHEN 1405 THEN 'Ordne die Zahlen 1 bis 5 auf Englisch zu'
+    WHEN 1406 THEN 'Was ist das Wort für Wasser? a) Water b) Bread c) House d) Dog'
+    WHEN 1407 THEN 'Bringe die Wörter in die richtige Reihenfolge: I am eating an apple'
+    WHEN 1408 THEN 'Höre zu und schreibe die genannte Farbe auf Englisch'
+    WHEN 1409 THEN 'Sprich den Satz aus: I am from Germany'
+    WHEN 1410 THEN 'Ordne die Wochentage auf Englisch zu'
+    WHEN 1411 THEN 'Vergangenheit von "to go": a) went b) go c) will go d) gone'
+    WHEN 1412 THEN 'Bringe die Wörter in die richtige Reihenfolge: Yesterday we went to the cinema'
+    WHEN 1413 THEN 'Höre dem Dialog zu und markiere das Ziel'
+    WHEN 1414 THEN 'Lies laut vor: I bought a new car'
+    WHEN 1415 THEN 'Ordne die Verben ihren unregelmäßigen Formen zu'
+    WHEN 1416 THEN 'Wenn ich Zeit hätte: a) If I had time b) I have time'
+    WHEN 1417 THEN 'Bringe die Wörter in die richtige Reihenfolge: They have been working here for three hours'
+    WHEN 1418 THEN 'Höre die Nachrichten und wähle das Hauptthema'
+    WHEN 1419 THEN 'Sprich den Text über London aus'
+    WHEN 1420 THEN 'Ordne die englischen Präpositionen zu'
+    WHEN 1421 THEN 'Synonym für "fast": a) quick b) slow c) expensive d) cheap'
+    WHEN 1422 THEN 'Bringe die Wörter in die richtige Reihenfolge: Despite the rain we went out'
+    WHEN 1423 THEN 'Höre der Debatte zu und notiere das Ergebnis'
+    WHEN 1424 THEN 'Halte eine Rede über die britische Geschichte'
+    WHEN 1425 THEN 'Ordne die englischen Redewendungen ihrer Bedeutung zu'
+END
+WHERE id_ejercicio BETWEEN 1401 AND 1425;
+
+-- CURSO 58: Español desde Alemán (IDs 1426-1450)
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1426 THEN 'Wie sagt man "Hola" auf Spanisch? a) Hola b) Gracias c) Sí d) No'
+    WHEN 1427 THEN 'Bringe die Wörter in die richtige Reihenfolge: Me llamo Juan'
+    WHEN 1428 THEN 'Höre dir das Audio an und wähle die spanische Begrüßung'
+    WHEN 1429 THEN 'Sprich das Wort "Hola" korrekt aus'
+    WHEN 1430 THEN 'Ordne die Zahlen 1 bis 5 auf Spanisch zu'
+    WHEN 1431 THEN 'Was ist das Wort für Wasser? a) Agua b) Pan c) Casa d) Perro'
+    WHEN 1432 THEN 'Bringe die Wörter in die richtige Reihenfolge: Estoy comiendo una manzana'
+    WHEN 1433 THEN 'Höre zu und schreibe die genannte Farbe auf Spanisch'
+    WHEN 1434 THEN 'Sprich den Satz aus: Soy de Alemania'
+    WHEN 1435 THEN 'Ordne die Familienmitglieder auf Spanisch zu'
+    WHEN 1436 THEN 'Vergangenheit von "comer": a) comí b) como c) comeré d) comiendo'
+    WHEN 1437 THEN 'Bringe die Wörter in die richtige Reihenfolge: Ayer fuimos al cine'
+    WHEN 1438 THEN 'Höre dem Dialog zu und markiere das Ziel'
+    WHEN 1439 THEN 'Lies laut vor: Compré un coche nuevo'
+    WHEN 1440 THEN 'Ordne die Verben ihren Zeitformen zu'
+    WHEN 1441 THEN 'Wenn ich Zeit hätte: a) Si tuviera tiempo b) Tengo tiempo'
+    WHEN 1442 THEN 'Bringe die Wörter in die richtige Reihenfolge: Ellos trabajan aquí desde hace tres horas'
+    WHEN 1443 THEN 'Höre die Nachrichten und identifiziere das Thema'
+    WHEN 1444 THEN 'Sprich den Text über Madrid aus'
+    WHEN 1445 THEN 'Ordne die spanischen Pronomen zu'
+    WHEN 1446 THEN 'Synonym für "rápido": a) veloz b) lento c) caro d) barato'
+    WHEN 1447 THEN 'Bringe die Wörter in die richtige Reihenfolge: A pesar de la lluvia salimos'
+    WHEN 1448 THEN 'Höre dem Interview zu und fasse die Hauptidee zusammen'
+    WHEN 1449 THEN 'Halte eine Rede über die spanische Kultur'
+    WHEN 1450 THEN 'Ordne die spanischen Sprichwörter ihrer Bedeutung zu'
+END
+WHERE id_ejercicio BETWEEN 1426 AND 1450;
+
+-- CURSO 59: Francés desde Alemán (IDs 1451-1475)
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1451 THEN 'Wie sagt man "Bonjour" auf Französisch? a) Bonjour b) Merci c) Oui d) Non'
+    WHEN 1452 THEN 'Bringe die Wörter in die richtige Reihenfolge: Je m appelle Pierre'
+    WHEN 1453 THEN 'Höre dir das Audio an und wähle die französische Begrüßung'
+    WHEN 1454 THEN 'Sprich das Wort "Bonjour" korrekt aus'
+    WHEN 1455 THEN 'Ordne die Zahlen 1 bis 5 auf Französisch zu'
+    WHEN 1456 THEN 'Was ist das Wort für Wasser? a) Eau b) Pain c) Maison d) Chien'
+    WHEN 1457 THEN 'Bringe die Wörter in die richtige Reihenfolge: Je mange une pomme'
+    WHEN 1458 THEN 'Höre zu und schreibe die genannte Farbe auf Französisch'
+    WHEN 1459 THEN 'Sprich den Satz aus: Je viens d Allemagne'
+    WHEN 1460 THEN 'Ordne die Wochentage auf Französisch zu'
+    WHEN 1461 THEN 'Vergangenheit von "aller": a) suis allé b) vais c) irai d) allais'
+    WHEN 1462 THEN 'Bringe die Wörter in die richtige Reihenfolge: Hier nous sommes allés au cinéma'
+    WHEN 1463 THEN 'Höre dem Dialog zu und markiere das Ziel'
+    WHEN 1464 THEN 'Lies laut vor: J ai acheté une nouvelle voiture'
+    WHEN 1465 THEN 'Ordne die Verben dem "Passé Composé" zu'
+    WHEN 1466 THEN 'Wenn ich Zeit hätte: a) Si j avais le temps b) J ai le temps'
+    WHEN 1467 THEN 'Bringe die Wörter in die richtige Reihenfolge: Ils travaillent ici depuis trois heures'
+    WHEN 1468 THEN 'Höre die Nachrichten und wähle das Thema'
+    WHEN 1469 THEN 'Sprich den Text über Paris aus'
+    WHEN 1470 THEN 'Ordne die französischen Artikel zu'
+    WHEN 1471 THEN 'Synonym für "rapide": a) vite b) lent c) cher d) bon marché'
+    WHEN 1472 THEN 'Bringe die Wörter in die richtige Reihenfolge: Malgré la pluie nous sommes sortis'
+    WHEN 1473 THEN 'Höre der Debatte zu und notiere das Ergebnis'
+    WHEN 1474 THEN 'Halte eine Rede über die französische Revolution'
+    WHEN 1475 THEN 'Ordne die französischen Redewendungen zu'
+END
+WHERE id_ejercicio BETWEEN 1451 AND 1475;
+
+-- CURSO 60: Italiano desde Alemán (IDs 1476-1500)
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1476 THEN 'Wie sagt man "Ciao" auf Italienisch? a) Ciao b) Grazie c) Sì d) No'
+    WHEN 1477 THEN 'Bringe die Wörter in die richtige Reihenfolge: Mi chiamo Luca'
+    WHEN 1478 THEN 'Höre dir das Audio an und wähle die italienische Begrüßung'
+    WHEN 1479 THEN 'Sprich das Wort "Ciao" korrekt aus'
+    WHEN 1480 THEN 'Ordne die Zahlen 1 bis 5 auf Italienisch zu'
+    WHEN 1481 THEN 'Was ist das Wort für Wasser? a) Acqua b) Pane c) Casa d) Cane'
+    WHEN 1482 THEN 'Bringe die Wörter in die richtige Reihenfolge: Sto mangiando una mela'
+    WHEN 1483 THEN 'Höre zu und schreibe die genannte Farbe auf Italienisch'
+    WHEN 1484 THEN 'Sprich den Satz aus: Vengo dalla Germania'
+    WHEN 1485 THEN 'Ordne die Familienmitglieder auf Italienisch zu'
+    WHEN 1486 THEN 'Vergangenheit von "andare": a) sono andato b) vado c) andrò d) andavo'
+    WHEN 1487 THEN 'Bringe die Wörter in die richtige Reihenfolge: Ieri siamo andati al cinema'
+    WHEN 1488 THEN 'Höre dem Dialog zu und markiere das Ziel'
+    WHEN 1489 THEN 'Lies laut vor: Ho comprato una nuova macchina'
+    WHEN 1490 THEN 'Ordne die Verben ihren Partizipien zu'
+    WHEN 1491 THEN 'Wenn ich Zeit hätte: a) Se avessi tempo b) Ho tempo'
+    WHEN 1492 THEN 'Bringe die Wörter in die richtige Reihenfolge: Lavorano qui da tre ore'
+    WHEN 1493 THEN 'Höre die Nachrichten und identifiziere die Stadt'
+    WHEN 1494 THEN 'Sprich den Text über Rom aus'
+    WHEN 1495 THEN 'Ordne die italienischen Präpositionen zu'
+    WHEN 1496 THEN 'Synonym für "veloce": a) rapido b) lento c) caro d) economico'
+    WHEN 1497 THEN 'Bringe die Wörter in die richtige Reihenfolge: Nonostante la pioggia siamo usciti'
+    WHEN 1498 THEN 'Höre dem Interview zu und fasse die Hauptidee zusammen'
+    WHEN 1499 THEN 'Halte eine Rede über die italienische Renaissance'
+    WHEN 1500 THEN 'Ordne die italienischen Redewendungen zu'
+END
+WHERE id_ejercicio BETWEEN 1476 AND 1500;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1501 THEN 'Wie viele Felder hat das Schachbrett? a) 64 b) 32 c) 100 d) 50'
+    WHEN 1502 THEN 'Bringe in Reihenfolge: jeder Spieler acht Bauern hat'
+    WHEN 1503 THEN 'Hoere zu und nenne die erwaehnte Schachfigur'
+    WHEN 1504 THEN 'Sag laut: Schach dem Koenig'
+    WHEN 1505 THEN 'Ordne die Figur ihrem Punktwert zu'
+    WHEN 1506 THEN 'Wie zieht der Springer? a) in L-Form b) diagonal c) gerade d) ein Feld'
+    WHEN 1507 THEN 'Bringe in Reihenfolge: der Laeufer kontrolliert diagonale Felder'
+    WHEN 1508 THEN 'Hoere dir den Zug an und spiele ihn auf dem Brett'
+    WHEN 1509 THEN 'Diktiere den Zug: Springer nach f3'
+    WHEN 1510 THEN 'Ordne das Grundkonzept seiner Beschreibung zu'
+END
+WHERE id_ejercicio BETWEEN 1501 AND 1510;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1511 THEN 'Was ist eine Fesselung? a) Figur unbeweglich b) Schach c) Tausch d) Matt'
+    WHEN 1512 THEN 'Bringe in Reihenfolge: opfere den Turm um die Linie zu oeffnen'
+    WHEN 1513 THEN 'Hoere dir die Analyse an und erkenne die Bedrohung'
+    WHEN 1514 THEN 'Erzaehle die Hauptvariante laut'
+    WHEN 1515 THEN 'Ordne die taktischen Motive ihrem Beispiel zu'
+    WHEN 1516 THEN 'Was ist die Opposition im Endspiel? a) Koenige gegenueber b) umwandeln'
+    WHEN 1517 THEN 'Bringe in Reihenfolge: ein isolierter Bauer ist im Endspiel eine Schwaeche'
+    WHEN 1518 THEN 'Hoere dir die Lektion an und notiere den Schluesselzug'
+    WHEN 1519 THEN 'Erklaere das Konzept der Prophylaxe laut'
+    WHEN 1520 THEN 'Ordne die Eroeffnungen ihrem ECO-Code zu'
+END
+WHERE id_ejercicio BETWEEN 1511 AND 1520;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1521 THEN 'Was charakterisiert die Sizilianische Verteidigung? a) c5 b) e5 c) d5 d) f5'
+    WHEN 1522 THEN 'Bringe in Reihenfolge: dynamische Kompensation fuer Materialopfer'
+    WHEN 1523 THEN 'Folge dem Blindkommentar und finde das Matt in drei'
+    WHEN 1524 THEN 'Analysiere muendlich die Partie Kasparov gegen Topalov'
+    WHEN 1525 THEN 'Ordne typische Bauernstrukturen ihren Plaenen zu'
+    WHEN 1526 THEN 'Wie sagt man danke auf Portugiesisch? a) Obrigado b) Ciao c) Ola d) Bom'
+    WHEN 1527 THEN 'Bringe in Reihenfolge: chamo me eu Joao'
+    WHEN 1528 THEN 'Hoere dir das Audio an und waehle die richtige Begruessung'
+    WHEN 1529 THEN 'Sprich das Wort Bom dia korrekt aus'
+    WHEN 1530 THEN 'Ordne die grundlegenden Zahlen auf Portugiesisch zu'
+END
+WHERE id_ejercicio BETWEEN 1521 AND 1530;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1531 THEN 'Bestimmter maennlicher Artikel: a) O b) A c) Os d) As'
+    WHEN 1532 THEN 'Bringe in Reihenfolge: ela come uma maca verde'
+    WHEN 1533 THEN 'Hoere zu und notiere die erwaehnte Uhrzeit'
+    WHEN 1534 THEN 'Sprich den Satz: Eu moro no Brasil'
+    WHEN 1535 THEN 'Ordne die Familienmitglieder auf Portugiesisch zu'
+    WHEN 1536 THEN 'Vergangenheit von falar: a) falei b) falo c) falava d) falarei'
+    WHEN 1537 THEN 'Bringe in Reihenfolge: ontem fomos nos a praia'
+    WHEN 1538 THEN 'Hoere dem Dialog zu und antworte was sie gekauft haben'
+    WHEN 1539 THEN 'Lies laut vor: Eu viajei para Lisboa'
+    WHEN 1540 THEN 'Ordne die Verben im Preterito Perfeito zu'
+END
+WHERE id_ejercicio BETWEEN 1531 AND 1540;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1541 THEN 'Wenn ich Geld haette: a) compraria b) compro c) comprarei d) comprava'
+    WHEN 1542 THEN 'Bringe in Reihenfolge: trabalhando estao eles desde cedo'
+    WHEN 1543 THEN 'Hoere den Bericht und markiere die genannte Stadt'
+    WHEN 1544 THEN 'Sprich den Text ueber den Amazonas aus'
+    WHEN 1545 THEN 'Ordne die portugiesischen Konjunktionen zu'
+    WHEN 1546 THEN 'Synonym fuer garoto: a) menino b) homem c) idoso d) mulher'
+    WHEN 1547 THEN 'Bringe in Reihenfolge: embora chovesse fomos ao jogo nos'
+    WHEN 1548 THEN 'Hoere der Debatte zu und notiere das Ergebnis'
+    WHEN 1549 THEN 'Halte eine Rede ueber die brasilianische Wirtschaft'
+    WHEN 1550 THEN 'Ordne brasilianische umgangssprachliche Ausdruecke zu'
+END
+WHERE id_ejercicio BETWEEN 1541 AND 1550;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1551 THEN 'Wie sagt man hallo auf Koreanisch? a) Annyeonghaseyo b) Ne c) Aniyo d) Gamsa'
+    WHEN 1552 THEN 'Bringe in Reihenfolge: imnida saram hanguk naneun'
+    WHEN 1553 THEN 'Hoere dir das Audio an und waehle den Hangul-Vokal'
+    WHEN 1554 THEN 'Sprich das Wort Annyeonghaseyo korrekt aus'
+    WHEN 1555 THEN 'Ordne die grundlegenden Begruessungen auf Koreanisch zu'
+    WHEN 1556 THEN 'Was ist die Subjektmarkierung? a) i/ga b) eun/neun c) eul/reul d) e'
+    WHEN 1557 THEN 'Bringe in Reihenfolge: meogeoyo bap eul jeoneun'
+    WHEN 1558 THEN 'Hoere zu und schreibe die sino-koreanische Zahl'
+    WHEN 1559 THEN 'Sprich den Satz: Hangugoeol baewoyo'
+    WHEN 1560 THEN 'Ordne die Familienmitglieder auf Koreanisch zu'
+END
+WHERE id_ejercicio BETWEEN 1551 AND 1560;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1561 THEN 'Vergangenheit von hada: a) haesseoyo b) haeyo c) halkkeyo d) haseyo'
+    WHEN 1562 THEN 'Bringe in Reihenfolge: gasseoyo e eojeyo hakgyo'
+    WHEN 1563 THEN 'Hoere dem Dialog zu und antworte was sie gekauft haben'
+    WHEN 1564 THEN 'Lies den Text laut vor'
+    WHEN 1565 THEN 'Ordne die Verben ihrer Grundform zu'
+    WHEN 1566 THEN 'Wenn ich Zeit habe: a) sigan isseumyeon b) sigan isseodo c) sigan eopseoyo'
+    WHEN 1567 THEN 'Bringe in Reihenfolge: deutgo eumag eul isseoyo jigeum'
+    WHEN 1568 THEN 'Hoere den Bericht und identifiziere die Stadt'
+    WHEN 1569 THEN 'Sprich den Absatz ueber Seoul aus'
+    WHEN 1570 THEN 'Ordne die logischen Verbindungen auf Koreanisch zu'
+END
+WHERE id_ejercicio BETWEEN 1561 AND 1570;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1571 THEN 'Synonym fuer ppareuda: a) neulida b) bappeuda c) ssinseokhada d) gakkapda'
+    WHEN 1572 THEN 'Bringe in Reihenfolge: biga wado e gohyang gamnida'
+    WHEN 1573 THEN 'Hoere dir das Drama an und notiere das Gefuehl des Schauspielers'
+    WHEN 1574 THEN 'Halte eine Rede ueber koreanisches Essen'
+    WHEN 1575 THEN 'Ordne koreanische Sprichwoerter ihrer Bedeutung zu'
+    WHEN 1576 THEN 'Wie sagt man hallo auf Japanisch? a) Konnichiwa b) Sayonara c) Hai d) Iie'
+    WHEN 1577 THEN 'Bringe in Reihenfolge: desu watashi wa Maria'
+    WHEN 1578 THEN 'Hoere dir das Audio an und waehle die japanische Begruessung'
+    WHEN 1579 THEN 'Sprich das Wort Arigato korrekt aus'
+    WHEN 1580 THEN 'Ordne die Zahlen 1 bis 5 auf Japanisch zu'
+END
+WHERE id_ejercicio BETWEEN 1571 AND 1580;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1581 THEN 'Was ist die Themenpartikel? a) wa b) ga c) wo d) ni'
+    WHEN 1582 THEN 'Bringe in Reihenfolge: o mizu kudasai nomimasu'
+    WHEN 1583 THEN 'Hoere zu und schreibe das Wort auf Romaji'
+    WHEN 1584 THEN 'Sprich den Satz: Watashi wa gakusei desu'
+    WHEN 1585 THEN 'Ordne die Farben ihren japanischen Namen zu'
+    WHEN 1586 THEN 'Vergangenheit von taberu: a) tabeta b) taberu c) tabemasu d) tabete'
+    WHEN 1587 THEN 'Bringe in Reihenfolge: e ikimashita gakkou watashi wa'
+    WHEN 1588 THEN 'Hoere dem Dialog zu und notiere das Ziel'
+    WHEN 1589 THEN 'Lies den Satz laut vor'
+    WHEN 1590 THEN 'Ordne die Verben ihrer Te-Form zu'
+END
+WHERE id_ejercicio BETWEEN 1581 AND 1590;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1591 THEN 'Wenn es regnet gehe ich nicht: a) ame nara b) ame demo c) ame kara'
+    WHEN 1592 THEN 'Bringe in Reihenfolge: ni issho kyoto ikimasen ka e'
+    WHEN 1593 THEN 'Hoere die Nachrichten und waehle das Hauptthema'
+    WHEN 1594 THEN 'Sprich den Text ueber die japanische Kultur aus'
+    WHEN 1595 THEN 'Ordne die Woerter ihrer Bedeutung zu'
+    WHEN 1596 THEN 'Synonym fuer isogashii: a) hima b) sewashii c) tanoshii d) kanashii'
+    WHEN 1597 THEN 'Bringe in Reihenfolge: koto ga dekimasu nihongo hanasu wo'
+    WHEN 1598 THEN 'Hoere der Debatte zu und notiere die Haltung'
+    WHEN 1599 THEN 'Halte eine kurze Rede ueber deinen Lieblingsanime'
+    WHEN 1600 THEN 'Ordne japanische Redewendungen ihrer Bedeutung zu'
+END
+WHERE id_ejercicio BETWEEN 1591 AND 1600;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1601 THEN 'Wie sagt man hallo auf Chinesisch? a) Ni hao b) Zaijian c) Xiexie d) Bu'
+    WHEN 1602 THEN 'Bringe in Reihenfolge: shi ren wo yingguo'
+    WHEN 1603 THEN 'Hoere dir das Audio an und erkenne den Ton der Silbe'
+    WHEN 1604 THEN 'Sprich das Wort Xiexie mit dem richtigen Ton aus'
+    WHEN 1605 THEN 'Ordne die Zahlen 1 bis 5 auf Chinesisch zu'
+    WHEN 1606 THEN 'Zaehlwort fuer flache Objekte: a) zhang b) ge c) ben d) zhi'
+    WHEN 1607 THEN 'Bringe in Reihenfolge: cha he xihuan wo'
+    WHEN 1608 THEN 'Hoere zu und schreibe die erwaehnte Farbe'
+    WHEN 1609 THEN 'Sprich den Satz: Wo ai ni'
+    WHEN 1610 THEN 'Ordne die Tiere ihren Pinyin-Namen zu'
+END
+WHERE id_ejercicio BETWEEN 1601 AND 1610;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1611 THEN 'Vergangenheitspartikel: a) le b) zhi c) zai d) guo'
+    WHEN 1612 THEN 'Bringe in Reihenfolge: qu le wo beijing zuotian'
+    WHEN 1613 THEN 'Hoere dem Dialog zu und notiere was sie gegessen haben'
+    WHEN 1614 THEN 'Lies den Satz auf Pinyin laut vor'
+    WHEN 1615 THEN 'Ordne die Verben ihren Aspektpartikeln zu'
+    WHEN 1616 THEN 'Wenn es regnet gehe ich nicht: a) ruguo xiayu b) suiran xiayu c) yinwei'
+    WHEN 1617 THEN 'Bringe in Reihenfolge: zhongwen zhengzai xuexi wo'
+    WHEN 1618 THEN 'Hoere die Nachrichten und waehle das Hauptthema'
+    WHEN 1619 THEN 'Sprich den Text ueber die Chinesische Mauer aus'
+    WHEN 1620 THEN 'Ordne die chinesischen Woerter zu'
+END
+WHERE id_ejercicio BETWEEN 1611 AND 1620;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1621 THEN 'Synonym fuer gaoxing: a) kuaile b) nan guo c) shengqi d) lei'
+    WHEN 1622 THEN 'Bringe in Reihenfolge: jinguo nuli chengong le ta zhongyu'
+    WHEN 1623 THEN 'Hoere der Debatte zu und identifiziere die Schlussfolgerung'
+    WHEN 1624 THEN 'Halte eine Rede ueber die chinesische Wirtschaft'
+    WHEN 1625 THEN 'Ordne die Chengyu ihrer Bedeutung zu'
+    WHEN 1626 THEN 'Was ist 5 + 3? a) 8 b) 7 c) 9 d) 6'
+    WHEN 1627 THEN 'Bringe in Reihenfolge: Addition hat zwei Teile'
+    WHEN 1628 THEN 'Hoere zu und schreibe die Zahl in Ziffern'
+    WHEN 1629 THEN 'Lies die Operation laut vor: 10 minus 4'
+    WHEN 1630 THEN 'Ordne die mathematischen Symbole ihren Namen zu'
+END
+WHERE id_ejercicio BETWEEN 1621 AND 1630;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1631 THEN 'Was ist 8 x 7? a) 56 b) 54 c) 64 d) 49'
+    WHEN 1632 THEN 'Bringe in Reihenfolge: die Reihenfolge aendert das Produkt nicht'
+    WHEN 1633 THEN 'Hoere dir den Bruch an und schreibe ihn auf'
+    WHEN 1634 THEN 'Lies den Ausdruck laut vor: drei Viertel'
+    WHEN 1635 THEN 'Ordne die geometrischen Formen ihrer Anzahl von Seiten zu'
+    WHEN 1636 THEN 'Loese auf: 2x = 10. a) x=5 b) x=2 c) x=10 d) x=8'
+    WHEN 1637 THEN 'Bringe in Reihenfolge: Variable isolieren um die Gleichung zu loesen'
+    WHEN 1638 THEN 'Hoere dir das Algebra-Problem an und schreibe die Gleichung'
+    WHEN 1639 THEN 'Lies laut vor: x zum Quadrat plus y zum Quadrat'
+    WHEN 1640 THEN 'Ordne die Flaechenformeln ihren Formen zu'
+END
+WHERE id_ejercicio BETWEEN 1631 AND 1640;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1641 THEN 'Ableitung von x zum Quadrat: a) 2x b) x c) 2 d) 3x'
+    WHEN 1642 THEN 'Bringe in Reihenfolge: die Ableitung entspricht der Steigung'
+    WHEN 1643 THEN 'Hoere dir den Grenzwert an und identifiziere seine Tendenz'
+    WHEN 1644 THEN 'Erklaere den Satz des Pythagoras laut'
+    WHEN 1645 THEN 'Ordne die trigonometrischen Funktionen ihren Umkehrungen zu'
+    WHEN 1646 THEN 'Integral von e^x: a) e^x + C b) x c) ln(x) d) 1/x'
+    WHEN 1647 THEN 'Bringe in Reihenfolge: partielle Integration ist eine fortgeschrittene Methode'
+    WHEN 1648 THEN 'Hoere dir die Funktionsanalyse an und markiere die Extremwerte'
+    WHEN 1649 THEN 'Beweise den algebraischen fundamentalen Grenzwert laut'
+    WHEN 1650 THEN 'Ordne die Differentialgleichungen ihrem Typ zu'
+END
+WHERE id_ejercicio BETWEEN 1641 AND 1650;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1651 THEN 'Wie viele Linien hat ein Notensystem? a) 5 b) 4 c) 6 d) 7'
+    WHEN 1652 THEN 'Bringe in Reihenfolge: es gibt sieben musikalische Noten'
+    WHEN 1653 THEN 'Hoere den Ton und bestimme ob er hoch oder tief ist'
+    WHEN 1654 THEN 'Singe das mittlere C'
+    WHEN 1655 THEN 'Ordne die Notenwerte ihrer Dauer zu'
+    WHEN 1656 THEN 'Welcher Schluessel wird fuer hohe Noten verwendet? a) Violin b) Bass c) Alt'
+    WHEN 1657 THEN 'Bringe in Reihenfolge: ein Kreuz erhoeht die Note um einen Halbton'
+    WHEN 1658 THEN 'Hoere dir die Melodie an und ergaenze die fehlende Note'
+    WHEN 1659 THEN 'Singe die C-Dur-Tonleiter aufwaerts'
+    WHEN 1660 THEN 'Ordne die Vorzeichen ihrer Wirkung auf die Tonhoehe zu'
+END
+WHERE id_ejercicio BETWEEN 1651 AND 1660;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1661 THEN 'Intervall zwischen C und E: a) grosse Terz b) Quinte c) Sekunde'
+    WHEN 1662 THEN 'Bringe in Reihenfolge: ein Akkord hat Grundton Terz und Quinte'
+    WHEN 1663 THEN 'Hoere den Akkord und erkenne ob er Dur oder Moll ist'
+    WHEN 1664 THEN 'Singe das G-Dur-Arpeggio'
+    WHEN 1665 THEN 'Ordne die Stufen der Tonleiter ihrem technischen Namen zu'
+    WHEN 1666 THEN 'Relative Molltonart von C-Dur: a) a-Moll b) e-Moll c) d-Moll'
+    WHEN 1667 THEN 'Bringe in Reihenfolge: Modulation ist ein Tonartenwechsel'
+    WHEN 1668 THEN 'Hoere die harmonische Progression und schreibe die Stufen auf'
+    WHEN 1669 THEN 'Klatsche den ungeraden Rhythmus korrekt'
+    WHEN 1670 THEN 'Ordne die Kirchentonarten ihrer Struktur zu'
+END
+WHERE id_ejercicio BETWEEN 1661 AND 1670;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1671 THEN 'Was charakterisiert den Kontrapunkt? a) unabhaengige Stimmen b) Rhythmus'
+    WHEN 1672 THEN 'Bringe in Reihenfolge: die Fuge ist die komplexeste polyphone Form'
+    WHEN 1673 THEN 'Hoere dir das symphonische Werk an und identifiziere die Form'
+    WHEN 1674 THEN 'Erklaere die Zwoelftontechnik laut'
+    WHEN 1675 THEN 'Ordne die musikalischen Epochen ihren Komponisten zu'
+    WHEN 1676 THEN 'Kayfa taqul hello bil injiliziyya? a) Hello b) Bye c) Car d) Sun'
+    WHEN 1677 THEN 'Rattib al-kalimat: is name my John'
+    WHEN 1678 THEN 'Istami wa ikhtar al-tahiyya al-sahiha'
+    WHEN 1679 THEN 'Intiq kalimat Hello'
+    WHEN 1680 THEN 'Tabiq al-tahiyyat bimaaniha'
+END
+WHERE id_ejercicio BETWEEN 1671 AND 1680;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1681 THEN 'Ma huwa fel al-kaynuna? a) to be b) to play c) to run d) to eat'
+    WHEN 1682 THEN 'Rattib al-kalimat: playing am I now'
+    WHEN 1683 THEN 'Istami wa uktub al-lawn bil injiliziyya'
+    WHEN 1684 THEN 'Intiq al-jumla I am happy'
+    WHEN 1685 THEN 'Tabiq al-hayawanat bi asmaiha'
+    WHEN 1686 THEN 'Al-madi min fel go: a) went b) goed c) gone d) going'
+    WHEN 1687 THEN 'Rattib al-kalimat: yesterday to school went she'
+    WHEN 1688 THEN 'Istami ila al-muhadatha wa ajib ayna dhahabu'
+    WHEN 1689 THEN 'Iqra bisawt aalin: She bought a new house'
+    WHEN 1690 THEN 'Tabiq al-afaal al-shadhdha bisighat al-madi'
+END
+WHERE id_ejercicio BETWEEN 1681 AND 1690;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1691 THEN 'Idha amtarat, saabqa fil manzil: a) will stay b) would stay c) stayed'
+    WHEN 1692 THEN 'Rattib al-kalimat: have waiting been they hours two for'
+    WHEN 1693 THEN 'Istami ila al-akhbar wa haddid al-mushkila'
+    WHEN 1694 THEN 'Intiq al-fiqra hawla taghayyur al-munakh'
+    WHEN 1695 THEN 'Tabiq al-afaal al-murakkaba bitaarifatiha'
+    WHEN 1696 THEN 'Muradif fast: a) quick b) slow c) strong d) weak'
+    WHEN 1697 THEN 'Rattib: nevertheless she persisted despite the challenges'
+    WHEN 1698 THEN 'Istami ila al-niqash wa lakhkhis hujjat al-khabir'
+    WHEN 1699 THEN 'Sajjil khitaban hawla al-iqtisad al-alami'
+    WHEN 1700 THEN 'Tabiq al-mustalahat al-mutaqaddima bimaaniha'
+END
+WHERE id_ejercicio BETWEEN 1691 AND 1700;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1701 THEN 'Kayfa taqul hello bil faransiyya? a) Bonjour b) Merci c) Oui d) Non'
+    WHEN 1702 THEN 'Rattib al-kalimat: m appelle je Pierre'
+    WHEN 1703 THEN 'Istami wa uktub al-raqam'
+    WHEN 1704 THEN 'Intiq kalimat Bonjour'
+    WHEN 1705 THEN 'Tabiq al-arqam min 1 ila 5'
+    WHEN 1706 THEN 'Adat al-muannath al-mufrad: a) La b) Le c) Les d) Un'
+    WHEN 1707 THEN 'Rattib al-kalimat: une mange pomme elle'
+    WHEN 1708 THEN 'Istami wa ikhtar al-hayawan al-sahih'
+    WHEN 1709 THEN 'Intiq al-jumla Je suis etudiant'
+    WHEN 1710 THEN 'Tabiq afrad al-usra bil faransiyya'
+END
+WHERE id_ejercicio BETWEEN 1701 AND 1710;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1711 THEN 'Al-madi al-murakkab min manger: a) a mange b) mangeait c) mangera'
+    WHEN 1712 THEN 'Rattib al-kalimat: cinema nous hier sommes alles au'
+    WHEN 1713 THEN 'Istami ila al-hiwar wa sajjil madha akalu'
+    WHEN 1714 THEN 'Intiq: Nous avons visite Paris'
+    WHEN 1715 THEN 'Tabiq al-afaal bitasrifatiha fil madi'
+    WHEN 1716 THEN 'Law kuntu aarif, lakuntu ataytu: a) serais venu b) suis venu c) viendrais'
+    WHEN 1717 THEN 'Rattib: depuis travaillent ils matins les tous ici'
+    WHEN 1718 THEN 'Istami ila al-muqabala wa haddid al-mihna'
+    WHEN 1719 THEN 'Intiq al-nass hawla al-thaqafa al-faransiyya'
+    WHEN 1720 THEN 'Tabiq al-rawabit al-mantiqiyya biwadhifatiha'
+END
+WHERE id_ejercicio BETWEEN 1711 AND 1720;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1721 THEN 'Muradif ephemere: a) passager b) durable c) constant d) eternel'
+    WHEN 1722 THEN 'Rattib: nonobstant difficultes les projet le abouti a'
+    WHEN 1723 THEN 'Istami ila al-khitab wa sajjil al-mawqif'
+    WHEN 1724 THEN 'Qaddim tahlilan shafawiyyan lil-thawra al-faransiyya'
+    WHEN 1725 THEN 'Tabiq al-taabirat al-ammiyya bimaaniha'
+    WHEN 1726 THEN 'Kayfa taqul hello bil almaniyya? a) Hallo b) Danke c) Ja d) Nein'
+    WHEN 1727 THEN 'Rattib al-kalimat: heisse ich Anna'
+    WHEN 1728 THEN 'Istami wa ikhtar al-kalima al-sahiha'
+    WHEN 1729 THEN 'Intiq kalimat Hallo'
+    WHEN 1730 THEN 'Tabiq al-arqam min 1 ila 10'
+END
+WHERE id_ejercicio BETWEEN 1721 AND 1730;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1731 THEN 'Adat al-muannath: a) die b) der c) das d) den'
+    WHEN 1732 THEN 'Rattib al-kalimat: isst er einen Apfel'
+    WHEN 1733 THEN 'Istami wa uktub al-lawn bil almaniyya'
+    WHEN 1734 THEN 'Intiq al-jumla Ich komme aus Berlin'
+    WHEN 1735 THEN 'Tabiq ayyam al-usbu bil almaniyya'
+    WHEN 1736 THEN 'Al-tasrif al-thalith min machen: a) gemacht b) mache c) machte'
+    WHEN 1737 THEN 'Rattib: bin ich gestern ins Kino gegangen'
+    WHEN 1738 THEN 'Istami ila al-hiwar wa haddid al-wijha'
+    WHEN 1739 THEN 'Iqra bisawt aalin: Ich habe ein Auto gekauft'
+    WHEN 1740 THEN 'Tabiq al-afaal bitasrifatiha fil madi al-tamm'
+END
+WHERE id_ejercicio BETWEEN 1731 AND 1740;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1741 THEN 'Law kana ladayya waqt: a) kame b) komme c) kam d) kommen'
+    WHEN 1742 THEN 'Rattib: arbeiten sie schon seit drei Stunden'
+    WHEN 1743 THEN 'Istami ila al-akhbar wa haddid al-mawdu'
+    WHEN 1744 THEN 'Intiq al-nass hawla al-ghaba al-sawda'
+    WHEN 1745 THEN 'Tabiq huruf al-jarr ma al-akkusativ'
+    WHEN 1746 THEN 'Muradif schnell: a) rasch b) langsam c) teuer d) billig'
+    WHEN 1747 THEN 'Rattib: obwohl es regnete sind wir spazieren gegangen'
+    WHEN 1748 THEN 'Istami ila al-niqash wa sajjil al-istintaj'
+    WHEN 1749 THEN 'Alqi khitaban qasiran hawla al-ittihad al-uwrubbi'
+    WHEN 1750 THEN 'Tabiq al-taabirat al-almaniyya bimaaniha'
+END
+WHERE id_ejercicio BETWEEN 1741 AND 1750;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1751 THEN 'Kayfa taqul hello bil suwidiyya? a) Hej b) Ja c) Nej d) Tack'
+    WHEN 1752 THEN 'Rattib al-kalimat: jag heter Erik'
+    WHEN 1753 THEN 'Istami wa ikhtar al-tahiyya al-suwidiyya'
+    WHEN 1754 THEN 'Intiq kalimat Hej'
+    WHEN 1755 THEN 'Tabiq al-arqam min 1 ila 5 bil suwidiyya'
+    WHEN 1756 THEN 'Adat al-mufrad: a) en b) ett c) den d) det'
+    WHEN 1757 THEN 'Rattib al-kalimat: hon ater ett apple'
+    WHEN 1758 THEN 'Istami wa uktub al-mashrub'
+    WHEN 1759 THEN 'Intiq al-jumla Jag kommer fran Sverige'
+    WHEN 1760 THEN 'Tabiq ayyam al-usbu bil suwidiyya'
+END
+WHERE id_ejercicio BETWEEN 1751 AND 1760;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1761 THEN 'Al-madi min arbeta: a) arbetade b) arbetar c) arbetat d) arbeta'
+    WHEN 1762 THEN 'Rattib al-kalimat: igar gick vi pa bio'
+    WHEN 1763 THEN 'Istami ila al-hiwar wa haddid al-wijha'
+    WHEN 1764 THEN 'Iqra bisawt aalin: Jag kopte en ny bil'
+    WHEN 1765 THEN 'Tabiq al-afaal bitasrifatiha fil madi'
+    WHEN 1766 THEN 'Law kana ladayya waqt: a) skulle komma b) kommer c) kom d) kommit'
+    WHEN 1767 THEN 'Rattib al-kalimat: de har arbetat har i tre timmar'
+    WHEN 1768 THEN 'Istami ila al-akhbar wa haddid al-mawdu'
+    WHEN 1769 THEN 'Intiq al-nass hawla al-tabia al-suwidiyya'
+    WHEN 1770 THEN 'Tabiq huruf al-atf bil suwidiyya'
+END
+WHERE id_ejercicio BETWEEN 1761 AND 1770;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1771 THEN 'Muradif snabb: a) fort b) langsamt c) dyr d) billig'
+    WHEN 1772 THEN 'Rattib al-kalimat: trots att det regnade gick vi ut'
+    WHEN 1773 THEN 'Istami ila al-niqash wa sajjil al-istintaj'
+    WHEN 1774 THEN 'Alqi khitaban hawla nizam al-rafahiyya al-suwidi'
+    WHEN 1775 THEN 'Tabiq al-taabirat al-suwidiyya bimaaniha'
+    WHEN 1776 THEN 'Kam adad murabbaat roqaat al-shatranj? a) 64 b) 32 c) 100 d) 50'
+    WHEN 1777 THEN 'Rattib al-kalimat: kull laib ladayhi thamaniyat janad'
+    WHEN 1778 THEN 'Istami wa haddid ism qitaat al-shatranj'
+    WHEN 1779 THEN 'Intiq: kish malik'
+    WHEN 1780 THEN 'Tabiq al-qitaa biqimatiha'
+END
+WHERE id_ejercicio BETWEEN 1771 AND 1780;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1781 THEN 'Kayfa yataharrak al-hisan? a) fi shakl L b) qutriyyan c) ufuqiyyan'
+    WHEN 1782 THEN 'Rattib al-kalimat: al-fil yusaytir ala al-murabbaat al-qutriyya'
+    WHEN 1783 THEN 'Istami ila al-haraka wa nuffidhha ala al-roqaa'
+    WHEN 1784 THEN 'Intiq al-haraka: Hisan f3'
+    WHEN 1785 THEN 'Tabiq al-mafhum al-asasi biwasfihi'
+    WHEN 1786 THEN 'Ma huwa al-rabt? a) qitaa muqayyada b) kish c) tabadul d) mat'
+    WHEN 1787 THEN 'Rattib al-kalimat: tadhhiya bil rukh lifath al-amud'
+    WHEN 1788 THEN 'Istami ila al-tahlil wa haddid al-tahdid'
+    WHEN 1789 THEN 'Isrid al-tafria al-raisiyya'
+    WHEN 1790 THEN 'Tabiq al-mawduat al-taktikiyya bi amthilatiha'
+END
+WHERE id_ejercicio BETWEEN 1781 AND 1790;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1791 THEN 'Ma hiya al-muqabala fil nihaya? a) muwajahat al-muluk b) tarqiya'
+    WHEN 1792 THEN 'Rattib al-kalimat: baydaq mazul huwa daf fil nihaya'
+    WHEN 1793 THEN 'Istami ila al-dars wa sajjil al-haraka al-raisiyya'
+    WHEN 1794 THEN 'Ishrah mafhum al-wiqaya bisawt aalin'
+    WHEN 1795 THEN 'Tabiq al-iftitahiyyat biramz ECO'
+    WHEN 1796 THEN 'Bima tatamayyaz al-difaa al-siqilli? a) c5 b) e5 c) d5 d) f5'
+    WHEN 1797 THEN 'Rattib al-kalimat: tawid dinimiki muqabil tadhhiyat madda'
+    WHEN 1798 THEN 'Tabi al-taliq wa jid mat fi thalath harakat'
+    WHEN 1799 THEN 'Hallil mubarat Kasparov dhidda Topalov'
+    WHEN 1800 THEN 'Tabiq hayakil al-bayadiq bikhotatiha'
+END
+WHERE id_ejercicio BETWEEN 1791 AND 1800;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1801 THEN 'Kayfa taqul hello bil yabaniyya? a) Konnichiwa b) Hai c) Iie d) Sayonara'
+    WHEN 1802 THEN 'Rattib al-kalimat: desu watashi wa Maria'
+    WHEN 1803 THEN 'Istami wa ikhtar al-tahiyya al-yabaniyya'
+    WHEN 1804 THEN 'Intiq kalimat Arigato'
+    WHEN 1805 THEN 'Tabiq al-arqam min 1 ila 5 bil yabaniyya'
+    WHEN 1806 THEN 'Ma hiya adat al-mawdu? a) wa b) ga c) wo d) ni'
+    WHEN 1807 THEN 'Rattib al-kalimat: o mizu kudasai nomimasu'
+    WHEN 1808 THEN 'Istami wa uktub al-kalima bil romaji'
+    WHEN 1809 THEN 'Intiq al-jumla Watashi wa gakusei desu'
+    WHEN 1810 THEN 'Tabiq al-alwan bi asmaiha'
+END
+WHERE id_ejercicio BETWEEN 1801 AND 1810;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1811 THEN 'Al-madi min taberu: a) tabeta b) taberu c) tabemasu d) tabete'
+    WHEN 1812 THEN 'Rattib al-kalimat: e ikimashita gakkou watashi wa'
+    WHEN 1813 THEN 'Istami ila al-hiwar wa haddid al-wijha'
+    WHEN 1814 THEN 'Iqra al-jumla bisawt aalin'
+    WHEN 1815 THEN 'Tabiq al-afaal bi sighat te'
+    WHEN 1816 THEN 'Idha amtarat, lan adhhab: a) ame nara b) ame demo c) ame kara'
+    WHEN 1817 THEN 'Rattib al-kalimat: ni issho kyoto ikimasen ka e'
+    WHEN 1818 THEN 'Istami ila al-akhbar wa haddid al-mawdu'
+    WHEN 1819 THEN 'Intiq al-nass hawla al-thaqafa al-yabaniyya'
+    WHEN 1820 THEN 'Tabiq rumuz kanji bi qiraatiha'
+END
+WHERE id_ejercicio BETWEEN 1811 AND 1820;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1821 THEN 'Muradif isogashii: a) hima b) sewashii c) tanoshii d) kanashii'
+    WHEN 1822 THEN 'Rattib al-kalimat: koto ga dekimasu nihongo hanasu wo'
+    WHEN 1823 THEN 'Istami ila al-niqash wa sajjil al-mawqif'
+    WHEN 1824 THEN 'Alqi khitaban hawla al-anime al-mufaddal ladayk'
+    WHEN 1825 THEN 'Tabiq al-taabirat al-yabaniyya bimaaniha'
+    WHEN 1826 THEN 'Kayfa taqul hello bil isbaniyya? a) Hola b) Gracias c) Si d) No'
+    WHEN 1827 THEN 'Rattib al-kalimat: Me llamo Juan'
+    WHEN 1828 THEN 'Istami wa ikhtar al-tahiyya al-isbaniyya'
+    WHEN 1829 THEN 'Intiq kalimat Hola'
+    WHEN 1830 THEN 'Tabiq al-arqam min 1 ila 5'
+END
+WHERE id_ejercicio BETWEEN 1821 AND 1830;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1831 THEN 'Ma huwa fel al-kaynuna? a) ser b) jugar c) correr d) comer'
+    WHEN 1832 THEN 'Rattib al-kalimat: estoy comiendo una manzana'
+    WHEN 1833 THEN 'Istami wa uktub al-lawn bil isbaniyya'
+    WHEN 1834 THEN 'Intiq al-jumla Yo soy feliz'
+    WHEN 1835 THEN 'Tabiq afrad al-usra bil isbaniyya'
+    WHEN 1836 THEN 'Al-madi min ir: a) fui b) iba c) ire d) yendo'
+    WHEN 1837 THEN 'Rattib al-kalimat: ayer fuimos al cine'
+    WHEN 1838 THEN 'Istami ila al-hiwar wa haddid al-wijha'
+    WHEN 1839 THEN 'Iqra bisawt aalin: Compre una casa nueva'
+    WHEN 1840 THEN 'Tabiq al-afaal al-shadhdha fil madi'
+END
+WHERE id_ejercicio BETWEEN 1831 AND 1840;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1841 THEN 'Idha amtarat, saabqa fil manzil: a) me quedare b) me quedo'
+    WHEN 1842 THEN 'Rattib al-kalimat: llevan esperando dos horas'
+    WHEN 1843 THEN 'Istami ila al-akhbar wa haddid al-mawdu'
+    WHEN 1844 THEN 'Intiq al-nass hawla al-taghayyur al-munakhi'
+    WHEN 1845 THEN 'Tabiq huruf al-rabt al-isbaniyya'
+    WHEN 1846 THEN 'Muradif rapido: a) veloz b) lento c) fuerte d) debil'
+    WHEN 1847 THEN 'Rattib al-kalimat: sin embargo ella no se rindio'
+    WHEN 1848 THEN 'Istami ila al-niqash wa sajjil al-istintaj'
+    WHEN 1849 THEN 'Alqi khitaban hawla al-iqtisad al-alami'
+    WHEN 1850 THEN 'Tabiq al-taabirat al-isbaniyya bimaaniha'
+END
+WHERE id_ejercicio BETWEEN 1841 AND 1850;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1851 THEN 'Kayfa taqul hello bil italiyya? a) Ciao b) Grazie c) Si d) No'
+    WHEN 1852 THEN 'Rattib al-kalimat: mi chiamo Marco'
+    WHEN 1853 THEN 'Istami wa ikhtar al-tahiyya al-italiyya'
+    WHEN 1854 THEN 'Intiq kalimat Ciao'
+    WHEN 1855 THEN 'Tabiq al-arqam min 1 ila 5'
+    WHEN 1856 THEN 'Ikhtar al-adat: ___ ragazzo. a) il b) lo c) la d) i'
+    WHEN 1857 THEN 'Rattib al-kalimat: lui mangia una pizza'
+    WHEN 1858 THEN 'Istami wa uktub raqam al-hatif'
+    WHEN 1859 THEN 'Intiq al-jumla Io sono di Roma'
+    WHEN 1860 THEN 'Tabiq afrad al-usra bil italiyya'
+END
+WHERE id_ejercicio BETWEEN 1851 AND 1860;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1861 THEN 'Al-madi min fare: a) fatto b) facevo c) fara d) feci'
+    WHEN 1862 THEN 'Rattib al-kalimat: ieri sono andato al cinema'
+    WHEN 1863 THEN 'Istami ila al-hiwar wa haddid al-wijha'
+    WHEN 1864 THEN 'Iqra bisawt aalin: Ho comprato un libro nuovo'
+    WHEN 1865 THEN 'Tabiq al-afaal bitasrifatiha fil madi'
+    WHEN 1866 THEN 'Law kuntu astatia: a) andrei b) vado c) andavo d) andro'
+    WHEN 1867 THEN 'Rattib al-kalimat: loro stanno lavorando da tre ore'
+    WHEN 1868 THEN 'Istami ila taqrir al-taqs wa haddid al-mantiqa'
+    WHEN 1869 THEN 'Intiq al-nass hawla taarikh Venezia'
+    WHEN 1870 THEN 'Tabiq huruf al-jarr al-italiyya'
+END
+WHERE id_ejercicio BETWEEN 1861 AND 1870;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1871 THEN 'Muradif veloce: a) rapido b) lento c) fermo d) piano'
+    WHEN 1872 THEN 'Rattib al-kalimat: sebbene piovesse siamo usciti lo stesso'
+    WHEN 1873 THEN 'Istami ila al-muqabala wa sajjil al-fikra al-raisiyya'
+    WHEN 1874 THEN 'Alqi khitaban hawla asr al-nahda al-italiyya'
+    WHEN 1875 THEN 'Tabiq al-taabirat al-italiyya bimaaniha'
+    WHEN 1876 THEN 'Kayfa taqul hello bil siniyya? a) Ni hao b) Zaijian c) Xiexie'
+    WHEN 1877 THEN 'Rattib al-kalimat: wo shi yingguo ren'
+    WHEN 1878 THEN 'Istami wa haddid naghamat al-maqta'
+    WHEN 1879 THEN 'Intiq kalimat Xiexie bil naghama al-sahiha'
+    WHEN 1880 THEN 'Tabiq al-arqam min 1 ila 5 bil siniyya'
+END
+WHERE id_ejercicio BETWEEN 1871 AND 1880;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1881 THEN 'Adat qiyas al-ashyaa al-musattaha: a) zhang b) ge c) ben d) zhi'
+    WHEN 1882 THEN 'Rattib al-kalimat: wo xihuan he cha'
+    WHEN 1883 THEN 'Istami wa uktub al-lawn al-madhkur'
+    WHEN 1884 THEN 'Intiq al-jumla Wo ai ni'
+    WHEN 1885 THEN 'Tabiq al-hayawanat bi rumuziha'
+    WHEN 1886 THEN 'Adat al-madi: a) le b) zhi c) zai d) guo'
+    WHEN 1887 THEN 'Rattib al-kalimat: zuotian wo qu le beijing'
+    WHEN 1888 THEN 'Istami ila al-hiwar wa sajjil madha akalu'
+    WHEN 1889 THEN 'Iqra al-jumla bil pinyin bisawt aalin'
+    WHEN 1890 THEN 'Tabiq al-afaal bi adawat al-zaman'
+END
+WHERE id_ejercicio BETWEEN 1881 AND 1890;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1891 THEN 'Idha amtarat, lan adhhab: a) ruguo xiayu b) suiran xiayu c) yinwei'
+    WHEN 1892 THEN 'Rattib al-kalimat: wo zhengzai xuexi zhongwen'
+    WHEN 1893 THEN 'Istami ila al-akhbar wa haddid al-mawdu'
+    WHEN 1894 THEN 'Intiq al-nass hawla sur al-sin al-azim'
+    WHEN 1895 THEN 'Tabiq al-rumuz al-siniyya bi juzuriha'
+    WHEN 1896 THEN 'Muradif gaoxing: a) kuaile b) nan guo c) shengqi d) lei'
+    WHEN 1897 THEN 'Rattib al-kalimat: ta zhongyu chengong le'
+    WHEN 1898 THEN 'Istami ila al-niqash wa sajjil al-istintaj'
+    WHEN 1899 THEN 'Alqi khitaban hawla al-iqtisad al-sini'
+    WHEN 1900 THEN 'Tabiq taabirat Chengyu bimaaniha'
+END
+WHERE id_ejercicio BETWEEN 1891 AND 1900;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1901 THEN 'Kayfa taqul hello bil kuriyya? a) Annyeonghaseyo b) Ne c) Aniyo'
+    WHEN 1902 THEN 'Rattib al-kalimat: naneun hanguk saram imnida'
+    WHEN 1903 THEN 'Istami wa ikhtar harf al-illa al-kuri'
+    WHEN 1904 THEN 'Intiq kalimat Annyeonghaseyo'
+    WHEN 1905 THEN 'Tabiq al-tahiyyat al-asasiyya bil kuriyya'
+    WHEN 1906 THEN 'Ma hiya adat al-fail? a) i/ga b) eun/neun c) eul/reul d) e'
+    WHEN 1907 THEN 'Rattib al-kalimat: jeoneun bap eul meogeoyo'
+    WHEN 1908 THEN 'Istami wa uktub al-raqam al-sino-kuri'
+    WHEN 1909 THEN 'Intiq al-jumla Hangugoeol baewoyo'
+    WHEN 1910 THEN 'Tabiq afrad al-usra bil kuriyya'
+END
+WHERE id_ejercicio BETWEEN 1901 AND 1910;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1911 THEN 'Al-madi min hada: a) haesseoyo b) haeyo c) halkkeyo d) haseyo'
+    WHEN 1912 THEN 'Rattib al-kalimat: eojeyo hakgyo e gasseoyo'
+    WHEN 1913 THEN 'Istami ila al-hiwar wa sajjil madha ishtaru'
+    WHEN 1914 THEN 'Iqra al-nass bil hangul bisawt aalin'
+    WHEN 1915 THEN 'Tabiq al-afaal bi jidhariha'
+    WHEN 1916 THEN 'Idha kana ladayya waqt: a) sigan isseumyeon b) sigan isseodo'
+    WHEN 1917 THEN 'Rattib al-kalimat: jigeum eumag eul deutgo isseoyo'
+    WHEN 1918 THEN 'Istami ila al-taqrir wa haddid al-madina'
+    WHEN 1919 THEN 'Intiq al-nass hawla Seoul'
+    WHEN 1920 THEN 'Tabiq al-rawabit al-mantiqiyya bil kuriyya'
+END
+WHERE id_ejercicio BETWEEN 1911 AND 1920;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1921 THEN 'Muradif ppareuda: a) neulida b) bappeuda c) ssinseokhada d) gakkapda'
+    WHEN 1922 THEN 'Rattib al-kalimat: biga wado gohyang e gamnida'
+    WHEN 1923 THEN 'Istami ila al-musalsal wa sajjil mashair al-mumaththil'
+    WHEN 1924 THEN 'Alqi khitaban hawla al-taam al-kuri'
+    WHEN 1925 THEN 'Tabiq al-amthal al-kuriyya bimaaniha'
+    WHEN 1926 THEN 'Kayfa taqul hello bil burtughaliyya? a) Ola b) Obrigado c) Bom dia'
+    WHEN 1927 THEN 'Rattib al-kalimat: eu me chamo Joao'
+    WHEN 1928 THEN 'Istami wa ikhtar al-tahiyya al-sahiha'
+    WHEN 1929 THEN 'Intiq kalimat Bom dia'
+    WHEN 1930 THEN 'Tabiq al-arqam min 1 ila 5'
+END
+WHERE id_ejercicio BETWEEN 1921 AND 1930;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1931 THEN 'Adat al-tadhkir: a) O b) A c) Os d) As'
+    WHEN 1932 THEN 'Rattib al-kalimat: ela come uma maca verde'
+    WHEN 1933 THEN 'Istami wa sajjil al-waqt al-madhkur'
+    WHEN 1934 THEN 'Intiq al-jumla Eu moro no Brasil'
+    WHEN 1935 THEN 'Tabiq afrad al-usra bil burtughaliyya'
+    WHEN 1936 THEN 'Al-madi min falar: a) falei b) falo c) falava d) falarei'
+    WHEN 1937 THEN 'Rattib al-kalimat: ontem nos fomos a praia'
+    WHEN 1938 THEN 'Istami ila al-hiwar wa sajjil madha ishtaru'
+    WHEN 1939 THEN 'Iqra bisawt aalin: Eu viajei para Lisboa'
+    WHEN 1940 THEN 'Tabiq al-afaal fil madi al-tamm'
+END
+WHERE id_ejercicio BETWEEN 1931 AND 1940;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1941 THEN 'Law kana ladayya mal: a) compraria b) compro c) comprarei'
+    WHEN 1942 THEN 'Rattib al-kalimat: eles estao trabalhando desde cedo'
+    WHEN 1943 THEN 'Istami ila al-taqrir wa haddid al-madina'
+    WHEN 1944 THEN 'Intiq al-nass hawla al-Amazon'
+    WHEN 1945 THEN 'Tabiq huruf al-atf bil burtughaliyya'
+    WHEN 1946 THEN 'Muradif garoto: a) menino b) homem c) idoso d) mulher'
+    WHEN 1947 THEN 'Rattib al-kalimat: embora chovesse nos fomos ao jogo'
+    WHEN 1948 THEN 'Istami ila al-niqash wa sajjil al-istintaj'
+    WHEN 1949 THEN 'Alqi khitaban hawla iqtisad al-Barazil'
+    WHEN 1950 THEN 'Tabiq al-taabirat al-ammiyya al-baraziliyya'
+END
+WHERE id_ejercicio BETWEEN 1941 AND 1950;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1951 THEN 'Jak se rekne hello anglicky? a) Hello b) Bye c) Car d) Sun'
+    WHEN 1952 THEN 'Serad slova: is name my John'
+    WHEN 1953 THEN 'Poslechni si a vyber spravny pozdrav'
+    WHEN 1954 THEN 'Vyslov spravne slovo Hello'
+    WHEN 1955 THEN 'Prirad cisla 1 az 5'
+    WHEN 1956 THEN 'Ktere sloveso znamena byt? a) to be b) to play c) to run d) to eat'
+    WHEN 1957 THEN 'Serad slova: playing am I now'
+    WHEN 1958 THEN 'Poslechni si a napis barvu anglicky'
+    WHEN 1959 THEN 'Vyslov vetu I am happy'
+    WHEN 1960 THEN 'Prirad zvirata k jejich anglickym nazvum'
+END
+WHERE id_ejercicio BETWEEN 1951 AND 1960;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1961 THEN 'Minuly cas slovesa go: a) went b) goed c) gone d) going'
+    WHEN 1962 THEN 'Serad slova: yesterday to school went she'
+    WHEN 1963 THEN 'Poslechni si rozhovor a odpovez kam sli'
+    WHEN 1964 THEN 'Precti nahlas: She bought a new house'
+    WHEN 1965 THEN 'Prirad nepravidelna slovesa v minulem case'
+    WHEN 1966 THEN 'Kdyz bude prset zustanu doma: a) will stay b) would stay c) stayed'
+    WHEN 1967 THEN 'Serad slova: have waiting been they hours two for'
+    WHEN 1968 THEN 'Poslechni si zpravy a urci hlavni problem'
+    WHEN 1969 THEN 'Vyslov text o zmene klimatu'
+    WHEN 1970 THEN 'Prirad frazova slovesa k jejich vyznamu'
+END
+WHERE id_ejercicio BETWEEN 1961 AND 1970;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1971 THEN 'Synonymum pro fast: a) quick b) slow c) strong d) weak'
+    WHEN 1972 THEN 'Serad slova: nevertheless she persisted despite the challenges'
+    WHEN 1973 THEN 'Poslechni si debatu a shrn nazor experta'
+    WHEN 1974 THEN 'Nahraj minutovy projev o globalni ekonomice'
+    WHEN 1975 THEN 'Prirad pokrocile idiomy k jejich vyznamu'
+    WHEN 1976 THEN 'Jak se rekne hello japonsky? a) Konnichiwa b) Hai c) Iie d) Sayonara'
+    WHEN 1977 THEN 'Serad slova: desu watashi wa Maria'
+    WHEN 1978 THEN 'Poslechni si a vyber japonsky pozdrav'
+    WHEN 1979 THEN 'Vyslov spravne slovo Arigato'
+    WHEN 1980 THEN 'Prirad cisla 1 az 5'
+END
+WHERE id_ejercicio BETWEEN 1971 AND 1980;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1981 THEN 'Jaka je castice tematu? a) wa b) ga c) wo d) ni'
+    WHEN 1982 THEN 'Serad slova: o mizu kudasai nomimasu'
+    WHEN 1983 THEN 'Poslechni si a napis slovo v romaji'
+    WHEN 1984 THEN 'Vyslov vetu Watashi wa gakusei desu'
+    WHEN 1985 THEN 'Prirad barvy k jejich japonskym nazvum'
+    WHEN 1986 THEN 'Minuly cas od taberu: a) tabeta b) taberu c) tabemasu d) tabete'
+    WHEN 1987 THEN 'Serad slova: e ikimashita gakkou watashi wa'
+    WHEN 1988 THEN 'Poslechni si rozhovor a poznamenej si cil cesty'
+    WHEN 1989 THEN 'Precti nahlas vetu'
+    WHEN 1990 THEN 'Prirad slovesa k jejich te forme'
+END
+WHERE id_ejercicio BETWEEN 1981 AND 1990;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 1991 THEN 'Kdyz bude prset nepujdu: a) ame nara b) ame demo c) ame kara'
+    WHEN 1992 THEN 'Serad slova: ni issho kyoto ikimasen ka e'
+    WHEN 1993 THEN 'Poslechni si zpravy a vyber hlavni tema'
+    WHEN 1994 THEN 'Vyslov text o japonske kulture'
+    WHEN 1995 THEN 'Prirad znaky kanji k jejich cteni onyomi'
+    WHEN 1996 THEN 'Synonymum pro isogashii: a) hima b) sewashii c) tanoshii d) kanashii'
+    WHEN 1997 THEN 'Serad slova: koto ga dekimasu nihongo hanasu wo'
+    WHEN 1998 THEN 'Poslechni si debatu a poznamenej si postoj mluvciho'
+    WHEN 1999 THEN 'Dej kratky projev o tvem oblibenem anime'
+    WHEN 2000 THEN 'Prirad japonska rceni k jejich vyznamu'
+END
+WHERE id_ejercicio BETWEEN 1991 AND 2000;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2001 THEN 'Jak se rekne ahoj spanelsky? a) Hola b) Gracias c) Si d) No'
+    WHEN 2002 THEN 'Serad slova: me llamo Juan'
+    WHEN 2003 THEN 'Poslechni si a vyber spanelsky pozdrav'
+    WHEN 2004 THEN 'Vyslov spravne slovo Hola'
+    WHEN 2005 THEN 'Prirad cisla 1 az 5 ve spanelstine'
+    WHEN 2006 THEN 'Jaky je clen pro dum? a) la b) el c) los d) las'
+    WHEN 2007 THEN 'Serad slova: yo como una manzana'
+    WHEN 2008 THEN 'Poslechni si a napis barvu spanelsky'
+    WHEN 2009 THEN 'Vyslov vetu Yo soy de Espana'
+    WHEN 2010 THEN 'Prirad cleny rodiny ve spanelstine'
+END
+WHERE id_ejercicio BETWEEN 2001 AND 2010;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2011 THEN 'Minuly cas od ir: a) fui b) iba c) ire d) yendo'
+    WHEN 2012 THEN 'Serad slova: ayer fuimos al cine'
+    WHEN 2013 THEN 'Poslechni si rozhovor a urci cil cesty'
+    WHEN 2014 THEN 'Precti nahlas: Compre un coche nuevo'
+    WHEN 2015 THEN 'Prirad slovesa k jejich minulemu casu'
+    WHEN 2016 THEN 'Kdybych mel cas: a) si tuviera tiempo b) tengo tiempo'
+    WHEN 2017 THEN 'Serad slova: ellos trabajan aqui desde hace tres horas'
+    WHEN 2018 THEN 'Poslechni si zpravy a urci hlavni tema'
+    WHEN 2019 THEN 'Vyslov text o spanelske kulture'
+    WHEN 2020 THEN 'Prirad spanelske spojky k jejich pouziti'
+END
+WHERE id_ejercicio BETWEEN 2011 AND 2020;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2021 THEN 'Synonymum pro rapido: a) veloz b) lento c) caro d) barato'
+    WHEN 2022 THEN 'Serad slova: a pesar de la lluvia salimos'
+    WHEN 2023 THEN 'Poslechni si debatu a poznamenej si zaver'
+    WHEN 2024 THEN 'Dej projev o historii Spanelska'
+    WHEN 2025 THEN 'Prirad spanelska rceni k jejich vyznamu'
+    WHEN 2026 THEN 'Jak se rekne ahoj cinsky? a) Ni hao b) Zaijian c) Xiexie'
+    WHEN 2027 THEN 'Serad slova: wo shi jieke ren'
+    WHEN 2028 THEN 'Poslechni si a urci ton slabiky'
+    WHEN 2029 THEN 'Vyslov slovo Xiexie se spravnym tonem'
+    WHEN 2030 THEN 'Prirad cisla 1 az 5 v cinstine'
+END
+WHERE id_ejercicio BETWEEN 2021 AND 2030;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2031 THEN 'Jake je pocitaci slovo pro ploche veci? a) zhang b) ge'
+    WHEN 2032 THEN 'Serad slova: wo xihuan he cha'
+    WHEN 2033 THEN 'Poslechni si a napis barvu v pinyinu'
+    WHEN 2034 THEN 'Vyslov vetu Wo ai ni'
+    WHEN 2035 THEN 'Prirad zvirata k jejich cinskym znakum'
+    WHEN 2036 THEN 'Castic minuleho casu: a) le b) zhi c) zai d) guo'
+    WHEN 2037 THEN 'Serad slova: zuotian wo qu le beijing'
+    WHEN 2038 THEN 'Poslechni si rozhovor a napis co jedli'
+    WHEN 2039 THEN 'Precti nahlas vetu v pinyinu'
+    WHEN 2040 THEN 'Prirad slovesa k jejich vidovym casticim'
+END
+WHERE id_ejercicio BETWEEN 2031 AND 2040;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2041 THEN 'Kdyz bude prset nepujdu: a) ruguo xiayu b) suiran xiayu'
+    WHEN 2042 THEN 'Serad slova: wo zhengzai xuexi zhongwen'
+    WHEN 2043 THEN 'Poslechni si zpravy a vyber hlavni tema'
+    WHEN 2044 THEN 'Vyslov text o Velke cinske zdi'
+    WHEN 2045 THEN 'Prirad cinske znaky k jejich radikalum'
+    WHEN 2046 THEN 'Synonymum pro gaoxing: a) kuaile b) nan guo'
+    WHEN 2047 THEN 'Serad slova: ta zhongyu chengong le'
+    WHEN 2048 THEN 'Poslechni si debatu a shrn jeji zaver'
+    WHEN 2049 THEN 'Dej projev o cinske ekonomice'
+    WHEN 2050 THEN 'Prirad cinska prislovi chengyu k jejich vyznamu'
+END
+WHERE id_ejercicio BETWEEN 2041 AND 2050;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2051 THEN 'Kolik poli ma sachovnice? a) 64 b) 32 c) 100 d) 50'
+    WHEN 2052 THEN 'Serad slova: kazdy hrac ma osm pescu'
+    WHEN 2053 THEN 'Poslechni si a urci nazev sachove figury'
+    WHEN 2054 THEN 'Rekni nahlas: Sach krali'
+    WHEN 2055 THEN 'Prirad figuru k jeji bodove hodnote'
+    WHEN 2056 THEN 'Jak tahne kun? a) do pismene L b) diagonalne c) rovne'
+    WHEN 2057 THEN 'Serad slova: strelec kontroluje diagonalni pole'
+    WHEN 2058 THEN 'Poslechni si tah a zahraj ho na sachovnici'
+    WHEN 2059 THEN 'Diktuj tah: Kun na f3'
+    WHEN 2060 THEN 'Prirad zakladni pojem k jeho popisu'
+END
+WHERE id_ejercicio BETWEEN 2051 AND 2060;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2061 THEN 'Co je to vazba? a) figura se nemuze hybat b) sach'
+    WHEN 2062 THEN 'Serad slova: obetuj vez pro otevreni sloupce'
+    WHEN 2063 THEN 'Poslechni si analyzu a urci hrozbu'
+    WHEN 2064 THEN 'Precti nahlas hlavni variantu'
+    WHEN 2065 THEN 'Prirad takticke motivy k jejich prikladum'
+    WHEN 2066 THEN 'Co je opozice v koncovce? a) kralove proti sobe'
+    WHEN 2067 THEN 'Serad slova: izolovany pesec je v koncovce slabost'
+    WHEN 2068 THEN 'Poslechni si lekci a poznamenej si klicovy tah'
+    WHEN 2069 THEN 'Vysvetli nahlas koncept profylaxe'
+    WHEN 2070 THEN 'Prirad zahajeni k jejich ECO kodu'
+END
+WHERE id_ejercicio BETWEEN 2061 AND 2070;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2071 THEN 'Co charakterizuje Sicilskou obranu? a) c5 b) e5 c) d5'
+    WHEN 2072 THEN 'Serad slova: dynamicka kompenzace za obetovany material'
+    WHEN 2073 THEN 'Sleduj komentar naslepo a najdi mat tremi tahy'
+    WHEN 2074 THEN 'Analyzuj ustne partii Kasparov proti Topalovovi'
+    WHEN 2075 THEN 'Prirad typicke pescove struktury k jejich planum'
+    WHEN 2076 THEN 'Jak se rekne ahoj korejsky? a) Annyeonghaseyo b) Ne c) Aniyo'
+    WHEN 2077 THEN 'Serad slova: naneun jieke saram imnida'
+    WHEN 2078 THEN 'Poslechni si a vyber spravnou samohlasku hangulu'
+    WHEN 2079 THEN 'Vyslov spravne Annyeonghaseyo'
+    WHEN 2080 THEN 'Prirad cisla 1 az 5 v korejstine'
+END
+WHERE id_ejercicio BETWEEN 2071 AND 2080;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2081 THEN 'Jaka je castice podmetu? a) i/ga b) eun/neun c) eul/reul'
+    WHEN 2082 THEN 'Serad slova: jeoneun bap eul meogeoyo'
+    WHEN 2083 THEN 'Poslechni si a napis cinske cislo v korejstine'
+    WHEN 2084 THEN 'Vyslov vetu Hangugoeol baewoyo'
+    WHEN 2085 THEN 'Prirad cleny rodiny v korejstine'
+    WHEN 2086 THEN 'Minuly cas od hada: a) haesseoyo b) haeyo'
+    WHEN 2087 THEN 'Serad slova: eojeyo hakgyo e gasseoyo'
+    WHEN 2088 THEN 'Poslechni si rozhovor a napis co koupili'
+    WHEN 2089 THEN 'Precti nahlas text v hangulu'
+    WHEN 2090 THEN 'Prirad slovesa k jejich zakladnimu tvaru'
+END
+WHERE id_ejercicio BETWEEN 2081 AND 2090;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2091 THEN 'Kdyz mam cas: a) sigan isseumyeon b) sigan isseodo'
+    WHEN 2092 THEN 'Serad slova: jigeum eumag eul deutgo isseoyo'
+    WHEN 2093 THEN 'Poslechni si zpravy a urci mesto'
+    WHEN 2094 THEN 'Vyslov text o Soulu'
+    WHEN 2095 THEN 'Prirad korejske logicke spojky'
+    WHEN 2096 THEN 'Synonymum pro ppareuda: a) neulida b) bappeuda'
+    WHEN 2097 THEN 'Serad slova: biga wado gohyang e gamnida'
+    WHEN 2098 THEN 'Poslechni si drama a poznamenej si emoci herce'
+    WHEN 2099 THEN 'Dej projev o korejskem jidle'
+    WHEN 2100 THEN 'Prirad korejska prislovi k jejich vyznamu'
+END
+WHERE id_ejercicio BETWEEN 2091 AND 2100;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2101 THEN 'Jak se rekne ahoj nemecky? a) Hallo b) Danke c) Ja'
+    WHEN 2102 THEN 'Serad slova: ich heisse Anna'
+    WHEN 2103 THEN 'Poslechni si a vyber spravny nemecky pozdrav'
+    WHEN 2104 THEN 'Vyslov spravne slovo Hallo'
+    WHEN 2105 THEN 'Prirad cisla 1 az 5 v nemcine'
+    WHEN 2106 THEN 'Jaky je clen pro divku? a) das b) die c) der'
+    WHEN 2107 THEN 'Serad slova: er isst einen Apfel'
+    WHEN 2108 THEN 'Poslechni si a napis barvu nemecky'
+    WHEN 2109 THEN 'Vyslov vetu Ich komme aus Tschechien'
+    WHEN 2110 THEN 'Prirad cleny rodiny v nemcine'
+END
+WHERE id_ejercicio BETWEEN 2101 AND 2110;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2111 THEN 'Minuly cas od machen: a) gemacht b) mache c) machte'
+    WHEN 2112 THEN 'Serad slova: gestern bin ich ins Kino gegangen'
+    WHEN 2113 THEN 'Poslechni si rozhovor a urci cil cesty'
+    WHEN 2114 THEN 'Precti nahlas: Ich habe ein Auto gekauft'
+    WHEN 2115 THEN 'Prirad slovesa k jejich minulemu casu'
+    WHEN 2116 THEN 'Kdybych mel cas: a) wenn ich Zeit hatte b) ich habe Zeit'
+    WHEN 2117 THEN 'Serad slova: sie arbeiten hier schon seit drei Stunden'
+    WHEN 2118 THEN 'Poslechni si zpravy a vyber hlavni tema'
+    WHEN 2119 THEN 'Vyslov text o Berline'
+    WHEN 2120 THEN 'Prirad nemecke predlozky se 4. padem'
+END
+WHERE id_ejercicio BETWEEN 2111 AND 2120;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2121 THEN 'Synonymum pro schnell: a) rasch b) langsam'
+    WHEN 2122 THEN 'Serad slova: obwohl es regnete sind wir spazieren gegangen'
+    WHEN 2123 THEN 'Poslechni si debatu a shrn jeji zaver'
+    WHEN 2124 THEN 'Dej projev o Evropske unii'
+    WHEN 2125 THEN 'Prirad nemecka rceni k jejich vyznamu'
+    WHEN 2126 THEN 'Jak se rekne ahoj portugalsky? a) Ola b) Obrigado'
+    WHEN 2127 THEN 'Serad slova: eu me chamo Joao'
+    WHEN 2128 THEN 'Poslechni si a vyber spravny pozdrav'
+    WHEN 2129 THEN 'Vyslov spravne Bom dia'
+    WHEN 2130 THEN 'Prirad cisla 1 az 5 v portugalstine'
+END
+WHERE id_ejercicio BETWEEN 2121 AND 2130;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2131 THEN 'Jaky je urcity clen muzskeho rodu? a) O b) A c) Os'
+    WHEN 2132 THEN 'Serad slova: ela come uma maca verde'
+    WHEN 2133 THEN 'Poslechni si a napis cas ktery slysis'
+    WHEN 2134 THEN 'Vyslov vetu Eu moro no Brasil'
+    WHEN 2135 THEN 'Prirad cleny rodiny v portugalstine'
+    WHEN 2136 THEN 'Minuly cas od falar: a) falei b) falo c) falava'
+    WHEN 2137 THEN 'Serad slova: ontem nos fomos a praia'
+    WHEN 2138 THEN 'Poslechni si rozhovor a napis co koupili'
+    WHEN 2139 THEN 'Precti nahlas: Eu viajei para Lisboa'
+    WHEN 2140 THEN 'Prirad slovesa k jejich minulemu casu'
+END
+WHERE id_ejercicio BETWEEN 2131 AND 2140;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2141 THEN 'Kdybych mel penize: a) se eu tivesse dinheiro b) eu tenho'
+    WHEN 2142 THEN 'Serad slova: eles estao trabalhando desde cedo'
+    WHEN 2143 THEN 'Poslechni si reportaz a urci mesto'
+    WHEN 2144 THEN 'Vyslov text o Amazonii'
+    WHEN 2145 THEN 'Prirad portugalske spojky'
+    WHEN 2146 THEN 'Synonymum pro garoto: a) menino b) homem'
+    WHEN 2147 THEN 'Serad slova: embora chovesse nos fomos ao jogo'
+    WHEN 2148 THEN 'Poslechni si debatu a shrn jeji zaver'
+    WHEN 2149 THEN 'Dej projev o brazilske ekonomice'
+    WHEN 2150 THEN 'Prirad hovorove vyrazy k jejich vyznamu'
+END
+WHERE id_ejercicio BETWEEN 2141 AND 2150;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2151 THEN 'Jak se rekne ahoj italsky? a) Ciao b) Grazie'
+    WHEN 2152 THEN 'Serad slova: mi chiamo Marco'
+    WHEN 2153 THEN 'Poslechni si a vyber italsky pozdrav'
+    WHEN 2154 THEN 'Vyslov spravne slovo Ciao'
+    WHEN 2155 THEN 'Prirad cisla 1 az 5 v italstine'
+    WHEN 2156 THEN 'Vyber spravny clen: ___ ragazzo. a) il b) lo c) la'
+    WHEN 2157 THEN 'Serad slova: lui mangia una pizza'
+    WHEN 2158 THEN 'Poslechni si a napis telefonni cislo'
+    WHEN 2159 THEN 'Vyslov vetu Io sono di Roma'
+    WHEN 2160 THEN 'Prirad cleny rodiny v italstine'
+END
+WHERE id_ejercicio BETWEEN 2151 AND 2160;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2161 THEN 'Minuly cas od fare: a) fatto b) facevo c) fara'
+    WHEN 2162 THEN 'Serad slova: ieri sono andato al cinema'
+    WHEN 2163 THEN 'Poslechni si rozhovor a urci cil cesty'
+    WHEN 2164 THEN 'Precti nahlas: Ho comprato un libro nuovo'
+    WHEN 2165 THEN 'Prirad slovesa k jejich pricesti minulemu'
+    WHEN 2166 THEN 'Kdybych mohl: a) se potessi b) posso c) potevo'
+    WHEN 2167 THEN 'Serad slova: loro stanno lavorando da tre ore'
+    WHEN 2168 THEN 'Poslechni si zpravy o pocasi a urci region'
+    WHEN 2169 THEN 'Vyslov text o historii Rima'
+    WHEN 2170 THEN 'Prirad italske predlozky se cleny'
+END
+WHERE id_ejercicio BETWEEN 2161 AND 2170;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2171 THEN 'Synonymum pro veloce: a) rapido b) lento'
+    WHEN 2172 THEN 'Serad slova: sebbene piovesse siamo usciti lo stesso'
+    WHEN 2173 THEN 'Poslechni si rozhovor a poznamenej si hlavni myslenku'
+    WHEN 2174 THEN 'Dej projev o italske renesanci'
+    WHEN 2175 THEN 'Prirad italska rceni k jejich vyznamu'
+    WHEN 2176 THEN 'Jak se rekne ahoj francouzsky? a) Bonjour b) Merci'
+    WHEN 2177 THEN 'Serad slova: je m appelle Pierre'
+    WHEN 2178 THEN 'Poslechni si a vyber francouzsky pozdrav'
+    WHEN 2179 THEN 'Vyslov spravne slovo Bonjour'
+    WHEN 2180 THEN 'Prirad cisla 1 az 5 ve francouzstine'
+END
+WHERE id_ejercicio BETWEEN 2171 AND 2180;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2181 THEN 'Jaky je clen zenskeho rodu? a) La b) Le c) Les'
+    WHEN 2182 THEN 'Serad slova: elle mange une pomme'
+    WHEN 2183 THEN 'Poslechni si a vyber spravne zvire'
+    WHEN 2184 THEN 'Vyslov vetu Je suis etudiant'
+    WHEN 2185 THEN 'Prirad cleny rodiny ve francouzstine'
+    WHEN 2186 THEN 'Minuly cas od manger: a) a mange b) mangeait'
+    WHEN 2187 THEN 'Serad slova: hier nous sommes alles au cinema'
+    WHEN 2188 THEN 'Poslechni si dialog a napis co jedli'
+    WHEN 2189 THEN 'Precti nahlas: Nous avons visite Paris'
+    WHEN 2190 THEN 'Prirad slovesa k jejich minulemu casu'
+END
+WHERE id_ejercicio BETWEEN 2181 AND 2190;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2191 THEN 'Kdybych to vedel prisel bych: a) serais venu b) suis venu'
+    WHEN 2192 THEN 'Serad slova: ils travaillent ici depuis trois heures'
+    WHEN 2193 THEN 'Poslechni si rozhovor a urci profesi'
+    WHEN 2194 THEN 'Vyslov text o francouzske kulture'
+    WHEN 2195 THEN 'Prirad francouzske logicke spojky'
+    WHEN 2196 THEN 'Synonymum pro ephemere: a) passager b) durable'
+    WHEN 2197 THEN 'Serad slova: nonobstant les difficultes le projet a abouti'
+    WHEN 2198 THEN 'Poslechni si projev a shrn hlavni bod'
+    WHEN 2199 THEN 'Dej projev o Francouzske revoluci'
+    WHEN 2200 THEN 'Prirad francouzska rceni k jejich vyznamu'
+END
+WHERE id_ejercicio BETWEEN 2191 AND 2200;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2201 THEN 'Kolik je 5 + 3? a) 8 b) 7 c) 9 d) 6'
+    WHEN 2202 THEN 'Serad slova: scitani ma dve casti'
+    WHEN 2203 THEN 'Poslechni si a napis cislo cislicemi'
+    WHEN 2204 THEN 'Precti priklad nahlas: 10 minus 4'
+    WHEN 2205 THEN 'Prirad matematicke symboly k jejich nazvum'
+    WHEN 2206 THEN 'Kolik je 8 x 7? a) 56 b) 54 c) 64'
+    WHEN 2207 THEN 'Serad slova: poradi cinitelu nemeni soucin'
+    WHEN 2208 THEN 'Poslechni si zlomek a napis ho'
+    WHEN 2209 THEN 'Precti nahlas vyraz: tri ctvrtiny'
+    WHEN 2210 THEN 'Prirad geometricke tvary k jejich poctu stran'
+END
+WHERE id_ejercicio BETWEEN 2201 AND 2210;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2211 THEN 'Vyres rovnici: 2x = 10. a) x=5 b) x=2 c) x=10'
+    WHEN 2212 THEN 'Serad slova: pro vyreseni rovnice osamostatni promennou'
+    WHEN 2213 THEN 'Poslechni si slovni ulohu a napis rovnici'
+    WHEN 2214 THEN 'Precti nahlas: x na druhou plus y na druhou'
+    WHEN 2215 THEN 'Prirad vzorce pro obsah k jejich tvarum'
+    WHEN 2216 THEN 'Derivace x na druhou: a) 2x b) x c) 2'
+    WHEN 2217 THEN 'Serad slova: derivace odpovida smernici tecny'
+    WHEN 2218 THEN 'Poslechni si limitu a urci jeji tendenci'
+    WHEN 2219 THEN 'Vysvetli nahlas Pythagorovu vetu'
+    WHEN 2220 THEN 'Prirad goniometricke funkce k jejich inverznim'
+END
+WHERE id_ejercicio BETWEEN 2211 AND 2220;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2221 THEN 'Integral z e^x: a) e^x + C b) x c) ln(x)'
+    WHEN 2222 THEN 'Serad slova: integrace per partes je pokrocila metoda'
+    WHEN 2223 THEN 'Poslechni si analyzu funkce a urci extremy'
+    WHEN 2224 THEN 'Dokaz nahlas zakladni algebraickou limitu'
+    WHEN 2225 THEN 'Prirad diferencialni rovnice k jejich typu'
+    WHEN 2226 THEN 'Kolik car ma osnova? a) 5 b) 4 c) 6'
+    WHEN 2227 THEN 'Serad slova: existuje sedm hudebnich tonu'
+    WHEN 2228 THEN 'Poslechni si zvuk a urci jestli je hluboky nebo vysoky'
+    WHEN 2229 THEN 'Zazpivej stredni c'
+    WHEN 2230 THEN 'Prirad noty k jejich delce'
+END
+WHERE id_ejercicio BETWEEN 2221 AND 2230;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2231 THEN 'Jaky klic se pouziva pro vysoke tony? a) houslovy b) basovy'
+    WHEN 2232 THEN 'Serad slova: krizek zvysuje ton o pul tonu'
+    WHEN 2233 THEN 'Poslechni si melodii a dopln chybejici notu'
+    WHEN 2234 THEN 'Zazpivej stupnici C dur nahoru'
+    WHEN 2235 THEN 'Prirad posuvky k jejich vlivu na vysku tonu'
+    WHEN 2236 THEN 'Interval mezi C a E: a) velka tercie b) kvinta'
+    WHEN 2237 THEN 'Serad slova: akord ma zakladni ton tercii a kvintu'
+    WHEN 2238 THEN 'Poslechni si akord a urci jestli je dur nebo moll'
+    WHEN 2239 THEN 'Zazpivej rozlozeny akord G dur'
+    WHEN 2240 THEN 'Prirad stupne stupnice k jejich odbornym nazvum'
+END
+WHERE id_ejercicio BETWEEN 2231 AND 2240;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2241 THEN 'Paralelni moll k C dur: a) a moll b) e moll'
+    WHEN 2242 THEN 'Serad slova: modulace je zmena toniny'
+    WHEN 2243 THEN 'Poslechni si harmonicky postup a napis stupne'
+    WHEN 2244 THEN 'Zatleskej spravne nepravidelny rytmus'
+    WHEN 2245 THEN 'Prirad cirkevni stupnice k jejich strukture'
+    WHEN 2246 THEN 'Co charakterizuje kontrapunkt? a) nezavisle hlasy b) rytmus'
+    WHEN 2247 THEN 'Serad slova: fuga je nejslozitejsi polyfonni forma'
+    WHEN 2248 THEN 'Poslechni si symfonicke dilo a urci formu'
+    WHEN 2249 THEN 'Vysvetli nahlas dvanactitonovou techniku'
+    WHEN 2250 THEN 'Prirad hudebni obdobi k jejich skladatelum'
+END
+WHERE id_ejercicio BETWEEN 2241 AND 2250;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2251 THEN 'Ying yu zen me shuo hello? a) Hello b) Bye c) Car d) Sun'
+    WHEN 2252 THEN 'Pai lie ci yu: is name my John'
+    WHEN 2253 THEN 'Ting lu yin bing xuan ze zheng que de wen hou yu'
+    WHEN 2254 THEN 'Zheng que fa yin: Hello'
+    WHEN 2255 THEN 'Pi pei shu zi 1 dao 5 de ying yu'
+    WHEN 2256 THEN 'Ying yu zhong de be dong ci shi shen me? a) to be b) to play'
+    WHEN 2257 THEN 'Pai lie ci yu: playing am I now'
+    WHEN 2258 THEN 'Ting lu yin bing xie xia yan se'
+    WHEN 2259 THEN 'Zheng que fa yin: I am happy'
+    WHEN 2260 THEN 'Pi pei dong wu he ying yu ming cheng'
+END
+WHERE id_ejercicio BETWEEN 2251 AND 2260;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2261 THEN 'go de guo qu shi: a) went b) goed c) gone d) going'
+    WHEN 2262 THEN 'Pai lie ci yu: yesterday to school went she'
+    WHEN 2263 THEN 'Ting dui hua bing xuan ze mu di di'
+    WHEN 2264 THEN 'Da sheng lang du: She bought a new house'
+    WHEN 2265 THEN 'Pi pei bu gui ze dong ci de guo qu shi'
+    WHEN 2266 HAM 'If it rains, I ___ at home. a) will stay b) would stay'
+    WHEN 2267 THEN 'Pai lie ci yu: have waiting been they hours two for'
+    WHEN 2268 THEN 'Ting xin wen bing shuo chu zhu ti'
+    WHEN 2269 THEN 'Zheng que fa yin guan yu qi hou de duan luo'
+    WHEN 2270 THEN 'Pi pei duan yu dong ci he yi si'
+END
+WHERE id_ejercicio BETWEEN 2261 AND 2270;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2271 THEN 'fast de tong yi ci: a) quick b) slow c) strong d) weak'
+    WHEN 2272 THEN 'Pai lie ci yu: nevertheless she persisted despite the challenges'
+    WHEN 2273 THEN 'Ting bian lun bing zong jie'
+    WHEN 2274 THEN 'Zuo yi ge guan yu jing ji de yan jiang'
+    WHEN 2275 THEN 'Pi pei gao ji ying yu xi yu'
+    WHEN 2276 THEN 'Yue yu zen me shuo hello? a) Neih hou b) M goi c) Hai d) M hai'
+    WHEN 2277 THEN 'Pai lie ci yu: ngo giu a ming'
+    WHEN 2278 THEN 'Ting lu yin bing xuan ze zheng que de ci'
+    WHEN 2279 THEN 'Zheng que fa yin: Neih hou'
+    WHEN 2280 THEN 'Pi pei shu zi 1 dao 5 de yue yu'
+END
+WHERE id_ejercicio BETWEEN 2271 AND 2280;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2281 THEN 'Yue yu zhong de shui shi shen me? a) Seui b) Faan c) Cha'
+    WHEN 2282 THEN 'Pai lie ci yu: ngo sik gan ping gwo'
+    WHEN 2283 THEN 'Ting lu yin bing xie xia yan se'
+    WHEN 2284 THEN 'Zheng que fa yin: ngo hai heung gong yan'
+    WHEN 2285 THEN 'Pi pei jia ting cheng yuan de yue yu'
+    WHEN 2286 THEN 'Guo qu shi biao ji: a) zo b) gan c) wui d) mei'
+    WHEN 2287 THEN 'Pai lie ci yu: cam yat ngo di hei zo tai hei'
+    WHEN 2288 THEN 'Ting dui hua bing xuan ze mu di di'
+    WHEN 2289 THEN 'Da sheng lang du: ngo maai zo san ce'
+    WHEN 2290 THEN 'Pi pei dong ci he guo qu shi'
+END
+WHERE id_ejercicio BETWEEN 2281 AND 2290;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2291 THEN 'Ru guo wo you qian: a) jyu gwo ngo yau cin b) ngo yau cin'
+    WHEN 2292 THEN 'Pai lie ci yu: keui di hai do zou zo saam go zung'
+    WHEN 2293 THEN 'Ting xin wen bing shuo chu zhu ti'
+    WHEN 2294 THEN 'Zheng que fa yin yue yu duan luo'
+    WHEN 2295 THEN 'Pi pei yue yu de lian ci'
+    WHEN 2296 THEN 'faai de tong yi ci: a) gap b) maan c) gwai d) peng'
+    WHEN 2297 THEN 'Pai lie ci yu: seui yin lok yuh ngo di dou ceut gaai'
+    WHEN 2298 THEN 'Ting bian lun bing zong jie'
+    WHEN 2299 THEN 'Zuo yi ge guan yu yue cai de yan jiang'
+    WHEN 2300 THEN 'Pi pei yue yu su yu'
+END
+WHERE id_ejercicio BETWEEN 2291 AND 2300;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2301 THEN 'Ri yu zen me shuo hello? a) Konnichiwa b) Hai c) Iie'
+    WHEN 2302 THEN 'Pai lie ci yu: desu watashi wa Maria'
+    WHEN 2303 THEN 'Ting lu yin bing xuan ze zheng que de ri yu'
+    WHEN 2304 THEN 'Zheng que fa yin: Arigato'
+    WHEN 2305 THEN 'Pi pei shu zi 1 dao 5 de ri yu'
+    WHEN 2306 THEN 'Ri yu de zhu ti zhu ci shi: a) wa b) ga c) wo d) ni'
+    WHEN 2307 THEN 'Pai lie ci yu: o mizu kudasai nomimasu'
+    WHEN 2308 THEN 'Ting lu yin bing xie xia luo ma yin'
+    WHEN 2309 THEN 'Zheng que fa yin: Watashi wa gakusei desu'
+    WHEN 2310 THEN 'Pi pei yan se de ri yu'
+END
+WHERE id_ejercicio BETWEEN 2301 AND 2310;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2311 THEN 'taberu de guo qu shi: a) tabeta b) taberu c) tabemasu'
+    WHEN 2312 THEN 'Pai lie ci yu: e ikimashita gakkou watashi wa'
+    WHEN 2313 THEN 'Ting dui hua bing xuan ze mu di di'
+    WHEN 2314 THEN 'Da sheng lang du ri yu jyu zi'
+    WHEN 2315 THEN 'Pi pei dong ci de te xing'
+    WHEN 2316 THEN 'Ru guo xia yu wo jiu bu qu: a) ame nara b) ame demo'
+    WHEN 2317 THEN 'Pai lie ci yu: ni issho kyoto ikimasen ka e'
+    WHEN 2318 THEN 'Ting xin wen bing shuo chu zhu ti'
+    WHEN 2319 THEN 'Zheng que fa yin guan yu ri ben de duan luo'
+    WHEN 2320 THEN 'Pi pei kanji he du yin'
+END
+WHERE id_ejercicio BETWEEN 2311 AND 2320;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2321 THEN 'isogashii de tong yi ci: a) hima b) sewashii c) tanoshii'
+    WHEN 2322 THEN 'Pai lie ci yu: koto ga dekimasu nihongo hanasu wo'
+    WHEN 2323 THEN 'Ting bian lun bing zong jie'
+    WHEN 2324 THEN 'Zuo yi ge guan yu dong man de yan jiang'
+    WHEN 2325 THEN 'Pi pei ri yu yan yu'
+    WHEN 2326 THEN 'Han yu zen me shuo hello? a) Annyeonghaseyo b) Ne c) Aniyo'
+    WHEN 2327 THEN 'Pai lie ci yu: naneun saram imnida'
+    WHEN 2328 THEN 'Ting lu yin bing xuan ze zheng que de han yu'
+    WHEN 2329 THEN 'Zheng que fa yin: Annyeonghaseyo'
+    WHEN 2330 THEN 'Pi pei shu zi 1 dao 5 de han yu'
+END
+WHERE id_ejercicio BETWEEN 2321 AND 2330;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2331 THEN 'Zhu yu zhu ci shi: a) i/ga b) eun/neun c) eul/reul d) e'
+    WHEN 2332 THEN 'Pai lie ci yu: jeoneun bap eul meogeoyo'
+    WHEN 2333 THEN 'Ting lu yin bing xie xia shu zi'
+    WHEN 2334 THEN 'Zheng que fa yin: Hangugoeol baewoyo'
+    WHEN 2335 THEN 'Pi pei jia ting cheng yuan de han yu'
+    WHEN 2336 THEN 'hada de guo qu shi: a) haesseoyo b) haeyo c) halkkeyo'
+    WHEN 2337 THEN 'Pai lie ci yu: eojeyo hakgyo e gasseoyo'
+    WHEN 2338 THEN 'Ting dui hua bing xuan ze mai le shen me'
+    WHEN 2339 THEN 'Da sheng lang du han yu jyu zi'
+    WHEN 2340 THEN 'Pi pei dong ci he yuan xing'
+END
+WHERE id_ejercicio BETWEEN 2331 AND 2340;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2341 THEN 'Ru guo wo you shi jian: a) sigan isseumyeon b) sigan isseodo'
+    WHEN 2342 THEN 'Pai lie ci yu: jigeum eumag eul deutgo isseoyo'
+    WHEN 2343 THEN 'Ting xin wen bing shuo chu cheng shi'
+    WHEN 2344 THEN 'Zheng que fa yin guan yu shou er de duan luo'
+    WHEN 2345 THEN 'Pi pei han yu de lian ci'
+    WHEN 2346 THEN 'ppareuda de tong yi ci: a) neulida b) bappeuda'
+    WHEN 2347 THEN 'Pai lie ci yu: biga wado gohyang e gamnida'
+    WHEN 2348 THEN 'Ting han ju bing zong jie qing gan'
+    WHEN 2349 THEN 'Zuo yi ge guan yu han guo mei shi de yan jiang'
+    WHEN 2350 THEN 'Pi pei han yu yan yu'
+END
+WHERE id_ejercicio BETWEEN 2341 AND 2350;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2351 THEN 'Guo ji xiang qi qi pan you ji ge ge zi? a) 64 b) 32 c) 100'
+    WHEN 2352 THEN 'Pai lie ci yu: mei ge wan jia you ba ge bing'
+    WHEN 2353 THEN 'Ting lu yin bing xuan ze qi zi'
+    WHEN 2354 THEN 'Da sheng shuo: Jiang jun'
+    WHEN 2355 THEN 'Pi pei qi zi he fen shu'
+    WHEN 2356 THEN 'Ma zen me zou? a) L xing b) xie xian c) zhi xian'
+    WHEN 2357 THEN 'Pai lie ci yu: xiang kong zhi xie xian de ge zi'
+    WHEN 2358 THEN 'Ting bu bu bing zai qi pan shang zou chu lai'
+    WHEN 2359 THEN 'Du chu bu bu: Ma f3'
+    WHEN 2360 THEN 'Pi pei ji ben gai nian he miao shu'
+END
+WHERE id_ejercicio BETWEEN 2351 AND 2360;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2361 THEN 'Shen me shi qian zhi? a) qi zi wu fa yi dong b) jiang jun'
+    WHEN 2362 THEN 'Pai lie ci yu: xi sheng che wei le da kai xian'
+    WHEN 2363 THEN 'Ting fen xi bing zhao chu wei xie'
+    WHEN 2364 THEN 'Da sheng shuo chu zhu yao bian hua'
+    WHEN 2365 THEN 'Pi pei zhan shu yu li zi'
+    WHEN 2366 THEN 'Can ju zhong shen me shi dui zhi? a) wang mian dui mian'
+    WHEN 2367 THEN 'Pai lie ci yu: gu li bing zai can ju zhong shi ruo dian'
+    WHEN 2368 THEN 'Ting jiang zuo bing ji lu guan jian bu'
+    WHEN 2369 THEN 'Zheng que fa yin: yu fang zhan shu'
+    WHEN 2370 THEN 'Pi pei kai ju he ECO dai ma'
+END
+WHERE id_ejercicio BETWEEN 2361 AND 2370;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2371 THEN 'Xi xi li fang yu de te dian shi? a) c5 b) e5 c) d5 d) f5'
+    WHEN 2372 THEN 'Pai lie ci yu: dong tai bu chang dai ti wu zhi xi sheng'
+    WHEN 2373 THEN 'Ting mang qi jie shuo bing zhao chu san bu sha'
+    WHEN 2374 THEN 'Kou tou fen xi Kasparov de dui ju'
+    WHEN 2375 THEN 'Pi pei bing de jie gou he ji hua'
+    WHEN 2376 THEN '5 jia 3 deng yu ji? a) 8 b) 7 c) 9 d) 6'
+    WHEN 2377 THEN 'Pai lie ci yu: jia fa you liang ge bu fen'
+    WHEN 2378 THEN 'Ting lu yin bing xie xia shu zi'
+    WHEN 2379 THEN 'Da sheng lang du: 10 jian 4'
+    WHEN 2380 THEN 'Pi pei shu xue fu hao he ming cheng'
+END
+WHERE id_ejercicio BETWEEN 2371 AND 2380;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2381 THEN '8 cheng yi 7 deng yu ji? a) 56 b) 54 c) 64 d) 49'
+    WHEN 2382 THEN 'Pai lie ci yu: cheng shu de shun xu bu gai bian cheng ji'
+    WHEN 2383 THEN 'Ting lu yin bing xie xia fen shu'
+    WHEN 2384 THEN 'Da sheng lang du: si fen zhi san'
+    WHEN 2385 THEN 'Pi pei ji he tu xing he bian shu'
+    WHEN 2386 THEN 'Jie fang cheng: 2x = 10. a) x=5 b) x=2 c) x=10'
+    WHEN 2387 THEN 'Pai lie ci yu: qiu jie fang cheng xu yao yi xiang'
+    WHEN 2388 THEN 'Ting dai shu ti bing xie xia fang cheng'
+    WHEN 2389 THEN 'Da sheng lang du: x de ping fang jia y de ping fang'
+    WHEN 2390 THEN 'Pi pei mian ji gong shi he tu xing'
+END
+WHERE id_ejercicio BETWEEN 2381 AND 2390;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2391 THEN 'x de ping fang de dao shu shi: a) 2x b) x c) 2 d) 3x'
+    WHEN 2392 THEN 'Pai lie ci yu: dao shu jiu shi qie xian de xie lv'
+    WHEN 2393 THEN 'Ting ji xian wen ti bing zhao chu qu shi'
+    WHEN 2394 THEN 'Da sheng shuo chu gou gu ding li'
+    WHEN 2395 THEN 'Pi pei san jiao han shu he fan han shu'
+    WHEN 2396 THEN 'e^x de ji fen shi: a) e^x + C b) x c) ln(x) d) 1/x'
+    WHEN 2397 THEN 'Pai lie ci yu: fen bu ji fen shi gao ji fang fa'
+    WHEN 2398 THEN 'Ting han shu fen xi bing biao chu ji zhi dian'
+    WHEN 2399 THEN 'Da sheng zheng ming ji ben ji xian'
+    WHEN 2400 THEN 'Pi pei wei fen fang cheng he lei xing'
+END
+WHERE id_ejercicio BETWEEN 2391 AND 2400;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2401 THEN 'Wu xian pu you ji tiao xian? a) 5 b) 4 c) 6 d) 7'
+    WHEN 2402 THEN 'Pai lie ci yu: yin yue you qi ge ji ben yin'
+    WHEN 2403 THEN 'Ting sheng yin bing pan duan gao di'
+    WHEN 2404 THEN 'Chang chu zhong yin C'
+    WHEN 2405 THEN 'Pi pei yin fu he yin chang'
+    WHEN 2406 THEN 'Gao yin shi yong shen me pu hao? a) gao yin pu hao b) di yin'
+    WHEN 2407 THEN 'Pai lie ci yu: sheng hao ba yin gao sheng gao ban yin'
+    WHEN 2408 THEN 'Ting xuan lv bing tian chong que shi de yin'
+    WHEN 2409 THEN 'Chang chu C da diao yin jie'
+    WHEN 2410 THEN 'Pi pei bian yin ji hao he zuo yong'
+END
+WHERE id_ejercicio BETWEEN 2401 AND 2410;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2411 THEN 'C he E zhi jian de yin cheng shi? a) da san du b) wu du'
+    WHEN 2412 THEN 'Pai lie ci yu: he xian ba kuo gen yin san yin he wu yin'
+    WHEN 2413 THEN 'Ting he xian bing pan duan shi da diao hai shi xiao diao'
+    WHEN 2414 THEN 'Chang chu G da diao pa yin'
+    WHEN 2415 THEN 'Pi pei yin jie ji shu he zhuan ye ming cheng'
+    WHEN 2416 THEN 'C da diao de guan xi xiao diao shi: a) a xiao diao b) e xiao diao'
+    WHEN 2417 THEN 'Pai lie ci yu: zhuan diao jiu shi gai bian diao xing'
+    WHEN 2418 THEN 'Ting he sheng jin xing bing xie xia ji shu'
+    WHEN 2419 THEN 'Zheng que pai da bian pai zi jie zou'
+    WHEN 2420 THEN 'Pi pei jiao hui diao shi he jie gou'
+END
+WHERE id_ejercicio BETWEEN 2411 AND 2420;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2421 THEN 'Fu diao yin yue de te dian shi? a) du li de sheng bu b) jie zou'
+    WHEN 2422 THEN 'Pai lie ci yu: dun yin shi zui fu za de duo sheng bu xing shi'
+    WHEN 2423 THEN 'Ting jiao xiang yue bing pan duan yin yue xing shi'
+    WHEN 2424 THEN 'Da sheng jiang jie shi er yin ji fa'
+    WHEN 2425 THEN 'Pi pei yin yue shi qi he zuo qu jia'
+    WHEN 2426 THEN 'Fa yu zen me shuo hello? a) Bonjour b) Merci c) Oui d) Non'
+    WHEN 2427 THEN 'Pai lie ci yu: je m appelle Pierre'
+    WHEN 2428 THEN 'Ting lu yin bing xuan ze zheng que de fa yu'
+    WHEN 2429 THEN 'Zheng que fa yin: Bonjour'
+    WHEN 2430 THEN 'Pi pei shu zi 1 dao 5 de fa yu'
+END
+WHERE id_ejercicio BETWEEN 2421 AND 2430;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2431 THEN 'Yin xing dan shu guan ci shi: a) La b) Le c) Les d) Un'
+    WHEN 2432 THEN 'Pai lie ci yu: elle mange une pomme'
+    WHEN 2433 THEN 'Ting lu yin bing xie xia yan se'
+    WHEN 2434 THEN 'Zheng que fa yin: Je suis etudiant'
+    WHEN 2435 THEN 'Pi pei jia ting cheng yuan de fa yu'
+    WHEN 2436 THEN 'manger de fu he guo qu shi: a) a mange b) mangeait c) mangera'
+    WHEN 2437 THEN 'Pai lie ci yu: hier nous sommes alles au cinema'
+    WHEN 2438 THEN 'Ting dui hua bing shuo chu chi le shen me'
+    WHEN 2439 THEN 'Da sheng lang du: Nous avons visite Paris'
+    WHEN 2440 THEN 'Pi pei dong ci he guo qu shi'
+END
+WHERE id_ejercicio BETWEEN 2431 AND 2440;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2441 THEN 'Ru guo wo zhi dao, wo jiu hui: a) serais venu b) suis venu'
+    WHEN 2442 THEN 'Pai lie ci yu: ils travaillent ici depuis trois heures'
+    WHEN 2443 THEN 'Ting xin wen bing shuo chu zhu ti'
+    WHEN 2444 THEN 'Zheng que fa yin guan yu fa guo wen hua de duan luo'
+    WHEN 2445 THEN 'Pi pei fa yu de lian ci'
+    WHEN 2446 THEN 'ephemere de tong yi ci: a) passager b) durable c) constant'
+    WHEN 2447 THEN 'Pai lie ci yu: nonobstant les difficultes le projet a abouti'
+    WHEN 2448 THEN 'Ting bian lun bing zong jie'
+    WHEN 2449 THEN 'Zuo yi ge guan yu fa guo da ge ming de yan jiang'
+    WHEN 2450 THEN 'Pi pei fa yu xi yu'
+END
+WHERE id_ejercicio BETWEEN 2441 AND 2450;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2451 THEN 'Xi ban ya yu zen me shuo hello? a) Hola b) Gracias c) Si d) No'
+    WHEN 2452 THEN 'Pai lie ci yu: me llamo Juan'
+    WHEN 2453 THEN 'Ting lu yin bing xuan ze zheng que de xi ban ya yu'
+    WHEN 2454 THEN 'Zheng que fa yin: Hola'
+    WHEN 2455 THEN 'Pi pei shu zi 1 dao 5'
+    WHEN 2456 THEN 'Biao shi zhuang tai de be dong ci shi: a) estar b) ser c) ir'
+    WHEN 2457 THEN 'Pai lie ci yu: yo estoy comiendo una manzana'
+    WHEN 2458 THEN 'Ting lu yin bing xie xia yan se'
+    WHEN 2459 THEN 'Zheng que fa yin: Yo soy de Espana'
+    WHEN 2460 THEN 'Pi pei jia ting cheng yuan'
+END
+WHERE id_ejercicio BETWEEN 2451 AND 2460;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2461 THEN 'ir de guo qu shi: a) fui b) iba c) ire d) yendo'
+    WHEN 2462 THEN 'Pai lie ci yu: ayer fuimos al cine'
+    WHEN 2463 THEN 'Ting dui hua bing shuo chu mu di di'
+    WHEN 2464 THEN 'Da sheng lang du: Compre un coche nuevo'
+    WHEN 2465 THEN 'Pi pei dong ci de guo qu shi'
+    WHEN 2466 THEN 'Ru guo wo you shi jian: a) si tuviera tiempo b) tengo tiempo'
+    WHEN 2467 THEN 'Pai lie ci yu: ellos trabajan aqui desde hace tres horas'
+    WHEN 2468 THEN 'Ting xin wen bing shuo chu zhu ti'
+    WHEN 2469 THEN 'Zheng que fa yin xi ban ya wen hua de duan luo'
+    WHEN 2470 THEN 'Pi pei xi ban ya yu de lian ci'
+END
+WHERE id_ejercicio BETWEEN 2461 AND 2470;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2471 THEN 'rapido de tong yi ci: a) veloz b) lento c) caro d) barato'
+    WHEN 2472 THEN 'Pai lie ci yu: a pesar de la lluvia salimos'
+    WHEN 2473 THEN 'Ting bian lun bing zong jie'
+    WHEN 2474 THEN 'Zuo yi ge guan yu xi ban ya de yan jiang'
+    WHEN 2475 THEN 'Pi pei xi ban ya yu xi yu'
+    WHEN 2476 THEN 'Yi da li yu zen me shuo hello? a) Ciao b) Grazie c) Si d) No'
+    WHEN 2477 THEN 'Pai lie ci yu: mi chiamo Marco'
+    WHEN 2478 THEN 'Ting lu yin bing xuan ze zheng que de yi da li yu'
+    WHEN 2479 THEN 'Zheng que fa yin: Ciao'
+    WHEN 2480 THEN 'Pi pei shu zi 1 dao 5'
+END
+WHERE id_ejercicio BETWEEN 2471 AND 2480;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2481 THEN 'Yi da li yu de guan ci: ___ ragazzo. a) il b) lo c) la d) i'
+    WHEN 2482 THEN 'Pai lie ci yu: lui mangia una pizza'
+    WHEN 2483 THEN 'Ting lu yin bing xie xia dian hua hao ma'
+    WHEN 2484 THEN 'Zheng que fa yin: Io sono di Roma'
+    WHEN 2485 THEN 'Pi pei jia ting cheng yuan'
+    WHEN 2486 THEN 'fare de guo qu shi: a) fatto b) facevo c) fara d) feci'
+    WHEN 2487 THEN 'Pai lie ci yu: ieri sono andato al cinema'
+    WHEN 2488 THEN 'Ting dui hua bing shuo chu mu di di'
+    WHEN 2489 THEN 'Da sheng lang du: Ho comprato un libro nuovo'
+    WHEN 2490 THEN 'Pi pei dong ci he guo qu shi'
+END
+WHERE id_ejercicio BETWEEN 2481 AND 2490;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2491 THEN 'Ru guo wo neng: a) se potessi b) posso c) potevo'
+    WHEN 2492 THEN 'Pai lie ci yu: loro stanno lavorando da tre ore'
+    WHEN 2493 THEN 'Ting tian qi yu bao bing shuo chu cheng shi'
+    WHEN 2494 THEN 'Zheng que fa yin guan yu luo ma de duan luo'
+    WHEN 2495 THEN 'Pi pei yi da li yu jie ci'
+    WHEN 2496 THEN 'veloce de tong yi ci: a) rapido b) lento c) caro d) economico'
+    WHEN 2497 THEN 'Pai lie ci yu: sebbene piovesse siamo usciti lo stesso'
+    WHEN 2498 THEN 'Ting bian lun bing zong jie'
+    WHEN 2499 THEN 'Zuo yi ge guan yu yi da li wen yi fu xing de yan jiang'
+    WHEN 2500 THEN 'Pi pei yi da li yu xi yu'
+END
+WHERE id_ejercicio BETWEEN 2491 AND 2500;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2501 THEN 'Pu tao ya yu zen me shuo hello? a) Ola b) Obrigado c) Bom dia'
+    WHEN 2502 THEN 'Pai lie ci yu: eu me chamo Joao'
+    WHEN 2503 THEN 'Ting lu yin bing xuan ze zheng que de pu tao ya yu'
+    WHEN 2504 THEN 'Zheng que fa yin: Bom dia'
+    WHEN 2505 THEN 'Pi pei shu zi 1 dao 5'
+    WHEN 2506 THEN 'Yang xing guan ci shi: a) O b) A c) Os d) As'
+    WHEN 2507 THEN 'Pai lie ci yu: ela come uma maca verde'
+    WHEN 2508 THEN 'Ting lu yin bing xie xia yan se'
+    WHEN 2509 THEN 'Zheng que fa yin: Eu moro no Brasil'
+    WHEN 2510 THEN 'Pi pei jia ting cheng yuan'
+END
+WHERE id_ejercicio BETWEEN 2501 AND 2510;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2511 THEN 'falar de guo qu shi: a) falei b) falo c) falava d) falarei'
+    WHEN 2512 THEN 'Pai lie ci yu: ontem nos fomos a praia'
+    WHEN 2513 THEN 'Ting dui hua bing shuo chu mu di di'
+    WHEN 2514 THEN 'Da sheng lang du: Eu viajei para Lisboa'
+    WHEN 2515 THEN 'Pi pei dong ci he guo qu shi'
+    WHEN 2516 THEN 'Ru guo wo you qian: a) se eu tivesse dinheiro b) eu tenho'
+    WHEN 2517 THEN 'Pai lie ci yu: eles estao trabalhando desde cedo'
+    WHEN 2518 THEN 'Ting tian qi yu bao bing shuo chu cheng shi'
+    WHEN 2519 THEN 'Zheng que fa yin guan yu ba xi de duan luo'
+    WHEN 2520 THEN 'Pi pei pu tao ya yu de lian ci'
+END
+WHERE id_ejercicio BETWEEN 2511 AND 2520;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2521 THEN 'garoto de tong yi ci: a) menino b) homem c) idoso'
+    WHEN 2522 THEN 'Pai lie ci yu: embora chovesse nos fomos ao jogo'
+    WHEN 2523 THEN 'Ting bian lun bing zong jie'
+    WHEN 2524 THEN 'Zuo yi ge guan yu ba xi jing ji de yan jiang'
+    WHEN 2525 THEN 'Pi pei pu tao ya yu xi yu'
+    WHEN 2526 THEN 'De yu zen me shuo hello? a) Hallo b) Danke c) Ja'
+    WHEN 2527 THEN 'Pai lie ci yu: ich heisse Anna'
+    WHEN 2528 THEN 'Ting lu yin bing xuan ze zheng que de de yu'
+    WHEN 2529 THEN 'Zheng que fa yin: Hallo'
+    WHEN 2530 THEN 'Pi pei shu zi 1 dao 5'
+END
+WHERE id_ejercicio BETWEEN 2521 AND 2530;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2531 THEN 'Yin xing guan ci shi: a) die b) der c) das d) den'
+    WHEN 2532 THEN 'Pai lie ci yu: er isst einen Apfel'
+    WHEN 2533 THEN 'Ting lu yin bing xie xia yan se'
+    WHEN 2534 THEN 'Zheng que fa yin: Ich komme aus China'
+    WHEN 2535 THEN 'Pi pei jia ting cheng yuan'
+    WHEN 2536 THEN 'machen de guo qu shi: a) gemacht b) mache c) machte'
+    WHEN 2537 THEN 'Pai lie ci yu: bin ich gestern ins Kino gegangen'
+    WHEN 2538 THEN 'Ting dui hua bing shuo chu mu di di'
+    WHEN 2539 THEN 'Da sheng lang du: Ich habe ein Auto gekauft'
+    WHEN 2540 THEN 'Pi pei dong ci he guo qu shi'
+END
+WHERE id_ejercicio BETWEEN 2531 AND 2540;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2541 THEN 'Ru guo wo you shi jian: a) wenn ich Zeit hatte b) ich habe'
+    WHEN 2542 THEN 'Pai lie ci yu: sie arbeiten hier schon seit drei Stunden'
+    WHEN 2543 THEN 'Ting xin wen bing shuo chu zhu ti'
+    WHEN 2544 THEN 'Zheng que fa yin guan yu bo lin de duan luo'
+    WHEN 2545 THEN 'Pi pei de yu jie ci'
+    WHEN 2546 THEN 'schnell de tong yi ci: a) rasch b) langsam c) teuer'
+    WHEN 2547 THEN 'Pai lie ci yu: obwohl es regnete sind wir spazieren gegangen'
+    WHEN 2548 THEN 'Ting bian lun bing zong jie'
+    WHEN 2549 THEN 'Zuo yi ge guan yu ou meng de yan jiang'
+    WHEN 2550 THEN 'Pi pei de yu xi yu'
+END
+WHERE id_ejercicio BETWEEN 2541 AND 2550;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2551 THEN 'Yeong eoro hello neun eotteoke malhanayo? a) Hello b) Bye'
+    WHEN 2552 THEN 'Daneoreul sunseo daero baeyeol haseyo: is name my John'
+    WHEN 2553 THEN 'Odioreul deutgo almajeun insamareul goreuseyo'
+    WHEN 2554 THEN 'Daeumeul jeonghwakhage bareum haseyo: Hello'
+    WHEN 2555 THEN '1 buteo 5 kkajiui sutjareul yeongyeol haseyo'
+    WHEN 2556 THEN 'Be dongsaneun mueosingayo? a) to be b) to play c) to run'
+    WHEN 2557 THEN 'Daneoreul sunseo daero baeyeol haseyo: playing am I now'
+    WHEN 2558 THEN 'Deutgo saeksangeul jeogeuseyo'
+    WHEN 2559 THEN 'Daeumeul jeonghwakhage bareum haseyo: I am happy'
+    WHEN 2560 THEN 'Dongmulgwa yeong eo ireumeul yeongyeol haseyo'
+END
+WHERE id_ejercicio BETWEEN 2551 AND 2560;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2561 THEN 'Go ui gwageohyungeun? a) went b) goed c) gone d) going'
+    WHEN 2562 THEN 'Daneoreul sunseo daero baeyeol haseyo: yesterday to school went she'
+    WHEN 2563 THEN 'Daehwareul deutgo mokjeokjireul goreuseyo'
+    WHEN 2564 THEN 'Keuge ilgeuseyo: She bought a new house'
+    WHEN 2565 THEN 'Bulgyuchik dongsawa gwageohyungeul yeongyeol haseyo'
+    WHEN 2566 THEN 'Biga ondamyeon: a) will stay b) would stay c) stayed'
+    WHEN 2567 THEN 'Daneoreul sunseo daero baeyeol haseyo: have waiting been they'
+    WHEN 2568 THEN 'Nyuseureul deutgo jujereul paak haseyo'
+    WHEN 2569 THEN 'Gihu byeonhwa e daehan mungjangeul bareum haseyo'
+    WHEN 2570 THEN 'Gudongsawa uimireul yeongyeol haseyo'
+END
+WHERE id_ejercicio BETWEEN 2561 AND 2570;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2571 THEN 'Fast ui dong ui eoneun? a) quick b) slow c) strong d) weak'
+    WHEN 2572 THEN 'Daneoreul sunseo daero baeyeol haseyo: nevertheless she persisted'
+    WHEN 2573 THEN 'Toroneul deutgo geu gyeolgwareul yoyak haseyo'
+    WHEN 2574 THEN 'Gyeongje e daehan 1 bun seupichireul haseyo'
+    WHEN 2575 THEN 'Gogeup gwanyongeowa uimireul yeongyeol haseyo'
+    WHEN 2576 THEN 'Seupein eoro hello neun eotteoke malhanayo? a) Hola b) Gracias'
+    WHEN 2577 THEN 'Daneoreul sunseo daero baeyeol haseyo: me llamo Juan'
+    WHEN 2578 THEN 'Odioreul deutgo almajeun insamareul goreuseyo'
+    WHEN 2579 THEN 'Daeumeul jeonghwakhage bareum haseyo: Hola'
+    WHEN 2580 THEN '1 buteo 5 kkajiui sutjareul yeongyeol haseyo'
+END
+WHERE id_ejercicio BETWEEN 2571 AND 2580;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2581 THEN 'Jip e daehan gwansaneun mueosingayo? a) la b) el c) los'
+    WHEN 2582 THEN 'Daneoreul sunseo daero baeyeol haseyo: yo estoy comiendo'
+    WHEN 2583 THEN 'Deutgo saeksangeul jeogeuseyo'
+    WHEN 2584 THEN 'Daeumeul jeonghwakhage bareum haseyo: Yo soy de Espana'
+    WHEN 2585 THEN 'Gajok guseongwongwa seupein eo ireumeul yeongyeol haseyo'
+    WHEN 2586 THEN 'Ir ui gwageohyungeun? a) fui b) iba c) ire d) yendo'
+    WHEN 2587 THEN 'Daneoreul sunseo daero baeyeol haseyo: ayer fuimos al cine'
+    WHEN 2588 THEN 'Daehwareul deutgo mokjeokjireul goreuseyo'
+    WHEN 2589 THEN 'Keuge ilgeuseyo: Compre un coche nuevo'
+    WHEN 2590 THEN 'Dongsawa gwageohyungeul yeongyeol haseyo'
+END
+WHERE id_ejercicio BETWEEN 2581 AND 2590;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2591 THEN 'Sigani itdamyeon: a) si tuviera tiempo b) tengo tiempo'
+    WHEN 2592 THEN 'Daneoreul sunseo daero baeyeol haseyo: ellos trabajan aqui'
+    WHEN 2593 THEN 'Nyuseureul deutgo jujereul paak haseyo'
+    WHEN 2594 THEN 'Seupein munhwa e daehan mungjangeul bareum haseyo'
+    WHEN 2595 THEN 'Jeopsoksawa uimireul yeongyeol haseyo'
+    WHEN 2596 THEN 'Rapido ui dong ui eoneun? a) veloz b) lento c) caro'
+    WHEN 2597 THEN 'Daneoreul sunseo daero baeyeol haseyo: a pesar de la lluvia'
+    WHEN 2598 THEN 'Toroneul deutgo geu gyeolgwareul yoyak haseyo'
+    WHEN 2599 THEN 'Seupein yeoksa e daehan seupichireul haseyo'
+    WHEN 2600 THEN 'Seupein eo gwanyongeowa uimireul yeongyeol haseyo'
+END
+WHERE id_ejercicio BETWEEN 2591 AND 2600;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2601 THEN 'Junggug eoro hello neun eotteoke malhanayo? a) Ni hao b) Zaijian'
+    WHEN 2602 THEN 'Daneoreul sunseo daero baeyeol haseyo: wo shi hanguk ren'
+    WHEN 2603 THEN 'Odioreul deutgo seongjoreul paak haseyo'
+    WHEN 2604 THEN 'Daeumeul jeonghwakhage bareum haseyo: Xiexie'
+    WHEN 2605 THEN '1 buteo 5 kkajiui sutjareul yeongyeol haseyo'
+    WHEN 2606 THEN 'Napjakhan mulgeonui sulyangsa neun? a) zhang b) ge c) ben'
+    WHEN 2607 THEN 'Daneoreul sunseo daero baeyeol haseyo: wo xihuan he cha'
+    WHEN 2608 THEN 'Deutgo saeksangeul jeogeuseyo'
+    WHEN 2609 THEN 'Daeumeul jeonghwakhage bareum haseyo: Wo ai ni'
+    WHEN 2610 THEN 'Dongmulgwa pinyin ireumeul yeongyeol haseyo'
+END
+WHERE id_ejercicio BETWEEN 2601 AND 2610;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2611 THEN 'Gwageo josa neun? a) le b) zhi c) zai d) guo'
+    WHEN 2612 THEN 'Daneoreul sunseo daero baeyeol haseyo: zuotian wo qu le beijing'
+    WHEN 2613 THEN 'Daehwareul deutgo mueoseul meogeonneunji goreuseyo'
+    WHEN 2614 THEN 'Keuge ilgeuseyo: pinyin mungjang'
+    WHEN 2615 THEN 'Dongsawa sang josareul yeongyeol haseyo'
+    WHEN 2616 THEN 'Biga ondamyeon: a) ruguo xiayu b) suiran xiayu c) yinwei'
+    WHEN 2617 THEN 'Daneoreul sunseo daero baeyeol haseyo: wo zhengzai xuexi zhongwen'
+    WHEN 2618 THEN 'Nyuseureul deutgo jujereul paak haseyo'
+    WHEN 2619 THEN 'Malli jangseong e daehan mungjangeul bareum haseyo'
+    WHEN 2620 THEN 'Hanjawa busureul yeongyeol haseyo'
+END
+WHERE id_ejercicio BETWEEN 2611 AND 2620;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2621 THEN 'Gaoxing ui dong ui eoneun? a) kuaile b) nan guo c) shengqi'
+    WHEN 2622 THEN 'Daneoreul sunseo daero baeyeol haseyo: ta zhongyu chengong le'
+    WHEN 2623 THEN 'Toroneul deutgo geu gyeolgwareul yoyak haseyo'
+    WHEN 2624 THEN 'Jungguk gyeongje e daehan seupichireul haseyo'
+    WHEN 2625 THEN 'Sajaseongeowa uimireul yeongyeol haseyo'
+    WHEN 2626 THEN 'Itallia eoro hello neun eotteoke malhanayo? a) Ciao b) Grazie'
+    WHEN 2627 THEN 'Daneoreul sunseo daero baeyeol haseyo: mi chiamo Marco'
+    WHEN 2628 THEN 'Odioreul deutgo almajeun insamareul goreuseyo'
+    WHEN 2629 THEN 'Daeumeul jeonghwakhage bareum haseyo: Ciao'
+    WHEN 2630 THEN '1 buteo 5 kkajiui sutjareul yeongyeol haseyo'
+END
+WHERE id_ejercicio BETWEEN 2621 AND 2630;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2631 THEN 'Almajeun gwansareul goreuseyo: ___ ragazzo. a) il b) lo c) la'
+    WHEN 2632 THEN 'Daneoreul sunseo daero baeyeol haseyo: lui mangia una pizza'
+    WHEN 2633 THEN 'Deutgo jeonhwabeonhoreul jeogeuseyo'
+    WHEN 2634 THEN 'Daeumeul jeonghwakhage bareum haseyo: Io sono di Roma'
+    WHEN 2635 THEN 'Gajok guseongwongwa itallia eo ireumeul yeongyeol haseyo'
+    WHEN 2636 THEN 'Fare ui gwageohyungeun? a) fatto b) facevo c) fara'
+    WHEN 2637 THEN 'Daneoreul sunseo daero baeyeol haseyo: ieri sono andato al cinema'
+    WHEN 2638 THEN 'Daehwareul deutgo mokjeokjireul goreuseyo'
+    WHEN 2639 THEN 'Keuge ilgeuseyo: Ho comprato un libro nuovo'
+    WHEN 2640 THEN 'Dongsawa gwageobunsareul yeongyeol haseyo'
+END
+WHERE id_ejercicio BETWEEN 2631 AND 2640;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2641 THEN 'Naega hal su itdamyeon: a) se potessi b) posso c) potevo'
+    WHEN 2642 THEN 'Daneoreul sunseo daero baeyeol haseyo: loro stanno lavorando'
+    WHEN 2643 THEN 'Nalssi yeboreul deutgo jiyeogeul paak haseyo'
+    WHEN 2644 THEN 'Roma yeoksa e daehan mungjangeul bareum haseyo'
+    WHEN 2645 THEN 'Itallia eo jeonchisareul yeongyeol haseyo'
+    WHEN 2646 THEN 'Veloce ui dong ui eoneun? a) rapido b) lento c) fermo'
+    WHEN 2647 THEN 'Daneoreul sunseo daero baeyeol haseyo: sebbene piovesse siamo usciti'
+    WHEN 2648 THEN 'Toroneul deutgo geu gyeolgwareul yoyak haseyo'
+    WHEN 2649 THEN 'Itallia reunessangseu e daehan seupichireul haseyo'
+    WHEN 2650 THEN 'Itallia eo gwanyongeowa uimireul yeongyeol haseyo'
+END
+WHERE id_ejercicio BETWEEN 2641 AND 2650;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2651 THEN 'Cheseu pan eun myeot kaningayo? a) 64 b) 32 c) 100 d) 50'
+    WHEN 2652 THEN 'Daneoreul sunseo daero baeyeol haseyo: gak peulleieoneun 8 gaeui pon'
+    WHEN 2653 THEN 'Deutgo cheseu malui ireumeul matuseyo'
+    WHEN 2654 THEN 'Keuge malhaseyo: king ege chekeu'
+    WHEN 2655 THEN 'Cheseu malgwa jeomsureul yeongyeol haseyo'
+    WHEN 2656 THEN 'Naiteu neun eotteoke idonghanayo? a) L ja b) daegakseon'
+    WHEN 2657 THEN 'Daneoreul sunseo daero baeyeol haseyo: bisyobeun daegakseon tongje'
+    WHEN 2658 THEN 'Idongeul deutgo pan e geudaero haeboseyo'
+    WHEN 2659 THEN 'Idongeul bulleo boseyo: Naiteu f3'
+    WHEN 2660 THEN 'Gihobwa ui uimireul yeongyeol haseyo'
+END
+WHERE id_ejercicio BETWEEN 2651 AND 2660;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2661 THEN 'Pin eun mueosingayo? a) umjigil su eopneun mal b) chekeu'
+    WHEN 2662 THEN 'Daneoreul sunseo daero baeyeol haseyo: ruug eul huisaenghayeo yeolgi'
+    WHEN 2663 THEN 'Bunseogeul deutgo wihyeobeul paak haseyo'
+    WHEN 2664 THEN 'Juyo byeonhwareul keuge malhaseyo'
+    WHEN 2665 THEN 'Jeonsulgwa yesireul yeongyeol haseyo'
+    WHEN 2666 THEN 'Endeugeim eseo opojisyeon eun? a) king majubogi b) seungjin'
+    WHEN 2667 THEN 'Daneoreul sunseo daero baeyeol haseyo: goripdoen pon eun yakjeom'
+    WHEN 2668 THEN 'Ganguireul deutgo haeksim idongeul jeogeuseyo'
+    WHEN 2669 THEN 'Yebeang gaenyeomeul keuge seolmyeong haseyo'
+    WHEN 2670 THEN 'Opeuninggwa ECO kodeureul yeongyeol haseyo'
+END
+WHERE id_ejercicio BETWEEN 2661 AND 2670;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2671 THEN 'Sisilrian dijeunseu ui teukjingeun? a) c5 b) e5 c) d5'
+    WHEN 2672 THEN 'Daneoreul sunseo daero baeyeol haseyo: gijimul huisaeng bosang'
+    WHEN 2673 THEN 'Bleindeu haeseoreul deutgo 3 su mate reul chajuseyo'
+    WHEN 2674 THEN 'Kasparov dae Topalov gyeonggireul bunseok haseyo'
+    WHEN 2675 THEN 'Pon gujowa gyehoeg eul yeongyeol haseyo'
+    WHEN 2676 THEN 'Peurangseu eoro hello neun eotteoke malhanayo? a) Bonjour b) Merci'
+    WHEN 2677 THEN 'Daneoreul sunseo daero baeyeol haseyo: je m appelle Pierre'
+    WHEN 2678 THEN 'Odioreul deutgo almajeun insamareul goreuseyo'
+    WHEN 2679 THEN 'Daeumeul jeonghwakhage bareum haseyo: Bonjour'
+    WHEN 2680 THEN '1 buteo 5 kkajiui sutjareul yeongyeol haseyo'
+END
+WHERE id_ejercicio BETWEEN 2671 AND 2680;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2681 THEN 'Yeoseong dansu gwansaneun mueosingayo? a) La b) Le c) Les'
+    WHEN 2682 THEN 'Daneoreul sunseo daero baeyeol haseyo: elle mange une pomme'
+    WHEN 2683 THEN 'Deutgo saeksangeul jeogeuseyo'
+    WHEN 2684 THEN 'Daeumeul jeonghwakhage bareum haseyo: Je suis etudiant'
+    WHEN 2685 THEN 'Gajok guseongwongwa peurangseu eo ireumeul yeongyeol haseyo'
+    WHEN 2686 THEN 'Manger ui gwageohyungeun? a) a mange b) mangeait'
+    WHEN 2687 THEN 'Daneoreul sunseo daero baeyeol haseyo: hier nous sommes alles'
+    WHEN 2688 THEN 'Daehwareul deutgo mueoseul meogeonneunji goreuseyo'
+    WHEN 2689 THEN 'Keuge ilgeuseyo: Nous avons visite Paris'
+    WHEN 2690 THEN 'Dongsawa gwageobunsareul yeongyeol haseyo'
+END
+WHERE id_ejercicio BETWEEN 2681 AND 2690;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2691 THEN 'Naega aratdamyeon: a) serais venu b) suis venu c) viendrais'
+    WHEN 2692 THEN 'Daneoreul sunseo daero baeyeol haseyo: ils travaillent ici'
+    WHEN 2693 THEN 'Nyuseureul deutgo jujereul paak haseyo'
+    WHEN 2694 THEN 'Peurangseu munhwa e daehan mungjangeul bareum haseyo'
+    WHEN 2695 THEN 'Nolli jeopsoksawa uimireul yeongyeol haseyo'
+    WHEN 2696 THEN 'Ephemere ui dong ui eoneun? a) passager b) durable'
+    WHEN 2697 THEN 'Daneoreul sunseo daero baeyeol haseyo: nonobstant les difficultes'
+    WHEN 2698 THEN 'Toroneul deutgo geu gyeolgwareul yoyak haseyo'
+    WHEN 2699 THEN 'Peurangseu daehyeokmyeong e daehan seupichireul haseyo'
+    WHEN 2700 THEN 'Peurangseu eo gwanyongeowa uimireul yeongyeol haseyo'
+END
+WHERE id_ejercicio BETWEEN 2691 AND 2700;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2701 THEN 'Ilbon eoro hello neun eotteoke malhanayo? a) Konnichiwa b) Hai'
+    WHEN 2702 THEN 'Daneoreul sunseo daero baeyeol haseyo: desu watashi wa Maria'
+    WHEN 2703 THEN 'Odioreul deutgo almajeun insamareul goreuseyo'
+    WHEN 2704 THEN 'Daeumeul jeonghwakhage bareum haseyo: Arigato'
+    WHEN 2705 THEN '1 buteo 5 kkajiui sutjareul yeongyeol haseyo'
+    WHEN 2706 THEN 'Juje josaneun mueosingayo? a) wa b) ga c) wo d) ni'
+    WHEN 2707 THEN 'Daneoreul sunseo daero baeyeol haseyo: o mizu kudasai nomimasu'
+    WHEN 2708 THEN 'Deutgo romajiro jeogeuseyo'
+    WHEN 2709 THEN 'Daeumeul jeonghwakhage bareum haseyo: Watashi wa gakusei desu'
+    WHEN 2710 THEN 'Saeksanggwa ilbon eo ireumeul yeongyeol haseyo'
+END
+WHERE id_ejercicio BETWEEN 2701 AND 2710;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2711 THEN 'Taberu ui gwageohyungeun? a) tabeta b) taberu c) tabemasu'
+    WHEN 2712 THEN 'Daneoreul sunseo daero baeyeol haseyo: e ikimashita gakkou'
+    WHEN 2713 THEN 'Daehwareul deutgo mokjeokjireul goreuseyo'
+    WHEN 2714 THEN 'Keuge ilgeuseyo: ilbon eo mungjang'
+    WHEN 2715 THEN 'Dongsawa te hyeongeul yeongyeol haseyo'
+    WHEN 2716 THEN 'Biga ondamyeon: a) ame nara b) ame demo c) ame kara'
+    WHEN 2717 THEN 'Daneoreul sunseo daero baeyeol haseyo: ni issho kyoto ikimasen ka e'
+    WHEN 2718 THEN 'Nyuseureul deutgo jujereul paak haseyo'
+    WHEN 2719 THEN 'Ilbon munhwa e daehan mungjangeul bareum haseyo'
+    WHEN 2720 THEN 'Hanjawa eumdog eul yeongyeol haseyo'
+END
+WHERE id_ejercicio BETWEEN 2711 AND 2720;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2721 THEN 'Isogashii ui dong ui eoneun? a) hima b) sewashii c) tanoshii'
+    WHEN 2722 THEN 'Daneoreul sunseo daero baeyeol haseyo: koto ga dekimasu nihongo'
+    WHEN 2723 THEN 'Toroneul deutgo geu gyeolgwareul yoyak haseyo'
+    WHEN 2724 THEN 'Joahaneun anime e daehan seupichireul haseyo'
+    WHEN 2725 THEN 'Ilbon eo gwanyongeowa uimireul yeongyeol haseyo'
+    WHEN 2726 THEN 'Dogil eoro hello neun eotteoke malhanayo? a) Hallo b) Danke'
+    WHEN 2727 THEN 'Daneoreul sunseo daero baeyeol haseyo: ich heisse Anna'
+    WHEN 2728 THEN 'Odioreul deutgo almajeun insamareul goreuseyo'
+    WHEN 2729 THEN 'Daeumeul jeonghwakhage bareum haseyo: Hallo'
+    WHEN 2730 THEN '1 buteo 5 kkajiui sutjareul yeongyeol haseyo'
+END
+WHERE id_ejercicio BETWEEN 2721 AND 2730;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2731 THEN 'Yeoseong gwansaneun mueosingayo? a) die b) der c) das d) den'
+    WHEN 2732 THEN 'Daneoreul sunseo daero baeyeol haseyo: er isst einen Apfel'
+    WHEN 2733 THEN 'Deutgo saeksangeul jeogeuseyo'
+    WHEN 2734 THEN 'Daeumeul jeonghwakhage bareum haseyo: Ich komme aus Korea'
+    WHEN 2735 THEN 'Gajok guseongwongwa dogil eo ireumeul yeongyeol haseyo'
+    WHEN 2736 THEN 'Machen ui gwageohyungeun? a) gemacht b) mache c) machte'
+    WHEN 2737 THEN 'Daneoreul sunseo daero baeyeol haseyo: bin ich gestern ins Kino'
+    WHEN 2738 THEN 'Daehwareul deutgo mokjeokjireul goreuseyo'
+    WHEN 2739 THEN 'Keuge ilgeuseyo: Ich habe ein Auto gekauft'
+    WHEN 2740 THEN 'Dongsawa gwageobunsareul yeongyeol haseyo'
+END
+WHERE id_ejercicio BETWEEN 2731 AND 2740;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2741 THEN 'Sigani itdamyeon: a) wenn ich Zeit hatte b) ich habe'
+    WHEN 2742 THEN 'Daneoreul sunseo daero baeyeol haseyo: sie arbeiten hier schon'
+    WHEN 2743 THEN 'Nyuseureul deutgo jujereul paak haseyo'
+    WHEN 2744 THEN 'Dogil munhwa e daehan mungjangeul bareum haseyo'
+    WHEN 2745 THEN 'Dogil eo jeonchisareul yeongyeol haseyo'
+    WHEN 2746 THEN 'Schnell ui dong ui eoneun? a) rasch b) langsam c) teuer'
+    WHEN 2747 THEN 'Daneoreul sunseo daero baeyeol haseyo: obwohl es regnete sind wir'
+    WHEN 2748 THEN 'Toroneul deutgo geu gyeolgwareul yoyak haseyo'
+    WHEN 2749 THEN 'Yureop yeonhap e daehan seupichireul haseyo'
+    WHEN 2750 THEN 'Dogil eo gwanyongeowa uimireul yeongyeol haseyo'
+END
+WHERE id_ejercicio BETWEEN 2741 AND 2750;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2751 THEN 'Podo eoro hello neun eotteoke malhanayo? a) Ola b) Obrigado'
+    WHEN 2752 THEN 'Daneoreul sunseo daero baeyeol haseyo: eu me chamo Joao'
+    WHEN 2753 THEN 'Odioreul deutgo almajeun insamareul goreuseyo'
+    WHEN 2754 THEN 'Daeumeul jeonghwakhage bareum haseyo: Bom dia'
+    WHEN 2755 THEN '1 buteo 5 kkajiui sutjareul yeongyeol haseyo'
+    WHEN 2756 THEN 'Namseong gwansaneun mueosingayo? a) O b) A c) Os'
+    WHEN 2757 THEN 'Daneoreul sunseo daero baeyeol haseyo: ela come uma maca'
+    WHEN 2758 THEN 'Deutgo siganeul jeogeuseyo'
+    WHEN 2759 THEN 'Daeumeul jeonghwakhage bareum haseyo: Eu moro no Brasil'
+    WHEN 2760 THEN 'Gajok guseongwongwa podo eo ireumeul yeongyeol haseyo'
+END
+WHERE id_ejercicio BETWEEN 2751 AND 2760;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2761 THEN 'Falar ui gwageohyungeun? a) falei b) falo c) falava'
+    WHEN 2762 THEN 'Daneoreul sunseo daero baeyeol haseyo: ontem nos fomos a praia'
+    WHEN 2763 THEN 'Daehwareul deutgo mokjeokjireul goreuseyo'
+    WHEN 2764 THEN 'Keuge ilgeuseyo: Eu viajei para Lisboa'
+    WHEN 2765 THEN 'Dongsawa gwageohyungeul yeongyeol haseyo'
+    WHEN 2766 THEN 'Dond isseotdamyeon: a) compraria b) compro c) comprava'
+    WHEN 2767 THEN 'Daneoreul sunseo daero baeyeol haseyo: eles estao trabalhando'
+    WHEN 2768 THEN 'Nyuseureul deutgo jujereul paak haseyo'
+    WHEN 2769 THEN 'Amajon e daehan mungjangeul bareum haseyo'
+    WHEN 2770 THEN 'Podo eo jeopsoksawa uimireul yeongyeol haseyo'
+END
+WHERE id_ejercicio BETWEEN 2761 AND 2770;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2771 THEN 'Garoto ui dong ui eoneun? a) menino b) homem c) idoso'
+    WHEN 2772 THEN 'Daneoreul sunseo daero baeyeol haseyo: embora chovesse'
+    WHEN 2773 THEN 'Toroneul deutgo geu gyeolgwareul yoyak haseyo'
+    WHEN 2774 THEN 'Barajil gyeongje e daehan seupichireul haseyo'
+    WHEN 2775 THEN 'Podo eo gwanyongeowa uimireul yeongyeol haseyo'
+    WHEN 2776 THEN '5 deohagi 3 eun eolmaingayo? a) 8 b) 7 c) 9 d) 6'
+    WHEN 2777 THEN 'Daneoreul sunseo daero baeyeol haseyo: deotsemeun du bubun'
+    WHEN 2778 THEN 'Deutgo sutjareul jeogeuseyo'
+    WHEN 2779 THEN 'Keuge ilgeuseyo: 10 ppaegi 4'
+    WHEN 2780 THEN 'Suhak gihowa ireumeul yeongyeol haseyo'
+END
+WHERE id_ejercicio BETWEEN 2771 AND 2780;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2781 THEN '8 gopagi 7 eun eolmaingayo? a) 56 b) 54 c) 64'
+    WHEN 2782 THEN 'Daneoreul sunseo daero baeyeol haseyo: gopsem sunseoneun'
+    WHEN 2783 THEN 'Bunsureul deutgo jeogeuseyo'
+    WHEN 2784 THEN 'Keuge ilgeuseyo: 4 bunui 3'
+    WHEN 2785 THEN 'Dohyeonggwa byeonui gaesureul yeongyeol haseyo'
+    WHEN 2786 THEN 'Bangjeongsigeul puseyo: 2x = 10. a) x=5 b) x=2 c) x=10'
+    WHEN 2787 THEN 'Daneoreul sunseo daero baeyeol haseyo: byeonsureul bunli'
+    WHEN 2788 THEN 'Daesu munje reul deutgo bangjeongsigeul jeogeuseyo'
+    WHEN 2789 THEN 'Keuge ilgeuseyo: x ui jegop'
+    WHEN 2790 THEN 'Neolbi gongsikgwa dohyeongeul yeongyeol haseyo'
+END
+WHERE id_ejercicio BETWEEN 2781 AND 2790;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2791 THEN 'x jegop ui dohamsuneun? a) 2x b) x c) 2 d) 3x'
+    WHEN 2792 THEN 'Daneoreul sunseo daero baeyeol haseyo: dohamsuneun giulgi'
+    WHEN 2793 THEN 'Geukhan gapseul deutgo banghyangeul paak haseyo'
+    WHEN 2794 THEN 'Pitagoraseu jeonglireul keuge seolmyeong haseyo'
+    WHEN 2795 THEN 'Samgak hamsu wa yeokham sureul yeongyeol haseyo'
+    WHEN 2796 THEN 'e^x ui jeokbuneun? a) e^x + C b) x c) ln(x)'
+    WHEN 2797 THEN 'Daneoreul sunseo daero baeyeol haseyo: bubun jeokbuneun'
+    WHEN 2798 THEN 'Hamsu bunseogeul deutgo geukjjeomeul pyosi haseyo'
+    WHEN 2799 THEN 'Daesujeok geukhan wollyreul keuge jeungmyeong haseyo'
+    WHEN 2800 THEN 'Mibun bangjeongsikgwa yuhyeongeul yeongyeol haseyo'
+END
+WHERE id_ejercicio BETWEEN 2791 AND 2800;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2801 THEN 'Oseonjineun myeot gaeui seon? a) 5 b) 4 c) 6'
+    WHEN 2802 THEN 'Daneoreul sunseo daero baeyeol haseyo: 7 gaeui eum'
+    WHEN 2803 THEN 'Sorieul deutgo nopinji najeunji paak haseyo'
+    WHEN 2804 THEN 'Jungang C eumeul bureuseyo'
+    WHEN 2805 THEN 'Eumpyowa girireul yeongyeol haseyo'
+    WHEN 2806 THEN 'Nopeun eume neun eotteon eumjari? a) Treble b) Bass'
+    WHEN 2807 THEN 'Daneoreul sunseo daero baeyeol haseyo: syap eun ban eum'
+    WHEN 2808 THEN 'Mellowdireul deutgo ppajin eumeul chaeuseyo'
+    WHEN 2809 THEN 'C meijeo seukeireul bureuseyo'
+    WHEN 2810 THEN 'Imsipyowa hyogwareul yeongyeol haseyo'
+END
+WHERE id_ejercicio BETWEEN 2801 AND 2810;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2811 THEN 'C wa E saiui eumjeongeun? a) jangsando b) wanjeon5do'
+    WHEN 2812 THEN 'Daneoreul sunseo daero baeyeol haseyo: hwaseongeun geuneum'
+    WHEN 2813 THEN 'Hwaseomeul deutgo meijeo inji maineo inji paak haseyo'
+    WHEN 2814 THEN 'G meijeo areupejioreul bureuseyo'
+    WHEN 2815 THEN 'Eumgyewa jeonmun yongeoreul yeongyeol haseyo'
+    WHEN 2816 THEN 'C meijeo ui naranhan joneun? a) a maineo b) e maineo'
+    WHEN 2817 THEN 'Daneoreul sunseo daero baeyeol haseyo: jojoreul bakkuneun geot'
+    WHEN 2818 THEN 'Hwaseong jinhaengeul deutgo doseureul jeogeuseyo'
+    WHEN 2819 THEN 'Byeonbakja rideumeul jeonghwakhage chiseo'
+    WHEN 2820 THEN 'Geuriseu seonbeopgwa gujoreul yeongyeol haseyo'
+END
+WHERE id_ejercicio BETWEEN 2811 AND 2820;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2821 THEN 'Daewibeop ui teukjingeun? a) dongnipjeogin seongbu b) rideum'
+    WHEN 2822 THEN 'Daneoreul sunseo daero baeyeol haseyo: puga neun'
+    WHEN 2823 THEN 'Gyohyang gogeul deutgo hyeongsigeul paak haseyo'
+    WHEN 2824 THEN '12 eumgipeobeul keuge seolmyeong haseyo'
+    WHEN 2825 THEN 'Eumak sidaewa jakgokgareul yeongyeol haseyo'
+    WHEN 2826 THEN 'Comment dit-on hello en anglais? a) Hello b) Bye'
+    WHEN 2827 THEN 'Mettez les mots dans l ordre: is name my John'
+    WHEN 2828 THEN 'Ecoutez l audio et choisissez la bonne salutation'
+    WHEN 2829 THEN 'Prononcez correctement le mot Hello'
+    WHEN 2830 THEN 'Associez les salutations a leur signification'
+END
+WHERE id_ejercicio BETWEEN 2821 AND 2830;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2831 THEN 'Quel est le verbe etre? a) to be b) to play c) to run'
+    WHEN 2832 THEN 'Mettez les mots dans l ordre: playing am I now'
+    WHEN 2833 THEN 'Ecoutez et ecrivez la couleur mentionnee'
+    WHEN 2834 THEN 'Prononcez la phrase I am happy'
+    WHEN 2835 THEN 'Associez les animaux a leur nom en anglais'
+    WHEN 2836 THEN 'Le passe de go: a) went b) goed c) gone'
+    WHEN 2837 THEN 'Mettez les mots dans l ordre: yesterday to school went she'
+    WHEN 2838 THEN 'Ecoutez la conversation et repondez ou ils sont alles'
+    WHEN 2839 THEN 'Lisez a haute voix: She bought a new house'
+    WHEN 2840 THEN 'Associez les verbes irreguliers a leur forme passee'
+END
+WHERE id_ejercicio BETWEEN 2831 AND 2840;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2841 THEN 'S il pleut je resterai: a) will stay b) would stay'
+    WHEN 2842 THEN 'Mettez les mots dans l ordre: have waiting been they'
+    WHEN 2843 THEN 'Ecoutez les nouvelles et identifiez le probleme'
+    WHEN 2844 THEN 'Prononcez le paragraphe sur le changement climatique'
+    WHEN 2845 THEN 'Associez les verbes a particule a leur definition'
+    WHEN 2846 THEN 'Synonyme de fast: a) quick b) slow c) strong'
+    WHEN 2847 THEN 'Mettez les mots dans l ordre: nevertheless she persisted'
+    WHEN 2848 THEN 'Ecoutez le debat et resumez l argument'
+    WHEN 2849 THEN 'Enregistrez un discours sur l economie mondiale'
+    WHEN 2850 THEN 'Associez les expressions avancees a leur contexte'
+END
+WHERE id_ejercicio BETWEEN 2841 AND 2850;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2851 THEN 'Comment dit-on hola en espagnol? a) Hola b) Gracias'
+    WHEN 2852 THEN 'Mettez les mots dans l ordre: me llamo Juan'
+    WHEN 2853 THEN 'Ecoutez l audio et choisissez la salutation en espagnol'
+    WHEN 2854 THEN 'Prononcez correctement le mot Hola'
+    WHEN 2855 THEN 'Associez les chiffres de 1 a 5 en espagnol'
+    WHEN 2856 THEN 'L article pour maison: a) la b) el c) los'
+    WHEN 2857 THEN 'Mettez les mots dans l ordre: yo estoy comiendo'
+    WHEN 2858 THEN 'Ecoutez et ecrivez la couleur en espagnol'
+    WHEN 2859 THEN 'Prononcez la phrase Yo soy de Espana'
+    WHEN 2860 THEN 'Associez les membres de la famille en espagnol'
+END
+WHERE id_ejercicio BETWEEN 2851 AND 2860;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2861 THEN 'Le passe de ir: a) fui b) iba c) ire'
+    WHEN 2862 THEN 'Mettez les mots dans l ordre: ayer fuimos al cine'
+    WHEN 2863 THEN 'Ecoutez le dialogue et notez la destination'
+    WHEN 2864 THEN 'Lisez a haute voix: Compre un coche nuevo'
+    WHEN 2865 THEN 'Associez les verbes a leur passe'
+    WHEN 2866 THEN 'Si j avais le temps: a) si tuviera tiempo b) tengo tiempo'
+    WHEN 2867 THEN 'Mettez les mots dans l ordre: ellos trabajan aqui'
+    WHEN 2868 THEN 'Ecoutez les nouvelles et choisissez le sujet principal'
+    WHEN 2869 THEN 'Prononcez le texte sur la culture espagnole'
+    WHEN 2870 THEN 'Associez les conjonctions espagnoles'
+END
+WHERE id_ejercicio BETWEEN 2861 AND 2870;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2871 THEN 'Synonyme de rapido: a) veloz b) lento c) fuerte'
+    WHEN 2872 THEN 'Mettez les mots dans l ordre: a pesar de la lluvia'
+    WHEN 2873 THEN 'Ecoutez le debat et notez la conclusion'
+    WHEN 2874 THEN 'Donnez un discours sur l histoire de l Espagne'
+    WHEN 2875 THEN 'Associez les expressions espagnoles a leur signification'
+    WHEN 2876 THEN 'Comment dit-on ciao en italien? a) Ciao b) Grazie'
+    WHEN 2877 THEN 'Mettez les mots dans l ordre: mi chiamo Marco'
+    WHEN 2878 THEN 'Ecoutez l audio et choisissez la salutation italienne'
+    WHEN 2879 THEN 'Prononcez correctement le mot Ciao'
+    WHEN 2880 THEN 'Associez les chiffres de 1 a 5 en italien'
+END
+WHERE id_ejercicio BETWEEN 2871 AND 2880;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2881 THEN 'L article defini masculin: a) il b) lo c) la'
+    WHEN 2882 THEN 'Mettez les mots dans l ordre: lui mangia una pizza'
+    WHEN 2883 THEN 'Ecoutez et ecrivez le numero de telephone'
+    WHEN 2884 THEN 'Prononcez la phrase Io sono di Roma'
+    WHEN 2885 THEN 'Associez les membres de la famille en italien'
+    WHEN 2886 THEN 'Le passe de fare: a) fatto b) facevo c) fara'
+    WHEN 2887 THEN 'Mettez les mots dans l ordre: ieri sono andato'
+    WHEN 2888 THEN 'Ecoutez le dialogue et marquez la destination'
+    WHEN 2889 THEN 'Lisez a haute voix: Ho comprato un libro'
+    WHEN 2890 THEN 'Associez les verbes a leur participe passe'
+END
+WHERE id_ejercicio BETWEEN 2881 AND 2890;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2891 THEN 'Si je pouvais: a) se potessi b) posso c) potevo'
+    WHEN 2892 THEN 'Mettez les mots dans l ordre: loro stanno lavorando'
+    WHEN 2893 THEN 'Ecoutez la meteo et identifiez la region'
+    WHEN 2894 THEN 'Prononcez le texte sur l histoire de Rome'
+    WHEN 2895 THEN 'Associez les prepositions italiennes'
+    WHEN 2896 THEN 'Synonyme de veloce: a) rapido b) lento c) fermo'
+    WHEN 2897 THEN 'Mettez les mots dans l ordre: sebbene piovesse'
+    WHEN 2898 THEN 'Ecoutez l interview et resumez l idee principale'
+    WHEN 2899 THEN 'Donnez un discours sur la Renaissance italienne'
+    WHEN 2900 THEN 'Associez les idiomes italiens a leur signification'
+END
+WHERE id_ejercicio BETWEEN 2891 AND 2900;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2901 THEN 'Comment dit-on hallo en allemand? a) Hallo b) Danke'
+    WHEN 2902 THEN 'Mettez les mots dans l ordre: ich heisse Anna'
+    WHEN 2903 THEN 'Ecoutez l audio et choisissez la salutation'
+    WHEN 2904 THEN 'Prononcez correctement Hallo'
+    WHEN 2905 THEN 'Associez les chiffres de 1 a 5 en allemand'
+    WHEN 2906 THEN 'L article feminin: a) die b) der c) das'
+    WHEN 2907 THEN 'Mettez les mots dans l ordre: er isst einen Apfel'
+    WHEN 2908 THEN 'Ecoutez et ecrivez la couleur mentionnee'
+    WHEN 2909 THEN 'Prononcez la phrase Ich komme aus Berlin'
+    WHEN 2910 THEN 'Associez les jours de la semaine en allemand'
+END
+WHERE id_ejercicio BETWEEN 2901 AND 2910;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2911 THEN 'Le participe de machen: a) gemacht b) mache c) machte'
+    WHEN 2912 THEN 'Mettez les mots dans l ordre: gestern bin ich ins Kino'
+    WHEN 2913 THEN 'Ecoutez le dialogue et notez la destination'
+    WHEN 2914 THEN 'Lisez a haute voix: Ich habe ein Auto gekauft'
+    WHEN 2915 THEN 'Associez les verbes a leur participe parfait'
+    WHEN 2916 THEN 'Si j avais le temps: a) wenn ich Zeit hatte b) ich habe'
+    WHEN 2917 THEN 'Mettez les mots dans l ordre: sie arbeiten hier'
+    WHEN 2918 THEN 'Ecoutez les nouvelles et choisissez le sujet'
+    WHEN 2919 THEN 'Prononcez le texte sur la Foret Noire'
+    WHEN 2920 THEN 'Associez les prepositions avec l accusatif'
+END
+WHERE id_ejercicio BETWEEN 2911 AND 2920;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2921 THEN 'Synonyme de schnell: a) rasch b) langsam c) teuer'
+    WHEN 2922 THEN 'Mettez les mots dans l ordre: obwohl es regnete'
+    WHEN 2923 THEN 'Ecoutez le debat economique et notez la conclusion'
+    WHEN 2924 THEN 'Donnez un discours sur l Union Europeenne'
+    WHEN 2925 THEN 'Associez les expressions allemandes a leur signification'
+    WHEN 2926 THEN 'Combien de cases a l echiquier? a) 64 b) 32 c) 100'
+    WHEN 2927 THEN 'Mettez les mots dans l ordre: chaque joueur a huit pions'
+    WHEN 2928 THEN 'Ecoutez et nommez la piece mentionnee'
+    WHEN 2929 THEN 'Dites a haute voix: Echec au roi'
+    WHEN 2930 THEN 'Associez la piece a sa valeur en points'
+END
+WHERE id_ejercicio BETWEEN 2921 AND 2930;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2931 THEN 'Comment bouge le cavalier? a) en L b) en diagonale'
+    WHEN 2932 THEN 'Mettez les mots dans l ordre: le fou controle les diagonales'
+    WHEN 2933 THEN 'Ecoutez le coup et jouez-le sur l echiquier'
+    WHEN 2934 THEN 'Dictez le coup: Cavalier f3'
+    WHEN 2935 THEN 'Associez le concept de base a sa description'
+    WHEN 2936 THEN 'Qu est ce qu un clouage? a) piece immobilisee b) echec'
+    WHEN 2937 THEN 'Mettez les mots dans l ordre: sacrifiez la tour pour'
+    WHEN 2938 THEN 'Ecoutez l analyse et identifiez la menace tactique'
+    WHEN 2939 THEN 'Racontez a haute voix la variante principale'
+    WHEN 2940 THEN 'Associez les themes tactiques a leur exemple'
+END
+WHERE id_ejercicio BETWEEN 2931 AND 2940;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2941 THEN 'Qu est ce que l opposition en finale? a) rois face a face'
+    WHEN 2942 THEN 'Mettez les mots dans l ordre: un pion isole est une faiblesse'
+    WHEN 2943 THEN 'Ecoutez la lecon magistrale et notez le coup cle'
+    WHEN 2944 THEN 'Expliquez le concept de prophylaxie a haute voix'
+    WHEN 2945 THEN 'Associez les ouvertures a leur code ECO'
+    WHEN 2946 THEN 'Qu est ce qui caracterise la defense Sicilienne? a) c5 b) e5'
+    WHEN 2947 THEN 'Mettez les mots dans l ordre: compensation dynamique pour'
+    WHEN 2948 THEN 'Suivez le commentaire a l aveugle et trouvez le mat'
+    WHEN 2949 THEN 'Analysez oralement la partie Kasparov contre Topalov'
+    WHEN 2950 THEN 'Associez les structures de pions a leurs plans'
+END
+WHERE id_ejercicio BETWEEN 2941 AND 2950;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2951 THEN 'Combien font 5 + 3? a) 8 b) 7 c) 9 d) 6'
+    WHEN 2952 THEN 'Mettez les mots dans l ordre: l addition a deux parties'
+    WHEN 2953 THEN 'Ecoutez le numero et ecrivez-le en chiffres'
+    WHEN 2954 THEN 'Lisez l operation a haute voix: 10 moins 4'
+    WHEN 2955 THEN 'Associez les symboles mathematiques a leur nom'
+    WHEN 2956 THEN 'Combien font 8 x 7? a) 56 b) 54 c) 64'
+    WHEN 2957 THEN 'Mettez les mots dans l ordre: l ordre des facteurs'
+    WHEN 2958 THEN 'Ecoutez la fraction et representez-la'
+    WHEN 2959 THEN 'Lisez a haute voix l expression: trois quarts'
+    WHEN 2960 THEN 'Associez les figures geometriques a leurs cotes'
+END
+WHERE id_ejercicio BETWEEN 2951 AND 2960;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2961 THEN 'Resolvez l equation: 2x = 10. a) x=5 b) x=2'
+    WHEN 2962 THEN 'Mettez les mots dans l ordre: isolez la variable'
+    WHEN 2963 THEN 'Ecoutez le probleme d algebre et ecrivez l equation'
+    WHEN 2964 THEN 'Lisez a haute voix: x au carre plus y au carre'
+    WHEN 2965 THEN 'Associez les formules d aire a leurs figures'
+    WHEN 2966 THEN 'La derivee de x au carre est: a) 2x b) x c) 2'
+    WHEN 2967 THEN 'Mettez les mots dans l ordre: la derivee correspond a la pente'
+    WHEN 2968 THEN 'Ecoutez la limite et identifiez sa tendance'
+    WHEN 2969 THEN 'Expliquez le theoreme de Pythagore a haute voix'
+    WHEN 2970 THEN 'Associez les fonctions trigonometriques a leurs inverses'
+END
+WHERE id_ejercicio BETWEEN 2961 AND 2970;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2971 THEN 'L integrale de e^x est: a) e^x + C b) x c) ln(x)'
+    WHEN 2972 THEN 'Mettez les mots dans l ordre: l integration par parties est'
+    WHEN 2973 THEN 'Ecoutez l analyse de la fonction et marquez les extremums'
+    WHEN 2974 THEN 'Demontrez oralement la limite fondamentale algebrique'
+    WHEN 2975 THEN 'Associez les equations differentielles a leur type'
+    WHEN 2976 THEN 'Combien de lignes a une portee? a) 5 b) 4 c) 6'
+    WHEN 2977 THEN 'Mettez les mots dans l ordre: il y a sept notes de musique'
+    WHEN 2978 THEN 'Ecoutez le son et determinez s il est grave ou aigu'
+    WHEN 2979 THEN 'Chantez la note Do central'
+    WHEN 2980 THEN 'Associez les figures musicales a leur duree'
+END
+WHERE id_ejercicio BETWEEN 2971 AND 2980;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2981 THEN 'Quelle cle est utilisee pour les notes aigues? a) Sol b) Fa'
+    WHEN 2982 THEN 'Mettez les mots dans l ordre: le diese monte la note'
+    WHEN 2983 THEN 'Ecoutez la melodie et completez la note manquante'
+    WHEN 2984 THEN 'Solfiez la gamme de Do majeur ascendante'
+    WHEN 2985 THEN 'Associez les alterations a leur effet sur le ton'
+    WHEN 2986 THEN 'L intervalle entre Do et Mi: a) tierce majeure b) quinte'
+    WHEN 2987 THEN 'Mettez les mots dans l ordre: un accord a une fondamentale'
+    WHEN 2988 THEN 'Ecoutez l accord et identifiez s il est majeur ou mineur'
+    WHEN 2989 THEN 'Chantez l arpege de Sol majeur'
+    WHEN 2990 THEN 'Associez les degres de la gamme a leur nom technique'
+END
+WHERE id_ejercicio BETWEEN 2981 AND 2990;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 2991 THEN 'La relative mineure de Do majeur est: a) la mineur b) mi mineur'
+    WHEN 2992 THEN 'Mettez les mots dans l ordre: la modulation est un changement'
+    WHEN 2993 THEN 'Ecoutez la progression harmonique et notez les degres'
+    WHEN 2994 THEN 'Interpretez rythmiquement la mesure asymetrique'
+    WHEN 2995 THEN 'Associez les modes grecs a leur structure'
+    WHEN 2996 THEN 'Qu est ce qui caracterise le contrepoint? a) voix independantes'
+    WHEN 2997 THEN 'Mettez les mots dans l ordre: la fugue est la forme polyphonique'
+    WHEN 2998 THEN 'Ecoutez l oeuvre symphonique et identifiez la forme musicale'
+    WHEN 2999 THEN 'Expliquez la serie dodecaphonique a haute voix'
+    WHEN 3000 THEN 'Associez les periodes musicales a leurs compositeurs'
+END
+WHERE id_ejercicio BETWEEN 2991 AND 3000;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3001 THEN 'Comment dit on bonjour en portugais? a) Ola b) Obrigado c) Bom dia'
+    WHEN 3002 THEN 'Mettez les mots dans l ordre: eu me chamo Joao'
+    WHEN 3003 THEN 'Ecoutez l audio et choisissez la bonne salutation'
+    WHEN 3004 THEN 'Prononcez correctement le mot Bom dia'
+    WHEN 3005 THEN 'Associez les chiffres de 1 a 5 en portugais'
+    WHEN 3006 THEN 'L article masculin: a) O b) A c) Os d) As'
+    WHEN 3007 THEN 'Mettez les mots dans l ordre: ela come uma maca verde'
+    WHEN 3008 THEN 'Ecoutez et notez l heure mentionnee'
+    WHEN 3009 THEN 'Prononcez la phrase Eu moro no Brasil'
+    WHEN 3010 THEN 'Associez les membres de la famille en portugais'
+END
+WHERE id_ejercicio BETWEEN 3001 AND 3010;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3011 THEN 'Le passe de falar: a) falei b) falo c) falava'
+    WHEN 3012 THEN 'Mettez les mots dans l ordre: ontem nos fomos a praia'
+    WHEN 3013 THEN 'Ecoutez le dialogue et notez la destination'
+    WHEN 3014 THEN 'Lisez a haute voix: Eu viajei para Lisboa'
+    WHEN 3015 THEN 'Associez les verbes au preterito perfeito'
+    WHEN 3016 THEN 'Si j avais de l argent: a) se eu tivesse dinheiro b) eu tenho'
+    WHEN 3017 THEN 'Mettez les mots dans l ordre: eles estao trabalhando desde cedo'
+    WHEN 3018 THEN 'Ecoutez les nouvelles et identifiez la ville'
+    WHEN 3019 THEN 'Prononcez le texte sur l Amazonie'
+    WHEN 3020 THEN 'Associez les conjonctions portugaises'
+END
+WHERE id_ejercicio BETWEEN 3011 AND 3020;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3021 THEN 'Synonyme de garoto: a) menino b) homem c) idoso'
+    WHEN 3022 THEN 'Mettez les mots dans l ordre: embora chovesse fomos ao jogo'
+    WHEN 3023 THEN 'Ecoutez le debat et notez la conclusion'
+    WHEN 3024 THEN 'Donnez un discours sur l economie du Bresil'
+    WHEN 3025 THEN 'Associez les expressions familieres bresiliennes'
+    WHEN 3026 THEN 'Comment dit on bonjour en japonais? a) Konnichiwa b) Hai c) Iie'
+    WHEN 3027 THEN 'Mettez les mots dans l ordre: desu watashi wa Maria'
+    WHEN 3028 THEN 'Ecoutez l audio et choisissez la salutation en japonais'
+    WHEN 3029 THEN 'Prononcez correctement Arigato'
+    WHEN 3030 THEN 'Associez les chiffres de 1 a 5 en japonais'
+END
+WHERE id_ejercicio BETWEEN 3021 AND 3030;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3031 THEN 'La particule de theme est: a) wa b) ga c) wo d) ni'
+    WHEN 3032 THEN 'Mettez les mots dans l ordre: o mizu kudasai nomimasu'
+    WHEN 3033 THEN 'Ecoutez et ecrivez la couleur mentionnee'
+    WHEN 3034 THEN 'Prononcez la phrase Watashi wa gakusei desu'
+    WHEN 3035 THEN 'Associez les couleurs a leur nom japonais'
+    WHEN 3036 THEN 'Le passe de taberu: a) tabeta b) taberu c) tabemasu'
+    WHEN 3037 THEN 'Mettez les mots dans l ordre: e ikimashita gakkou watashi wa'
+    WHEN 3038 THEN 'Ecoutez la conversation et notez la destination'
+    WHEN 3039 THEN 'Lisez a haute voix la phrase en romaji'
+    WHEN 3040 THEN 'Associez les verbes a leur forme en te'
+END
+WHERE id_ejercicio BETWEEN 3031 AND 3040;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3041 THEN 'S il pleut je n irai pas: a) ame nara b) ame demo'
+    WHEN 3042 THEN 'Mettez les mots dans l ordre: ni issho kyoto ikimasen ka e'
+    WHEN 3043 THEN 'Ecoutez les nouvelles et choisissez le sujet'
+    WHEN 3044 THEN 'Prononcez le texte sur la culture japonaise'
+    WHEN 3045 THEN 'Associez les kanjis a leur prononciation onyomi'
+    WHEN 3046 THEN 'Synonyme de isogashii: a) hima b) sewashii c) tanoshii'
+    WHEN 3047 THEN 'Mettez les mots dans l ordre: koto ga dekimasu nihongo hanasu wo'
+    WHEN 3048 THEN 'Ecoutez le debat et notez la position de l orateur'
+    WHEN 3049 THEN 'Donnez un discours sur votre anime prefere'
+    WHEN 3050 THEN 'Associez les proverbes japonais a leur signification'
+END
+WHERE id_ejercicio BETWEEN 3041 AND 3050;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3051 THEN 'Comment dit on bonjour en chinois? a) Ni hao b) Zaijian c) Xiexie'
+    WHEN 3052 THEN 'Mettez les mots dans l ordre: wo shi fa guo ren'
+    WHEN 3053 THEN 'Ecoutez l audio et identifiez le ton'
+    WHEN 3054 THEN 'Prononcez Xiexie avec le bon ton'
+    WHEN 3055 THEN 'Associez les chiffres de 1 a 5 en chinois'
+    WHEN 3056 THEN 'Le classificateur pour les objets plats: a) zhang b) ge c) ben'
+    WHEN 3057 THEN 'Mettez les mots dans l ordre: wo xihuan he cha'
+    WHEN 3058 THEN 'Ecoutez et ecrivez la couleur mentionnee'
+    WHEN 3059 THEN 'Prononcez la phrase Wo ai ni'
+    WHEN 3060 THEN 'Associez les animaux a leurs caracteres chinois'
+END
+WHERE id_ejercicio BETWEEN 3051 AND 3060;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3061 THEN 'La particule du passe: a) le b) zhi c) zai d) guo'
+    WHEN 3062 THEN 'Mettez les mots dans l ordre: zuotian wo qu le beijing'
+    WHEN 3063 THEN 'Ecoutez le dialogue et notez ce qu ils ont mange'
+    WHEN 3064 THEN 'Lisez a haute voix la phrase en pinyin'
+    WHEN 3065 THEN 'Associez les verbes a leur particule aspectuelle'
+    WHEN 3066 THEN 'S il pleut je ne vais pas: a) ruguo xiayu b) suiran xiayu'
+    WHEN 3067 THEN 'Mettez les mots dans l ordre: wo zhengzai xuexi zhongwen'
+    WHEN 3068 THEN 'Ecoutez le reportage et choisissez le sujet'
+    WHEN 3069 THEN 'Prononcez le texte sur la Grande Muraille'
+    WHEN 3070 THEN 'Associez les caracteres chinois a leur radical'
+END
+WHERE id_ejercicio BETWEEN 3061 AND 3070;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3071 THEN 'Synonyme de gaoxing: a) kuaile b) nan guo c) shengqi'
+    WHEN 3072 THEN 'Mettez les mots dans l ordre: ta zhongyu chengong le'
+    WHEN 3073 THEN 'Ecoutez le debat et notez la conclusion'
+    WHEN 3074 THEN 'Donnez un discours sur l economie chinoise'
+    WHEN 3075 THEN 'Associez les chengyu a leur signification'
+    WHEN 3076 THEN 'Comment dit on bonjour en coreen? a) Annyeonghaseyo b) Ne c) Aniyo'
+    WHEN 3077 THEN 'Mettez les mots dans l ordre: naneun saram imnida'
+    WHEN 3078 THEN 'Ecoutez l audio et choisissez la bonne voyelle'
+    WHEN 3079 THEN 'Prononcez correctement Annyeonghaseyo'
+    WHEN 3080 THEN 'Associez les chiffres de 1 a 5 en coreen'
+END
+WHERE id_ejercicio BETWEEN 3071 AND 3080;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3081 THEN 'La particule de sujet: a) i/ga b) eun/neun c) eul/reul'
+    WHEN 3082 THEN 'Mettez les mots dans l ordre: jeoneun bap eul meogeoyo'
+    WHEN 3083 THEN 'Ecoutez et ecrivez le numero'
+    WHEN 3084 THEN 'Prononcez la phrase Hangugoeol baewoyo'
+    WHEN 3085 THEN 'Associez les membres de la famille en coreen'
+    WHEN 3086 THEN 'Le passe de hada: a) haesseoyo b) haeyo c) halkkeyo'
+    WHEN 3087 THEN 'Mettez les mots dans l ordre: eojeyo hakgyo e gasseoyo'
+    WHEN 3088 THEN 'Ecoutez la conversation et repondez a ce qu ils ont achete'
+    WHEN 3089 THEN 'Lisez a haute voix le texte en romanisation'
+    WHEN 3090 THEN 'Associez les verbes a leur forme de base'
+END
+WHERE id_ejercicio BETWEEN 3081 AND 3090;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3091 THEN 'Si j ai le temps: a) sigan isseumyeon b) sigan isseodo'
+    WHEN 3092 THEN 'Mettez les mots dans l ordre: jigeum eumag eul deutgo isseoyo'
+    WHEN 3093 THEN 'Ecoutez les nouvelles et identifiez la ville'
+    WHEN 3094 THEN 'Prononcez le texte sur Seoul'
+    WHEN 3095 THEN 'Associez les connecteurs logiques en coreen'
+    WHEN 3096 THEN 'Synonyme de ppareuda: a) neulida b) bappeuda c) ssinseokhada'
+    WHEN 3097 THEN 'Mettez les mots dans l ordre: biga wado gohyang e gamnida'
+    WHEN 3098 THEN 'Ecoutez le drama et notez l emotion'
+    WHEN 3099 THEN 'Donnez un discours sur la cuisine coreenne'
+    WHEN 3100 THEN 'Associez les proverbes coreens a leur signification'
+END
+WHERE id_ejercicio BETWEEN 3091 AND 3100;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3101 THEN 'Pos les hello sta agglika? a) Hello b) Bye c) Car d) Sun'
+    WHEN 3102 THEN 'Vale tis lexeis sti seira: is name my John'
+    WHEN 3103 THEN 'Akouse to ihitiko kai epilexe ti sosti epilogi'
+    WHEN 3104 THEN 'Propfere sosta ti lexi Hello'
+    WHEN 3105 THEN 'Antistoihise tous arithmous apo to 1 eos to 5'
+    WHEN 3106 THEN 'Poio rima simainei eimai? a) to be b) to play c) to run'
+    WHEN 3107 THEN 'Vale tis lexeis sti seira: playing am I now'
+    WHEN 3108 THEN 'Akouse kai grapse to hroma sta agglika'
+    WHEN 3109 THEN 'Propfere ti frasi I am happy'
+    WHEN 3110 THEN 'Antistoihise ta zoa me to onoma tous'
+END
+WHERE id_ejercicio BETWEEN 3101 AND 3110;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3111 THEN 'Parelthontikos hronos tou go: a) went b) goed c) gone'
+    WHEN 3112 THEN 'Vale tis lexeis sti seira: yesterday to school went she'
+    WHEN 3113 THEN 'Akouse to dialogo kai vres pou pigan'
+    WHEN 3114 THEN 'Diavase dinata: She bought a new house'
+    WHEN 3115 THEN 'Antistoihise ta anomala rimata me to parelthon'
+    WHEN 3116 THEN 'An vreksei tha meino spiti: a) will stay b) would stay'
+    WHEN 3117 THEN 'Vale tis lexeis sti seira: have waiting been they hours two for'
+    WHEN 3118 THEN 'Akouse tis eidiseis kai vres to provlima'
+    WHEN 3119 THEN 'Propfere to keimeno gia tin klimatiki allagi'
+    WHEN 3120 THEN 'Antistoihise ta phrasal verbs me ti simasia tous'
+END
+WHERE id_ejercicio BETWEEN 3111 AND 3120;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3121 THEN 'Sinonimo tou fast: a) quick b) slow c) strong'
+    WHEN 3122 THEN 'Vale tis lexeis sti seira: nevertheless she persisted'
+    WHEN 3123 THEN 'Akouse ti sizitisi kai sinopsise to epiheirima'
+    WHEN 3124 THEN 'Kane mia omilia gia tin pagkosmia oikonomia'
+    WHEN 3125 THEN 'Antistoihise tous agglikous idiomatismous'
+    WHEN 3126 THEN 'Pos les geia sta italika? a) Ciao b) Grazie c) Si d) No'
+    WHEN 3127 THEN 'Vale tis lexeis sti seira: mi chiamo Marco'
+    WHEN 3128 THEN 'Akouse to ihitiko kai epilexe to sosto'
+    WHEN 3129 THEN 'Propfere sosta ti lexi Ciao'
+    WHEN 3130 THEN 'Antistoihise tous arithmous 1 me 5 sta italika'
+END
+WHERE id_ejercicio BETWEEN 3121 AND 3130;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3131 THEN 'Poio einai to arthro? a) il b) lo c) la d) i'
+    WHEN 3132 THEN 'Vale tis lexeis sti seira: lui mangia una pizza'
+    WHEN 3133 THEN 'Akouse kai grapse to noumero tilefonou'
+    WHEN 3134 THEN 'Propfere ti frasi Io sono di Roma'
+    WHEN 3135 THEN 'Antistoihise ta meli tis oikogeneias sta italika'
+    WHEN 3136 THEN 'Parelthontas tou fare: a) fatto b) facevo c) fara'
+    WHEN 3137 THEN 'Vale tis lexeis sti seira: ieri sono andato al cinema'
+    WHEN 3138 THEN 'Akouse to dialogo kai vres pou pigan'
+    WHEN 3139 THEN 'Diavase dinata: Ho comprato un libro nuovo'
+    WHEN 3140 THEN 'Antistoihise ta rimata me tin metohi tou parelthontos'
+END
+WHERE id_ejercicio BETWEEN 3131 AND 3140;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3141 THEN 'An mporousa: a) se potessi b) posso c) potevo'
+    WHEN 3142 THEN 'Vale tis lexeis sti seira: loro stanno lavorando da tre ore'
+    WHEN 3143 THEN 'Akouse ton kairo kai vres tin periohi'
+    WHEN 3144 THEN 'Propfere to keimeno gia tin istoria tis Romis'
+    WHEN 3145 THEN 'Antistoihise tis italikes protheseis'
+    WHEN 3146 THEN 'Sinonimo tou veloce: a) rapido b) lento c) fermo'
+    WHEN 3147 THEN 'Vale tis lexeis sti seira: sebbene piovesse siamo usciti'
+    WHEN 3148 THEN 'Akouse ti sinentefxi kai vres to noima'
+    WHEN 3149 THEN 'Kane mia omilia gia tin italiki anagennisi'
+    WHEN 3150 THEN 'Antistoihise tous italikous idiomatismous'
+END
+WHERE id_ejercicio BETWEEN 3141 AND 3150;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3151 THEN 'Pos les geia sta koreatika? a) Annyeonghaseyo b) Ne c) Aniyo'
+    WHEN 3152 THEN 'Vale tis lexeis sti seira: naneun saram imnida'
+    WHEN 3153 THEN 'Akouse to ihitiko kai epilexe to foniien'
+    WHEN 3154 THEN 'Propfere sosta ti lexi Annyeonghaseyo'
+    WHEN 3155 THEN 'Antistoihise tous arithmous 1 me 5 sta koreatika'
+    WHEN 3156 THEN 'Poio einai to morio ipokeimenou? a) i/ga b) eun/neun'
+    WHEN 3157 THEN 'Vale tis lexeis sti seira: jeoneun bap eul meogeoyo'
+    WHEN 3158 THEN 'Akouse kai grapse ton arithmo'
+    WHEN 3159 THEN 'Propfere ti frasi Hangugoeol baewoyo'
+    WHEN 3160 THEN 'Antistoihise ta meli tis oikogeneias sta koreatika'
+END
+WHERE id_ejercicio BETWEEN 3151 AND 3160;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3161 THEN 'Parelthontas tou hada: a) haesseoyo b) haeyo c) halkkeyo'
+    WHEN 3162 THEN 'Vale tis lexeis sti seira: eojeyo hakgyo e gasseoyo'
+    WHEN 3163 THEN 'Akouse to dialogo kai vres ti agorasan'
+    WHEN 3164 THEN 'Diavase dinata to keimeno se romaji'
+    WHEN 3165 THEN 'Antistoihise ta rimata me ti vasiki morfi'
+    WHEN 3166 THEN 'An eho hrono: a) sigan isseumyeon b) sigan isseodo'
+    WHEN 3167 THEN 'Vale tis lexeis sti seira: jigeum eumag eul deutgo isseoyo'
+    WHEN 3168 THEN 'Akouse tis eidiseis kai vres tin poli'
+    WHEN 3169 THEN 'Propfere to keimeno gia ti Seul'
+    WHEN 3170 THEN 'Antistoihise tous logikous sindesmous'
+END
+WHERE id_ejercicio BETWEEN 3161 AND 3170;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3171 THEN 'Sinonimo tou ppareuda: a) neulida b) bappeuda'
+    WHEN 3172 THEN 'Vale tis lexeis sti seira: biga wado gohyang e gamnida'
+    WHEN 3173 THEN 'Akouse to dorama kai vres to sinesthima'
+    WHEN 3174 THEN 'Kane mia omilia gia to koreatiko fagito'
+    WHEN 3175 THEN 'Antistoihise tis koreatikes paroimies'
+    WHEN 3176 THEN 'Pos les geia sta kinezika? a) Ni hao b) Zaijian c) Xiexie'
+    WHEN 3177 THEN 'Vale tis lexeis sti seira: wo shi xila ren'
+    WHEN 3178 THEN 'Akouse to ihitiko kai vres ton tono'
+    WHEN 3179 THEN 'Propfere sosta ti lexi Xiexie me ton tono'
+    WHEN 3180 THEN 'Antistoihise tous arithmous 1 me 5 sta kinezika'
+END
+WHERE id_ejercicio BETWEEN 3171 AND 3180;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3181 THEN 'Poia einai i lexi metrisis? a) zhang b) ge c) ben'
+    WHEN 3182 THEN 'Vale tis lexeis sti seira: wo xihuan he cha'
+    WHEN 3183 THEN 'Akouse kai grapse to hroma pou akouses'
+    WHEN 3184 THEN 'Propfere ti frasi Wo ai ni'
+    WHEN 3185 THEN 'Antistoihise ta zoa me to onoma tous'
+    WHEN 3186 THEN 'Morio tou parelthontos: a) le b) zhi c) zai'
+    WHEN 3187 THEN 'Vale tis lexeis sti seira: zuotian wo qu le beijing'
+    WHEN 3188 THEN 'Akouse to dialogo kai vres ti efagan'
+    WHEN 3189 THEN 'Diavase dinata ti frasi se pinyin'
+    WHEN 3190 THEN 'Antistoihise ta rimata me to pinyin tous'
+END
+WHERE id_ejercicio BETWEEN 3181 AND 3190;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3191 THEN 'An vreksei den pao: a) ruguo xiayu b) suiran xiayu'
+    WHEN 3192 THEN 'Vale tis lexeis sti seira: wo zhengzai xuexi zhongwen'
+    WHEN 3193 THEN 'Akouse tis eidiseis kai vres to thema'
+    WHEN 3194 THEN 'Propfere to keimeno gia to Siniko Teihos'
+    WHEN 3195 THEN 'Antistoihise ta logogrammata me tis rizes tous'
+    WHEN 3196 THEN 'Sinonimo tou gaoxing: a) kuaile b) nan guo'
+    WHEN 3197 THEN 'Vale tis lexeis sti seira: ta zhongyu chengong le'
+    WHEN 3198 THEN 'Akouse ti sizitisi kai sinopsise to apotelesma'
+    WHEN 3199 THEN 'Kane mia omilia gia tin kineziki oikonomia'
+    WHEN 3200 THEN 'Antistoihise ta kinezika chengyu me ti simasia tous'
+END
+WHERE id_ejercicio BETWEEN 3191 AND 3200;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3201 THEN 'Pos les geia sta portogalika? a) Ola b) Obrigado c) Bom dia'
+    WHEN 3202 THEN 'Vale tis lexeis sti seira: eu me chamo Joao'
+    WHEN 3203 THEN 'Akouse to ihitiko kai epilexe ti sosti epilogi'
+    WHEN 3204 THEN 'Propfere sosta ti lexi Bom dia'
+    WHEN 3205 THEN 'Antistoihise tous arithmous 1 me 5 sta portogalika'
+    WHEN 3206 THEN 'Poio einai to arseniko arthro? a) O b) A c) Os'
+    WHEN 3207 THEN 'Vale tis lexeis sti seira: ela come uma maca verde'
+    WHEN 3208 THEN 'Akouse kai grapse tin ora'
+    WHEN 3209 THEN 'Propfere ti frasi Eu moro no Brasil'
+    WHEN 3210 THEN 'Antistoihise ta meli tis oikogeneias sta portogalika'
+END
+WHERE id_ejercicio BETWEEN 3201 AND 3210;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3211 THEN 'Parelthontas tou falar: a) falei b) falo c) falava'
+    WHEN 3212 THEN 'Vale tis lexeis sti seira: ontem nos fomos a praia'
+    WHEN 3213 THEN 'Akouse to dialogo kai vres ti agorasan'
+    WHEN 3214 THEN 'Diavase dinata: Eu viajei para Lisboa'
+    WHEN 3215 THEN 'Antistoihise ta rimata sto parelthon'
+    WHEN 3216 THEN 'An eiha hrimata: a) se eu tivesse dinheiro b) eu tenho'
+    WHEN 3217 THEN 'Vale tis lexeis sti seira: eles estao trabalhando desde cedo'
+    WHEN 3218 THEN 'Akouse to reportaz kai vres tin poli'
+    WHEN 3219 THEN 'Propfere to keimeno gia ton Amazonio'
+    WHEN 3220 THEN 'Antistoihise tous portogalikous sindesmous'
+END
+WHERE id_ejercicio BETWEEN 3211 AND 3220;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3221 THEN 'Sinonimo tou garoto: a) menino b) homem c) idoso'
+    WHEN 3222 THEN 'Vale tis lexeis sti seira: embora chovesse fomos ao jogo'
+    WHEN 3223 THEN 'Akouse ti sizitisi kai vres to siberasma'
+    WHEN 3224 THEN 'Kane mia omilia gia tin oikonomia tis Vrazilias'
+    WHEN 3225 THEN 'Antistoihise tous vrazilianikous idiomatismous'
+    WHEN 3226 THEN 'Pos les geia sta iaponika? a) Konnichiwa b) Hai c) Iie'
+    WHEN 3227 THEN 'Vale tis lexeis sti seira: desu watashi wa Maria'
+    WHEN 3228 THEN 'Akouse to ihitiko kai epilexe to sosto'
+    WHEN 3229 THEN 'Propfere sosta ti lexi Arigato'
+    WHEN 3230 THEN 'Antistoihise tous arithmous 1 me 5 sta iaponika'
+END
+WHERE id_ejercicio BETWEEN 3221 AND 3230;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3231 THEN 'Poio einai to morio thematos? a) wa b) ga c) wo'
+    WHEN 3232 THEN 'Vale tis lexeis sti seira: o mizu kudasai nomimasu'
+    WHEN 3233 THEN 'Akouse kai grapse ti lexi se romaji'
+    WHEN 3234 THEN 'Propfere ti frasi Watashi wa gakusei desu'
+    WHEN 3235 THEN 'Antistoihise ta hromata sta iaponika'
+    WHEN 3236 THEN 'Parelthontas tou taberu: a) tabeta b) taberu c) tabemasu'
+    WHEN 3237 THEN 'Vale tis lexeis sti seira: e ikimashita gakkou watashi wa'
+    WHEN 3238 THEN 'Akouse to dialogo kai vres ton proorismo'
+    WHEN 3239 THEN 'Diavase dinata ti frasi se romaji'
+    WHEN 3240 THEN 'Antistoihise ta rimata me ti morfi te'
+END
+WHERE id_ejercicio BETWEEN 3231 AND 3240;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3241 THEN 'An vreksei den tha pao: a) ame nara b) ame demo'
+    WHEN 3242 THEN 'Vale tis lexeis sti seira: ni issho kyoto ikimasen ka e'
+    WHEN 3243 THEN 'Akouse tis eidiseis kai vres to thema'
+    WHEN 3244 THEN 'Propfere to keimeno gia ton iaponiko politismo'
+    WHEN 3245 THEN 'Antistoihise tis lexeis me tin profora tous'
+    WHEN 3246 THEN 'Sinonimo tou isogashii: a) hima b) sewashii c) tanoshii'
+    WHEN 3247 THEN 'Vale tis lexeis sti seira: koto ga dekimasu nihongo hanasu wo'
+    WHEN 3248 THEN 'Akouse ti sizitisi kai vres ti stasi tou omiliti'
+    WHEN 3249 THEN 'Kane mia omilia gia to agapimeno sou anime'
+    WHEN 3250 THEN 'Antistoihise tis iaponikes paroimies'
+END
+WHERE id_ejercicio BETWEEN 3241 AND 3250;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3251 THEN 'Pos les hello sta germanika? a) Hallo b) Danke c) Ja d) Nein'
+    WHEN 3252 THEN 'Vale tis lexeis sti seira: ich heisse Anna'
+    WHEN 3253 THEN 'Akouse to ihitiko kai epilexe to sosto hretismo'
+    WHEN 3254 THEN 'Propfere sosta ti lexi Hallo'
+    WHEN 3255 THEN 'Antistoihise tous arithmous 1 me 5 sta germanika'
+    WHEN 3256 THEN 'Poio einai to thiliko arthro? a) die b) der c) das d) den'
+    WHEN 3257 THEN 'Vale tis lexeis sti seira: er isst einen Apfel'
+    WHEN 3258 THEN 'Akouse kai grapse to hroma sta germanika'
+    WHEN 3259 THEN 'Propfere ti frasi Ich komme aus Griechenland'
+    WHEN 3260 THEN 'Antistoihise ta meli tis oikogeneias'
+END
+WHERE id_ejercicio BETWEEN 3251 AND 3260;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3261 THEN 'Parelthontas tou machen: a) gemacht b) mache c) machte'
+    WHEN 3262 THEN 'Vale tis lexeis sti seira: bin ich gestern ins Kino gegangen'
+    WHEN 3263 THEN 'Akouse to dialogo kai vres ton proorismo'
+    WHEN 3264 THEN 'Diavase dinata: Ich habe ein Auto gekauft'
+    WHEN 3265 THEN 'Antistoihise ta rimata me ton parelthonta hrono'
+    WHEN 3266 THEN 'An eiha hrono: a) wenn ich Zeit hatte b) ich habe Zeit'
+    WHEN 3267 THEN 'Vale tis lexeis sti seira: sie arbeiten hier schon seit drei Stunden'
+    WHEN 3268 THEN 'Akouse tis eidiseis kai vres to thema'
+    WHEN 3269 THEN 'Propfere to keimeno gia to Verolino'
+    WHEN 3270 THEN 'Antistoihise tis germanikes protheseis'
+END
+WHERE id_ejercicio BETWEEN 3261 AND 3270;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3271 THEN 'Sinonimo tou schnell: a) rasch b) langsam c) teuer'
+    WHEN 3272 THEN 'Vale tis lexeis sti seira: obwohl es regnete sind wir spazieren'
+    WHEN 3273 THEN 'Akouse ti sizitisi kai sinopsise to apotelesma'
+    WHEN 3274 THEN 'Kane mia omilia gia tin Evropaiki Enosi'
+    WHEN 3275 THEN 'Antistoihise tis germanikes paroimies'
+    WHEN 3276 THEN 'Pos les hello sta ispanika? a) Hola b) Gracias c) Si'
+    WHEN 3277 THEN 'Vale tis lexeis sti seira: me llamo Juan'
+    WHEN 3278 THEN 'Akouse to ihitiko kai epilexe ti sosti epilogi'
+    WHEN 3279 THEN 'Propfere sosta ti lexi Hola'
+    WHEN 3280 THEN 'Antistoihise tous arithmous 1 me 5 sta ispanika'
+END
+WHERE id_ejercicio BETWEEN 3271 AND 3280;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3281 THEN 'Poio rima simainei eimai? a) ser b) jugar c) comer'
+    WHEN 3282 THEN 'Vale tis lexeis sti seira: estoy comiendo una manzana'
+    WHEN 3283 THEN 'Akouse kai grapse to hroma pou akouses'
+    WHEN 3284 THEN 'Propfere ti frasi Yo soy de Espana'
+    WHEN 3285 THEN 'Antistoihise ta meli tis oikogeneias'
+    WHEN 3286 THEN 'Parelthontas tou ir: a) fui b) iba c) ire d) yendo'
+    WHEN 3287 THEN 'Vale tis lexeis sti seira: ayer fuimos al cine'
+    WHEN 3288 THEN 'Akouse to dialogo kai vres ton proorismo'
+    WHEN 3289 THEN 'Diavase dinata: Compre un coche nuevo'
+    WHEN 3290 THEN 'Antistoihise ta anomala rimata sto parelthon'
+END
+WHERE id_ejercicio BETWEEN 3281 AND 3290;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3291 THEN 'An ehoume hrono: a) si tuviera tiempo b) tengo tiempo'
+    WHEN 3292 THEN 'Vale tis lexeis sti seira: ellos trabajan aqui desde hace'
+    WHEN 3293 THEN 'Akouse tis eidiseis kai vres to kirio thema'
+    WHEN 3294 THEN 'Propfere to keimeno gia tin ispaniki koultoura'
+    WHEN 3295 THEN 'Antistoihise tous ispanikous sindesmous'
+    WHEN 3296 THEN 'Sinonimo tou rapido: a) veloz b) lento c) fuerte'
+    WHEN 3297 THEN 'Vale tis lexeis sti seira: a pesar de la lluvia salimos'
+    WHEN 3298 THEN 'Akouse ti sizitisi kai sinopsise to siberasma'
+    WHEN 3299 THEN 'Kane mia omilia gia tin istoria tis Ispanias'
+    WHEN 3300 THEN 'Antistoihise tous ispanikous idiomatismous'
+END
+WHERE id_ejercicio BETWEEN 3291 AND 3300;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3301 THEN 'Pos les hello sta gallika? a) Bonjour b) Merci c) Oui'
+    WHEN 3302 THEN 'Vale tis lexeis sti seira: je m appelle Pierre'
+    WHEN 3303 THEN 'Akouse to ihitiko kai epilexe ti sosti epilogi'
+    WHEN 3304 THEN 'Propfere sosta ti lexi Bonjour'
+    WHEN 3305 THEN 'Antistoihise tous arithmous 1 me 5 sta gallika'
+    WHEN 3306 THEN 'Poio einai to thiliko arthro? a) La b) Le c) Les'
+    WHEN 3307 THEN 'Vale tis lexeis sti seira: elle mange une pomme'
+    WHEN 3308 THEN 'Akouse kai grapse to hroma pou akouses'
+    WHEN 3309 THEN 'Propfere ti frasi Je suis etudiant'
+    WHEN 3310 THEN 'Antistoihise ta meli tis oikogeneias'
+END
+WHERE id_ejercicio BETWEEN 3301 AND 3310;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3311 THEN 'Parelthontas tou manger: a) a mange b) mangeait c) mangera'
+    WHEN 3312 THEN 'Vale tis lexeis sti seira: hier nous sommes alles au cinema'
+    WHEN 3313 THEN 'Akouse to dialogo kai vres ti efagan'
+    WHEN 3314 THEN 'Diavase dinata: Nous avons visite Paris'
+    WHEN 3315 THEN 'Antistoihise ta rimata me ton parelthonta hrono'
+    WHEN 3316 THEN 'An to ixera: a) serais venu b) suis venu c) viendrais'
+    WHEN 3317 THEN 'Vale tis lexeis sti seira: ils travaillent ici depuis trois heures'
+    WHEN 3318 THEN 'Akouse ti sinentefxi kai vres to epaggelma'
+    WHEN 3319 THEN 'Propfere to keimeno gia ti galliki koultoura'
+    WHEN 3320 THEN 'Antistoihise tous logikous sindesmous'
+END
+WHERE id_ejercicio BETWEEN 3311 AND 3320;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3321 THEN 'Sinonimo tou ephemere: a) passager b) durable c) constant'
+    WHEN 3322 THEN 'Vale tis lexeis sti seira: nonobstant les difficultes le projet a abouti'
+    WHEN 3323 THEN 'Akouse ti sizitisi kai sinopsise to siberasma'
+    WHEN 3324 THEN 'Kane mia omilia gia ti Galliki Epanastasi'
+    WHEN 3325 THEN 'Antistoihise tous gallikous idiomatismous'
+    WHEN 3326 THEN 'Poso kanei 5 sin 3? a) 8 b) 7 c) 9 d) 6'
+    WHEN 3327 THEN 'Vale tis lexeis sti seira: i prosthesi ehi dio meri'
+    WHEN 3328 THEN 'Akouse kai grapse ton arithmo'
+    WHEN 3329 THEN 'Diavase dinata tin praxi: 10 plin 4'
+    WHEN 3330 THEN 'Antistoihise ta mathimatika simvola'
+END
+WHERE id_ejercicio BETWEEN 3321 AND 3330;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3331 THEN 'Poso kanei 8 epi 7? a) 56 b) 54 c) 64 d) 49'
+    WHEN 3332 THEN 'Vale tis lexeis sti seira: i seira ton paragonton den allazei'
+    WHEN 3333 THEN 'Akouse to klasma kai grapse to'
+    WHEN 3334 THEN 'Diavase dinata: tria tetarta'
+    WHEN 3335 THEN 'Antistoihise ta geomitrika shimata me tis plevres'
+    WHEN 3336 THEN 'Lise tin exisosi: 2x isoutai 10. a) x=5 b) x=2 c) x=10'
+    WHEN 3337 THEN 'Vale tis lexeis sti seira: lise tin exisosi vriskontas to x'
+    WHEN 3338 THEN 'Akouse to provlima kai grapse tin exisosi'
+    WHEN 3339 THEN 'Diavase dinata: x sto tetragono sin y sto tetragono'
+    WHEN 3340 THEN 'Antistoihise tous tipous emvadou'
+END
+WHERE id_ejercicio BETWEEN 3331 AND 3340;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3341 THEN 'Paragogos tou x sto tetragono: a) 2x b) x c) 2 d) 3x'
+    WHEN 3342 THEN 'Vale tis lexeis sti seira: i paragogos antistohei stin klisi'
+    WHEN 3343 THEN 'Akouse to orio kai vres tin tasi'
+    WHEN 3344 THEN 'Exigise to Pithagoreio theorima dinata'
+    WHEN 3345 THEN 'Antistoihise tis trigonomitrikes sinartiseis'
+    WHEN 3346 THEN 'Oklokiroma tou e stin x: a) e^x + C b) x c) ln(x)'
+    WHEN 3347 THEN 'Vale tis lexeis sti seira: i oloklirosi kata meri einai proigmeni'
+    WHEN 3348 THEN 'Akouse tin analisi sinartisis kai vres ta akrotata'
+    WHEN 3349 THEN 'Apodeixe dinata to theliodes theorima'
+    WHEN 3350 THEN 'Antistoihise tis diaforikes exisoseis'
+END
+WHERE id_ejercicio BETWEEN 3341 AND 3350;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3351 THEN 'Poses grammes ehi to pentagrammo? a) 5 b) 4 c) 6'
+    WHEN 3352 THEN 'Vale tis lexeis sti seira: iparhoun epta mousikes notes'
+    WHEN 3353 THEN 'Akouse ton iho kai vres an einai psilos i hamilos'
+    WHEN 3354 THEN 'Tragouda to meseo Nto'
+    WHEN 3355 THEN 'Antistoihise tis notes me ti diarkeia'
+    WHEN 3356 THEN 'Poio kleidi hrisimopoieitai gia psiles notes? a) Sol b) Fa'
+    WHEN 3357 THEN 'Vale tis lexeis sti seira: i diesi anevazei ti nota ena imitonio'
+    WHEN 3358 THEN 'Akouse ti melodia kai siblirose ti nota'
+    WHEN 3359 THEN 'Tragouda tin klimaka tis Nto Maizore'
+    WHEN 3360 THEN 'Antistoihise tis alloioseis me tin epidrasi'
+END
+WHERE id_ejercicio BETWEEN 3351 AND 3360;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3361 THEN 'Diastima metaxi Nto kai Mi: a) megali triti b) pempti'
+    WHEN 3362 THEN 'Vale tis lexeis sti seira: i sigxordia ehi vasiki triti kai pempti'
+    WHEN 3363 THEN 'Akouse ti sigxordia kai vres an einai maizore i minore'
+    WHEN 3364 THEN 'Tragouda to arpezio tis Sol Maizore'
+    WHEN 3365 THEN 'Antistoihise tis vathmides tis klimakas'
+    WHEN 3366 THEN 'Shetiki elassona tis Nto Maizore: a) La minore b) Mi minore'
+    WHEN 3367 THEN 'Vale tis lexeis sti seira: i metatropia einai allagi tonikotitas'
+    WHEN 3368 THEN 'Akouse tin armoniki proodo kai grapse tis vathmides'
+    WHEN 3369 THEN 'Paixe sosta ton asiimmetro rithmo'
+    WHEN 3370 THEN 'Antistoihise tous ellinikous tropous'
+END
+WHERE id_ejercicio BETWEEN 3361 AND 3370;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3371 THEN 'Ti haraktirizei tin antistixi? a) anexartites fones b) rithmos'
+    WHEN 3372 THEN 'Vale tis lexeis sti seira: i fougka einai polifoniki morfi'
+    WHEN 3373 THEN 'Akouse to simfoniko ergo kai vres ti morfi'
+    WHEN 3374 THEN 'Exigise to dodekafthoggiko sistima dinata'
+    WHEN 3375 THEN 'Antistoihise tis mousikes periodous me tous sinthetes'
+    WHEN 3376 THEN 'Angrezi mein hello kaise kahein? a) Hello b) Bye c) Car d) Sun'
+    WHEN 3377 THEN 'Shabdon ko kram mein rakhein: is name my John'
+    WHEN 3378 THEN 'Audio sunein aur sahi vikalp chunein'
+    WHEN 3379 THEN 'Hello shabd ka sahi ucharan karein'
+    WHEN 3380 THEN 'Angrezi mein 1 se 5 tak ginti milayein'
+END
+WHERE id_ejercicio BETWEEN 3371 AND 3380;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3381 THEN 'Hona kriya kya hai? a) to be b) to play c) to run'
+    WHEN 3382 THEN 'Shabdon ko kram mein rakhein: playing am I now'
+    WHEN 3383 THEN 'Sunein aur rang ka naam likhein'
+    WHEN 3384 THEN 'I am happy vakya bole'
+    WHEN 3385 THEN 'Jawanron ko unke angrezi naam se milayein'
+    WHEN 3386 THEN 'Go ka bhootkaal: a) went b) goed c) gone d) going'
+    WHEN 3387 THEN 'Shabdon ko kram mein rakhein: yesterday to school went she'
+    WHEN 3388 THEN 'Baat cheet sunein aur batayein we kahan gaye'
+    WHEN 3389 THEN 'Zor se padhein: She bought a new house'
+    WHEN 3390 THEN 'Aniyamit kriyaon ko unke bhootkaal se milayein'
+END
+WHERE id_ejercicio BETWEEN 3381 AND 3390;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3391 THEN 'Agar barish hui toh main: a) will stay b) would stay c) stayed'
+    WHEN 3392 THEN 'Shabdon ko kram mein rakhein: have waiting been they'
+    WHEN 3393 THEN 'Samachar sunein aur mukhya vishay chunein'
+    WHEN 3394 THEN 'Jalvayu parivartan par paragraph bole'
+    WHEN 3395 THEN 'Phrasal verbs ko unke arth se milayein'
+    WHEN 3396 THEN 'Fast ka paryayvachi: a) quick b) slow c) strong d) weak'
+    WHEN 3397 THEN 'Shabdon ko kram mein rakhein: nevertheless she persisted'
+    WHEN 3398 THEN 'Bahas sunein aur nishkarsh nikalein'
+    WHEN 3399 THEN 'Vaishvik arthvyavastha par bhashan dein'
+    WHEN 3400 THEN 'Kathin muhavaron ko unke arth se milayein'
+END
+WHERE id_ejercicio BETWEEN 3391 AND 3400;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3401 THEN 'Chess board mein kitne khane hote hain? a) 64 b) 32 c) 100'
+    WHEN 3402 THEN 'Shabdon ko kram mein rakhein: har khiladi ke paas aath pyade hain'
+    WHEN 3403 THEN 'Sunein aur mohre ka naam batayein'
+    WHEN 3404 THEN 'Zor se kahein: Raja ko check'
+    WHEN 3405 THEN 'Mohre ko uski value se milayein'
+    WHEN 3406 THEN 'Ghoda kaise chalta hai? a) L aakar b) seedha c) tircha'
+    WHEN 3407 THEN 'Shabdon ko kram mein rakhein: oont tirche khanon ko control karta hai'
+    WHEN 3408 THEN 'Chaal sunein aur board par chalein'
+    WHEN 3409 THEN 'Chaal bole: Ghoda f3'
+    WHEN 3410 THEN 'Mool dharana ko uske varnan se milayein'
+END
+WHERE id_ejercicio BETWEEN 3401 AND 3410;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3411 THEN 'Pin kya hai? a) ruka hua mohra b) check c) badalna'
+    WHEN 3412 THEN 'Shabdon ko kram mein rakhein: file kholne ke liye hathi ka balidan'
+    WHEN 3413 THEN 'Vishleshan sunein aur khatra pehchanein'
+    WHEN 3414 THEN 'Mukhya variant zor se bole'
+    WHEN 3415 THEN 'Tactic ko udaharan se milayein'
+    WHEN 3416 THEN 'Endgame mein opposition kya hai? a) raja aamne saamne'
+    WHEN 3417 THEN 'Shabdon ko kram mein rakhein: akela pyada endgame mein kamzori hai'
+    WHEN 3418 THEN 'Lecture sunein aur mukhya chaal likhein'
+    WHEN 3419 THEN 'Prophylaxis samjhayein'
+    WHEN 3420 THEN 'Openings ko unke ECO code se milayein'
+END
+WHERE id_ejercicio BETWEEN 3411 AND 3420;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3421 THEN 'Sicilian defense ki khasiyat kya hai? a) c5 b) e5 c) d5'
+    WHEN 3422 THEN 'Shabdon ko kram mein rakhein: material balidan ke badle fayda'
+    WHEN 3423 THEN 'Blindfold commentary sunein aur mate dhoondhein'
+    WHEN 3424 THEN 'Kasparov vs Topalov game samjhayein'
+    WHEN 3425 THEN 'Pawn structures ko plans se milayein'
+    WHEN 3426 THEN '5 plus 3 kitna hota hai? a) 8 b) 7 c) 9 d) 6'
+    WHEN 3427 THEN 'Shabdon ko kram mein rakhein: jod ke do hisse hote hain'
+    WHEN 3428 THEN 'Sunein aur sankhya likhein'
+    WHEN 3429 THEN 'Zor se padhein: 10 minus 4'
+    WHEN 3430 THEN 'Ganit ke chinhon ko unke naam se milayein'
+END
+WHERE id_ejercicio BETWEEN 3421 AND 3430;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3431 THEN '8 guna 7 kitna hota hai? a) 56 b) 54 c) 64'
+    WHEN 3432 THEN 'Shabdon ko kram mein rakhein: kram badalne se uttar nahi badalta'
+    WHEN 3433 THEN 'Bhinn sunein aur likhein'
+    WHEN 3434 THEN 'Zor se padhein: teen chauthai'
+    WHEN 3435 THEN 'Aakritiyon ko unke pahluyon se milayein'
+    WHEN 3436 THEN 'Sameekaran hal karein: 2x barabar 10. a) x=5 b) x=2'
+    WHEN 3437 THEN 'Shabdon ko kram mein rakhein: sameekaran hal karne ke liye x ko alag karein'
+    WHEN 3438 THEN 'Samasya sunein aur sameekaran likhein'
+    WHEN 3439 THEN 'Zor se padhein: x ka varg plus y ka varg'
+    WHEN 3440 THEN 'Kshetrafal ke sutra milayein'
+END
+WHERE id_ejercicio BETWEEN 3431 AND 3440;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3441 THEN 'x varg ka derivative kya hai? a) 2x b) x c) 2'
+    WHEN 3442 THEN 'Shabdon ko kram mein rakhein: derivative dhalan ke barabar hota hai'
+    WHEN 3443 THEN 'Limit sunein aur disha batayein'
+    WHEN 3444 THEN 'Pythagoras pramey samjhayein'
+    WHEN 3445 THEN 'Trikonmiti functions milayein'
+    WHEN 3446 THEN 'e^x ka integral kya hai? a) e^x + C b) x c) ln(x)'
+    WHEN 3447 THEN 'Shabdon ko kram mein rakhein: parts dwara integration ek aage ka tareeka hai'
+    WHEN 3448 THEN 'Function sunein aur extreme points batayein'
+    WHEN 3449 THEN 'Fundamental limit prove karein'
+    WHEN 3450 THEN 'Differential equations milayein'
+END
+WHERE id_ejercicio BETWEEN 3441 AND 3450;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3451 THEN 'Staff mein kitni line hoti hain? a) 5 b) 4 c) 6'
+    WHEN 3452 THEN 'Shabdon ko kram mein rakhein: sangeet mein saat swar hote hain'
+    WHEN 3453 THEN 'Awaaz sunein aur batayein unchi hai ya neechi'
+    WHEN 3454 THEN 'Middle C swar gayein'
+    WHEN 3455 THEN 'Swaron ko unki matra se milayein'
+    WHEN 3456 THEN 'Unche swaron ke liye kaun si clef hoti hai? a) Treble b) Bass'
+    WHEN 3457 THEN 'Shabdon ko kram mein rakhein: sharp swar ko aadha tone badhata hai'
+    WHEN 3458 THEN 'Dhun sunein aur chuta hua swar bharein'
+    WHEN 3459 THEN 'C major scale gayein'
+    WHEN 3460 THEN 'Accidentals ko unke asar se milayein'
+END
+WHERE id_ejercicio BETWEEN 3451 AND 3460;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3461 THEN 'C aur E ke beech ka interval kya hai? a) Major third b) Fifth'
+    WHEN 3462 THEN 'Shabdon ko kram mein rakhein: chord mein root third aur fifth hota hai'
+    WHEN 3463 THEN 'Chord sunein aur batayein major hai ya minor'
+    WHEN 3464 THEN 'G major arpeggio gayein'
+    WHEN 3465 THEN 'Scale degrees ko unke naam se milayein'
+    WHEN 3466 THEN 'C major ka relative minor kya hai? a) A minor b) E minor'
+    WHEN 3467 THEN 'Shabdon ko kram mein rakhein: modulation scale ka badalna hai'
+    WHEN 3468 THEN 'Harmony sunein aur degrees likhein'
+    WHEN 3469 THEN 'Odd meter rhythm bajayein'
+    WHEN 3470 THEN 'Greek modes milayein'
+END
+WHERE id_ejercicio BETWEEN 3461 AND 3470;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3471 THEN 'Counterpoint ki kya khasiyat hai? a) azaad aawazein b) rhythm'
+    WHEN 3472 THEN 'Shabdon ko kram mein rakhein: fugue sabse jatil polyphonic roop hai'
+    WHEN 3473 THEN 'Symphony sunein aur form batayein'
+    WHEN 3474 THEN 'Twelve tone technique samjhayein'
+    WHEN 3475 THEN 'Sangeet kaal ko sangeetkaron se milayein'
+    WHEN 3476 THEN 'Purtgali mein hello kaise kahein? a) Ola b) Obrigado c) Bom dia'
+    WHEN 3477 THEN 'Shabdon ko kram mein rakhein: eu me chamo Joao'
+    WHEN 3478 THEN 'Audio sunein aur sahi vikalp chunein'
+    WHEN 3479 THEN 'Bom dia shabd ka sahi ucharan karein'
+    WHEN 3480 THEN '1 se 5 tak ginti milayein'
+END
+WHERE id_ejercicio BETWEEN 3471 AND 3480;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3481 THEN 'Pulling article kya hai? a) O b) A c) Os d) As'
+    WHEN 3482 THEN 'Shabdon ko kram mein rakhein: ela come uma maca verde'
+    WHEN 3483 THEN 'Sunein aur samay likhein'
+    WHEN 3484 THEN 'Eu moro no Brasil vakya bole'
+    WHEN 3485 THEN 'Parivar ke sadasyon ko milayein'
+    WHEN 3486 THEN 'Falar ka bhootkaal: a) falei b) falo c) falava'
+    WHEN 3487 THEN 'Shabdon ko kram mein rakhein: ontem nos fomos a praia'
+    WHEN 3488 THEN 'Baat cheet sunein aur batayein we kya kharide'
+    WHEN 3489 THEN 'Zor se padhein: Eu viajei para Lisboa'
+    WHEN 3490 THEN 'Kriyaon ko unke bhootkaal se milayein'
+END
+WHERE id_ejercicio BETWEEN 3481 AND 3490;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3491 THEN 'Agar mere paas paise hote: a) se eu tivesse dinheiro b) eu tenho'
+    WHEN 3492 THEN 'Shabdon ko kram mein rakhein: eles estao trabalhando desde cedo'
+    WHEN 3493 THEN 'Report sunein aur shahar ka naam batayein'
+    WHEN 3494 THEN 'Amazon par paragraph bole'
+    WHEN 3495 THEN 'Purtgali conjunctions milayein'
+    WHEN 3496 THEN 'Garoto ka paryayvachi: a) menino b) homem c) idoso'
+    WHEN 3497 THEN 'Shabdon ko kram mein rakhein: embora chovesse nos fomos ao jogo'
+    WHEN 3498 THEN 'Bahas sunein aur nishkarsh nikalein'
+    WHEN 3499 THEN 'Brazil ki arthvyavastha par bhashan dein'
+    WHEN 3500 THEN 'Aam bolchal ke shabd milayein'
+END
+WHERE id_ejercicio BETWEEN 3491 AND 3500;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3501 THEN 'Spanish mein hello kaise kahein? a) Hola b) Gracias c) Si d) No'
+    WHEN 3502 THEN 'Shabdon ko kram mein rakhein: me llamo Juan'
+    WHEN 3503 THEN 'Audio sunein aur sahi vikalp chunein'
+    WHEN 3504 THEN 'Hola shabd ka sahi ucharan karein'
+    WHEN 3505 THEN '1 se 5 tak ginti milayein'
+    WHEN 3506 THEN 'Hona kriya kya hai? a) ser b) comer c) correr'
+    WHEN 3507 THEN 'Shabdon ko kram mein rakhein: estoy comiendo una manzana'
+    WHEN 3508 THEN 'Sunein aur rang ka naam likhein'
+    WHEN 3509 THEN 'Yo soy de Espana vakya bole'
+    WHEN 3510 THEN 'Parivar ke sadasyon ko milayein'
+END
+WHERE id_ejercicio BETWEEN 3501 AND 3510;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3511 THEN 'Ir ka bhootkaal: a) fui b) iba c) ire d) yendo'
+    WHEN 3512 THEN 'Shabdon ko kram mein rakhein: ayer fuimos al cine'
+    WHEN 3513 THEN 'Baat cheet sunein aur batayein we kahan gaye'
+    WHEN 3514 THEN 'Zor se padhein: Compre un coche nuevo'
+    WHEN 3515 THEN 'Aniyamit kriyaon ko unke bhootkaal se milayein'
+    WHEN 3516 THEN 'Agar barish hui: a) me quedare b) me quedo c) quede'
+    WHEN 3517 THEN 'Shabdon ko kram mein rakhein: ellos trabajan aqui'
+    WHEN 3518 THEN 'Samachar sunein aur mukhya vishay chunein'
+    WHEN 3519 THEN 'Spanish sanskriti par paragraph bole'
+    WHEN 3520 THEN 'Conjunctions ko milayein'
+END
+WHERE id_ejercicio BETWEEN 3511 AND 3520;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3521 THEN 'Rapido ka paryayvachi: a) veloz b) lento c) fuerte'
+    WHEN 3522 THEN 'Shabdon ko kram mein rakhein: a pesar de la lluvia salimos'
+    WHEN 3523 THEN 'Bahas sunein aur nishkarsh nikalein'
+    WHEN 3524 THEN 'Spain ke itihas par bhashan dein'
+    WHEN 3525 THEN 'Muhavaron ko unke arth se milayein'
+    WHEN 3526 THEN 'Chinese mein hello kaise kahein? a) Ni hao b) Zaijian c) Xiexie'
+    WHEN 3527 THEN 'Shabdon ko kram mein rakhein: wo shi yingguo ren'
+    WHEN 3528 THEN 'Audio sunein aur tone pehchanein'
+    WHEN 3529 THEN 'Xiexie shabd ka sahi ucharan karein'
+    WHEN 3530 THEN '1 se 5 tak ginti milayein'
+END
+WHERE id_ejercicio BETWEEN 3521 AND 3530;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3531 THEN 'Chapti cheezon ka measure word: a) zhang b) ge c) ben'
+    WHEN 3532 THEN 'Shabdon ko kram mein rakhein: wo xihuan he cha'
+    WHEN 3533 THEN 'Sunein aur rang ka naam likhein'
+    WHEN 3534 THEN 'Wo ai ni vakya bole'
+    WHEN 3535 THEN 'Jawanron ko unke chinese naam se milayein'
+    WHEN 3536 THEN 'Bhootkaal particle: a) le b) zhi c) zai d) guo'
+    WHEN 3537 THEN 'Shabdon ko kram mein rakhein: zuotian wo qu le beijing'
+    WHEN 3538 THEN 'Baat cheet sunein aur batayein we kya khaye'
+    WHEN 3539 THEN 'Zor se padhein pinyin mein'
+    WHEN 3540 THEN 'Kriyaon ko particles se milayein'
+END
+WHERE id_ejercicio BETWEEN 3531 AND 3540;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3541 THEN 'Agar barish hui: a) ruguo xiayu b) suiran xiayu c) yinwei'
+    WHEN 3542 THEN 'Shabdon ko kram mein rakhein: wo zhengzai xuexi zhongwen'
+    WHEN 3543 THEN 'Samachar sunein aur mukhya vishay chunein'
+    WHEN 3544 THEN 'Great Wall par paragraph bole'
+    WHEN 3545 THEN 'Characters ko radicals se milayein'
+    WHEN 3546 THEN 'Gaoxing ka paryayvachi: a) kuaile b) nan guo c) shengqi'
+    WHEN 3547 THEN 'Shabdon ko kram mein rakhein: ta zhongyu chengong le'
+    WHEN 3548 THEN 'Bahas sunein aur nishkarsh nikalein'
+    WHEN 3549 THEN 'Chinese economy par bhashan dein'
+    WHEN 3550 THEN 'Chengyu ko unke arth se milayein'
+END
+WHERE id_ejercicio BETWEEN 3541 AND 3550;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3551 THEN 'Italian mein hello kaise kahein? a) Ciao b) Grazie c) Si'
+    WHEN 3552 THEN 'Shabdon ko kram mein rakhein: mi chiamo Marco'
+    WHEN 3553 THEN 'Audio sunein aur sahi vikalp chunein'
+    WHEN 3554 THEN 'Ciao shabd ka sahi ucharan karein'
+    WHEN 3555 THEN '1 se 5 tak ginti milayein'
+    WHEN 3556 THEN 'Article kya hai: ___ ragazzo. a) il b) lo c) la'
+    WHEN 3557 THEN 'Shabdon ko kram mein rakhein: lui mangia una pizza'
+    WHEN 3558 THEN 'Sunein aur phone number likhein'
+    WHEN 3559 THEN 'Io sono di Roma vakya bole'
+    WHEN 3560 THEN 'Parivar ke sadasyon ko milayein'
+END
+WHERE id_ejercicio BETWEEN 3551 AND 3560;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3561 THEN 'Fare ka bhootkaal: a) fatto b) facevo c) fara'
+    WHEN 3562 THEN 'Shabdon ko kram mein rakhein: ieri sono andato al cinema'
+    WHEN 3563 THEN 'Baat cheet sunein aur batayein we kahan gaye'
+    WHEN 3564 THEN 'Zor se padhein: Ho comprato un libro nuovo'
+    WHEN 3565 THEN 'Kriyaon ko unke past participle se milayein'
+    WHEN 3566 THEN 'Agar main kar sakta: a) se potessi b) posso c) potevo'
+    WHEN 3567 THEN 'Shabdon ko kram mein rakhein: loro stanno lavorando da tre ore'
+    WHEN 3568 THEN 'Mausam ki jankari sunein aur jagah batayein'
+    WHEN 3569 THEN 'Rome ke itihas par paragraph bole'
+    WHEN 3570 THEN 'Prepositions ko milayein'
+END
+WHERE id_ejercicio BETWEEN 3561 AND 3570;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3571 THEN 'Veloce ka paryayvachi: a) rapido b) lento c) fermo'
+    WHEN 3572 THEN 'Shabdon ko kram mein rakhein: sebbene piovesse siamo usciti'
+    WHEN 3573 THEN 'Bahas sunein aur nishkarsh nikalein'
+    WHEN 3574 THEN 'Italian renaissance par bhashan dein'
+    WHEN 3575 THEN 'Muhavaron ko unke arth se milayein'
+    WHEN 3576 THEN 'Japanese mein hello kaise kahein? a) Konnichiwa b) Hai'
+    WHEN 3577 THEN 'Shabdon ko kram mein rakhein: desu watashi wa Maria'
+    WHEN 3578 THEN 'Audio sunein aur sahi vikalp chunein'
+    WHEN 3579 THEN 'Arigato shabd ka sahi ucharan karein'
+    WHEN 3580 THEN '1 se 5 tak ginti milayein'
+END
+WHERE id_ejercicio BETWEEN 3571 AND 3580;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3581 THEN 'Topic particle kya hai? a) wa b) ga c) wo d) ni'
+    WHEN 3582 THEN 'Shabdon ko kram mein rakhein: o mizu kudasai nomimasu'
+    WHEN 3583 THEN 'Sunein aur romaji mein likhein'
+    WHEN 3584 THEN 'Watashi wa gakusei desu vakya bole'
+    WHEN 3585 THEN 'Rango ko unke japanese naam se milayein'
+    WHEN 3586 THEN 'Taberu ka bhootkaal: a) tabeta b) taberu c) tabemasu'
+    WHEN 3587 THEN 'Shabdon ko kram mein rakhein: e ikimashita gakkou watashi wa'
+    WHEN 3588 THEN 'Baat cheet sunein aur manzil batayein'
+    WHEN 3589 THEN 'Zor se padhein romaji mein'
+    WHEN 3590 THEN 'Kriyaon ko te form se milayein'
+END
+WHERE id_ejercicio BETWEEN 3581 AND 3590;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3591 THEN 'Agar barish hui: a) ame nara b) ame demo c) ame kara'
+    WHEN 3592 THEN 'Shabdon ko kram mein rakhein: ni issho kyoto ikimasen ka e'
+    WHEN 3593 THEN 'Samachar sunein aur mukhya vishay chunein'
+    WHEN 3594 THEN 'Japanese sanskriti par paragraph bole'
+    WHEN 3595 kanji 'Kanji ko onyomi se milayein'
+    WHEN 3596 THEN 'Isogashii ka paryayvachi: a) hima b) sewashii c) tanoshii'
+    WHEN 3597 THEN 'Shabdon ko kram mein rakhein: koto ga dekimasu nihongo'
+    WHEN 3598 THEN 'Bahas sunein aur nishkarsh nikalein'
+    WHEN 3599 THEN 'Apne pasandida anime par bhashan dein'
+    WHEN 3600 THEN 'Japanese kahawaton ko unke arth se milayein'
+END
+WHERE id_ejercicio BETWEEN 3591 AND 3600;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3601 THEN 'French mein hello kaise kahein? a) Bonjour b) Merci c) Oui'
+    WHEN 3602 THEN 'Shabdon ko kram mein rakhein: je m appelle Pierre'
+    WHEN 3603 THEN 'Audio sunein aur sahi vikalp chunein'
+    WHEN 3604 THEN 'Bonjour shabd ka sahi ucharan karein'
+    WHEN 3605 THEN '1 se 5 tak ginti milayein'
+    WHEN 3606 THEN 'Feminine article kya hai? a) La b) Le c) Les'
+    WHEN 3607 THEN 'Shabdon ko kram mein rakhein: elle mange une pomme'
+    WHEN 3608 THEN 'Sunein aur rang ka naam likhein'
+    WHEN 3609 THEN 'Je suis etudiant vakya bole'
+    WHEN 3610 THEN 'Parivar ke sadasyon ko milayein'
+END
+WHERE id_ejercicio BETWEEN 3601 AND 3610;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3611 THEN 'Manger ka bhootkaal: a) a mange b) mangeait c) mangera'
+    WHEN 3612 THEN 'Shabdon ko kram mein rakhein: hier nous sommes alles'
+    WHEN 3613 THEN 'Baat cheet sunein aur batayein we kya khaye'
+    WHEN 3614 THEN 'Zor se padhein: Nous avons visite Paris'
+    WHEN 3615 THEN 'Kriyaon ko unke past tense se milayein'
+    WHEN 3616 THEN 'Agar mujhe pata hota: a) serais venu b) suis venu'
+    WHEN 3617 THEN 'Shabdon ko kram mein rakhein: ils travaillent ici'
+    WHEN 3618 THEN 'Interview sunein aur pesha batayein'
+    WHEN 3619 THEN 'French sanskriti par paragraph bole'
+    WHEN 3620 THEN 'Conjunctions ko milayein'
+END
+WHERE id_ejercicio BETWEEN 3611 AND 3620;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3621 THEN 'Ephemere ka paryayvachi: a) passager b) durable'
+    WHEN 3622 THEN 'Shabdon ko kram mein rakhein: nonobstant les difficultes'
+    WHEN 3623 THEN 'Bahas sunein aur nishkarsh nikalein'
+    WHEN 3624 THEN 'French revolution par bhashan dein'
+    WHEN 3625 THEN 'Muhavaron ko unke arth se milayein'
+    WHEN 3626 THEN 'Korean mein hello kaise kahein? a) Annyeonghaseyo b) Ne'
+    WHEN 3627 THEN 'Shabdon ko kram mein rakhein: naneun saram imnida'
+    WHEN 3628 THEN 'Audio sunein aur vowel pehchanein'
+    WHEN 3629 THEN 'Annyeonghaseyo shabd ka sahi ucharan karein'
+    WHEN 3630 THEN '1 se 5 tak ginti milayein'
+END
+WHERE id_ejercicio BETWEEN 3621 AND 3630;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3631 THEN 'Subject particle kya hai? a) i/ga b) eun/neun c) eul/reul'
+    WHEN 3632 THEN 'Shabdon ko kram mein rakhein: jeoneun bap eul meogeoyo'
+    WHEN 3633 THEN 'Sunein aur number likhein'
+    WHEN 3634 THEN 'Hangugoeol baewoyo vakya bole'
+    WHEN 3635 THEN 'Parivar ke sadasyon ko milayein'
+    WHEN 3636 THEN 'Hada ka bhootkaal: a) haesseoyo b) haeyo c) halkkeyo'
+    WHEN 3637 THEN 'Shabdon ko kram mein rakhein: eojeyo hakgyo e gasseoyo'
+    WHEN 3638 THEN 'Baat cheet sunein aur batayein we kya kharide'
+    WHEN 3639 THEN 'Zor se padhein romaji mein'
+    WHEN 3640 THEN 'Kriyaon ko unke basic form se milayein'
+END
+WHERE id_ejercicio BETWEEN 3631 AND 3640;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3641 THEN 'Agar mere paas time ho: a) sigan isseumyeon b) sigan isseodo'
+    WHEN 3642 THEN 'Shabdon ko kram mein rakhein: jigeum eumag eul deutgo'
+    WHEN 3643 THEN 'Samachar sunein aur shahar chunein'
+    WHEN 3644 THEN 'Seoul par paragraph bole'
+    WHEN 3645 THEN 'Conjunctions ko milayein'
+    WHEN 3646 THEN 'Ppareuda ka paryayvachi: a) neulida b) bappeuda'
+    WHEN 3647 THEN 'Shabdon ko kram mein rakhein: biga wado gohyang e gamnida'
+    WHEN 3648 THEN 'Drama sunein aur emotion pehchanein'
+    WHEN 3649 THEN 'Korean food par bhashan dein'
+    WHEN 3650 THEN 'Korean kahawaton ko unke arth se milayein'
+END
+WHERE id_ejercicio BETWEEN 3641 AND 3650;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3651 THEN 'German mein hello kaise kahein? a) Hallo b) Danke c) Ja'
+    WHEN 3652 THEN 'Shabdon ko kram mein rakhein: ich heisse Anna'
+    WHEN 3653 THEN 'Audio sunein aur sahi vikalp chunein'
+    WHEN 3654 THEN 'Hallo shabd ka sahi ucharan karein'
+    WHEN 3655 THEN '1 se 5 tak ginti milayein'
+    WHEN 3656 THEN 'Feminine article kya hai? a) die b) der c) das'
+    WHEN 3657 THEN 'Shabdon ko kram mein rakhein: er isst einen Apfel'
+    WHEN 3658 THEN 'Sunein aur rang ka naam likhein'
+    WHEN 3659 THEN 'Ich komme aus Indien vakya bole'
+    WHEN 3660 THEN 'Parivar ke sadasyon ko milayein'
+END
+WHERE id_ejercicio BETWEEN 3651 AND 3660;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3661 THEN 'Machen ka bhootkaal: a) gemacht b) mache c) machte'
+    WHEN 3662 THEN 'Shabdon ko kram mein rakhein: bin ich gestern ins Kino'
+    WHEN 3663 THEN 'Baat cheet sunein aur kahan gaye batayein'
+    WHEN 3664 THEN 'Zor se padhein: Ich habe ein Auto gekauft'
+    WHEN 3665 THEN 'Kriyaon ko unke past tense se milayein'
+    WHEN 3666 THEN 'Agar mere paas time hota: a) wenn ich Zeit hatte b) ich habe'
+    WHEN 3667 THEN 'Shabdon ko kram mein rakhein: sie arbeiten hier schon'
+    WHEN 3668 THEN 'Samachar sunein aur mukhya vishay chunein'
+    WHEN 3669 THEN 'Berlin par paragraph bole'
+    WHEN 3670 THEN 'Prepositions ko milayein'
+END
+WHERE id_ejercicio BETWEEN 3661 AND 3670;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3671 THEN 'Schnell ka paryayvachi: a) rasch b) langsam c) teuer'
+    WHEN 3672 THEN 'Shabdon ko kram mein rakhein: obwohl es regnete sind wir'
+    WHEN 3673 THEN 'Bahas sunein aur nishkarsh nikalein'
+    WHEN 3674 THEN 'European Union par bhashan dein'
+    WHEN 3675 THEN 'Muhavaron ko unke arth se milayein'
+    WHEN 3676 THEN 'Hogy mondjak hello angolul? a) Hello b) Bye c) Car'
+    WHEN 3677 THEN 'Rakd sorba a szavakat: is name my John'
+    WHEN 3678 THEN 'Hallgasd meg a hangot es valaszd ki a helyes opciot'
+    WHEN 3679 THEN 'Ejtsd ki helyesen: Hello'
+    WHEN 3680 THEN 'Kosd ossze a szamokat 1 tol 5 ig'
+END
+WHERE id_ejercicio BETWEEN 3671 AND 3680;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3681 THEN 'Mi a letige? a) to be b) to play c) to run'
+    WHEN 3682 THEN 'Rakd sorba a szavakat: playing am I now'
+    WHEN 3683 THEN 'Hallgasd meg es ird le a szint angolul'
+    WHEN 3684 THEN 'Mondd ki a mondatot: I am happy'
+    WHEN 3685 THEN 'Kosd ossze az allatokat az angol nevukkel'
+    WHEN 3686 THEN 'A go mult ideje: a) went b) goed c) gone'
+    WHEN 3687 THEN 'Rakd sorba a szavakat: yesterday to school went she'
+    WHEN 3688 THEN 'Hallgasd meg a parbeszedet es valaszolj hova mentek'
+    WHEN 3689 THEN 'Olvasd fel hangosan: She bought a new house'
+    WHEN 3690 THEN 'Kosd ossze a rendhagyo igeket a mult idejukkel'
+END
+WHERE id_ejercicio BETWEEN 3681 AND 3690;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3691 THEN 'Ha esik az eso: a) will stay b) would stay c) stayed'
+    WHEN 3692 THEN 'Rakd sorba a szavakat: have waiting been they'
+    WHEN 3693 THEN 'Hallgasd meg a hireket es azonositsd a problemat'
+    WHEN 3694 THEN 'Ejtsd ki a szoveget a klimavaltozasrol'
+    WHEN 3695 THEN 'Kosd ossze a kifejezeseket a jelentesukkel'
+    WHEN 3696 THEN 'Szinonimaja a fast szo nak: a) quick b) slow c) weak'
+    WHEN 3697 THEN 'Rakd sorba a szavakat: nevertheless she persisted'
+    WHEN 3698 THEN 'Hallgasd meg a vitat es foglald ossze'
+    WHEN 3699 THEN 'Tarts egy beszedet a globalis gazdasagrol'
+    WHEN 3700 THEN 'Kosd ossze az idiomakat a jelentesukkel'
+END
+WHERE id_ejercicio BETWEEN 3691 AND 3700;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3701 THEN 'Hogy mondjak hello nemetul? a) Hallo b) Danke c) Ja'
+    WHEN 3702 THEN 'Rakd sorba a szavakat: ich heisse Anna'
+    WHEN 3703 THEN 'Hallgasd meg a hangot es valaszd ki a helyes opciot'
+    WHEN 3704 THEN 'Ejtsd ki helyesen: Hallo'
+    WHEN 3705 THEN 'Kosd ossze a szamokat 1 tol 5 ig'
+    WHEN 3706 THEN 'Mi a noiem nevelo? a) die b) der c) das'
+    WHEN 3707 THEN 'Rakd sorba a szavakat: er isst einen Apfel'
+    WHEN 3708 THEN 'Hallgasd meg es ird le a szint nemetul'
+    WHEN 3709 THEN 'Mondd ki a mondatot: Ich komme aus Ungarn'
+    WHEN 3710 THEN 'Kosd ossze a csaladtagokat nemetul'
+END
+WHERE id_ejercicio BETWEEN 3701 AND 3710;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3711 THEN 'A machen mult ideje: a) gemacht b) mache c) machte'
+    WHEN 3712 THEN 'Rakd sorba a szavakat: bin ich gestern ins Kino'
+    WHEN 3713 THEN 'Hallgasd meg a parbeszedet es valaszolj hova mentek'
+    WHEN 3714 THEN 'Olvasd fel hangosan: Ich habe ein Auto gekauft'
+    WHEN 3715 THEN 'Kosd ossze az igeket a mult idejukkel'
+    WHEN 3716 THEN 'Ha lenne idom: a) wenn ich Zeit hatte b) ich habe'
+    WHEN 3717 THEN 'Rakd sorba a szavakat: sie arbeiten hier schon'
+    WHEN 3718 THEN 'Hallgasd meg a hireket es azonositsd a temat'
+    WHEN 3719 THEN 'Ejtsd ki a szoveget a fekete erdorol'
+    WHEN 3720 THEN 'Kosd ossze a nemet eloljaroszavakat'
+END
+WHERE id_ejercicio BETWEEN 3711 AND 3720;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3721 THEN 'Szinonimaja a schnell szo nak: a) rasch b) langsam'
+    WHEN 3722 THEN 'Rakd sorba a szavakat: obwohl es regnete sind wir'
+    WHEN 3723 THEN 'Hallgasd meg a vitat es foglald ossze'
+    WHEN 3724 THEN 'Tarts egy beszedet az Europai Uniorol'
+    WHEN 3725 THEN 'Kosd ossze a nemet idiomakat a jelentesukkel'
+    WHEN 3726 THEN 'Hogy mondjak hello koreaiul? a) Annyeonghaseyo b) Ne'
+    WHEN 3727 THEN 'Rakd sorba a szavakat: naneun saram imnida'
+    WHEN 3728 THEN 'Hallgasd meg a hangot es valaszd ki a maganhangzot'
+    WHEN 3729 THEN 'Ejtsd ki helyesen: Annyeonghaseyo'
+    WHEN 3730 THEN 'Kosd ossze a szamokat 1 tol 5 ig'
+END
+WHERE id_ejercicio BETWEEN 3721 AND 3730;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3731 THEN 'Mi az alanyrag? a) i/ga b) eun/neun c) eul/reul'
+    WHEN 3732 THEN 'Rakd sorba a szavakat: jeoneun bap eul meogeoyo'
+    WHEN 3733 THEN 'Hallgasd meg es ird le a szamot'
+    WHEN 3734 THEN 'Mondd ki a mondatot: Hangugoeol baewoyo'
+    WHEN 3735 THEN 'Kosd ossze a csaladtagokat koreaiul'
+    WHEN 3736 THEN 'A hada mult ideje: a) haesseoyo b) haeyo'
+    WHEN 3737 THEN 'Rakd sorba a szavakat: eojeyo hakgyo e gasseoyo'
+    WHEN 3738 THEN 'Hallgasd meg a parbeszedet es valaszolj mit vettek'
+    WHEN 3739 THEN 'Olvasd fel hangosan a szoveget romanjiban'
+    WHEN 3740 THEN 'Kosd ossze az igeket a szotari alakjukkal'
+END
+WHERE id_ejercicio BETWEEN 3731 AND 3740;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3741 THEN 'Ha lenne idom: a) sigan isseumyeon b) sigan isseodo'
+    WHEN 3742 THEN 'Rakd sorba a szavakat: jigeum eumag eul deutgo'
+    WHEN 3743 THEN 'Hallgasd meg a hireket es azonositsd a varost'
+    WHEN 3744 THEN 'Ejtsd ki a szoveget Szoulrol'
+    WHEN 3745 THEN 'Kosd ossze a koreai kotoszavakat'
+    WHEN 3746 THEN 'Szinonimaja a ppareuda szo nak: a) neulida b) bappeuda'
+    WHEN 3747 THEN 'Rakd sorba a szavakat: biga wado gohyang e gamnida'
+    WHEN 3748 THEN 'Hallgasd meg a dramat es jegyezd fel az erzelmet'
+    WHEN 3749 THEN 'Tarts egy beszedet a koreai etelekrol'
+    WHEN 3750 THEN 'Kosd ossze a koreai kozmondasokat a jelentesukkel'
+END
+WHERE id_ejercicio BETWEEN 3741 AND 3750;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3751 THEN 'Hogy mondjak hello spanyolul? a) Hola b) Gracias c) Si d) No'
+    WHEN 3752 THEN 'Rakd sorba a szavakat: me llamo Juan'
+    WHEN 3753 THEN 'Hallgasd meg a hangot es valaszd ki a spanyol kosszontest'
+    WHEN 3754 THEN 'Ejtsd ki helyesen: Hola'
+    WHEN 3755 THEN 'Kosd ossze a szamokat 1 tol 5 ig spanyolul'
+    WHEN 3756 THEN 'Mi a letige? a) ser b) comer c) correr d) vivir'
+    WHEN 3757 THEN 'Rakd sorba a szavakat: estoy comiendo una manzana'
+    WHEN 3758 THEN 'Hallgasd meg es ird le a szint spanyolul'
+    WHEN 3759 THEN 'Mondd ki a mondatot: Yo soy de Espana'
+    WHEN 3760 THEN 'Kosd ossze a csaladtagokat spanyolul'
+END
+WHERE id_ejercicio BETWEEN 3751 AND 3760;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3761 THEN 'Az ir mult ideje: a) fui b) iba c) ire d) yendo'
+    WHEN 3762 THEN 'Rakd sorba a szavakat: ayer fuimos al cine'
+    WHEN 3763 THEN 'Hallgasd meg a parbeszedet es valaszolj hova mentek'
+    WHEN 3764 THEN 'Olvasd fel hangosan: Compre un coche nuevo'
+    WHEN 3765 THEN 'Kosd ossze a rendhagyo igeket a mult idejukkel'
+    WHEN 3766 THEN 'Ha esik az eso: a) me quedare b) me quedo c) quede'
+    WHEN 3767 THEN 'Rakd sorba a szavakat: ellos trabajan aqui'
+    WHEN 3768 THEN 'Hallgasd meg a hireket es azonositsd a problemat'
+    WHEN 3769 THEN 'Ejtsd ki a szoveget a spanyol kulturarol'
+    WHEN 3770 THEN 'Kosd ossze a spanyol kotoszavakat'
+END
+WHERE id_ejercicio BETWEEN 3761 AND 3770;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3771 THEN 'Szinonimaja a rapido szo nak: a) veloz b) lento c) fuerte'
+    WHEN 3772 THEN 'Rakd sorba a szavakat: a pesar de la lluvia salimos'
+    WHEN 3773 THEN 'Hallgasd meg a vitat es foglald ossze'
+    WHEN 3774 THEN 'Tarts egy beszedet Spanyolorszag tortenelmerol'
+    WHEN 3775 THEN 'Kosd ossze a spanyol idiomakat a jelentesukkel'
+    WHEN 3776 THEN 'Hany mezo van a sakktablan? a) 64 b) 32 c) 100'
+    WHEN 3777 THEN 'Rakd sorba a szavakat: minden jatekosnak nyolc gyalogja van'
+    WHEN 3778 THEN 'Hallgasd meg es nevezd meg a bavut'
+    WHEN 3779 THEN 'Mondd ki hangosan: Sakk a kiralynak'
+    WHEN 3780 THEN 'Kosd ossze a bavut az ertekevel'
+END
+WHERE id_ejercicio BETWEEN 3771 AND 3780;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3781 THEN 'Hogyan lep a huszar? a) L alakban b) atlosan c) egyenesen'
+    WHEN 3782 THEN 'Rakd sorba a szavakat: a futo atlos mezoket iranyit'
+    WHEN 3783 THEN 'Hallgasd meg a lepest es jatszd meg a tablan'
+    WHEN 3784 THEN 'Diktald a lepest: Huszar f3'
+    WHEN 3785 THEN 'Kosd ossze az alapfogalmat a leirasaval'
+    WHEN 3786 THEN 'Mi az a kotes? a) mozdithatatlan bavu b) sakk c) csere'
+    WHEN 3787 THEN 'Rakd sorba a szavakat: aldozd be a bastyat a vonal nyitasahoz'
+    WHEN 3788 THEN 'Hallgasd meg az elemzest es azonositsd a fenyegetest'
+    WHEN 3789 THEN 'Mondd el hangosan a fovaltozatot'
+    WHEN 3790 THEN 'Kosd ossze a taktikai temakat a peldajukkal'
+END
+WHERE id_ejercicio BETWEEN 3781 AND 3790;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3791 THEN 'Mi az oppozicio a vegjatekban? a) kiralyok szemben b) matt'
+    WHEN 3792 THEN 'Rakd sorba a szavakat: a szigetelt gyalog gyengeseget jelent'
+    WHEN 3793 THEN 'Hallgasd meg a lecket es jegyezd fel a kulcslepest'
+    WHEN 3794 magy 'Magyarazd el a profilaxis fogalmat hangosan'
+    WHEN 3795 THEN 'Kosd ossze a megnyitasokat az ECO kodjukkal'
+    WHEN 3796 THEN 'Mi jellemzi a sziciliai vedelmet? a) c5 b) e5 c) d5 d) f5'
+    WHEN 3797 THEN 'Rakd sorba a szavakat: dinamikus kompenzacio anyagert'
+    WHEN 3798 THEN 'Kovesd a vakkommentart es talald meg a mattot'
+    WHEN 3799 THEN 'Elemezd szoban a Kaszparov Topalov partit'
+    WHEN 3800 THEN 'Kosd ossze a gyalogszerkezeteket a terveikkel'
+END
+WHERE id_ejercicio BETWEEN 3791 AND 3800;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3801 THEN 'Hogy mondjak hello kinaiul? a) Ni hao b) Zaijian c) Xiexie'
+    WHEN 3802 THEN 'Rakd sorba a szavakat: wo shi xiong ya li ren'
+    WHEN 3803 THEN 'Hallgasd meg a hangot es azonositsd a tónust'
+    WHEN 3804 THEN 'Ejtsd ki helyesen a Xiexie szot a megfelelo tónussal'
+    WHEN 3805 THEN 'Kosd ossze a szamokat 1 tol 5 ig kinaiul'
+    WHEN 3806 THEN 'Mi a szamlaloszo lapos targyakhzo? a) zhang b) ge c) ben'
+    WHEN 3807 THEN 'Rakd sorba a szavakat: wo xihuan he cha'
+    WHEN 3808 THEN 'Hallgasd meg es ird le a szint pinyinben'
+    WHEN 3809 THEN 'Mondd ki a mondatot: Wo ai ni'
+    WHEN 3810 THEN 'Kosd ossze az allatokat a kinai karaktereikkel'
+END
+WHERE id_ejercicio BETWEEN 3801 AND 3810;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3811 THEN 'Mult ido reszecskeje: a) le b) zhi c) zai d) guo'
+    WHEN 3812 THEN 'Rakd sorba a szavakat: zuotian wo qu le beijing'
+    WHEN 3813 THEN 'Hallgasd meg a parbeszedet es jegyezd fel mit ettek'
+    WHEN 3814 THEN 'Olvasd fel hangosan a mondatot pinyinben'
+    WHEN 3815 THEN 'Kosd ossze az igeket aszpektus reszecskeikkel'
+    WHEN 3816 THEN 'Ha esik az eso nem megyek: a) ruguo xiayu b) suiran xiayu'
+    WHEN 3817 THEN 'Rakd sorba a szavakat: wo zhengzai xuexi zhongwen'
+    WHEN 3818 THEN 'Hallgasd meg a hireket es azonositsd a temat'
+    WHEN 3819 THEN 'Ejtsd ki a szoveget a Kinai Nagy Falrol'
+    WHEN 3820 THEN 'Kosd ossze a kinai karaktereket a gyokukkel'
+END
+WHERE id_ejercicio BETWEEN 3811 AND 3820;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3821 THEN 'Szinonimaja a gaoxing szo nak: a) kuaile b) nan guo'
+    WHEN 3822 THEN 'Rakd sorba a szavakat: ta zhongyu chengong le'
+    WHEN 3823 THEN 'Hallgasd meg a vitat es foglald ossze'
+    WHEN 3824 THEN 'Tarts egy beszedet a kinai gazdasagrol'
+    WHEN 3825 THEN 'Kosd ossze a kinai chengyu kifejezeseket a jelentesukkel'
+    WHEN 3826 THEN 'Hogy mondjak hello franciaul? a) Bonjour b) Merci c) Oui'
+    WHEN 3827 THEN 'Rakd sorba a szavakat: je m appelle Pierre'
+    WHEN 3828 THEN 'Hallgasd meg a hangot es valaszd ki a francia kosszontest'
+    WHEN 3829 THEN 'Ejtsd ki helyesen: Bonjour'
+    WHEN 3830 THEN 'Kosd ossze a szamokat 1 tol 5 ig franciaul'
+END
+WHERE id_ejercicio BETWEEN 3821 AND 3830;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3831 THEN 'Mi a noiem nevelo? a) La b) Le c) Les'
+    WHEN 3832 THEN 'Rakd sorba a szavakat: elle mange une pomme'
+    WHEN 3833 THEN 'Hallgasd meg es ird le a szint franciaul'
+    WHEN 3834 THEN 'Mondd ki a mondatot: Je suis etudiant'
+    WHEN 3835 THEN 'Kosd ossze a csaladtagokat franciaul'
+    WHEN 3836 THEN 'A manger mult ideje: a) a mange b) mangeait c) mangera'
+    WHEN 3837 THEN 'Rakd sorba a szavakat: hier nous sommes alles au cinema'
+    WHEN 3838 THEN 'Hallgasd meg a parbeszedet es valaszolj hova mentek'
+    WHEN 3839 THEN 'Olvasd fel hangosan: Nous avons visite Paris'
+    WHEN 3840 THEN 'Kosd ossze a rendhagyo igeket a mult idejukkel'
+END
+WHERE id_ejercicio BETWEEN 3831 AND 3840;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3841 THEN 'Ha tudtam volna eljottem volna: a) serais venu b) suis venu'
+    WHEN 3842 THEN 'Rakd sorba a szavakat: ils travaillent ici depuis'
+    WHEN 3843 THEN 'Hallgasd meg a hireket es azonositsd a problemat'
+    WHEN 3844 THEN 'Ejtsd ki a szoveget a francia kulturarol'
+    WHEN 3845 THEN 'Kosd ossze a francia logikai kotoszavakat'
+    WHEN 3846 THEN 'Szinonimaja az ephemere szo nak: a) passager b) durable'
+    WHEN 3847 THEN 'Rakd sorba a szavakat: nonobstant les difficultes'
+    WHEN 3848 THEN 'Hallgasd meg a vitat es foglald ossze'
+    WHEN 3849 THEN 'Tarts egy beszedet a francia forradalomrol'
+    WHEN 3850 THEN 'Kosd ossze a francia idiomakat a jelentesukkel'
+END
+WHERE id_ejercicio BETWEEN 3841 AND 3850;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3851 THEN 'Hogy mondjak hello portugalul? a) Ola b) Obrigado c) Bom dia'
+    WHEN 3852 THEN 'Rakd sorba a szavakat: eu me chamo Joao'
+    WHEN 3853 THEN 'Hallgasd meg a hangot es valaszd ki a helyes opciot'
+    WHEN 3854 THEN 'Ejtsd ki helyesen: Bom dia'
+    WHEN 3855 THEN 'Kosd ossze a szamokat 1 tol 5 ig portugalul'
+    WHEN 3856 THEN 'Mi a himnem nevelo? a) O b) A c) Os d) As'
+    WHEN 3857 THEN 'Rakd sorba a szavakat: ela come uma maca verde'
+    WHEN 3858 THEN 'Hallgasd meg es ird le az idopontot'
+    WHEN 3859 THEN 'Mondd ki a mondatot: Eu moro no Brasil'
+    WHEN 3860 THEN 'Kosd ossze a csaladtagokat portugalul'
+END
+WHERE id_ejercicio BETWEEN 3851 AND 3860;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3861 THEN 'A falar mult ideje: a) falei b) falo c) falava'
+    WHEN 3862 THEN 'Rakd sorba a szavakat: ontem nos fomos a praia'
+    WHEN 3863 THEN 'Hallgasd meg a parbeszedet es valaszolj mit vettek'
+    WHEN 3864 THEN 'Olvasd fel hangosan: Eu viajei para Lisboa'
+    WHEN 3865 THEN 'Kosd ossze az igeket a mult idejukkel'
+    WHEN 3866 THEN 'Ha lenne penzem: a) se eu tivesse dinheiro b) eu tenho'
+    WHEN 3867 THEN 'Rakd sorba a szavakat: eles estao trabalhando desde cedo'
+    WHEN 3868 THEN 'Hallgasd meg a riportot es azonositsd a varost'
+    WHEN 3869 THEN 'Ejtsd ki a szoveget az Amazonasrol'
+    WHEN 3870 THEN 'Kosd ossze a portugal kotoszavakat'
+END
+WHERE id_ejercicio BETWEEN 3861 AND 3870;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3871 THEN 'Szinonimaja a garoto szo nak: a) menino b) homem c) idoso'
+    WHEN 3872 THEN 'Rakd sorba a szavakat: embora chovesse nos fomos ao jogo'
+    WHEN 3873 THEN 'Hallgasd meg a vitat es foglald ossze'
+    WHEN 3874 THEN 'Tarts egy beszedet Brazilia gazdasagarol'
+    WHEN 3875 THEN 'Kosd ossze a brazil szlenget a jelentesukkel'
+    WHEN 3876 THEN 'Hogy mondjak hello olaszul? a) Ciao b) Grazie c) Si'
+    WHEN 3877 THEN 'Rakd sorba a szavakat: mi chiamo Marco'
+    WHEN 3878 THEN 'Hallgasd meg a hangot es valaszd ki az olasz kosszontest'
+    WHEN 3879 THEN 'Ejtsd ki helyesen: Ciao'
+    WHEN 3880 THEN 'Kosd ossze a szamokat 1 tol 5 ig olaszul'
+END
+WHERE id_ejercicio BETWEEN 3871 AND 3880;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3881 THEN 'Valaszd ki a nevelot: ___ ragazzo. a) il b) lo c) la'
+    WHEN 3882 THEN 'Rakd sorba a szavakat: lui mangia una pizza'
+    WHEN 3883 THEN 'Hallgasd meg es ird le a telefonszamot'
+    WHEN 3884 THEN 'Mondd ki a mondatot: Io sono di Roma'
+    WHEN 3885 THEN 'Kosd ossze a csaladtagokat olaszul'
+    WHEN 3886 THEN 'A fare mult ideje: a) fatto b) facevo c) fara'
+    WHEN 3887 THEN 'Rakd sorba a szavakat: ieri sono andato al cinema'
+    WHEN 3888 THEN 'Hallgasd meg a parbeszedet es valaszolj hova mentek'
+    WHEN 3889 THEN 'Olvasd fel hangosan: Ho comprato un libro nuovo'
+    WHEN 3890 THEN 'Kosd ossze az igeket a mult idejukkel'
+END
+WHERE id_ejercicio BETWEEN 3881 AND 3890;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3891 THEN 'Ha tehetnem: a) se potessi b) posso c) potevo'
+    WHEN 3892 THEN 'Rakd sorba a szavakat: loro stanno lavorando'
+    WHEN 3893 THEN 'Hallgasd meg az idojaras jelentest es azonositsd a regiot'
+    WHEN 3894 THEN 'Ejtsd ki a szoveget Roma tortenelmerol'
+    WHEN 3895 THEN 'Kosd ossze az olasz eloljaroszavakat'
+    WHEN 3896 THEN 'Szinonimaja a veloce szo nak: a) rapido b) lento'
+    WHEN 3897 THEN 'Rakd sorba a szavakat: sebbene piovesse siamo usciti'
+    WHEN 3898 THEN 'Hallgasd meg a vitat es foglald ossze'
+    WHEN 3899 THEN 'Tarts egy beszedet az olasz reneszanszrol'
+    WHEN 3900 THEN 'Kosd ossze az olasz idiomakat a jelentesukkel'
+END
+WHERE id_ejercicio BETWEEN 3891 AND 3900;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3901 THEN 'Hogy mondjak hello japanul? a) Konnichiwa b) Hai c) Iie'
+    WHEN 3902 THEN 'Rakd sorba a szavakat: desu watashi wa Maria'
+    WHEN 3903 THEN 'Hallgasd meg a hangot es valaszd ki a japan kosszontest'
+    WHEN 3904 THEN 'Ejtsd ki helyesen: Arigato'
+    WHEN 3905 THEN 'Kosd ossze a szamokat 1 tol 5 ig japanul'
+    WHEN 3906 THEN 'Mi a temajelolo szocska? a) wa b) ga c) wo d) ni'
+    WHEN 3907 THEN 'Rakd sorba a szavakat: o mizu kudasai nomimasu'
+    WHEN 3908 THEN 'Hallgasd meg es ird le a szot romajibol'
+    WHEN 3909 THEN 'Mondd ki a mondatot: Watashi wa gakusei desu'
+    WHEN 3910 THEN 'Kosd ossze a szineket a japan nevukkel'
+END
+WHERE id_ejercicio BETWEEN 3901 AND 3910;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3911 THEN 'A taberu mult ideje: a) tabeta b) taberu c) tabemasu'
+    WHEN 3912 THEN 'Rakd sorba a szavakat: e ikimashita gakkou watashi wa'
+    WHEN 3913 THEN 'Hallgasd meg a parbeszedet es jegyezd fel a celt'
+    WHEN 3914 THEN 'Olvasd fel hangosan a mondatot'
+    WHEN 3915 THEN 'Kosd ossze az igeket a te formajukkal'
+    WHEN 3916 THEN 'Ha esik az eso nem megyek: a) ame nara b) ame demo'
+    WHEN 3917 THEN 'Rakd sorba a szavakat: ni issho kyoto ikimasen ka e'
+    WHEN 3918 THEN 'Hallgasd meg a hireket es azonositsd a temat'
+    WHEN 3919 THEN 'Ejtsd ki a szoveget a japan kulturarol'
+    WHEN 3920 THEN 'Kosd ossze a kanjikat az onyomi olvasatukkal'
+END
+WHERE id_ejercicio BETWEEN 3911 AND 3920;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3921 THEN 'Szinonimaja az isogashii szo nak: a) hima b) sewashii'
+    WHEN 3922 THEN 'Rakd sorba a szavakat: koto ga dekimasu nihongo hanasu wo'
+    WHEN 3923 THEN 'Hallgasd meg a vitat es foglald ossze az allaspontot'
+    WHEN 3924 THEN 'Tarts egy beszedet a kedvenc animedrol'
+    WHEN 3925 THEN 'Kosd ossze a japan mondasokat a jelentesukkel'
+    WHEN 3926 THEN 'Mennyi 5 meg 3? a) 8 b) 7 c) 9 d) 6'
+    WHEN 3927 THEN 'Rakd sorba a szavakat: az osszeadasnak ket resze van'
+    WHEN 3928 THEN 'Hallgasd meg es ird le a szamot szamjegyekkel'
+    WHEN 3929 THEN 'Olvasd fel a muveletet: 10 minusz 4'
+    WHEN 3930 THEN 'Kosd ossze a matematikai szimbolumokat a nevukkel'
+END
+WHERE id_ejercicio BETWEEN 3921 AND 3930;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3931 THEN 'Mennyi 8 szor 7? a) 56 b) 54 c) 64 d) 49'
+    WHEN 3932 THEN 'Rakd sorba a szavakat: a tenyezok sorrendje nem valtoztatja meg a szorzatot'
+    WHEN 3933 THEN 'Hallgasd meg a tortet es ird le'
+    WHEN 3934 THEN 'Olvasd fel a kifejezest: harom negyed'
+    WHEN 3935 THEN 'Kosd ossze a geometriai alakzatokat az oldalszamukkal'
+    WHEN 3936 THEN 'Oldd meg az egyenletet: 2x = 10. a) x=5 b) x=2'
+    WHEN 3937 THEN 'Rakd sorba a szavakat: az egyenlet megoldasahoz izolald az ismetlent'
+    WHEN 3938 THEN 'Hallgasd meg a feladatot es ird le az egyenletet'
+    WHEN 3939 THEN 'Olvasd fel hangosan: x a negyzeten meg y a negyzeten'
+    WHEN 3940 THEN 'Kosd ossze a terulet kepleteket az alakzatokkal'
+END
+WHERE id_ejercicio BETWEEN 3931 AND 3940;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3941 THEN 'Az x a negyzeten derivaltja: a) 2x b) x c) 2'
+    WHEN 3942 THEN 'Rakd sorba a szavakat: a derivalt megegyezik a meredekseggel'
+    WHEN 3943 THEN 'Hallgasd meg a hatarerteket es azonositsd a tendenciat'
+    WHEN 3944 THEN 'Magyarazd el a Pitagorasz tetelt hangosan'
+    WHEN 3945 THEN 'Kosd ossze a trigonometrikus fuggvenyeket az inverzukkel'
+    WHEN 3946 THEN 'Az e az x en integralja: a) e^x + C b) x c) ln(x)'
+    WHEN 3947 THEN 'Rakd sorba a szavakat: a parcialis integralas halado modszer'
+    WHEN 3948 THEN 'Hallgasd meg a fuggvenyelemzest es jelold a szelsoerteket'
+    WHEN 3949 THEN 'Bizonyitsd be hangosan az alapveto algebrai hatarerteket'
+    WHEN 3950 THEN 'Kosd ossze a differencialegyenleteket a tipusukkal'
+END
+WHERE id_ejercicio BETWEEN 3941 AND 3950;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3951 THEN 'Hany vonal van egy vonalrendszerben? a) 5 b) 4 c) 6'
+    WHEN 3952 THEN 'Rakd sorba a szavakat: het zenei hang letezik'
+    WHEN 3953 THEN 'Hallgasd meg a hangot es hatarozd meg magas vagy mely'
+    WHEN 3954 THEN 'Enekeld el a kozepso C t'
+    WHEN 3955 THEN 'Kosd ossze a zenei hangokat az idotartamukkal'
+    WHEN 3956 THEN 'Melyik kulcsot hasznaljak a magas hangokhoz? a) Violin b) Basszus'
+    WHEN 3957 THEN 'Rakd sorba a szavakat: a kereszt egy felhanggal felemeli a hangot'
+    WHEN 3958 THEN 'Hallgasd meg a dallamot es egeszitsd ki a hianyzo hanggal'
+    WHEN 3959 THEN 'Enekeld el a C dur skalat felfele'
+    WHEN 3960 THEN 'Kosd ossze a modosito jeleket a hatasukkal'
+END
+WHERE id_ejercicio BETWEEN 3951 AND 3960;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3961 THEN 'A tavolsag C es E kozott: a) nagy terc b) kvint'
+    WHEN 3962 THEN 'Rakd sorba a szavakat: egy akkord alaphangbol tercbol es kvintbol all'
+    WHEN 3963 THEN 'Hallgasd meg az akkordot es hatarozd meg dur vagy moll'
+    WHEN 3964 THEN 'Enekeld el a G dur arpeggiot'
+    WHEN 3965 THEN 'Kosd ossze a skala fokait a szakkifejezessel'
+    WHEN 3966 THEN 'A C dur parhuzamos mollja: a) a moll b) e moll'
+    WHEN 3967 THEN 'Rakd sorba a szavakat: a modulacio egy hangnemvaltas'
+    WHEN 3968 THEN 'Hallgasd meg a harmonia menetet es jegyezd fel a fokokat'
+    WHEN 3969 THEN 'Tapsold el helyesen az aszimmetrikus ritmust'
+    WHEN 3970 THEN 'Kosd ossze a gorog moduszokat a szerkezetukkel'
+END
+WHERE id_ejercicio BETWEEN 3961 AND 3970;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3971 THEN 'Mi jellemzi az ellenpontot? a) fuggetlen szolamok b) ritmus'
+    WHEN 3972 THEN 'Rakd sorba a szavakat: a fuga a legbonyolultabb polifon forma'
+    WHEN 3973 THEN 'Hallgasd meg a szimfonikus muvet es azonositsd a zenei format'
+    WHEN 3974 THEN 'Magyarazd el a tizenkethangos szerializmust hangosan'
+    WHEN 3975 THEN 'Kosd ossze a zenei korszakokat a zeneszerzokkel'
+    WHEN 3976 THEN 'Bagaimana cara mengatakan hello dalam bahasa Inggris? a) Hello b) Bye'
+    WHEN 3977 THEN 'Susun kata kata berikut: is name my John'
+    WHEN 3978 THEN 'Dengarkan audio dan pilih salam yang benar'
+    WHEN 3979 THEN 'Ucapkan kata Hello dengan benar'
+    WHEN 3980 THEN 'Cocokkan angka 1 sampai 5 dalam bahasa Inggris'
+END
+WHERE id_ejercicio BETWEEN 3971 AND 3980;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3981 THEN 'Apa kata kerja to be? a) to be b) to play c) to run'
+    WHEN 3982 THEN 'Susun kata kata berikut: playing am I now'
+    WHEN 3983 THEN 'Dengarkan dan tulis warna yang disebutkan'
+    WHEN 3984 THEN 'Ucapkan kalimat I am happy'
+    WHEN 3985 THEN 'Cocokkan hewan dengan nama bahasa Inggrisnya'
+    WHEN 3986 THEN 'Bentuk lampau dari go: a) went b) goed c) gone'
+    WHEN 3987 THEN 'Susun kata kata berikut: yesterday to school went she'
+    WHEN 3988 THEN 'Dengarkan percakapan dan jawab ke mana mereka pergi'
+    WHEN 3989 THEN 'Baca dengan keras: She bought a new house'
+    WHEN 3990 THEN 'Cocokkan kata kerja tidak beraturan dengan bentuk lampaunya'
+END
+WHERE id_ejercicio BETWEEN 3981 AND 3990;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 3991 THEN 'Jika hujan saya akan tinggal: a) will stay b) would stay'
+    WHEN 3992 THEN 'Susun kata kata berikut: have waiting been they'
+    WHEN 3993 THEN 'Dengarkan berita dan identifikasi masalah utama'
+    WHEN 3994 THEN 'Ucapkan paragraf tentang perubahan iklim'
+    WHEN 3995 THEN 'Cocokkan phrasal verbs dengan definisinya'
+    WHEN 3996 THEN 'Sinonim dari fast: a) quick b) slow c) strong'
+    WHEN 3997 THEN 'Susun kata kata berikut: nevertheless she persisted'
+    WHEN 3998 THEN 'Dengarkan debat dan rangkum argumennya'
+    WHEN 3999 THEN 'Rekam pidato satu menit tentang ekonomi global'
+    WHEN 4000 THEN 'Cocokkan idiom lanjutan dengan penggunaannya'
+END
+WHERE id_ejercicio BETWEEN 3991 AND 4000;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4001 THEN 'Bagaimana cara mengatakan hello dalam bahasa Spanyol? a) Hola b) Gracias'
+    WHEN 4002 THEN 'Susun kata kata berikut: me llamo Juan'
+    WHEN 4003 THEN 'Dengarkan audio dan pilih opsi yang benar'
+    WHEN 4004 THEN 'Ucapkan kata Hola dengan benar'
+    WHEN 4005 THEN 'Cocokkan angka 1 sampai 5 dalam bahasa Spanyol'
+    WHEN 4006 THEN 'Apa kata kerja to be? a) ser b) comer c) correr d) vivir'
+    WHEN 4007 THEN 'Susun kata kata berikut: estoy comiendo una manzana'
+    WHEN 4008 THEN 'Dengarkan dan tulis warna yang disebutkan'
+    WHEN 4009 THEN 'Ucapkan kalimat: Yo soy de Espana'
+    WHEN 4010 THEN 'Cocokkan anggota keluarga dalam bahasa Spanyol'
+END
+WHERE id_ejercicio BETWEEN 4001 AND 4010;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4011 THEN 'Bentuk lampau dari ir: a) fui b) iba c) ire d) yendo'
+    WHEN 4012 THEN 'Susun kata kata berikut: ayer fuimos al cine'
+    WHEN 4013 THEN 'Dengarkan percakapan dan jawab ke mana mereka pergi'
+    WHEN 4014 THEN 'Baca dengan keras: Compre un coche nuevo'
+    WHEN 4015 THEN 'Cocokkan kata kerja tidak beraturan dengan bentuk lampaunya'
+    WHEN 4016 THEN 'Jika hujan: a) me quedare b) me quedo c) quede'
+    WHEN 4017 THEN 'Susun kata kata berikut: ellos trabajan aqui'
+    WHEN 4018 THEN 'Dengarkan berita dan identifikasi masalah utama'
+    WHEN 4019 THEN 'Ucapkan paragraf tentang budaya Spanyol'
+    WHEN 4020 THEN 'Cocokkan kata sambung dalam bahasa Spanyol'
+END
+WHERE id_ejercicio BETWEEN 4011 AND 4020;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4021 THEN 'Sinonim dari rapido: a) veloz b) lento c) fuerte'
+    WHEN 4022 THEN 'Susun kata kata berikut: a pesar de la lluvia salimos'
+    WHEN 4023 THEN 'Dengarkan debat dan rangkum argumennya'
+    WHEN 4024 THEN 'Rekam pidato tentang sejarah Spanyol'
+    WHEN 4025 THEN 'Cocokkan idiom Spanyol dengan artinya'
+    WHEN 4026 THEN 'Bagaimana cara mengatakan hello dalam bahasa Jerman? a) Hallo b) Danke'
+    WHEN 4027 THEN 'Susun kata kata berikut: ich heisse Anna'
+    WHEN 4028 THEN 'Dengarkan audio dan pilih salam yang benar'
+    WHEN 4029 THEN 'Ucapkan kata Hallo dengan benar'
+    WHEN 4030 THEN 'Cocokkan angka 1 sampai 5 dalam bahasa Jerman'
+END
+WHERE id_ejercicio BETWEEN 4021 AND 4030;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4031 THEN 'Apa artikel feminin? a) die b) der c) das'
+    WHEN 4032 THEN 'Susun kata kata berikut: er isst einen Apfel'
+    WHEN 4033 THEN 'Dengarkan dan tulis warna dalam bahasa Jerman'
+    WHEN 4034 THEN 'Ucapkan kalimat: Ich komme aus Indonesien'
+    WHEN 4035 THEN 'Cocokkan anggota keluarga dalam bahasa Jerman'
+    WHEN 4036 THEN 'Bentuk lampau dari machen: a) gemacht b) mache c) machte'
+    WHEN 4037 THEN 'Susun kata kata berikut: bin ich gestern ins Kino'
+    WHEN 4038 THEN 'Dengarkan percakapan dan jawab ke mana mereka pergi'
+    WHEN 4039 THEN 'Baca dengan keras: Ich habe ein Auto gekauft'
+    WHEN 4040 THEN 'Cocokkan kata kerja dengan bentuk lampaunya'
+END
+WHERE id_ejercicio BETWEEN 4031 AND 4040;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4041 THEN 'Jika saya punya waktu: a) wenn ich Zeit hatte b) ich habe'
+    WHEN 4042 THEN 'Susun kata kata berikut: sie arbeiten hier schon'
+    WHEN 4043 THEN 'Dengarkan berita dan identifikasi topik utama'
+    WHEN 4044 THEN 'Ucapkan paragraf tentang kota Berlin'
+    WHEN 4045 THEN 'Cocokkan preposisi dalam bahasa Jerman'
+    WHEN 4046 THEN 'Sinonim dari schnell: a) rasch b) langsam'
+    WHEN 4047 THEN 'Susun kata kata berikut: obwohl es regnete sind wir'
+    WHEN 4048 THEN 'Dengarkan debat dan rangkum hasilnya'
+    WHEN 4049 THEN 'Rekam pidato tentang Uni Eropa'
+    WHEN 4050 THEN 'Cocokkan idiom Jerman dengan artinya'
+END
+WHERE id_ejercicio BETWEEN 4041 AND 4050;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4051 THEN 'Bagaimana cara mengatakan hello dalam bahasa Mandarin? a) Ni hao b) Zaijian'
+    WHEN 4052 THEN 'Susun kata kata berikut: wo shi yinni ren'
+    WHEN 4053 THEN 'Dengarkan audio dan identifikasi nada'
+    WHEN 4054 THEN 'Ucapkan kata Xiexie dengan nada yang benar'
+    WHEN 4055 THEN 'Cocokkan angka 1 sampai 5 dalam bahasa Mandarin'
+    WHEN 4056 THEN 'Apa kata penggolong untuk benda datar? a) zhang b) ge c) ben'
+    WHEN 4057 THEN 'Susun kata kata berikut: wo xihuan he cha'
+    WHEN 4058 THEN 'Dengarkan dan tulis warna dalam pinyin'
+    WHEN 4059 THEN 'Ucapkan kalimat: Wo ai ni'
+    WHEN 4060 THEN 'Cocokkan hewan dengan karakter Tiongkok nya'
+END
+WHERE id_ejercicio BETWEEN 4051 AND 4060;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4061 THEN 'Partikel bentuk lampau: a) le b) zhi c) zai d) guo'
+    WHEN 4062 THEN 'Susun kata kata berikut: zuotian wo qu le beijing'
+    WHEN 4063 THEN 'Dengarkan percakapan dan catat apa yang mereka makan'
+    WHEN 4064 THEN 'Baca dengan keras kalimat dalam pinyin'
+    WHEN 4065 THEN 'Cocokkan kata kerja dengan partikel aspeknya'
+    WHEN 4066 THEN 'Jika hujan saya tidak pergi: a) ruguo xiayu b) suiran xiayu'
+    WHEN 4067 THEN 'Susun kata kata berikut: wo zhengzai xuexi zhongwen'
+    WHEN 4068 THEN 'Dengarkan berita dan identifikasi topik utama'
+    WHEN 4069 THEN 'Ucapkan paragraf tentang Tembok Besar'
+    WHEN 4070 THEN 'Cocokkan karakter Tiongkok dengan radikalnya'
+END
+WHERE id_ejercicio BETWEEN 4061 AND 4070;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4071 THEN 'Sinonim dari gaoxing: a) kuaile b) nan guo'
+    WHEN 4072 THEN 'Susun kata kata berikut: ta zhongyu chengong le'
+    WHEN 4073 THEN 'Dengarkan debat dan rangkum argumennya'
+    WHEN 4074 THEN 'Rekam pidato tentang ekonomi Tiongkok'
+    WHEN 4075 THEN 'Cocokkan chengyu dengan artinya'
+    WHEN 4076 THEN 'Berapa banyak kotak di papan catur? a) 64 b) 32 c) 100'
+    WHEN 4077 THEN 'Susun kata kata berikut: setiap pemain memiliki delapan bidak'
+    WHEN 4078 THEN 'Dengarkan dan sebutkan nama bidak catur'
+    WHEN 4079 THEN 'Ucapkan dengan keras: Skak mat'
+    WHEN 4080 THEN 'Cocokkan bidak catur dengan nilainya'
+END
+WHERE id_ejercicio BETWEEN 4071 AND 4080;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4081 THEN 'Bagaimana cara kuda bergerak? a) bentuk L b) diagonal c) lurus'
+    WHEN 4082 THEN 'Susun kata kata berikut: gajah mengontrol petak diagonal'
+    WHEN 4083 THEN 'Dengarkan langkah dan mainkan di papan'
+    WHEN 4084 THEN 'Diktekan langkah: Kuda ke f3'
+    WHEN 4085 THEN 'Cocokkan konsep dasar catur dengan deskripsinya'
+    WHEN 4086 THEN 'Apa itu pinning? a) bidak tidak bisa bergerak b) skak c) pertukaran'
+    WHEN 4087 THEN 'Susun kata kata berikut: korbankan benteng untuk membuka jalur'
+    WHEN 4088 THEN 'Dengarkan analisis dan identifikasi ancaman'
+    WHEN 4089 THEN 'Ucapkan variasi utama dengan keras'
+    WHEN 4090 THEN 'Cocokkan tema taktis dengan contohnya'
+END
+WHERE id_ejercicio BETWEEN 4081 AND 4090;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4091 THEN 'Apa itu oposisi dalam permainan akhir? a) raja berhadapan b) skakmat'
+    WHEN 4092 THEN 'Susun kata kata berikut: bidak terisolasi adalah kelemahan'
+    WHEN 4093 THEN 'Dengarkan pelajaran dan catat langkah kunci'
+    WHEN 4094 THEN 'Jelaskan konsep profilaksis dengan keras'
+    WHEN 4095 THEN 'Cocokkan pembukaan catur dengan kode ECO nya'
+    WHEN 4096 THEN 'Bagaimana cara mengatakan hello dalam bahasa Korea? a) Annyeonghaseyo b) Ne'
+    WHEN 4097 THEN 'Susun kata kata berikut: naneun saram imnida'
+    WHEN 4098 THEN 'Dengarkan audio dan pilih huruf vokal'
+    WHEN 4099 THEN 'Ucapkan kata Annyeonghaseyo dengan benar'
+    WHEN 4100 THEN 'Cocokkan angka 1 sampai 5 dalam bahasa Korea'
+END
+WHERE id_ejercicio BETWEEN 4091 AND 4100;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4101 THEN 'Apa partikel subjek? a) i/ga b) eun/neun c) eul/reul'
+    WHEN 4102 THEN 'Susun kata kata berikut: jeoneun bap eul meogeoyo'
+    WHEN 4103 THEN 'Dengarkan dan tulis angka dalam bahasa Korea'
+    WHEN 4104 THEN 'Ucapkan kalimat: Hangugoeol baewoyo'
+    WHEN 4105 THEN 'Cocokkan anggota keluarga dalam bahasa Korea'
+    WHEN 4106 THEN 'Bentuk lampau dari hada: a) haesseoyo b) haeyo'
+    WHEN 4107 THEN 'Susun kata kata berikut: eojeyo hakgyo e gasseoyo'
+    WHEN 4108 THEN 'Dengarkan percakapan dan jawab apa yang mereka beli'
+    WHEN 4109 THEN 'Baca teks dalam romaji dengan keras'
+    WHEN 4110 THEN 'Cocokkan kata kerja dengan bentuk dasarnya'
+END
+WHERE id_ejercicio BETWEEN 4101 AND 4110;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4111 THEN 'Jika saya punya waktu: a) sigan isseumyeon b) sigan isseodo'
+    WHEN 4112 THEN 'Susun kata kata berikut: jigeum eumag eul deutgo'
+    WHEN 4113 THEN 'Dengarkan berita dan identifikasi kota'
+    WHEN 4114 THEN 'Ucapkan teks tentang Seoul'
+    WHEN 4115 THEN 'Cocokkan kata sambung dalam bahasa Korea'
+    WHEN 4116 THEN 'Sinonim dari ppareuda: a) neulida b) bappeuda'
+    WHEN 4117 THEN 'Susun kata kata berikut: biga wado gohyang e gamnida'
+    WHEN 4118 THEN 'Dengarkan drama dan catat emosinya'
+    WHEN 4119 THEN 'Rekam pidato tentang makanan Korea'
+    WHEN 4120 THEN 'Cocokkan peribahasa Korea dengan artinya'
+END
+WHERE id_ejercicio BETWEEN 4111 AND 4120;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4121 THEN 'Bagaimana cara mengatakan hello dalam bahasa Prancis? a) Bonjour b) Merci'
+    WHEN 4122 THEN 'Susun kata kata berikut: je m appelle Pierre'
+    WHEN 4123 THEN 'Dengarkan audio dan pilih salam bahasa Prancis'
+    WHEN 4124 THEN 'Ucapkan kata Bonjour dengan benar'
+    WHEN 4125 THEN 'Cocokkan angka 1 sampai 5 dalam bahasa Prancis'
+    WHEN 4126 THEN 'Apa artikel feminin? a) La b) Le c) Les'
+    WHEN 4127 THEN 'Susun kata kata berikut: elle mange une pomme'
+    WHEN 4128 THEN 'Dengarkan dan tulis warna dalam bahasa Prancis'
+    WHEN 4129 THEN 'Ucapkan kalimat: Je suis etudiant'
+    WHEN 4130 THEN 'Cocokkan anggota keluarga dalam bahasa Prancis'
+END
+WHERE id_ejercicio BETWEEN 4121 AND 4130;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4131 THEN 'Bentuk lampau dari manger: a) a mange b) mangeait c) mangera'
+    WHEN 4132 THEN 'Susun kata kata berikut: hier nous sommes alles au cinema'
+    WHEN 4133 THEN 'Dengarkan percakapan dan jawab ke mana mereka pergi'
+    WHEN 4134 THEN 'Baca dengan keras: Nous avons visite Paris'
+    WHEN 4135 THEN 'Cocokkan kata kerja tidak beraturan dengan bentuk lampaunya'
+    WHEN 4136 THEN 'Jika saya tahu saya akan datang: a) serais venu b) suis venu'
+    WHEN 4137 THEN 'Susun kata kata berikut: ils travaillent ici depuis'
+    WHEN 4138 THEN 'Dengarkan berita dan identifikasi masalah utama'
+    WHEN 4139 THEN 'Ucapkan teks tentang budaya Prancis'
+    WHEN 4140 THEN 'Cocokkan kata sambung logis dalam bahasa Prancis'
+END
+WHERE id_ejercicio BETWEEN 4131 AND 4140;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4141 THEN 'Sinonim dari ephemere: a) passager b) durable'
+    WHEN 4142 THEN 'Susun kata kata berikut: nonobstant les difficultes'
+    WHEN 4143 THEN 'Dengarkan debat dan rangkum argumennya'
+    WHEN 4144 THEN 'Rekam pidato tentang Revolusi Prancis'
+    WHEN 4145 THEN 'Cocokkan idiom Prancis dengan artinya'
+    WHEN 4146 THEN 'Bagaimana cara mengatakan hello dalam bahasa Italia? a) Ciao b) Grazie'
+    WHEN 4147 THEN 'Susun kata kata berikut: mi chiamo Marco'
+    WHEN 4148 THEN 'Dengarkan audio dan pilih salam bahasa Italia'
+    WHEN 4149 THEN 'Ucapkan kata Ciao dengan benar'
+    WHEN 4150 THEN 'Cocokkan angka 1 sampai 5 dalam bahasa Italia'
+END
+WHERE id_ejercicio BETWEEN 4141 AND 4150;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4151 THEN 'Pilih artikel yang tepat: ___ ragazzo. a) il b) lo c) la'
+    WHEN 4152 THEN 'Susun kata kata berikut: lui mangia una pizza'
+    WHEN 4153 THEN 'Dengarkan dan tulis nomor telepon'
+    WHEN 4154 THEN 'Ucapkan kalimat: Io sono di Roma'
+    WHEN 4155 THEN 'Cocokkan anggota keluarga dalam bahasa Italia'
+    WHEN 4156 THEN 'Bentuk lampau dari fare: a) fatto b) facevo c) fara'
+    WHEN 4157 THEN 'Susun kata kata berikut: ieri sono andato al cinema'
+    WHEN 4158 THEN 'Dengarkan percakapan dan jawab ke mana mereka pergi'
+    WHEN 4159 THEN 'Baca dengan keras: Ho comprato un libro nuovo'
+    WHEN 4160 THEN 'Cocokkan kata kerja dengan bentuk lampaunya'
+END
+WHERE id_ejercicio BETWEEN 4151 AND 4160;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4161 THEN 'Jika saya bisa: a) se potessi b) posso c) potevo'
+    WHEN 4162 THEN 'Susun kata kata berikut: loro stanno lavorando'
+    WHEN 4163 THEN 'Dengarkan ramalan cuaca dan identifikasi wilayah'
+    WHEN 4164 THEN 'Ucapkan teks tentang sejarah Roma'
+    WHEN 4165 THEN 'Cocokkan preposisi dalam bahasa Italia'
+    WHEN 4166 THEN 'Sinonim dari veloce: a) rapido b) lento'
+    WHEN 4167 THEN 'Susun kata kata berikut: sebbene piovesse siamo usciti'
+    WHEN 4168 THEN 'Dengarkan debat dan rangkum argumennya'
+    WHEN 4169 THEN 'Rekam pidato tentang Renaisans Italia'
+    WHEN 4170 THEN 'Cocokkan idiom Italia dengan artinya'
+END
+WHERE id_ejercicio BETWEEN 4161 AND 4170;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4171 THEN 'Bagaimana cara mengatakan hello dalam bahasa Jepang? a) Konnichiwa b) Hai'
+    WHEN 4172 THEN 'Susun kata kata berikut: desu watashi wa Maria'
+    WHEN 4173 THEN 'Dengarkan audio dan pilih salam bahasa Jepang'
+    WHEN 4174 THEN 'Ucapkan kata Arigato dengan benar'
+    WHEN 4175 THEN 'Cocokkan angka 1 sampai 5 dalam bahasa Jepang'
+    WHEN 4176 THEN 'Apa partikel penanda topik? a) wa b) ga c) wo d) ni'
+    WHEN 4177 THEN 'Susun kata kata berikut: o mizu kudasai nomimasu'
+    WHEN 4178 THEN 'Dengarkan dan tulis kata dari romaji'
+    WHEN 4179 THEN 'Ucapkan kalimat: Watashi wa gakusei desu'
+    WHEN 4180 THEN 'Cocokkan warna dengan nama bahasa Jepangnya'
+END
+WHERE id_ejercicio BETWEEN 4171 AND 4180;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4181 THEN 'Bentuk lampau dari taberu: a) tabeta b) taberu c) tabemasu'
+    WHEN 4182 THEN 'Susun kata kata berikut: e ikimashita gakkou watashi wa'
+    WHEN 4183 THEN 'Dengarkan percakapan dan catat tujuannya'
+    WHEN 4184 THEN 'Baca kalimat dengan keras'
+    WHEN 4185 THEN 'Cocokkan kata kerja dengan bentuk te nya'
+    WHEN 4186 THEN 'Jika hujan saya tidak pergi: a) ame nara b) ame demo'
+    WHEN 4187 THEN 'Susun kata kata berikut: ni issho kyoto ikimasen ka e'
+    WHEN 4188 THEN 'Dengarkan berita dan identifikasi topik utama'
+    WHEN 4189 THEN 'Ucapkan teks tentang budaya Jepang'
+    WHEN 4190 THEN 'Cocokkan kanji dengan bacaan onyominya'
+END
+WHERE id_ejercicio BETWEEN 4181 AND 4190;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4191 THEN 'Sinonim dari isogashii: a) hima b) sewashii'
+    WHEN 4192 THEN 'Susun kata kata berikut: koto ga dekimasu nihongo hanasu wo'
+    WHEN 4193 THEN 'Dengarkan debat dan rangkum sudut pandangnya'
+    WHEN 4194 THEN 'Rekam pidato tentang anime favorit Anda'
+    WHEN 4195 THEN 'Cocokkan peribahasa Jepang dengan artinya'
+    WHEN 4196 THEN 'Bagaimana cara mengatakan hello dalam bahasa Portugis? a) Ola b) Obrigado'
+    WHEN 4197 THEN 'Susun kata kata berikut: eu me chamo Joao'
+    WHEN 4198 THEN 'Dengarkan audio dan pilih salam yang benar'
+    WHEN 4199 THEN 'Ucapkan kata Bom dia dengan benar'
+    WHEN 4200 THEN 'Cocokkan angka 1 sampai 5 dalam bahasa Portugis'
+END
+WHERE id_ejercicio BETWEEN 4191 AND 4200;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4201 THEN 'Apa artikel maskulin? a) O b) A c) Os d) As'
+    WHEN 4202 THEN 'Susun kata kata berikut: ela come uma maca verde'
+    WHEN 4203 THEN 'Dengarkan dan tulis waktu yang disebutkan'
+    WHEN 4204 THEN 'Ucapkan kalimat: Eu moro no Brasil'
+    WHEN 4205 THEN 'Cocokkan anggota keluarga dalam bahasa Portugis'
+    WHEN 4206 THEN 'Bentuk lampau dari falar: a) falei b) falo c) falava'
+    WHEN 4207 THEN 'Susun kata kata berikut: ontem nos fomos a praia'
+    WHEN 4208 THEN 'Dengarkan percakapan dan jawab apa yang mereka beli'
+    WHEN 4209 THEN 'Baca dengan keras: Eu viajei para Lisboa'
+    WHEN 4210 THEN 'Cocokkan kata kerja dengan bentuk lampaunya'
+END
+WHERE id_ejercicio BETWEEN 4201 AND 4210;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4211 THEN 'Jika saya punya uang: a) se eu tivesse dinheiro b) eu tenho'
+    WHEN 4212 THEN 'Susun kata kata berikut: eles estao trabalhando desde cedo'
+    WHEN 4213 THEN 'Dengarkan laporan dan identifikasi kota'
+    WHEN 4214 THEN 'Ucapkan teks tentang sungai Amazon'
+    WHEN 4215 THEN 'Cocokkan kata sambung dalam bahasa Portugis'
+    WHEN 4216 THEN 'Sinonim dari garoto: a) menino b) homem c) idoso'
+    WHEN 4217 THEN 'Susun kata kata berikut: embora chovesse nos fomos ao jogo'
+    WHEN 4218 THEN 'Dengarkan debat dan rangkum argumennya'
+    WHEN 4219 THEN 'Rekam pidato tentang ekonomi Brasil'
+    WHEN 4220 THEN 'Cocokkan bahasa gaul Brasil dengan artinya'
+END
+WHERE id_ejercicio BETWEEN 4211 AND 4220;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4221 THEN 'Berapa 5 ditambah 3? a) 8 b) 7 c) 9 d) 6'
+    WHEN 4222 THEN 'Susun kata kata berikut: penjumlahan memiliki dua bagian'
+    WHEN 4223 THEN 'Dengarkan dan tulis angka menggunakan digit'
+    WHEN 4224 THEN 'Baca operasi ini: 10 dikurangi 4'
+    WHEN 4225 THEN 'Cocokkan simbol matematika dengan namanya'
+    WHEN 4226 THEN 'Berapa 8 dikali 7? a) 56 b) 54 c) 64 d) 49'
+    WHEN 4227 THEN 'Susun kata kata berikut: urutan faktor tidak mengubah hasil'
+    WHEN 4228 THEN 'Dengarkan pecahan dan tuliskan'
+    WHEN 4229 THEN 'Baca ekspresi ini: tiga perempat'
+    WHEN 4230 THEN 'Cocokkan bangun geometri dengan jumlah sisinya'
+END
+WHERE id_ejercicio BETWEEN 4221 AND 4230;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4231 THEN 'Selesaikan persamaan: 2x = 10. a) x=5 b) x=2'
+    WHEN 4232 THEN 'Susun kata: untuk menyelesaikan persamaan isolasi variabel'
+    WHEN 4233 THEN 'Dengarkan soal dan tulis persamaannya'
+    WHEN 4234 THEN 'Ucapkan dengan keras: x kuadrat ditambah y kuadrat'
+    WHEN 4235 THEN 'Cocokkan rumus luas dengan bangun datarnya'
+    WHEN 4236 THEN 'Turunan dari x kuadrat: a) 2x b) x c) 2'
+    WHEN 4237 THEN 'Susun kata: turunan sama dengan kemiringan garis singgung'
+    WHEN 4238 THEN 'Dengarkan limit dan identifikasi trennya'
+    WHEN 4239 THEN 'Jelaskan teorema Pythagoras dengan keras'
+    WHEN 4240 THEN 'Cocokkan fungsi trigonometri dengan inversnya'
+END
+WHERE id_ejercicio BETWEEN 4231 AND 4240;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4241 THEN 'Integral dari e pangkat x: a) e^x + C b) x c) ln(x)'
+    WHEN 4242 THEN 'Susun kata: integrasi parsial adalah metode lanjutan'
+    WHEN 4243 THEN 'Dengarkan analisis fungsi dan tandai nilai ekstremnya'
+    WHEN 4244 THEN 'Buktikan limit aljabar dasar dengan keras'
+    WHEN 4245 THEN 'Cocokkan persamaan diferensial dengan tipenya'
+    WHEN 4246 THEN 'Apa rumus luas lingkaran? a) pi r kuadrat b) 2 pi r'
+    WHEN 4247 THEN 'Susun kata: volume tabung adalah luas alas dikali tinggi'
+    WHEN 4248 THEN 'Dengarkan masalah geometri dan gambar diagramnya'
+    WHEN 4249 THEN 'Jelaskan hukum cosinus dengan keras'
+    WHEN 4250 THEN 'Cocokkan deret dengan rumus konvergensinya'
+END
+WHERE id_ejercicio BETWEEN 4241 AND 4250;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4251 THEN 'Berapa banyak garis pada paranada? a) 5 b) 4 c) 6'
+    WHEN 4252 THEN 'Susun kata kata berikut: ada tujuh nada musik dasar'
+    WHEN 4253 THEN 'Dengarkan audio dan tentukan tinggi rendahnya nada'
+    WHEN 4254 THEN 'Nyanyikan nada C tengah'
+    WHEN 4255 THEN 'Cocokkan notasi musik dengan durasinya'
+    WHEN 4256 THEN 'Kunci apa yang digunakan untuk nada tinggi? a) Treble b) Bass'
+    WHEN 4257 THEN 'Susun kata kata berikut: tanda kres menaikkan setengah nada'
+    WHEN 4258 THEN 'Dengarkan melodi dan lengkapi nada yang hilang'
+    WHEN 4259 THEN 'Nyanyikan tangga nada C mayor'
+    WHEN 4260 THEN 'Cocokkan tanda aksidental dengan efeknya'
+END
+WHERE id_ejercicio BETWEEN 4251 AND 4260;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4261 THEN 'Jarak antara C dan E adalah: a) terts mayor b) kuint'
+    WHEN 4262 THEN 'Susun kata: akor terdiri dari nada dasar terts dan kuint'
+    WHEN 4263 THEN 'Dengarkan akor dan tentukan mayor atau minor'
+    WHEN 4264 THEN 'Nyanyikan arpeggio G mayor'
+    WHEN 4265 THEN 'Cocokkan derajat tangga nada dengan istilah teknisnya'
+    WHEN 4266 THEN 'Relatif minor dari C mayor: a) A minor b) E minor'
+    WHEN 4267 THEN 'Susun kata: modulasi adalah perubahan nada dasar'
+    WHEN 4268 THEN 'Dengarkan progresi harmoni dan catat derajatnya'
+    WHEN 4269 THEN 'Tepuk ritme asimetris dengan benar'
+    WHEN 4270 THEN 'Cocokkan modus Yunani dengan strukturnya'
+END
+WHERE id_ejercicio BETWEEN 4261 AND 4270;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4271 THEN 'Apa ciri khas kontrapung? a) suara independen b) ritme'
+    WHEN 4272 THEN 'Susun kata: fuga adalah bentuk polifoni paling kompleks'
+    WHEN 4273 THEN 'Dengarkan karya simfoni dan identifikasi bentuknya'
+    WHEN 4274 THEN 'Jelaskan serialisme dua belas nada dengan keras'
+    WHEN 4275 THEN 'Cocokkan era musik dengan komposer utamanya'
+    WHEN 4276 THEN 'Come si dice hello in inglese? a) Hello b) Bye'
+    WHEN 4277 THEN 'Metti in ordine le parole: is name my John'
+    WHEN 4278 THEN 'Ascolta l audio e scegli il saluto corretto'
+    WHEN 4279 THEN 'Pronuncia correttamente la parola Hello'
+    WHEN 4280 THEN 'Collega i numeri da 1 a 5 in inglese'
+END
+WHERE id_ejercicio BETWEEN 4271 AND 4280;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4281 THEN 'Qual e il verbo essere? a) to be b) to play c) to run'
+    WHEN 4282 THEN 'Metti in ordine le parole: playing am I now'
+    WHEN 4283 THEN 'Ascolta e scrivi il colore menzionato'
+    WHEN 4284 THEN 'Pronuncia la frase: I am happy'
+    WHEN 4285 THEN 'Collega gli animali con il loro nome inglese'
+    WHEN 4286 THEN 'Il passato di go: a) went b) goed c) gone'
+    WHEN 4287 THEN 'Metti in ordine le parole: yesterday to school went she'
+    WHEN 4288 THEN 'Ascolta la conversazione e rispondi dove sono andati'
+    WHEN 4289 THEN 'Leggi ad alta voce: She bought a new house'
+    WHEN 4290 THEN 'Collega i verbi irregolari al loro passato'
+END
+WHERE id_ejercicio BETWEEN 4281 AND 4290;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4291 THEN 'Se piove restero: a) will stay b) would stay'
+    WHEN 4292 THEN 'Metti in ordine le parole: have waiting been they'
+    WHEN 4293 THEN 'Ascolta le notizie e identifica il problema principale'
+    WHEN 4294 THEN 'Pronuncia un paragrafo sul cambiamento climatico'
+    WHEN 4295 THEN 'Collega i phrasal verbs alla loro definizione'
+    WHEN 4296 THEN 'Sinonimo di fast: a) quick b) slow c) strong'
+    WHEN 4297 THEN 'Metti in ordine le parole: nevertheless she persisted'
+    WHEN 4298 THEN 'Ascolta il dibattito e riassumi gli argomenti'
+    WHEN 4299 THEN 'Registra un discorso di un minuto sull economia'
+    WHEN 4300 THEN 'Collega le espressioni idiomatiche al loro uso'
+END
+WHERE id_ejercicio BETWEEN 4291 AND 4300;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4301 THEN 'Come si dice ciao in francese? a) Bonjour b) Merci'
+    WHEN 4302 THEN 'Metti in ordine le parole: je m appelle Pierre'
+    WHEN 4303 THEN 'Ascolta l audio e scegli il saluto francese'
+    WHEN 4304 THEN 'Pronuncia la parola Bonjour correttamente'
+    WHEN 4305 THEN 'Collega i numeri da 1 a 5 in francese'
+    WHEN 4306 THEN 'Qual e l articolo femminile? a) La b) Le c) Les'
+    WHEN 4307 THEN 'Metti in ordine le parole: elle mange une pomme'
+    WHEN 4308 THEN 'Ascolta e scrivi il colore in francese'
+    WHEN 4309 THEN 'Pronuncia la frase: Je suis etudiant'
+    WHEN 4310 THEN 'Collega i membri della famiglia in francese'
+END
+WHERE id_ejercicio BETWEEN 4301 AND 4310;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4311 THEN 'Il passato di manger: a) a mange b) mangeait c) mangera'
+    WHEN 4312 THEN 'Metti in ordine le parole: hier nous sommes alles au cinema'
+    WHEN 4313 THEN 'Ascolta la conversazione e rispondi dove sono andati'
+    WHEN 4314 THEN 'Leggi ad alta voce: Nous avons visite Paris'
+    WHEN 4315 THEN 'Collega i verbi irregolari al loro passato'
+    WHEN 4316 THEN 'Se lo sapessi verrei: a) serais venu b) suis venu'
+    WHEN 4317 THEN 'Metti in ordine le parole: ils travaillent ici depuis'
+    WHEN 4318 THEN 'Ascolta le notizie e identifica il problema principale'
+    WHEN 4319 THEN 'Pronuncia un testo sulla cultura francese'
+    WHEN 4320 THEN 'Collega i connettivi logici in francese'
+END
+WHERE id_ejercicio BETWEEN 4311 AND 4320;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4321 THEN 'Sinonimo di ephemere: a) passager b) durable'
+    WHEN 4322 THEN 'Metti in ordine le parole: nonobstant les difficultes'
+    WHEN 4323 THEN 'Ascolta il dibattito e riassumi l argomento'
+    WHEN 4324 THEN 'Registra un discorso sulla Rivoluzione Francese'
+    WHEN 4325 THEN 'Collega le espressioni idiomatiche francesi'
+    WHEN 4326 THEN 'Come si dice ciao in tedesco? a) Hallo b) Danke'
+    WHEN 4327 THEN 'Metti in ordine le parole: ich heisse Anna'
+    WHEN 4328 THEN 'Ascolta l audio e scegli il saluto corretto'
+    WHEN 4329 THEN 'Pronuncia la parola Hallo correttamente'
+    WHEN 4330 THEN 'Collega i numeri da 1 a 5 in tedesco'
+END
+WHERE id_ejercicio BETWEEN 4321 AND 4330;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4331 THEN 'Qual e l articolo femminile? a) die b) der c) das'
+    WHEN 4332 THEN 'Metti in ordine le parole: er isst einen Apfel'
+    WHEN 4333 THEN 'Ascolta e scrivi il colore in tedesco'
+    WHEN 4334 THEN 'Pronuncia la frase: Ich komme aus Italien'
+    WHEN 4335 THEN 'Collega i membri della famiglia in tedesco'
+    WHEN 4336 THEN 'Il passato di machen: a) gemacht b) mache c) machte'
+    WHEN 4337 THEN 'Metti in ordine le parole: bin ich gestern ins Kino'
+    WHEN 4338 THEN 'Ascolta la conversazione e rispondi dove sono andati'
+    WHEN 4339 THEN 'Leggi ad alta voce: Ich habe ein Auto gekauft'
+    WHEN 4340 THEN 'Collega i verbi al loro participio passato'
+END
+WHERE id_ejercicio BETWEEN 4331 AND 4340;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4341 THEN 'Se avessi tempo: a) wenn ich Zeit hatte b) ich habe'
+    WHEN 4342 THEN 'Metti in ordine le parole: sie arbeiten hier schon'
+    WHEN 4343 THEN 'Ascolta le notizie e identifica l argomento principale'
+    WHEN 4344 THEN 'Pronuncia un testo sulla citta di Berlino'
+    WHEN 4345 THEN 'Collega le preposizioni in tedesco'
+    WHEN 4346 THEN 'Sinonimo di schnell: a) rasch b) langsam'
+    WHEN 4347 THEN 'Metti in ordine le parole: obwohl es regnete sind wir'
+    WHEN 4348 THEN 'Ascolta il dibattito e riassumi i risultati'
+    WHEN 4349 THEN 'Registra un discorso sull Unione Europea'
+    WHEN 4350 THEN 'Collega le espressioni idiomatiche tedesche'
+END
+WHERE id_ejercicio BETWEEN 4341 AND 4350;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4351 THEN 'Come si dice ciao in spagnolo? a) Hola b) Gracias'
+    WHEN 4352 THEN 'Metti in ordine le parole: me llamo Juan'
+    WHEN 4353 THEN 'Ascolta l audio e scegli l opzione corretta'
+    WHEN 4354 THEN 'Pronuncia la parola Hola correttamente'
+    WHEN 4355 THEN 'Collega i numeri da 1 a 5 in spagnolo'
+    WHEN 4356 THEN 'Qual e il verbo essere? a) ser b) comer c) correr'
+    WHEN 4357 THEN 'Metti in ordine le parole: estoy comiendo una manzana'
+    WHEN 4358 THEN 'Ascolta e scrivi il colore menzionato'
+    WHEN 4359 THEN 'Pronuncia la frase: Yo soy de Espana'
+    WHEN 4360 THEN 'Collega i membri della famiglia in spagnolo'
+END
+WHERE id_ejercicio BETWEEN 4351 AND 4360;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4361 THEN 'Il passato di ir: a) fui b) iba c) ire'
+    WHEN 4362 THEN 'Metti in ordine le parole: ayer fuimos al cine'
+    WHEN 4363 THEN 'Ascolta la conversazione e rispondi dove sono andati'
+    WHEN 4364 THEN 'Leggi ad alta voce: Compre un coche nuevo'
+    WHEN 4365 THEN 'Collega i verbi irregolari al loro passato'
+    WHEN 4366 THEN 'Se piove: a) me quedare b) me quedo c) quede'
+    WHEN 4367 THEN 'Metti in ordine le parole: ellos trabajan aqui'
+    WHEN 4368 THEN 'Ascolta le notizie e identifica il problema'
+    WHEN 4369 THEN 'Pronuncia un paragrafo sulla cultura spagnola'
+    WHEN 4370 THEN 'Collega le congiunzioni in spagnolo'
+END
+WHERE id_ejercicio BETWEEN 4361 AND 4370;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4371 THEN 'Sinonimo di rapido: a) veloz b) lento c) fuerte'
+    WHEN 4372 THEN 'Metti in ordine le parole: a pesar de la lluvia salimos'
+    WHEN 4373 THEN 'Ascolta il dibattito e riassumi gli argomenti'
+    WHEN 4374 THEN 'Registra un discorso sulla storia della Spagna'
+    WHEN 4375 THEN 'Collega le espressioni idiomatiche spagnole'
+    WHEN 4376 THEN 'Quante case ci sono sulla scacchiera? a) 64 b) 32 c) 100'
+    WHEN 4377 THEN 'Metti in ordine le parole: ogni giocatore ha otto pedoni'
+    WHEN 4378 THEN 'Ascolta e nomina il pezzo degli scacchi'
+    WHEN 4379 THEN 'Pronuncia ad alta voce: Scacco matto'
+    WHEN 4380 THEN 'Collega il pezzo al suo valore'
+END
+WHERE id_ejercicio BETWEEN 4371 AND 4380;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4381 THEN 'Come si muove il cavallo? a) a L b) in diagonale c) dritto'
+    WHEN 4382 THEN 'Metti in ordine le parole: l alfiere controlla le diagonali'
+    WHEN 4383 THEN 'Ascolta la mossa e giocala sulla scacchiera'
+    WHEN 4384 THEN 'Detta la mossa: Cavallo in f3'
+    WHEN 4385 THEN 'Collega il concetto di base alla sua descrizione'
+    WHEN 4386 THEN 'Cos e un inchiodatura? a) pezzo immobile b) scacco c) cambio'
+    WHEN 4387 THEN 'Metti in ordine le parole: sacrifica la torre per aprire'
+    WHEN 4388 THEN 'Ascolta l analisi e identifica la minaccia'
+    WHEN 4389 THEN 'Pronuncia la variante principale ad alta voce'
+    WHEN 4390 THEN 'Collega il tema tattico al suo esempio'
+END
+WHERE id_ejercicio BETWEEN 4381 AND 4390;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4391 THEN 'Cos e l opposizione nel finale? a) re di fronte b) matto'
+    WHEN 4392 THEN 'Metti in ordine le parole: il pedone isolato e una debolezza'
+    WHEN 4393 THEN 'Ascolta la lezione e annota la mossa chiave'
+    WHEN 4394 THEN 'Spiega il concetto di profilassi ad alta voce'
+    WHEN 4395 THEN 'Collega le aperture al loro codice ECO'
+    WHEN 4396 THEN 'Cosa caratterizza la difesa siciliana? a) c5 b) e5 c) d5'
+    WHEN 4397 THEN 'Metti in ordine le parole: compensazione dinamica per il materiale'
+    WHEN 4398 THEN 'Segui il commento alla cieca e trova il matto'
+    WHEN 4399 THEN 'Analizza verbalmente la partita Kasparov Topalov'
+    WHEN 4400 THEN 'Collega le strutture pedonali ai loro piani'
+END
+WHERE id_ejercicio BETWEEN 4391 AND 4400;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4401 THEN 'Come si dice ciao in giapponese? a) Konnichiwa b) Hai'
+    WHEN 4402 THEN 'Metti in ordine le parole: desu watashi wa Maria'
+    WHEN 4403 THEN 'Ascolta l audio e scegli il saluto giapponese'
+    WHEN 4404 THEN 'Pronuncia la parola Arigato correttamente'
+    WHEN 4405 THEN 'Collega i numeri da 1 a 5 in giapponese'
+    WHEN 4406 THEN 'Qual e la particella del tema? a) wa b) ga c) wo d) ni'
+    WHEN 4407 THEN 'Metti in ordine le parole: o mizu kudasai nomimasu'
+    WHEN 4408 THEN 'Ascolta e scrivi la parola dal romaji'
+    WHEN 4409 THEN 'Pronuncia la frase: Watashi wa gakusei desu'
+    WHEN 4410 THEN 'Collega i colori al loro nome giapponese'
+END
+WHERE id_ejercicio BETWEEN 4401 AND 4410;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4411 THEN 'Il passato di taberu: a) tabeta b) taberu c) tabemasu'
+    WHEN 4412 THEN 'Metti in ordine le parole: e ikimashita gakkou watashi wa'
+    WHEN 4413 THEN 'Ascolta la conversazione e annota l obiettivo'
+    WHEN 4414 THEN 'Leggi la frase ad alta voce'
+    WHEN 4415 THEN 'Collega i verbi alla loro forma in te'
+    WHEN 4416 THEN 'Se piove non vado: a) ame nara b) ame demo'
+    WHEN 4417 THEN 'Metti in ordine le parole: ni issho kyoto ikimasen ka e'
+    WHEN 4418 THEN 'Ascolta le notizie e identifica l argomento principale'
+    WHEN 4419 THEN 'Pronuncia un testo sulla cultura giapponese'
+    WHEN 4420 THEN 'Collega i kanji alla loro lettura onyomi'
+END
+WHERE id_ejercicio BETWEEN 4411 AND 4420;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4421 THEN 'Sinonimo di isogashii: a) hima b) sewashii'
+    WHEN 4422 THEN 'Metti in ordine le parole: koto ga dekimasu nihongo'
+    WHEN 4423 THEN 'Ascolta il dibattito e riassumi il punto di vista'
+    WHEN 4424 THEN 'Registra un discorso sul tuo anime preferito'
+    WHEN 4425 THEN 'Collega i proverbi giapponesi al loro significato'
+    WHEN 4426 THEN 'Come si dice ciao in coreano? a) Annyeonghaseyo b) Ne'
+    WHEN 4427 THEN 'Metti in ordine le parole: naneun saram imnida'
+    WHEN 4428 THEN 'Ascolta l audio e scegli la vocale'
+    WHEN 4429 THEN 'Pronuncia correttamente Annyeonghaseyo'
+    WHEN 4430 THEN 'Collega i numeri da 1 a 5 in coreano'
+END
+WHERE id_ejercicio BETWEEN 4421 AND 4430;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4431 THEN 'Qual e la particella del soggetto? a) i/ga b) eun/neun'
+    WHEN 4432 THEN 'Metti in ordine le parole: jeoneun bap eul meogeoyo'
+    WHEN 4433 THEN 'Ascolta e scrivi il numero in coreano'
+    WHEN 4434 THEN 'Pronuncia la frase: Hangugoeol baewoyo'
+    WHEN 4435 THEN 'Collega i membri della famiglia in coreano'
+    WHEN 4436 THEN 'Il passato di hada: a) haesseoyo b) haeyo'
+    WHEN 4437 THEN 'Metti in ordine le parole: eojeyo hakgyo e gasseoyo'
+    WHEN 4438 THEN 'Ascolta la conversazione e rispondi cosa hanno comprato'
+    WHEN 4439 THEN 'Leggi ad alta voce il testo in romaji'
+    WHEN 4440 THEN 'Collega i verbi alla loro forma base'
+END
+WHERE id_ejercicio BETWEEN 4431 AND 4440;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4441 THEN 'Se avessi tempo: a) sigan isseumyeon b) sigan isseodo'
+    WHEN 4442 THEN 'Metti in ordine le parole: jigeum eumag eul deutgo'
+    WHEN 4443 THEN 'Ascolta le notizie e identifica la citta'
+    WHEN 4444 THEN 'Pronuncia un testo su Seul'
+    WHEN 4445 THEN 'Collega le congiunzioni in coreano'
+    WHEN 4446 THEN 'Sinonimo di ppareuda: a) neulida b) bappeuda'
+    WHEN 4447 THEN 'Metti in ordine le parole: biga wado gohyang e gamnida'
+    WHEN 4448 THEN 'Ascolta il dramma e annota le emozioni'
+    WHEN 4449 THEN 'Registra un discorso sul cibo coreano'
+    WHEN 4450 THEN 'Collega i proverbi coreani al loro significato'
+END
+WHERE id_ejercicio BETWEEN 4441 AND 4450;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4451 THEN 'Come si dice ciao in portoghese? a) Ola b) Obrigado'
+    WHEN 4452 THEN 'Metti in ordine le parole: eu me chamo Joao'
+    WHEN 4453 THEN 'Ascolta l audio e scegli il saluto corretto'
+    WHEN 4454 THEN 'Pronuncia la parola Bom dia correttamente'
+    WHEN 4455 THEN 'Collega i numeri da 1 a 5 in portoghese'
+    WHEN 4456 THEN 'Qual e l articolo maschile? a) O b) A c) Os d) As'
+    WHEN 4457 THEN 'Metti in ordine le parole: ela come uma maca verde'
+    WHEN 4458 THEN 'Ascolta e scrivi l ora menzionata'
+    WHEN 4459 THEN 'Pronuncia la frase: Eu moro no Brasil'
+    WHEN 4460 THEN 'Collega i membri della famiglia in portoghese'
+END
+WHERE id_ejercicio BETWEEN 4451 AND 4460;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4461 THEN 'Il passato di falar: a) falei b) falo c) falava'
+    WHEN 4462 THEN 'Metti in ordine le parole: ontem nos fomos a praia'
+    WHEN 4463 THEN 'Ascolta la conversazione e rispondi cosa hanno comprato'
+    WHEN 4464 THEN 'Leggi ad alta voce: Eu viajei para Lisboa'
+    WHEN 4465 THEN 'Collega i verbi al loro passato'
+    WHEN 4466 THEN 'Se avessi soldi: a) se eu tivesse dinheiro b) eu tenho'
+    WHEN 4467 THEN 'Metti in ordine le parole: eles estao trabalhando desde cedo'
+    WHEN 4468 THEN 'Ascolta il reportage e identifica la citta'
+    WHEN 4469 THEN 'Pronuncia un testo sul Rio delle Amazzoni'
+    WHEN 4470 THEN 'Collega le congiunzioni in portoghese'
+END
+WHERE id_ejercicio BETWEEN 4461 AND 4470;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4471 THEN 'Sinonimo di garoto: a) menino b) homem c) idoso'
+    WHEN 4472 THEN 'Metti in ordine le parole: embora chovesse nos fomos ao jogo'
+    WHEN 4473 THEN 'Ascolta il dibattito e riassumi gli argomenti'
+    WHEN 4474 THEN 'Registra un discorso sull economia del Brasile'
+    WHEN 4475 THEN 'Collega lo slang brasiliano al suo significato'
+    WHEN 4476 THEN 'Come si dice ciao in cinese? a) Ni hao b) Zaijian'
+    WHEN 4477 THEN 'Metti in ordine le parole: wo shi yidali ren'
+    WHEN 4478 THEN 'Ascolta l audio e identifica il tono'
+    WHEN 4479 THEN 'Pronuncia la parola Xiexie con il tono corretto'
+    WHEN 4480 THEN 'Collega i numeri da 1 a 5 in cinese'
+END
+WHERE id_ejercicio BETWEEN 4471 AND 4480;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4481 THEN 'Qual e il classificatore per oggetti piatti? a) zhang b) ge c) ben'
+    WHEN 4482 THEN 'Metti in ordine le parole: wo xihuan he cha'
+    WHEN 4483 THEN 'Ascolta e scrivi il colore in pinyin'
+    WHEN 4484 THEN 'Pronuncia la frase: Wo ai ni'
+    WHEN 4485 THEN 'Collega gli animali ai loro caratteri cinesi'
+    WHEN 4486 THEN 'Particella del passato: a) le b) zhi c) zai d) guo'
+    WHEN 4487 THEN 'Metti in ordine le parole: zuotian wo qu le beijing'
+    WHEN 4488 THEN 'Ascolta la conversazione e nota cosa hanno mangiato'
+    WHEN 4489 THEN 'Leggi ad alta voce la frase in pinyin'
+    WHEN 4490 THEN 'Collega i verbi alle loro particelle di aspetto'
+END
+WHERE id_ejercicio BETWEEN 4481 AND 4490;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4491 THEN 'Se piove non vado: a) ruguo xiayu b) suiran xiayu'
+    WHEN 4492 THEN 'Metti in ordine le parole: wo zhengzai xuexi zhongwen'
+    WHEN 4493 THEN 'Ascolta le notizie e identifica l argomento principale'
+    WHEN 4494 THEN 'Pronuncia un paragrafo sulla Grande Muraglia'
+    WHEN 4495 THEN 'Collega i caratteri cinesi ai loro radicali'
+    WHEN 4496 THEN 'Sinonimo di gaoxing: a) kuaile b) nan guo'
+    WHEN 4497 THEN 'Metti in ordine le parole: ta zhongyu chengong le'
+    WHEN 4498 THEN 'Ascolta il dibattito e riassumi gli argomenti'
+    WHEN 4499 THEN 'Registra un discorso sull economia cinese'
+    WHEN 4500 THEN 'Collega i chengyu al loro significato'
+END
+WHERE id_ejercicio BETWEEN 4491 AND 4500;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4501 THEN 'Quanto fa 5 piu 3? a) 8 b) 7 c) 9 d) 6'
+    WHEN 4502 THEN 'Metti in ordine le parole: l addizione ha due parti'
+    WHEN 4503 THEN 'Ascolta e scrivi il numero in cifre'
+    WHEN 4504 THEN 'Leggi questa operazione: 10 meno 4'
+    WHEN 4505 THEN 'Collega il simbolo matematico al suo nome'
+    WHEN 4506 THEN 'Quanto fa 8 per 7? a) 56 b) 54 c) 64 d) 49'
+    WHEN 4507 THEN 'Metti in ordine: l ordine dei fattori non cambia il risultato'
+    WHEN 4508 THEN 'Ascolta la frazione e scrivila'
+    WHEN 4509 THEN 'Leggi questa espressione: tre quarti'
+    WHEN 4510 THEN 'Collega la figura geometrica al numero dei suoi lati'
+END
+WHERE id_ejercicio BETWEEN 4501 AND 4510;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4511 THEN 'Risolvi l equazione: 2x = 10. a) x=5 b) x=2'
+    WHEN 4512 THEN 'Metti in ordine: per risolvere un equazione isola la variabile'
+    WHEN 4513 THEN 'Ascolta il problema e scrivi l equazione'
+    WHEN 4514 THEN 'Pronuncia ad alta voce: x al quadrato piu y al quadrato'
+    WHEN 4515 THEN 'Collega la formula dell area alla sua figura'
+    WHEN 4516 THEN 'La derivata di x al quadrato e: a) 2x b) x c) 2'
+    WHEN 4517 THEN 'Metti in ordine: la derivata e la pendenza della tangente'
+    WHEN 4518 THEN 'Ascolta il limite e identifica la tendenza'
+    WHEN 4519 THEN 'Spiega il teorema di Pitagora ad alta voce'
+    WHEN 4520 THEN 'Collega la funzione trigonometrica alla sua inversa'
+END
+WHERE id_ejercicio BETWEEN 4511 AND 4520;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4521 THEN 'L integrale di e alla x: a) e^x + C b) x c) ln(x)'
+    WHEN 4522 THEN 'Metti in ordine: l integrazione per parti e un metodo'
+    WHEN 4523 THEN 'Ascolta l analisi della funzione e segna gli estremi'
+    WHEN 4524 THEN 'Dimostra un limite algebrico di base ad alta voce'
+    WHEN 4525 THEN 'Collega l equazione differenziale al suo tipo'
+    WHEN 4526 THEN 'Quante linee ha il pentagramma? a) 5 b) 4 c) 6'
+    WHEN 4527 THEN 'Metti in ordine le parole: ci sono sette note musicali'
+    WHEN 4528 THEN 'Ascolta l audio e determina l altezza della nota'
+    WHEN 4529 THEN 'Canta il Do centrale'
+    WHEN 4530 THEN 'Collega la nota musicale alla sua durata'
+END
+WHERE id_ejercicio BETWEEN 4521 AND 4530;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4531 THEN 'Che chiave si usa per le note acute? a) Violino b) Basso'
+    WHEN 4532 THEN 'Metti in ordine le parole: il diesis alza di un semitono'
+    WHEN 4533 THEN 'Ascolta la melodia e completa le note mancanti'
+    WHEN 4534 THEN 'Canta la scala di Do maggiore'
+    WHEN 4535 THEN 'Collega l alterazione al suo effetto'
+    WHEN 4536 THEN 'La distanza tra Do e Mi e: a) terza maggiore b) quinta'
+    WHEN 4537 THEN 'Metti in ordine: un accordo ha fondamentale terza e quinta'
+    WHEN 4538 THEN 'Ascolta l accordo e determina se e maggiore o minore'
+    WHEN 4539 THEN 'Canta l arpeggio di Sol maggiore'
+    WHEN 4540 THEN 'Collega i gradi della scala ai loro nomi tecnici'
+END
+WHERE id_ejercicio BETWEEN 4531 AND 4540;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4541 THEN 'La relativa minore di Do maggiore: a) La minore b) Mi minore'
+    WHEN 4542 THEN 'Metti in ordine: la modulazione e il cambio di tonalita'
+    WHEN 4543 THEN 'Ascolta la progressione armonica e scrivi i gradi'
+    WHEN 4544 THEN 'Batti il ritmo asimmetrico correttamente'
+    WHEN 4545 THEN 'Collega il modo greco alla sua struttura'
+    WHEN 4546 THEN 'Cos e il contrappunto? a) voci indipendenti b) ritmo'
+    WHEN 4547 THEN 'Metti in ordine: la fuga e una forma polifonica complessa'
+    WHEN 4548 THEN 'Ascolta il pezzo sinfonico e identifica la forma'
+    WHEN 4549 THEN 'Spiega il serialismo dodecafonico ad alta voce'
+    WHEN 4550 THEN 'Collega le epoche musicali ai loro compositori'
+END
+WHERE id_ejercicio BETWEEN 4541 AND 4550;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4551 THEN 'Eigo de hello wa nan to iimasu ka? a) Hello b) Bye'
+    WHEN 4552 THEN 'Tango wo narabekaete kudasai: is name my John'
+    WHEN 4553 THEN 'Onsei wo kiite tadashii aisatsu wo erande kudasai'
+    WHEN 4554 THEN 'Hello to iu tango wo tadashiku hatsuon shite kudasai'
+    WHEN 4555 THEN '1 kara 5 made no eitango wo musunde kudasai'
+    WHEN 4556 THEN 'be doushi wa dore desu ka? a) to be b) to play c) to run'
+    WHEN 4557 THEN 'Tango wo narabekaete kudasai: playing am I now'
+    WHEN 4558 THEN 'Onsei wo kiite iro wo kaite kudasai'
+    WHEN 4559 THEN 'Tsugi no bun wo yonde kudasai: I am happy'
+    WHEN 4560 THEN 'Doubutsu to sono eitango wo musunde kudasai'
+END
+WHERE id_ejercicio BETWEEN 4551 AND 4560;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4561 THEN 'go no kako-kei wa? a) went b) goed c) gone'
+    WHEN 4562 THEN 'Tango wo narabekaete kudasai: yesterday to school went she'
+    WHEN 4563 THEN 'Kaiwa wo kiite doko ni itta ka kotaete kudasai'
+    WHEN 4564 THEN 'Koe ni dashite yonde kudasai: She bought a new house'
+    WHEN 4565 THEN 'Fukisoku doushi to sono kako-kei wo musunde kudasai'
+    WHEN 4566 THEN 'Moshi ame ga futtara: a) will stay b) would stay'
+    WHEN 4567 THEN 'Tango wo narabekaete kudasai: have waiting been they'
+    WHEN 4568 THEN 'Nyusu wo kiite omona mondai wo tokutei shite kudasai'
+    WHEN 4569 THEN 'Kikou hendou ni tsuite no danraku wo hatsuon shite kudasai'
+    WHEN 4570 THEN 'Kudoushi to sono teigi wo musunde kudasai'
+END
+WHERE id_ejercicio BETWEEN 4561 AND 4570;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4571 THEN 'fast no dougigo wa? a) quick b) slow c) strong'
+    WHEN 4572 THEN 'Tango wo narabekaete kudasai: nevertheless she persisted'
+    WHEN 4573 THEN 'Touron wo kiite shuchou wo youyaku shite kudasai'
+    WHEN 4574 THEN 'Keizai ni tsuite no supiichi wo rokuon shite kudasai'
+    WHEN 4575 THEN 'Kanyouku to sono imi wo musunde kudasai'
+    WHEN 4576 THEN 'Kankokugo de hello wa? a) Annyeonghaseyo b) Ne'
+    WHEN 4577 THEN 'Tango wo narabekaete kudasai: naneun saram imnida'
+    WHEN 4578 THEN 'Onsei wo kiite boin wo erande kudasai'
+    WHEN 4579 THEN 'Annyeonghaseyo wo tadashiku hatsuon shite kudasai'
+    WHEN 4580 THEN '1 kara 5 made no kankokusuji wo musunde kudasai'
+END
+WHERE id_ejercicio BETWEEN 4571 AND 4580;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4581 THEN 'Shugo no joshi wa dore desu ka? a) i/ga b) eun/neun'
+    WHEN 4582 THEN 'Tango wo narabekaete kudasai: jeoneun bap eul meogeoyo'
+    WHEN 4583 THEN 'Onsei wo kiite kankokugo de suuji wo kaite kudasai'
+    WHEN 4584 THEN 'Tsugi no bun wo hatsuon shite kudasai: Hangugoeol baewoyo'
+    WHEN 4585 THEN 'Kazoku no yobikata wo musunde kudasai'
+    WHEN 4586 THEN 'hada no kako-kei wa? a) haesseoyo b) haeyo'
+    WHEN 4587 THEN 'Tango wo narabekaete kudasai: eojeyo hakgyo e gasseoyo'
+    WHEN 4588 THEN 'Kaiwa wo kiite nani wo katta ka kotaete kudasai'
+    WHEN 4589 THEN 'Romaji no tekisuto wo koe ni dashite yonde kudasai'
+    WHEN 4590 THEN 'Doushi to sono kihon-kei wo musunde kudasai'
+END
+WHERE id_ejercicio BETWEEN 4581 AND 4590;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4591 THEN 'Moshi jikan ga attara: a) sigan isseumyeon b) sigan isseodo'
+    WHEN 4592 THEN 'Tango wo narabekaete kudasai: jigeum eumag eul deutgo'
+    WHEN 4593 THEN 'Nyusu wo kiite toshi wo tokutei shite kudasai'
+    WHEN 4594 THEN 'Souru ni tsuite no tekisuto wo hatsuon shite kudasai'
+    WHEN 4595 THEN 'Kankokugo no setsuzokushi wo musunde kudasai'
+    WHEN 4596 THEN 'ppareuda no dougigo wa? a) neulida b) bappeuda'
+    WHEN 4597 THEN 'Tango wo narabekaete kudasai: biga wado gohyang e gamnida'
+    WHEN 4598 THEN 'Dorama wo kiite kanjou wo memo shite kudasai'
+    WHEN 4599 THEN 'Kankoku ryouri ni tsuite no supiichi wo rokuon shite kudasai'
+    WHEN 4600 THEN 'Kankoku no kotowaza to sono imi wo musunde kudasai'
+END
+WHERE id_ejercicio BETWEEN 4591 AND 4600;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4601 THEN 'Chesu-ban no masu wa ikutsu desu ka? a) 64 b) 32 c) 100'
+    WHEN 4602 THEN 'Tango wo narabekaete kudasai: kaku pureiya wa 8-ko no pon wo motsu'
+    WHEN 4603 THEN 'Onsei wo kiite koma no namae wo kotaete kudasai'
+    WHEN 4604 THEN 'Koe ni dashite itte kudasai: Chekkumaito'
+    WHEN 4605 THEN 'Chesu no koma to sono kachi wo musunde kudasai'
+    WHEN 4606 THEN 'Naito no ugokikata wa? a) L-ji b) naname c) massugu'
+    WHEN 4607 THEN 'Tango wo narabekaete kudasai: bishoppu wa naname wo kontororu suru'
+    WHEN 4608 THEN 'Te wo kiite ban-jou de ugotte kudasai'
+    WHEN 4609 THEN 'Te wo kiki-totte kudasai: Naito f3'
+    WHEN 4610 THEN 'Chesu no kiso gainen to sono setsumei wo musunde kudasai'
+END
+WHERE id_ejercicio BETWEEN 4601 AND 4610;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4611 THEN 'Pin to wa nan desu ka? a) koma ga ugokenai b) chekku c) koukan'
+    WHEN 4612 THEN 'Tango wo narabekaete kudasai: fairu wo akeru tame ni ruku wo gisei ni suru'
+    WHEN 4613 THEN 'Bunseki wo kiite kyoui wo tokutei shite kudasai'
+    WHEN 4614 THEN 'Shu-henka wo koe ni dashite hatsuon shite kudasai'
+    WHEN 4615 THEN 'Senjutsu no tema to sono rei wo musunde kudasai'
+    WHEN 4616 THEN 'Endogemu no opojishon to wa? a) kingu ga mukaiau b) matto'
+    WHEN 4617 THEN 'Tango wo narabekaete kudasai: koritsu pon wa jakuten desu'
+    WHEN 4618 THEN 'Ressun wo kiite juuyou na te wo memo shite kudasai'
+    WHEN 4619 THEN 'Purofirakishisu no gainen wo koe ni dashite setsumei shite kudasai'
+    WHEN 4620 THEN 'Opuningu to sono ECO kodo wo musunde kudasai'
+END
+WHERE id_ejercicio BETWEEN 4611 AND 4620;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4621 THEN 'Shishirian difensu no tokuchou wa? a) c5 b) e5 c) d5'
+    WHEN 4622 THEN 'Tango wo narabekaete kudasai: materiaru ni taisuru dainamikku na daishou'
+    WHEN 4623 THEN 'Buraindo de kaisetsu wo oikakete matto wo mitsukete kudasai'
+    WHEN 4624 THEN 'Kasuparofu tai Toparofu no shiai wo koukou de bunseki shite kudasai'
+    WHEN 4625 THEN 'Pon no kouzou to sono puran wo musunde kudasai'
+    WHEN 4626 THEN '5 tasu 3 wa ikutsu desu ka? a) 8 b) 7 c) 9 d) 6'
+    WHEN 4627 THEN 'Tango wo narabekaete kudasai: tashizan ni wa 2-tsu no bubun ga aru'
+    WHEN 4628 THEN 'Onsei wo kiite suuji wo kaite kudasai'
+    WHEN 4629 THEN 'Kono keisan wo yonde kudasai: 10 hiku 4'
+    WHEN 4630 THEN 'Suugaku kigou to sono namae wo musunde kudasai'
+END
+WHERE id_ejercicio BETWEEN 4621 AND 4630;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4631 THEN '8 kakeru 7 wa ikutsu desu ka? a) 56 b) 54 c) 64 d) 49'
+    WHEN 4632 THEN 'Tango wo narabekaete kudasai: inshi no junban wa kekka wo kaenai'
+    WHEN 4633 THEN 'Bunsuu wo kiite kaite kudasai'
+    WHEN 4634 THEN 'Kono shiki wo yonde kudasai: 4-bun no 3'
+    WHEN 4635 THEN 'Kikagaku zukei to sono hen no kazu wo musunde kudasai'
+    WHEN 4636 THEN 'Houteishiki wo toku: 2x = 10. a) x=5 b) x=2'
+    WHEN 4637 THEN 'Tango wo narabekaete: houteishiki wo toku ni wa hensuu wo bunri suru'
+    WHEN 4638 THEN 'Mondai wo kiite houteishiki wo kaite kudasai'
+    WHEN 4639 THEN 'Koe ni dashite yonde kudasai: x no 2-jou tasu y no 2-jou'
+    WHEN 4640 THEN 'Menseki no koushiki to sono zukei wo musunde kudasai'
+END
+WHERE id_ejercicio BETWEEN 4631 AND 4640;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4641 THEN 'x no 2-jou no bibun wa? a) 2x b) x c) 2'
+    WHEN 4642 THEN 'Tango wo narabekaete: bibun wa sessen no katamuki ni hitoshii'
+    WHEN 4643 THEN 'Kyokugen wo kiite keikou wo tokutei shite kudasai'
+    WHEN 4644 THEN 'Pitagorasu no teiri wo koe ni dashite setsumei shite kudasai'
+    WHEN 4645 THEN 'Sankaku kansuu to sono gyakukansuu wo musunde kudasai'
+    WHEN 4646 THEN 'e no x-jou no sekibun wa? a) e^x + C b) x c) ln(x)'
+    WHEN 4647 THEN 'Tango wo narabekaete: bubun sekibun wa koudo na shuhou desu'
+    WHEN 4648 THEN 'Kansuu no bunseki wo kiite kyokuchi wo makingu shite kudasai'
+    WHEN 4649 THEN 'Kihonteki na daisuu no kyokugen wo koe ni dashite shoumei shite kudasai'
+    WHEN 4650 THEN 'Bibun houteishiki to sono taipu wo musunde kudasai'
+END
+WHERE id_ejercicio BETWEEN 4641 AND 4650;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4651 THEN 'Gosenfu no sen wa ikutsu desu ka? a) 5 b) 4 c) 6'
+    WHEN 4652 THEN 'Tango wo narabekaete kudasai: 7-tsu no kihontekina onpu ga aru'
+    WHEN 4653 THEN 'Onsei wo kiite ontei wo handan shite kudasai'
+    WHEN 4654 THEN 'Chuuou no C wo utatte kudasai'
+    WHEN 4655 THEN 'Onpu to sono nagasa wo musunde kudasai'
+    WHEN 4656 THEN 'Takai oto ni wa dono kigou ga tsukawaremasu ka? a) Toonkigou b) Heonkigou'
+    WHEN 4657 THEN 'Tango wo narabekaete kudasai: shapu wa oto wo han-on ageru'
+    WHEN 4658 THEN 'Merodi wo kiite kaketeiru oto wo umete kudasai'
+    WHEN 4659 THEN 'Ha-chouchou no onkai wo utatte kudasai'
+    WHEN 4660 THEN 'Henkigou to sono kouka wo musunde kudasai'
+END
+WHERE id_ejercicio BETWEEN 4651 AND 4660;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4661 THEN 'C to E no kyori wa? a) chou 3-do b) kanzen 5-do'
+    WHEN 4662 THEN 'Tango wo narabekaete: waon wa kon-on 3-do 5-do de kousei sareru'
+    WHEN 4663 THEN 'Waon wo kiite meja ka maina ka handan shite kudasai'
+    WHEN 4664 THEN 'To-chouchou no aruppejio wo utatte kudasai'
+    WHEN 4665 THEN 'Onkai no kakudo to sono senmon yougo wo musunde kudasai'
+    WHEN 4666 THEN 'Ha-chouchou no heikouchou wa? a) I-tanchou b) Ho-tanchou'
+    WHEN 4667 THEN 'Tango wo narabekaete: tenchou to wa chou no henka desu'
+    WHEN 4668 THEN 'Wasei shinkou wo kiite dosuu wo kaite kudasai'
+    WHEN 4669 THEN 'Hitaishou na rizumu wo tadashiku tataite kudasai'
+    WHEN 4670 THEN 'Girisha senpou to sono kouzou wo musunde kudasai'
+END
+WHERE id_ejercicio BETWEEN 4661 AND 4670;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4671 THEN 'Taiihou no tokuchou wa? a) dokuritsu shita koe b) rizumu'
+    WHEN 4672 THEN 'Tango wo narabekaete: fuga wa mottomo fukuzatsu na tasei ongaku desu'
+    WHEN 4673 THEN 'Koukyoukyoku wo kiite keishiki wo tokutei shite kudasai'
+    WHEN 4674 THEN '12-on gihou wo koe ni dashite setsumei shite kudasai'
+    WHEN 4675 THEN 'Ongaku no jidai to sono sakkyokuka wo musunde kudasai'
+    WHEN 4676 THEN 'Chuugokugo de hello wa? a) Ni hao b) Zaijian'
+    WHEN 4677 THEN 'Tango wo narabekaete kudasai: wo shi riben ren'
+    WHEN 4678 THEN 'Onsei wo kiite seichou wo tokutei shite kudasai'
+    WHEN 4679 THEN 'Xiexie wo tadashii seichou de hatsuon shite kudasai'
+    WHEN 4680 THEN '1 kara 5 made no chuugokusuuji wo musunde kudasai'
+END
+WHERE id_ejercicio BETWEEN 4671 AND 4680;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4681 THEN 'Hiratai mono no ryoushi wa? a) zhang b) ge c) ben'
+    WHEN 4682 THEN 'Tango wo narabekaete kudasai: wo xihuan he cha'
+    WHEN 4683 THEN 'Onsei wo kiite pinyin de iro wo kaite kudasai'
+    WHEN 4684 THEN 'Tsugi no bun wo hatsuon shite kudasai: Wo ai ni'
+    WHEN 4685 THEN 'Doubutsu to sono kanji wo musunde kudasai'
+    WHEN 4686 THEN 'Kako no joshi wa? a) le b) zhi c) zai d) guo'
+    WHEN 4687 THEN 'Tango wo narabekaete kudasai: zuotian wo qu le beijing'
+    WHEN 4688 THEN 'Kaiwa wo kiite nani wo tabeta ka memo shite kudasai'
+    WHEN 4689 THEN 'Pinyin no bun wo koe ni dashite yonde kudasai'
+    WHEN 4690 THEN 'Doushi to sono asupekuto joshi wo musunde kudasai'
+END
+WHERE id_ejercicio BETWEEN 4681 AND 4690;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4691 THEN 'Moshi ame ga futtara ikanai: a) ruguo xiayu b) suiran xiayu'
+    WHEN 4692 THEN 'Tango wo narabekaete kudasai: wo zhengzai xuexi zhongwen'
+    WHEN 4693 THEN 'Nyusu wo kiite omona topikku wo tokutei shite kudasai'
+    WHEN 4694 THEN 'Banri no Choujou ni tsuite no danraku wo hatsuon shite kudasai'
+    WHEN 4695 THEN 'Kanji to sono bushu wo musunde kudasai'
+    WHEN 4696 THEN 'gaoxing no dougigo wa? a) kuaile b) nan guo'
+    WHEN 4697 THEN 'Tango wo narabekaete kudasai: ta zhongyu chengong le'
+    WHEN 4698 THEN 'Touron wo kiite shuchou wo youyaku shite kudasai'
+    WHEN 4699 THEN 'Chuugoku no keizai ni tsuite no supiichi wo rokuon shite kudasai'
+    WHEN 4700 THEN 'Seigo to sono imi wo musunde kudasai'
+END
+WHERE id_ejercicio BETWEEN 4691 AND 4700;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4701 THEN 'Furansugo de hello wa? a) Bonjour b) Merci'
+    WHEN 4702 THEN 'Tango wo narabekaete kudasai: je m appelle Pierre'
+    WHEN 4703 THEN 'Onsei wo kiite furansugo no aisatsu wo erande kudasai'
+    WHEN 4704 THEN 'Bonjour wo tadashiku hatsuon shite kudasai'
+    WHEN 4705 THEN '1 kara 5 made no furansusuuji wo musunde kudasai'
+    WHEN 4706 THEN 'Josei meishi no kanshi wa? a) La b) Le c) Les'
+    WHEN 4707 THEN 'Tango wo narabekaete kudasai: elle mange une pomme'
+    WHEN 4708 THEN 'Onsei wo kiite furansugo de iro wo kaite kudasai'
+    WHEN 4709 THEN 'Tsugi no bun wo hatsuon shite kudasai: Je suis etudiant'
+    WHEN 4710 THEN 'Furansugo de kazoku no yobikata wo musunde kudasai'
+END
+WHERE id_ejercicio BETWEEN 4701 AND 4710;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4711 THEN 'manger no kako-kei wa? a) a mange b) mangeait c) mangera'
+    WHEN 4712 THEN 'Tango wo narabekaete kudasai: hier nous sommes alles au cinema'
+    WHEN 4713 THEN 'Kaiwa wo kiite doko ni itta ka kotaete kudasai'
+    WHEN 4714 THEN 'Koe ni dashite yonde kudasai: Nous avons visite Paris'
+    WHEN 4715 THEN 'Fukisoku doushi to sono kako-kei wo musunde kudasai'
+    WHEN 4716 THEN 'Moshi shitteitara kitadarou: a) serais venu b) suis venu'
+    WHEN 4717 THEN 'Tango wo narabekaete kudasai: ils travaillent ici depuis'
+    WHEN 4718 THEN 'Nyusu wo kiite omona mondai wo tokutei shite kudasai'
+    WHEN 4719 THEN 'Furansu no bunka ni tsuite no tekisuto wo hatsuon shite kudasai'
+    WHEN 4720 THEN 'Furansugo no ronri setsuzokushi wo musunde kudasai'
+END
+WHERE id_ejercicio BETWEEN 4711 AND 4720;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4721 THEN 'ephemere no dougigo wa? a) passager b) durable'
+    WHEN 4722 THEN 'Tango wo narabekaete kudasai: nonobstant les difficultes'
+    WHEN 4723 THEN 'Touron wo kiite shuchou wo youyaku shite kudasai'
+    WHEN 4724 THEN 'Furansu Kakumei ni tsuite no supiichi wo rokuon shite kudasai'
+    WHEN 4725 THEN 'Furansugo no kanyouku to sono imi wo musunde kudasai'
+    WHEN 4726 THEN 'Doitsugo de hello wa? a) Hallo b) Danke'
+    WHEN 4727 THEN 'Tango wo narabekaete kudasai: ich heisse Anna'
+    WHEN 4728 THEN 'Onsei wo kiite tadashii aisatsu wo erande kudasai'
+    WHEN 4729 THEN 'Hallo wo tadashiku hatsuon shite kudasai'
+    WHEN 4730 THEN '1 kara 5 made no doitsusuuji wo musunde kudasai'
+END
+WHERE id_ejercicio BETWEEN 4721 AND 4730;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4731 THEN 'Josei meishi no kanshi wa? a) die b) der c) das'
+    WHEN 4732 THEN 'Tango wo narabekaete kudasai: er isst einen Apfel'
+    WHEN 4733 THEN 'Onsei wo kiite doitsugo de iro wo kaite kudasai'
+    WHEN 4734 THEN 'Tsugi no bun wo hatsuon shite kudasai: Ich komme aus Japan'
+    WHEN 4735 THEN 'Doitsugo de kazoku no yobikata wo musunde kudasai'
+    WHEN 4736 THEN 'machen no kako-kei wa? a) gemacht b) mache c) machte'
+    WHEN 4737 THEN 'Tango wo narabekaete kudasai: bin ich gestern ins Kino'
+    WHEN 4738 THEN 'Kaiwa wo kiite doko ni itta ka kotaete kudasai'
+    WHEN 4739 THEN 'Koe ni dashite yonde kudasai: Ich habe ein Auto gekauft'
+    WHEN 4740 THEN 'Doushi to sono kako-bunshi wo musunde kudasai'
+END
+WHERE id_ejercicio BETWEEN 4731 AND 4740;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4741 THEN 'Moshi jikan ga attara: a) wenn ich Zeit hatte b) ich habe'
+    WHEN 4742 THEN 'Tango wo narabekaete kudasai: sie arbeiten hier schon'
+    WHEN 4743 THEN 'Nyusu wo kiite omona topikku wo tokutei shite kudasai'
+    WHEN 4744 THEN 'Berurin ni tsuite no tekisuto wo hatsuon shite kudasai'
+    WHEN 4745 THEN 'Doitsugo no zenchishi wo musunde kudasai'
+    WHEN 4746 THEN 'schnell no dougigo wa? a) rasch b) langsam'
+    WHEN 4747 THEN 'Tango wo narabekaete kudasai: obwohl es regnete sind wir'
+    WHEN 4748 THEN 'Touron wo kiite kekka wo youyaku shite kudasai'
+    WHEN 4749 THEN 'OU (Yoroppa Rengou) ni tsuite no supiichi wo rokuon shite kudasai'
+    WHEN 4750 THEN 'Doitsugo no kanyouku to sono imi wo musunde kudasai'
+END
+WHERE id_ejercicio BETWEEN 4741 AND 4750;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4751 THEN 'Porutogaru-go de hello wa? a) Ola b) Tchau c) Sim'
+    WHEN 4752 THEN 'Tango wo narabekaete kudasai: eu sou do Brasil'
+    WHEN 4753 THEN 'Onsei wo kiite tadashii aisatsu wo erande kudasai'
+    WHEN 4754 THEN 'Ola wo tadashiku hatsuon shite kudasai'
+    WHEN 4755 THEN '1 kara 5 made no suuji wo musunde kudasai'
+    WHEN 4756 THEN 'be doushi (ser) wa dore desu ka? a) ser b) estar'
+    WHEN 4757 THEN 'Tango wo narabekaete kudasai: ela come uma maca'
+    WHEN 4758 THEN 'Onsei wo kiite iro wo kaite kudasai'
+    WHEN 4759 THEN 'Tsugi no bun wo yonde kudasai: Eu gosto de cafe'
+    WHEN 4760 THEN 'Doubutsu to sono tango wo musunde kudasai'
+END
+WHERE id_ejercicio BETWEEN 4751 AND 4760;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4761 THEN 'falar no kako-kei wa? a) falei b) falava c) falarei'
+    WHEN 4762 THEN 'Tango wo narabekaete kudasai: ontem nos fomos ao cinema'
+    WHEN 4763 THEN 'Kaiwa wo kiite doko ni itta ka kotaete kudasai'
+    WHEN 4764 THEN 'Koe ni dashite yonde kudasai: Eu comprei um carro'
+    WHEN 4765 THEN 'Fukisoku doushi to sono kako-kei wo musunde kudasai'
+    WHEN 4766 THEN 'Moshi jikan ga attara: a) se eu tivesse tempo b) se eu tenho'
+    WHEN 4767 THEN 'Tango wo narabekaete kudasai: eles estao trabalhando aqui'
+    WHEN 4768 THEN 'Nyusu wo kiite omona mondai wo tokutei shite kudasai'
+    WHEN 4769 THEN 'Burajiru no bunka ni tsuite no tekisuto wo hatsuon shite kudasai'
+    WHEN 4770 THEN 'Kudoushi to sono teigi wo musunde kudasai'
+END
+WHERE id_ejercicio BETWEEN 4761 AND 4770;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4771 THEN 'rapido no dougigo wa? a) veloz b) devagar c) forte'
+    WHEN 4772 THEN 'Tango wo narabekaete kudasai: apesar das dificuldades'
+    WHEN 4773 THEN 'Touron wo kiite shuchou wo youyaku shite kudasai'
+    WHEN 4774 THEN 'Keizai ni tsuite no supiichi wo rokuon shite kudasai'
+    WHEN 4775 THEN 'Kanyouku to sono imi wo musunde kudasai'
+    WHEN 4776 THEN 'Itaria-go de hello wa? a) Ciao b) Arrivederci'
+    WHEN 4777 THEN 'Tango wo narabekaete kudasai: io mi chiamo Marco'
+    WHEN 4778 THEN 'Onsei wo kiite tadashii aisatsu wo erande kudasai'
+    WHEN 4779 THEN 'Ciao wo tadashiku hatsuon shite kudasai'
+    WHEN 4780 THEN '1 kara 5 made no suuji wo musunde kudasai'
+END
+WHERE id_ejercicio BETWEEN 4771 AND 4780;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4781 THEN 'be doushi (essere) wa dore desu ka? a) essere b) avere'
+    WHEN 4782 THEN 'Tango wo narabekaete kudasai: lui mangia una mela'
+    WHEN 4783 THEN 'Onsei wo kiite iro wo kaite kudasai'
+    WHEN 4784 THEN 'Tsugi no bun wo hatsuon shite kudasai: Sono felice'
+    WHEN 4785 THEN 'Kazoku no yobikata wo musunde kudasai'
+    WHEN 4786 THEN 'mangiare no kako-kei wa? a) ho mangiato b) mangiavo'
+    WHEN 4787 THEN 'Tango wo narabekaete kudasai: ieri siamo andati al mare'
+    WHEN 4788 THEN 'Kaiwa wo kiite nani wo tabeta ka kotaete kudasai'
+    WHEN 4789 THEN 'Koe ni dashite yonde kudasai: Ha comprato una casa'
+    WHEN 4790 THEN 'Doushi to sono kako-bunshi wo musunde kudasai'
+END
+WHERE id_ejercicio BETWEEN 4781 AND 4790;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4791 THEN 'Moshi ame ga futtara: a) se piovesse b) se piove'
+    WHEN 4792 THEN 'Tango wo narabekaete kudasai: stanno lavorando da ieri'
+    WHEN 4793 THEN 'Nyusu wo kiite toshi wo tokutei shite kudasai'
+    WHEN 4794 THEN 'Roma ni tsuite no tekisuto wo hatsuon shite kudasai'
+    WHEN 4795 THEN 'Itaria-go no setsuzokushi wo musunde kudasai'
+    WHEN 4796 THEN 'veloce no dougigo wa? a) rapido b) lento'
+    WHEN 4797 THEN 'Tango wo narabekaete kudasai: sebbene piovesse siamo usciti'
+    WHEN 4798 THEN 'Touron wo kiite shuchou wo youyaku shite kudasai'
+    WHEN 4799 THEN 'Itaria no ryouri ni tsuite no supiichi wo rokuon shite kudasai'
+    WHEN 4800 THEN 'Itaria-go no kanyouku to sono imi wo musunde kudasai'
+END
+WHERE id_ejercicio BETWEEN 4791 AND 4800;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4801 THEN 'Supein-go de hello wa? a) Hola b) Adios c) Si'
+    WHEN 4802 THEN 'Tango wo narabekaete kudasai: yo soy de Espana'
+    WHEN 4803 THEN 'Onsei wo kiite tadashii aisatsu wo erande kudasai'
+    WHEN 4804 THEN 'Hola wo tadashiku hatsuon shite kudasai'
+    WHEN 4805 THEN '1 kara 5 made no suuji wo musunde kudasai'
+    WHEN 4806 THEN 'be doushi (ser) wa dore desu ka? a) ser b) estar'
+    WHEN 4807 THEN 'Tango wo narabekaete kudasai: ella come una manzana'
+    WHEN 4808 THEN 'Onsei wo kiite iro wo kaite kudasai'
+    WHEN 4809 THEN 'Tsugi no bun wo hatsuon shite kudasai: Estoy feliz'
+    WHEN 4810 THEN 'Kazoku no yobikata wo musunde kudasai'
+END
+WHERE id_ejercicio BETWEEN 4801 AND 4810;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4811 THEN 'hablar no kako-kei wa? a) hable b) hablaba c) hablare'
+    WHEN 4812 THEN 'Tango wo narabekaete kudasai: ayer fuimos al cine'
+    WHEN 4813 THEN 'Kaiwa wo kiite doko ni itta ka kotaete kudasai'
+    WHEN 4814 THEN 'Koe ni dashite yonde kudasai: Compre un coche nuevo'
+    WHEN 4815 THEN 'Fukisoku doushi to sono kako-kei wo musunde kudasai'
+    WHEN 4816 THEN 'Moshi jikan ga attara: a) si tuviera tiempo b) si tengo'
+    WHEN 4817 THEN 'Tango wo narabekaete kudasai: han estado trabajando aqui'
+    WHEN 4818 THEN 'Nyusu wo kiite omona mondai wo tokutei shite kudasai'
+    WHEN 4819 THEN 'Supein no bunka ni tsuite no tekisuto wo hatsuon shite kudasai'
+    WHEN 4820 THEN 'Supein-go no setsuzokushi wo musunde kudasai'
+END
+WHERE id_ejercicio BETWEEN 4811 AND 4820;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4821 THEN 'rapido no dougigo wa? a) veloz b) lento c) fuerte'
+    WHEN 4822 THEN 'Tango wo narabekaete kudasai: a pesar de las dificultades'
+    WHEN 4823 THEN 'Touron wo kiite shuchou wo youyaku shite kudasai'
+    WHEN 4824 THEN 'Keizai ni tsuite no supiichi wo rokuon shite kudasai'
+    WHEN 4825 THEN 'Kanyouku to sono imi wo musunde kudasai'
+    WHEN 4826 THEN 'Wat is hello in het Engels? a) Hello b) Bye c) Yes'
+    WHEN 4827 THEN 'Zet de woorden in de juiste volgorde: is name my John'
+    WHEN 4828 THEN 'Luister naar de audio en kies de juiste begroeting'
+    WHEN 4829 THEN 'Spreek het woord Hello correct uit'
+    WHEN 4830 THEN 'Verbind de cijfers 1 tot 5 met de Engelse woorden'
+END
+WHERE id_ejercicio BETWEEN 4821 AND 4830;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4831 THEN 'Wat is het werkwoord zijn? a) to be b) to play c) to run'
+    WHEN 4832 THEN 'Zet in de juiste volgorde: playing am I now'
+    WHEN 4833 THEN 'Luister en schrijf de kleur op in het Engels'
+    WHEN 4834 THEN 'Lees de volgende zin voor: I am happy'
+    WHEN 4835 THEN 'Verbind de dieren met hun Engelse namen'
+    WHEN 4836 THEN 'Wat is de verleden tijd van go? a) went b) goed c) gone'
+    WHEN 4837 THEN 'Zet in de juiste volgorde: yesterday to school went she'
+    WHEN 4838 THEN 'Luister naar het gesprek en beantwoord de vraag'
+    WHEN 4839 THEN 'Lees hardop: She bought a new house'
+    WHEN 4840 THEN 'Verbind onregelmatige werkwoorden met hun verleden tijd'
+END
+WHERE id_ejercicio BETWEEN 4831 AND 4840;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4841 THEN 'Als het zou regenen: a) will stay b) would stay'
+    WHEN 4842 THEN 'Zet in de juiste volgorde: have waiting been they'
+    WHEN 4843 THEN 'Luister naar het nieuws en identificeer het probleem'
+    WHEN 4844 THEN 'Spreek de alinea over klimaatverandering uit'
+    WHEN 4845 THEN 'Verbind de phrasal verbs met hun betekenis'
+    WHEN 4846 THEN 'Wat is een synoniem voor fast? a) quick b) slow'
+    WHEN 4847 THEN 'Zet in de juiste volgorde: nevertheless she persisted'
+    WHEN 4848 THEN 'Luister naar het debat en vat samen'
+    WHEN 4849 THEN 'Neem een korte toespraak over de economie op'
+    WHEN 4850 THEN 'Verbind de Engelse idiomen met hun betekenis'
+END
+WHERE id_ejercicio BETWEEN 4841 AND 4850;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4851 THEN 'Wat is hallo in het Duits? a) Hallo b) Tschuss'
+    WHEN 4852 THEN 'Zet de woorden in de juiste volgorde: heisse ich Anna'
+    WHEN 4853 THEN 'Luister naar de audio en kies de juiste begroeting'
+    WHEN 4854 THEN 'Spreek het woord Hallo correct uit'
+    WHEN 4855 THEN 'Verbind de cijfers 1 tot 5 met de Duitse woorden'
+    WHEN 4856 THEN 'Wat is het lidwoord voor een vrouwelijk woord? a) die b) der c) das'
+    WHEN 4857 THEN 'Zet in de juiste volgorde: isst er einen Apfel'
+    WHEN 4858 THEN 'Luister en schrijf de kleur op in het Duits'
+    WHEN 4859 THEN 'Lees de volgende zin voor: Ich komme aus den Niederlanden'
+    WHEN 4860 THEN 'Verbind de familieleden met hun Duitse namen'
+END
+WHERE id_ejercicio BETWEEN 4851 AND 4860;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4861 THEN 'Wat is de verleden tijd van machen? a) gemacht b) machte'
+    WHEN 4862 THEN 'Zet in de juiste volgorde: bin ich gestern ins Kino gegangen'
+    WHEN 4863 THEN 'Luister naar het gesprek en noteer de bestemming'
+    WHEN 4864 THEN 'Lees hardop: Ich habe ein Auto gekauft'
+    WHEN 4865 THEN 'Verbind werkwoorden met hun voltooid deelwoord'
+    WHEN 4866 THEN 'Als ik tijd had: a) wenn ich Zeit hatte b) ich habe'
+    WHEN 4867 THEN 'Zet in de juiste volgorde: arbeiten sie hier schon lange'
+    WHEN 4868 THEN 'Luister naar het Duitse nieuws en vat samen'
+    WHEN 4869 THEN 'Spreek de tekst over Berlijn hardop uit'
+    WHEN 4870 THEN 'Verbind de voorzetsels met hun naamvallen'
+END
+WHERE id_ejercicio BETWEEN 4861 AND 4870;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4871 THEN 'Wat is een synoniem voor schnell? a) rasch b) langsam'
+    WHEN 4872 THEN 'Zet in de juiste volgorde: obwohl es regnete sind wir'
+    WHEN 4873 THEN 'Luister naar de discussie en noteer argumenten'
+    WHEN 4874 THEN 'Neem een toespraak over de EU op in het Duits'
+    WHEN 4875 THEN 'Verbind Duitse uitdrukkingen met hun betekenis'
+    WHEN 4876 THEN 'Wat is hallo in het Frans? a) Bonjour b) Au revoir'
+    WHEN 4877 THEN 'Zet de woorden in de juiste volgorde: m appelle je Pierre'
+    WHEN 4878 THEN 'Luister naar de audio en kies de juiste begroeting'
+    WHEN 4879 THEN 'Spreek het woord Bonjour correct uit'
+    WHEN 4880 THEN 'Verbind de cijfers 1 tot 5 met de Franse woorden'
+END
+WHERE id_ejercicio BETWEEN 4871 AND 4880;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4881 THEN 'Wat is het lidwoord voor een vrouwelijk woord? a) La b) Le c) Les'
+    WHEN 4882 THEN 'Zet in de juiste volgorde: mange elle une pomme'
+    WHEN 4883 THEN 'Luister en schrijf de kleur op in het Frans'
+    WHEN 4884 THEN 'Lees de volgende zin voor: Je suis etudiant'
+    WHEN 4885 THEN 'Verbind de familieleden met hun Franse namen'
+    WHEN 4886 THEN 'Wat is de passe compose van manger? a) a mange b) mangeait'
+    WHEN 4887 THEN 'Zet in de juiste volgorde: hier sommes nous alles'
+    WHEN 4888 THEN 'Luister naar het gesprek en beantwoord de vraag'
+    WHEN 4889 THEN 'Lees hardop: Nous avons visite Paris'
+    WHEN 4890 THEN 'Verbind onregelmatige werkwoorden met hun passe compose'
+END
+WHERE id_ejercicio BETWEEN 4881 AND 4890;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4891 THEN 'Als ik het had geweten: a) serais venu b) suis venu'
+    WHEN 4892 THEN 'Zet in de juiste volgorde: travaillent ils ici depuis'
+    WHEN 4893 THEN 'Luister naar het Franse nieuws en identificeer de locatie'
+    WHEN 4894 THEN 'Spreek de alinea over de Franse cultuur uit'
+    WHEN 4895 THEN 'Verbind de Franse voegwoorden met hun betekenis'
+    WHEN 4896 THEN 'Wat is een synoniem voor ephemere? a) passager b) durable'
+    WHEN 4897 THEN 'Zet in de juiste volgorde: nonobstant les difficultes'
+    WHEN 4898 THEN 'Luister naar het Franse debat en vat samen'
+    WHEN 4899 THEN 'Neem een toespraak over de Franse Revolutie op'
+    WHEN 4900 THEN 'Verbind Franse idiomen met hun betekenis'
+END
+WHERE id_ejercicio BETWEEN 4891 AND 4900;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4901 THEN 'Wat is hallo in het Spaans? a) Hola b) Adios'
+    WHEN 4902 THEN 'Zet de woorden in de juiste volgorde: soy yo de Espana'
+    WHEN 4903 THEN 'Luister naar de audio en kies de juiste begroeting'
+    WHEN 4904 THEN 'Spreek het woord Hola correct uit'
+    WHEN 4905 THEN 'Verbind de cijfers 1 tot 5 met de Spaanse woorden'
+    WHEN 4906 THEN 'Wat is het werkwoord zijn? a) ser b) tener c) hacer'
+    WHEN 4907 THEN 'Zet in de juiste volgorde: come ella una manzana'
+    WHEN 4908 THEN 'Luister en schrijf de kleur op in het Spaans'
+    WHEN 4909 THEN 'Lees de volgende zin voor: Estoy feliz'
+    WHEN 4910 THEN 'Verbind de dieren met hun Spaanse namen'
+END
+WHERE id_ejercicio BETWEEN 4901 AND 4910;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4911 THEN 'Wat is de verleden tijd van hablar? a) hable b) hablaba'
+    WHEN 4912 THEN 'Zet in de juiste volgorde: fuimos ayer al cine'
+    WHEN 4913 THEN 'Luister naar het gesprek en noteer de bestemming'
+    WHEN 4914 THEN 'Lees hardop: Compre un coche nuevo'
+    WHEN 4915 THEN 'Verbind werkwoorden met hun verleden tijd in het Spaans'
+    WHEN 4916 THEN 'Als ik tijd had: a) si tuviera tiempo b) si tengo'
+    WHEN 4917 THEN 'Zet in de juiste volgorde: han estado trabajando aqui'
+    WHEN 4918 THEN 'Luister naar het nieuws en noteer het hoofdonderwerp'
+    WHEN 4919 THEN 'Spreek de tekst over Spanje hardop uit'
+    WHEN 4920 THEN 'Verbind de voegwoorden met hun betekenis'
+END
+WHERE id_ejercicio BETWEEN 4911 AND 4920;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4921 THEN 'Wat is een synoniem voor rapido? a) veloz b) lento'
+    WHEN 4922 THEN 'Zet in de juiste volgorde: a pesar de las dificultades'
+    WHEN 4923 THEN 'Luister naar de discussie en vat de standpunten samen'
+    WHEN 4924 THEN 'Neem een Spaanse toespraak over economie op'
+    WHEN 4925 THEN 'Verbind Spaanse uitdrukkingen met hun betekenis'
+    WHEN 4926 THEN 'Hoeveel vakjes heeft een schaakbord? a) 64 b) 32 c) 100'
+    WHEN 4927 THEN 'Zet in de juiste volgorde: speler elke heeft pionnen acht'
+    WHEN 4928 THEN 'Luister naar de audio en noem het schaakstuk'
+    WHEN 4929 THEN 'Zeg hardop: Schaakmat'
+    WHEN 4930 THEN 'Verbind het schaakstuk met zijn waarde'
+END
+WHERE id_ejercicio BETWEEN 4921 AND 4930;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4931 THEN 'Hoe beweegt een paard? a) L-vorm b) diagonaal'
+    WHEN 4932 THEN 'Zet in de juiste volgorde: de loper bestuurt de diagonalen'
+    WHEN 4933 THEN 'Luister naar de zet en voer deze uit op het bord'
+    WHEN 4934 THEN 'Spreek de volgende zet uit: Paard naar f3'
+    WHEN 4935 THEN 'Verbind basistermen met hun uitleg'
+    WHEN 4936 THEN 'Wat is een penning? a) stuk kan niet bewegen b) schaak'
+    WHEN 4937 THEN 'Zet in de juiste volgorde: offer een toren om de lijn te openen'
+    WHEN 4938 THEN 'Luister naar de analyse en vind de dreiging'
+    WHEN 4939 THEN 'Lees de hoofdvariant hardop voor'
+    WHEN 4940 THEN 'Verbind tactische motieven met voorbeelden'
+END
+WHERE id_ejercicio BETWEEN 4931 AND 4940;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4941 THEN 'Wat is oppositie in het eindspel? a) koningen tegenover elkaar b) mat'
+    WHEN 4942 THEN 'Zet in de juiste volgorde: een geisoleerde pion is een zwakte'
+    WHEN 4943 THEN 'Luister naar de les en noteer de sleutelzet'
+    WHEN 4944 THEN 'Leg het concept profylaxe hardop uit'
+    WHEN 4945 THEN 'Verbind de opening met de juiste ECO-code'
+    WHEN 4946 THEN 'Wat kenmerkt de Siciliaanse verdediging? a) c5 b) e5 c) d5'
+    WHEN 4947 THEN 'Zet in de juiste volgorde: dynamische compensatie voor materiaal'
+    WHEN 4948 THEN 'Volg de blinddoek-analyse en vind het mat'
+    WHEN 4949 THEN 'Analyseer Kasparov tegen Topalov hardop'
+    WHEN 4950 THEN 'Verbind pionnenstructuren met het juiste plan'
+END
+WHERE id_ejercicio BETWEEN 4941 AND 4950;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4951 THEN 'Wat is hallo in het Italiaans? a) Ciao b) Arrivederci'
+    WHEN 4952 THEN 'Zet de woorden in de juiste volgorde: mi chiamo io Marco'
+    WHEN 4953 THEN 'Luister naar de audio en kies de juiste begroeting'
+    WHEN 4954 THEN 'Spreek het woord Ciao correct uit'
+    WHEN 4955 THEN 'Verbind de cijfers 1 tot 5 met de Italiaanse woorden'
+    WHEN 4956 THEN 'Wat is het werkwoord zijn? a) essere b) avere'
+    WHEN 4957 THEN 'Zet in de juiste volgorde: mangia lui una mela'
+    WHEN 4958 THEN 'Luister en schrijf de kleur op in het Italiaans'
+    WHEN 4959 THEN 'Lees de volgende zin voor: Sono felice'
+    WHEN 4960 THEN 'Verbind de familieleden met hun Italiaanse namen'
+END
+WHERE id_ejercicio BETWEEN 4951 AND 4960;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4961 THEN 'Wat is de verleden tijd van mangiare? a) ho mangiato b) mangiavo'
+    WHEN 4962 THEN 'Zet in de juiste volgorde: ieri siamo andati al mare'
+    WHEN 4963 THEN 'Luister naar het gesprek en beantwoord de vraag'
+    WHEN 4964 THEN 'Lees hardop: Ha comprato una casa'
+    WHEN 4965 THEN 'Verbind werkwoorden met hun voltooid deelwoord'
+    WHEN 4966 THEN 'Als het zou regenen: a) se piovesse b) se piove'
+    WHEN 4967 THEN 'Zet in de juiste volgorde: lavorano qui da ieri'
+    WHEN 4968 THEN 'Luister naar het nieuws en noteer de stad'
+    WHEN 4969 THEN 'Spreek de alinea over Rome hardop uit'
+    WHEN 4970 THEN 'Verbind de Italiaanse voegwoorden met hun betekenis'
+END
+WHERE id_ejercicio BETWEEN 4961 AND 4970;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4971 THEN 'Wat is een synoniem voor veloce? a) rapido b) lento'
+    WHEN 4972 THEN 'Zet in de juiste volgorde: sebbene piovesse siamo usciti'
+    WHEN 4973 THEN 'Luister naar de discussie en vat samen'
+    WHEN 4974 THEN 'Neem een toespraak over Italiaans eten op'
+    WHEN 4975 THEN 'Verbind Italiaanse idiomen met hun betekenis'
+    WHEN 4976 THEN 'Wat is hallo in het Portugees? a) Ola b) Tchau'
+    WHEN 4977 THEN 'Zet de woorden in de juiste volgorde: do sou eu Brasil'
+    WHEN 4978 THEN 'Luister naar de audio en kies de juiste begroeting'
+    WHEN 4979 THEN 'Spreek het woord Ola correct uit'
+    WHEN 4980 THEN 'Verbind de cijfers 1 tot 5 met de Portugese woorden'
+END
+WHERE id_ejercicio BETWEEN 4971 AND 4980;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4981 THEN 'Wat is het werkwoord zijn? a) ser b) falar'
+    WHEN 4982 THEN 'Zet in de juiste volgorde: come ela uma maca'
+    WHEN 4983 THEN 'Luister en schrijf de kleur op in het Portugees'
+    WHEN 4984 THEN 'Lees de volgende zin voor: Eu gosto de cafe'
+    WHEN 4985 THEN 'Verbind de dieren met hun Portugese namen'
+    WHEN 4986 THEN 'Wat is de verleden tijd van falar? a) falei b) falava'
+    WHEN 4987 THEN 'Zet in de juiste volgorde: ontem fomos nos ao cinema'
+    WHEN 4988 THEN 'Luister naar het gesprek en noteer de bestemming'
+    WHEN 4989 THEN 'Lees hardop: Eu comprei um carro'
+    WHEN 4990 THEN 'Verbind werkwoorden met hun Portugese verleden tijd'
+END
+WHERE id_ejercicio BETWEEN 4981 AND 4990;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 4991 THEN 'Als ik tijd had: a) se eu tivesse tempo b) se eu tenho'
+    WHEN 4992 THEN 'Zet in de juiste volgorde: estao trabalhando eles aqui'
+    WHEN 4993 THEN 'Luister naar het nieuws en noteer het onderwerp'
+    WHEN 4994 THEN 'Spreek de tekst over Braziliaanse cultuur hardop uit'
+    WHEN 4995 THEN 'Verbind de phrasal verbs met hun betekenis'
+    WHEN 4996 THEN 'Wat is een synoniem voor rapido? a) veloz b) devagar'
+    WHEN 4997 THEN 'Zet in de juiste volgorde: apesar das dificuldades'
+    WHEN 4998 THEN 'Luister naar het debat en vat de standpunten samen'
+    WHEN 4999 THEN 'Neem een Portugese toespraak over economie op'
+    WHEN 5000 THEN 'Verbind Portugese uitdrukkingen met hun betekenis'
+END
+WHERE id_ejercicio BETWEEN 4991 AND 5000;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5001 THEN 'Wat is hallo in het Chinees? a) Ni hao b) Zaijian'
+    WHEN 5002 THEN 'Zet de woorden in de juiste volgorde: wo shi helan ren'
+    WHEN 5003 THEN 'Luister naar de audio en identificeer de toon'
+    WHEN 5004 THEN 'Spreek Xiexie uit met de juiste toon'
+    WHEN 5005 THEN 'Verbind de cijfers 1 tot 5 met de Chinese woorden'
+    WHEN 5006 THEN 'Wat is het maatwoord voor platte objecten? a) zhang b) ge'
+    WHEN 5007 THEN 'Zet in de juiste volgorde: wo xihuan he cha'
+    WHEN 5008 THEN 'Luister en schrijf de kleur op in pinyin'
+    WHEN 5009 THEN 'Lees de volgende zin voor: Wo ai ni'
+    WHEN 5010 THEN 'Verbind de dieren met hun Chinese karakters'
+END
+WHERE id_ejercicio BETWEEN 5001 AND 5010;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5011 THEN 'Wat geeft de verleden tijd aan? a) le b) zhi c) zai'
+    WHEN 5012 THEN 'Zet in de juiste volgorde: zuotian wo qu le beijing'
+    WHEN 5013 THEN 'Luister naar het gesprek en noteer wat er is gegeten'
+    WHEN 5014 THEN 'Lees de pinyin zin hardop voor'
+    WHEN 5015 THEN 'Verbind werkwoorden met hun partikels'
+    WHEN 5016 THEN 'Als het regent ga ik niet: a) ruguo xiayu b) suiran xiayu'
+    WHEN 5017 THEN 'Zet in de juiste volgorde: wo zhengzai xuexi zhongwen'
+    WHEN 5018 THEN 'Luister naar het nieuws en identificeer het onderwerp'
+    WHEN 5019 THEN 'Spreek de alinea over de Chinese muur hardop uit'
+    WHEN 5020 THEN 'Verbind de karakters met hun radicalen'
+END
+WHERE id_ejercicio BETWEEN 5011 AND 5020;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5021 THEN 'Wat is een synoniem voor gaoxing? a) kuaile b) nan guo'
+    WHEN 5022 THEN 'Zet in de juiste volgorde: ta zhongyu chengong le'
+    WHEN 5023 THEN 'Luister naar het debat en vat samen'
+    WHEN 5024 THEN 'Neem een toespraak over de Chinese economie op'
+    WHEN 5025 THEN 'Verbind de Chinese idiomen (chengyu) met hun betekenis'
+    WHEN 5026 THEN 'Wat is hallo in het Japans? a) Konnichiwa b) Sayounara'
+    WHEN 5027 THEN 'Zet de woorden in de juiste volgorde: watashi wa gakusei desu'
+    WHEN 5028 THEN 'Luister naar de audio en kies de juiste begroeting'
+    WHEN 5029 THEN 'Spreek het woord Konnichiwa correct uit'
+    WHEN 5030 THEN 'Verbind de cijfers 1 tot 5 met de Japanse woorden'
+END
+WHERE id_ejercicio BETWEEN 5021 AND 5030;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5031 THEN 'Wat is het onderwerp partikel? a) wa/ga b) wo c) ni'
+    WHEN 5032 THEN 'Zet in de juiste volgorde: ringo wo tabemasu'
+    WHEN 5033 THEN 'Luister en schrijf het woord in romaji op'
+    WHEN 5034 THEN 'Lees de volgende zin voor: Nihon ni ikitai desu'
+    WHEN 5035 THEN 'Verbind de familieleden met hun Japanse namen'
+    WHEN 5036 THEN 'Wat is de verleden tijd van suru? a) shimashita b) shimasu'
+    WHEN 5037 THEN 'Zet in de juiste volgorde: kinou tomodachi ni aimashita'
+    WHEN 5038 THEN 'Luister naar het gesprek en beantwoord de vraag'
+    WHEN 5039 THEN 'Lees hardop: Atarashii kuruma wo kaimashita'
+    WHEN 5040 THEN 'Verbind de werkwoorden met hun te-vorm'
+END
+WHERE id_ejercicio BETWEEN 5031 AND 5040;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5041 THEN 'Als ik tijd had: a) jikan ga attara b) jikan ga aru'
+    WHEN 5042 THEN 'Zet in de juiste volgorde: ima ongaku wo kiite imasu'
+    WHEN 5043 THEN 'Luister naar het Japanse nieuws en vat samen'
+    WHEN 5044 THEN 'Spreek de alinea over Tokio hardop uit'
+    WHEN 5045 THEN 'Verbind de voegwoorden met hun betekenis'
+    WHEN 5046 THEN 'Wat is een synoniem voor hayai? a) shinsoku b) osoi'
+    WHEN 5047 THEN 'Zet in de juiste volgorde: ame ga futte mo ikimasu'
+    WHEN 5048 THEN 'Luister naar het drama en noteer de emoties'
+    WHEN 5049 THEN 'Neem een toespraak over Japanse cultuur op'
+    WHEN 5050 THEN 'Verbind Japanse spreekwoorden met hun betekenis'
+END
+WHERE id_ejercicio BETWEEN 5041 AND 5050;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5051 THEN 'Wat is hallo in het Koreaans? a) Annyeonghaseyo b) Ne'
+    WHEN 5052 THEN 'Zet de woorden in de juiste volgorde: naneun saram imnida'
+    WHEN 5053 THEN 'Luister naar de audio en kies de juiste klinker'
+    WHEN 5054 THEN 'Spreek Annyeonghaseyo correct uit'
+    WHEN 5055 THEN 'Verbind de cijfers 1 tot 5 met de Koreaanse woorden'
+    WHEN 5056 THEN 'Wat is het onderwerp partikel? a) i/ga b) eun/neun'
+    WHEN 5057 THEN 'Zet in de juiste volgorde: jeoneun bap eul meogeoyo'
+    WHEN 5058 THEN 'Luister en schrijf het woord in romaji op'
+    WHEN 5059 THEN 'Lees de volgende zin voor: Hangugoeol baewoyo'
+    WHEN 5060 THEN 'Verbind de dieren met hun Koreaanse namen'
+END
+WHERE id_ejercicio BETWEEN 5051 AND 5060;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5061 THEN 'Wat is de verleden tijd van hada? a) haesseoyo b) haeyo'
+    WHEN 5062 THEN 'Zet in de juiste volgorde: eojeyo hakgyo e gasseoyo'
+    WHEN 5063 THEN 'Luister naar het gesprek en noteer de bestemming'
+    WHEN 5064 THEN 'Lees hardop: Sae cha reul sasseoyo'
+    WHEN 5065 THEN 'Verbind de werkwoorden met hun stam'
+    WHEN 5066 THEN 'Als ik tijd had: a) sigan isseumyeon b) sigan isseodo'
+    WHEN 5067 THEN 'Zet in de juiste volgorde: jigeum eumag eul deutgo isseoyo'
+    WHEN 5068 THEN 'Luister naar het nieuws en identificeer de stad'
+    WHEN 5069 THEN 'Spreek de alinea over Seoul hardop uit'
+    WHEN 5070 THEN 'Verbind de Koreaanse voegwoorden met hun betekenis'
+END
+WHERE id_ejercicio BETWEEN 5061 AND 5070;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5071 THEN 'Wat is een synoniem voor ppareuda? a) neulida b) bappeuda'
+    WHEN 5072 THEN 'Zet in de juiste volgorde: biga wado gohyang e gamnida'
+    WHEN 5073 THEN 'Luister naar het K-drama en noteer de emoties'
+    WHEN 5074 THEN 'Neem een toespraak over Koreaans eten op'
+    WHEN 5075 THEN 'Verbind de Koreaanse spreekwoorden met hun betekenis'
+    WHEN 5076 THEN 'Hoeveel is 5 plus 3? a) 8 b) 7 c) 9 d) 6'
+    WHEN 5077 THEN 'Zet in de juiste volgorde: optellen heeft twee delen'
+    WHEN 5078 THEN 'Luister en schrijf het getal op'
+    WHEN 5079 THEN 'Lees deze vergelijking voor: 10 min 4'
+    WHEN 5080 THEN 'Verbind het wiskundige symbool met de naam'
+END
+WHERE id_ejercicio BETWEEN 5071 AND 5080;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5081 THEN 'Hoeveel is 8 keer 7? a) 56 b) 54 c) 64'
+    WHEN 5082 THEN 'Zet in de juiste volgorde: de volgorde van factoren verandert het resultaat niet'
+    WHEN 5083 THEN 'Luister naar de breuk en schrijf deze op'
+    WHEN 5084 THEN 'Lees deze uitdrukking voor: drie kwart'
+    WHEN 5085 THEN 'Verbind de geometrische figuur met het aantal zijden'
+    WHEN 5086 THEN 'Los de vergelijking op: 2x = 10. a) x=5 b) x=2'
+    WHEN 5087 THEN 'Zet in de juiste volgorde: om een vergelijking op te lossen isoleer je de variabele'
+    WHEN 5088 THEN 'Luister naar het probleem en noteer de vergelijking'
+    WHEN 5089 THEN 'Lees hardop: x in het kwadraat plus y in het kwadraat'
+    WHEN 5090 THEN 'Verbind de oppervlakteformule met de figuur'
+END
+WHERE id_ejercicio BETWEEN 5081 AND 5090;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5091 THEN 'De afgeleide van x in het kwadraat is: a) 2x b) x c) 2'
+    WHEN 5092 THEN 'Zet in de juiste volgorde: de afgeleide is de helling van de raaklijn'
+    WHEN 5093 THEN 'Luister naar de limiet en identificeer de trend'
+    WHEN 5094 THEN 'Leg de stelling van Pythagoras hardop uit'
+    WHEN 5095 THEN 'Verbind de trigonometrische functie met de inverse'
+    WHEN 5096 THEN 'De integraal van e tot de macht x: a) e^x + C b) x c) ln(x)'
+    WHEN 5097 THEN 'Zet in de juiste volgorde: partieel integreren is een techniek'
+    WHEN 5098 THEN 'Luister naar de functie-analyse en noteer de extremen'
+    WHEN 5099 THEN 'Bewijs hardop een fundamentele algebraische limiet'
+    WHEN 5100 THEN 'Verbind de differentiaalvergelijking met het type'
+END
+WHERE id_ejercicio BETWEEN 5091 AND 5100;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5101 THEN 'Hoeveel lijnen heeft een notenbalk? a) 5 b) 4 c) 6'
+    WHEN 5102 THEN 'Zet in de juiste volgorde: er zijn zeven basisnoten'
+    WHEN 5103 THEN 'Luister naar de audio en bepaal de toonhoogte'
+    WHEN 5104 THEN 'Zing de centrale C'
+    WHEN 5105 THEN 'Verbind de noot met zijn duur'
+    WHEN 5106 THEN 'Welke sleutel wordt gebruikt voor hoge tonen? a) G-sleutel b) F-sleutel'
+    WHEN 5107 THEN 'Zet in de juiste volgorde: een kruis verhoogt de noot met een halve toon'
+    WHEN 5108 THEN 'Luister naar de melodie en vul de ontbrekende noten in'
+    WHEN 5109 THEN 'Zing de C-majeur toonladder'
+    WHEN 5110 THEN 'Verbind het voorteken met het effect'
+END
+WHERE id_ejercicio BETWEEN 5101 AND 5110;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5111 THEN 'De afstand tussen C en E is een: a) grote terts b) reine kwint'
+    WHEN 5112 THEN 'Zet in de juiste volgorde: een akkoord bestaat uit grondtoon terts en kwint'
+    WHEN 5113 THEN 'Luister naar het akkoord en bepaal of het majeur of mineur is'
+    WHEN 5114 THEN 'Zing de G-majeur arpeggio'
+    WHEN 5115 THEN 'Verbind de trappen van de toonladder met de technische namen'
+    WHEN 5116 THEN 'De parallelle mineurtoonladder van C-majeur is: a) A-mineur b) E-mineur'
+    WHEN 5117 THEN 'Zet in de juiste volgorde: modulatie is de verandering van toonsoort'
+    WHEN 5118 THEN 'Luister naar de harmonische progressie en schrijf de trappen op'
+    WHEN 5119 THEN 'Klap het asymmetrische ritme correct'
+    WHEN 5120 THEN 'Verbind de kerktoonladder met de juiste structuur'
+END
+WHERE id_ejercicio BETWEEN 5111 AND 5120;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5121 THEN 'Wat is contrapunt? a) onafhankelijke stemmen b) ritme'
+    WHEN 5122 THEN 'Zet in de juiste volgorde: de fuga is een complexe polyfone vorm'
+    WHEN 5123 THEN 'Luister naar het symfonische stuk en identificeer de vorm'
+    WHEN 5124 THEN 'Leg het twaalftoonsstelsel hardop uit'
+    WHEN 5125 THEN 'Verbind de muzikale tijdperken met hun componisten'
+    WHEN 5126 THEN 'Jak jest hello po angielsku? a) Hello b) Bye c) Yes'
+    WHEN 5127 THEN 'Uloz slowa w poprawnej kolejnosci: is name my John'
+    WHEN 5128 THEN 'Posluchaj nagrania i wybierz odpowiednie powitanie'
+    WHEN 5129 THEN 'Wymow slowo Hello poprawnie'
+    WHEN 5130 THEN 'Polacz cyfry od 1 do 5 z angielskimi slowami'
+END
+WHERE id_ejercicio BETWEEN 5121 AND 5130;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5131 THEN 'Ktory to czasownik byc? a) to be b) to play c) to run'
+    WHEN 5132 THEN 'Uloz w kolejnosci: playing am I now'
+    WHEN 5133 THEN 'Posluchaj i napisz kolor po angielsku'
+    WHEN 5134 THEN 'Przeczytaj na glos zdanie: I am happy'
+    WHEN 5135 THEN 'Polacz zwierzeta z ich angielskimi nazwami'
+    WHEN 5136 THEN 'Jaki jest czas przeszly od go? a) went b) goed c) gone'
+    WHEN 5137 THEN 'Uloz w kolejnosci: yesterday to school went she'
+    WHEN 5138 THEN 'Posluchaj dialogu i odpowiedz na pytanie'
+    WHEN 5139 THEN 'Przeczytaj na glos: She bought a new house'
+    WHEN 5140 THEN 'Polacz czasowniki nieregularne z ich czasem przeszlym'
+END
+WHERE id_ejercicio BETWEEN 5131 AND 5140;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5141 THEN 'Gdyby padalo: a) will stay b) would stay'
+    WHEN 5142 THEN 'Uloz w kolejnosci: have waiting been they'
+    WHEN 5143 THEN 'Posluchaj wiadomosci i zidentyfikuj problem'
+    WHEN 5144 THEN 'Wymow tekst o zmianach klimatu'
+    WHEN 5145 THEN 'Polacz czasowniki zlozone z ich znaczeniem'
+    WHEN 5146 THEN 'Synonim slowa fast to? a) quick b) slow'
+    WHEN 5147 THEN 'Uloz w kolejnosci: nevertheless she persisted'
+    WHEN 5148 THEN 'Posluchaj debaty i podsumuj'
+    WHEN 5149 THEN 'Nagraj krotka przemowe o gospodarce'
+    WHEN 5150 THEN 'Polacz angielskie idiomy z ich znaczeniem'
+END
+WHERE id_ejercicio BETWEEN 5141 AND 5150;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5151 THEN 'Jak jest dzien dobry po francusku? a) Bonjour b) Merci'
+    WHEN 5152 THEN 'Uloz slowa w poprawnej kolejnosci: m appelle je Pierre'
+    WHEN 5153 THEN 'Posluchaj nagrania i wybierz odpowiednie powitanie'
+    WHEN 5154 THEN 'Wymow slowo Bonjour poprawnie'
+    WHEN 5155 THEN 'Polacz cyfry od 1 do 5 z francuskimi slowami'
+    WHEN 5156 THEN 'Jaki jest przedimek zenski? a) La b) Le c) Les'
+    WHEN 5157 THEN 'Uloz w kolejnosci: mange elle une pomme'
+    WHEN 5158 THEN 'Posluchaj i napisz kolor po francusku'
+    WHEN 5159 THEN 'Przeczytaj zdanie na glos: Je suis etudiant'
+    WHEN 5160 THEN 'Polacz czlonkow rodziny z ich francuskimi nazwami'
+END
+WHERE id_ejercicio BETWEEN 5151 AND 5160;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5161 THEN 'Czas przeszly od manger to? a) a mange b) mangeait'
+    WHEN 5162 THEN 'Uloz w kolejnosci: hier sommes nous alles'
+    WHEN 5163 THEN 'Posluchaj dialogu i odpowiedz na pytanie'
+    WHEN 5164 THEN 'Przeczytaj na glos: Nous avons visite Paris'
+    WHEN 5165 THEN 'Polacz czasowniki nieregularne z ich czasem passe compose'
+    WHEN 5166 THEN 'Gdybym wiedzial przyszedlbym: a) serais venu b) suis venu'
+    WHEN 5167 THEN 'Uloz w kolejnosci: travaillent ils ici depuis'
+    WHEN 5168 THEN 'Posluchaj wiadomosci i zidentyfikuj miejsce'
+    WHEN 5169 THEN 'Wymow tekst o kulturze Francji'
+    WHEN 5170 THEN 'Polacz francuskie spojniki z ich znaczeniem'
+END
+WHERE id_ejercicio BETWEEN 5161 AND 5170;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5171 THEN 'Synonim slowa ephemere to? a) passager b) durable'
+    WHEN 5172 THEN 'Uloz w kolejnosci: nonobstant les difficultes'
+    WHEN 5173 THEN 'Posluchaj debaty we Francji i podsumuj'
+    WHEN 5174 THEN 'Nagraj przemowe o Rewolucji Francuskiej'
+    WHEN 5175 THEN 'Polacz francuskie idiomy z ich znaczeniem'
+    WHEN 5176 THEN 'Jak jest dzien dobry po chinsku? a) Ni hao b) Zaijian'
+    WHEN 5177 THEN 'Uloz slowa w poprawnej kolejnosci: wo shi polan ren'
+    WHEN 5178 THEN 'Posluchaj nagrania i zidentyfikuj ton'
+    WHEN 5179 THEN 'Wymow Xiexie z poprawnym tonem'
+    WHEN 5180 THEN 'Polacz cyfry od 1 do 5 z chinskimi slowami'
+END
+WHERE id_ejercicio BETWEEN 5171 AND 5180;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5181 THEN 'Klasyfikator dla plaskich przedmiotow to? a) zhang b) ge'
+    WHEN 5182 THEN 'Uloz w kolejnosci: wo xihuan he cha'
+    WHEN 5183 THEN 'Posluchaj i napisz kolor w pinyin'
+    WHEN 5184 THEN 'Przeczytaj zdanie na glos: Wo ai ni'
+    WHEN 5185 THEN 'Polacz zwierzeta z ich chinskimi znakami'
+    WHEN 5186 THEN 'Partykula czasu przeszlego to? a) le b) zhi c) zai'
+    WHEN 5187 THEN 'Uloz w kolejnosci: zuotian wo qu le beijing'
+    WHEN 5188 THEN 'Posluchaj dialogu i zanotuj co jedli'
+    WHEN 5189 THEN 'Przeczytaj tekst pinyin na glos'
+    WHEN 5190 THEN 'Polacz czasowniki z odpowiednimi partykulami'
+END
+WHERE id_ejercicio BETWEEN 5181 AND 5190;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5191 THEN 'Jesli bedzie padac: a) ruguo xiayu b) suiran xiayu'
+    WHEN 5192 THEN 'Uloz w kolejnosci: wo zhengzai xuexi zhongwen'
+    WHEN 5193 THEN 'Posluchaj wiadomosci i zidentyfikuj temat'
+    WHEN 5194 THEN 'Wymow tekst o Wielkim Murze Chinskim'
+    WHEN 5195 THEN 'Polacz znaki z ich kluczami'
+    WHEN 5196 THEN 'Synonim slowa gaoxing to? a) kuaile b) nan guo'
+    WHEN 5197 THEN 'Uloz w kolejnosci: ta zhongyu chengong le'
+    WHEN 5198 THEN 'Posluchaj debaty i podsumuj'
+    WHEN 5199 THEN 'Nagraj przemowe o chinskiej gospodarce'
+    WHEN 5200 THEN 'Polacz chinskie idiomy chengyu z ich znaczeniem'
+END
+WHERE id_ejercicio BETWEEN 5191 AND 5200;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5201 THEN 'Jak jest czesc po hiszpansku? a) Hola b) Adios'
+    WHEN 5202 THEN 'Uloz slowa w poprawnej kolejnosci: soy yo de Espana'
+    WHEN 5203 THEN 'Posluchaj nagrania i wybierz powitanie'
+    WHEN 5204 THEN 'Wymow slowo Hola poprawnie'
+    WHEN 5205 THEN 'Polacz cyfry od 1 do 5 z hiszpanskimi slowami'
+    WHEN 5206 THEN 'Ktory to czasownik byc (staly cechy)? a) ser b) estar'
+    WHEN 5207 THEN 'Uloz w kolejnosci: come ella una manzana'
+    WHEN 5208 THEN 'Posluchaj i napisz kolor po hiszpansku'
+    WHEN 5209 THEN 'Przeczytaj na glos zdanie: Estoy feliz'
+    WHEN 5210 THEN 'Polacz zwierzeta z ich hiszpanskimi nazwami'
+END
+WHERE id_ejercicio BETWEEN 5201 AND 5210;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5211 THEN 'Czas przeszly od hablar to? a) hable b) hablaba'
+    WHEN 5212 THEN 'Uloz w kolejnosci: fuimos ayer al cine'
+    WHEN 5213 THEN 'Posluchaj rozmowy i odpowiedz gdzie pojechali'
+    WHEN 5214 THEN 'Przeczytaj na glos: Compre un coche nuevo'
+    WHEN 5215 THEN 'Polacz czasowniki z ich formami w czasie przeszlym'
+    WHEN 5216 THEN 'Gdybym mial czas: a) si tuviera tiempo b) si tengo'
+    WHEN 5217 THEN 'Uloz w kolejnosci: han estado trabajando aqui'
+    WHEN 5218 THEN 'Posluchaj wiadomosci i zidentyfikuj glowny problem'
+    WHEN 5219 THEN 'Wymow na glos tekst o kulturze Hiszpanii'
+    WHEN 5220 THEN 'Polacz hiszpanskie spojniki z ich znaczeniem'
+END
+WHERE id_ejercicio BETWEEN 5211 AND 5220;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5221 THEN 'Synonim slowa rapido to? a) veloz b) lento'
+    WHEN 5222 THEN 'Uloz w kolejnosci: a pesar de las dificultades'
+    WHEN 5223 THEN 'Posluchaj debaty i podsumuj argumenty'
+    WHEN 5224 THEN 'Nagraj przemowe po hiszpansku na temat gospodarki'
+    WHEN 5225 THEN 'Polacz hiszpanskie idiomy z ich znaczeniem'
+    WHEN 5226 THEN 'Ile pol ma szachownica? a) 64 b) 32 c) 100'
+    WHEN 5227 THEN 'Uloz w kolejnosci: gracz kazdy ma pionkow osiem'
+    WHEN 5228 THEN 'Posluchaj audio i nazwij bierke szachowa'
+    WHEN 5229 THEN 'Powiedz na glos: Szach-mat'
+    WHEN 5230 THEN 'Polacz bierke szachowa z jej wartoscia punktowa'
+END
+WHERE id_ejercicio BETWEEN 5221 AND 5230;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5231 THEN 'Jak porusza sie skoczek? a) L-ksztalt b) na ukos'
+    WHEN 5232 THEN 'Uloz w kolejnosci: goniec kontroluje przekatne pola'
+    WHEN 5233 THEN 'Posluchaj ruchu i wykonaj go na planszy'
+    WHEN 5234 THEN 'Wypowiedz nastepujacy ruch: Skoczek na f3'
+    WHEN 5235 THEN 'Polacz podstawowe terminy z ich wyjasnieniem'
+    WHEN 5236 THEN 'Co to jest zwiazanie? a) figura nie moze sie ruszyc b) szach'
+    WHEN 5237 THEN 'Uloz w kolejnosci: poswiec wieze aby otworzyc linie'
+    WHEN 5238 THEN 'Posluchaj analizy i znajdz zagrozenie'
+    WHEN 5239 THEN 'Przeczytaj na glos glowny wariant'
+    WHEN 5240 THEN 'Polacz motywy taktyczne z przykladami'
+END
+WHERE id_ejercicio BETWEEN 5231 AND 5240;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5241 THEN 'Czym jest opozycja w koncowce? a) krolowie naprzeciwko siebie b) mat'
+    WHEN 5242 THEN 'Uloz w kolejnosci: izolowany pion to powazna slabosc'
+    WHEN 5243 THEN 'Posluchaj lekcji i zanotuj kluczowy ruch'
+    WHEN 5244 THEN 'Wyjasnij na glos koncepcje profilaktyki'
+    WHEN 5245 THEN 'Polacz debiut szachowy z odpowiednim kodem ECO'
+    WHEN 5246 THEN 'Czym charakteryzuje sie obrona sycylijska? a) c5 b) e5 c) d5'
+    WHEN 5247 THEN 'Uloz w kolejnosci: dynamiczna rekompensata za material'
+    WHEN 5248 THEN 'Sledz analize na slepo i znajdz mata'
+    WHEN 5249 THEN 'Przeanalizuj na glos partie Kasparowa z Topalowem'
+    WHEN 5250 THEN 'Polacz struktury pionowe z odpowiednim planem gry'
+END
+WHERE id_ejercicio BETWEEN 5241 AND 5250;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5251 THEN 'Jak jest czesc po koreansku? a) Annyeonghaseyo b) Ne'
+    WHEN 5252 THEN 'Uloz slowa w poprawnej kolejnosci: naneun saram imnida'
+    WHEN 5253 THEN 'Posluchaj nagrania i wybierz odpowiednia samogloske'
+    WHEN 5254 THEN 'Wymow Annyeonghaseyo poprawnie'
+    WHEN 5255 THEN 'Polacz cyfry od 1 do 5 z koreanskimi slowami'
+    WHEN 5256 THEN 'Ktora to partykula tematu? a) i/ga b) eun/neun'
+    WHEN 5257 THEN 'Uloz w kolejnosci: jeoneun bap eul meogeoyo'
+    WHEN 5258 THEN 'Posluchaj i napisz slowo w romaji'
+    WHEN 5259 THEN 'Przeczytaj zdanie na glos: Hangugoeol baewoyo'
+    WHEN 5260 THEN 'Polacz zwierzeta z ich koreanskimi nazwami'
+END
+WHERE id_ejercicio BETWEEN 5251 AND 5260;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5261 THEN 'Czas przeszly od hada to? a) haesseoyo b) haeyo'
+    WHEN 5262 THEN 'Uloz w kolejnosci: eojeyo hakgyo e gasseoyo'
+    WHEN 5263 THEN 'Posluchaj rozmowy i odpowiedz gdzie pojechali'
+    WHEN 5264 THEN 'Przeczytaj na glos: Sae cha reul sasseoyo'
+    WHEN 5265 THEN 'Polacz czasowniki z ich rdzeniami'
+    WHEN 5266 THEN 'Gdybym mial czas: a) sigan isseumyeon b) sigan isseodo'
+    WHEN 5267 THEN 'Uloz w kolejnosci: jigeum eumag eul deutgo isseoyo'
+    WHEN 5268 THEN 'Posluchaj wiadomosci i zidentyfikuj miasto'
+    WHEN 5269 THEN 'Wymow na glos tekst o Seulu'
+    WHEN 5270 THEN 'Polacz koreanskie spojniki z ich znaczeniem'
+END
+WHERE id_ejercicio BETWEEN 5261 AND 5270;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5271 THEN 'Synonim slowa ppareuda to? a) neulida b) bappeuda'
+    WHEN 5272 THEN 'Uloz w kolejnosci: biga wado gohyang e gamnida'
+    WHEN 5273 THEN 'Posluchaj dramy i zanotuj emocje'
+    WHEN 5274 THEN 'Nagraj przemowe o koreanskim jedzeniu'
+    WHEN 5275 THEN 'Polacz koreanskie przyslowia z ich znaczeniem'
+    WHEN 5276 THEN 'Jak jest czesc po niemiecku? a) Hallo b) Tschuss'
+    WHEN 5277 THEN 'Uloz slowa w poprawnej kolejnosci: heisse ich Anna'
+    WHEN 5278 THEN 'Posluchaj nagrania i wybierz odpowiednie powitanie'
+    WHEN 5279 THEN 'Wymow slowo Hallo poprawnie'
+    WHEN 5280 THEN 'Polacz cyfry od 1 do 5 z niemieckimi slowami'
+END
+WHERE id_ejercicio BETWEEN 5271 AND 5280;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5281 THEN 'Jaki jest przedimek zenski? a) die b) der c) das'
+    WHEN 5282 THEN 'Uloz w kolejnosci: isst er einen Apfel'
+    WHEN 5283 THEN 'Posluchaj i napisz kolor po niemiecku'
+    WHEN 5284 THEN 'Przeczytaj zdanie na glos: Ich komme aus Polen'
+    WHEN 5285 THEN 'Polacz czlonkow rodziny z ich niemieckimi nazwami'
+    WHEN 5286 THEN 'Czas przeszly od machen to? a) gemacht b) machte'
+    WHEN 5287 THEN 'Uloz w kolejnosci: bin ich gestern ins Kino gegangen'
+    WHEN 5288 THEN 'Posluchaj dialogu i odpowiedz na pytanie'
+    WHEN 5289 THEN 'Przeczytaj na glos: Ich habe ein Auto gekauft'
+    WHEN 5290 THEN 'Polacz czasowniki nieregularne z Partizip II'
+END
+WHERE id_ejercicio BETWEEN 5281 AND 5290;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5291 THEN 'Gdybym mial czas: a) wenn ich Zeit hatte b) ich habe'
+    WHEN 5292 THEN 'Uloz w kolejnosci: arbeiten sie hier schon lange'
+    WHEN 5293 THEN 'Posluchaj niemieckich wiadomosci i zidentyfikuj temat'
+    WHEN 5294 THEN 'Wymow tekst o Berlinie'
+    WHEN 5295 THEN 'Polacz przyimki z odpowiednimi przypadkami'
+    WHEN 5296 THEN 'Synonim slowa schnell to? a) rasch b) langsam'
+    WHEN 5297 THEN 'Uloz w kolejnosci: obwohl es regnete sind wir'
+    WHEN 5298 THEN 'Posluchaj debaty i podsumuj'
+    WHEN 5299 THEN 'Nagraj przemowe o UE po niemiecku'
+    WHEN 5300 THEN 'Polacz niemieckie idiomy z ich znaczeniem'
+END
+WHERE id_ejercicio BETWEEN 5291 AND 5300;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5301 THEN 'Jak jest dzien dobry po japonsku? a) Konnichiwa b) Sayounara'
+    WHEN 5302 THEN 'Uloz slowa w poprawnej kolejnosci: watashi wa gakusei desu'
+    WHEN 5303 THEN 'Posluchaj nagrania i wybierz odpowiednie powitanie'
+    WHEN 5304 THEN 'Wymow slowo Konnichiwa poprawnie'
+    WHEN 5305 THEN 'Polacz cyfry od 1 do 5 z japonskimi slowami'
+    WHEN 5306 THEN 'Ktora to partykula tematu? a) wa/ga b) wo c) ni'
+    WHEN 5307 THEN 'Uloz w kolejnosci: ringo wo tabemasu'
+    WHEN 5308 THEN 'Posluchaj i napisz slowo w romaji'
+    WHEN 5309 THEN 'Przeczytaj zdanie na glos: Nihon ni ikitai desu'
+    WHEN 5310 THEN 'Polacz zwierzeta z ich japonskimi nazwami'
+END
+WHERE id_ejercicio BETWEEN 5301 AND 5310;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5311 THEN 'Czas przeszly od suru to? a) shimashita b) shimasu'
+    WHEN 5312 THEN 'Uloz w kolejnosci: kinou tomodachi ni aimashita'
+    WHEN 5313 THEN 'Posluchaj rozmowy i odpowiedz gdzie pojechali'
+    WHEN 5314 THEN 'Przeczytaj na glos: Atarashii kuruma wo kaimashita'
+    WHEN 5315 THEN 'Polacz czasowniki z ich forma te'
+    WHEN 5316 THEN 'Gdybym mial czas: a) jikan ga attara b) jikan ga aru'
+    WHEN 5317 THEN 'Uloz w kolejnosci: ima ongaku wo kiite imasu'
+    WHEN 5318 THEN 'Posluchaj japonskich wiadomosci i zidentyfikuj temat'
+    WHEN 5319 THEN 'Wymow na glos tekst o Tokio'
+    WHEN 5320 THEN 'Polacz japonskie spojniki z ich znaczeniem'
+END
+WHERE id_ejercicio BETWEEN 5311 AND 5320;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5321 THEN 'Synonim slowa hayai to? a) shinsoku b) osoi'
+    WHEN 5322 THEN 'Uloz w kolejnosci: ame ga futte mo ikimasu'
+    WHEN 5323 THEN 'Posluchaj dramy i zanotuj emocje'
+    WHEN 5324 THEN 'Nagraj przemowe o japonskiej kulturze'
+    WHEN 5325 THEN 'Polacz japonskie przyslowia z ich znaczeniem'
+    WHEN 5326 THEN 'Jak jest czesc po portugalsku? a) Ola b) Tchau'
+    WHEN 5327 THEN 'Uloz slowa w poprawnej kolejnosci: do sou eu Brasil'
+    WHEN 5328 THEN 'Posluchaj nagrania i wybierz odpowiednie powitanie'
+    WHEN 5329 THEN 'Wymow slowo Ola poprawnie'
+    WHEN 5330 THEN 'Polacz cyfry od 1 do 5 z portugalskimi slowami'
+END
+WHERE id_ejercicio BETWEEN 5321 AND 5330;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5331 THEN 'Ktory to czasownik byc? a) ser b) falar'
+    WHEN 5332 THEN 'Uloz w kolejnosci: come ela uma maca'
+    WHEN 5333 THEN 'Posluchaj i napisz kolor po portugalsku'
+    WHEN 5334 THEN 'Przeczytaj zdanie na glos: Eu gosto de cafe'
+    WHEN 5335 THEN 'Polacz zwierzeta z ich portugalskimi nazwami'
+    WHEN 5336 THEN 'Czas przeszly od falar to? a) falei b) falava'
+    WHEN 5337 THEN 'Uloz w kolejnosci: ontem fomos nos ao cinema'
+    WHEN 5338 THEN 'Posluchaj dialogu i odpowiedz na pytanie'
+    WHEN 5339 THEN 'Przeczytaj na glos: Eu comprei um carro'
+    WHEN 5340 THEN 'Polacz czasowniki nieregularne z ich czasem przeszlym'
+END
+WHERE id_ejercicio BETWEEN 5331 AND 5340;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5341 THEN 'Gdybym mial czas: a) se eu tivesse tempo b) se eu tenho'
+    WHEN 5342 THEN 'Uloz w kolejnosci: estao trabalhando eles aqui'
+    WHEN 5343 THEN 'Posluchaj wiadomosci i zidentyfikuj problem'
+    WHEN 5344 THEN 'Wymow tekst o kulturze Brazylii'
+    WHEN 5345 THEN 'Polacz czasowniki zlozone z ich znaczeniem'
+    WHEN 5346 THEN 'Synonim slowa rapido to? a) veloz b) devagar'
+    WHEN 5347 THEN 'Uloz w kolejnosci: apesar das dificuldades'
+    WHEN 5348 THEN 'Posluchaj debaty i podsumuj'
+    WHEN 5349 THEN 'Nagraj przemowe o gospodarce po portugalsku'
+    WHEN 5350 THEN 'Polacz portugalskie idiomy z ich znaczeniem'
+END
+WHERE id_ejercicio BETWEEN 5341 AND 5350;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5351 THEN 'Jak jest czesc po wlosku? a) Ciao b) Arrivederci'
+    WHEN 5352 THEN 'Uloz slowa w poprawnej kolejnosci: mi chiamo io Marco'
+    WHEN 5353 THEN 'Posluchaj nagrania i wybierz odpowiednie powitanie'
+    WHEN 5354 THEN 'Wymow slowo Ciao poprawnie'
+    WHEN 5355 THEN 'Polacz cyfry od 1 do 5 z wloskimi slowami'
+    WHEN 5356 THEN 'Ktory to czasownik byc? a) essere b) avere'
+    WHEN 5357 THEN 'Uloz w kolejnosci: mangia lui una mela'
+    WHEN 5358 THEN 'Posluchaj i napisz kolor po wlosku'
+    WHEN 5359 THEN 'Przeczytaj zdanie na glos: Sono felice'
+    WHEN 5360 THEN 'Polacz czlonkow rodziny z ich wloskimi nazwami'
+END
+WHERE id_ejercicio BETWEEN 5351 AND 5360;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5361 THEN 'Czas przeszly od mangiare to? a) ho mangiato b) mangiavo'
+    WHEN 5362 THEN 'Uloz w kolejnosci: ieri siamo andati al mare'
+    WHEN 5363 THEN 'Posluchaj dialogu i odpowiedz na pytanie'
+    WHEN 5364 THEN 'Przeczytaj na glos: Ha comprato una casa'
+    WHEN 5365 THEN 'Polacz czasowniki z imieslowem biernym'
+    WHEN 5366 THEN 'Gdyby padalo: a) se piovesse b) se piove'
+    WHEN 5367 THEN 'Uloz w kolejnosci: lavorano qui da ieri'
+    WHEN 5368 THEN 'Posluchaj wloskich wiadomosci i zidentyfikuj miejsce'
+    WHEN 5369 THEN 'Wymow tekst o Rzymie'
+    WHEN 5370 THEN 'Polacz wloskie spojniki z ich znaczeniem'
+END
+WHERE id_ejercicio BETWEEN 5361 AND 5370;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5371 THEN 'Synonim slowa veloce to? a) rapido b) lento'
+    WHEN 5372 THEN 'Uloz w kolejnosci: sebbene piovesse siamo usciti'
+    WHEN 5373 THEN 'Posluchaj debaty we Wloszech i podsumuj'
+    WHEN 5374 THEN 'Nagraj przemowe o wloskim jedzeniu'
+    WHEN 5375 THEN 'Polacz wloskie idiomy z ich znaczeniem'
+    WHEN 5376 THEN 'Ile to jest 5 plus 3? a) 8 b) 7 c) 9 d) 6'
+    WHEN 5377 THEN 'Uloz w kolejnosci: dodawanie ma dwa skladniki'
+    WHEN 5378 THEN 'Posluchaj i zapisz liczbe'
+    WHEN 5379 THEN 'Przeczytaj to rownanie: 10 minus 4'
+    WHEN 5380 THEN 'Polacz symbol matematyczny z nazwa'
+END
+WHERE id_ejercicio BETWEEN 5371 AND 5380;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5381 THEN 'Ile to jest 8 razy 7? a) 56 b) 54 c) 64'
+    WHEN 5382 THEN 'Uloz w kolejnosci: kolejnosc czynnikow nie zmienia wyniku'
+    WHEN 5383 THEN 'Posluchaj ulamka i zapisz go'
+    WHEN 5384 THEN 'Przeczytaj to wyrazenie: trzy czwarte'
+    WHEN 5385 THEN 'Polacz figure geometryczna z liczba bokow'
+    WHEN 5386 THEN 'Rozwiaz rownanie: 2x = 10. a) x=5 b) x=2'
+    WHEN 5387 THEN 'Uloz w kolejnosci: aby rozwiazac rownanie wyizoluj zmienna'
+    WHEN 5388 THEN 'Posluchaj problemu i zapisz rownanie'
+    WHEN 5389 THEN 'Przeczytaj na glos: x do kwadratu plus y do kwadratu'
+    WHEN 5390 THEN 'Polacz wzor na pole z figura'
+END
+WHERE id_ejercicio BETWEEN 5381 AND 5390;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5391 THEN 'Pochodna z x do kwadratu to: a) 2x b) x c) 2'
+    WHEN 5392 THEN 'Uloz w kolejnosci: pochodna to nachylenie stycznej'
+    WHEN 5393 THEN 'Posluchaj granicy i zidentyfikuj trend'
+    WHEN 5394 THEN 'Wyjasnij na glos twierdzenie Pitagorasa'
+    WHEN 5395 THEN 'Polacz funkcje trygonometryczna z jej odwrotnoscia'
+    WHEN 5396 THEN 'Calka z e do potegi x to: a) e^x + C b) x c) ln(x)'
+    WHEN 5397 THEN 'Uloz w kolejnosci: calkowanie przez czesci to technika'
+    WHEN 5398 THEN 'Posluchaj analizy funkcji i zanotuj ekstrema'
+    WHEN 5399 THEN 'Udowodnij na glos podstawowa granice algebraiczna'
+    WHEN 5400 THEN 'Polacz rownanie rozniczkowe z jego typem'
+END
+WHERE id_ejercicio BETWEEN 5391 AND 5400;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5401 THEN 'Ile linii ma pieciolinia? a) 5 b) 4 c) 6'
+    WHEN 5402 THEN 'Uloz w kolejnosci: istnieje siedem podstawowych dzwiekow'
+    WHEN 5403 THEN 'Posluchaj nagrania i okresl wysokosc dzwieku'
+    WHEN 5404 THEN 'Zaspiewaj srodkowe C'
+    WHEN 5405 THEN 'Polacz nute z jej wartoscia'
+    WHEN 5406 THEN 'Jaki klucz jest uzywany dla wysokich dzwiekow? a) klucz wiolinowy b) klucz basowy'
+    WHEN 5407 THEN 'Uloz w kolejnosci: krzyzyk podwyzsza dzwiek o polton'
+    WHEN 5408 THEN 'Posluchaj melodii i uzupelnij brakujace dzwieki'
+    WHEN 5409 THEN 'Zaspiewaj game C-dur'
+    WHEN 5410 THEN 'Polacz znak chromatyczny z jego efektem'
+END
+WHERE id_ejercicio BETWEEN 5401 AND 5410;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5411 THEN 'Odleglosc miedzy C i E to: a) tercja wielka b) kwinta czysta'
+    WHEN 5412 THEN 'Uloz w kolejnosci: akord sklada sie z prymy tercji i kwinty'
+    WHEN 5413 THEN 'Posluchaj akordu i okresl czy jest durowy czy molowy'
+    WHEN 5414 THEN 'Zaspiewaj pasaz G-dur'
+    WHEN 5415 THEN 'Polacz stopnie gamy z ich technicznymi nazwami'
+    WHEN 5416 THEN 'Rownolegla gama molowa dla C-dur to: a) a-moll b) e-moll'
+    WHEN 5417 THEN 'Uloz w kolejnosci: modulacja to zmiana tonacji'
+    WHEN 5418 THEN 'Posluchaj progresji harmonicznej i zapisz stopnie'
+    WHEN 5419 THEN 'Wyklaszcz poprawnie rytm asymetryczny'
+    WHEN 5420 THEN 'Polacz skale koscielna z jej struktura'
+END
+WHERE id_ejercicio BETWEEN 5411 AND 5420;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5421 THEN 'Co to jest kontrapunkt? a) niezalezne glosy b) rytm'
+    WHEN 5422 THEN 'Uloz w kolejnosci: fuga to zlozona forma polifoniczna'
+    WHEN 5423 THEN 'Posluchaj utworu symfonicznego i zidentyfikuj forme'
+    WHEN 5424 THEN 'Wyjasnij na glos system dwunastotonowy'
+    WHEN 5425 THEN 'Polacz epoki muzyczne z ich kompozytorami'
+    WHEN 5426 THEN 'Como se diz ola em ingles? a) Hello b) Bye c) Yes'
+    WHEN 5427 THEN 'Coloque as palavras na ordem correta: is name my John'
+    WHEN 5428 THEN 'Ouca o audio e escolha a saudacao correta'
+    WHEN 5429 THEN 'Pronuncie a palavra Hello corretamente'
+    WHEN 5430 THEN 'Ligue os numeros de 1 a 5 as palavras em ingles'
+END
+WHERE id_ejercicio BETWEEN 5421 AND 5430;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5431 THEN 'Qual e o verbo ser/estar? a) to be b) to play c) to run'
+    WHEN 5432 THEN 'Coloque na ordem correta: playing am I now'
+    WHEN 5433 THEN 'Ouca e escreva a cor em ingles'
+    WHEN 5434 THEN 'Leia a seguinte frase em voz alta: I am happy'
+    WHEN 5435 THEN 'Ligue os animais aos seus nomes em ingles'
+    WHEN 5436 THEN 'Qual e o passado de go? a) went b) goed c) gone'
+    WHEN 5437 THEN 'Coloque na ordem: yesterday to school went she'
+    WHEN 5438 THEN 'Ouca o dialogo e responda a pergunta'
+    WHEN 5439 THEN 'Leia em voz alta: She bought a new house'
+    WHEN 5440 THEN 'Ligue os verbos irregulares ao seu passado'
+END
+WHERE id_ejercicio BETWEEN 5431 AND 5440;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5441 THEN 'Se chovesse: a) will stay b) would stay'
+    WHEN 5442 THEN 'Coloque na ordem: have waiting been they'
+    WHEN 5443 THEN 'Ouca as noticias e identifique o problema'
+    WHEN 5444 THEN 'Pronuncie o texto sobre mudancas climaticas'
+    WHEN 5445 THEN 'Ligue os phrasal verbs aos seus significados'
+    WHEN 5446 THEN 'Um sinonimo de fast e? a) quick b) slow'
+    WHEN 5447 THEN 'Coloque na ordem: nevertheless she persisted'
+    WHEN 5448 THEN 'Ouca o debate e resuma os argumentos'
+    WHEN 5449 THEN 'Grave um breve discurso sobre a economia'
+    WHEN 5450 THEN 'Ligue as expressoes idiomaticas em ingles aos seus significados'
+END
+WHERE id_ejercicio BETWEEN 5441 AND 5450;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5451 THEN 'Como se diz ola em espanhol? a) Hola b) Adios'
+    WHEN 5452 THEN 'Coloque as palavras na ordem correta: soy yo de Espana'
+    WHEN 5453 THEN 'Ouca o audio e escolha a saudacao correta'
+    WHEN 5454 THEN 'Pronuncie a palavra Hola corretamente'
+    WHEN 5455 THEN 'Ligue os numeros de 1 a 5 as palavras em espanhol'
+    WHEN 5456 THEN 'Qual e o verbo ser? a) ser b) tener c) hacer'
+    WHEN 5457 THEN 'Coloque na ordem correta: come ella una manzana'
+    WHEN 5458 THEN 'Ouca e escreva a cor em espanhol'
+    WHEN 5459 THEN 'Leia a seguinte frase em voz alta: Estoy feliz'
+    WHEN 5460 THEN 'Ligue os animais aos seus nomes em espanhol'
+END
+WHERE id_ejercicio BETWEEN 5451 AND 5460;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5461 THEN 'Qual e o passado de hablar? a) hable b) hablaba'
+    WHEN 5462 THEN 'Coloque na ordem correta: fuimos ayer al cine'
+    WHEN 5463 THEN 'Ouca a conversa e anote o destino'
+    WHEN 5464 THEN 'Leia em voz alta: Compre un coche nuevo'
+    WHEN 5465 THEN 'Ligue os verbos as suas formas no passado em espanhol'
+    WHEN 5466 THEN 'Se eu tivesse tempo: a) si tuviera tiempo b) si tengo'
+    WHEN 5467 THEN 'Coloque na ordem: han estado trabajando aqui'
+    WHEN 5468 THEN 'Ouca as noticias e anote o topico principal'
+    WHEN 5469 THEN 'Pronuncie o texto sobre a Espanha em voz alta'
+    WHEN 5470 THEN 'Ligue as conjuncoes aos seus significados'
+END
+WHERE id_ejercicio BETWEEN 5461 AND 5470;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5471 THEN 'Qual e um sinonimo de rapido? a) veloz b) lento'
+    WHEN 5472 THEN 'Coloque na ordem: a pesar de las dificultades'
+    WHEN 5473 THEN 'Ouca o debate e resuma os pontos de vista'
+    WHEN 5474 THEN 'Grave um discurso em espanhol sobre a economia'
+    WHEN 5475 THEN 'Ligue as expressoes em espanhol aos seus significados'
+    WHEN 5476 THEN 'Como se diz ola em frances? a) Bonjour b) Au revoir'
+    WHEN 5477 THEN 'Coloque as palavras na ordem correta: m appelle je Pierre'
+    WHEN 5478 THEN 'Ouca o audio e escolha a saudacao correta'
+    WHEN 5479 THEN 'Pronuncie a palavra Bonjour corretamente'
+    WHEN 5480 THEN 'Ligue os numeros de 1 a 5 as palavras em frances'
+END
+WHERE id_ejercicio BETWEEN 5471 AND 5480;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5481 THEN 'Qual e o artigo feminino? a) La b) Le c) Les'
+    WHEN 5482 THEN 'Coloque na ordem correta: mange elle une pomme'
+    WHEN 5483 THEN 'Ouca e escreva a cor em frances'
+    WHEN 5484 THEN 'Leia a seguinte frase em voz alta: Je suis etudiant'
+    WHEN 5485 THEN 'Ligue os membros da familia aos seus nomes em frances'
+    WHEN 5486 THEN 'Qual e o passe compose de manger? a) a mange b) mangeait'
+    WHEN 5487 THEN 'Coloque na ordem: hier sommes nous alles'
+    WHEN 5488 THEN 'Ouca o dialogo e responda a pergunta'
+    WHEN 5489 THEN 'Leia em voz alta: Nous avons visite Paris'
+    WHEN 5490 THEN 'Ligue os verbos irregulares ao seu passe compose'
+END
+WHERE id_ejercicio BETWEEN 5481 AND 5490;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5491 THEN 'Se eu soubesse, teria vindo: a) serais venu b) suis venu'
+    WHEN 5492 THEN 'Coloque na ordem: travaillent ils ici depuis'
+    WHEN 5493 THEN 'Ouca as noticias e identifique o local'
+    WHEN 5494 THEN 'Pronuncie o texto sobre a cultura francesa'
+    WHEN 5495 THEN 'Ligue as conjuncoes francesas aos seus significados'
+    WHEN 5496 THEN 'Qual e um sinonimo de ephemere? a) passager b) durable'
+    WHEN 5497 THEN 'Coloque na ordem: nonobstant les difficultes'
+    WHEN 5498 THEN 'Ouca o debate frances e resuma'
+    WHEN 5499 THEN 'Grave um discurso sobre a Revolucao Francesa'
+    WHEN 5500 THEN 'Ligue as expressoes idiomaticas em frances aos seus significados'
+END
+WHERE id_ejercicio BETWEEN 5491 AND 5500;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5501 THEN 'Como se diz ola em italiano? a) Ciao b) Arrivederci'
+    WHEN 5502 THEN 'Coloque as palavras na ordem correta: mi chiamo io Marco'
+    WHEN 5503 THEN 'Ouca o audio e escolha a saudacao correta'
+    WHEN 5504 THEN 'Pronuncie a palavra Ciao corretamente'
+    WHEN 5505 THEN 'Ligue os numeros de 1 a 5 as palavras em italiano'
+    WHEN 5506 THEN 'Qual e o verbo ser? a) essere b) avere'
+    WHEN 5507 THEN 'Coloque na ordem correta: mangia lui una mela'
+    WHEN 5508 THEN 'Ouca e escreva a cor em italiano'
+    WHEN 5509 THEN 'Leia a seguinte frase em voz alta: Sono felice'
+    WHEN 5510 THEN 'Ligue os membros da familia aos seus nomes em italiano'
+END
+WHERE id_ejercicio BETWEEN 5501 AND 5510;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5511 THEN 'Qual e o passado de mangiare? a) ho mangiato b) mangiavo'
+    WHEN 5512 THEN 'Coloque na ordem correta: ieri siamo andati al mare'
+    WHEN 5513 THEN 'Ouca o dialogo e responda a pergunta'
+    WHEN 5514 THEN 'Leia em voz alta: Ha comprato una casa'
+    WHEN 5515 THEN 'Ligue os verbos ao seu participio passado'
+    WHEN 5516 THEN 'Se chovesse: a) se piovesse b) se piove'
+    WHEN 5517 THEN 'Coloque na ordem: lavorano qui da ieri'
+    WHEN 5518 THEN 'Ouca as noticias italianas e identifique o local'
+    WHEN 5519 THEN 'Pronuncie o texto sobre Roma'
+    WHEN 5520 THEN 'Ligue as conjuncoes italianas aos seus significados'
+END
+WHERE id_ejercicio BETWEEN 5511 AND 5520;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5521 THEN 'Qual e um sinonimo de veloce? a) rapido b) lento'
+    WHEN 5522 THEN 'Coloque na ordem: sebbene piovesse siamo usciti'
+    WHEN 5523 THEN 'Ouca o debate na Italia e resuma'
+    WHEN 5524 THEN 'Grave um discurso sobre a comida italiana'
+    WHEN 5525 THEN 'Ligue as expressoes idiomaticas em italiano aos seus significados'
+    WHEN 5526 THEN 'Quantas casas tem um tabuleiro de xadrez? a) 64 b) 32 c) 100'
+    WHEN 5527 THEN 'Coloque na ordem: jogador cada tem peoes oito'
+    WHEN 5528 THEN 'Ouca o audio e nomeie a peca de xadrez'
+    WHEN 5529 THEN 'Diga em voz alta: Xeque-mate'
+    WHEN 5530 THEN 'Ligue a peca de xadrez ao seu valor em pontos'
+END
+WHERE id_ejercicio BETWEEN 5521 AND 5530;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5531 THEN 'Como o cavalo se move? a) em L b) na diagonal'
+    WHEN 5532 THEN 'Coloque na ordem: o bispo controla as diagonais'
+    WHEN 5533 THEN 'Ouca o lance e execute-o no tabuleiro'
+    WHEN 5534 THEN 'Diga o seguinte lance: Cavalo para f3'
+    WHEN 5535 THEN 'Ligue os termos basicos a sua explicacao'
+    WHEN 5536 THEN 'O que e uma cravada? a) peca nao pode se mover b) xeque'
+    WHEN 5537 THEN 'Coloque na ordem: sacrifique uma torre para abrir a coluna'
+    WHEN 5538 THEN 'Ouca a analise e encontre a ameaca'
+    WHEN 5539 THEN 'Leia a variante principal em voz alta'
+    WHEN 5540 THEN 'Ligue os motivos taticos aos exemplos'
+END
+WHERE id_ejercicio BETWEEN 5531 AND 5540;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5541 THEN 'O que e oposicao no final? a) reis frente a frente b) mate'
+    WHEN 5542 THEN 'Coloque na ordem: um peao isolado e uma fraqueza'
+    WHEN 5543 THEN 'Ouca a licao e anote o lance chave'
+    WHEN 5544 THEN 'Explique o conceito de profilaxia em voz alta'
+    WHEN 5545 THEN 'Ligue a abertura ao codigo ECO correto'
+    WHEN 5546 THEN 'O que caracteriza a Defesa Siciliana? a) c5 b) e5 c) d5'
+    WHEN 5547 THEN 'Coloque na ordem: compensacao dinamica por material'
+    WHEN 5548 THEN 'Siga a analise as cegas e encontre o mate'
+    WHEN 5549 THEN 'Analise a partida Kasparov contra Topalov em voz alta'
+    WHEN 5550 THEN 'Ligue as estruturas de peoes ao plano correspondente'
+END
+WHERE id_ejercicio BETWEEN 5541 AND 5550;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5551 THEN 'Quanto e 5 mais 3? a) 8 b) 7 c) 9 d) 6'
+    WHEN 5552 THEN 'Coloque na ordem: a adicao tem duas partes'
+    WHEN 5553 THEN 'Ouca e escreva o numero'
+    WHEN 5554 THEN 'Leia esta equacao: 10 menos 4'
+    WHEN 5555 THEN 'Ligue o simbolo matematico ao nome'
+    WHEN 5556 THEN 'Quanto e 8 vezes 7? a) 56 b) 54 c) 64'
+    WHEN 5557 THEN 'Coloque na ordem: a ordem dos fatores nao altera o produto'
+    WHEN 5558 THEN 'Ouca a tracao e anote'
+    WHEN 5559 THEN 'Leia esta expressao: tres quartos'
+    WHEN 5560 THEN 'Ligue a figura geometrica ao numero de lados'
+END
+WHERE id_ejercicio BETWEEN 5551 AND 5560;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5561 THEN 'Resolva a equacao: 2x = 10. a) x=5 b) x=2'
+    WHEN 5562 THEN 'Coloque na ordem: para resolver isole a variavel'
+    WHEN 5563 THEN 'Ouca o problema e anote a equacao'
+    WHEN 5564 THEN 'Leia em voz alta: x ao quadrado mais y ao quadrado'
+    WHEN 5565 THEN 'Ligue a formula de area a figura correspondente'
+    WHEN 5566 THEN 'A derivada de x ao quadrado e: a) 2x b) x c) 2'
+    WHEN 5567 THEN 'Coloque na ordem: a derivada e a inclinacao da tangente'
+    WHEN 5568 THEN 'Ouca o limite e identifique a tendencia'
+    WHEN 5569 THEN 'Explique o Teorema de Pitagoras em voz alta'
+    WHEN 5570 THEN 'Ligue a funcao trigonometrica a sua inversa'
+END
+WHERE id_ejercicio BETWEEN 5561 AND 5570;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5571 THEN 'A integral de e elevado a x e: a) e^x + C b) x c) ln(x)'
+    WHEN 5572 THEN 'Coloque na ordem: integracao por partes e uma tecnica'
+    WHEN 5573 THEN 'Ouca a analise da funcao e anote os extremos'
+    WHEN 5574 THEN 'Prove em voz alta um limite algebrico fundamental'
+    WHEN 5575 THEN 'Ligue a equacao diferencial ao seu tipo'
+    WHEN 5576 THEN 'Quantas linhas tem uma pauta musical? a) 5 b) 4 c) 6'
+    WHEN 5577 THEN 'Coloque na ordem: existem sete notas basicas'
+    WHEN 5578 THEN 'Ouca o audio e determine a altura da nota'
+    WHEN 5579 THEN 'Cante o Do central'
+    WHEN 5580 THEN 'Ligue a nota a sua duracao'
+END
+WHERE id_ejercicio BETWEEN 5571 AND 5580;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5581 THEN 'Qual clave e usada para notas agudas? a) Clave de Sol b) Clave de Fa'
+    WHEN 5582 THEN 'Coloque na ordem: o sustenido eleva a nota em meio tom'
+    WHEN 5583 THEN 'Ouca a melodia e preencha as notas que faltam'
+    WHEN 5584 THEN 'Cante a escala de Do maior'
+    WHEN 5585 THEN 'Ligue o acidente musical ao seu efeito'
+    WHEN 5586 THEN 'A distancia entre Do e Mi e uma: a) terca maior b) quinta justa'
+    WHEN 5587 THEN 'Coloque na ordem: um acorde tem tônica terca e quinta'
+    WHEN 5588 THEN 'Ouca o acorde e diga se e maior ou menor'
+    WHEN 5589 THEN 'Cante o arpejo de Sol maior'
+    WHEN 5590 THEN 'Ligue os graus da escala aos seus nomes tecnicos'
+END
+WHERE id_ejercicio BETWEEN 5581 AND 5590;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5591 THEN 'A escala menor relativa de Do maior e: a) La menor b) Mi menor'
+    WHEN 5592 THEN 'Coloque na ordem: modulacao e a mudanca de tom'
+    WHEN 5593 THEN 'Ouca a progressao harmonica e anote os graus'
+    WHEN 5594 THEN 'Bata palmas no ritmo assimetrico corretamente'
+    WHEN 5595 THEN 'Ligue o modo grego a sua estrutura'
+    WHEN 5596 THEN 'O que e contraponto? a) vozes independentes b) ritmo'
+    WHEN 5597 THEN 'Coloque na ordem: a fuga e uma forma polifonica'
+    WHEN 5598 THEN 'Ouca a peca sinfonica e identifique a forma'
+    WHEN 5599 THEN 'Explique o dodecafonismo em voz alta'
+    WHEN 5600 THEN 'Ligue os periodos musicais aos seus compositores'
+END
+WHERE id_ejercicio BETWEEN 5591 AND 5600;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5601 THEN 'Como se diz ola em alemao? a) Hallo b) Tschuss'
+    WHEN 5602 THEN 'Coloque as palavras na ordem correta: heisse ich Anna'
+    WHEN 5603 THEN 'Ouca o audio e escolha a saudacao correta'
+    WHEN 5604 THEN 'Pronuncie a palavra Hallo corretamente'
+    WHEN 5605 THEN 'Ligue os numeros de 1 a 5 as palavras em alemao'
+    WHEN 5606 THEN 'Qual e o artigo feminino? a) die b) der c) das'
+    WHEN 5607 THEN 'Coloque na ordem correta: isst er einen Apfel'
+    WHEN 5608 THEN 'Ouca e escreva a cor em alemao'
+    WHEN 5609 THEN 'Leia a seguinte frase em voz alta: Ich komme aus Brasilien'
+    WHEN 5610 THEN 'Ligue os membros da familia aos seus nomes em alemao'
+END
+WHERE id_ejercicio BETWEEN 5601 AND 5610;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5611 THEN 'Qual e o passado de machen? a) gemacht b) machte'
+    WHEN 5612 THEN 'Coloque na ordem correta: bin ich gestern ins Kino gegangen'
+    WHEN 5613 THEN 'Ouca o dialogo e responda a pergunta'
+    WHEN 5614 THEN 'Leia em voz alta: Ich habe ein Auto gekauft'
+    WHEN 5615 THEN 'Ligue os verbos irregulares ao seu Partizip II'
+    WHEN 5616 THEN 'Se eu tivesse tempo: a) wenn ich Zeit hatte b) ich habe'
+    WHEN 5617 THEN 'Coloque na ordem: arbeiten sie hier schon lange'
+    WHEN 5618 THEN 'Ouca as noticias alemas e identifique o topico'
+    WHEN 5619 THEN 'Pronuncie o texto sobre Berlim'
+    WHEN 5620 THEN 'Ligue as preposicoes aos seus casos corretos'
+END
+WHERE id_ejercicio BETWEEN 5611 AND 5620;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5621 THEN 'Qual e um sinonimo de schnell? a) rasch b) langsam'
+    WHEN 5622 THEN 'Coloque na ordem: obwohl es regnete sind wir'
+    WHEN 5623 THEN 'Ouca o debate e resuma'
+    WHEN 5624 THEN 'Grave um discurso sobre a UE em alemao'
+    WHEN 5625 THEN 'Ligue as expressoes idiomaticas em alemao aos seus significados'
+    WHEN 5626 THEN 'Como se diz ola em coreano? a) Annyeonghaseyo b) Ne'
+    WHEN 5627 THEN 'Coloque as palavras na ordem correta: naneun saram imnida'
+    WHEN 5628 THEN 'Ouca o audio e escolha a vogal correta'
+    WHEN 5629 THEN 'Pronuncie Annyeonghaseyo corretamente'
+    WHEN 5630 THEN 'Ligue os numeros de 1 a 5 as palavras em coreano'
+END
+WHERE id_ejercicio BETWEEN 5621 AND 5630;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5631 THEN 'Qual e a particula de topico? a) i/ga b) eun/neun'
+    WHEN 5632 THEN 'Coloque na ordem correta: jeoneun bap eul meogeoyo'
+    WHEN 5633 THEN 'Ouca e escreva a palavra em romaji'
+    WHEN 5634 THEN 'Leia a seguinte frase em voz alta: Hangugoeol baewoyo'
+    WHEN 5635 THEN 'Ligue os animais aos seus nomes em coreano'
+    WHEN 5636 THEN 'Qual e o passado de hada? a) haesseoyo b) haeyo'
+    WHEN 5637 THEN 'Coloque na ordem: eojeyo hakgyo e gasseoyo'
+    WHEN 5638 THEN 'Ouca a conversa e anote o destino'
+    WHEN 5639 THEN 'Leia em voz alta: Sae cha reul sasseoyo'
+    WHEN 5640 THEN 'Ligue os verbos as suas raizes'
+END
+WHERE id_ejercicio BETWEEN 5631 AND 5640;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5641 THEN 'Se eu tivesse tempo: a) sigan isseumyeon b) sigan isseodo'
+    WHEN 5642 THEN 'Coloque na ordem: jigeum eumag eul deutgo isseoyo'
+    WHEN 5643 THEN 'Ouca as noticias e identifique a cidade'
+    WHEN 5644 THEN 'Pronuncie o texto sobre Seul em voz alta'
+    WHEN 5645 THEN 'Ligue as conjuncoes coreanas aos seus significados'
+    WHEN 5646 THEN 'Qual e um sinonimo de ppareuda? a) neulida b) bappeuda'
+    WHEN 5647 THEN 'Coloque na ordem: biga wado gohyang e gamnida'
+    WHEN 5648 THEN 'Ouca o K-drama e anote as emocoes'
+    WHEN 5649 THEN 'Grave um discurso sobre a comida coreana'
+    WHEN 5650 THEN 'Ligue os proverbios coreanos aos seus significados'
+END
+WHERE id_ejercicio BETWEEN 5641 AND 5650;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5651 THEN 'Como se diz ola em japones? a) Konnichiwa b) Sayounara'
+    WHEN 5652 THEN 'Coloque as palavras na ordem correta: watashi wa gakusei desu'
+    WHEN 5653 THEN 'Ouca o audio e escolha a saudacao correta'
+    WHEN 5654 THEN 'Pronuncie a palavra Konnichiwa corretamente'
+    WHEN 5655 THEN 'Ligue os numeros de 1 a 5 as palavras em japones'
+    WHEN 5656 THEN 'Qual e a particula de sujeito? a) wa/ga b) wo c) ni'
+    WHEN 5657 THEN 'Coloque na ordem correta: ringo wo tabemasu'
+    WHEN 5658 THEN 'Ouca e escreva a palavra em romaji'
+    WHEN 5659 THEN 'Leia a seguinte frase em voz alta: Nihon ni ikitai desu'
+    WHEN 5660 THEN 'Ligue os animais aos seus nomes em japones'
+END
+WHERE id_ejercicio BETWEEN 5651 AND 5660;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5661 THEN 'Qual e o passado de suru? a) shimashita b) shimasu'
+    WHEN 5662 THEN 'Coloque na ordem: kinou tomodachi ni aimashita'
+    WHEN 5663 THEN 'Ouca a conversa e responda para onde foram'
+    WHEN 5664 THEN 'Leia em voz alta: Atarashii kuruma wo kaimashita'
+    WHEN 5665 THEN 'Ligue os verbos a sua forma te'
+    WHEN 5666 THEN 'Se eu tivesse tempo: a) jikan ga attara b) jikan ga aru'
+    WHEN 5667 THEN 'Coloque na ordem: ima ongaku wo kiite imasu'
+    WHEN 5668 THEN 'Ouca as noticias japonesas e identifique o topico'
+    WHEN 5669 THEN 'Pronuncie o texto sobre Toquio em voz alta'
+    WHEN 5670 THEN 'Ligue as conjuncoes japonesas aos seus significados'
+END
+WHERE id_ejercicio BETWEEN 5661 AND 5670;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5671 THEN 'Qual e um sinonimo de hayai? a) shinsoku b) osoi'
+    WHEN 5672 THEN 'Coloque na ordem: ame ga futte mo ikimasu'
+    WHEN 5673 THEN 'Ouca o drama e anote as emocoes'
+    WHEN 5674 THEN 'Grave um discurso sobre a cultura japonesa'
+    WHEN 5675 THEN 'Ligue os proverbios japoneses aos seus significados'
+    WHEN 5676 THEN 'Como se diz ola em chines? a) Ni hao b) Zaijian'
+    WHEN 5677 THEN 'Coloque as palavras na ordem correta: wo shi baxi ren'
+    WHEN 5678 THEN 'Ouca o audio e identifique o tom'
+    WHEN 5679 THEN 'Pronuncie Xiexie com o tom correto'
+    WHEN 5680 THEN 'Ligue os numeros de 1 a 5 as palavras em chines'
+END
+WHERE id_ejercicio BETWEEN 5671 AND 5680;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5681 THEN 'Qual e o classificador para objetos planos? a) zhang b) ge'
+    WHEN 5682 THEN 'Coloque na ordem: wo xihuan he cha'
+    WHEN 5683 THEN 'Ouca e escreva a cor em pinyin'
+    WHEN 5684 THEN 'Leia a seguinte frase em voz alta: Wo ai ni'
+    WHEN 5685 THEN 'Ligue os animais aos seus caracteres em chines'
+    WHEN 5686 THEN 'Qual particula indica o passado? a) le b) zhi c) zai'
+    WHEN 5687 THEN 'Coloque na ordem: zuotian wo qu le beijing'
+    WHEN 5688 THEN 'Ouca o dialogo e anote o que comeram'
+    WHEN 5689 THEN 'Leia o texto em pinyin em voz alta'
+    WHEN 5690 THEN 'Ligue os verbos as particulas correspondentes'
+END
+WHERE id_ejercicio BETWEEN 5681 AND 5690;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5691 THEN 'Se chover eu nao vou: a) ruguo xiayu b) suiran xiayu'
+    WHEN 5692 THEN 'Coloque na ordem: wo zhengzai xuexi zhongwen'
+    WHEN 5693 THEN 'Ouca as noticias e identifique o assunto'
+    WHEN 5694 THEN 'Pronuncie o texto sobre a Grande Muralha'
+    WHEN 5695 THEN 'Ligue os caracteres aos seus radicais'
+    WHEN 5696 THEN 'Qual e um sinonimo de gaoxing? a) kuaile b) nan guo'
+    WHEN 5697 THEN 'Coloque na ordem: ta zhongyu chengong le'
+    WHEN 5698 THEN 'Ouca o debate e resuma os argumentos'
+    WHEN 5699 THEN 'Grave um discurso sobre a economia chinesa'
+    WHEN 5700 THEN 'Ligue os idiomatismos chineses (chengyu) aos seus significados'
+END
+WHERE id_ejercicio BETWEEN 5691 AND 5700;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5701 THEN 'Cum se spune salut in engleza? a) Hello b) Bye c) Yes'
+    WHEN 5702 THEN 'Pune cuvintele in ordinea corecta: is name my John'
+    WHEN 5703 THEN 'Asculta inregistrarea si alege salutul corect'
+    WHEN 5704 THEN 'Pronunta cuvantul Hello corect'
+    WHEN 5705 THEN 'Conecteaza cifrele de la 1 la 5 cu cuvintele in engleza'
+    WHEN 5706 THEN 'Care este verbul a fi? a) to be b) to play c) to run'
+    WHEN 5707 THEN 'Pune in ordinea corecta: playing am I now'
+    WHEN 5708 THEN 'Asculta si scrie culoarea in engleza'
+    WHEN 5709 THEN 'Citeste urmatoarea propozitie cu voce tare: I am happy'
+    WHEN 5710 THEN 'Conecteaza animalele cu numele lor in engleza'
+END
+WHERE id_ejercicio BETWEEN 5701 AND 5710;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5711 THEN 'Care este trecutul lui go? a) went b) goed c) gone'
+    WHEN 5712 THEN 'Pune in ordine: yesterday to school went she'
+    WHEN 5713 THEN 'Asculta dialogul si raspunde la intrebare'
+    WHEN 5714 THEN 'Citeste cu voce tare: She bought a new house'
+    WHEN 5715 THEN 'Conecteaza verbele neregulate cu forma lor de trecut'
+    WHEN 5716 THEN 'Daca ar ploua: a) will stay b) would stay'
+    WHEN 5717 THEN 'Pune in ordine: have waiting been they'
+    WHEN 5718 THEN 'Asculta stirile si identifica problema'
+    WHEN 5719 THEN 'Pronunta textul despre schimbarile climatice'
+    WHEN 5720 THEN 'Conecteaza expresiile verbale cu sensul lor'
+END
+WHERE id_ejercicio BETWEEN 5711 AND 5720;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5721 THEN 'Un sinonim pentru fast este? a) quick b) slow'
+    WHEN 5722 THEN 'Pune in ordine: nevertheless she persisted'
+    WHEN 5723 THEN 'Asculta dezbaterea si rezuma argumentele'
+    WHEN 5724 THEN 'Inregistreaza un scurt discurs despre economie'
+    WHEN 5725 THEN 'Conecteaza expresiile idiomatice in engleza cu sensul lor'
+    WHEN 5726 THEN 'Cum se spune salut in spaniola? a) Hola b) Adios'
+    WHEN 5727 THEN 'Pune cuvintele in ordinea corecta: soy yo de Espana'
+    WHEN 5728 THEN 'Asculta inregistrarea si alege salutul corect'
+    WHEN 5729 THEN 'Pronunta cuvantul Hola corect'
+    WHEN 5730 THEN 'Conecteaza cifrele de la 1 la 5 cu cuvintele in spaniola'
+END
+WHERE id_ejercicio BETWEEN 5721 AND 5730;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5731 THEN 'Care este verbul a fi (caracteristici permanente)? a) ser b) estar'
+    WHEN 5732 THEN 'Pune in ordinea corecta: come ella una manzana'
+    WHEN 5733 THEN 'Asculta si scrie culoarea in spaniola'
+    WHEN 5734 THEN 'Citeste urmatoarea propozitie cu voce tare: Estoy feliz'
+    WHEN 5735 THEN 'Conecteaza animalele cu numele lor in spaniola'
+    WHEN 5736 THEN 'Care este trecutul lui hablar? a) hable b) hablaba'
+    WHEN 5737 THEN 'Pune in ordine: fuimos ayer al cine'
+    WHEN 5738 THEN 'Asculta conversatia si noteaza destinatia'
+    WHEN 5739 THEN 'Citeste cu voce tare: Compre un coche nuevo'
+    WHEN 5740 THEN 'Conecteaza verbele cu formele lor la trecut in spaniola'
+END
+WHERE id_ejercicio BETWEEN 5731 AND 5740;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5741 THEN 'Daca as avea timp: a) si tuviera tiempo b) si tengo'
+    WHEN 5742 THEN 'Pune in ordine: han estado trabajando aqui'
+    WHEN 5743 THEN 'Asculta stirile si noteaza subiectul principal'
+    WHEN 5744 THEN 'Pronunta textul despre Spania cu voce tare'
+    WHEN 5745 THEN 'Conecteaza conjunctiile cu sensul lor'
+    WHEN 5746 THEN 'Care este un sinonim pentru rapido? a) veloz b) lento'
+    WHEN 5747 THEN 'Pune in ordine: a pesar de las dificultades'
+    WHEN 5748 THEN 'Asculta dezbaterea si rezuma punctele de vedere'
+    WHEN 5749 THEN 'Inregistreaza un discurs in spaniola despre economie'
+    WHEN 5750 THEN 'Conecteaza expresiile din spaniola cu sensul lor'
+END
+WHERE id_ejercicio BETWEEN 5741 AND 5750;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5751 THEN 'Cum se spune salut in coreeana? a) Annyeonghaseyo b) Ne'
+    WHEN 5752 THEN 'Pune cuvintele in ordinea corecta: naneun saram imnida'
+    WHEN 5753 THEN 'Asculta inregistrarea si alege vocala corecta'
+    WHEN 5754 THEN 'Pronunta Annyeonghaseyo corect'
+    WHEN 5755 THEN 'Conecteaza cifrele de la 1 la 5 cu cuvintele in coreeana'
+    WHEN 5756 THEN 'Care este particula de subiect? a) i/ga b) eun/neun'
+    WHEN 5757 THEN 'Pune in ordinea corecta: jeoneun bap eul meogeoyo'
+    WHEN 5758 THEN 'Asculta si scrie cuvantul in romaji'
+    WHEN 5759 THEN 'Citeste urmatoarea propozitie cu voce tare: Hangugoeol baewoyo'
+    WHEN 5760 THEN 'Conecteaza animalele cu numele lor in coreeana'
+END
+WHERE id_ejercicio BETWEEN 5751 AND 5760;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5761 THEN 'Care este trecutul lui hada? a) haesseoyo b) haeyo'
+    WHEN 5762 THEN 'Pune in ordine: eojeyo hakgyo e gasseoyo'
+    WHEN 5763 THEN 'Asculta conversatia si noteaza destinatia'
+    WHEN 5764 THEN 'Citeste cu voce tare: Sae cha reul sasseoyo'
+    WHEN 5765 THEN 'Conecteaza verbele cu radacinile lor'
+    WHEN 5766 THEN 'Daca as avea timp: a) sigan isseumyeon b) sigan isseodo'
+    WHEN 5767 THEN 'Pune in ordine: jigeum eumag eul deutgo isseoyo'
+    WHEN 5768 THEN 'Asculta stirile si identifica orasul'
+    WHEN 5769 THEN 'Pronunta textul despre Seul cu voce tare'
+    WHEN 5770 THEN 'Conecteaza conjunctiile coreene cu sensul lor'
+END
+WHERE id_ejercicio BETWEEN 5761 AND 5770;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5771 THEN 'Care este un sinonim pentru ppareuda? a) neulida b) bappeuda'
+    WHEN 5772 THEN 'Pune in ordine: biga wado gohyang e gamnida'
+    WHEN 5773 THEN 'Asculta drama si noteaza emotiile'
+    WHEN 5774 THEN 'Inregistreaza un discurs despre mancarea coreeana'
+    WHEN 5775 THEN 'Conecteaza proverbele coreene cu sensul lor'
+    WHEN 5776 THEN 'Cum se spune salut in italiana? a) Ciao b) Arrivederci'
+    WHEN 5777 THEN 'Pune cuvintele in ordinea corecta: mi chiamo io Marco'
+    WHEN 5778 THEN 'Asculta inregistrarea si alege salutul corect'
+    WHEN 5779 THEN 'Pronunta cuvantul Ciao corect'
+    WHEN 5780 THEN 'Conecteaza cifrele de la 1 la 5 cu cuvintele in italiana'
+END
+WHERE id_ejercicio BETWEEN 5771 AND 5780;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5781 THEN 'Care este verbul a fi? a) essere b) avere'
+    WHEN 5782 THEN 'Pune in ordinea corecta: mangia lui una mela'
+    WHEN 5783 THEN 'Asculta si scrie culoarea in italiana'
+    WHEN 5784 THEN 'Citeste urmatoarea propozitie cu voce tare: Sono felice'
+    WHEN 5785 THEN 'Conecteaza membrii familiei cu numele lor in italiana'
+    WHEN 5786 THEN 'Care este trecutul lui mangiare? a) ho mangiato b) mangiavo'
+    WHEN 5787 THEN 'Pune in ordine: ieri siamo andati al mare'
+    WHEN 5788 THEN 'Asculta dialogul si raspunde la intrebare'
+    WHEN 5789 THEN 'Citeste cu voce tare: Ha comprato una casa'
+    WHEN 5790 THEN 'Conecteaza verbele cu participiul lor trecut'
+END
+WHERE id_ejercicio BETWEEN 5781 AND 5790;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5791 THEN 'Daca ar ploua: a) se piovesse b) se piove'
+    WHEN 5792 THEN 'Pune in ordine: lavorano qui da ieri'
+    WHEN 5793 THEN 'Asculta stirile italiene si identifica locul'
+    WHEN 5794 THEN 'Pronunta textul despre Roma cu voce tare'
+    WHEN 5795 THEN 'Conecteaza conjunctiile italiene cu sensul lor'
+    WHEN 5796 THEN 'Care este un sinonim pentru veloce? a) rapido b) lento'
+    WHEN 5797 THEN 'Pune in ordine: sebbene piovesse siamo usciti'
+    WHEN 5798 THEN 'Asculta dezbaterea in Italia si rezuma'
+    WHEN 5799 THEN 'Inregistreaza un discurs despre mancarea italiana'
+    WHEN 5800 THEN 'Conecteaza expresiile idiomatice in italiana cu sensul lor'
+END
+WHERE id_ejercicio BETWEEN 5791 AND 5800;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5801 THEN 'Cum se spune salut in franceza? a) Bonjour b) Merci'
+    WHEN 5802 THEN 'Pune cuvintele in ordinea corecta: m appelle je Pierre'
+    WHEN 5803 THEN 'Asculta inregistrarea si alege salutul corect'
+    WHEN 5804 THEN 'Pronunta cuvantul Bonjour corect'
+    WHEN 5805 THEN 'Conecteaza cifrele de la 1 la 5 cu cuvintele in franceza'
+    WHEN 5806 THEN 'Care este articolul feminin? a) La b) Le c) Les'
+    WHEN 5807 THEN 'Pune in ordinea corecta: mange elle une pomme'
+    WHEN 5808 THEN 'Asculta si scrie culoarea in franceza'
+    WHEN 5809 THEN 'Citeste urmatoarea propozitie cu voce tare: Je suis etudiant'
+    WHEN 5810 THEN 'Conecteaza membrii familiei cu numele lor in franceza'
+END
+WHERE id_ejercicio BETWEEN 5801 AND 5810;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5811 THEN 'Care este passe compose pentru manger? a) a mange b) mangeait'
+    WHEN 5812 THEN 'Pune in ordine: hier sommes nous alles'
+    WHEN 5813 THEN 'Asculta dialogul si raspunde la intrebare'
+    WHEN 5814 THEN 'Citeste cu voce tare: Nous avons visite Paris'
+    WHEN 5815 THEN 'Conecteaza verbele neregulate cu passe compose'
+    WHEN 5816 THEN 'Daca as fi stiut as fi venit: a) serais venu b) suis venu'
+    WHEN 5817 THEN 'Pune in ordine: travaillent ils ici depuis'
+    WHEN 5818 THEN 'Asculta stirile si identifica locatia'
+    WHEN 5819 THEN 'Pronunta textul despre cultura franceza'
+    WHEN 5820 THEN 'Conecteaza conjunctiile franceze cu sensul lor'
+END
+WHERE id_ejercicio BETWEEN 5811 AND 5820;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5821 THEN 'Care este un sinonim pentru ephemere? a) passager b) durable'
+    WHEN 5822 THEN 'Pune in ordine: nonobstant les difficultes'
+    WHEN 5823 THEN 'Asculta dezbaterea in franceza si rezuma'
+    WHEN 5824 THEN 'Inregistreaza un discurs despre Revolutia Franceza'
+    WHEN 5825 THEN 'Conecteaza expresiile idiomatice in franceza cu sensul lor'
+    WHEN 5826 THEN 'Cum se spune salut in germana? a) Hallo b) Tschuss'
+    WHEN 5827 THEN 'Pune cuvintele in ordinea corecta: heisse ich Anna'
+    WHEN 5828 THEN 'Asculta inregistrarea si alege salutul corect'
+    WHEN 5829 THEN 'Pronunta cuvantul Hallo corect'
+    WHEN 5830 THEN 'Conecteaza cifrele de la 1 la 5 cu cuvintele in germana'
+END
+WHERE id_ejercicio BETWEEN 5821 AND 5830;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5831 THEN 'Care este articolul feminin? a) die b) der c) das'
+    WHEN 5832 THEN 'Pune in ordinea corecta: isst er einen Apfel'
+    WHEN 5833 THEN 'Asculta si scrie culoarea in germana'
+    WHEN 5834 THEN 'Citeste urmatoarea propozitie cu voce tare: Ich komme aus Rumaenien'
+    WHEN 5835 THEN 'Conecteaza membrii familiei cu numele lor in germana'
+    WHEN 5836 THEN 'Care este trecutul lui machen? a) gemacht b) machte'
+    WHEN 5837 THEN 'Pune in ordine: bin ich gestern ins Kino gegangen'
+    WHEN 5838 THEN 'Asculta dialogul si raspunde la intrebare'
+    WHEN 5839 THEN 'Citeste cu voce tare: Ich habe ein Auto gekauft'
+    WHEN 5840 THEN 'Conecteaza verbele neregulate cu Partizip II'
+END
+WHERE id_ejercicio BETWEEN 5831 AND 5840;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5841 THEN 'Daca as avea timp: a) wenn ich Zeit hatte b) ich habe'
+    WHEN 5842 THEN 'Pune in ordine: arbeiten sie hier schon lange'
+    WHEN 5843 THEN 'Asculta stirile germane si identifica subiectul'
+    WHEN 5844 THEN 'Pronunta textul despre Berlin cu voce tare'
+    WHEN 5845 THEN 'Conecteaza prepozitiile cu cazurile corecte'
+    WHEN 5846 THEN 'Care este un sinonim pentru schnell? a) rasch b) langsam'
+    WHEN 5847 THEN 'Pune in ordine: obwohl es regnete sind wir'
+    WHEN 5848 THEN 'Asculta dezbaterea si rezuma punctele de vedere'
+    WHEN 5849 THEN 'Inregistreaza un discurs in germana despre UE'
+    WHEN 5850 THEN 'Conecteaza expresiile din germana cu sensul lor'
+END
+WHERE id_ejercicio BETWEEN 5841 AND 5850;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5851 THEN 'Cum se spune salut in chineza? a) Ni hao b) Zaijian'
+    WHEN 5852 THEN 'Pune cuvintele in ordinea corecta: wo shi luomaniya ren'
+    WHEN 5853 THEN 'Asculta inregistrarea si identifica tonul'
+    WHEN 5854 THEN 'Pronunta Xiexie cu tonul corect'
+    WHEN 5855 THEN 'Conecteaza cifrele de la 1 la 5 cu cuvintele in chineza'
+    WHEN 5856 THEN 'Care este clasificatorul pentru obiecte plate? a) zhang b) ge'
+    WHEN 5857 THEN 'Pune in ordinea corecta: wo xihuan he cha'
+    WHEN 5858 THEN 'Asculta si scrie culoarea in pinyin'
+    WHEN 5859 THEN 'Citeste urmatoarea propozitie cu voce tare: Wo ai ni'
+    WHEN 5860 THEN 'Conecteaza animalele cu caracterele lor in chineza'
+END
+WHERE id_ejercicio BETWEEN 5851 AND 5860;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5861 THEN 'Care particula indica trecutul? a) le b) zhi c) zai'
+    WHEN 5862 THEN 'Pune in ordine: zuotian wo qu le beijing'
+    WHEN 5863 THEN 'Asculta dialogul si noteaza ce au mancat'
+    WHEN 5864 THEN 'Citeste textul in pinyin cu voce tare'
+    WHEN 5865 THEN 'Conecteaza verbele cu particulele lor'
+    WHEN 5866 THEN 'Daca ploua nu ma duc: a) ruguo xiayu b) suiran xiayu'
+    WHEN 5867 THEN 'Pune in ordine: wo zhengzai xuexi zhongwen'
+    WHEN 5868 THEN 'Asculta stirile si identifica subiectul'
+    WHEN 5869 THEN 'Pronunta textul despre Marele Zid Chinezesc'
+    WHEN 5870 THEN 'Conecteaza caracterele cu radicalii lor'
+END
+WHERE id_ejercicio BETWEEN 5861 AND 5870;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5871 THEN 'Care este un sinonim pentru gaoxing? a) kuaile b) nan guo'
+    WHEN 5872 THEN 'Pune in ordine: ta zhongyu chengong le'
+    WHEN 5873 THEN 'Asculta dezbaterea si rezuma argumentele'
+    WHEN 5874 THEN 'Inregistreaza un discurs despre economia Chinei'
+    WHEN 5875 THEN 'Conecteaza expresiile chinezesti (chengyu) cu sensul lor'
+    WHEN 5876 THEN 'Cum se spune salut in japoneza? a) Konnichiwa b) Sayounara'
+    WHEN 5877 THEN 'Pune cuvintele in ordinea corecta: watashi wa gakusei desu'
+    WHEN 5878 THEN 'Asculta inregistrarea si alege salutul corect'
+    WHEN 5879 THEN 'Pronunta cuvantul Konnichiwa corect'
+    WHEN 5880 THEN 'Conecteaza cifrele de la 1 la 5 cu cuvintele in japoneza'
+END
+WHERE id_ejercicio BETWEEN 5871 AND 5880;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5881 THEN 'Care este particula de subiect? a) wa/ga b) wo c) ni'
+    WHEN 5882 THEN 'Pune in ordinea corecta: ringo wo tabemasu'
+    WHEN 5883 THEN 'Asculta si scrie cuvantul in romaji'
+    WHEN 5884 THEN 'Citeste urmatoarea propozitie cu voce tare: Nihon ni ikitai desu'
+    WHEN 5885 THEN 'Conecteaza animalele cu numele lor in japoneza'
+    WHEN 5886 THEN 'Care este trecutul lui suru? a) shimashita b) shimasu'
+    WHEN 5887 THEN 'Pune in ordine: kinou tomodachi ni aimashita'
+    WHEN 5888 THEN 'Asculta conversatia si raspunde unde au mers'
+    WHEN 5889 THEN 'Citeste cu voce tare: Atarashii kuruma wo kaimashita'
+    WHEN 5890 THEN 'Conecteaza verbele cu forma lor te'
+END
+WHERE id_ejercicio BETWEEN 5881 AND 5890;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5891 THEN 'Daca as avea timp: a) jikan ga attara b) jikan ga aru'
+    WHEN 5892 THEN 'Pune in ordine: ima ongaku wo kiite imasu'
+    WHEN 5893 THEN 'Asculta stirile japoneze si identifica subiectul'
+    WHEN 5894 THEN 'Pronunta textul despre Tokyo cu voce tare'
+    WHEN 5895 THEN 'Conecteaza conjunctiile japoneze cu sensul lor'
+    WHEN 5896 THEN 'Care este un sinonim pentru hayai? a) shinsoku b) osoi'
+    WHEN 5897 THEN 'Pune in ordine: ame ga futte mo ikimasu'
+    WHEN 5898 THEN 'Asculta drama si noteaza emotiile'
+    WHEN 5899 THEN 'Inregistreaza un discurs despre cultura japoneza'
+    WHEN 5900 THEN 'Conecteaza proverbele japoneze cu sensul lor'
+END
+WHERE id_ejercicio BETWEEN 5891 AND 5900;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5901 THEN 'Cum se spune salut in portugheza? a) Ola b) Tchau'
+    WHEN 5902 THEN 'Pune cuvintele in ordinea corecta: do sou eu Romenia'
+    WHEN 5903 THEN 'Asculta inregistrarea si alege salutul corect'
+    WHEN 5904 THEN 'Pronunta cuvantul Ola corect'
+    WHEN 5905 THEN 'Conecteaza cifrele de la 1 la 5 cu cuvintele in portugheza'
+    WHEN 5906 THEN 'Care este verbul a fi? a) ser b) falar'
+    WHEN 5907 THEN 'Pune in ordinea corecta: come ela uma maca'
+    WHEN 5908 THEN 'Asculta si scrie culoarea in portugheza'
+    WHEN 5909 THEN 'Citeste urmatoarea propozitie cu voce tare: Eu gosto de cafe'
+    WHEN 5910 THEN 'Conecteaza animalele cu numele lor in portugheza'
+END
+WHERE id_ejercicio BETWEEN 5901 AND 5910;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5911 THEN 'Care este trecutul lui falar? a) falei b) falava'
+    WHEN 5912 THEN 'Pune in ordine: ontem fomos nos ao cinema'
+    WHEN 5913 THEN 'Asculta dialogul si raspunde la intrebare'
+    WHEN 5914 THEN 'Citeste cu voce tare: Eu comprei um carro'
+    WHEN 5915 THEN 'Conecteaza verbele neregulate cu trecutul lor'
+    WHEN 5916 THEN 'Daca as avea timp: a) se eu tivesse tempo b) se eu tenho'
+    WHEN 5917 THEN 'Pune in ordine: estao trabalhando eles aqui'
+    WHEN 5918 THEN 'Asculta stirile si identifica problema'
+    WHEN 5919 THEN 'Pronunta textul despre cultura braziliana'
+    WHEN 5920 THEN 'Conecteaza verbele compuse cu sensul lor'
+END
+WHERE id_ejercicio BETWEEN 5911 AND 5920;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5921 THEN 'Care este un sinonim pentru rapido? a) veloz b) devagar'
+    WHEN 5922 THEN 'Pune in ordine: apesar das dificuldades'
+    WHEN 5923 THEN 'Asculta dezbaterea si rezuma'
+    WHEN 5924 THEN 'Inregistreaza un discurs despre economie in portugheza'
+    WHEN 5925 THEN 'Conecteaza expresiile idiomatice in portugheza cu sensul lor'
+    WHEN 5926 THEN 'Cat face 5 plus 3? a) 8 b) 7 c) 9 d) 6'
+    WHEN 5927 THEN 'Pune in ordine: adunarea are doi termeni'
+    WHEN 5928 THEN 'Asculta si scrie numarul'
+    WHEN 5929 THEN 'Citeste aceasta ecuatie: 10 minus 4'
+    WHEN 5930 THEN 'Conecteaza simbolul matematic cu numele sau'
+END
+WHERE id_ejercicio BETWEEN 5921 AND 5930;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5931 THEN 'Cat face 8 inmultit cu 7? a) 56 b) 54 c) 64'
+    WHEN 5932 THEN 'Pune in ordine: ordinea factorilor nu schimba produsul'
+    WHEN 5933 THEN 'Asculta fractia si noteaza'
+    WHEN 5934 THEN 'Citeste aceasta expresie: trei patrimi'
+    WHEN 5935 THEN 'Conecteaza figura geometrica cu numarul de laturi'
+    WHEN 5936 THEN 'Rezolva ecuatia: 2x = 10. a) x=5 b) x=2'
+    WHEN 5937 THEN 'Pune in ordine: pentru a rezolva izoleaza variabila'
+    WHEN 5938 THEN 'Asculta problema si scrie ecuatia'
+    WHEN 5939 THEN 'Citeste cu voce tare: x la patrat plus y la patrat'
+    WHEN 5940 THEN 'Conecteaza formula ariei cu figura'
+END
+WHERE id_ejercicio BETWEEN 5931 AND 5940;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5941 THEN 'Derivata lui x la patrat este: a) 2x b) x c) 2'
+    WHEN 5942 THEN 'Pune in ordine: derivata este panta tangentei'
+    WHEN 5943 THEN 'Asculta limita si identifica tendinta'
+    WHEN 5944 THEN 'Explica Teorema lui Pitagora cu voce tare'
+    WHEN 5945 THEN 'Conecteaza functia trigonometrica cu inversa ei'
+    WHEN 5946 THEN 'Integrala lui e la puterea x este: a) e^x + C b) x c) ln(x)'
+    WHEN 5947 THEN 'Pune in ordine: integrarea prin parti este o tehnica'
+    WHEN 5948 THEN 'Asculta analiza functiei si noteaza extremele'
+    WHEN 5949 THEN 'Demonstreaza cu voce tare o limita algebrica fundamentala'
+    WHEN 5950 THEN 'Conecteaza ecuatia diferentiala cu tipul ei'
+END
+WHERE id_ejercicio BETWEEN 5941 AND 5950;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5951 THEN 'Cate linii are un portativ? a) 5 b) 4 c) 6'
+    WHEN 5952 THEN 'Pune in ordine: exista sapte note de baza'
+    WHEN 5953 THEN 'Asculta inregistrarea si determina inaltimea sunetului'
+    WHEN 5954 THEN 'Canta nota Do central'
+    WHEN 5955 THEN 'Conecteaza nota cu durata ei'
+    WHEN 5956 THEN 'Ce cheie este folosita pentru notele inalte? a) Cheia Sol b) Cheia Fa'
+    WHEN 5957 THEN 'Pune in ordine: diez-ul ridica nota cu un semiton'
+    WHEN 5958 THEN 'Asculta melodia si completeaza notele lipsa'
+    WHEN 5959 THEN 'Canta gama Do major'
+    WHEN 5960 THEN 'Conecteaza accidentul muzical cu efectul sau'
+END
+WHERE id_ejercicio BETWEEN 5951 AND 5960;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5961 THEN 'Distanta dintre Do si Mi este o: a) terta mare b) cvinta perfecta'
+    WHEN 5962 THEN 'Pune in ordine: un acord are tonica terta si cvinta'
+    WHEN 5963 THEN 'Asculta acordul si spune daca este major sau minor'
+    WHEN 5964 THEN 'Canta arpegiul Sol major'
+    WHEN 5965 THEN 'Conecteaza treptele gamei cu numele lor tehnice'
+    WHEN 5966 THEN 'Gama minora relativa pentru Do major este: a) La minor b) Mi minor'
+    WHEN 5967 THEN 'Pune in ordine: modulatia este schimbarea tonalitatii'
+    WHEN 5968 THEN 'Asculta progresia armonica si noteaza treptele'
+    WHEN 5969 THEN 'Bate din palme ritmul asimetric corect'
+    WHEN 5970 THEN 'Conecteaza modul gregorian cu structura sa'
+END
+WHERE id_ejercicio BETWEEN 5961 AND 5970;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5971 THEN 'Ce este contrapunctul? a) voci independente b) ritm'
+    WHEN 5972 THEN 'Pune in ordine: fuga este o forma polifonica'
+    WHEN 5973 THEN 'Asculta piesa simfonica si identifica forma'
+    WHEN 5974 THEN 'Explica dodecafonismul cu voce tare'
+    WHEN 5975 THEN 'Conecteaza epocile muzicale cu compozitorii lor'
+    WHEN 5976 THEN 'Kak skazat privet po-angliyski? a) Hello b) Bye c) Yes'
+    WHEN 5977 THEN 'Rasstavte slova v pravilnom poryadke: is name my John'
+    WHEN 5978 THEN 'Poslushayte i vyberite pravilnoe privetstvie'
+    WHEN 5979 THEN 'Proiznesite slovo Hello pravilno'
+    WHEN 5980 THEN 'Soedinite tsifry ot 1 do 5 so slovami na angliyskom'
+END
+WHERE id_ejercicio BETWEEN 5971 AND 5980;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5981 THEN 'Kakoy glagol oznachaet byt? a) to be b) to play c) to run'
+    WHEN 5982 THEN 'Rasstavte v poryadke: playing am I now'
+    WHEN 5983 THEN 'Poslushayte i napishite tsvet po-angliyski'
+    WHEN 5984 THEN 'Prochitayte predlozhenie vsluh: I am happy'
+    WHEN 5985 THEN 'Soedinite zhivotnyh s ih angliyskimi nazvaniyami'
+    WHEN 5986 THEN 'Kakova forma proshedshego vremeni dlya go? a) went b) goed c) gone'
+    WHEN 5987 THEN 'Rasstavte v poryadke: yesterday to school went she'
+    WHEN 5988 THEN 'Poslushayte dialog i otvette na vopros'
+    WHEN 5989 THEN 'Prochitayte vsluh: She bought a new house'
+    WHEN 5990 THEN 'Soedinite nepravilnye glagoly s ih proshedshim vremenem'
+END
+WHERE id_ejercicio BETWEEN 5981 AND 5990;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 5991 THEN 'Esli by poshel dozhd: a) will stay b) would stay'
+    WHEN 5992 THEN 'Rasstavte v poryadke: have waiting been they'
+    WHEN 5993 THEN 'Poslushayte novosti i opredelite problemu'
+    WHEN 5994 THEN 'Proiznesite tekst ob izmenenii klimata'
+    WHEN 5995 THEN 'Soedinite frazovye glagoly s ih znacheniyami'
+    WHEN 5996 THEN 'Sinonim k slovu fast eto? a) quick b) slow'
+    WHEN 5997 THEN 'Rasstavte v poryadke: nevertheless she persisted'
+    WHEN 5998 THEN 'Poslushayte debaty i sdelayte vyvod'
+    WHEN 5999 THEN 'Zapishite kratkuyu rech ob ekonomike'
+    WHEN 6000 THEN 'Soedinite angliyskie idiomy s ih znacheniyami'
+END
+WHERE id_ejercicio BETWEEN 5991 AND 6000;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6001 THEN 'Kak skazat privet po-nemetski? a) Hallo b) Tschuss'
+    WHEN 6002 THEN 'Rasstavte slova v pravilnom poryadke: heisse ich Anna'
+    WHEN 6003 THEN 'Poslushayte i vyberite pravilnoe privetstvie'
+    WHEN 6004 THEN 'Proiznesite slovo Hallo pravilno'
+    WHEN 6005 THEN 'Soedinite tsifry ot 1 do 5 so slovami na nemetskom'
+    WHEN 6006 THEN 'Kakoy opredelennyy artikl zhenskogo roda? a) die b) der c) das'
+    WHEN 6007 THEN 'Rasstavte v poryadke: isst er einen Apfel'
+    WHEN 6008 THEN 'Poslushayte i napishite tsvet po-nemetski'
+    WHEN 6009 THEN 'Prochitayte predlozhenie vsluh: Ich komme aus Russland'
+    WHEN 6010 THEN 'Soedinite chlenov semi s ih nazvaniyami na nemetskom'
+END
+WHERE id_ejercicio BETWEEN 6001 AND 6010;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6011 THEN 'Kakova forma proshedshego vremeni dlya machen? a) gemacht b) machte'
+    WHEN 6012 THEN 'Rasstavte v poryadke: bin ich gestern ins Kino gegangen'
+    WHEN 6013 THEN 'Poslushayte dialog i otvette na vopros'
+    WHEN 6014 THEN 'Prochitayte vsluh: Ich habe ein Auto gekauft'
+    WHEN 6015 THEN 'Soedinite nepravilnye glagoly s ih Partizip II'
+    WHEN 6016 THEN 'Esli by u menya bylo vremya: a) wenn ich Zeit hatte b) ich habe'
+    WHEN 6017 THEN 'Rasstavte v poryadke: arbeiten sie hier schon lange'
+    WHEN 6018 THEN 'Poslushayte nemetskie novosti i opredelite temu'
+    WHEN 6019 THEN 'Proiznesite tekst o Berline vsluh'
+    WHEN 6020 THEN 'Soedinite predlogi s pravilnymi padezhami'
+END
+WHERE id_ejercicio BETWEEN 6011 AND 6020;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6021 THEN 'Sinonim k slovu schnell eto? a) rasch b) langsam'
+    WHEN 6022 THEN 'Rasstavte v poryadke: obwohl es regnete sind wir'
+    WHEN 6023 THEN 'Poslushayte debaty i sdelayte vyvod'
+    WHEN 6024 THEN 'Zapishite rech o ES na nemetskom'
+    WHEN 6025 THEN 'Soedinite nemetskie idiomy s ih znacheniyami'
+    WHEN 6026 THEN 'Kak skazat privet po-ispanski? a) Hola b) Adios'
+    WHEN 6027 THEN 'Rasstavte slova: soy yo de Rusia'
+    WHEN 6028 THEN 'Poslushayte i vyberite pravilnoe privetstvie'
+    WHEN 6029 THEN 'Proiznesite slovo Hola pravilno'
+    WHEN 6030 THEN 'Soedinite tsifry ot 1 do 5 so slovami na ispansom'
+END
+WHERE id_ejercicio BETWEEN 6021 AND 6030;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6031 THEN 'Kakoy glagol oznachaet byt (postoyanno)? a) ser b) estar'
+    WHEN 6032 THEN 'Rasstavte v poryadke: come ella una manzana'
+    WHEN 6033 THEN 'Poslushayte i napishite tsvet po-ispanski'
+    WHEN 6034 THEN 'Prochitayte predlozhenie vsluh: Estoy feliz'
+    WHEN 6035 THEN 'Soedinite zhivotnyh s ih nazvaniyami na ispanskom'
+    WHEN 6036 THEN 'Kakova forma proshedshego vremeni dlya hablar? a) hable b) hablaba'
+    WHEN 6037 THEN 'Rasstavte v poryadke: fuimos ayer al cine'
+    WHEN 6038 THEN 'Poslushayte razgovor i zapishite mesto naznacheniya'
+    WHEN 6039 THEN 'Prochitayte vsluh: Compre un coche nuevo'
+    WHEN 6040 THEN 'Soedinite glagoly s ih proshedshim vremenem na ispanskom'
+END
+WHERE id_ejercicio BETWEEN 6031 AND 6040;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6041 THEN 'Esli by u menya bylo vremya: a) si tuviera tiempo b) si tengo'
+    WHEN 6042 THEN 'Rasstavte v poryadke: han estado trabajando aqui'
+    WHEN 6043 THEN 'Poslushayte novosti i zapishite glavnuyu temu'
+    WHEN 6044 THEN 'Proiznesite tekst ob Ispanii vsluh'
+    WHEN 6045 THEN 'Soedinite soyuzy s ih znacheniyami'
+    WHEN 6046 THEN 'Sinonim k slovu rapido eto? a) veloz b) lento'
+    WHEN 6047 THEN 'Rasstavte v poryadke: a pesar de las dificultades'
+    WHEN 6048 THEN 'Poslushayte debaty i sdelayte vyvod'
+    WHEN 6049 THEN 'Zapishite rech ob ekonomike na ispanskom'
+    WHEN 6050 THEN 'Soedinite ispanskie idiomy s ih znacheniyami'
+END
+WHERE id_ejercicio BETWEEN 6041 AND 6050;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6051 THEN 'Kak skazat privet po-frantsuzski? a) Bonjour b) Merci'
+    WHEN 6052 THEN 'Rasstavte slova: m appelle je Pierre'
+    WHEN 6053 THEN 'Poslushayte i vyberite pravilnoe privetstvie'
+    WHEN 6054 THEN 'Proiznesite slovo Bonjour pravilno'
+    WHEN 6055 THEN 'Soedinite tsifry ot 1 do 5 so slovami na frantsuzskom'
+    WHEN 6056 THEN 'Kakoy opredelennyy artikl zhenskogo roda? a) la b) le c) les'
+    WHEN 6057 THEN 'Rasstavte v poryadke: mange elle une pomme'
+    WHEN 6058 THEN 'Poslushayte i napishite tsvet po-frantsuzski'
+    WHEN 6059 THEN 'Prochitayte vsluh: Je suis etudiant'
+    WHEN 6060 THEN 'Soedinite chlenov semi s ih nazvaniyami na frantsuzskom'
+END
+WHERE id_ejercicio BETWEEN 6051 AND 6060;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6061 THEN 'Kakova forma passe compose dlya manger? a) a mange b) mangeait'
+    WHEN 6062 THEN 'Rasstavte v poryadke: hier sommes nous alles'
+    WHEN 6063 THEN 'Poslushayte dialog i otvette na vopros'
+    WHEN 6064 THEN 'Prochitayte vsluh: Nous avons visite Paris'
+    WHEN 6065 THEN 'Soedinite nepravilnye glagoly s ih passe compose'
+    WHEN 6066 THEN 'Esli by ya znal: a) si j avais su b) si je sais'
+    WHEN 6067 THEN 'Rasstavte v poryadke: travaillent ils ici depuis'
+    WHEN 6068 THEN 'Poslushayte novosti i opredelite mesto'
+    WHEN 6069 THEN 'Proiznesite tekst o frantsuzskoy kulture'
+    WHEN 6070 THEN 'Soedinite frantsuzskie soyuzy s ih znacheniyami'
+END
+WHERE id_ejercicio BETWEEN 6061 AND 6070;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6071 THEN 'Sinonim k slovu ephemere eto? a) passager b) durable'
+    WHEN 6072 THEN 'Rasstavte v poryadke: nonobstant les difficultes'
+    WHEN 6073 THEN 'Poslushayte debaty na frantsuzskom i sdelayte vyvod'
+    WHEN 6074 THEN 'Zapishite rech o Frantsuzskoy revolyutsii'
+    WHEN 6075 THEN 'Soedinite frantsuzskie idiomy s ih znacheniyami'
+    WHEN 6076 THEN 'Skolko kletok na shahmatnoy doske? a) 64 b) 32 c) 100'
+    WHEN 6077 THEN 'Rasstavte v poryadke: igrok kazhdyy imeet peshek vosem'
+    WHEN 6078 THEN 'Poslushayte i nazovite shahmatnuyu figuru'
+    WHEN 6079 THEN 'Skazhite vsluh: Shah i mat'
+    WHEN 6080 THEN 'Soedinite figuru s ee tsennostyu v ochkah'
+END
+WHERE id_ejercicio BETWEEN 6071 AND 6080;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6081 THEN 'Kak hodit kon? a) bukvoy G b) po diagonali'
+    WHEN 6082 THEN 'Rasstavte v poryadke: slon kontroliruet diagonali'
+    WHEN 6083 THEN 'Poslushayte hod i sdelaite ego na doske'
+    WHEN 6084 THEN 'Skazhite sleduyushchiy hod: Kon na f3'
+    WHEN 6085 THEN 'Soedinite bazovye terminy s ih obyasneniem'
+    WHEN 6086 THEN 'Chto takoe svyazka? a) figura ne mozhet hodit b) shah'
+    WHEN 6087 THEN 'Rasstavte v poryadke: pozhertvuyte ladyu chtoby vskryt liniyu'
+    WHEN 6088 THEN 'Poslushayte analiz i naydite ugrozu'
+    WHEN 6089 THEN 'Prochitayte glavnyy variant vsluh'
+    WHEN 6090 THEN 'Soedinite takticheskie motivy s primerami'
+END
+WHERE id_ejercicio BETWEEN 6081 AND 6090;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6091 THEN 'Chto takoe oppozitsiya v endshpile? a) koroli drug naprotiv druga b) mat'
+    WHEN 6092 THEN 'Rasstavte v poryadke: izolirovannaya peshka eto slabost'
+    WHEN 6093 THEN 'Poslushayte urok i zapishite klyuchevoy hod'
+    WHEN 6094 THEN 'Obyasnite kontseptsiyu profilaktiki vsluh'
+    WHEN 6095 THEN 'Soedinite debyut s pravilnym kodom ECO'
+    WHEN 6096 THEN 'Chem harakterizuetsya Sitsilianskaya zashchita? a) c5 b) e5 c) d5'
+    WHEN 6097 THEN 'Rasstavte v poryadke: dinamicheskaya kompensatsiya za material'
+    WHEN 6098 THEN 'Sledite za analizom vslepuyu i naydite mat'
+    WHEN 6099 THEN 'Proanaliziruyte partiyu Kasparova protiv Topalova vsluh'
+    WHEN 6100 THEN 'Soedinite peshechnye struktury s sootvetstvuyushchim planom'
+END
+WHERE id_ejercicio BETWEEN 6091 AND 6100;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6101 THEN 'Kak skazat privet po-kitayski? a) Ni hao b) Zaijian'
+    WHEN 6102 THEN 'Rasstavte slova: wo shi eluosi ren'
+    WHEN 6103 THEN 'Poslushayte zapis i opredelite ton'
+    WHEN 6104 THEN 'Proiznesite Xiexie s pravilnym tonom'
+    WHEN 6105 THEN 'Soedinite tsifry ot 1 do 5 so slovami na kitayskom'
+    WHEN 6106 THEN 'Kakoe schetnoe slovo dlya ploskih predmetov? a) zhang b) ge'
+    WHEN 6107 THEN 'Rasstavte v poryadke: wo xihuan he cha'
+    WHEN 6108 THEN 'Poslushayte i napishite tsvet na pinyine'
+    WHEN 6109 THEN 'Prochitayte vsluh: Wo ai ni'
+    WHEN 6110 THEN 'Soedinite zhivotnyh s ih ieroglifami'
+END
+WHERE id_ejercicio BETWEEN 6101 AND 6110;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6111 THEN 'Kakaya chastitsa ukazyvaet na proshedshee vremya? a) le b) zhi c) zai'
+    WHEN 6112 THEN 'Rasstavte v poryadke: zuotian wo qu le beijing'
+    WHEN 6113 THEN 'Poslushayte dialog i zapishite chto oni eli'
+    WHEN 6114 THEN 'Prochitayte tekst na pinyine vsluh'
+    WHEN 6115 THEN 'Soedinite glagoly s ih chastitsami'
+    WHEN 6116 THEN 'Esli poydet dozhd ya ne poydu: a) ruguo xiayu b) suiran xiayu'
+    WHEN 6117 THEN 'Rasstavte v poryadke: wo zhengzai xuexi zhongwen'
+    WHEN 6118 THEN 'Poslushayte novosti i opredelite temu'
+    WHEN 6119 THEN 'Proiznesite tekst o Velikoy Kitayskoy stene'
+    WHEN 6120 THEN 'Soedinite ieroglify s ih radikalami'
+END
+WHERE id_ejercicio BETWEEN 6111 AND 6120;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6121 THEN 'Sinonim k slovu gaoxing eto? a) kuaile b) nan guo'
+    WHEN 6122 THEN 'Rasstavte v poryadke: ta zhongyu chengong le'
+    WHEN 6123 THEN 'Poslushayte debaty i rezumiruyte argumenty'
+    WHEN 6124 THEN 'Zapishite rech o kitayskoy ekonomike'
+    WHEN 6125 THEN 'Soedinite kitayskie idiomy (chengyu) s ih znacheniyami'
+    WHEN 6126 THEN 'Kak skazat privet po-portugalski? a) Ola b) Tchau'
+    WHEN 6127 THEN 'Rasstavte slova: sou eu da Russia'
+    WHEN 6128 THEN 'Poslushayte i vyberite pravilnoe privetstvie'
+    WHEN 6129 THEN 'Proiznesite slovo Ola pravilno'
+    WHEN 6130 THEN 'Soedinite tsifry ot 1 do 5 so slovami na portugalskom'
+END
+WHERE id_ejercicio BETWEEN 6121 AND 6130;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6131 THEN 'Kakoy glagol oznachaet byt? a) ser b) falar'
+    WHEN 6132 THEN 'Rasstavte v poryadke: come ela uma maca'
+    WHEN 6133 THEN 'Poslushayte i napishite tsvet po-portugalski'
+    WHEN 6134 THEN 'Prochitayte vsluh: Eu gosto de cafe'
+    WHEN 6135 THEN 'Soedinite zhivotnyh s ih nazvaniyami na portugalskom'
+    WHEN 6136 THEN 'Kakova forma proshedshego vremeni dlya falar? a) falei b) falava'
+    WHEN 6137 THEN 'Rasstavte v poryadke: ontem fomos nos ao cinema'
+    WHEN 6138 THEN 'Poslushayte dialog i otvette na vopros'
+    WHEN 6139 THEN 'Prochitayte vsluh: Eu comprei um carro'
+    WHEN 6140 THEN 'Soedinite nepravilnye glagoly s ih proshedshim vremenem'
+END
+WHERE id_ejercicio BETWEEN 6131 AND 6140;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6141 THEN 'Esli by u menya bylo vremya: a) se eu tivesse tempo b) se eu tenho'
+    WHEN 6142 THEN 'Rasstavte v poryadke: estao trabalhando eles aqui'
+    WHEN 6143 THEN 'Poslushayte novosti i opredelite problemu'
+    WHEN 6144 THEN 'Proiznesite tekst o brazilskoy kulture'
+    WHEN 6145 THEN 'Soedinite slozhnye glagoly s ih znacheniyami'
+    WHEN 6146 THEN 'Sinonim k slovu rapido eto? a) veloz b) devagar'
+    WHEN 6147 THEN 'Rasstavte v poryadke: apesar das dificuldades'
+    WHEN 6148 THEN 'Poslushayte debaty i sdelayte vyvod'
+    WHEN 6149 THEN 'Zapishite rech ob ekonomike na portugalskom'
+    WHEN 6150 THEN 'Soedinite portugalskie idiomy s ih znacheniyami'
+END
+WHERE id_ejercicio BETWEEN 6141 AND 6150;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6151 THEN 'Kak skazat privet po-yaponski? a) Konnichiwa b) Sayounara'
+    WHEN 6152 THEN 'Rasstavte slova: watashi wa gakusei desu'
+    WHEN 6153 THEN 'Poslushayte i vyberite pravilnoe privetstvie'
+    WHEN 6154 THEN 'Proiznesite slovo Konnichiwa pravilno'
+    WHEN 6155 THEN 'Soedinite tsifry ot 1 do 5 so slovami na yaponskom'
+    WHEN 6156 THEN 'Kakaya chastitsa yavlyaetsya pokazatelem temy? a) wa/ga b) wo c) ni'
+    WHEN 6157 THEN 'Rasstavte v poryadke: ringo wo tabemasu'
+    WHEN 6158 THEN 'Poslushayte i napishite slovo na romadzi'
+    WHEN 6159 THEN 'Prochitayte vsluh: Nihon ni ikitai desu'
+    WHEN 6160 THEN 'Soedinite zhivotnyh s ih nazvaniyami na yaponskom'
+END
+WHERE id_ejercicio BETWEEN 6151 AND 6160;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6161 THEN 'Kakova forma proshedshego vremeni dlya suru? a) shimashita b) shimasu'
+    WHEN 6162 THEN 'Rasstavte v poryadke: kinou tomodachi ni aimashita'
+    WHEN 6163 THEN 'Poslushayte razgovor i otvette kuda oni poshli'
+    WHEN 6164 THEN 'Prochitayte vsluh: Atarashii kuruma wo kaimashita'
+    WHEN 6165 THEN 'Soedinite glagoly s ih te-formoy'
+    WHEN 6166 THEN 'Esli by u menya bylo vremya: a) jikan ga attara b) jikan ga aru'
+    WHEN 6167 THEN 'Rasstavte v poryadke: ima ongaku wo kiite imasu'
+    WHEN 6168 THEN 'Poslushayte yaponskie novosti i opredelite temu'
+    WHEN 6169 THEN 'Proiznesite tekst o Tokio vsluh'
+    WHEN 6170 THEN 'Soedinite yaponskie soyuzy s ih znacheniyami'
+END
+WHERE id_ejercicio BETWEEN 6161 AND 6170;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6171 THEN 'Sinonim k slovu hayai eto? a) shinsoku b) osoi'
+    WHEN 6172 THEN 'Rasstavte v poryadke: ame ga futte mo ikimasu'
+    WHEN 6173 THEN 'Poslushayte doramu i zapishite emotsii'
+    WHEN 6174 THEN 'Zapishite rech o yaponskoy kulture'
+    WHEN 6175 THEN 'Soedinite yaponskie poslovitsy s ih znacheniyami'
+    WHEN 6176 THEN 'Kak skazat privet po-koreyski? a) Annyeonghaseyo b) Ne'
+    WHEN 6177 THEN 'Rasstavte slova: naneun saram imnida'
+    WHEN 6178 THEN 'Poslushayte i vyberite pravilnuyu glasnuyu'
+    WHEN 6179 THEN 'Proiznesite Annyeonghaseyo pravilno'
+    WHEN 6180 THEN 'Soedinite tsifry ot 1 do 5 so slovami na koreyskom'
+END
+WHERE id_ejercicio BETWEEN 6171 AND 6180;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6181 THEN 'Kakaya chastitsa yavlyaetsya pokazatelem podlezhashchego? a) i/ga b) eun/neun'
+    WHEN 6182 THEN 'Rasstavte v poryadke: jeoneun bap eul meogeoyo'
+    WHEN 6183 THEN 'Poslushayte i napishite slovo na romadzi'
+    WHEN 6184 THEN 'Prochitayte vsluh: Hangugoeol baewoyo'
+    WHEN 6185 THEN 'Soedinite zhivotnyh s ih nazvaniyami na koreyskom'
+    WHEN 6186 THEN 'Kakova forma proshedshego vremeni dlya hada? a) haesseoyo b) haeyo'
+    WHEN 6187 THEN 'Rasstavte v poryadke: eojeyo hakgyo e gasseoyo'
+    WHEN 6188 THEN 'Poslushayte razgovor i zapishite mesto naznacheniya'
+    WHEN 6189 THEN 'Prochitayte vsluh: Sae cha reul sasseoyo'
+    WHEN 6190 THEN 'Soedinite glagoly s ih kornyami'
+END
+WHERE id_ejercicio BETWEEN 6181 AND 6190;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6191 THEN 'Esli by u menya bylo vremya: a) sigan isseumyeon b) sigan isseodo'
+    WHEN 6192 THEN 'Rasstavte v poryadke: jigeum eumag eul deutgo isseoyo'
+    WHEN 6193 THEN 'Poslushayte novosti i opredelite gorod'
+    WHEN 6194 THEN 'Proiznesite tekst o Seule vsluh'
+    WHEN 6195 THEN 'Soedinite koreyskie soyuzy s ih znacheniyami'
+    WHEN 6196 THEN 'Sinonim k slovu ppareuda eto? a) neulida b) bappeuda'
+    WHEN 6197 THEN 'Rasstavte v poryadke: biga wado gohyang e gamnida'
+    WHEN 6198 THEN 'Poslushayte dramu i zapishite emotsii'
+    WHEN 6199 THEN 'Zapishite rech o koreyskoy ede'
+    WHEN 6200 THEN 'Soedinite koreyskie poslovitsy s ih znacheniyami'
+END
+WHERE id_ejercicio BETWEEN 6191 AND 6200;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6201 THEN 'Kak skazat privet po-italyanski? a) Ciao b) Arrivederci'
+    WHEN 6202 THEN 'Rasstavte slova v poryadke: mi chiamo io Marco'
+    WHEN 6203 THEN 'Poslushayte i vyberite pravilnoe privetstvie'
+    WHEN 6204 THEN 'Proiznesite slovo Ciao pravilno'
+    WHEN 6205 THEN 'Soedinite tsifry ot 1 do 5 so slovami na italyanskom'
+    WHEN 6206 THEN 'Kakoy glagol oznachaet byt? a) essere b) avere'
+    WHEN 6207 THEN 'Rasstavte v poryadke: mangia lui una mela'
+    WHEN 6208 THEN 'Poslushayte i napishite tsvet po-italyanski'
+    WHEN 6209 THEN 'Prochitayte vsluh: Sono felice'
+    WHEN 6210 THEN 'Soedinite chlenov semi s ih nazvaniyami na italyanskom'
+END
+WHERE id_ejercicio BETWEEN 6201 AND 6210;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6211 THEN 'Kakova forma proshedshego vremeni dlya mangiare? a) ho mangiato b) mangiavo'
+    WHEN 6212 THEN 'Rasstavte v poryadke: ieri siamo andati al mare'
+    WHEN 6213 THEN 'Poslushayte dialog i otvette na vopros'
+    WHEN 6214 THEN 'Prochitayte vsluh: Ha comprato una casa'
+    WHEN 6215 THEN 'Soedinite glagoly s ih prichastiem proshedshego vremeni'
+    WHEN 6216 THEN 'Esli by poshel dozhd: a) se piovesse b) se piove'
+    WHEN 6217 THEN 'Rasstavte v poryadke: lavorano qui da ieri'
+    WHEN 6218 THEN 'Poslushayte italyanskie novosti i opredelite mesto'
+    WHEN 6219 THEN 'Proiznesite tekst o Rime vsluh'
+    WHEN 6220 THEN 'Soedinite italyanskie soyuzy s ih znacheniyami'
+END
+WHERE id_ejercicio BETWEEN 6211 AND 6220;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6221 THEN 'Sinonim k slovu veloce eto? a) rapido b) lento'
+    WHEN 6222 THEN 'Rasstavte v poryadke: sebbene piovesse siamo usciti'
+    WHEN 6223 THEN 'Poslushayte debaty v Italii i sdelayte vyvod'
+    WHEN 6224 THEN 'Zapishite rech ob italyanskoy ede'
+    WHEN 6225 THEN 'Soedinite italyanskie idiomy s ih znacheniyami'
+    WHEN 6226 THEN 'Skolko budet 5 plyus 3? a) 8 b) 7 c) 9 d) 6'
+    WHEN 6227 THEN 'Rasstavte v poryadke: slozhenie imeet dve chasti'
+    WHEN 6228 THEN 'Poslushayte i zapishite chislo'
+    WHEN 6229 THEN 'Prochitayte eto uravnenie: 10 minus 4'
+    WHEN 6230 THEN 'Soedinite matematicheskiy simvol s ego nazvaniem'
+END
+WHERE id_ejercicio BETWEEN 6221 AND 6230;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6231 THEN 'Skolko budet 8 umnozhit na 7? a) 56 b) 54 c) 64'
+    WHEN 6232 THEN 'Rasstavte v poryadke: ot peremeny mest mnozhiteley proizvedenie ne menyaetsya'
+    WHEN 6233 THEN 'Poslushayte drob i zapishite'
+    WHEN 6234 THEN 'Prochitayte eto vyrazhenie: tri chetverti'
+    WHEN 6235 THEN 'Soedinite geometricheskuyu figuru s kolichestvom storon'
+    WHEN 6236 THEN 'Reshite uravnenie: 2x = 10. a) x=5 b) x=2'
+    WHEN 6237 THEN 'Rasstavte v poryadke: dlya resheniya izoliruyte peremennuyu'
+    WHEN 6238 THEN 'Poslushayte zadachu i zapishite uravnenie'
+    WHEN 6239 THEN 'Prochitayte vsluh: x v kvadrate plyus y v kvadrate'
+    WHEN 6240 THEN 'Soedinite formulu ploshchadi s figuroy'
+END
+WHERE id_ejercicio BETWEEN 6231 AND 6240;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6241 THEN 'Proizvodnaya ot x v kvadrate eto: a) 2x b) x c) 2'
+    WHEN 6242 THEN 'Rasstavte v poryadke: proizvodnaya eto naklon kasatelnoy'
+    WHEN 6243 THEN 'Poslushayte predel i opredelite tendentsiyu'
+    WHEN 6244 THEN 'Obyasnite Teoremu Pifagora vsluh'
+    WHEN 6245 THEN 'Soedinite trigonometricheskuyu funktsiyu s ee obratnoy'
+    WHEN 6246 THEN 'Integral ot e v stepeni x eto: a) e^x + C b) x c) ln(x)'
+    WHEN 6247 THEN 'Rasstavte v poryadke: integrirovanie po chastyam eto metod'
+    WHEN 6248 THEN 'Poslushayte analiz funktsii i zapishite ekstremumy'
+    WHEN 6249 THEN 'Dokazhite vsluh fundamentalnyy algebraicheskiy predel'
+    WHEN 6250 THEN 'Soedinite differentsialnoe uravnenie s ego tipom'
+END
+WHERE id_ejercicio BETWEEN 6241 AND 6250;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6251 THEN 'Skolko liniy na notnom stane? a) 5 b) 4 c) 6'
+    WHEN 6252 THEN 'Rasstavte v poryadke: sushchestvuyut sem osnovnyh not'
+    WHEN 6253 THEN 'Poslushayte zapis i opredelite vysotu zvuka'
+    WHEN 6254 THEN 'Spoyte notu Do pervoy oktavy'
+    WHEN 6255 THEN 'Soedinite notu s ee dlitelnostyu'
+    WHEN 6256 THEN 'Kakoy klyuch ispolzuetsya dlya vysokih not? a) skripichnyy b) basovyy'
+    WHEN 6257 THEN 'Rasstavte v poryadke: diez povyshaet notu na poltona'
+    WHEN 6258 THEN 'Poslushayte melodiyu i vstavte propushchennye noty'
+    WHEN 6259 THEN 'Spoyte gammu Do mazhor'
+    WHEN 6260 THEN 'Soedinite znak alteratsii s ego effektom'
+END
+WHERE id_ejercicio BETWEEN 6251 AND 6260;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6261 THEN 'Rasstoyanie mezhdu Do i Mi eto: a) bolshaya tertsiya b) chistaya kvinta'
+    WHEN 6262 THEN 'Rasstavte v poryadke: akkord sostoit iz toniki tertsii i kvinty'
+    WHEN 6263 THEN 'Poslushayte akkord i skazhite mazhor eto ili minor'
+    WHEN 6264 THEN 'Spoyte arpedzhio Sol mazhor'
+    WHEN 6265 THEN 'Soedinite stupeni gammy s ih tehnicheskimi nazvaniyami'
+    WHEN 6266 THEN 'Parallelno minor dlya Do mazhor eto: a) Lya minor b) Mi minor'
+    WHEN 6267 THEN 'Rasstavte v poryadke: modulyatsiya eto izmenenie tonalnosti'
+    WHEN 6268 THEN 'Poslushayte garmonicheskuyu progressiyu i zapishite stupeni'
+    WHEN 6269 THEN 'Prohloppayte asimmetrichnyy ritm pravilno'
+    WHEN 6270 THEN 'Soedinite grigorianskiy lad s ego strukturoy'
+END
+WHERE id_ejercicio BETWEEN 6261 AND 6270;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6271 THEN 'Chto takoe kontrapunkt? a) nezavisimye golosa b) ritm'
+    WHEN 6272 THEN 'Rasstavte v poryadke: fuga eto polifonicheskaya forma'
+    WHEN 6273 THEN 'Poslushayte simfonicheskuyu pyesu i opredelite formu'
+    WHEN 6274 THEN 'Obyasnite dodekafoniyu vsluh'
+    WHEN 6275 THEN 'Soedinite muzykalnye epohi s ih kompozitorami'
+    WHEN 6276 THEN 'Hur sager man hej pa engelska? a) Hello b) Bye c) Yes'
+    WHEN 6277 THEN 'Satt orden i ratt ordning: is name my John'
+    WHEN 6278 THEN 'Lyssna och valj ratt halsning'
+    WHEN 6279 THEN 'Uttala ordet Hello korrekt'
+    WHEN 6280 THEN 'Koppla siffrorna fran 1 till 5 med engelska ord'
+END
+WHERE id_ejercicio BETWEEN 6271 AND 6280;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6281 THEN 'Vilket verb betyder att vara? a) to be b) to play c) to run'
+    WHEN 6282 THEN 'Satt i ordning: playing am I now'
+    WHEN 6283 THEN 'Lyssna och skriv fargen pa engelska'
+    WHEN 6284 THEN 'Las foljande mening hogt: I am happy'
+    WHEN 6285 THEN 'Koppla djuren till deras engelska namn'
+    WHEN 6286 THEN 'Vad ar preteritum av go? a) went b) goed c) gone'
+    WHEN 6287 THEN 'Satt i ordning: yesterday to school went she'
+    WHEN 6288 THEN 'Lyssna pa dialogen och svara pa fragan'
+    WHEN 6289 THEN 'Las hogt: She bought a new house'
+    WHEN 6290 THEN 'Koppla oregelbundna verb med deras datidsform'
+END
+WHERE id_ejercicio BETWEEN 6281 AND 6290;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6291 THEN 'Om det skulle regna: a) will stay b) would stay'
+    WHEN 6292 THEN 'Satt i ordning: have waiting been they'
+    WHEN 6293 THEN 'Lyssna pa nyheterna och identifiera problemet'
+    WHEN 6294 THEN 'Uttala texten om klimatforandringar hogt'
+    WHEN 6295 THEN 'Koppla phrasal verbs med deras betydelser'
+    WHEN 6296 THEN 'En synonym till fast ar? a) quick b) slow'
+    WHEN 6297 THEN 'Satt i ordning: nevertheless she persisted'
+    WHEN 6298 THEN 'Lyssna pa debatten och sammanfatta'
+    WHEN 6299 THEN 'Spela in ett kort tal om ekonomi pa engelska'
+    WHEN 6300 THEN 'Koppla engelska idiom med deras betydelser'
+END
+WHERE id_ejercicio BETWEEN 6291 AND 6300;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6301 THEN 'Hur sager man hej pa italienska? a) Ciao b) Arrivederci'
+    WHEN 6302 THEN 'Satt orden i ratt ordning: mi chiamo io Marco'
+    WHEN 6303 THEN 'Lyssna och valj ratt halsning'
+    WHEN 6304 THEN 'Uttala ordet Ciao korrekt'
+    WHEN 6305 THEN 'Koppla siffrorna fran 1 till 5 med italienska ord'
+    WHEN 6306 THEN 'Vilket ar verbet att vara? a) essere b) avere'
+    WHEN 6307 THEN 'Satt i ratt ordning: mangia lui una mela'
+    WHEN 6308 THEN 'Lyssna och skriv fargen pa italienska'
+    WHEN 6309 THEN 'Las foljande mening hogt: Sono felice'
+    WHEN 6310 THEN 'Koppla familjemedlemmarna till deras italienska namn'
+END
+WHERE id_ejercicio BETWEEN 6301 AND 6310;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6311 THEN 'Vad ar daform av mangiare? a) ho mangiato b) mangiavo'
+    WHEN 6312 THEN 'Satt i ordning: ieri siamo andati al mare'
+    WHEN 6313 THEN 'Lyssna pa dialogen och svara pa fragan'
+    WHEN 6314 THEN 'Las hogt: Ha comprato una casa'
+    WHEN 6315 THEN 'Koppla verben till deras particip'
+    WHEN 6316 THEN 'Om det skulle regna: a) se piovesse b) se piove'
+    WHEN 6317 THEN 'Satt i ordning: lavorano qui da ieri'
+    WHEN 6318 THEN 'Lyssna pa de italienska nyheterna och identifiera platsen'
+    WHEN 6319 THEN 'Uttala texten om Rom hogt'
+    WHEN 6320 THEN 'Koppla italienska konjunktioner med deras betydelse'
+END
+WHERE id_ejercicio BETWEEN 6311 AND 6320;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6321 THEN 'En synonym till veloce ar? a) rapido b) lento'
+    WHEN 6322 THEN 'Satt i ordning: sebbene piovesse siamo usciti'
+    WHEN 6323 THEN 'Lyssna pa debatten i Italien och sammanfatta'
+    WHEN 6324 THEN 'Spela in ett tal om italiensk mat'
+    WHEN 6325 THEN 'Koppla italienska idiom med deras betydelse'
+    WHEN 6326 THEN 'Hur sager man hej pa kinesiska? a) Ni hao b) Zaijian'
+    WHEN 6327 THEN 'Satt orden i ratt ordning: wo shi ruidian ren'
+    WHEN 6328 THEN 'Lyssna pa inspelningen och identifiera tonen'
+    WHEN 6329 THEN 'Uttala Xiexie med ratt ton'
+    WHEN 6330 THEN 'Koppla siffrorna fran 1 till 5 med kinesiska ord'
+END
+WHERE id_ejercicio BETWEEN 6321 AND 6330;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6331 THEN 'Vilket ar matordet for platta objekt? a) zhang b) ge'
+    WHEN 6332 THEN 'Satt i ratt ordning: wo xihuan he cha'
+    WHEN 6333 THEN 'Lyssna och skriv fargen i pinyin'
+    WHEN 6334 THEN 'Las foljande mening hogt: Wo ai ni'
+    WHEN 6335 THEN 'Koppla djuren till deras kinesiska tecken'
+    WHEN 6336 THEN 'Vilken partikel indikerar datid? a) le b) zhi c) zai'
+    WHEN 6337 THEN 'Satt i ordning: zuotian wo qu le beijing'
+    WHEN 6338 THEN 'Lyssna pa dialogen och anteckna vad de at'
+    WHEN 6339 THEN 'Las texten i pinyin hogt'
+    WHEN 6340 THEN 'Koppla verben med deras partiklar'
+END
+WHERE id_ejercicio BETWEEN 6331 AND 6340;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6341 THEN 'Om det regnar gar jag inte: a) ruguo xiayu b) suiran xiayu'
+    WHEN 6342 THEN 'Satt i ordning: wo zhengzai xuexi zhongwen'
+    WHEN 6343 THEN 'Lyssna pa nyheterna och identifiera amnet'
+    WHEN 6344 THEN 'Uttala texten om Kinesiska muren hogt'
+    WHEN 6345 THEN 'Koppla tecknen till deras radikaler'
+    WHEN 6346 THEN 'En synonym till gaoxing ar? a) kuaile b) nan guo'
+    WHEN 6347 THEN 'Satt i ordning: ta zhongyu chengong le'
+    WHEN 6348 THEN 'Lyssna pa debatten och sammanfatta argumenten'
+    WHEN 6349 THEN 'Spela in ett tal om Kinas ekonomi'
+    WHEN 6350 THEN 'Koppla kinesiska uttryck (chengyu) med deras betydelse'
+END
+WHERE id_ejercicio BETWEEN 6341 AND 6350;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6351 THEN 'Hur sager man hej pa japanska? a) Konnichiwa b) Sayounara'
+    WHEN 6352 THEN 'Satt orden i ratt ordning: watashi wa gakusei desu'
+    WHEN 6353 THEN 'Lyssna och valj ratt halsning'
+    WHEN 6354 THEN 'Uttala ordet Konnichiwa korrekt'
+    WHEN 6355 THEN 'Koppla siffrorna fran 1 till 5 med japanska ord'
+    WHEN 6356 THEN 'Vilken partikel markerar amnet? a) wa/ga b) wo c) ni'
+    WHEN 6357 THEN 'Satt i ratt ordning: ringo wo tabemasu'
+    WHEN 6358 THEN 'Lyssna och skriv ordet i romaji'
+    WHEN 6359 THEN 'Las foljande mening hogt: Nihon ni ikitai desu'
+    WHEN 6360 THEN 'Koppla djuren till deras japanska namn'
+END
+WHERE id_ejercicio BETWEEN 6351 AND 6360;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6361 THEN 'Vad ar datid av suru? a) shimashita b) shimasu'
+    WHEN 6362 THEN 'Satt i ordning: kinou tomodachi ni aimashita'
+    WHEN 6363 THEN 'Lyssna pa konversationen och svara vart de gick'
+    WHEN 6364 THEN 'Las hogt: Atarashii kuruma wo kaimashita'
+    WHEN 6365 THEN 'Koppla verben till deras te-form'
+    WHEN 6366 THEN 'Om jag hade tid: a) jikan ga attara b) jikan ga aru'
+    WHEN 6367 THEN 'Satt i ordning: ima ongaku wo kiite imasu'
+    WHEN 6368 THEN 'Lyssna pa japanska nyheter och identifiera amnet'
+    WHEN 6369 THEN 'Uttala texten om Tokyo hogt'
+    WHEN 6370 THEN 'Koppla japanska konjunktioner med deras betydelse'
+END
+WHERE id_ejercicio BETWEEN 6361 AND 6370;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6371 THEN 'En synonym till hayai ar? a) shinsoku b) osoi'
+    WHEN 6372 THEN 'Satt i ordning: ame ga futte mo ikimasu'
+    WHEN 6373 THEN 'Lyssna pa dramat och anteckna kanslorna'
+    WHEN 6374 THEN 'Spela in ett tal om japansk kultur'
+    WHEN 6375 THEN 'Koppla japanska ordsprak med deras betydelse'
+    WHEN 6376 THEN 'Hur manga rutor finns pa ett schackbrade? a) 64 b) 32 c) 100'
+    WHEN 6377 THEN 'Satt i ordning: spelare varje har bonder atta'
+    WHEN 6378 THEN 'Lyssna och namnge schackpjasen'
+    WHEN 6379 THEN 'Sag hogt: Schack och matt'
+    WHEN 6380 THEN 'Koppla pjasen med dess poangvarde'
+END
+WHERE id_ejercicio BETWEEN 6371 AND 6380;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6381 THEN 'Hur ror sig hasten? a) i L-form b) diagonalt'
+    WHEN 6382 THEN 'Satt i ordning: loparen kontrollerar diagonalerna'
+    WHEN 6383 THEN 'Lyssna pa draget och gor det pa bradet'
+    WHEN 6384 THEN 'Sag nasta drag hogt: Hast till f3'
+    WHEN 6385 THEN 'Koppla grundlaggande termer med deras forklaring'
+    WHEN 6386 THEN 'Vad ar en bindning? a) pjasen kan inte rokas b) schack'
+    WHEN 6387 THEN 'Satt i ordning: offra tornet for att oppna linjen'
+    WHEN 6388 THEN 'Lyssna pa analysen och hitta hotet'
+    WHEN 6389 THEN 'Las huvudvarianten hogt'
+    WHEN 6390 THEN 'Koppla taktiska motiv med exempel'
+END
+WHERE id_ejercicio BETWEEN 6381 AND 6390;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6391 THEN 'Vad ar opposition i slutspel? a) kungar mittemot varandra b) matt'
+    WHEN 6392 THEN 'Satt i ordning: en isolerad bonde ar en svaghet'
+    WHEN 6393 THEN 'Lyssna pa lektionen och skriv ner nyckeldraget'
+    WHEN 6394 THEN 'Forklara konceptet profylax hogt'
+    WHEN 6395 THEN 'Koppla oppningen med ratt ECO-kod'
+    WHEN 6396 THEN 'Vad kannetecknar Sicilianskt forsvar? a) c5 b) e5 c) d5'
+    WHEN 6397 THEN 'Satt i ordning: dynamisk kompensation for materialet'
+    WHEN 6398 THEN 'Folj blindschack-analysen och hitta matten'
+    WHEN 6399 THEN 'Analysera Kasparovs parti mot Topalov hogt'
+    WHEN 6400 THEN 'Koppla bondestrukturer till motsvarande plan'
+END
+WHERE id_ejercicio BETWEEN 6391 AND 6400;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6401 THEN 'Hur sager man hej pa franska? a) Bonjour b) Merci'
+    WHEN 6402 THEN 'Satt orden i ratt ordning: m appelle je Pierre'
+    WHEN 6403 THEN 'Lyssna och valj ratt halsning'
+    WHEN 6404 THEN 'Uttala ordet Bonjour korrekt'
+    WHEN 6405 THEN 'Koppla siffrorna fran 1 till 5 med franska ord'
+    WHEN 6406 THEN 'Vilken ar den feminina artikeln? a) la b) le c) les'
+    WHEN 6407 THEN 'Satt i ratt ordning: mange elle une pomme'
+    WHEN 6408 THEN 'Lyssna och skriv fargen pa franska'
+    WHEN 6409 THEN 'Las foljande mening hogt: Je suis etudiant'
+    WHEN 6410 THEN 'Koppla familjemedlemmarna till deras franska namn'
+END
+WHERE id_ejercicio BETWEEN 6401 AND 6410;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6411 THEN 'Vad ar passe compose av manger? a) a mange b) mangeait'
+    WHEN 6412 THEN 'Satt i ordning: hier sommes nous alles'
+    WHEN 6413 THEN 'Lyssna pa dialogen och svara pa fragan'
+    WHEN 6414 THEN 'Las hogt: Nous avons visite Paris'
+    WHEN 6415 THEN 'Koppla oregelbundna verb med deras passe compose'
+    WHEN 6416 THEN 'Om jag hade vetat: a) si j avais su b) si je sais'
+    WHEN 6417 THEN 'Satt i ordning: travaillent ils ici depuis'
+    WHEN 6418 THEN 'Lyssna pa nyheterna och identifiera platsen'
+    WHEN 6419 THEN 'Uttala texten om fransk kultur hogt'
+    WHEN 6420 THEN 'Koppla franska konjunktioner med deras betydelse'
+END
+WHERE id_ejercicio BETWEEN 6411 AND 6420;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6421 THEN 'En synonym till ephemere ar? a) passager b) durable'
+    WHEN 6422 THEN 'Satt i ordning: nonobstant les difficultes'
+    WHEN 6423 THEN 'Lyssna pa debatten pa franska och sammanfatta'
+    WHEN 6424 THEN 'Spela in ett tal om Franska revolutionen'
+    WHEN 6425 THEN 'Koppla franska idiom med deras betydelse'
+    WHEN 6426 THEN 'Hur sager man hej pa spanska? a) Hola b) Adios'
+    WHEN 6427 THEN 'Satt orden i ratt ordning: soy yo de Suecia'
+    WHEN 6428 THEN 'Lyssna och valj ratt halsning'
+    WHEN 6429 THEN 'Uttala ordet Hola korrekt'
+    WHEN 6430 THEN 'Koppla siffrorna fran 1 till 5 med spanska ord'
+END
+WHERE id_ejercicio BETWEEN 6421 AND 6430;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6431 THEN 'Vilket verb betyder att vara (permanent)? a) ser b) estar'
+    WHEN 6432 THEN 'Satt i ratt ordning: come ella una manzana'
+    WHEN 6433 THEN 'Lyssna och skriv fargen pa spanska'
+    WHEN 6434 THEN 'Las foljande mening hogt: Estoy feliz'
+    WHEN 6435 THEN 'Koppla djuren till deras spanska namn'
+    WHEN 6436 THEN 'Vad ar datid av hablar? a) hable b) hablaba'
+    WHEN 6437 THEN 'Satt i ordning: fuimos ayer al cine'
+    WHEN 6438 THEN 'Lyssna pa samtalet och anteckna destinationen'
+    WHEN 6439 THEN 'Las hogt: Compre un coche nuevo'
+    WHEN 6440 THEN 'Koppla verben med deras spanska datidsform'
+END
+WHERE id_ejercicio BETWEEN 6431 AND 6440;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6441 THEN 'Om jag hade tid: a) si tuviera tiempo b) si tengo'
+    WHEN 6442 THEN 'Satt i ordning: han estado trabajando aqui'
+    WHEN 6443 THEN 'Lyssna pa nyheterna och anteckna huvudamnet'
+    WHEN 6444 THEN 'Uttala texten om Spanien hogt'
+    WHEN 6445 THEN 'Koppla konjunktioner med deras betydelse'
+    WHEN 6446 THEN 'En synonym till rapido ar? a) veloz b) lento'
+    WHEN 6447 THEN 'Satt i ordning: a pesar de las dificultades'
+    WHEN 6448 THEN 'Lyssna pa debatten och sammanfatta'
+    WHEN 6449 THEN 'Spela in ett tal om ekonomi pa spanska'
+    WHEN 6450 THEN 'Koppla spanska idiom med deras betydelse'
+END
+WHERE id_ejercicio BETWEEN 6441 AND 6450;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6451 THEN 'Hur sager man hej pa tyska? a) Hallo b) Tschuss'
+    WHEN 6452 THEN 'Satt orden i ratt ordning: heisse ich Anna'
+    WHEN 6453 THEN 'Lyssna och valj ratt halsning'
+    WHEN 6454 THEN 'Uttala ordet Hallo korrekt'
+    WHEN 6455 THEN 'Koppla siffrorna fran 1 till 5 med tyska ord'
+    WHEN 6456 THEN 'Vilken ar den feminina bestamda artikeln? a) die b) der c) das'
+    WHEN 6457 THEN 'Satt i ratt ordning: isst er einen Apfel'
+    WHEN 6458 THEN 'Lyssna och skriv fargen pa tyska'
+    WHEN 6459 THEN 'Las foljande mening hogt: Ich komme aus Schweden'
+    WHEN 6460 THEN 'Koppla familjemedlemmarna till deras tyska namn'
+END
+WHERE id_ejercicio BETWEEN 6451 AND 6460;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6461 THEN 'Vad ar datid av machen? a) gemacht b) machte'
+    WHEN 6462 THEN 'Satt i ordning: bin ich gestern ins Kino gegangen'
+    WHEN 6463 THEN 'Lyssna pa dialogen och svara pa fragan'
+    WHEN 6464 THEN 'Las hogt: Ich habe ein Auto gekauft'
+    WHEN 6465 THEN 'Koppla oregelbundna verb med deras Partizip II'
+    WHEN 6466 THEN 'Om jag hade tid: a) wenn ich Zeit hatte b) ich habe'
+    WHEN 6467 THEN 'Satt i ordning: arbeiten sie hier schon lange'
+    WHEN 6468 THEN 'Lyssna pa tyska nyheter och identifiera amnet'
+    WHEN 6469 THEN 'Uttala texten om Berlin hogt'
+    WHEN 6470 THEN 'Koppla prepositioner med ratt kasus'
+END
+WHERE id_ejercicio BETWEEN 6461 AND 6470;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6471 THEN 'En synonym till schnell ar? a) rasch b) langsam'
+    WHEN 6472 THEN 'Satt i ordning: obwohl es regnete sind wir'
+    WHEN 6473 THEN 'Lyssna pa debatten och dra en slutsats'
+    WHEN 6474 THEN 'Spela in ett tal om EU pa tyska'
+    WHEN 6475 THEN 'Koppla tyska idiom med deras betydelse'
+    WHEN 6476 THEN 'Hur sager man hej pa portugisiska? a) Ola b) Tchau'
+    WHEN 6477 THEN 'Satt orden i ratt ordning: sou eu da Suecia'
+    WHEN 6478 THEN 'Lyssna och valj ratt halsning'
+    WHEN 6479 THEN 'Uttala ordet Ola korrekt'
+    WHEN 6480 THEN 'Koppla siffrorna fran 1 till 5 med portugisiska ord'
+END
+WHERE id_ejercicio BETWEEN 6471 AND 6480;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6481 THEN 'Vilket verb betyder att vara? a) ser b) falar'
+    WHEN 6482 THEN 'Satt i ratt ordning: come ela uma maca'
+    WHEN 6483 THEN 'Lyssna och skriv fargen pa portugisiska'
+    WHEN 6484 THEN 'Las foljande mening hogt: Eu gosto de cafe'
+    WHEN 6485 THEN 'Koppla djuren till deras portugisiska namn'
+    WHEN 6486 THEN 'Vad ar datid av falar? a) falei b) falava'
+    WHEN 6487 THEN 'Satt i ordning: ontem fomos nos ao cinema'
+    WHEN 6488 THEN 'Lyssna pa dialogen och svara pa fragan'
+    WHEN 6489 THEN 'Las hogt: Eu comprei um carro'
+    WHEN 6490 THEN 'Koppla oregelbundna verb med deras portugisiska datidsform'
+END
+WHERE id_ejercicio BETWEEN 6481 AND 6490;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6491 THEN 'Om jag hade tid: a) se eu tivesse tempo b) se eu tenho'
+    WHEN 6492 THEN 'Satt i ordning: estao trabalhando eles aqui'
+    WHEN 6493 THEN 'Lyssna pa nyheterna och identifiera problemet'
+    WHEN 6494 THEN 'Uttala texten om brasiliansk kultur hogt'
+    WHEN 6495 THEN 'Koppla sammansatta verb med deras betydelse'
+    WHEN 6496 THEN 'En synonym till rapido ar? a) veloz b) devagar'
+    WHEN 6497 THEN 'Satt i ordning: apesar das dificuldades'
+    WHEN 6498 THEN 'Lyssna pa debatten och sammanfatta'
+    WHEN 6499 THEN 'Spela in ett tal om ekonomi pa portugisiska'
+    WHEN 6500 THEN 'Koppla portugisiska idiom med deras betydelse'
+END
+WHERE id_ejercicio BETWEEN 6491 AND 6500;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6501 THEN 'Hur sager man hej pa koreanska? a) Annyeonghaseyo b) Kamsahamnida'
+    WHEN 6502 THEN 'Satt orden i ratt ordning: naneun hagsaeng ida'
+    WHEN 6503 THEN 'Lyssna och valj ratt halsning pa koreanska'
+    WHEN 6504 THEN 'Uttala ordet Annyeonghaseyo korrekt'
+    WHEN 6505 THEN 'Koppla siffrorna fran 1 till 5 med sino-koreanska ord'
+    WHEN 6506 THEN 'Vilken partikel markerar amnet? a) eun/neun b) i/ga c) eul/reul'
+    WHEN 6507 THEN 'Satt i ratt ordning: sagwa reul meogneunda'
+    WHEN 6508 THEN 'Lyssna och skriv fargen med hangul-romanisering'
+    WHEN 6509 THEN 'Las foljande mening hogt: Hangug-e gago sipeoyo'
+    WHEN 6510 THEN 'Koppla familjemedlemmarna till deras koreanska namn'
+END
+WHERE id_ejercicio BETWEEN 6501 AND 6510;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6511 THEN 'Vad ar datid av hada (att gora)? a) haesseoyo b) haeyo'
+    WHEN 6512 THEN 'Satt i ordning: eoje chingu reul mannasseoyo'
+    WHEN 6513 THEN 'Lyssna pa konversationen och svara vart de gick'
+    WHEN 6514 THEN 'Las hogt: Sae cha reul sass-eoyo'
+    WHEN 6515 THEN 'Koppla verben till deras artiga form'
+    WHEN 6516 THEN 'Om jag hade tid: a) sigan-i iss-eumyeon b) sigan-i iss-da'
+    WHEN 6517 THEN 'Satt i ordning: jigeum eum-ag eul deudgo iss-eoyo'
+    WHEN 6518 THEN 'Lyssna pa koreanska nyheter och identifiera amnet'
+    WHEN 6519 THEN 'Uttala texten om Seoul hogt'
+    WHEN 6520 THEN 'Koppla koreanska konjunktioner med deras betydelse'
+END
+WHERE id_ejercicio BETWEEN 6511 AND 6520;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6521 THEN 'En synonym till ppareuda (snabb) ar? a) sinsoghada b) neurida'
+    WHEN 6522 THEN 'Satt i ordning: bi ga wado gamnida'
+    WHEN 6523 THEN 'Lyssna pa K-dramat och anteckna kanslorna'
+    WHEN 6524 THEN 'Spela in ett tal om koreansk kultur'
+    WHEN 6525 THEN 'Koppla koreanska ordsprak med deras betydelse'
+    WHEN 6526 THEN 'Vad ar 15 plus 27? a) 42 b) 32 c) 52'
+    WHEN 6527 THEN 'Satt i ratt ordning: multiplicera innan du adderar'
+    WHEN 6528 THEN 'Lyssna pa talet och skriv ner siffrorna'
+    WHEN 6529 THEN 'Las ekvationen 3x = 12 hogt'
+    WHEN 6530 THEN 'Koppla de geometriska figurerna till deras namn'
+END
+WHERE id_ejercicio BETWEEN 6521 AND 6530;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6531 THEN 'Vad ar formeln for arean av en cirkel? a) pi*r^2 b) 2*pi*r'
+    WHEN 6532 THEN 'Satt i ordning stegen for att losa x i 2x+4=10'
+    WHEN 6533 THEN 'Lyssna pa problembeskrivningen och stall upp ekvationen'
+    WHEN 6534 THEN 'Forklara Pythagoras sats hogt'
+    WHEN 6535 THEN 'Koppla brakdelarna till deras decimala motsvarighet'
+    WHEN 6536 THEN 'Vad ar derivatan av x^2? a) 2x b) x c) 2'
+    WHEN 6537 THEN 'Satt i ordning: kedjeregeln anvands for sammansatta funktioner'
+    WHEN 6538 THEN 'Lyssna pa forelasningen och anteckna formeln'
+    WHEN 6539 THEN 'Las det matematiska beviset hogt'
+    WHEN 6540 THEN 'Koppla funktionerna till deras grafer'
+END
+WHERE id_ejercicio BETWEEN 6531 AND 6540;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6541 THEN 'Vad ar integralen av 1/x? a) ln(x) b) e^x c) 1'
+    WHEN 6542 THEN 'Satt stegen for induktionsbeviset i ratt ordning'
+    WHEN 6543 THEN 'Lyssna pa teoremets forklaring och sammanfatta'
+    WHEN 6544 THEN 'Forklara konceptet gransvarde hogt'
+    WHEN 6545 THEN 'Koppla matrisoperationerna med deras resultat'
+    WHEN 6546 THEN 'Vad ar en egenvektor? a) behaller sin riktning b) nollvektorn'
+    WHEN 6547 THEN 'Satt i ordning definitionen av ett vektorrum'
+    WHEN 6548 THEN 'Fokusera pa lyssningen om topologi och hitta felet'
+    WHEN 6549 THEN 'Ge en muntlig presentation om flervariabelanalys'
+    WHEN 6550 THEN 'Koppla differentialekvationer till deras losningsmetod'
+END
+WHERE id_ejercicio BETWEEN 6541 AND 6550;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6551 THEN 'Hur manga linjer har ett notsystem? a) 5 b) 4 c) 6'
+    WHEN 6552 THEN 'Satt i ordning: det finns sju grundlaggande toner'
+    WHEN 6553 THEN 'Lyssna pa tonen och identifiera om den ar hog eller lag'
+    WHEN 6554 THEN 'Sjung tonen ettstrukna c'
+    WHEN 6555 THEN 'Koppla notsymbolen till dess tidsvarde'
+    WHEN 6556 THEN 'Vilken klav anvands for morka toner? a) F-klav b) G-klav'
+    WHEN 6557 THEN 'Satt i ordning: ett korsfortecken hojer tonen ett halvt steg'
+    WHEN 6558 THEN 'Lyssna pa melodin och fyll i den saknade noten'
+    WHEN 6559 THEN 'Sjung C-dur skalan hogt'
+    WHEN 6560 THEN 'Koppla dynamikangivelserna (p, f) till deras betydelse'
+END
+WHERE id_ejercicio BETWEEN 6551 AND 6560;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6561 THEN 'Avstandet mellan C och E kallas? a) stor ters b) ren kvint'
+    WHEN 6562 THEN 'Satt i ordning: en treklang bestar av grundton ters och kvint'
+    WHEN 6563 THEN 'Lyssna pa ackordet och sag om det ar dur eller moll'
+    WHEN 6564 THEN 'Sjung G-dur arpeggio'
+    WHEN 6565 THEN 'Koppla skalans steg till deras tekniska namn (tonika, dominant)'
+    WHEN 6566 THEN 'Vilken ar parallellmoll till C-dur? a) a-moll b) e-moll'
+    WHEN 6567 THEN 'Satt i ordning: modulation innebar att byta tonart'
+    WHEN 6568 THEN 'Lyssna pa ackordfoljden och notera stegen'
+    WHEN 6569 THEN 'Klappa en asymmetrisk rytm korrekt'
+    WHEN 6570 THEN 'Koppla de kyrkliga tonarterna med deras struktur'
+END
+WHERE id_ejercicio BETWEEN 6561 AND 6570;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6571 THEN 'Vad innebar kontrapunkt? a) sjalvstandiga stammor b) rytmik'
+    WHEN 6572 THEN 'Satt i ordning: fugan ar en polyfon form'
+    WHEN 6573 THEN 'Lyssna pa symfonin och identifiera formen'
+    WHEN 6574 THEN 'Forklara tolvtonstekniken hogt'
+    WHEN 6575 THEN 'Koppla musikhistoriska epoker till deras kompositorer'
+    WHEN 6576 THEN 'Kham wa sawatdi nai phasa Angkrit phut wa yangrai? a) Hello b) Bye'
+    WHEN 6577 THEN 'Riang kham hai thuk tong: is name my John'
+    WHEN 6578 THEN 'Fang lae lueak kham thakthai thi thuk tong'
+    WHEN 6579 THEN 'An ok siang kham wa Hello hai chatjen'
+    WHEN 6580 THEN 'Jap khu tualek 1 thueng 5 kap kham phasa Angkrit'
+END
+WHERE id_ejercicio BETWEEN 6571 AND 6580;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6581 THEN 'Kham keriyakhang pen (to be) khue kham nai? a) to be b) to play'
+    WHEN 6582 THEN 'Riang kham: playing am I now'
+    WHEN 6583 THEN 'Fang lae phom si pen phasa Angkrit'
+    WHEN 6584 THEN 'An prayok ni ok siang: I am happy'
+    WHEN 6585 THEN 'Jap khu sat kap chu phasa Angkrit'
+    WHEN 6586 THEN 'Adit khong go khue kham nai? a) went b) goed'
+    WHEN 6587 THEN 'Riang kham: yesterday to school went she'
+    WHEN 6588 THEN 'Fang bot sonthana lae top khamtham'
+    WHEN 6589 THEN 'An ok siang text: She bought a new house'
+    WHEN 6590 THEN 'Jap khu kham kriya mai pokkati kap rup adit'
+END
+WHERE id_ejercicio BETWEEN 6581 AND 6590;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6591 THEN 'Tha fon tok chan ja: a) will stay b) would stay'
+    WHEN 6592 THEN 'Riang kham: have waiting been they'
+    WHEN 6593 THEN 'Fang khao lae bawk wa panha khue arai'
+    WHEN 6594 THEN 'Auk siang text kiyow kap kan plianplaeng saphap akat'
+    WHEN 6595 THEN 'Jap khu phrasal verbs kap khwam mai'
+    WHEN 6596 THEN 'Kham waimeun (synonym) khong fast khue? a) quick b) slow'
+    WHEN 6597 THEN 'Riang kham: nevertheless she persisted'
+    WHEN 6598 THEN 'Fang kan opipray lae sarup jai khwam'
+    WHEN 6599 THEN 'At siang phut kiyow kap setthakit phasa Angkrit'
+    WHEN 6600 THEN 'Jap khu samnuan (idioms) kap khwam mai'
+END
+WHERE id_ejercicio BETWEEN 6591 AND 6600;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6601 THEN 'Kham wa sawatdi nai phasa Farangset khue? a) Bonjour b) Merci'
+    WHEN 6602 THEN 'Riang kham hai thuk tong: m appelle je Pierre'
+    WHEN 6603 THEN 'Fang lae lueak kham thakthai thi thuk tong'
+    WHEN 6604 THEN 'An ok siang kham wa Bonjour hai chatjen'
+    WHEN 6605 THEN 'Jap khu tualek 1 thueng 5 kap kham phasa Farangset'
+    WHEN 6606 THEN 'Article phet ying khue kham nai? a) la b) le c) les'
+    WHEN 6607 THEN 'Riang kham: mange elle une pomme'
+    WHEN 6608 THEN 'Fang lae phom si pen phasa Farangset'
+    WHEN 6609 THEN 'An prayok ni ok siang: Je suis etudiant'
+    WHEN 6610 THEN 'Jap khu khon nai khropkhrua kap chu phasa Farangset'
+END
+WHERE id_ejercicio BETWEEN 6601 AND 6610;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6611 THEN 'Passe compose khong manger khue? a) a mange b) mangeait'
+    WHEN 6612 THEN 'Riang kham: hier sommes nous alles'
+    WHEN 6613 THEN 'Fang bot sonthana lae top khamtham'
+    WHEN 6614 THEN 'An ok siang: Nous avons visite Paris'
+    WHEN 6615 THEN 'Jap khu kham kriya kap rup passe compose'
+    WHEN 6616 THEN 'Tha chan ru chan ja: a) si j avais su b) si je sais'
+    WHEN 6617 THEN 'Riang kham: travaillent ils ici depuis'
+    WHEN 6618 THEN 'Fang khao phasa Farangset lae ra bo sathan thi'
+    WHEN 6619 THEN 'Auk siang text kiyow kap watthanatham Farangset'
+    WHEN 6620 THEN 'Jap khu kham santhan phasa Farangset kap khwam mai'
+END
+WHERE id_ejercicio BETWEEN 6611 AND 6620;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6621 THEN 'Kham waimeun khong ephemere khue? a) passager b) durable'
+    WHEN 6622 THEN 'Riang kham: nonobstant les difficultes'
+    WHEN 6623 THEN 'Fang kan opipray lae sarup jai khwam'
+    WHEN 6624 THEN 'At siang phut kiyow kap patiwat Farangset'
+    WHEN 6625 THEN 'Jap khu samnuan phasa Farangset kap khwam mai'
+    WHEN 6626 THEN 'Kham wa sawatdi nai phasa Yipun khue? a) Konnichiwa b) Sayounara'
+    WHEN 6627 THEN 'Riang kham hai thuk tong: watashi wa gakusei desu'
+    WHEN 6628 THEN 'Fang lae lueak kham thakthai thi thuk tong'
+    WHEN 6629 THEN 'An ok siang kham wa Konnichiwa hai chatjen'
+    WHEN 6630 THEN 'Jap khu tualek 1 thueng 5 kap kham phasa Yipun'
+END
+WHERE id_ejercicio BETWEEN 6621 AND 6630;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6631 THEN 'Particle thi chai ra bo huakho khue? a) wa b) wo c) ni'
+    WHEN 6632 THEN 'Riang kham: ringo wo tabemasu'
+    WHEN 6633 THEN 'Fang lae phom si pen romaji'
+    WHEN 6634 THEN 'An prayok ni ok siang: Nihon ni ikitai desu'
+    WHEN 6635 THEN 'Jap khu sat kap chu phasa Yipun'
+    WHEN 6636 THEN 'Adit khong suru khue? a) shimashita b) shimasu'
+    WHEN 6637 THEN 'Riang kham: kinou tomodachi ni aimashita'
+    WHEN 6638 THEN 'Fang bot sonthana lae top wa phuak khao pai thi nai'
+    WHEN 6639 THEN 'An ok siang: Atarashii kuruma wo kaimashita'
+    WHEN 6640 THEN 'Jap khu kham kriya kap rup te-form'
+END
+WHERE id_ejercicio BETWEEN 6631 AND 6640;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6641 THEN 'Tha chan mi wela: a) jikan ga attara b) jikan ga aru'
+    WHEN 6642 THEN 'Riang kham: ima ongaku wo kiite imasu'
+    WHEN 6643 THEN 'Fang khao phasa Yipun lae bo huakho lak'
+    WHEN 6644 THEN 'Auk siang text kiyow kap Tokyo'
+    WHEN 6645 THEN 'Jap khu kham santhan phasa Yipun kap khwam mai'
+    WHEN 6646 THEN 'Kham waimeun khong hayai khue? a) shinsoku b) osoi'
+    WHEN 6647 THEN 'Riang kham: ame ga futte mo ikimasu'
+    WHEN 6648 THEN 'Fang lakorn lae sarup arrom khong tua lakorn'
+    WHEN 6649 THEN 'At siang phut kiyow kap watthanatham Yipun'
+    WHEN 6650 THEN 'Jap khu suphasit Yipun kap khwam mai'
+END
+WHERE id_ejercicio BETWEEN 6641 AND 6650;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6651 THEN 'Kham wa sawatdi nai phasa Protuget khue? a) Ola b) Tchau'
+    WHEN 6652 THEN 'Riang kham hai thuk tong: sou eu da Tailandia'
+    WHEN 6653 THEN 'Fang lae lueak kham thakthai thi thuk tong'
+    WHEN 6654 THEN 'An ok siang kham wa Ola hai chatjen'
+    WHEN 6655 THEN 'Jap khu tualek 1 thueng 5 kap kham phasa Protuget'
+    WHEN 6656 THEN 'Kham kriya ser lae estar plae wa arai? a) pen b) phut'
+    WHEN 6657 THEN 'Riang kham: come ela uma maca'
+    WHEN 6658 THEN 'Fang lae phom si pen phasa Protuget'
+    WHEN 6659 THEN 'An prayok ni ok siang: Eu gosto de cafe'
+    WHEN 6660 THEN 'Jap khu sat kap chu phasa Protuget'
+END
+WHERE id_ejercicio BETWEEN 6651 AND 6660;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6661 THEN 'Adit khong falar khue? a) falei b) falava'
+    WHEN 6662 THEN 'Riang kham: ontem fomos nos ao cinema'
+    WHEN 6663 THEN 'Fang bot sonthana lae top khamtham'
+    WHEN 6664 THEN 'An ok siang: Eu comprei um carro'
+    WHEN 6665 THEN 'Jap khu kham kriya mai pokkati kap rup adit'
+    WHEN 6666 THEN 'Tha chan mi wela: a) se eu tivesse tempo b) se eu tenho'
+    WHEN 6667 THEN 'Riang kham: estao trabalhando eles aqui'
+    WHEN 6668 THEN 'Fang khao lae ra bo panha lak'
+    WHEN 6669 THEN 'Auk siang text kiyow kap watthanatham Brasil'
+    WHEN 6670 THEN 'Jap khu kham santhan phasa Protuget kap khwam mai'
+END
+WHERE id_ejercicio BETWEEN 6661 AND 6670;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6671 THEN 'Kham waimeun khong rapido khue? a) veloz b) devagar'
+    WHEN 6672 THEN 'Riang kham: apesar das dificuldades'
+    WHEN 6673 THEN 'Fang kan opipray lae sarup jai khwam'
+    WHEN 6674 THEN 'At siang phut kiyow kap setthakit Brasil'
+    WHEN 6675 THEN 'Jap khu samnuan phasa Protuget kap khwam mai'
+    WHEN 6676 THEN 'Kham wa sawatdi nai phasa Jin khue? a) Ni hao b) Zaijian'
+    WHEN 6677 THEN 'Riang kham hai thuk tong: wo shi taiguo ren'
+    WHEN 6678 THEN 'Fang lae lueak siang wannayuk thi thuk tong'
+    WHEN 6679 THEN 'An ok siang kham wa Xiexie hai thuk ton'
+    WHEN 6680 THEN 'Jap khu tualek 1 thueng 5 kap pinyin'
+END
+WHERE id_ejercicio BETWEEN 6671 AND 6680;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6681 THEN 'Laksana nam samrap sing khong baen khue? a) zhang b) ge'
+    WHEN 6682 THEN 'Riang kham: wo xihuan he cha'
+    WHEN 6683 THEN 'Fang lae khian si pen pinyin'
+    WHEN 6684 THEN 'An prayok ni ok siang: Wo ai ni'
+    WHEN 6685 THEN 'Jap khu sat kap tua akson Jin'
+    WHEN 6686 THEN 'Particle thi sadaeng adit khue? a) le b) zhi c) zai'
+    WHEN 6687 THEN 'Riang kham: zuotian wo qu le beijing'
+    WHEN 6688 THEN 'Fang bot sonthana lae top wa phuak khao kin arai'
+    WHEN 6689 THEN 'An ok siang text pinyin'
+    WHEN 6690 THEN 'Jap khu kham kriya kap particle khong man'
+END
+WHERE id_ejercicio BETWEEN 6681 AND 6690;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6691 THEN 'Tha fon tok chan ja mai pai: a) ruguo xiayu b) suiran xiayu'
+    WHEN 6692 THEN 'Riang kham: wo zhengzai xuexi zhongwen'
+    WHEN 6693 THEN 'Fang khao lae bo huakho lak'
+    WHEN 6694 THEN 'Auk siang text kiyow kap Kampheng Mueang Jin'
+    WHEN 6695 THEN 'Jap khu tua akson Jin kap radikals khong man'
+    WHEN 6696 THEN 'Kham waimeun khong gaoxing khue? a) kuaile b) nan guo'
+    WHEN 6697 THEN 'Riang kham: ta zhongyu chengong le'
+    WHEN 6698 THEN 'Fang kan opipray lae sarup hetphon'
+    WHEN 6699 THEN 'At siang phut kiyow kap setthakit Jin'
+    WHEN 6700 THEN 'Jap khu samnuan Jin (chengyu) kap khwam mai'
+END
+WHERE id_ejercicio BETWEEN 6691 AND 6700;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6701 THEN 'Kham wa sawatdi nai phasa Kaoli khue? a) Annyeonghaseyo b) Kamsahamnida'
+    WHEN 6702 THEN 'Riang kham hai thuk tong: naneun hagsaeng ida'
+    WHEN 6703 THEN 'Fang lae lueak kham thakthai thi thuk tong'
+    WHEN 6704 THEN 'An ok siang kham wa Annyeonghaseyo hai chatjen'
+    WHEN 6705 THEN 'Jap khu tualek 1 thueng 5 kap kham Kaoli'
+    WHEN 6706 THEN 'Particle thi ra bo prathan khue? a) eun/neun b) i/ga c) eul/reul'
+    WHEN 6707 THEN 'Riang kham: sagwa reul meogneunda'
+    WHEN 6708 THEN 'Fang lae khian si pen romanization'
+    WHEN 6709 THEN 'An prayok ni ok siang: Taegug-e gago sipeoyo'
+    WHEN 6710 THEN 'Jap khu khon nai khropkhrua kap chu phasa Kaoli'
+END
+WHERE id_ejercicio BETWEEN 6701 AND 6710;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6711 THEN 'Adit khong hada (tham) khue? a) haesseoyo b) haeyo'
+    WHEN 6712 THEN 'Riang kham: eoje chingu reul mannasseoyo'
+    WHEN 6713 THEN 'Fang bot sonthana lae top wa phuak khao pai thi nai'
+    WHEN 6714 THEN 'An ok siang: Sae cha reul sass-eoyo'
+    WHEN 6715 THEN 'Jap khu kham kriya kap rup suphap'
+    WHEN 6716 THEN 'Tha chan mi wela: a) sigan-i iss-eumyeon b) sigan-i iss-da'
+    WHEN 6717 THEN 'Riang kham: jigeum eum-ag eul deudgo iss-eoyo'
+    WHEN 6718 THEN 'Fang khao phasa Kaoli lae ra bo huakho'
+    WHEN 6719 THEN 'Auk siang text kiyow kap Seoul'
+    WHEN 6720 THEN 'Jap khu kham santhan phasa Kaoli kap khwam mai'
+END
+WHERE id_ejercicio BETWEEN 6711 AND 6720;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6721 THEN 'Kham waimeun khong ppareuda (rew) khue? a) sinsoghada b) neurida'
+    WHEN 6722 THEN 'Riang kham: bi ga wado gamnida'
+    WHEN 6723 THEN 'Fang lakorn K-drama lae sarup arrom'
+    WHEN 6724 THEN 'At siang phut kiyow kap K-pop'
+    WHEN 6725 THEN 'Jap khu suphasit Kaoli kap khwam mai'
+    WHEN 6726 THEN 'Kham wa sawatdi nai phasa Italai khue? a) Ciao b) Arrivederci'
+    WHEN 6727 THEN 'Riang kham hai thuk tong: mi chiamo io Marco'
+    WHEN 6728 THEN 'Fang lae lueak kham thakthai thi thuk tong'
+    WHEN 6729 THEN 'An ok siang kham wa Ciao hai chatjen'
+    WHEN 6730 THEN 'Jap khu tualek 1 thueng 5 kap kham phasa Italai'
+END
+WHERE id_ejercicio BETWEEN 6721 AND 6730;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6731 THEN 'Kham kriya essere (pen/yu/khue) lae avere (mi) tang kan yangrai?'
+    WHEN 6732 THEN 'Riang kham: mangia lui una mela'
+    WHEN 6733 THEN 'Fang lae khian si pen phasa Italai'
+    WHEN 6734 THEN 'An prayok ni ok siang: Sono felice'
+    WHEN 6735 THEN 'Jap khu sat kap chu phasa Italai'
+    WHEN 6736 THEN 'Adit khong mangiare (kin) khue? a) ho mangiato b) mangiavo'
+    WHEN 6737 THEN 'Riang kham: ieri siamo andati al mare'
+    WHEN 6738 THEN 'Fang bot sonthana lae top khamtham'
+    WHEN 6739 THEN 'An ok siang: Ha comprato una casa'
+    WHEN 6740 THEN 'Jap khu kham kriya mai pokkati kap participio passato'
+END
+WHERE id_ejercicio BETWEEN 6731 AND 6740;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6741 THEN 'Tha fon tok: a) se piovesse b) se piove'
+    WHEN 6742 THEN 'Riang kham: lavorano qui da ieri'
+    WHEN 6743 THEN 'Fang khao lae ra bo sathan thi'
+    WHEN 6744 THEN 'Auk siang text kiyow kap Roma'
+    WHEN 6745 THEN 'Jap khu kham santhan phasa Italai kap khwam mai'
+    WHEN 6746 THEN 'Kham waimeun khong veloce (rew) khue? a) rapido b) lento'
+    WHEN 6747 THEN 'Riang kham: sebbene piovesse siamo usciti'
+    WHEN 6748 THEN 'Fang kan opipray lae sarup jai khwam'
+    WHEN 6749 THEN 'At siang phut kiyow kap ahan Italai'
+    WHEN 6750 THEN 'Jap khu samnuan phasa Italai kap khwam mai'
+END
+WHERE id_ejercicio BETWEEN 6741 AND 6750;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6751 THEN 'Kham wa sawatdi nai phasa Sapein khue? a) Hola b) Adios'
+    WHEN 6752 THEN 'Riang kham hai thuk tong: soy yo de Tailandia'
+    WHEN 6753 THEN 'Fang lae lueak kham thakthai thi thuk tong'
+    WHEN 6754 THEN 'An ok siang kham wa Hola hai chatjen'
+    WHEN 6755 THEN 'Jap khu tualek 1 thueng 5 kap kham phasa Sapein'
+    WHEN 6756 THEN 'Kham kriya ser lae estar plae wa arai?'
+    WHEN 6757 THEN 'Riang kham: come ella una manzana'
+    WHEN 6758 THEN 'Fang lae phom si pen phasa Sapein'
+    WHEN 6759 THEN 'An prayok ni ok siang: Estoy feliz'
+    WHEN 6760 THEN 'Jap khu sat kap chu phasa Sapein'
+END
+WHERE id_ejercicio BETWEEN 6751 AND 6760;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6761 THEN 'Adit khong hablar khue? a) hable b) hablaba'
+    WHEN 6762 THEN 'Riang kham: fuimos ayer al cine'
+    WHEN 6763 THEN 'Fang bot sonthana lae top khamtham'
+    WHEN 6764 THEN 'An ok siang: Compre un coche nuevo'
+    WHEN 6765 THEN 'Jap khu kham kriya kap rup adit'
+    WHEN 6766 THEN 'Tha chan mi wela: a) si tuviera tiempo b) si tengo'
+    WHEN 6767 THEN 'Riang kham: han estado trabajando aqui'
+    WHEN 6768 THEN 'Fang khao lae ra bo panha lak'
+    WHEN 6769 THEN 'Auk siang text kiyow kap watthanatham Sapein'
+    WHEN 6770 THEN 'Jap khu kham santhan phasa Sapein kap khwam mai'
+END
+WHERE id_ejercicio BETWEEN 6761 AND 6770;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6771 THEN 'Kham waimeun khong rapido khue? a) veloz b) lento'
+    WHEN 6772 THEN 'Riang kham: a pesar de las dificultades'
+    WHEN 6773 THEN 'Fang kan opipray lae sarup jai khwam'
+    WHEN 6774 THEN 'At siang phut kiyow kap setthakit Sapein'
+    WHEN 6775 THEN 'Jap khu samnuan phasa Sapein kap khwam mai'
+    WHEN 6776 THEN 'Kham wa sawatdi nai phasa Yoeraman khue? a) Hallo b) Tschuss'
+    WHEN 6777 THEN 'Riang kham hai thuk tong: heisse ich Anna'
+    WHEN 6778 THEN 'Fang lae lueak kham thakthai thi thuk tong'
+    WHEN 6779 THEN 'An ok siang kham wa Hallo hai chatjen'
+    WHEN 6780 THEN 'Jap khu tualek 1 thueng 5 kap kham phasa Yoeraman'
+END
+WHERE id_ejercicio BETWEEN 6771 AND 6780;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6781 THEN 'Article phet ying khue kham nai? a) die b) der c) das'
+    WHEN 6782 THEN 'Riang kham: isst er einen Apfel'
+    WHEN 6783 THEN 'Fang lae phom si pen phasa Yoeraman'
+    WHEN 6784 THEN 'An prayok ni ok siang: Ich komme aus Tailandia'
+    WHEN 6785 THEN 'Jap khu khon nai khropkhrua kap chu phasa Yoeraman'
+    WHEN 6786 THEN 'Adit khong machen khue? a) gemacht b) machte'
+    WHEN 6787 THEN 'Riang kham: bin ich gestern ins Kino gegangen'
+    WHEN 6788 THEN 'Fang bot sonthana lae top khamtham'
+    WHEN 6789 THEN 'An ok siang: Ich habe ein Auto gekauft'
+    WHEN 6790 THEN 'Jap khu kham kriya kap rup Partizip II'
+END
+WHERE id_ejercicio BETWEEN 6781 AND 6790;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6791 THEN 'Tha chan mi wela: a) wenn ich Zeit hatte b) ich habe'
+    WHEN 6792 THEN 'Riang kham: arbeiten sie hier schon lange'
+    WHEN 6793 THEN 'Fang khao phasa Yoeraman lae ra bo sathan thi'
+    WHEN 6794 THEN 'Auk siang text kiyow kap Berlin'
+    WHEN 6795 THEN 'Jap khu kham buppabot kap kasus thi thuk tong'
+    WHEN 6796 THEN 'Kham waimeun khong schnell khue? a) rasch b) langsam'
+    WHEN 6797 THEN 'Riang kham: obwohl es regnete sind wir'
+    WHEN 6798 THEN 'Fang kan opipray lae sarup jai khwam'
+    WHEN 6799 THEN 'At siang phut kiyow kap EU'
+    WHEN 6800 THEN 'Jap khu samnuan phasa Yoeraman kap khwam mai'
+END
+WHERE id_ejercicio BETWEEN 6791 AND 6800;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6801 THEN '15 buak 27 thao kap thaorai? a) 42 b) 32'
+    WHEN 6802 THEN 'Riang lamdap: khun kon buak'
+    WHEN 6803 THEN 'Fang lae jot tualek'
+    WHEN 6804 THEN 'An somkan 3x = 12 ok siang'
+    WHEN 6805 THEN 'Jap khu rupsong kap chu khong man'
+    WHEN 6806 THEN 'Sut khong phuenthi wongkrom khue? a) pi*r^2 b) 2*pi*r'
+    WHEN 6807 THEN 'Riang lamdap kan kae somkan 2x+4=10'
+    WHEN 6808 THEN 'Fang panha lae tang somkan'
+    WHEN 6809 THEN 'Athibai thrisadi bod Pythagoras'
+    WHEN 6810 THEN 'Jap khu setsuan kap thotsaniyom'
+END
+WHERE id_ejercicio BETWEEN 6801 AND 6810;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6811 THEN 'Anupan khong x^2 khue? a) 2x b) x'
+    WHEN 6812 THEN 'Riang lamdap: chain rule samrap function sorn'
+    WHEN 6813 THEN 'Fang kan banyai lae jot sut'
+    WHEN 6814 THEN 'An kan phisut thang khanitsat ok siang'
+    WHEN 6815 THEN 'Jap khu function kap kraf'
+    WHEN 6816 THEN 'Integral khong 1/x khue? a) ln(x) b) e^x'
+    WHEN 6817 THEN 'Riang lamdap kan phisut baep upanai'
+    WHEN 6818 THEN 'Fang thrisadi lae sarup'
+    WHEN 6819 THEN 'Athibai naeokhit khong limit'
+    WHEN 6820 THEN 'Jap khu kan damnoen kan matrix kap phonlap'
+END
+WHERE id_ejercicio BETWEEN 6811 AND 6820;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6821 THEN 'Eigenvector khue arai?'
+    WHEN 6822 THEN 'Riang lamdap niyham khong vector space'
+    WHEN 6823 THEN 'Fang kiyow kap topology lae ha khwam phit phlat'
+    WHEN 6824 THEN 'Nam sanoe kiyow kap multivariable calculus'
+    WHEN 6825 THEN 'Jap khu differential equation kap withi kae'
+    WHEN 6826 THEN 'Banthat 5 sen mi ki sen? a) 5 b) 4'
+    WHEN 6827 THEN 'Riang lamdap: mi 7 noht phuenthan'
+    WHEN 6828 THEN 'Fang lae ra bo wa siang sung rue tam'
+    WHEN 6829 THEN 'Rong noht Do klang'
+    WHEN 6830 THEN 'Jap khu noht kap khwam yao siang'
+END
+WHERE id_ejercicio BETWEEN 6821 AND 6830;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6831 THEN 'Kunchae dai chai samrap siang sung? a) G-clef b) F-clef'
+    WHEN 6832 THEN 'Riang lamdap: sharp phem siang khrueng siang'
+    WHEN 6833 THEN 'Fang thanong lae toem noht thi hai pai'
+    WHEN 6834 THEN 'Rong scale C Major'
+    WHEN 6835 THEN 'Jap khu khruangmai dynamic (p, f) kap khwam mai'
+    WHEN 6836 THEN 'Raya hang rawang C lae E riak wa? a) Major 3rd b) Perfect 5th'
+    WHEN 6837 THEN 'Riang lamdap: chord prakop duai root 3rd lae 5th'
+    WHEN 6838 THEN 'Fang chord lae bok wa pen Major rue Minor'
+    WHEN 6839 THEN 'Rong G Major arpeggio'
+    WHEN 6840 THEN 'Jap khu radap siang khong scale kap chu thangkarn'
+END
+WHERE id_ejercicio BETWEEN 6831 AND 6840;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6841 THEN 'Relative minor khong C Major khue? a) A minor b) E minor'
+    WHEN 6842 THEN 'Riang lamdap: modulation khue kan plian key'
+    WHEN 6843 THEN 'Fang chord progression lae jot radap siang'
+    WHEN 6844 THEN 'Prop mue tam jangwa asymmetric'
+    WHEN 6845 THEN 'Jap khu mode church kap khrongsang'
+    WHEN 6846 THEN 'Counterpoint khue arai? a) line thi isara b) rhythm'
+    WHEN 6847 THEN 'Riang lamdap: fugue pen polyphonic form'
+    WHEN 6848 THEN 'Fang symphony lae ra bo form'
+    WHEN 6849 THEN 'Athibai twelve-tone technique'
+    WHEN 6850 THEN 'Jap khu yuk thangkandontri kap nak pra phan'
+END
+WHERE id_ejercicio BETWEEN 6841 AND 6850;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6851 THEN 'Ingilizce de merhaba nasil denir? a) Hello b) Bye'
+    WHEN 6852 THEN 'Kelimeleri sirala: is name my John'
+    WHEN 6853 THEN 'Dinle ve dogru selamlasmayi sec'
+    WHEN 6854 THEN 'Hello kelimesini dogru telaffuz et'
+    WHEN 6855 THEN '1 den 5 e kadar sayilari Ingilizce kelimelerle eslestir'
+    WHEN 6856 THEN 'Olmak fiili hangisidir? a) to be b) to play'
+    WHEN 6857 THEN 'Sirala: playing am I now'
+    WHEN 6858 THEN 'Dinle ve rengi Ingilizce yaz'
+    WHEN 6859 THEN 'Su cumleyi yuksek sesle oku: I am happy'
+    WHEN 6860 THEN 'Hayvanlari Ingilizce isimleriyle eslestir'
+END
+WHERE id_ejercicio BETWEEN 6851 AND 6860;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6861 THEN 'Go fiilinin gecmis zamani nedir? a) went b) goed'
+    WHEN 6862 THEN 'Sirala: yesterday to school went she'
+    WHEN 6863 THEN 'Diyalogu dinle ve soruyu cevapla'
+    WHEN 6864 THEN 'Yuksek sesle oku: She bought a new house'
+    WHEN 6865 THEN 'Duzensiz fiilleri gecmis zamanlariyla eslestir'
+    WHEN 6866 THEN 'Eger yagmur yagarsa: a) will stay b) would stay'
+    WHEN 6867 THEN 'Sirala: have waiting been they'
+    WHEN 6868 THEN 'Haberleri dinle ve sorunu belirle'
+    WHEN 6869 THEN 'Iklim degisikligi hakkindaki metni sesli oku'
+    WHEN 6870 THEN 'Deyimsel fiilleri (phrasal verbs) anlamlariyla eslestir'
+END
+WHERE id_ejercicio BETWEEN 6861 AND 6870;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6871 THEN 'Fast kelimesinin esanlamlisi nedir? a) quick b) slow'
+    WHEN 6872 THEN 'Sirala: nevertheless she persisted'
+    WHEN 6873 THEN 'Tartismayi dinle ve ozetle'
+    WHEN 6874 THEN 'Ingilizce ekonomi hakkinda bir konusma kaydet'
+    WHEN 6875 THEN 'Ingilizce deyimleri anlamlariyla eslestir'
+    WHEN 6876 THEN 'Almanca da merhaba nasil denir? a) Hallo b) Tschuss'
+    WHEN 6877 THEN 'Kelimeleri sirala: heisse ich Anna'
+    WHEN 6878 THEN 'Dinle ve dogru selamlasmayi sec'
+    WHEN 6879 THEN 'Hallo kelimesini dogru telaffuz et'
+    WHEN 6880 THEN '1 den 5 e kadar sayilari Almanca kelimelerle eslestir'
+END
+WHERE id_ejercicio BETWEEN 6871 AND 6880;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6881 THEN 'Disil artikeli hangisidir? a) die b) der c) das'
+    WHEN 6882 THEN 'Sirala: isst er einen Apfel'
+    WHEN 6883 THEN 'Dinle ve rengi Almanca yaz'
+    WHEN 6884 THEN 'Su cumleyi yuksek sesle oku: Ich komme aus der Turkei'
+    WHEN 6885 THEN 'Aile uyelerini Almanca isimleriyle eslestir'
+    WHEN 6886 THEN 'Machen fiilinin gecmis zamani nedir? a) gemacht b) machte'
+    WHEN 6887 THEN 'Sirala: bin ich gestern ins Kino gegangen'
+    WHEN 6888 THEN 'Diyalogu dinle ve soruyu cevapla'
+    WHEN 6889 THEN 'Yuksek sesle oku: Ich habe ein Auto gekauft'
+    WHEN 6890 THEN 'Duzensiz fiilleri Partizip II halleriyle eslestir'
+END
+WHERE id_ejercicio BETWEEN 6881 AND 6890;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6891 THEN 'Vaktim olsaydi: a) wenn ich Zeit hatte b) ich habe'
+    WHEN 6892 THEN 'Sirala: arbeiten sie hier schon lange'
+    WHEN 6893 THEN 'Almanca haberleri dinle ve konuyu belirle'
+    WHEN 6894 THEN 'Berlin hakkindaki metni sesli oku'
+    WHEN 6895 THEN 'Edatlari dogru ismin halleriyle (kasus) eslestir'
+    WHEN 6896 THEN 'Schnell kelimesinin esanlamlisi nedir? a) rasch b) langsam'
+    WHEN 6897 THEN 'Sirala: obwohl es regnete sind wir'
+    WHEN 6898 THEN 'Tartismayi dinle ve sonuc cikar'
+    WHEN 6899 THEN 'AB hakkinda Almanca bir konusma kaydet'
+    WHEN 6900 THEN 'Almanca deyimleri anlamlariyla eslestir'
+END
+WHERE id_ejercicio BETWEEN 6891 AND 6900;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6901 THEN 'Rusca da merhaba nasil denir? a) Privet b) Poka'
+    WHEN 6902 THEN 'Kelimeleri sirala: menya zovut Ivan'
+    WHEN 6903 THEN 'Dinle ve dogru selamlasmayi sec'
+    WHEN 6904 THEN 'Privet kelimesini dogru telaffuz et'
+    WHEN 6905 THEN '1 den 5 e kadar sayilari Rusca kelimelerle eslestir'
+    WHEN 6906 THEN 'Eril cinsiyet son eki hangisidir? a) sessiz harf b) -a c) -o'
+    WHEN 6907 THEN 'Sirala: on est yabloko'
+    WHEN 6908 THEN 'Dinle ve rengi Rusca (Latin alfabesi) yaz'
+    WHEN 6909 THEN 'Su cumleyi yuksek sesle oku: Ya iz Turtsii'
+    WHEN 6910 THEN 'Aile uyelerini Rusca isimleriyle eslestir'
+END
+WHERE id_ejercicio BETWEEN 6901 AND 6910;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6911 THEN 'Delat fiilinin gecmis zamani (eril) nedir? a) delal b) delayu'
+    WHEN 6912 THEN 'Sirala: vchera my khodili v kino'
+    WHEN 6913 THEN 'Diyalogu dinle ve soruyu cevapla'
+    WHEN 6914 THEN 'Yuksek sesle oku: Ya kupil novuyu mashinu'
+    WHEN 6915 THEN 'Tamamlanmis ve tamamlanmamis fiilleri (aspekt) eslestir'
+    WHEN 6916 THEN 'Vaktim olsaydi: a) esli by u menya bylo vremya b) u menya est'
+    WHEN 6917 THEN 'Sirala: oni zdes rabotayut davno'
+    WHEN 6918 THEN 'Rusca haberleri dinle ve konuyu belirle'
+    WHEN 6919 THEN 'Moskova hakkindaki metni sesli oku'
+    WHEN 6920 THEN 'Rusca baglajlari anlamlariyla eslestir'
+END
+WHERE id_ejercicio BETWEEN 6911 AND 6920;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6921 THEN 'Bystryy kelimesinin esanlamlisi nedir? a) skoriy b) medlennyy'
+    WHEN 6922 THEN 'Sirala: nesmotrya na dozhd my poshli'
+    WHEN 6923 THEN 'Tartismayi dinle ve ozetle'
+    WHEN 6924 THEN 'Rus edebiyati hakkinda bir konusma kaydet'
+    WHEN 6925 THEN 'Rusca deyimleri anlamlariyla eslestir'
+    WHEN 6926 THEN 'Cince de merhaba nasil denir? a) Ni hao b) Zaijian'
+    WHEN 6927 THEN 'Kelimeleri sirala: wo shi tuerqi ren'
+    WHEN 6928 THEN 'Dinle ve dogru tonu sec'
+    WHEN 6929 THEN 'Xiexie kelimesini dogru telaffuz et'
+    WHEN 6930 THEN '1 den 5 e kadar sayilari Cince pinyin ile eslestir'
+END
+WHERE id_ejercicio BETWEEN 6921 AND 6930;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6931 THEN 'Duz nesneler icin kullanilan olcu kelimesi hangisidir? a) zhang b) ge'
+    WHEN 6932 THEN 'Sirala: wo xihuan he cha'
+    WHEN 6933 THEN 'Dinle ve rengi pinyin olarak yaz'
+    WHEN 6934 THEN 'Su cumleyi yuksek sesle oku: Wo ai ni'
+    WHEN 6935 THEN 'Hayvanlari Cince karakterleriyle eslestir'
+    WHEN 6936 THEN 'Gecmis zamani gosteren edat hangisidir? a) le b) zhi c) zai'
+    WHEN 6937 THEN 'Sirala: zuotian wo qu le beijing'
+    WHEN 6938 THEN 'Diyalogu dinle ve ne yediklerini not et'
+    WHEN 6939 THEN 'Pinyin metnini yuksek sesle oku'
+    WHEN 6940 THEN 'Fiilleri edatlariyla eslestir'
+END
+WHERE id_ejercicio BETWEEN 6931 AND 6940;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6941 THEN 'Eger yagmur yagarsa gitmeyecegim: a) ruguo xiayu b) suiran xiayu'
+    WHEN 6942 THEN 'Sirala: wo zhengzai xuexi zhongwen'
+    WHEN 6943 THEN 'Haberleri dinle ve ana konuyu belirle'
+    WHEN 6944 THEN 'Cin Seddi hakkindaki metni sesli oku'
+    WHEN 6945 THEN 'Karakterleri kokleriyle eslestir'
+    WHEN 6946 THEN 'Gaoxing kelimesinin esanlamlisi nedir? a) kuaile b) nan guo'
+    WHEN 6947 THEN 'Sirala: ta zhongyu chengong le'
+    WHEN 6948 THEN 'Tartismayi dinle ve argumanlari ozetle'
+    WHEN 6949 THEN 'Cin ekonomisi hakkinda bir konusma kaydet'
+    WHEN 6950 THEN 'Cince deyimleri (chengyu) anlamlariyla eslestir'
+END
+WHERE id_ejercicio BETWEEN 6941 AND 6950;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6951 THEN 'Satranc tahtasinda kac kare vardir? a) 64 b) 32 c) 100'
+    WHEN 6952 THEN 'Sirala: her oyuncunun sekiz piyonu vardir'
+    WHEN 6953 THEN 'Dinle ve satranc tasinin adini yaz'
+    WHEN 6954 THEN 'Yuksek sesle soyle: Sah mat'
+    WHEN 6955 THEN 'Taslari puan degerleriyle eslestir'
+    WHEN 6956 THEN 'At nasil hareket eder? a) L seklinde b) capraz'
+    WHEN 6957 THEN 'Sirala: fil caprazlari kontrol eder'
+    WHEN 6958 THEN 'Hamleyi dinle ve tahtada yap'
+    WHEN 6959 THEN 'Siradaki hamleyi sesli oku: At f3 e'
+    WHEN 6960 THEN 'Temel terimleri aciklamalariyla eslestir'
+END
+WHERE id_ejercicio BETWEEN 6951 AND 6960;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6961 THEN 'Acmaz nedir? a) tas hareket edemez b) sah'
+    WHEN 6962 THEN 'Sirala: hatti acmak icin kaleyi feda et'
+    WHEN 6963 THEN 'Analizi dinle ve tehdidi bul'
+    WHEN 6964 THEN 'Ana varyanti yuksek sesle oku'
+    WHEN 6965 THEN 'Taktik motifleri orneklerle eslestir'
+    WHEN 6966 THEN 'Oyun sonunda opozisyon nedir? a) sahlarin karsi karsiya gelmesi b) mat'
+    WHEN 6967 THEN 'Sirala: izole edilmis piyon bir zayifliktir'
+    WHEN 6968 THEN 'Dersi dinle ve kilit hamleyi yaz'
+    WHEN 6969 THEN 'Profilaksi kavramini yuksek sesle acikla'
+    WHEN 6970 THEN 'Acilisi dogru ECO koduyla eslestir'
+END
+WHERE id_ejercicio BETWEEN 6961 AND 6970;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6971 THEN 'Sicilya Savunmasi nin ozelligi nedir? a) c5 b) e5 c) d5'
+    WHEN 6972 THEN 'Sirala: materyal icin dinamik kompanzasyon'
+    WHEN 6973 THEN 'Korleme satranc analizini takip et ve mati bul'
+    WHEN 6974 THEN 'Kasparov un Topalov a karsi oynadigi macyi sesli analiz et'
+    WHEN 6975 THEN 'Piyon yapilarini ilgili planlarla eslestir'
+    WHEN 6976 THEN 'Fransizca da merhaba nasil denir? a) Bonjour b) Merci'
+    WHEN 6977 THEN 'Kelimeleri sirala: m appelle je Pierre'
+    WHEN 6978 THEN 'Dinle ve dogru selamlasmayi sec'
+    WHEN 6979 THEN 'Bonjour kelimesini dogru telaffuz et'
+    WHEN 6980 THEN '1 den 5 e kadar sayilari Fransizca kelimelerle eslestir'
+END
+WHERE id_ejercicio BETWEEN 6971 AND 6980;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6981 THEN 'Disil artikel hangisidir? a) la b) le c) les'
+    WHEN 6982 THEN 'Sirala: mange elle une pomme'
+    WHEN 6983 THEN 'Dinle ve rengi Fransizca yaz'
+    WHEN 6984 THEN 'Su cumleyi yuksek sesle oku: Je suis etudiant'
+    WHEN 6985 THEN 'Aile uyelerini Fransizca isimleriyle eslestir'
+    WHEN 6986 THEN 'Manger fiilinin passe compose hali nedir? a) a mange b) mangeait'
+    WHEN 6987 THEN 'Sirala: hier sommes nous alles'
+    WHEN 6988 THEN 'Diyalogu dinle ve soruyu cevapla'
+    WHEN 6989 THEN 'Yuksek sesle oku: Nous avons visite Paris'
+    WHEN 6990 THEN 'Duzensiz fiilleri passe compose halleriyle eslestir'
+END
+WHERE id_ejercicio BETWEEN 6981 AND 6990;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 6991 THEN 'Bilseydim: a) si j avais su b) si je sais'
+    WHEN 6992 THEN 'Sirala: travaillent ils ici depuis'
+    WHEN 6993 THEN 'Fransizca haberleri dinle ve konumu belirle'
+    WHEN 6994 THEN 'Fransiz kulturu hakkindaki metni sesli oku'
+    WHEN 6995 THEN 'Fransizca baglajlari anlamlariyla eslestir'
+    WHEN 6996 THEN 'Ephemere kelimesinin esanlamlisi nedir? a) passager b) durable'
+    WHEN 6997 THEN 'Sirala: nonobstant les difficultes'
+    WHEN 6998 THEN 'Tartismayi dinle ve ozetle'
+    WHEN 6999 THEN 'Fransiz Devrimi hakkinda bir konusma kaydet'
+    WHEN 7000 THEN 'Fransizca deyimleri anlamlariyla eslestir'
+END
+WHERE id_ejercicio BETWEEN 6991 AND 7000;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 7001 THEN 'Italyanca da merhaba nasil denir? a) Ciao b) Arrivederci'
+    WHEN 7002 THEN 'Kelimeleri sirala: mi chiamo io Marco'
+    WHEN 7003 THEN 'Dinle ve dogru selamlasmayi sec'
+    WHEN 7004 THEN 'Ciao kelimesini dogru telaffuz et'
+    WHEN 7005 THEN '1 den 5 e kadar sayilari Italyanca kelimelerle eslestir'
+    WHEN 7006 THEN 'Essere ve avere fiilleri arasindaki fark nedir?'
+    WHEN 7007 THEN 'Sirala: mangia lui una mela'
+    WHEN 7008 THEN 'Dinle ve rengi Italyanca yaz'
+    WHEN 7009 THEN 'Su cumleyi yuksek sesle oku: Sono felice'
+    WHEN 7010 THEN 'Hayvanlari Italyanca isimleriyle eslestir'
+END
+WHERE id_ejercicio BETWEEN 7001 AND 7010;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 7011 THEN 'Mangiare fiilinin gecmis zamani nedir? a) ho mangiato b) mangiavo'
+    WHEN 7012 THEN 'Sirala: ieri siamo andati al mare'
+    WHEN 7013 THEN 'Diyalogu dinle ve soruyu cevapla'
+    WHEN 7014 THEN 'Yuksek sesle oku: Ha comprato una casa'
+    WHEN 7015 THEN 'Duzensiz fiilleri gecmis zaman halleriyle eslestir'
+    WHEN 7016 THEN 'Eger yagmur yagarsa: a) se piovesse b) se piove'
+    WHEN 7017 THEN 'Sirala: lavorano qui da ieri'
+    WHEN 7018 THEN 'Haberleri dinle ve konumu belirle'
+    WHEN 7019 THEN 'Roma hakkindaki metni sesli oku'
+    WHEN 7020 THEN 'Italyanca baglajlari anlamlariyla eslestir'
+END
+WHERE id_ejercicio BETWEEN 7011 AND 7020;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 7021 THEN 'Veloce kelimesinin esanlamlisi nedir? a) rapido b) lento'
+    WHEN 7022 THEN 'Sirala: sebbene piovesse siamo usciti'
+    WHEN 7023 THEN 'Tartismayi dinle ve ozetle'
+    WHEN 7024 THEN 'Italyan mutfagi hakkinda bir konusma kaydet'
+    WHEN 7025 THEN 'Italyanca deyimleri anlamlariyla eslestir'
+    WHEN 7026 THEN 'Korece de merhaba nasil denir? a) Annyeonghaseyo b) Kamsahamnida'
+    WHEN 7027 THEN 'Kelimeleri sirala: naneun hagsaeng ida'
+    WHEN 7028 THEN 'Dinle ve dogru selamlasmayi sec'
+    WHEN 7029 THEN 'Annyeonghaseyo kelimesini dogru telaffuz et'
+    WHEN 7030 THEN '1 den 5 e kadar sayilari Korece kelimelerle eslestir'
+END
+WHERE id_ejercicio BETWEEN 7021 AND 7030;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 7031 THEN 'Ozneyi isaretleyen edat hangisidir? a) eun/neun b) i/ga c) eul/reul'
+    WHEN 7032 THEN 'Sirala: sagwa reul meogneunda'
+    WHEN 7033 THEN 'Dinle ve romanizasyon ile yaz'
+    WHEN 7034 THEN 'Su cumleyi yuksek sesle oku: Hangug-e gago sipeoyo'
+    WHEN 7035 THEN 'Aile uyelerini Korece isimleriyle eslestir'
+    WHEN 7036 THEN 'Hada (yapmak) fiilinin gecmis zamani nedir? a) haesseoyo b) haeyo'
+    WHEN 7037 THEN 'Sirala: eoje chingu reul mannasseoyo'
+    WHEN 7038 THEN 'Diyalogu dinle ve nereye gittiklerini cevapla'
+    WHEN 7039 THEN 'Yuksek sesle oku: Sae cha reul sass-eoyo'
+    WHEN 7040 THEN 'Fiilleri kibar formlariyla eslestir'
+END
+WHERE id_ejercicio BETWEEN 7031 AND 7040;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 7041 THEN 'Vaktim olsaydi: a) sigan-i iss-eumyeon b) sigan-i iss-da'
+    WHEN 7042 THEN 'Sirala: jigeum eum-ag eul deudgo iss-eoyo'
+    WHEN 7043 THEN 'Korece haberleri dinle ve konuyu belirle'
+    WHEN 7044 THEN 'Seul hakkindaki metni sesli oku'
+    WHEN 7045 THEN 'Korece baglajlari anlamlariyla eslestir'
+    WHEN 7046 THEN 'Ppareuda (hizli) kelimesinin esanlamlisi nedir? a) sinsoghada b) neurida'
+    WHEN 7047 THEN 'Sirala: bi ga wado gamnida'
+    WHEN 7048 THEN 'K-drama dinle ve duyguyu belirle'
+    WHEN 7049 THEN 'K-pop hakkinda bir konusma kaydet'
+    WHEN 7050 THEN 'Korece atasozlerini anlamlariyla eslestir'
+END
+WHERE id_ejercicio BETWEEN 7041 AND 7050;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 7051 THEN 'Japonca da merhaba nasil denir? a) Konnichiwa b) Sayounara'
+    WHEN 7052 THEN 'Kelimeleri sirala: watashi wa gakusei desu'
+    WHEN 7053 THEN 'Dinle ve dogru selamlasmayi sec'
+    WHEN 7054 THEN 'Konnichiwa kelimesini dogru telaffuz et'
+    WHEN 7055 THEN '1 den 5 e kadar sayilari Japonca kelimelerle eslestir'
+    WHEN 7056 THEN 'Konuyu belirten edat hangisidir? a) wa b) wo c) ni'
+    WHEN 7057 THEN 'Sirala: ringo wo tabemasu'
+    WHEN 7058 THEN 'Dinle ve romaji olarak yaz'
+    WHEN 7059 THEN 'Su cumleyi yuksek sesle oku: Nihon ni ikitai desu'
+    WHEN 7060 THEN 'Hayvanlari Japonca isimleriyle eslestir'
+END
+WHERE id_ejercicio BETWEEN 7051 AND 7060;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 7061 THEN 'Suru fiilinin gecmis zamani nedir? a) shimashita b) shimasu'
+    WHEN 7062 THEN 'Sirala: kinou tomodachi ni aimashita'
+    WHEN 7063 THEN 'Diyalogu dinle ve nereye gittiklerini cevapla'
+    WHEN 7064 THEN 'Yuksek sesle oku: Atarashii kuruma wo kaimashita'
+    WHEN 7065 THEN 'Fiilleri te-formlariyla eslestir'
+    WHEN 7066 THEN 'Vaktim olsaydi: a) jikan ga attara b) jikan ga aru'
+    WHEN 7067 THEN 'Sirala: ima ongaku wo kiite imasu'
+    WHEN 7068 THEN 'Japonca haberleri dinle ve konuyu belirle'
+    WHEN 7069 THEN 'Tokyo hakkindaki metni sesli oku'
+    WHEN 7070 THEN 'Japonca baglajlari anlamlariyla eslestir'
+END
+WHERE id_ejercicio BETWEEN 7061 AND 7070;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 7071 THEN 'Hayai kelimesinin esanlamlisi nedir? a) shinsoku b) osoi'
+    WHEN 7072 THEN 'Sirala: ame ga futte mo ikimasu'
+    WHEN 7073 THEN 'Diziyi dinle ve karakterin duygusunu belirle'
+    WHEN 7074 THEN 'Japon kulturu hakkinda bir konusma kaydet'
+    WHEN 7075 THEN 'Japonca atasozlerini anlamlariyla eslestir'
+    WHEN 7076 THEN 'Portekizce de merhaba nasil denir? a) Ola b) Tchau'
+    WHEN 7077 THEN 'Kelimeleri sirala: sou eu da Turquia'
+    WHEN 7078 THEN 'Dinle ve dogru selamlasmayi sec'
+    WHEN 7079 THEN 'Ola kelimesini dogru telaffuz et'
+    WHEN 7080 THEN '1 den 5 e kadar sayilari Portekizce kelimelerle eslestir'
+END
+WHERE id_ejercicio BETWEEN 7071 AND 7080;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 7081 THEN 'Ser ve estar fiilleri arasindaki fark nedir? a) olmak b) gitmek'
+    WHEN 7082 THEN 'Sirala: come ela uma maca'
+    WHEN 7083 THEN 'Dinle ve Portekizce yaz'
+    WHEN 7084 THEN 'Su cumleyi yuksek sesle oku: Eu gosto de cafe'
+    WHEN 7085 THEN 'Hayvanlari Portekizce isimleriyle eslestir'
+    WHEN 7086 THEN 'Falar fiilinin gecmis zamani nedir? a) falei b) falava'
+    WHEN 7087 THEN 'Sirala: ontem fomos nos ao cinema'
+    WHEN 7088 THEN 'Diyalogu dinle ve soruyu cevapla'
+    WHEN 7089 THEN 'Yuksek sesle oku: Eu comprei um carro'
+    WHEN 7090 THEN 'Duzensiz fiilleri gecmis zamanlariyla eslestir'
+END
+WHERE id_ejercicio BETWEEN 7081 AND 7090;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 7091 THEN 'Vaktim olsaydi: a) se eu tivesse tempo b) se eu tenho'
+    WHEN 7092 THEN 'Sirala: estao trabalhando eles aqui'
+    WHEN 7093 THEN 'Haberleri dinle ve sorunu belirle'
+    WHEN 7094 THEN 'Brezilya kulturu hakkindaki metni sesli oku'
+    WHEN 7095 THEN 'Portekizce baglajlari anlamlariyla eslestir'
+    WHEN 7096 THEN 'Rapido kelimesinin esanlamlisi nedir? a) veloz b) devagar'
+    WHEN 7097 THEN 'Sirala: apesar das dificuldades'
+    WHEN 7098 THEN 'Tartismayi dinle ve ozetle'
+    WHEN 7099 THEN 'Brezilya ekonomisi hakkinda bir konusma kaydet'
+    WHEN 7100 THEN 'Portekizce deyimleri anlamlariyla eslestir'
+END
+WHERE id_ejercicio BETWEEN 7091 AND 7100;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 7101 THEN 'Ispanyolca da merhaba nasil denir? a) Hola b) Adios'
+    WHEN 7102 THEN 'Kelimeleri sirala: soy yo de Turquia'
+    WHEN 7103 THEN 'Dinle ve dogru selamlasmayi sec'
+    WHEN 7104 THEN 'Hola kelimesini dogru telaffuz et'
+    WHEN 7105 THEN '1 den 5 e kadar sayilari Ispanyolca kelimelerle eslestir'
+    WHEN 7106 THEN 'Ser ve estar fiilleri ne anlama gelir?'
+    WHEN 7107 THEN 'Sirala: come ella una manzana'
+    WHEN 7108 THEN 'Dinle ve Ispanyolca yaz'
+    WHEN 7109 THEN 'Su cumleyi yuksek sesle oku: Estoy feliz'
+    WHEN 7110 THEN 'Hayvanlari Ispanyolca isimleriyle eslestir'
+END
+WHERE id_ejercicio BETWEEN 7101 AND 7110;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 7111 THEN 'Hablar fiilinin gecmis zamani nedir? a) hable b) hablaba'
+    WHEN 7112 THEN 'Sirala: fuimos ayer al cine'
+    WHEN 7113 THEN 'Diyalogu dinle ve soruyu cevapla'
+    WHEN 7114 THEN 'Yuksek sesle oku: Compre un coche nuevo'
+    WHEN 7115 THEN 'Duzensiz fiilleri gecmis zamanlariyla eslestir'
+    WHEN 7116 THEN 'Vaktim olsaydi: a) si tuviera tiempo b) si tengo'
+    WHEN 7117 THEN 'Sirala: han estado trabajando aqui'
+    WHEN 7118 THEN 'Haberleri dinle ve sorunu belirle'
+    WHEN 7119 THEN 'Ispanyol kulturu hakkindaki metni sesli oku'
+    WHEN 7120 THEN 'Ispanyolca baglajlari anlamlariyla eslestir'
+END
+WHERE id_ejercicio BETWEEN 7111 AND 7120;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 7121 THEN 'Rapido kelimesinin esanlamlisi nedir? a) veloz b) lento'
+    WHEN 7122 THEN 'Sirala: a pesar de las dificultades'
+    WHEN 7123 THEN 'Tartismayi dinle ve ozetle'
+    WHEN 7124 THEN 'Ispanya ekonomisi hakkinda bir konusma kaydet'
+    WHEN 7125 THEN 'Ispanyolca deyimleri anlamlariyla eslestir'
+    WHEN 7126 THEN '15 arti 27 kactir? a) 42 b) 32'
+    WHEN 7127 THEN 'Sirala: once carp sonra topla'
+    WHEN 7128 THEN 'Dinle ve sayilari not al'
+    WHEN 7129 THEN '3x = 12 denklemini yuksek sesle oku'
+    WHEN 7130 THEN 'Geometrik sekilleri isimleriyle eslestir'
+END
+WHERE id_ejercicio BETWEEN 7121 AND 7130;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 7131 THEN 'Dairenin alan formulu nedir? a) pi*r^2 b) 2*pi*r'
+    WHEN 7132 THEN '2x+4=10 denklemini cozmek icin adimlari sirala'
+    WHEN 7133 THEN 'Problemi dinle ve denklemi kur'
+    WHEN 7134 THEN 'Pisagor teoremini yuksek sesle acikla'
+    WHEN 7135 THEN 'Kesirleri ondalik karsiliklariyla eslestir'
+    WHEN 7136 THEN 'x^2 nin turevi nedir? a) 2x b) x'
+    WHEN 7137 THEN 'Sirala: zincir kurali bilesik fonksiyonlar icin kullanilir'
+    WHEN 7138 THEN 'Dersi dinle ve formulu not al'
+    WHEN 7139 THEN 'Matematiksel ispati yuksek sesle oku'
+    WHEN 7140 THEN 'Fonksiyonlari grafikleriyle eslestir'
+END
+WHERE id_ejercicio BETWEEN 7131 AND 7140;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 7141 THEN '1/x in integrali nedir? a) ln(x) b) e^x'
+    WHEN 7142 THEN 'Tumevarim ispati adimlarini sirala'
+    WHEN 7143 THEN 'Teoremin aciklamasini dinle ve ozetle'
+    WHEN 7144 THEN 'Limit kavramini yuksek sesle acikla'
+    WHEN 7145 THEN 'Matris islemlerini sonuclariyla eslestir'
+    WHEN 7146 THEN 'Ozvektor (eigenvector) nedir?'
+    WHEN 7147 THEN 'Vektor uzayinin tanimini sirala'
+    WHEN 7148 THEN 'Topoloji hakkindaki aciklamayi dinle ve hatayi bul'
+    WHEN 7149 THEN 'Cok degiskenli analiz hakkinda bir sunum yap'
+    WHEN 7150 THEN 'Diferansiyel denklemleri cozum yontemleriyle eslestir'
+END
+WHERE id_ejercicio BETWEEN 7141 AND 7150;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 7151 THEN 'Muzik dizesinde (porte) kac cizgi vardir? a) 5 b) 4'
+    WHEN 7152 THEN 'Sirala: yedi temel nota vardir'
+    WHEN 7153 THEN 'Sesi dinle ve yuksek mi alcak mi oldugunu belirt'
+    WHEN 7154 THEN 'Orta Do notasini soyle'
+    WHEN 7155 THEN 'Nota sembolunu sure degeriyle eslestir'
+    WHEN 7156 THEN 'Kalin sesler icin hangi anahtar kullanilir? a) Fa Anahtari b) Sol Anahtari'
+    WHEN 7157 THEN 'Sirala: diyez notayi yarim ses tizlestirir'
+    WHEN 7158 THEN 'Melodiyi dinle ve eksik notayi doldur'
+    WHEN 7159 THEN 'Do major dizisini yuksek sesle soyle'
+    WHEN 7160 THEN 'Dinamik isaretlerini (p, f) anlamlariyla eslestir'
+END
+WHERE id_ejercicio BETWEEN 7151 AND 7160;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 7161 THEN 'Do ve Mi arasindaki mesafe nedir? a) Major 3lu b) Tam 5li'
+    WHEN 7162 THEN 'Sirala: akor kok 3lu ve 5liden olusur'
+    WHEN 7163 THEN 'Akoru dinle ve major mu minor mu oldugunu soyle'
+    WHEN 7164 THEN 'Sol major arpejini soyle'
+    WHEN 7165 THEN 'Dizi derecelerini teknik isimleriyle eslestir (tonik, dominant)'
+    WHEN 7166 THEN 'Do majorun ilgili minoru hangisidir? a) La minor b) Mi minor'
+    WHEN 7167 THEN 'Sirala: modulasyon ton degistirmek demektir'
+    WHEN 7168 THEN 'Akor dizisini dinle ve dereceleri not et'
+    WHEN 7169 THEN 'Asimetrik bir ritmi dogru sekilde vur'
+    WHEN 7170 THEN 'Kilise modlarini yapilariyla eslestir'
+END
+WHERE id_ejercicio BETWEEN 7161 AND 7170;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 7171 THEN 'Kontrpuan ne demektir? a) bagimsiz melodiler b) ritim'
+    WHEN 7172 THEN 'Sirala: fug polifonik bir formdur'
+    WHEN 7173 THEN 'Senfoniyi dinle ve formunu belirle'
+    WHEN 7174 THEN 'On iki ton teknigini yuksek sesle acikla'
+    WHEN 7175 THEN 'Muzik tarihi donemlerini bestecilerle eslestir'
+    WHEN 7176 THEN 'Yak skazaty pryvit anhliyskoyu? a) Hello b) Bye'
+    WHEN 7177 THEN 'Uporyadkuyte slova: is name my John'
+    WHEN 7178 THEN 'Poslukhayte ta vyberit pravylne vitannya'
+    WHEN 7179 THEN 'Vymovte slovo Hello chitko'
+    WHEN 7180 THEN 'Z yednayte chysla vid 1 do 5 z anhliyskymy slovamy'
+END
+WHERE id_ejercicio BETWEEN 7171 AND 7180;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 7181 THEN 'Yake diyeslovo ye diyeslovom to be? a) to be b) to play'
+    WHEN 7182 THEN 'Uporyadkuyte: playing am I now'
+    WHEN 7183 THEN 'Poslukhayte ta napyshit kolir anhliyskoyu'
+    WHEN 7184 THEN 'Prochytayte rechennya vholos: I am happy'
+    WHEN 7185 THEN 'Z yednayte tvaryn z yikhnimy anhliyskymy nazvamy'
+    WHEN 7186 THEN 'Yaky mynulyy chas vid go? a) went b) goed'
+    WHEN 7187 THEN 'Uporyadkuyte: yesterday to school went she'
+    WHEN 7188 THEN 'Poslukhayte dialoh i vidpovizhte na zapytannya'
+    WHEN 7189 THEN 'Prochytayte vholos: She bought a new house'
+    WHEN 7190 THEN 'Z yednayte nepravylni diyeslova z formamy mynuloho chasu'
+END
+WHERE id_ejercicio BETWEEN 7181 AND 7190;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 7191 THEN 'Yakby yshov doshch: a) will stay b) would stay'
+    WHEN 7192 THEN 'Uporyadkuyte: have waiting been they'
+    WHEN 7193 THEN 'Poslukhayte novyny ta vyznachte problemu'
+    WHEN 7194 THEN 'Prochytayte vholos tekst pro zminu klimatu'
+    WHEN 7195 THEN 'Z yednayte frazovi diyeslova z yikhnimy znachennyamy'
+    WHEN 7196 THEN 'Yakyy synonim do fast? a) quick b) slow'
+    WHEN 7197 THEN 'Uporyadkuyte: nevertheless she persisted'
+    WHEN 7198 THEN 'Poslukhayte dyskusiyu ta zrobit pidsumok'
+    WHEN 7199 THEN 'Zapyshit rozmovu pro ekonomiku anhliyskoyu'
+    WHEN 7200 THEN 'Z yednayte anhliyski idiomy z yikhnimy znachennyamy'
+END
+WHERE id_ejercicio BETWEEN 7191 AND 7200;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 7201 THEN 'Yak skazaty pryvit nimetskoyu? a) Hallo b) Tschuss'
+    WHEN 7202 THEN 'Uporyadkuyte slova: heisse ich Anna'
+    WHEN 7203 THEN 'Poslukhayte ta vyberit pravylne vitannya'
+    WHEN 7204 THEN 'Vymovte slovo Hallo chitko'
+    WHEN 7205 THEN 'Z yednayte chysla vid 1 do 5 z nimetskymy slovamy'
+    WHEN 7206 THEN 'Yakyy artykyl zhinochoho rodu? a) die b) der c) das'
+    WHEN 7207 THEN 'Uporyadkuyte: isst er einen Apfel'
+    WHEN 7208 THEN 'Poslukhayte ta napyshit kolir nimetskoyu'
+    WHEN 7209 THEN 'Prochytayte rechennya vholos: Ich komme aus der Ukraine'
+    WHEN 7210 THEN 'Z yednayte chleniv rodyny z yikhnimy nimetskymy nazvamy'
+END
+WHERE id_ejercicio BETWEEN 7201 AND 7210;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 7211 THEN 'Yaky mynulyy chas vid machen? a) gemacht b) machte'
+    WHEN 7212 THEN 'Uporyadkuyte: bin ich gestern ins Kino gegangen'
+    WHEN 7213 THEN 'Poslukhayte dialoh i vidpovizhte na zapytannya'
+    WHEN 7214 THEN 'Prochytayte vholos: Ich habe ein Auto gekauft'
+    WHEN 7215 THEN 'Z yednayte nepravylni diyeslova z formamy Partizip II'
+    WHEN 7216 THEN 'Yakby u mene byv chas: a) wenn ich Zeit hatte b) ich habe'
+    WHEN 7217 THEN 'Uporyadkuyte: arbeiten sie hier schon lange'
+    WHEN 7218 THEN 'Poslukhayte nimetski novyny ta vyznachte mistse'
+    WHEN 7219 THEN 'Prochytayte vholos tekst pro Berlin'
+    WHEN 7220 THEN 'Z yednayte pryymennyky z pravylnym vidminkom (Kasus)'
+END
+WHERE id_ejercicio BETWEEN 7211 AND 7220;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 7221 THEN 'Yakyy synonim do schnell? a) rasch b) langsam'
+    WHEN 7222 THEN 'Uporyadkuyte: obwohl es regnete sind wir'
+    WHEN 7223 THEN 'Poslukhayte dyskusiyu ta zrobit pidsumok'
+    WHEN 7224 THEN 'Zapyshit rozmovu pro YeS nimetskoyu'
+    WHEN 7225 THEN 'Z yednayte nimetski idiomy z yikhnimy znachennyamy'
+    WHEN 7226 THEN 'Yak skazaty pryvit italiyskoyu? a) Ciao b) Arrivederci'
+    WHEN 7227 THEN 'Uporyadkuyte slova: mi chiamo io Marco'
+    WHEN 7228 THEN 'Poslukhayte ta vyberit pravylne vitannya'
+    WHEN 7229 THEN 'Vymovte slovo Ciao chitko'
+    WHEN 7230 THEN 'Z yednayte chysla vid 1 do 5 z italiyskymy slovamy'
+END
+WHERE id_ejercicio BETWEEN 7221 AND 7230;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 7231 THEN 'Yaka riznytsya mizh essere ta avere?'
+    WHEN 7232 THEN 'Uporyadkuyte: mangia lui una mela'
+    WHEN 7233 THEN 'Poslukhayte ta napyshit italiyskoyu'
+    WHEN 7234 THEN 'Prochytayte rechennya vholos: Sono felice'
+    WHEN 7235 THEN 'Z yednayte tvaryn z yikhnimy italiyskymy nazvamy'
+    WHEN 7236 THEN 'Yaky mynulyy chas vid mangiare? a) ho mangiato b) mangiavo'
+    WHEN 7237 THEN 'Uporyadkuyte: ieri siamo andati al mare'
+    WHEN 7238 THEN 'Poslukhayte dialoh i vidpovizhte na zapytannya'
+    WHEN 7239 THEN 'Prochytayte vholos: Ha comprato una casa'
+    WHEN 7240 THEN 'Z yednayte nepravylni diyeslova z formamy participio passato'
+END
+WHERE id_ejercicio BETWEEN 7231 AND 7240;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 7241 THEN 'Yakby yshov doshch: a) se piovesse b) se piove'
+    WHEN 7242 THEN 'Uporyadkuyte: lavorano qui da ieri'
+    WHEN 7243 THEN 'Poslukhayte novyny ta vyznachte mistse'
+    WHEN 7244 THEN 'Prochytayte vholos tekst pro Rym'
+    WHEN 7245 THEN 'Z yednayte italiyski spoluchnyky z yikhnimy znachennyamy'
+    WHEN 7246 THEN 'Yakyy synonim do veloce? a) rapido b) lento'
+    WHEN 7247 THEN 'Uporyadkuyte: sebbene piovesse siamo usciti'
+    WHEN 7248 THEN 'Poslukhayte dyskusiyu ta zrobit pidsumok'
+    WHEN 7249 THEN 'Zapyshit rozmovu pro italiysku kukhnyu'
+    WHEN 7250 THEN 'Z yednayte italiyski idiomy z yikhnimy znachennyamy'
+END
+WHERE id_ejercicio BETWEEN 7241 AND 7250;
+
+--- Ejercicios del 7251 al 7500
+--- Cursos: Coreano, Chino, Japonés, Español, Portugués, Francés, Matemáticas, Música (desde Ucraniano) 
+--- y Inglés, Chino (desde Vietnamita)
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    WHEN 7251 THEN 'Yak skazaty pryvit koreyskoyu? a) Annyeong b) Kamsahamnida'
+    WHEN 7252 THEN 'Uporyadkuyte: hagsaeng ida naneun'
+    WHEN 7253 THEN 'Vymovte chitko: Annyeonghaseyo'
+    WHEN 7254 THEN 'Z yednayte chysla 1-5 z koreyskymy slovamy'
+    WHEN 7255 THEN 'Yakyy sufiks oznachaye diyu? a) -da b) -eul'
+    WHEN 7256 THEN 'Yak skazaty pryvit kytayskoyu? a) Ni hao b) Xie xie'
+    WHEN 7257 THEN 'Vyznachte ton dlya slova Ma (mama)'
+    WHEN 7258 THEN 'Uporyadkuyte: wo shi xuesheng'
+    WHEN 7259 THEN 'Z yednayte iyerohlify z yikh znachennyam'
+    WHEN 7260 THEN 'Vymovte chitko: Ni hao ma?'
+    WHEN 7261 THEN 'Yak skazaty pryvit yaponskoyu? a) Konnichiwa b) Arigato'
+    WHEN 7262 THEN 'Uporyadkuyte: watashi wa gakusei desu'
+    WHEN 7263 THEN 'Vymovte chitko: Arigato gozaimasu'
+    WHEN 7264 THEN 'Z yednayte symvoly Hiragany z chytannyam'
+    WHEN 7265 THEN 'Yakoyu chastynoyu movy ye "Desu"?'
+END
+WHERE id_ejercicio BETWEEN 7251 AND 7265;
 
 
--- Duración del plan > 0
-ALTER TABLE [plan]
-ADD CONSTRAINT chk_plan_duracion
-CHECK (duracion_dias > 0);
-GO
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    -- 294: Español desde Ucraniano (7306-7310)
+    WHEN 7266 THEN 'Yak skazaty pryvit ispanskoyu? a) Hola b) Adios'
+    WHEN 7267 THEN 'Uporyadkuyte: yo soy de Ucrania'
+    WHEN 7268 THEN 'Vymovte: Gracias'
+    WHEN 7269 THEN 'Z yednayte kolory z ispanskymy slovamy'
+    WHEN 7270 THEN 'Riznytsya mizh Ser ta Estar?'
+    -- 295: Portugués desde Ucraniano (7351-7375)
+    WHEN 7271 THEN 'Yak skazaty pryvit portuhalskoyu? a) Ola b) Tudo bem'
+    WHEN 7272 THEN 'Uporyadkuyte: eu falo um pouco'
+    WHEN 7273 THEN 'Vymovte: Obrigado'
+    WHEN 7274 THEN 'Z yednayte tvaryn z portuhalskymy slovamy'
+    WHEN 7275 THEN 'Vymova bukvy "R" na pochatku slova'
+    -- 296: Francés desde Ucraniano (7376-7400)
+    WHEN 7276 THEN 'Yak skazaty pryvit frantsuzkoyu? a) Bonjour b) Merci'
+    WHEN 7277 THEN 'Uporyadkuyte: je suis ukrainien'
+    WHEN 7278 THEN 'Vymovte: Enchanté'
+    WHEN 7279 THEN 'Z yednayte artykli (le, la, les)'
+    WHEN 7280 THEN 'Pravyla chytannya kintsevykh pryholosnykh'
+END
+WHERE id_ejercicio BETWEEN 7266 AND 7280;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    -- 297: Matemáticas desde Ucraniano (7401-7425)
+    WHEN 7281 THEN 'Skilky bude 12 + 15? a) 27 b) 25'
+    WHEN 7282 THEN 'Rozvyazhit rivnyannya: 2x = 10'
+    WHEN 7283 THEN 'Yak nazvayetsya trykutnyk z rivnymy storonamy?'
+    WHEN 7284 THEN 'Z yednayte formuly z fihuramy'
+    WHEN 7285 THEN 'Chto take pifahorova teorema?'
+    -- 298: Música desde Ucraniano (7426-7450)
+    WHEN 7286 THEN 'Yaka nota yde pislya Do? a) Re b) Mi'
+    WHEN 7287 THEN 'Uporyadkuyte: Do Re Mi Fa Sol La Si'
+    WHEN 7288 THEN 'Poslukhayte rytm ta povtorit'
+    WHEN 7289 THEN 'Z yednayte symvoly z nazvamy (klyuch, pauza)'
+    WHEN 7290 THEN 'Yaka riznytsya mizh mazhorom i minorom?'
+END
+WHERE id_ejercicio BETWEEN 7281 AND 7290;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    -- 299: Inglés desde Vietnamita (7451-7475)
+    WHEN 7291 THEN 'Chao buoi sang tieng Anh la gi? a) Good morning b) Goodbye'
+    WHEN 7292 THEN 'Sap xep: I am a student'
+    WHEN 7293 THEN 'Phat am tu: University'
+    WHEN 7294 THEN 'Noi cac so tu 1 den 10'
+    WHEN 7295 THEN 'Cau hoi "Ban khoe khong?" tieng Anh la gi?'
+    -- 300: Chino desde Vietnamita (7476-7500)
+    WHEN 7296 THEN 'Xin chao tieng Trung la gi? a) Ni hao b) Xie xie'
+    WHEN 7297 THEN 'Sap xep: wo shi lao shi'
+    WHEN 7298 THEN 'Phat am thanh dieu 1 va 4'
+    WHEN 7299 THEN 'Noi han tu voi phien am Pinyin'
+    WHEN 7300 THEN 'Viet so 5 bang chu Han'
+    -- (Los IDs restantes 7481-7500 siguen el patron de niveles avanzado)
+    WHEN 7301 THEN 'Phan tich cau truc ngu phap phuc tap'
+    WHEN 7302 THEN 'Nghe doan hoi thoai ve kinh te'
+    WHEN 7303 THEN 'Viet bai luan ngan bang tieng Trung'
+END
+WHERE id_ejercicio BETWEEN 7291 AND 7303;
+
+--- Ejercicios del 7501 al 7750
+--- Cursos: Ajedrez, Matemáticas, Música, Italiano, Francés, Coreano, Japonés, Portugués, Español, Alemán (desde Vietnamita)
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    -- 301: Ajedrez desde Vietnamita (7501-7525)
+    WHEN 7304 THEN 'Quan Ma di chuyen nhu the nao? a) Hinh chu L b) Duong thang'
+    WHEN 7305 THEN 'Nhap thanh (Castling) la gi?'
+    WHEN 7306 THEN 'Hay giai the co chieu het trong 1 nuoc'
+    WHEN 7307 THEN 'Sap xep ban co ban dau dung vi tri'
+    WHEN 7308 THEN 'Gia tri cua quan Hau la may diem? a) 9 b) 5'
+    -- 302: Matemáticas desde Vietnamita (7526-7550)
+    WHEN 7309 THEN 'Ket qua cua 15 nhan 3 la bao nhieu? a) 45 b) 35'
+    WHEN 7310 THEN 'Giai phuong trinh: 3x - 6 = 12'
+    WHEN 7311 THEN 'Tinh dien tich hinh tron ban kinh r=2'
+    WHEN 7312 THEN 'Dinh ly Pythagoras dung cho loai tam giac nao?'
+    WHEN 7313 THEN 'Tim dao ham cua ham so f(x) = x^2'
+    -- 303: Música desde Vietnamita (7551-7575)
+    WHEN 7314 THEN 'Not nhac nao nam duoi not Do? a) Si b) Re'
+    WHEN 7315 THEN 'Khoa Sol bat dau tu dong ke thu may?'
+    WHEN 7316 THEN 'Nghe giai dieu va ghi lai cac not nhac'
+    WHEN 7317 THEN 'Nhip 4/4 co bao nhieu phach trong mot o nhip?'
+    WHEN 7318 THEN 'Phan biet am thanh cua Dan Piano va Dan Vi-o-long'
+END
+WHERE id_ejercicio BETWEEN 7304 AND 7318;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    -- 304: Italiano desde Vietnamita (7576-7600)
+    WHEN 7319 THEN 'Xin chao tieng Y la gi? a) Ciao b) Grazie'
+    WHEN 7320 THEN 'Sap xep: mi chiamo io Marco'
+    WHEN 7321 THEN 'Chia dong tu "Essere" o thi hien tai'
+    WHEN 7322 THEN 'Phat am tu: Arrivederci'
+    WHEN 7323 THEN 'Dich cau: Toi thich an pizza'
+    -- 305:Francés desde Vietnamita (7601-7625)
+    WHEN 7324 THEN 'Cam on tieng Phap la gi? a) Merci b) Bonjour'
+    WHEN 7325 THEN 'Sap xep: je suis vietnamien'
+    WHEN 7326 THEN 'Chon mao tu dung: (le/la) pomme'
+    WHEN 7327 THEN 'Phat am tu: Enchanté'
+    WHEN 7328 THEN 'Chia dong tu "Avoir" ngoi thu nhat so it'
+    -- 306:Coreano desde Vietnamita (7626-7650)
+    WHEN 7329 THEN 'Ten toi la... tieng Han noi ntn? a) Jeonun... imnida b) Kamsahamnida'
+    WHEN 7330 THEN 'Sap xep: naneun bab eul meogneunda'
+    WHEN 7331 THEN 'Chu cai "A" trong tieng Han viet ntn?'
+    WHEN 7332 THEN 'Nghe va chon dap an dung: Annyeonghaseyo'
+    WHEN 7333 THEN 'Noi cac so dem thuan Han tu 1 den 5'
+END
+WHERE id_ejercicio BETWEEN 7319 AND 7333;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    -- 307: Japonés desde Vietnamita (7651-7675)
+    WHEN 7334 THEN 'Chao buoi trua tieng Nhat la gi? a) Konnichiwa b) Ohayou'
+    WHEN 7335 THEN 'Sap xep: watashi wa gakusei desu'
+    WHEN 7336 THEN 'Chu "Ka" trong Hiragana la chu nao?'
+    WHEN 7337 THEN 'Phat am: Arigato gozaimasu'
+    WHEN 7338 THEN 'Dem vat dai trong tieng Nhat dung hau to nao?'
+    -- 308: Portugués desde Vietnamita (7676-7700)
+    WHEN 7339 THEN 'Tam biet tieng Bo Dao Nha la gi? a) Adeus b) Ola'
+    WHEN 7340 THEN 'Sap xep: eu gosto de cafe'
+    WHEN 7341 THEN 'Phat am tu: Pao (banh mi)'
+    WHEN 7342 THEN 'Noi cac thanh pho voi quoc gia tuong ung'
+    WHEN 7343 THEN 'Chia dong tu "Falar" o thi hien tai'
+END
+WHERE id_ejercicio BETWEEN 7334 AND 7343;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    -- 309: Español desde Vietnamita (7701-7725)
+    WHEN 7344 THEN 'Ban ten la gi tieng Tay Ban Nha? a) Como te llamas? b) Que tal?'
+    WHEN 7345 THEN 'Sap xep: yo vivo en Vietnam'
+    WHEN 7346 THEN 'Phat am chu "RR" trong tu Perro'
+    WHEN 7347 THEN 'Noi cac mau sac: Rojo, Azul, Verde'
+    WHEN 7348 THEN 'Dich: Toi muon mot ly nuoc'
+    -- 310:Alemán desde Vietnamita (7726-7750)
+    WHEN 7349 THEN 'Chuc mung giang sinh tieng Duc? a) Frohe Weihnachten b) Hallo'
+    WHEN 7350 THEN 'Sap xep: ich komme aus Vietnam'
+    WHEN 7351 THEN 'Phan biet cac mao tu: der, die, das'
+    WHEN 7352 THEN 'Phat am tu: Entschuldigung'
+    WHEN 7353 THEN 'Dem so tu 20 den 30 bang tieng Duc'
+    -- IDs de nivel avanzado para completar el bloque
+    WHEN 7354 THEN 'Viet mot doan van ngan ve so thich cua ban'
+    WHEN 7355 THEN 'Nghe tin tuc va tom tat noi dung chinh'
+    WHEN 7356 THEN 'Thao luan ve chu de moi truong bang tieng Duc'
+END
+WHERE id_ejercicio BETWEEN 7344 AND 7356;
+
+--- Ejercicios del 7251 al 7500
+--- Cursos: Coreano, Chino, Japonés, Español, Portugués, Francés, Matemáticas, Música (desde Ucraniano) 
+--- y Inglés, Chino (desde Vietnamita)
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    -- 291: Coreano desde Ucraniano (7251-7275)
+    WHEN 7251 THEN 'Yak skazaty pryvit koreyskoyu? a) Annyeong b) Kamsahamnida'
+    WHEN 7252 THEN 'Uporyadkuyte: hagsaeng ida naneun'
+    WHEN 7253 THEN 'Vymovte chitko: Annyeonghaseyo'
+    WHEN 7254 THEN 'Z yednayte chysla 1-5 z koreyskymy slovamy'
+    WHEN 7255 THEN 'Yakyy sufiks oznachaye diyu? a) -da b) -eul'
+    -- 292: Chino desde Ucraniano (7276-7300)
+    WHEN 7276 THEN 'Yak skazaty pryvit kytayskoyu? a) Ni hao b) Xie xie'
+    WHEN 7277 THEN 'Vyznachte ton dlya slova Ma (mama)'
+    WHEN 7278 THEN 'Uporyadkuyte: wo shi xuesheng'
+    WHEN 7279 THEN 'Z yednayte iyerohlify z yikh znachennyam'
+    WHEN 7280 THEN 'Vymovte chitko: Ni hao ma?'
+    -- 293: Japonés desde Ucraniano (7301-7325)
+    WHEN 7301 THEN 'Yak skazaty pryvit yaponskoyu? a) Konnichiwa b) Arigato'
+    WHEN 7302 THEN 'Uporyadkuyte: watashi wa gakusei desu'
+    WHEN 7303 THEN 'Vymovte chitko: Arigato gozaimasu'
+    WHEN 7304 THEN 'Z yednayte symvoly Hiragany z chytannyam'
+    WHEN 7305 THEN 'Yakoyu chastynoyu movy ye "Desu"?'
+END
+WHERE id_ejercicio BETWEEN 7251 AND 7325;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    -- 294: Español desde Ucraniano (7326-7350)
+    WHEN 7326 THEN 'Yak skazaty pryvit ispanskoyu? a) Hola b) Adios'
+    WHEN 7327 THEN 'Uporyadkuyte: yo soy de Ucrania'
+    WHEN 7328 THEN 'Vymovte: Gracias'
+    WHEN 7329 THEN 'Z yednayte kolory z ispanskymy slovamy'
+    WHEN 7330 THEN 'Riznytsya mizh Ser ta Estar?'
+    -- 295: Portugués desde Ucraniano (7351-7375)
+    WHEN 7351 THEN 'Yak skazaty pryvit portuhalskoyu? a) Ola b) Tudo bem'
+    WHEN 7352 THEN 'Uporyadkuyte: eu falo um pouco'
+    WHEN 7353 THEN 'Vymovte: Obrigado'
+    WHEN 7354 THEN 'Z yednayte tvaryn z portuhalskymy slovamy'
+    WHEN 7355 THEN 'Vymova bukvy "R" na pochatku slova'
+    -- 296: Francés desde Ucraniano (7376-7400)
+    WHEN 7376 THEN 'Yak skazaty pryvit frantsuzkoyu? a) Bonjour b) Merci'
+    WHEN 7377 THEN 'Uporyadkuyte: je suis ukrainien'
+    WHEN 7378 THEN 'Vymovte: Enchanté'
+    WHEN 7379 THEN 'Z yednayte artykli (le, la, les)'
+    WHEN 7380 THEN 'Pravyla chytannya kintsevykh pryholosnykh'
+END
+WHERE id_ejercicio BETWEEN 7326 AND 7400;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    -- 297: Matemáticas desde Ucraniano (7401-7425)
+    WHEN 7401 THEN 'Skilky bude 12 + 15? a) 27 b) 25'
+    WHEN 7402 THEN 'Rozvyazhit rivnyannya: 2x = 10'
+    WHEN 7403 THEN 'Yak nazvayetsya trykutnyk z rivnymy storonamy?'
+    WHEN 7404 THEN 'Z yednayte formuly z fihuramy'
+    WHEN 7405 THEN 'Chto take pifahorova teorema?'
+    -- 298: Música desde Ucraniano (7426-7450)
+    WHEN 7426 THEN 'Yaka nota yde pislya Do? a) Re b) Mi'
+    WHEN 7427 THEN 'Uporyadkuyte: Do Re Mi Fa Sol La Si'
+    WHEN 7428 THEN 'Poslukhayte rytm ta povtorit'
+    WHEN 7429 THEN 'Z yednayte symvoly z nazvamy (klyuch, pauza)'
+    WHEN 7430 THEN 'Yaka riznytsya mizh mazhorom i minorom?'
+END
+WHERE id_ejercicio BETWEEN 7401 AND 7450;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    -- 299: Inglés desde Vietnamita (7451-7475)
+    WHEN 7451 THEN 'Chao buoi sang tieng Anh la gi? a) Good morning b) Goodbye'
+    WHEN 7452 THEN 'Sap xep: I am a student'
+    WHEN 7453 THEN 'Phat am tu: University'
+    WHEN 7454 THEN 'Noi cac so tu 1 den 10'
+    WHEN 7455 THEN 'Cau hoi "Ban khoe khong?" tieng Anh la gi?'
+    -- 300: Chino desde Vietnamita (7476-7500)
+    WHEN 7476 THEN 'Xin chao tieng Trung la gi? a) Ni hao b) Xie xie'
+    WHEN 7477 THEN 'Sap xep: wo shi lao shi'
+    WHEN 7478 THEN 'Phat am thanh dieu 1 va 4'
+    WHEN 7479 THEN 'Noi han tu voi phien am Pinyin'
+    WHEN 7480 THEN 'Viet so 5 bang chu Han'
+    -- (Los IDs restantes 7481-7500 siguen el patron de niveles avanzado)
+    WHEN 7490 THEN 'Phan tich cau truc ngu phap phuc tap'
+    WHEN 7495 THEN 'Nghe doan hoi thoai ve kinh te'
+    WHEN 7500 THEN 'Viet bai luan ngan bang tieng Trung'
+END
+WHERE id_ejercicio BETWEEN 7451 AND 7500;
+
+--- Ejercicios del 7501 al 7750
+--- Cursos: Ajedrez, Matemáticas, Música, Italiano, Francés, Coreano, Japonés, Portugués, Español, Alemán (desde Vietnamita)
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    -- 301: Ajedrez desde Vietnamita (7501-7525)
+    WHEN 7501 THEN 'Quan Ma di chuyen nhu the nao? a) Hinh chu L b) Duong thang'
+    WHEN 7502 THEN 'Nhap thanh (Castling) la gi?'
+    WHEN 7503 THEN 'Hay giai the co chieu het trong 1 nuoc'
+    WHEN 7504 THEN 'Sap xep ban co ban dau dung vi tri'
+    WHEN 7505 THEN 'Gia tri cua quan Hau la may diem? a) 9 b) 5'
+    -- 302: Matemáticas desde Vietnamita (7526-7550)
+    WHEN 7526 THEN 'Ket qua cua 15 nhan 3 la bao nhieu? a) 45 b) 35'
+    WHEN 7527 THEN 'Giai phuong trinh: 3x - 6 = 12'
+    WHEN 7528 THEN 'Tinh dien tich hinh tron ban kinh r=2'
+    WHEN 7529 THEN 'Dinh ly Pythagoras dung cho loai tam giac nao?'
+    WHEN 7530 THEN 'Tim dao ham cua ham so f(x) = x^2'
+    -- 303: Música desde Vietnamita (7551-7575)
+    WHEN 7551 THEN 'Not nhac nao nam duoi not Do? a) Si b) Re'
+    WHEN 7552 THEN 'Khoa Sol bat dau tu dong ke thu may?'
+    WHEN 7553 THEN 'Nghe giai dieu va ghi lai cac not nhac'
+    WHEN 7554 THEN 'Nhip 4/4 co bao nhieu phach trong mot o nhip?'
+    WHEN 7555 THEN 'Phan biet am thanh cua Dan Piano va Dan Vi-o-long'
+END
+WHERE id_ejercicio BETWEEN 7501 AND 7575;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    -- 304: Italiano desde Vietnamita (7576-7600)
+    WHEN 7576 THEN 'Xin chao tieng Y la gi? a) Ciao b) Grazie'
+    WHEN 7577 THEN 'Sap xep: mi chiamo io Marco'
+    WHEN 7578 THEN 'Chia dong tu "Essere" o thi hien tai'
+    WHEN 7579 THEN 'Phat am tu: Arrivederci'
+    WHEN 7580 THEN 'Dich cau: Toi thich an pizza'
+    -- 305: Francés desde Vietnamita (7601-7625)
+    WHEN 7601 THEN 'Cam on tieng Phap la gi? a) Merci b) Bonjour'
+    WHEN 7602 THEN 'Sap xep: je suis vietnamien'
+    WHEN 7603 THEN 'Chon mao tu dung: (le/la) pomme'
+    WHEN 7604 THEN 'Phat am tu: Enchanté'
+    WHEN 7605 THEN 'Chia dong tu "Avoir" ngoi thu nhat so it'
+    -- 306: Coreano desde Vietnamita (7626-7650)
+    WHEN 7626 THEN 'Ten toi la... tieng Han noi ntn? a) Jeonun... imnida b) Kamsahamnida'
+    WHEN 7627 THEN 'Sap xep: naneun bab eul meogneunda'
+    WHEN 7628 THEN 'Chu cai "A" trong tieng Han viet ntn?'
+    WHEN 7629 THEN 'Nghe va chon dap an dung: Annyeonghaseyo'
+    WHEN 7630 THEN 'Noi cac so dem thuan Han tu 1 den 5'
+END
+WHERE id_ejercicio BETWEEN 7576 AND 7650;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    -- 307: Japonés desde Vietnamita (7651-7675)
+    WHEN 7651 THEN 'Chao buoi trua tieng Nhat la gi? a) Konnichiwa b) Ohayou'
+    WHEN 7652 THEN 'Sap xep: watashi wa gakusei desu'
+    WHEN 7653 THEN 'Chu "Ka" trong Hiragana la chu nao?'
+    WHEN 7654 THEN 'Phat am: Arigato gozaimasu'
+    WHEN 7655 THEN 'Dem vat dai trong tieng Nhat dung hau to nao?'
+    -- 308: Portugués desde Vietnamita (7676-7700)
+    WHEN 7676 THEN 'Tam biet tieng Bo Dao Nha la gi? a) Adeus b) Ola'
+    WHEN 7677 THEN 'Sap xep: eu gosto de cafe'
+    WHEN 7678 THEN 'Phat am tu: Pao (banh mi)'
+    WHEN 7679 THEN 'Noi cac thanh pho voi quoc gia tuong ung'
+    WHEN 7680 THEN 'Chia dong tu "Falar" o thi hien tai'
+END
+WHERE id_ejercicio BETWEEN 7651 AND 7700;
+
+UPDATE ejercicio
+SET pregunta =
+CASE id_ejercicio
+    -- 309: Español desde Vietnamita (7701-7725)
+    WHEN 7701 THEN 'Ban ten la gi tieng Tay Ban Nha? a) Como te llamas? b) Que tal?'
+    WHEN 7702 THEN 'Sap xep: yo vivo en Vietnam'
+    WHEN 7703 THEN 'Phat am chu "RR" trong tu Perro'
+    WHEN 7704 THEN 'Noi cac mau sac: Rojo, Azul, Verde'
+    WHEN 7705 THEN 'Dich: Toi muon mot ly nuoc'
+    -- 310: Alemán desde Vietnamita (7726-7750)
+    WHEN 7726 THEN 'Chuc mung giang sinh tieng Duc? a) Frohe Weihnachten b) Hallo'
+    WHEN 7727 THEN 'Sap xep: ich komme aus Vietnam'
+    WHEN 7728 THEN 'Phan biet cac mao tu: der, die, das'
+    WHEN 7729 THEN 'Phat am tu: Entschuldigung'
+    WHEN 7730 THEN 'Dem so tu 20 den 30 bang tieng Duc'
+    -- IDs de nivel avanzado para completar el bloque
+    WHEN 7740 THEN 'Viet mot doan van ngan ve so thich cua ban'
+    WHEN 7745 THEN 'Nghe tin tuc va tom tat noi dung chinh'
+    WHEN 7750 THEN 'Thao luan ve chu de moi truong bang tieng Duc'
+END
+WHERE id_ejercicio BETWEEN 7701 AND 7750;
 
 
--- Progreso entre 0 y 100
-ALTER TABLE curso_por_usuario
-ADD CONSTRAINT chk_progreso_porcentaje
-CHECK (progreso_porcentaje BETWEEN 0 AND 100);
-GO
+
+UPDATE ejercicio
+SET pregunta = CASE id_ejercicio
+    -- 291: Coreano desde Ucraniano (7251-7275)
+    WHEN 7251 THEN 'Yak skazaty pryvit koreyskoyu? a) Annyeong b) Kamsahamnida'
+    WHEN 7252 THEN 'Uporyadkuyte: hagsaeng ida naneun'
+    WHEN 7253 THEN 'Vymovte chitko: Annyeonghaseyo'
+    WHEN 7254 THEN 'Z yednayte chysla 1-5 z koreyskymy slovamy'
+    WHEN 7255 THEN 'Yakyy sufiks oznachaye diyu? a) -da b) -eul'
+    WHEN 7256 THEN 'Perekladit: Ya uchen. a) Naneun hagsaeng-ida b) Naneun uisa-ida'
+    WHEN 7257 THEN 'Yak skazaty Dyakuyu? a) Kamsahamnida b) Mianhamnida'
+    WHEN 7258 THEN 'Vymovte holosnu: O (ㅗ)'
+    WHEN 7259 THEN 'Vymovte pryholosnu: G (ㄱ)'
+    WHEN 7260 THEN 'Uporyadkuyte: mul meog-eoyo'
+    WHEN 7261 THEN 'Yak bude "Tak" koreyskoyu? a) Ne b) Aniyo'
+    WHEN 7262 THEN 'Yak bude "Ni" koreyskoyu? a) Aniyo b) Ne'
+    WHEN 7263 THEN 'Perekladit: De tualet? a) Hwajangshil eodi-eyo? b) Jigeum myeoch shi-eyo?'
+    WHEN 7264 THEN 'Yakyy sufiks dlya vkazivky na tsey predmet? a) -i b) -ga'
+    WHEN 7265 THEN 'Uporyadkuyte: saranghaeyo naneun neoreul'
+    WHEN 7266 THEN 'Yak skazaty "Smachnoho"? a) Jalmogeogessseumnida b) Mianhamnida'
+    WHEN 7267 THEN 'Vymovte chitko: Saranghae'
+    WHEN 7268 THEN 'Z yednayte kolory: Chervonyy, Syniy, Zhovtyy'
+    WHEN 7269 THEN 'Yak skazaty "Dobranich"? a) Jal jayo b) Annyeong'
+    WHEN 7270 THEN 'Uporyadkuyte: hangug-eo gongbuhaeyo'
+    WHEN 7271 THEN 'Yak bude "Dobra" koreyskoyu? a) Joh-ayo b) Shireoyo'
+    WHEN 7272 THEN 'Yak bude "Pohano" koreyskoyu? a) Nappayo b) Joh-ayo'
+    WHEN 7273 THEN 'Vymovte chitko: Gwaenchanh-ayo'
+    WHEN 7274 THEN 'Perekladit: Yak vas zvaty? a) Ireumi mwoyeyo? b) Eodi gaseyo?'
+    WHEN 7275 THEN 'EKZAMEN: Napyshit pro svoyu simyu koreyskoyu'
+
+    -- 292: Chino desde Ucraniano (7276-7300)
+    WHEN 7276 THEN 'Yak skazaty pryvit kytayskoyu? a) Ni hao b) Xie xie'
+    WHEN 7277 THEN 'Vyznachte ton dlya slova Ma (mama)'
+    WHEN 7278 THEN 'Uporyadkuyte: wo shi xuesheng'
+    WHEN 7279 THEN 'Z yednayte iyerohlify z yikh znachennyam'
+    WHEN 7280 THEN 'Vymovte chitko: Ni hao ma?'
+    WHEN 7281 THEN 'Yak bude "Dyakuyu" kytayskoyu? a) Xie xie b) Bu ke qi'
+    WHEN 7282 THEN 'Perekladit: Ya uchen. a) Wo shi xuesheng b) Wo shi laoshi'
+    WHEN 7283 THEN 'Vyznachte ton dlya slova Ma (khen)'
+    WHEN 7284 THEN 'Vymovte chitko: Zaijian'
+    WHEN 7285 THEN 'Z yednayte chysla 1-10 z iyerohlifamy'
+    WHEN 7286 THEN 'Yak skazaty "Ya tebe lyublyu"? a) Wo ai ni b) Wo bu ai ni'
+    WHEN 7287 THEN 'Uporyadkuyte: ni jiao shenme mingzi'
+    WHEN 7288 THEN 'Yakyy iyerohlif oznachaye "Lyudyna"? a) Ren b) Shan'
+    WHEN 7289 THEN 'Yakyy iyerohlif oznachaye "Voda"? a) Shui b) Huo'
+    WHEN 7290 THEN 'Perekladit: Mene zvaty... a) Wo jiao... b) Wo shi...'
+    WHEN 7291 THEN 'Yak skazaty "Bud laska"? a) Qing b) Dui'
+    WHEN 7292 THEN 'Vymovte chitko: Hen hao'
+    WHEN 7293 THEN 'Uporyadkuyte: wo yao he cha'
+    WHEN 7294 THEN 'Z yednayte tvaryn z iyerohlifamy'
+    WHEN 7295 THEN 'Yak skazaty "De vy zhyvete"? a) Ni zhu zai naer? b) Ni shi na guo ren?'
+    WHEN 7296 THEN 'Vyznachte ton dlya slova Bu (zaperechennya)'
+    WHEN 7297 THEN 'Yak skazaty "Skilky ce koshtuye"? a) Duoshao qian? b) Shenme mingzi?'
+    WHEN 7298 THEN 'Vymovte chitko: Meishi'
+    WHEN 7299 THEN 'Perekladit: Ya z Ukrainy. a) Wo lai zi Wukelan b) Wo shi Meiguo ren'
+    WHEN 7300 THEN 'EKZAMEN: Prochytayte iyerohlify ta perekladit tekst'
+
+    -- 293: Japonés desde Ucraniano (7301-7325)
+    WHEN 7301 THEN 'Yak skazaty pryvit yaponskoyu? a) Konnichiwa b) Arigato'
+    WHEN 7302 THEN 'Uporyadkuyte: watashi wa gakusei desu'
+    WHEN 7303 THEN 'Vymovte chitko: Arigato gozaimasu'
+    WHEN 7304 THEN 'Z yednayte symvoly Hiragany z chytannyam'
+    WHEN 7305 THEN 'Yakoyu chastynoyu movy ye "Desu"?'
+    WHEN 7306 THEN 'Yak skazaty "Dyakuyu" yaponskoyu? a) Arigato b) Sumimasen'
+    WHEN 7307 THEN 'Vymovte chitko: Ohayou gozaimasu'
+    WHEN 7308 THEN 'Z yednayte chysla 1-10 z Kanji'
+    WHEN 7309 THEN 'Yak skazaty "Vybachte"? a) Sumimasen b) Hai'
+    WHEN 7310 THEN 'Uporyadkuyte: sushi o tabemasu'
+    WHEN 7311 THEN 'Yakyy symvol oznachaye "A" v Hiragani?'
+    WHEN 7312 THEN 'Yakyy symvol oznachaye "I" v Hiragani?'
+    WHEN 7313 THEN 'Perekladit: Ya z Ukrainy. a) Wukeran kara kimashita b) Nihon jin desu'
+    WHEN 7314 THEN 'Vymovte chitko: Sayonara'
+    WHEN 7315 THEN 'Z yednayte tvaryn z yaponskymy slovamy'
+    WHEN 7316 THEN 'Yak skazaty "Tak" yaponskoyu? a) Hai b) Iie'
+    WHEN 7317 THEN 'Yak skazaty "Ni" yaponskoyu? a) Iie b) Hai'
+    WHEN 7318 THEN 'Uporyadkuyte: o-namae wa nan desu ka'
+    WHEN 7319 THEN 'Yakyy Kanji oznachaye "Lyudyna"? a) Hito b) Mizu'
+    WHEN 7320 THEN 'Yakyy Kanji oznachaye "Voda"? a) Mizu b) Yama'
+    WHEN 7321 THEN 'Vymovte chitko: Hajimemashite'
+    WHEN 7322 THEN 'Perekladit: Skilky ce koshtuye? a) Ikura desu ka? b) Doko desu ka?'
+    WHEN 7323 THEN 'Uporyadkuyte: mizu o nomimasu'
+    WHEN 7324 THEN 'Yak skazaty "Bud laska"? a) Onegaishimasu b) Dozo'
+    WHEN 7325 THEN 'EKZAMEN: Napyshit svoie imya Katakanoyu'
+
+    -- 294: Español desde Ucraniano (7326-7350)
+    WHEN 7326 THEN 'Yak skazaty pryvit ispanskoyu? a) Hola b) Adios'
+    WHEN 7327 THEN 'Uporyadkuyte: yo soy de Ucrania'
+    WHEN 7328 THEN 'Vymovte: Gracias'
+    WHEN 7329 THEN 'Z yednayte kolory z ispanskymy slovamy'
+    WHEN 7330 THEN 'Riznytsya mizh Ser ta Estar?'
+    WHEN 7331 THEN 'Yak skazaty "Dyakuyu" ispanskoyu? a) Gracias b) De nada'
+    WHEN 7332 THEN 'Vymovte chitko: Por favor'
+    WHEN 7333 THEN 'Uporyadkuyte: como te llamas'
+    WHEN 7334 THEN 'Z yednayte chysla 1-10 z ispanskymy slovamy'
+    WHEN 7335 THEN 'Perekladit: Ya lyublyu ispansku. a) Me gusta el espanol b) No hablo espanol'
+    WHEN 7336 THEN 'Yak skazaty "Tak" ispanskoyu? a) Si b) No'
+    WHEN 7337 THEN 'Yak skazaty "Ni" ispanskoyu? a) No b) Si'
+    WHEN 7338 THEN 'Vymovte chitko: Buenos dias'
+    WHEN 7339 THEN 'Uporyadkuyte: mi casa es grande'
+    WHEN 7340 THEN 'Yak skazaty "Dobranich" ispanskoyu? a) Buenas noches b) Hola'
+    WHEN 7341 THEN 'Z yednayte tvaryn z ispanskymy slovamy'
+    WHEN 7342 THEN 'Perekladit: De tualet? a) Donde esta el bano? b) Que hora es?'
+    WHEN 7343 THEN 'Vymovte chitko: Lo siento'
+    WHEN 7344 THEN 'Uporyadkuyte: quiero agua por favor'
+    WHEN 7345 THEN 'Yak skazaty "Skilky ce koshtuye"? a) Cuanto cuesta? b) Quien eres?'
+    WHEN 7346 THEN 'Yak skazaty "Bud laska" ispanskoyu? a) De nada b) Por favor'
+    WHEN 7347 THEN 'Vymovte chitko: Adios'
+    WHEN 7348 THEN 'Uporyadkuyte: tengo hambre'
+    WHEN 7349 THEN 'Perekladit: Ya z Ukrainy. a) Soy de Ucrania b) Soy de Espana'
+    WHEN 7350 THEN 'EKZAMEN: Napyshit 5 recchen pro sebe ispanskoyu'
+
+    -- 295: Portugués desde Ucraniano (7351-7375)
+    WHEN 7351 THEN 'Yak skazaty pryvit portuhalskoyu? a) Ola b) Tudo bem'
+    WHEN 7352 THEN 'Uporyadkuyte: eu falo um poco'
+    WHEN 7353 THEN 'Vymovte: Obrigado'
+    WHEN 7354 THEN 'Z yednayte tvaryn z portuhalskymy slovamy'
+    WHEN 7355 THEN 'Vymova bukvy "R" na pochatku slova'
+    WHEN 7356 THEN 'Yak skazaty "Dyakuyu" portuhalskoyu? a) Obrigado b) De nada'
+    WHEN 7357 THEN 'Vymovte chitko: Por favor'
+    WHEN 7358 THEN 'Uporyadkuyte: como voce se chama'
+    WHEN 7359 THEN 'Z yednayte chysla 1-10 z portuhalskymy slovamy'
+    WHEN 7360 THEN 'Perekladit: Ya uchen. a) Eu sou estudante b) Eu sou professor'
+    WHEN 7361 THEN 'Yak skazaty "Tak" portuhalskoyu? a) Sim b) Nao'
+    WHEN 7362 THEN 'Yak skazaty "Ni" portuhalskoyu? a) Nao b) Sim'
+    WHEN 7363 THEN 'Vymovte chitko: Bom dia'
+    WHEN 7364 THEN 'Uporyadkuyte: eu gosto de cafe'
+    WHEN 7365 THEN 'Yak skazaty "Dobranich"? a) Boa noite b) Tudo bem'
+    WHEN 7366 THEN 'Z yednayte kolory z portuhalskymy slovamy'
+    WHEN 7367 THEN 'Perekladit: De tualet? a) Onde e o banheiro? b) Que horas sao?'
+    WHEN 7368 THEN 'Vymovte chitko: Com licenca'
+    WHEN 7369 THEN 'Uporyadkuyte: eu quero agua'
+    WHEN 7370 THEN 'Yak skazaty "Skilky ce koshtuye"? a) Quanto custa? b) Quem e?'
+    WHEN 7371 THEN 'Yak skazaty "Bud laska"? a) De nada b) Por favor'
+    WHEN 7372 THEN 'Vymovte chitko: Ate logo'
+    WHEN 7373 THEN 'Uporyadkuyte: estou com fome'
+    WHEN 7374 THEN 'Perekladit: Ya z Ukrainy. a) Eu sou da Ucrania b) Eu sou do Brasil'
+    WHEN 7375 THEN 'EKZAMEN: Rozkazhit pro svoyu robotu portuhalskoyu'
+
+    -- 296: Francés desde Ucraniano (7376-7400)
+    WHEN 7376 THEN 'Yak skazaty pryvit frantsuzkoyu? a) Bonjour b) Merci'
+    WHEN 7377 THEN 'Uporyadkuyte: je suis ukrainien'
+    WHEN 7378 THEN 'Vymovte: Enchante'
+    WHEN 7379 THEN 'Z yednayte artykli (le, la, les)'
+    WHEN 7380 THEN 'Pravyla chytannya kintsevykh pryholosnykh'
+    WHEN 7381 THEN 'Yak skazaty "Dyakuyu" frantsuzkoyu? a) Merci b) De rien'
+    WHEN 7382 THEN 'Vymovte chitko: S il vous plait'
+    WHEN 7383 THEN 'Uporyadkuyte: comment tu t appelles'
+    WHEN 7384 THEN 'Z yednayte chysla 1-10 z frantsuzkymy slovamy'
+    WHEN 7385 THEN 'Perekladit: Ya uchen. a) Je suis etudiant b) Je suis professeur'
+    WHEN 7386 THEN 'Yak skazaty "Tak" frantsuzkoyu? a) Oui b) Non'
+    WHEN 7387 THEN 'Yak skazaty "Ni" frantsuzkoyu? a) Non b) Oui'
+    WHEN 7388 THEN 'Vymovte chitko: Salut'
+    WHEN 7389 THEN 'Uporyadkuyte: j aime le croissant'
+    WHEN 7390 THEN 'Yak skazaty "Dobranich"? a) Bonne nuit b) Bonjour'
+    WHEN 7391 THEN 'Z yednayte tvaryn z frantsuzkymy slovamy'
+    WHEN 7392 THEN 'Perekladit: De tualet? a) Ou sont les toilettes? b) Quelle heure est-il?'
+    WHEN 7393 THEN 'Vymovte chitko: Pardon'
+    WHEN 7394 THEN 'Uporyadkuyte: je veux du pain'
+    WHEN 7395 THEN 'Yak skazaty "Skilky ce koshtuye"? a) C est combien? b) Qui est-ce?'
+    WHEN 7396 THEN 'Yak skazaty "Bud laska"? a) De rien b) S il vous plait'
+    WHEN 7397 THEN 'Vymovte chitko: Au revoir'
+    WHEN 7398 THEN 'Uporyadkuyte: j ai faim'
+    WHEN 7399 THEN 'Perekladit: Ya z Ukrainy. a) Je viens d Ukraine b) Je suis francais'
+    WHEN 7400 THEN 'EKZAMEN: Napyshit list frantsuzkoyu'
+
+    -- 297: Matemáticas desde Ucraniano (7401-7425)
+    WHEN 7401 THEN 'Skilky bude 12 + 15? a) 27 b) 25'
+    WHEN 7402 THEN 'Rozvyazhit rivnyannya: 2x = 10'
+    WHEN 7403 THEN 'Yak nazvayetsya trykutnyk z rivnymy storonamy?'
+    WHEN 7404 THEN 'Z yednayte formuly z fihuramy'
+    WHEN 7405 THEN 'Chto take pifahorova teorema?'
+    WHEN 7406 THEN 'Skilky bude 100 - 45? a) 55 b) 65'
+    WHEN 7407 THEN 'Skilky bude 7 x 8? a) 56 b) 54'
+    WHEN 7408 THEN 'Rozvyazhit: 3x + 4 = 19'
+    WHEN 7409 THEN 'Yakyy kut maye 90 hradusiv? a) Pryamyy b) Hostryy'
+    WHEN 7410 THEN 'Yak obchyslyty ploshchu kvadrata?'
+    WHEN 7411 THEN 'Skilky bude 144 podilyty na 12? a) 12 b) 14'
+    WHEN 7412 THEN 'Obchyslit: 2 do kubu (2^3)'
+    WHEN 7413 THEN 'Chto take radis kola?'
+    WHEN 7414 THEN 'Z yednayte matematychni symvoly z nazvamy'
+    WHEN 7415 THEN 'Skilky hradusiv u sumi kutiv trykutnyka?'
+    WHEN 7416 THEN 'Obchyslit: 15% vid 200'
+    WHEN 7417 THEN 'Rozvyazhit rivnyannya: x/4 = 8'
+    WHEN 7418 THEN 'Yak nazyvayetsya chyslo piddrobom?'
+    WHEN 7419 THEN 'Yakyy poryadok diy: (2+3)x4?'
+    WHEN 7420 THEN 'Skilky milimetriv u 5 santymetrakh?'
+    WHEN 7421 THEN 'Obchyslit: korin kvadratnyy iz 81'
+    WHEN 7422 THEN 'Chto take paralelni liniyi?'
+    WHEN 7423 THEN 'Obchyslit perymetr pryamokutnyka 4x6'
+    WHEN 7424 THEN 'Chto take seryednye aryfmetychne?'
+    WHEN 7425 THEN 'EKZAMEN: Rozvyazhit skladnu zadachu na lohiku'
+
+    -- 298: Música desde Ucraniano (7426-7450)
+    WHEN 7426 THEN 'Yaka nota yde pislya Do? a) Re b) Mi'
+    WHEN 7427 THEN 'Uporyadkuyte: Do Re Mi Fa Sol La Si'
+    WHEN 7428 THEN 'Poslukhayte rytm ta povtorit'
+    WHEN 7429 THEN 'Z yednayte symvoly z nazvamy (klyuch, pauza)'
+    WHEN 7430 THEN 'Yaka riznytsya mizh mazhorom i minorom?'
+    WHEN 7431 THEN 'Yaka nota znachytisya yak C? a) Do b) Sol'
+    WHEN 7432 THEN 'Yak nazyvayetsya p rylad dlya nastroiky? a) Kamerton b) Metronom'
+    WHEN 7433 THEN 'Skilky doley u takti 3/4?'
+    WHEN 7434 THEN 'Z yednayte muzychni instrumenty z yikhnymy zvukamy'
+    WHEN 7435 THEN 'Yakyy klyuch vykorystovuyut dlya nyzkykh not?'
+    WHEN 7436 THEN 'Yakym symvolom poznachayut forte (huchno)?'
+    WHEN 7437 THEN 'Yakym symvolom poznachayut piano (tykho)?'
+    WHEN 7438 THEN 'Yak nazyvayetsya vidstan mizh dvoma notamy?'
+    WHEN 7439 THEN 'Vymovte chitko nazvy not'
+    WHEN 7440 THEN 'Uporyadkuyte temp: Adagio, Andante, Allegro'
+    WHEN 7441 THEN 'Yak nazyvayetsya khorovyy spiv bez instrumentiv?'
+    WHEN 7442 THEN 'Skilky ryadkiv u notnomu stani?'
+    WHEN 7443 THEN 'Yakyy instrument maye 88 klavish?'
+    WHEN 7444 THEN 'Z yednayte kompozytoriv z yikh epokhamy'
+    WHEN 7445 THEN 'Yakyy klyuch nazyvayut klyuchem Sol?'
+    WHEN 7446 THEN 'Chto take akord?'
+    WHEN 7447 THEN 'Yak nazyvayetsya upovilnennya tempu?'
+    WHEN 7448 THEN 'Yakyy instrument nalezhyt do strunnykh?'
+    WHEN 7449 THEN 'Poslukhayte melodyyu ta vyznachte yiyi tonalnist'
+    WHEN 7450 THEN 'EKZAMEN: Napyshit vlasnu korotku melodyyu'
+
+    -- 299: Inglés desde Vietnamita (7451-7475)
+    WHEN 7451 THEN 'Chao buoi sang tieng Anh la gi? a) Good morning b) Goodbye'
+    WHEN 7452 THEN 'Sap xep: I am a student'
+    WHEN 7453 THEN 'Phat am tu: University'
+    WHEN 7454 THEN 'Noi cac so tu 1 den 10'
+    WHEN 7455 THEN 'Cau hoi "Ban khoe khong?" tieng Anh la gi?'
+    WHEN 7456 THEN 'Dich: Toi thich uong ca phe. a) I like drinking coffee b) I like tea'
+    WHEN 7457 THEN 'Tu "Apple" nghia la gi? a) Qua tao b) Qua cam'
+    WHEN 7458 THEN 'Chia dong tu: He (be) a doctor'
+    WHEN 7459 THEN 'Noi cac mau sac voi tu tieng Anh'
+    WHEN 7460 THEN 'Sap xep: Where do you live?'
+    WHEN 7461 THEN 'Phat am: Wednesday'
+    WHEN 7462 THEN 'Dich: Tam biet. a) Goodbye b) Hello'
+    WHEN 7463 THEN 'Tu trai nghia voi "Big" la gi? a) Small b) Tall'
+    WHEN 7464 THEN 'Noi cac bo phan co the'
+    WHEN 7465 THEN 'Cau hoi: "May gio roi?" a) What time is it? b) Who are you?'
+    WHEN 7466 THEN 'Chia dong tu thi hien tai tiep dien: I (read) a book'
+    WHEN 7467 THEN 'Dich: Toi co mot con meo. a) I have a cat b) I have a dog'
+    WHEN 7468 THEN 'Phat am: Comfortable'
+    WHEN 7469 THEN 'Sap xep: She works in a bank'
+    WHEN 7470 THEN 'Tu "Monday" la thu may? a) Thu Hai b) Thu Ba'
+    WHEN 7471 THEN 'Noi cac mon an pho bien'
+    WHEN 7472 THEN 'Dich: Toi den tu Viet Nam. a) I am from Vietnam b) I live in Hanoi'
+    WHEN 7473 THEN 'Phat am: Thoroughbred'
+    WHEN 7474 THEN 'Sap xep: Can you help me please?'
+    WHEN 7475 THEN 'KIEM TRA: Viet mot doan van ngan ve ban than'
+
+    -- 300: Chino desde Vietnamita (7476-7500)
+    WHEN 7476 THEN 'Xin chao tieng Trung la gi? a) Ni hao b) Xie xie'
+    WHEN 7477 THEN 'Sap xep: wo shi lao shi'
+    WHEN 7478 THEN 'Phat am thanh dieu 1 va 4'
+    WHEN 7479 THEN 'Noi han tu voi phien am Pinyin'
+    WHEN 7480 THEN 'Viet so 5 bang chu Han'
+    WHEN 7481 THEN 'Dich: Cam on ban. a) Xie xie ni b) Bu ke qi'
+    WHEN 7482 THEN 'Sap xep: ni jiao shenme mingzi?'
+    WHEN 7483 THEN 'Phat am: Zao shang hao'
+    WHEN 7484 THEN 'Han tu "Ren" co nghia la gi? a) Nguoi b) Nui'
+    WHEN 7485 THEN 'Viet so 10 bang chu Han'
+    WHEN 7486 THEN 'Dich: Toi la nguoi Viet Nam. a) Wo shi Yuenan ren b) Wo shi Zhongguo ren'
+    WHEN 7487 THEN 'Noi cac mau sac voi Han tu'
+    WHEN 7488 THEN 'Phat am thanh dieu 2 va 3'
+    WHEN 7489 THEN 'Sap xep: wo yao he mian bao'
+    WHEN 7490 THEN 'Han tu "Shui" nghia la gi? a) Nuoc b) Lua'
+    WHEN 7491 THEN 'Dich: Ban bao nhieu tuoi? a) Ni ji sui? b) Ni hao ma?'
+    WHEN 7492 THEN 'Viet tu "Ban" (Ni) bang chu Han'
+    WHEN 7493 THEN 'Phat am: Dui bu qi'
+    WHEN 7494 THEN 'Sap xep: wo xi huan xue zhong wen'
+    WHEN 7495 THEN 'Noi cac con vat voi Han tu'
+    WHEN 7496 THEN 'Phan tich cau truc ngu phap phuc tap'
+    WHEN 7497 THEN 'Nghe doan hoi thoai ve kinh te'
+    WHEN 7498 THEN 'Han tu "Hao" co nghia la gi? a) Tot b) Xau'
+    WHEN 7499 THEN 'Dich: Tam biet. a) Zai jian b) Ming tian jian'
+    WHEN 7500 THEN 'KIEM TRA: Viet bai luan ngan bang tieng Trung'
+    ELSE pregunta END
+WHERE id_ejercicio BETWEEN 7251 AND 7500;
 
 
--- Si hay suscripción → cantidad = 1
-ALTER TABLE factura_detalle
-ADD CONSTRAINT chk_factura_detalle_suscripcion_cantidad
-CHECK (
-    (id_suscripcion IS NOT NULL AND cantidad = 1)
-    OR (id_suscripcion IS NULL)
-);
-GO
 
--- Confirmación de inserción
-SELECT 'Inserción completada exitosamente' AS Resultado;
-SELECT COUNT(*) AS Total_Paises FROM pais;
-SELECT COUNT(*) AS Total_Materias FROM materia;
-SELECT COUNT(*) AS Total_Usuarios FROM usuario;
-SELECT COUNT(*) AS Total_Suscripciones FROM suscripcion;
-SELECT COUNT(*) AS Total_Facturas FROM factura;
-SELECT COUNT(*) AS Total_Ejercicios_Realizados FROM ejercicio_realizado;
-SELECT COUNT(*) AS Total_Participaciones_Liga FROM grupo_competencia_por_usuario;
-GO
+UPDATE ejercicio
+SET pregunta = CASE id_ejercicio
+    -- 301: Ajedrez desde Vietnamita (7501-7525)
+    WHEN 7501 THEN 'Quan Ma di chuyen nhu the nao? a) Hinh chu L b) Duong thang'
+    WHEN 7502 THEN 'Nhap thanh (Castling) la gi?'
+    WHEN 7503 THEN 'Hay giai the co chieu het trong 1 nuoc'
+    WHEN 7504 THEN 'Sap xep ban co ban dau dung vi tri'
+    WHEN 7505 THEN 'Gia tri cua quan Hau la may diem? a) 9 b) 5'
+    WHEN 7506 THEN 'Quan Xe di chuyen nhu the nao? a) Ngang va doc b) Cheo'
+    WHEN 7507 THEN 'Quan Tuong co the di chuyen vao o khac mau khong?'
+    WHEN 7508 THEN 'The nao la mot van co hoa (Stalemate)?'
+    WHEN 7509 THEN 'Tan cuoc: Cach dung xe chieu het Vua'
+    WHEN 7510 THEN 'Phuong phap ghi chep cac nuoc di co vua'
+    WHEN 7511 THEN 'Khai cuoc pho bien nhat la gi?'
+    WHEN 7512 THEN 'Khai cuoc Ruy Lopez bat dau bang nuoc nao?'
+    WHEN 7513 THEN 'Chien thuat "Ghim" (Pin) la gi?'
+    WHEN 7514 THEN 'Chien thuat "Xien" (Skewer) khac gi voi Ghim?'
+    WHEN 7515 THEN 'Tan cuoc: Vua va Tot doi dau'
+    WHEN 7516 THEN 'Don bay quan (Sacrifice) de chieu het'
+    WHEN 7517 THEN 'Phong ngu kieu Phap (French Defense) la gi?'
+    WHEN 7518 THEN 'Tan cuoc xe: Quy tac Philidor'
+    WHEN 7519 THEN 'Cach tinh toan uu the trong trung cuoc'
+    WHEN 7520 THEN 'Chien thuat tan cong thanh Vua'
+    WHEN 7521 THEN 'Phan tich van dau cua cac kien tuong'
+    WHEN 7522 THEN 'He thong xep hang Elo hoat dong ntn?'
+    WHEN 7523 THEN 'Ly thuyet ve cau truc Tot'
+    WHEN 7524 THEN 'Cach chuan bi tam ly truoc tran dau'
+    WHEN 7525 THEN 'BAI KIEM TRA CUOI KHOA: Giai the co phuc tap'
+
+    -- 302: Matemáticas desde Vietnamita (7526-7550)
+    WHEN 7526 THEN 'Ket qua cua 15 nhan 3 la bao nhieu? a) 45 b) 35'
+    WHEN 7527 THEN 'Giai phuong trinh: 3x - 6 = 12'
+    WHEN 7528 THEN 'Tinh dien tich hinh tron ban kinh r=2'
+    WHEN 7529 THEN 'Dinh ly Pythagoras dung cho loai tam giac nao?'
+    WHEN 7530 THEN 'Tim dao ham cua ham so f(x) = x^2'
+    WHEN 7531 THEN 'Tinh gia tri cua: 2^5 + 10'
+    WHEN 7532 THEN 'Phan so 3/4 tuong ung voi bao nhieu phan tram?'
+    WHEN 7533 THEN 'Tim x biet: log2(x) = 3'
+    WHEN 7534 THEN 'Tinh chu vi hinh chu nhat dai 5 rong 3'
+    WHEN 7535 THEN 'Giai bat phuong trinh: 2x + 4 > 10'
+    WHEN 7536 THEN 'Dinh ly hinh hoc ve cac goc trong tam giac'
+    WHEN 7537 THEN 'Tinh xac suat khi gieo mot con xuc xac'
+    WHEN 7538 THEN 'Tim gia tri lon nhat cua ham so bac hai'
+    WHEN 7539 THEN 'Tinh tich phan co ban cua ham f(x)=x'
+    WHEN 7540 THEN 'Giai he phuong trinh hai an x va y'
+    WHEN 7541 THEN 'So phuc: Tinh modun cua z = 3 + 4i'
+    WHEN 7542 THEN 'Tinh the tich hinh lap phuong canh a=3'
+    WHEN 7543 THEN 'Cach su dung may tinh bo tui Casio'
+    WHEN 7544 THEN 'Ly thuyet tap hop va bieu do Venn'
+    WHEN 7545 THEN 'Ung dung cua toan hoc trong doi song'
+    WHEN 7546 THEN 'Toan do: Tinh quang duong v=st'
+    WHEN 7547 THEN 'Tim gioi han (Limit) cua ham so khi x tien den 0'
+    WHEN 7548 THEN 'Ma tran: Cach tinh dinh thuc cap 2'
+    WHEN 7549 THEN 'Chung minh hinh hoc bang phuong phap phan chung'
+    WHEN 7550 THEN 'BAI KIEM TRA CUOI KHOA: Tong hop kien thuc'
+
+    -- 303: Música desde Vietnamita (7551-7575)
+    WHEN 7551 THEN 'Not nhac nao nam duoi not Do? a) Si b) Re'
+    WHEN 7552 THEN 'Khoa Sol bat dau tu dong ke thu may?'
+    WHEN 7553 THEN 'Nghe giai dieu va ghi lai cac not nhac'
+    WHEN 7554 THEN 'Nhip 4/4 co bao nhieu phach trong mot o nhip?'
+    WHEN 7555 THEN 'Phan biet am thanh cua Dan Piano va Dan Vi-o-long'
+    WHEN 7556 THEN 'Not Den co gia tri bang may not Moc Don?'
+    WHEN 7557 THEN 'Dau hoa (Thang/Giang) dung de lam gi?'
+    WHEN 7558 THEN 'Cach doc not nhac tren Khoa Fa'
+    WHEN 7559 THEN 'Khoang cach nua cung (Semitone) la gi?'
+    WHEN 7560 THEN 'Hợp âm C Major gom cac not nao?'
+    WHEN 7561 THEN 'Phan biet giong Truong va giong Thu'
+    WHEN 7562 THEN 'Cach cam cung dan Vi-o-long dung cach'
+    WHEN 7563 THEN 'Ly thuyet ve cung bac trong am nhac'
+    WHEN 7564 THEN 'Nhip 3/4 thuong dung cho dieu nhảy nao?'
+    WHEN 7565 THEN 'Cach luyen thanh: Bai tap lay hoi'
+    WHEN 7566 THEN 'Lich su am nhac co dien: Mozart'
+    WHEN 7567 THEN 'Cac thanh phan cua mot ban giao huong'
+    WHEN 7568 THEN 'Cach su dung pedal tren dan Piano'
+    WHEN 7569 THEN 'Hoa am: Cach ket hop cac be'
+    WHEN 7570 THEN 'Ky thuat hat rung (Vibrato)'
+    WHEN 7571 THEN 'Phan tich cau truc mot bai hat Pop'
+    WHEN 7572 THEN 'Am nhac truyen thong Viet Nam: Dan Bau'
+    WHEN 7573 THEN 'Cach soan nhac tren phan mem may tinh'
+    WHEN 7574 THEN 'Ky thuat bieu dien tren san khau'
+    WHEN 7575 THEN 'BAI KIEM TRA CUOI KHOA: Nghe va phan tich'
+
+    -- 304: Italiano desde Vietnamita (7576-7600)
+    WHEN 7576 THEN 'Xin chao tieng Y la gi? a) Ciao b) Grazie'
+    WHEN 7577 THEN 'Sap xep: mi chiamo io Marco'
+    WHEN 7578 THEN 'Chia dong tu "Essere" o thi hien tai'
+    WHEN 7579 THEN 'Phat am tu: Arrivederci'
+    WHEN 7580 THEN 'Dich cau: Toi thich an pizza'
+    WHEN 7581 THEN 'So dem tu 1 den 10 tieng Y'
+    WHEN 7582 THEN 'Cach dung mao tu: Il, Lo, La'
+    WHEN 7583 THEN 'Dich: Ban den tu dau?'
+    WHEN 7584 THEN 'Cac mau sac co ban trong tieng Y'
+    WHEN 7585 THEN 'Cach goi mon trong nha hang Y'
+    WHEN 7586 THEN 'Chia dong tu "Avere" (Co)'
+    WHEN 7587 THEN 'Danh tu so it va so nhieu (o/i, a/e)'
+    WHEN 7588 THEN 'Cach noi thoi gian va gio giac'
+    WHEN 7589 THEN 'Tinh tu so sanh trong tieng Y'
+    WHEN 7590 THEN 'Dich: Gia dinh toi co 4 nguoi'
+    WHEN 7591 THEN 'Thi qua khu gan (Passato Prossimo)'
+    WHEN 7592 THEN 'Cach dung gioi tu: Di, A, Da, In, Su'
+    WHEN 7593 THEN 'Phat am cac am kho: GLI, GN'
+    WHEN 7594 THEN 'Tu vung ve thoi tiet va mua trong nam'
+    WHEN 7595 THEN 'Cach viet mot email trang trong'
+    WHEN 7596 THEN 'Kham pha van hoa va le hoi nuoc Y'
+    WHEN 7597 THEN 'Thi tuong lai don (Futuro Semplice)'
+    WHEN 7598 THEN 'Cach su dung dai tu phan than'
+    WHEN 7599 THEN 'Hoi thoai ve chu de du lich'
+    WHEN 7600 THEN 'BAI KIEM TRA CUOI KHOA: Noi va Viet'
+
+    -- 305: Francés desde Vietnamita (7601-7625)
+    WHEN 7601 THEN 'Cam on tieng Phap la gi? a) Merci b) Bonjour'
+    WHEN 7602 THEN 'Sap xep: je suis vietnamien'
+    WHEN 7603 THEN 'Chon mao tu dung: (le/la) pomme'
+    WHEN 7604 THEN 'Phat am tu: Enchanté'
+    WHEN 7605 THEN 'Chia dong tu "Avoir" ngoi thu nhat so it'
+    WHEN 7606 THEN 'So dem tu 11 den 20 tieng Phap'
+    WHEN 7607 THEN 'Cach dung mao tu bat dinh: un, une, des'
+    WHEN 7608 THEN 'Dich: Toi song o Ha Noi'
+    WHEN 7609 THEN 'Cac ngay trong tuan tieng Phap'
+    WHEN 7610 THEN 'Cach dat cau hoi voi "Est-ce que"'
+    WHEN 7611 THEN 'Chia dong tu nhom 1 (-ER)'
+    WHEN 7612 THEN 'Dich: Ban bao nhieu tuoi?'
+    WHEN 7613 THEN 'Cac bo phan tren co the nguoi'
+    WHEN 7614 THEN 'Cach dung tinh tu so huu (mon, ma, mes)'
+    WHEN 7615 THEN 'Mieu ta trang phuc va mau sac'
+    WHEN 7616 THEN 'Thi qua khu: Passe Compose voi Avoir'
+    WHEN 7617 THEN 'Cach dung gioi tu truoc ten quoc gia'
+    WHEN 7618 THEN 'Tu vung ve truong hoc va nghe nghiep'
+    WHEN 7619 THEN 'Phat am cac nguyen am mui (nasal)'
+    WHEN 7620 THEN 'Cach tu choi mot loi moi'
+    WHEN 7621 THEN 'Kham pha am thuc Phap: Banh mi baguette'
+    WHEN 7622 THEN 'Thi tuong lai gan (Futur proche)'
+    WHEN 7623 THEN 'Cach su dung dai tu thay the "en" va "y"'
+    WHEN 7624 THEN 'Hoi thoai tai san bay'
+    WHEN 7625 THEN 'BAI KIEM TRA CUOI KHOA: Tong hop'
+    ELSE pregunta END
+WHERE id_ejercicio BETWEEN 7501 AND 7625;
+
+UPDATE ejercicio
+SET pregunta = CASE id_ejercicio
+    -- 306: Coreano desde Vietnamita (7626-7650)
+    WHEN 7626 THEN 'Ten toi la... tieng Han noi ntn? a) Jeonun... imnida b) Kamsahamnida'
+    WHEN 7627 THEN 'Sap xep: naneun bab eul meogneunda'
+    WHEN 7628 THEN 'Chu cai "A" trong tieng Han viet ntn?'
+    WHEN 7629 THEN 'Nghe va chon dap an dung: Annyeonghaseyo'
+    WHEN 7630 THEN 'Noi cac so dem thuan Han tu 1 den 5'
+    WHEN 7631 THEN 'Bang chu cai Hangeul: Nguyen am co ban'
+    WHEN 7632 THEN 'Cach ghep phu am va nguyen am'
+    WHEN 7633 THEN 'Dich: Toi la nguoi Viet Nam'
+    WHEN 7634 THEN 'Cac quoc gia va quoc tich tieng Han'
+    WHEN 7635 THEN 'Phat am "Patchim" (Phu am cuoi)'
+    WHEN 7636 THEN 'Cach dung duoi cau kinh ngu -imnida'
+    WHEN 7637 THEN 'Tu vung ve gia dinh: Bo, Me, Anh, Chi'
+    WHEN 7638 THEN 'Dich: Cai nay bao nhieu tien?'
+    WHEN 7639 THEN 'Cach dung tieu tu chu ngu -i/-ga'
+    WHEN 7640 THEN 'Cac dia diem trong thanh pho'
+    WHEN 7641 THEN 'Thi qua khu trong tieng Han'
+    WHEN 7642 THEN 'Cach dung tieu tu thoi gian -e'
+    WHEN 7643 THEN 'Cac dong tu hanh dong hang ngay'
+    WHEN 7644 THEN 'Dinh ngu trong tieng Han'
+    WHEN 7645 THEN 'Cach noi ve so thich'
+    WHEN 7646 THEN 'Kham pha van hoa Han Quoc: Hanbok'
+    WHEN 7647 THEN 'Cau truc "Vi... nen..." trong tieng Han'
+    WHEN 7648 THEN 'Hoi thoai tai quan ca phe'
+    WHEN 7649 THEN 'Cach su dung kinh ngu cao cap'
+    WHEN 7650 THEN 'BAI KIEM TRA CUOI KHOA: Viet doan van'
+
+    -- 307: Japonés desde Vietnamita (7651-7675)
+    WHEN 7651 THEN 'Chao buoi trua tieng Nhat la gi? a) Konnichiwa b) Ohayou'
+    WHEN 7652 THEN 'Sap xep: watashi wa gakusei desu'
+    WHEN 7653 THEN 'Chu "Ka" trong Hiragana la chu nao?'
+    WHEN 7654 THEN 'Phat am: Arigato gozaimasu'
+    WHEN 7655 THEN 'Dem vat dai trong tieng Nhat dung hau to nao?'
+    WHEN 7656 THEN 'Bang chu cai Hiragana: Hang K'
+    WHEN 7657 THEN 'Bang chu cai Katakana: Hang S'
+    WHEN 7658 THEN 'Dich: Toi thich an Sushi'
+    WHEN 7659 THEN 'Cach dung tro tu "wa" va "ga"'
+    WHEN 7660 THEN 'Hoc 5 chu Kanji co ban dau tien'
+    WHEN 7661 THEN 'Chia dong tu the Masu'
+    WHEN 7662 THEN 'Dich: Day la cai gi?'
+    WHEN 7663 THEN 'Cach dung dai tu chi thi: Kore, Sore, Are'
+    WHEN 7664 THEN 'Tu vung ve thoi gian: Gio, Phut, Ngay'
+    WHEN 7665 THEN 'Cach dung tinh tu duoi "i" va "na"'
+    WHEN 7666 THEN 'Chia dong tu thi qua khu'
+    WHEN 7667 THEN 'Cach dung tro tu "ni" va "he" chi phuong huong'
+    WHEN 7668 THEN 'Tu vung ve phuong tien giao thong'
+    WHEN 7669 THEN 'Cach xin phep lam viec gi do (-te mo ii)'
+    WHEN 7670 THEN 'Hoi thoai ve gia dinh va ban be'
+    WHEN 7671 THEN 'Kham pha van hoa Tra dao Nhat Ban'
+    WHEN 7672 THEN 'Cach dung the Te de noi cac cau'
+    WHEN 7673 THEN 'Tu vung ve cong viec va cong ty'
+    WHEN 7674 THEN 'Cach bieu thi mong muon (-tai desu)'
+    WHEN 7675 THEN 'BAI KIEM TRA CUOI KHOA: Nghe hieu JLPT N5'
+
+    -- 308: Portugués desde Vietnamita (7676-7700)
+    WHEN 7676 THEN 'Tam biet tieng Bo Dao Nha la gi? a) Adeus b) Ola'
+    WHEN 7677 THEN 'Sap xep: eu gosto de cafe'
+    WHEN 7678 THEN 'Phat am tu: Pao (banh mi)'
+    WHEN 7679 THEN 'Noi cac thanh pho voi quoc gia tuong ung'
+    WHEN 7680 THEN 'Chia dong tu "Falar" o thi hien tai'
+    WHEN 7681 THEN 'So dem tu 1 den 20 tieng Bo Dao Nha'
+    WHEN 7682 THEN 'Cach dung mao tu: O, A, Os, As'
+    WHEN 7683 THEN 'Dich: Ban ten la gi?'
+    WHEN 7684 THEN 'Cac mau sac va hinh khoi'
+    WHEN 7685 THEN 'Cach dung dong tu "Ser" va "Estar"'
+    WHEN 7686 THEN 'Chia dong tu nhom -AR, -ER, -IR'
+    WHEN 7687 THEN 'Dich: Hom nay troi rat dep'
+    WHEN 7688 THEN 'Tu vung ve nha bep va thuc an'
+    WHEN 7689 THEN 'Cach dung dai tu nhan xung'
+    WHEN 7690 THEN 'Phat am cac am mui (nh, lh, ~)'
+    WHEN 7691 THEN 'Thi qua khu don (Preterito Perfeito)'
+    WHEN 7692 THEN 'Cach dung gioi tu: em, de, para'
+    WHEN 7693 THEN 'Tu vung ve du lich va khach san'
+    WHEN 7694 THEN 'Cach mieu ta nguoi va vat'
+    WHEN 7695 THEN 'Kham pha le hoi Carnival tai Brazil'
+    WHEN 7696 THEN 'Thi tuong lai (Futuro do Presente)'
+    WHEN 7697 THEN 'Cach su dung cau menh lenh'
+    WHEN 7698 THEN 'Hoi thoai tai cua hang quan ao'
+    WHEN 7699 THEN 'Doc hieu mot doan van ngan'
+    WHEN 7700 THEN 'BAI KIEM TRA CUOI KHOA: Viet thu'
+
+    -- 309: Español desde Vietnamita (7701-7725)
+    WHEN 7701 THEN 'Ban ten la gi tieng Tay Ban Nha? a) Como te llamas? b) Que tal?'
+    WHEN 7702 THEN 'Sap xep: yo vivo en Vietnam'
+    WHEN 7703 THEN 'Phat am chu "RR" trong tu Perro'
+    WHEN 7704 THEN 'Noi cac mau sac: Rojo, Azul, Verde'
+    WHEN 7705 THEN 'Dich: Toi muon mot ly nuoc'
+    WHEN 7706 THEN 'So dem tu 1 den 30 tieng Tay Ban Nha'
+    WHEN 7707 THEN 'Cach dung mao tu: El, La, Los, Las'
+    WHEN 7708 THEN 'Dich: Chao buoi sang mọi nguoi'
+    WHEN 7709 THEN 'Cac bo phan trong gia dinh'
+    WHEN 7710 THEN 'Cach dung dong tu "Ser" (Ban chat)'
+    WHEN 7711 THEN 'Cach dung dong tu "Estar" (Tam thoi)'
+    WHEN 7712 THEN 'Chia dong tu thi hien tai (Presente)'
+    WHEN 7713 THEN 'Tu vung ve cac loai hoa qua'
+    WHEN 7714 THEN 'Cach noi thoi gian va ngay thang'
+    WHEN 7715 THEN 'Dich: Toi thich nghe nhac'
+    WHEN 7716 THEN 'Thi qua khu (Preterito Indefinido)'
+    WHEN 7717 THEN 'Cach dung gioi tu: a, de, con, sin'
+    WHEN 7718 THEN 'Tu vung ve do gia dung'
+    WHEN 7719 THEN 'Phat am chu "H" va "J" trong tieng Tay Ban Nha'
+    WHEN 7720 THEN 'Cach dat cau hoi voi "Quien, Que, Donde"'
+    WHEN 7721 THEN 'Kham pha am thuc Mexico va Tay Ban Nha'
+    WHEN 7722 THEN 'Thi tuong lai don (Futuro Proximo)'
+    WHEN 7723 THEN 'Cach su dung dai tu phan than (-se)'
+    WHEN 7724 THEN 'Hoi thoai ve chu de mua sam'
+    WHEN 7725 THEN 'BAI KIEM TRA CUOI KHOA: Tong hop'
+
+    -- 310: Alemán desde Vietnamita (7726-7750)
+    WHEN 7726 THEN 'Chuc mung giang sinh tieng Duc? a) Frohe Weihnachten b) Hallo'
+    WHEN 7727 THEN 'Sap xep: ich komme aus Vietnam'
+    WHEN 7728 THEN 'Phan biet cac mao tu: der, die, das'
+    WHEN 7729 THEN 'Phat am tu: Entschuldigung'
+    WHEN 7730 THEN 'Dem so tu 20 den 30 bang tieng Duc'
+    WHEN 7731 THEN 'Bang chu cai tieng Duc va am Umlaut'
+    WHEN 7732 THEN 'Dich: Toi la sinh vien'
+    WHEN 7733 THEN 'Cach chia dong tu "Sein" (Thi hien tai)'
+    WHEN 7734 THEN 'Cach dung cac dai tu nhan xung: Ich, Du, Er, Sie'
+    WHEN 7735 THEN 'Chia dong tu "Haben" (Co)'
+    WHEN 7736 THEN 'Dich: Ban song o dau?'
+    WHEN 7737 THEN 'Cac mau sac va quan ao'
+    WHEN 7738 THEN 'Tu vung ve do an va thuc uong'
+    WHEN 7739 THEN 'Cach dung cach 1 (Nominativ)'
+    WHEN 7740 THEN 'Viet mot doan van ngan ve so thich cua ban'
+    WHEN 7741 THEN 'Cach dung cach 4 (Akkusativ)'
+    WHEN 7742 THEN 'Tu vung ve nha cua va noi that'
+    WHEN 7743 THEN 'Cach noi gio (Am/Pm)'
+    WHEN 7744 THEN 'Dich: Toi di lam bang xe buyt'
+    WHEN 7745 THEN 'Nghe tin tuc va tom tat noi dung chinh'
+    WHEN 7746 THEN 'Thi qua khu: Perfekt voi haben/sein'
+    WHEN 7747 THEN 'Cac dong tu tách (Trennbar Verben)'
+    WHEN 7748 THEN 'Cach su dung gioi tu thoi gian: in, an, um'
+    WHEN 7749 THEN 'Hoi thoai tai phong kham benh'
+    WHEN 7750 THEN 'Thao luan ve chu de moi truong bang tieng Duc'
+    ELSE pregunta END
+WHERE id_ejercicio BETWEEN 7626 AND 7750;
+
+
+
